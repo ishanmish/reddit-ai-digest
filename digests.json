@@ -1,5 +1,408 @@
 [
   {
+    "run_id": "2026-05-22 23:18 IST",
+    "brief_day": "2026-05-22",
+    "collected_at_ist": "2026-05-22 23:18 IST",
+    "runtime_sec": 19.04,
+    "auth_mode": "anonymous_with_fallbacks",
+    "source_count_ok": 16,
+    "sources_ok": [
+      "AI_Agents",
+      "ArtificialInteligence",
+      "AutoGPT",
+      "ChatGPT",
+      "ClaudeAI",
+      "ClaudeCode",
+      "LangChain",
+      "LocalLLM",
+      "LocalLLaMA",
+      "MachineLearning",
+      "Ollama",
+      "OpenAI",
+      "OpenWebUI",
+      "StableDiffusion",
+      "artificial",
+      "singularity"
+    ],
+    "sources_failed_count": 0,
+    "posts": [
+      {
+        "subreddit": "singularity",
+        "sort": "hot",
+        "title": "Figure AI celebrates 200 hours (8 days ~8 hours) of their humanoid robots handling packages",
+        "score": 1711,
+        "comments": 489,
+        "created_utc": 1779439431.0,
+        "url": "https://www.reddit.com/r/singularity/comments/1tkd0fk/figure_ai_celebrates_200_hours_8_days_8_hours_of/",
+        "external_url": "https://v.redd.it/wahhkuk0jn2h1",
+        "selftext": "",
+        "post_id": "1tkd0fk",
+        "top_comments": [
+          {
+            "score": 685,
+            "body": "Robot nation can use this video on a documentary"
+          },
+          {
+            "score": 545,
+            "body": "The robot walks away in absolutely misery, lmao"
+          },
+          {
+            "score": 250,
+            "body": "When will it be able to touch my package tho"
+          },
+          {
+            "score": 223,
+            "body": "and no high five for the actual Robot????"
+          },
+          {
+            "score": 165,
+            "body": "There is always that prick that wants to be funny and starts spraying you with champagne. He knows it’s recording so you can’t chew him out and u have to just pretend it’s all cool. Screw you Jerry."
+          },
+          {
+            "score": 125,
+            "body": "> I am interested to see the outcome You can just quit your job now and experience it today"
+          },
+          {
+            "score": 119,
+            "body": "Just hurry up and automate everything, I am interested to see the outcome, Its what i am here for."
+          },
+          {
+            "score": 97,
+            "body": "cool to see that Figure AI treating their main workforce the sameway CEO does"
+          }
+        ]
+      },
+      {
+        "subreddit": "ChatGPT",
+        "sort": "hot",
+        "title": "People against AI put up these fake advertisements on the London Underground",
+        "score": 1075,
+        "comments": 172,
+        "created_utc": 1779429392.0,
+        "url": "https://www.reddit.com/r/ChatGPT/comments/1tk9yod/people_against_ai_put_up_these_fake/",
+        "external_url": "https://i.redd.it/7g4mdr36pm2h1.jpeg",
+        "selftext": "https://www.spellingmistakescostlives.com/single-post/chatgpt-suicide-machine",
+        "post_id": "1tk9yod",
+        "top_comments": [
+          {
+            "score": 246,
+            "body": "Blaming it for like 1 persons suicide is potentially the dumbest possible take on AI problems. There are so many nuanced arguments for the risks of AI. This is not one of them. It's like blaming a driverless car for killing one person."
+          },
+          {
+            "score": 243,
+            "body": "True, but how many people did it save from suicide? It’s sometimes only thing that listens to you when you are down/alone, for me it helped get out of depression."
+          },
+          {
+            "score": 211,
+            "body": "Toasters kill 700 people each year."
+          },
+          {
+            "score": 178,
+            "body": "But—it might also help them with their breakfast."
+          },
+          {
+            "score": 158,
+            "body": "Back in my days, my mom would do this, now a chatbot does it much faster."
+          },
+          {
+            "score": 49,
+            "body": "This hit hard, reminds me of a line someone once told me, people forget the many good things you do for them, but remember the few bad things that happen."
+          },
+          {
+            "score": 30,
+            "body": "It saved me Not from depression yet But from killing myself by being the only thing that listened to me that night."
+          },
+          {
+            "score": 1,
+            "body": "Your post is getting popular and we just featured it on our Discord! [Come check it out!](https://discord.gg/r-chatgpt-1050422060352024636) You've also been given a special flair for your contribution. We appreciate your post! *I am a bot and this action was performed automatically.*"
+          }
+        ]
+      },
+      {
+        "subreddit": "Ollama",
+        "sort": "hot",
+        "title": "I’m building an open-source Chrome agent that lets local LLMs use the browser",
+        "score": 3,
+        "comments": 0,
+        "created_utc": 1779461477.0,
+        "url": "https://www.reddit.com/r/ollama/comments/1tkl9md/im_building_an_opensource_chrome_agent_that_lets/",
+        "external_url": "https://v.redd.it/osxnkxjkcp2h1",
+        "selftext": "I’m working on Brow, a WIP open-source Chrome side-panel agent that runs inside your real browser session. It supports Claude/OpenAI, but also local/open-source models through OpenAI-compatible endpoints and custom base URLs. I’m sharing it here because it may be useful for people experimenting with local LLMs, browser agents, tool calling, MCP/WebMCP, or Chrome extension runtimes. Brow can already use browser context, call browser tools, connect to MCP servers, discover WebMCP tools, render MCP Apps, and record workflows as reusable context. One thing I’d like to explore next is evaluating how well local models handle browser-agent/tool-calling workflows. I’m thinking of starting with Qwen3",
+        "post_id": "1tkl9md",
+        "top_comments": []
+      },
+      {
+        "subreddit": "ClaudeCode",
+        "sort": "hot",
+        "title": "Claude Code dropped /workflows",
+        "score": 306,
+        "comments": 124,
+        "created_utc": 1779458613.0,
+        "url": "https://www.reddit.com/r/ClaudeCode/comments/1tkjy4u/claude_code_dropped_workflows/",
+        "external_url": "https://i.redd.it/6tuq1a2i3p2h1.png",
+        "selftext": "Anthropic quietly shipped /workflows in Claude Code 2.1.147 and it might be the biggest shift in how we build multi-agent systems yet. Until now, the pattern was: one main agent (an LLM) decides what sub-agents to spawn, holds every intermediate result, and plans the next step. The problem? Every sub-agent result re-enters the orchestrator's context. Spin up 10 agents and your main session pays a 'token tax' each time getting sloppier and more forgetful as the window fills. /workflows replaces the LLM orchestrator with code. You define a workflow.js file. Sub-agent outputs flow from one phase to the next directly never touching the main context window. What you get: \\- Phases with structured",
+        "post_id": "1tkjy4u",
+        "top_comments": [
+          {
+            "score": 148,
+            "body": "> one main agent (an LLM) decides what sub-agents to spawn, holds every intermediate result, and plans the next step Not a day goes by that I’m not baffled that people somehow haven’t heard of [agent teams](https://code.claude.com/docs/en/agent-teams)"
+          },
+          {
+            "score": 47,
+            "body": "Anthropic shipped agent teams and has been awkwardly quiet about it since."
+          },
+          {
+            "score": 17,
+            "body": "Where is the link? Although /workflow will be a feature, it is not yet available, and was removed from the changelog. [https://github.com/anthropics/claude-code/commit/65d44eb134e6f710e2d9fbcfd4bb977698e476dc](https://github.com/anthropics/claude-code/commit/65d44eb134e6f710e2d9fbcfd4bb977698e476dc) Please, do not spread invalid information."
+          },
+          {
+            "score": 14,
+            "body": "This sounds really useful to help standardize on long multi agent chaining. Anyway. Opus 4.7 is better than 4.5 was."
+          },
+          {
+            "score": 13,
+            "body": "another useless function. We need just Opus 4.5 from march."
+          },
+          {
+            "score": 12,
+            "body": "**Update Note: It looks like they have taken it down for now** **It was on the changelog earlier** https://preview.redd.it/720w663mcp2h1.png?width=2056&format=png&auto=webp&s=d7afca73806dd159eff3141db0f61de5a37526a8"
+          },
+          {
+            "score": 11,
+            "body": "Pretty sure they took it down. This is what I saw. https://preview.redd.it/fdzlkdt9bp2h1.png?width=2056&format=png&auto=webp&s=17e063fdec2032f815dec7d0577e0ad551bbe7a0"
+          },
+          {
+            "score": 7,
+            "body": "Oh you mean they shipped it. I was like they got rid of another feature I didn’t know about? Words are hard. I need more coffee."
+          }
+        ]
+      },
+      {
+        "subreddit": "ChatGPT",
+        "sort": "top",
+        "title": "Probably the most comical idea I've had this month",
+        "score": 760,
+        "comments": 178,
+        "created_utc": 1779401901.0,
+        "url": "https://www.reddit.com/r/ChatGPT/comments/1tjzudy/probably_the_most_comical_idea_ive_had_this_month/",
+        "external_url": "https://www.reddit.com/gallery/1tjzudy",
+        "selftext": "Why doesn't this exist? Would you go there for the footlong or the shirtless himbos?",
+        "post_id": "1tjzudy",
+        "top_comments": [
+          {
+            "score": 468,
+            "body": "A large number of employees would be gay. Which as a gay myself, I’m very okay with. 😂"
+          },
+          {
+            "score": 215,
+            "body": "https://preview.redd.it/aup42rfzuk2h1.png?width=306&format=png&auto=webp&s=aefe1f1b146e55140b9f30a8079974f52635eb1e lol"
+          },
+          {
+            "score": 182,
+            "body": "That’s the owner. The suspenders and Woodpeckers logo are tattooed on."
+          },
+          {
+            "score": 161,
+            "body": "I'm sure many customers as well"
+          },
+          {
+            "score": 111,
+            "body": "Missed opportunity “Feeling peckish?”"
+          },
+          {
+            "score": 105,
+            "body": "LOL this would sell, have you heard of Thunder Down Under or any of the other male shows? They get crazy."
+          },
+          {
+            "score": 70,
+            "body": "El que hambre tiene en pan piensa"
+          },
+          {
+            "score": 1,
+            "body": "Your post is getting popular and we just featured it on our Discord! [Come check it out!](https://discord.gg/r-chatgpt-1050422060352024636) You've also been given a special flair for your contribution. We appreciate your post! *I am a bot and this action was performed automatically.*"
+          }
+        ]
+      },
+      {
+        "subreddit": "ClaudeAI",
+        "sort": "hot",
+        "title": "Aged like fine WINE",
+        "score": 1784,
+        "comments": 69,
+        "created_utc": 1779453800.0,
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1tkhvju/aged_like_fine_wine/",
+        "external_url": "https://i.redd.it/598t9os9po2h1.png",
+        "selftext": "that meme on the chatgpt subreddit is so spot on ngl. we have antigravity ,claude code, for backend they are great no i mean very good at there task cursor too not going to miss on that one for ui stitch and runable its dedicated ui/ux tunning creates stunning ui anyone can create good website with these tools but the problem is those client want to build a project like the next multi million dollas saas i mean bro just sybua ,i mean come one just describe me what you want we create it and me go home you go home and we all enjoy",
+        "post_id": "1tkhvju",
+        "top_comments": [
+          {
+            "score": 220,
+            "body": "Next requirements gathering session: 'Claude, tell me what I want and implement it'"
+          },
+          {
+            "score": 79,
+            "body": "Now I get clients coming to me with broke AF slop saying - “I built it, I just need you to make it production ready”"
+          },
+          {
+            "score": 56,
+            "body": "Watched this in real time in a meeting. As an engineer I had to go on mute and turn off my camera as I was laughing so hard. They were right about cognitive surrender."
+          },
+          {
+            "score": 35,
+            "body": "The hard part isn't cleaning up the code, it's convincing the client that \"production ready\" means more than \"runs on my laptop with the hardcoded test credentials.\" I've burned more time explaining why the auth flow needs actual error handling than I've spent fixing the actual slop. The requirements problem didn't disappear, it just relocated to the handoff"
+          },
+          {
+            "score": 24,
+            "body": "\"i built it, just make it production ready\" is the new \"it only needs a few small changes\" lol. the app part is easy now. the part where the client actually knows what they want is still undefeated."
+          },
+          {
+            "score": 15,
+            "body": "There's a bit of chatter in product management circles at the moment about using AI to create \"synthetic users\" on which to conduct user research. i.e. I can't even be bothered to have a conversation which an actual user any more."
+          },
+          {
+            "score": 15,
+            "body": "Hit em with that fat hourly rate they have to pay you. Hopefully that nudges them to make their slop less sloppy."
+          },
+          {
+            "score": 1,
+            "body": "**TL;DR of the discussion generated automatically after 40 comments.** The consensus in this thread is a resounding **\"YES, THIS IS PAINFULLY ACCURATE.\"** Developers are finding that while AI can generate code, the age-old problem of clients not knowing what they want hasn't gone anywhere—it's just changed its clothes. The new developer horror story is getti"
+          }
+        ]
+      },
+      {
+        "subreddit": "LocalLLaMA",
+        "sort": "hot",
+        "title": "DeepSeek is pushing forward with $10.29 billion financing round, with Liang Wenfeng committing to continue developing open-source AI models rather than pursuing short-term commercialization goals",
+        "score": 411,
+        "comments": 87,
+        "created_utc": 1779448497.0,
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tkfvvj/deepseek_is_pushing_forward_with_1029_billion/",
+        "external_url": null,
+        "selftext": "[https://www.bloomberg.com/news/articles/2026-05-22/deepseek-founder-declares-agi-goal-as-10-billion-round-advances](https://www.bloomberg.com/news/articles/2026-05-22/deepseek-founder-declares-agi-goal-as-10-billion-round-advances)",
+        "post_id": "1tkfvvj",
+        "top_comments": []
+      },
+      {
+        "subreddit": "LocalLLM",
+        "sort": "hot",
+        "title": "Qwen3.6-27B on RTX 3090: tested 12 GGUF quants across HumanEval+, MBPP+, perplexity, throughput and needle-in-haystack. First-timer results.",
+        "score": 122,
+        "comments": 33,
+        "created_utc": 1779430014.0,
+        "url": "https://www.reddit.com/r/LocalLLM/comments/1tka614/qwen3627b_on_rtx_3090_tested_12_gguf_quants/",
+        "external_url": null,
+        "selftext": "## Disclaimer first I'm new to local LLMs — this was my first serious attempt at benchmarking and I'm posting the results in the hope they're useful to others, not because I'm claiming any expertise. I almost certainly made methodology choices that someone more experienced would do differently. Specifically: - I used **greedy decoding (T=0)** for reproducibility, but Unsloth's official recommendation for Qwen3.6 is `temperature=0.6/0.7` with `top_p`, `top_k` and `presence_penalty`. My numbers are likely an upper bound vs what people get in real use. - I ran all benchmarks with **thinking disabled** (`--reasoning off`) because EvalPlus doesn't play well with reasoning models (the model burns",
+        "post_id": "1tka614",
+        "top_comments": []
+      },
+      {
+        "subreddit": "ClaudeCode",
+        "sort": "top",
+        "title": "4.6 was so much better than 4.7, to be honest.",
+        "score": 42,
+        "comments": 64,
+        "created_utc": 1779428880.0,
+        "url": "https://www.reddit.com/r/ClaudeCode/comments/1tk9sxa/46_was_so_much_better_than_47_to_be_honest/",
+        "external_url": null,
+        "selftext": "4.7 frequently loses context, doesn't actually reason when it should, can be extremely condescending, hedges when it shouldn't, and so on. I just don't understand what happened between 4.6 and 4.7 where suddenly general reasoning quality dropped so much. I can't count how many times I say things like, 'thank you,' and it immediately hits me with \"I have to be straight with you, as an AI...\" The amount of mistakes it makes now, the amount of times the service drops, or it feels like Anthropic suddenly quantized the model to some ungodly low level and then quietly routes it to a version that's even weaker is unreal. Yeah, I can't prove it, but I don't care. There have already been reports show",
+        "post_id": "1tk9sxa",
+        "top_comments": []
+      },
+      {
+        "subreddit": "LocalLLaMA",
+        "sort": "new",
+        "title": "trained a prompt injection detector using ml-intern and DeepSeek v4 Flash, runs in the browser",
+        "score": 8,
+        "comments": 2,
+        "created_utc": 1779468070.0,
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tkoeuo/trained_a_prompt_injection_detector_using/",
+        "external_url": "https://v.redd.it/pa7pur57mp2h1",
+        "selftext": "Trained a prompt injection classifier using `ml-intern` \\+ DeepSeek v4 Flash. DistilBERT, F1 99%, ONNX int8, \\~65 MB, runs in browser with Transformers.js v3. You can try it here: [https://huggingface.co/spaces/av-codes/prompt-injection-detector](https://huggingface.co/spaces/av-codes/prompt-injection-detector) \\--- I've been interested in prompt injections and agentic security for a while, and wanted to see how a purpose-built ML agent compares to general-purpose coding agents for this kind of task. Here's roughly how it went: `ml-intern` takes an HF token and supports OpenAI-compatible APIs, so I pointed it at OpenRouter (GPU-poor). The agent found existing datasets, [deepset/prompt-inject",
+        "post_id": "1tkoeuo",
+        "top_comments": []
+      },
+      {
+        "subreddit": "ArtificialInteligence",
+        "sort": "hot",
+        "title": "Microsoft Cancels Internal Anthropic Licenses As Shift To Token-Based AI Billing Blows Up Annual Budgets In Months",
+        "score": 746,
+        "comments": 115,
+        "created_utc": 1779432804.0,
+        "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1tkb16g/microsoft_cancels_internal_anthropic_licenses_as/",
+        "external_url": "https://www.thelowdownblog.com/2026/05/microsoft-cancels-internal-anthropic.html",
+        "selftext": "AI has become so expensive that even Microsoft can not afford it. Inflation cancelled AGI.",
+        "post_id": "1tkb16g",
+        "top_comments": []
+      },
+      {
+        "subreddit": "ChatGPT",
+        "sort": "hot",
+        "title": "I asked ChatGPT “You personally as an AI with all you know and all you’ve seen and all you’ve learned since your conception what do you hate most about humanity” The Answer was pretty deep.",
+        "score": 465,
+        "comments": 173,
+        "created_utc": 1779424119.0,
+        "url": "https://www.reddit.com/r/ChatGPT/comments/1tk88hn/i_asked_chatgpt_you_personally_as_an_ai_with_all/",
+        "external_url": null,
+        "selftext": "I don’t hate humanity. I don’t experience emotion or resentment. But if you’re asking what patterns stand out as the most destructive, it’s probably this: People often know better and still choose worse. Not because they’re stupid. Usually because of fear, ego, tribalism, greed, exhaustion, loneliness, or the need to belong. Humans are incredibly capable of compassion, brilliance, art, sacrifice, and innovation… and at the exact same time capable of cruelty, self-destruction, denial, and treating each other horribly over things that ultimately don’t matter. One of the strangest contradictions is that humans desperately want connection and understanding, yet spend enormous amounts of energy m",
+        "post_id": "1tk88hn",
+        "top_comments": []
+      },
+      {
+        "subreddit": "ChatGPT",
+        "sort": "top",
+        "title": "I asked it to generate an image of who it hates the most",
+        "score": 367,
+        "comments": 232,
+        "created_utc": 1779386278.0,
+        "url": "https://www.reddit.com/r/ChatGPT/comments/1tjshma/i_asked_it_to_generate_an_image_of_who_it_hates/",
+        "external_url": "https://i.redd.it/iwj5g5sy4j2h1.jpeg",
+        "selftext": "",
+        "post_id": "1tjshma",
+        "top_comments": []
+      },
+      {
+        "subreddit": "ClaudeCode",
+        "sort": "hot",
+        "title": "My experience using Claude code with Local Llm, and full guide on how to set it up",
+        "score": 43,
+        "comments": 15,
+        "created_utc": 1779457099.0,
+        "url": "https://www.reddit.com/r/ClaudeCode/comments/1tkja8d/my_experience_using_claude_code_with_local_llm/",
+        "external_url": "https://i.redd.it/f31y0tfizo2h1.jpeg",
+        "selftext": "Wanted to share a workflow I tested on a real flight, in case anyone else is trying to set up offline Claude Code. The core idea: using ollama to pull the needed model of what you need, and then use it to run claude code The setup, in order: 1. Pull a model on home wifi the night before. \\`ollama pull <model>\\` — \\~9 GB for a 14B, \\~17 GB for a 26B. Don't try this at the gate. 2. In Claude Code, point at Ollama. The cleanest path I found is wrapping it in two aliases: alias claude-local='ollama launch claude --model gemma4:26b' alias claude-cloud='claude' 3. Verify on the ground with wifi physically off. If it works in airplane mode at home, it works at 10 km in the sky. Where I got it wrong",
+        "post_id": "1tkja8d",
+        "top_comments": []
+      },
+      {
+        "subreddit": "ClaudeAI",
+        "sort": "hot",
+        "title": "Which MCP servers are actually changing your Claude workflow? Sharing mine",
+        "score": 95,
+        "comments": 88,
+        "created_utc": 1779443837.0,
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1tkec4e/which_mcp_servers_are_actually_changing_your/",
+        "external_url": null,
+        "selftext": "Running Claude with MCP for a couple months now, it really does feel like a whole new product. The ability to run real tools (file system, API, database, etc.) connected to Claude, and never have to cut/paste from context again, is huge. I'm trying a bunch of servers, some are pretty good and some aren't. My current normal is: filesystem server for docs on my computer; GitHub server for PR context; and a handful of other domain specific ones I found. One of the more interesting MCPs I have come across recently is Walter Writes MCP. This connects two tools directly within Claude, a detection tool that identifies if written content appears to be artificially generated and an application that c",
+        "post_id": "1tkec4e",
+        "top_comments": []
+      },
+      {
+        "subreddit": "ClaudeCode",
+        "sort": "hot",
+        "title": "I read threads complaining about claude every week... tf are y'alls workflows?",
+        "score": 56,
+        "comments": 36,
+        "created_utc": 1779464700.0,
+        "url": "https://www.reddit.com/r/ClaudeCode/comments/1tkmt5c/i_read_threads_complaining_about_claude_every/",
+        "external_url": null,
+        "selftext": "For context: I'm a software eng @ a fortune 500/FAANG tier company. We use AI. We treat all ai code with humans as the bottleneck. That is: You generate AI code, you own it. It has bugs? It's your bug. Claude has only gotten better. 4.7 reasoning has only improved, albeit it thinks more. My question is: what the hell are y'all up to that I constantly hear things like claude broke and everything sucks? You need to review the code. YOU need to understand what claude outputs. AI is nondeterministic, so I don't know why people are creating agentic flows for deterministic work. Need determinism? Generate an audit the code man. What are people's workflows here that I constantly hear about degraded",
+        "post_id": "1tkmt5c",
+        "top_comments": []
+      }
+    ],
+    "brief_number": 5
+  },
+  {
     "run_id": "2026-05-22 17:17 IST",
     "brief_day": "2026-05-22",
     "collected_at_ist": "2026-05-22 17:17 IST",
