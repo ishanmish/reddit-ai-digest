@@ -1,0 +1,714 @@
+[
+  {
+    "run_id": "2026-05-22 09:29 IST",
+    "collected_at_ist": "2026-05-22 09:29 IST",
+    "runtime_sec": 10.99,
+    "auth_mode": "anonymous_with_fallbacks",
+    "source_count_ok": 16,
+    "sources_ok": [
+      "AI_Agents",
+      "ArtificialInteligence",
+      "AutoGPT",
+      "ChatGPT",
+      "ClaudeAI",
+      "ClaudeCode",
+      "LangChain",
+      "LocalLLM",
+      "LocalLLaMA",
+      "MachineLearning",
+      "Ollama",
+      "OpenAI",
+      "OpenWebUI",
+      "StableDiffusion",
+      "artificial",
+      "singularity"
+    ],
+    "sources_failed_count": 0,
+    "posts": [
+      {
+        "subreddit": "ChatGPT",
+        "sort": "hot",
+        "title": "this tweet aged in the funniest possible way",
+        "score": 4419,
+        "comments": 93,
+        "created_utc": 1779372648.0,
+        "url": "https://www.reddit.com/r/ChatGPT/comments/1tjlpz6/this_tweet_aged_in_the_funniest_possible_way/",
+        "external_url": "https://i.redd.it/ynrjq3fe0i2h1.png",
+        "selftext": "this tweet aged like wine because programmers didn’t disappear, we just evolved into full time ai babysitters 😭 half my workflow now is codex writing code, cursor autocomplete fighting for its life, and runable ai helped handling the boring stuff like creating docs and landing pages while clients still somehow describe features like “make it cleaner but also more powerful”. turns out the hardest problem in software engineering was getting humans to explain what they actually want.",
+        "post_id": "1tjlpz6",
+        "top_comments": [
+          {
+            "score": 453,
+            "body": "2020: ‘AI will replace programmers.’ 2026: programmers spending 4 hours trying to decode what ‘cleaner but more premium’ means."
+          },
+          {
+            "score": 140,
+            "body": "Enlightenment in product design is realizing that users don't even know what they want. They ask for things to solve problems, but what they ask for is not what they really want. They want a solution to their problem."
+          },
+          {
+            "score": 137,
+            "body": "\"Make it POP!\""
+          },
+          {
+            "score": 56,
+            "body": "Large groups of people are GREAT at identifying what’s wrong with almost anything, and TERRIBLE at identifying how to fix it"
+          },
+          {
+            "score": 51,
+            "body": "Everyone thinks they're good communicators, so it's the AI's fault for not understanding me"
+          },
+          {
+            "score": 44,
+            "body": "People will also realize quickly as they fork over thousands in more tokens to get it to look the way they want, that multiple attempts will cost more money. Because I don't care what job, but we've all had customers say, \"I'm paying you for the final project, not the dozen drafts you did I didn't like\""
+          },
+          {
+            "score": 20,
+            "body": "More like helping them to find out what they want"
+          },
+          {
+            "score": 1,
+            "body": "Your post is getting popular and we just featured it on our Discord! [Come check it out!](https://discord.gg/r-chatgpt-1050422060352024636) You've also been given a special flair for your contribution. We appreciate your post! *I am a bot and this action was performed automatically.*"
+          }
+        ]
+      },
+      {
+        "subreddit": "ChatGPT",
+        "sort": "hot",
+        "title": "Coders in 2030",
+        "score": 2775,
+        "comments": 120,
+        "created_utc": 1779365235.0,
+        "url": "https://www.reddit.com/r/ChatGPT/comments/1tjihlc/coders_in_2030/",
+        "external_url": "https://v.redd.it/ohfjg05eeh2h1",
+        "selftext": "i feel like i'm falling into this wierd category lately, using AI agents for almost everything in my workflow. i have the technical background and know my way around a database schema, so i'm not at the level where i don't understand what's happening under the hood. but the speed is just too addictive. right now, i'm letting tools like cursor and codex handle the backend logic, and i've been testing runable for the UI components. figma and stitch are okayish for quick mockups, but they still require way too much manual CSS tweaking. it used to take me a week just to wire up auth and design a clean layout that didn't look like a boostrap template from 2012. letting these ai agents handle the",
+        "post_id": "1tjihlc",
+        "top_comments": [
+          {
+            "score": 585,
+            "body": "I lost it when he closed his eyes, really had to focus on the brain to pull that answer out."
+          },
+          {
+            "score": 202,
+            "body": "this guy is honestly the best fking producer"
+          },
+          {
+            "score": 171,
+            "body": "This is as hard as I've ever been called out."
+          },
+          {
+            "score": 78,
+            "body": "![gif](giphy|l3fZFvp94ljepXoPe)"
+          },
+          {
+            "score": 62,
+            "body": "What do I get paid for? Knowing how to speak to the damn AI bots, that’s what. At times that might be harder than coding itself."
+          },
+          {
+            "score": 58,
+            "body": "Anybody know who he is?"
+          },
+          {
+            "score": 51,
+            "body": "Rick Rubin ladies and gentlemen"
+          },
+          {
+            "score": 1,
+            "body": "Your post is getting popular and we just featured it on our Discord! [Come check it out!](https://discord.gg/r-chatgpt-1050422060352024636) You've also been given a special flair for your contribution. We appreciate your post! *I am a bot and this action was performed automatically.*"
+          }
+        ]
+      },
+      {
+        "subreddit": "LocalLLaMA",
+        "sort": "hot",
+        "title": "Heretic has been served a legal notice by Meta, Inc.",
+        "score": 1629,
+        "comments": 247,
+        "created_utc": 1779375044.0,
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tjmvx6/heretic_has_been_served_a_legal_notice_by_meta_inc/",
+        "external_url": null,
+        "selftext": "To Whomsoever it May Concern, The individual behind the Heretic Free Software Project (henceforth called \"Heretic\", notwithstanding unrelated entities of the same name) has been served a notice by a legal services provider representing Meta Platforms, Inc. (henceforth called \"Meta\"), via the digital communications medium variously known as Internet Mail, Electronic Mail, or simply \"email\". The Heretic Project conducts its affairs in full compliance with applicable laws, regulations, rules, guidelines, opinions, and hunches. Following the commendable example set by the renowned heretic Galileo Galilei in 1616, we are **recanting** the relevant materials, namely derivatives of Meta's \"Llama\" A",
+        "post_id": "1tjmvx6",
+        "top_comments": [
+          {
+            "score": 528,
+            "body": "I love the slightly sassy \"168\" models added. You guys are amazing."
+          },
+          {
+            "score": 483,
+            "body": "same meta that torrented all books to train these models?"
+          },
+          {
+            "score": 258,
+            "body": "Bunch of wanker lawyers doing the stupid lawyer shit again just because they can do it"
+          },
+          {
+            "score": 248,
+            "body": "> The Llama model family ranks among the 200 best language models available today, trailing only 168 other models from 23 competitors on the LM Arena leaderboard Wow, sick burn"
+          },
+          {
+            "score": 167,
+            "body": "oh that's nothing, that is not even the tip of the proverbial iceberg, nothing in comparison to the unethical things Facebook has done in its history and keeps doing."
+          },
+          {
+            "score": 156,
+            "body": "Holy fuck.. that's a big L for meta. They haven't even released a model in ages and they care about the name?"
+          },
+          {
+            "score": 132,
+            "body": "When was the last time meta released anything noteworthy?"
+          },
+          {
+            "score": 1,
+            "body": "Your post is getting popular and we just featured it on our Discord! [Come check it out!](https://discord.gg/PgFhZ8cnWW) You've also been given a special flair for your contribution. We appreciate your post! *I am a bot and this action was performed automatically.*"
+          }
+        ]
+      },
+      {
+        "subreddit": "ChatGPT",
+        "sort": "hot",
+        "title": "While we're at it: the ideal MOM BODY according to ChatGPT",
+        "score": 977,
+        "comments": 489,
+        "created_utc": 1779363574.0,
+        "url": "https://www.reddit.com/r/ChatGPT/comments/1tjhup2/while_were_at_it_the_ideal_mom_body_according_to/",
+        "external_url": "https://i.redd.it/n28s42ra9h2h1.png",
+        "selftext": "",
+        "post_id": "1tjhup2",
+        "top_comments": [
+          {
+            "score": 920,
+            "body": "I’m not sure why people have a problem with this post. This absolutely IS the ideal. You are SUPPOSED to be healthy and have baseline fitness. Of course aesthetically having bone structure and skin like this is not realistic, but the points about musculature and body function are spot on. Our culture is so twisted - we pretend like being out of shape and unh"
+          },
+          {
+            "score": 703,
+            "body": "This is also how I see David's wife"
+          },
+          {
+            "score": 665,
+            "body": "This is how I SEE my wife’s body"
+          },
+          {
+            "score": 342,
+            "body": "I'm gonna get scammed so hard in like 15 years time. https://preview.redd.it/fh73awzq3j2h1.jpeg?width=428&format=pjpg&auto=webp&s=8e01bcb2422bef7574265d820bc0e96d44e8b65f"
+          },
+          {
+            "score": 223,
+            "body": "Fine ass momma."
+          },
+          {
+            "score": 177,
+            "body": "It's just a joke escalation from the original post of \"ideal woman's body\" to another post with \"ideal dad body\" to this. The dad body is obviously out of shape and the mom body on this post looks identical to the ideal female body. Anyone that's \"upset\" is upset about the double standard laid out in this series of posts."
+          },
+          {
+            "score": 174,
+            "body": "https://preview.redd.it/nsstdr8ezi2h1.jpeg?width=1122&format=pjpg&auto=webp&s=e45749a626a3f8d553bfc15b6f3f78e0cfcd93e1"
+          },
+          {
+            "score": 1,
+            "body": "Hey /u/compulsorycreed, If your post is a screenshot of a ChatGPT conversation, please reply to this message with the [conversation link](https://help.openai.com/en/articles/7925741-chatgpt-shared-links-faq) or prompt. If your post is a DALL-E 3 image post, please reply with the prompt used to make this image. Consider joining our [public discord server](htt"
+          }
+        ]
+      },
+      {
+        "subreddit": "singularity",
+        "sort": "hot",
+        "title": "Elon Musk's pay package reveals what SpaceX actually is: a $1 trillion monster built to colonize Mars",
+        "score": 787,
+        "comments": 409,
+        "created_utc": 1779372384.0,
+        "url": "https://www.reddit.com/r/singularity/comments/1tjllk7/elon_musks_pay_package_reveals_what_spacex/",
+        "external_url": "https://fortune.com/2026/05/20/space-x-filing-elon-musk-pay-colonize-mars/?utm_source=reddit/",
+        "selftext": "Elon Musk’s new pay package at SpaceX, the largest in corporate history, comes with one little catch: He doesn’t get the money until one million people live on Mars. The SpaceX board granted Musk one billion restricted shares of Class B common stock on top of his existing stake of roughly 5 billion shares, worth roughly $700 billion at the expected IPO valuation of $1.75 trillion. The new shares, potentially worth an additional $600 billion or more, only vest if SpaceX hits two conditions: its top market capitalization milestone of $7.5 trillion, and the creation of a permanent human colony on Mars with at least one million inhabitants. “For the entirety of its existence,” the filing reads,",
+        "post_id": "1tjllk7",
+        "top_comments": [
+          {
+            "score": 414,
+            "body": "He’s never going to see that money before he dies."
+          },
+          {
+            "score": 224,
+            "body": "I don't love Elon Musk but \"aha, big reveal: this is really about Mars!\" is hilarious to anyone who pays any attention to what he has been saying he wants to do since forever."
+          },
+          {
+            "score": 160,
+            "body": "It's getting eyeballs which is all it's intended to do."
+          },
+          {
+            "score": 120,
+            "body": "These milestones didn't mean much since he has voting control. He'll vote to modify the conditions until all he needs to do is build a Lego model colony."
+          },
+          {
+            "score": 65,
+            "body": "Can we just send him there? Please?"
+          },
+          {
+            "score": 46,
+            "body": "Well yes that's SpaceXs mission since day one lol"
+          },
+          {
+            "score": 37,
+            "body": "I will concede he's the most intelligent, biggest dicked man to ever live while also giving him his 1 trillion dollar package if he moves to mars. All in favour?"
+          },
+          {
+            "score": 32,
+            "body": "Yeah lmao"
+          }
+        ]
+      },
+      {
+        "subreddit": "ClaudeAI",
+        "sort": "hot",
+        "title": "Anthropic officially launched 13+ FREE AI courses with certificates (Including Agentic AI and Claude Code!)",
+        "score": 1429,
+        "comments": 78,
+        "created_utc": 1779380169.0,
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1tjpfh8/anthropic_officially_launched_13_free_ai_courses/",
+        "external_url": null,
+        "selftext": "Just found out about this and had to share because almost nobody is talking about it yet. If you are tired of paying for AI courses or getting hit with paywalls just to get a certificate, Anthropic (the creators of Claude) quietly dropped a massive library of completely free, official training modules. Yes, they actually give you an official certificate of completion directly from Anthropic once you finish. Here is the breakdown of what is available and exactly how to get it without spending a dime. What is in the course catalog? They have split the training into a few different paths depending on what you want to do: * **The Big Surprise: Agentic AI & MCP:** They have official courses on th",
+        "post_id": "1tjpfh8",
+        "top_comments": [
+          {
+            "score": 157,
+            "body": "To anyone skeptical like me, these are legit courses provided by Anthropic. The skilljar link comes from anthropic.com/learn"
+          },
+          {
+            "score": 105,
+            "body": "finally an anthropic product i can actually afford"
+          },
+          {
+            "score": 70,
+            "body": "I've taken 10/15 so far, and highly recommend them. Edit: the MCP and MCP Advanced Topics courses are definitely juice that's worth the squeeze, particularly learning STDIO and StreamableHTTP transport protocols."
+          },
+          {
+            "score": 55,
+            "body": "[https://anthropic.skilljar.com/](https://anthropic.skilljar.com/)"
+          },
+          {
+            "score": 49,
+            "body": "These aren't new. Lol. I took several of them last summer XD"
+          },
+          {
+            "score": 20,
+            "body": "Thank you for checking, I almost didn’t take this seriously."
+          },
+          {
+            "score": 15,
+            "body": "piggybacking on the top comment to point out that this gets posted every month, and this one is a wall of generated text by an account that's on here to farm karma and push their own services (look at OP's comment history)"
+          },
+          {
+            "score": 1,
+            "body": "**TL;DR of the discussion generated automatically after 40 comments.** Looks like the community is giving this a big thumbs-up, but with a major correction for the OP. **The consensus is that these free Anthropic courses are legit, valuable, and definitely worth doing, but OP, you're a bit late to the party – they've been around for months.** * **Are they an"
+          }
+        ]
+      },
+      {
+        "subreddit": "singularity",
+        "sort": "hot",
+        "title": "Google's latest creation: Gemini 3.5 Flash vs all",
+        "score": 693,
+        "comments": 212,
+        "created_utc": 1779377911.0,
+        "url": "https://www.reddit.com/r/singularity/comments/1tjoarz/googles_latest_creation_gemini_35_flash_vs_all/",
+        "external_url": "https://www.reddit.com/gallery/1tjoarz",
+        "selftext": "[https://gemini.google.com/share/c2a187275e26](https://gemini.google.com/share/c2a187275e26) [archive link](http://archive.today/q6nzg) [https://claude.ai/share/8383747a-aaf1-4f6c-a516-0e839f46a698](https://claude.ai/share/8383747a-aaf1-4f6c-a516-0e839f46a698) [https://grok.com/share/bGVnYWN5\\_3c63e371-eb9d-46c3-8ba2-0c745c6795a2](https://grok.com/share/bGVnYWN5_3c63e371-eb9d-46c3-8ba2-0c745c6795a2) [https://chatgpt.com/share/6a0f1e13-a0c8-8328-b989-1ac51b92e81c](https://chatgpt.com/share/6a0f1e13-a0c8-8328-b989-1ac51b92e81c) same prompt \"\"\" 300+140=460 Is this correct? Breakdown? \"\"\" Remember guys. #1 in Finance Agent v2. SOTA performance right here. Edit: For control, I explicitly tested a",
+        "post_id": "1tjoarz",
+        "top_comments": [
+          {
+            "score": 171,
+            "body": "If you switch it to Extended thinking it gets it right. Seems that Thinking level \"Standard\" just means it doesn't think at all."
+          },
+          {
+            "score": 166,
+            "body": "Gemini ⅗ ?"
+          },
+          {
+            "score": 131,
+            "body": "just like me"
+          },
+          {
+            "score": 63,
+            "body": "https://preview.redd.it/whzg30z8hi2h1.png?width=1557&format=png&auto=webp&s=192481783e75626c47648f50954c4c8fe8fb60a7 I've got the same response. But remember the models on the Gemini apps are extremely nerfed and that's not new. You try to do that in AI studio and you aren't getting that mistake if you don't put the thinking level to \"minimum\" which is what"
+          },
+          {
+            "score": 52,
+            "body": "Gemini needs better tool calling logic because ChatGPT just farms this out to python."
+          },
+          {
+            "score": 50,
+            "body": "Gemini .35"
+          },
+          {
+            "score": 45,
+            "body": "I feel personally attacked"
+          },
+          {
+            "score": 31,
+            "body": "I gave flash 3.5 a 37 entry bug report made by claude on my codebase. It flew through the task in like 15 minutes and proclaimed itself a genius doing flawless work. I asked claude to review and it turned out out of 37 entries it only tackled 7, 3 of which were done incorrectly. Great job Google, see you again in the autumn"
+          }
+        ]
+      },
+      {
+        "subreddit": "AI_Agents",
+        "sort": "hot",
+        "title": "Direct LLM vs Model Context Protocol (MCP): A benchmark on API costs and latency.",
+        "score": 2,
+        "comments": 2,
+        "created_utc": 1779415105.0,
+        "url": "https://www.reddit.com/r/AI_Agents/comments/1tk4z8w/direct_llm_vs_model_context_protocol_mcp_a/",
+        "external_url": null,
+        "selftext": "Like everyone else, I’ve been testing the newly released Gemini 3.5 Flash. The speed is phenomenal, but I wanted to see how it handles large, structured data aggregations directly in the prompt versus using a delegated tool architecture. **The Experiment:** I set up a data aggregation crash test. The agent had to fetch a JSON array containing 208 user objects, filter out only the users who are over 30 years old and have green eyes, and then calculate the exact mathematical average of their weight. I ran this through two different architectures: **Approach 1: Direct LLM (The Brute Force Way)** I dumped the entire raw JSON payload directly into the context window of Gemini 3.5 Flash and asked",
+        "post_id": "1tk4z8w",
+        "top_comments": [
+          {
+            "score": 1,
+            "body": "Thank you for your submission, for any questions regarding AI, please check out our wiki at https://www.reddit.com/r/ai_agents/wiki (this is currently in test and we are actively adding to the wiki) *I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/AI_Agents) if you have any qu"
+          },
+          {
+            "score": 1,
+            "body": "[https://youtu.be/L6vK5i0rhO8](https://youtu.be/L6vK5i0rhO8) [https://github.com/Neonia-io/agent-mcp-examples](https://github.com/Neonia-io/agent-mcp-examples)"
+          }
+        ]
+      },
+      {
+        "subreddit": "Ollama",
+        "sort": "top",
+        "title": "I got tired of API limits, so I hooked up OpenClaw to an unlimited Qwen3.6:35b backend on a full H100 for $1.6/hr (Demo)",
+        "score": 0,
+        "comments": 12,
+        "created_utc": 1779375054.0,
+        "url": "https://www.reddit.com/r/ollama/comments/1tjmw3y/i_got_tired_of_api_limits_so_i_hooked_up_openclaw/",
+        "external_url": "https://v.redd.it/gbna2z1i7i2h1",
+        "selftext": "Every time I run complex agent loops, I end up watching the API meter. I wanted to see if I could completely bypass Anthropic/OpenAI costs without losing too much reasoning capability, so I deployed a dedicated Qwen 3.6 instance and hooked it up to OpenClaw. It handles autonomous tasks surprisingly well when you give it enough room to breathe. Here is the exact setup (shown in the demo video): 1. **The Sandbox:** Spin up OpenClaw in a sandboxed environment (4 vCPU, 8GB RAM, 50GB storage) with the dashboard accessed directly from your browser. 2. **The Compute:** Reserve a full H100 GPU and boot up `qwen3.6:35b` via Ollama. 3. **The Bridge:** Connect OpenClaw to Qwen 3.6. The result is unlimi",
+        "post_id": "1tjmw3y",
+        "top_comments": [
+          {
+            "score": 23,
+            "body": "Anyone gonna tell him?"
+          },
+          {
+            "score": 19,
+            "body": "Isn't this around $1000/month?"
+          },
+          {
+            "score": 10,
+            "body": "You hopefully dont really pay 1100usd for qwen3.6 35b a month?"
+          },
+          {
+            "score": 7,
+            "body": "$1.60x24x30 = $1,152.00 #aimath"
+          },
+          {
+            "score": 3,
+            "body": "ราคาเพียง 38$ ต่อวัน ? กับ qwen 3.6 โอ้พระเจ้า"
+          },
+          {
+            "score": 2,
+            "body": "I'll be happy to try it out if you send me $30,000.00 so I can buy the required H100."
+          },
+          {
+            "score": 1,
+            "body": "Pretty sure Ads need to be declared."
+          },
+          {
+            "score": 1,
+            "body": "Why are you paying for anything local?"
+          }
+        ]
+      },
+      {
+        "subreddit": "LocalLLaMA",
+        "sort": "hot",
+        "title": "110 tok/s with 12GB VRAM on Qwen3.6 35B A3B and ik_llama.cpp",
+        "score": 272,
+        "comments": 92,
+        "created_utc": 1779361787.0,
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tjh7az/110_toks_with_12gb_vram_on_qwen36_35b_a3b_and_ik/",
+        "external_url": null,
+        "selftext": "Had been getting [great MTP performance](https://www.reddit.com/r/LocalLLaMA/comments/1t82zxv/80_toksec_and_128k_context_on_12gb_vram_with/) with [llama.cpp](https://github.com/ggml-org/llama.cpp) on my RTX 4070 Super 12GB, until they actually merged the MTP PR. Then, performance tanked and was barely above non-MTP. So, I decided to try out [ik\\_llama.cpp](https://github.com/ikawrakow/ik_llama.cpp) since it also supports MTP and is apparently better optimized for CPU offloading. I did not expect such a huge speed boost! # Before moving on with the benchmark results, here's my PC specs: OS: CachyOS with Plasma (X11) - HIGHLY recommended GPU: RTX 4070 Super 12GB CPU: AMD Ryzen 7 9700X RAM: 48G",
+        "post_id": "1tjh7az",
+        "top_comments": [
+          {
+            "score": 50,
+            "body": "little \"trick\" for who uses cachyos (kde wayland) and doesn't have a secondary gpu/igpu: create a custom cpu only sddm session. ```fish sudo nano /usr/share/wayland-sessions/plasma-cpu.desktop ``` ```config [Desktop Entry] Name=KDE Plasma (CPU) Comment=KDE Plasma on Wayland with software rendering Exec=env LIBGL_ALWAYS_SOFTWARE=1 GALLIUM_DRIVER=llvmpipe KWIN"
+          },
+          {
+            "score": 30,
+            "body": "Please include your llama.cpp full command as well. Also when did you try llama.cpp? Because couple of MTP related PRs got merged on llama.cpp side in last 24 hours."
+          },
+          {
+            "score": 24,
+            "body": "It looks like the speedup might come from the much higher acceptance rate with ik\\_llama.cpp. With ik\\_llama.cpp it's never below 0.790 and with llama.cpp it goes as low as 0.477. I wonder why that would be the case. Which settings were you using with llama.cpp?"
+          },
+          {
+            "score": 21,
+            "body": "It is a pity that @ikawrakow is no longer contributing with llama.cpp and we have this fragmentation. Hoping that one day this drama ends and huggingface him to bring his improvements to llama.cpp."
+          },
+          {
+            "score": 11,
+            "body": "I would recommend that you check out this post if you want to know more about this specific IQ4\\_XS quant, which has a similar accuracy to Unsloth's Q4\\_K\\_XL, but is 4GB smaller: [https://www.reddit.com/r/LocalLLaMA/comments/1tipihx/qwen\\_36\\_35b\\_gguf\\_ntp\\_vs\\_mtp\\_quantization\\_results/](https://www.reddit.com/r/LocalLLaMA/comments/1tipihx/qwen_36_35b_gg"
+          },
+          {
+            "score": 10,
+            "body": "IQ4_XS seems to be the lowest memory Q4 quant. How is the performance in terms of the intelligence? And also what is the final spread of vram/ram usage?"
+          },
+          {
+            "score": 9,
+            "body": "I just updated the original post to reflect the changes you asked for. The benchmark was just run with the most up-to-date llama.cpp build (I always build from source before running my benchmarks)."
+          },
+          {
+            "score": 1,
+            "body": "Your post is getting popular and we just featured it on our Discord! [Come check it out!](https://discord.gg/PgFhZ8cnWW) You've also been given a special flair for your contribution. We appreciate your post! *I am a bot and this action was performed automatically.*"
+          }
+        ]
+      },
+      {
+        "subreddit": "LocalLLaMA",
+        "sort": "top",
+        "title": "Same task in github-copilot, pi, claude-code, and opencode with Qwen3.6 27B",
+        "score": 125,
+        "comments": 96,
+        "created_utc": 1779343356.0,
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tjbhjk/same_task_in_githubcopilot_pi_claudecode_and/",
+        "external_url": "https://www.reddit.com/gallery/1tjbhjk",
+        "selftext": "I wanted to know how much of a coding agent's performance came from the model and how much came from the harness, so I vibed a setup to allow me to test multiple agentic harnesses/model combinations on the same task. ALl the images above all come from the same model, but with a different harness. Still working on getting automated/metric evaluation instead of subjective opinion. Things I noticed not present in the images: 1. Opencode can search the internet by default. This made it's results way better on some tasks. Eg the 3d printer explainer page it listed specific filament temperatures etc. 2. On webdev, opencode delivered really good results. You can't interact with them from here, but",
+        "post_id": "1tjbhjk",
+        "top_comments": [
+          {
+            "score": 187,
+            "body": "Try multiple times, it can be just a normal variancy"
+          },
+          {
+            "score": 57,
+            "body": "\\^\\^\\^ This is the only right answer! There is so much randomness involved that one can not judge by single-shot picture! At least 10 attempts should be made and shown for each harness, then we can judge..."
+          },
+          {
+            "score": 20,
+            "body": "what about the token used? with local models in my tests, Pi is very fast and use less tokens because of the minimal system prompt"
+          },
+          {
+            "score": 14,
+            "body": "Have you seen <https://github.com/cartazio/benchkit_for_harnesses>? It also try to assess the the effect of the harness/coding agent."
+          },
+          {
+            "score": 12,
+            "body": "\"hey look at my one shot it's wonderful/terrible\""
+          },
+          {
+            "score": 12,
+            "body": "OpenCode's is having the time of his life"
+          },
+          {
+            "score": 8,
+            "body": "Тhe Harnes makes an insane difference I have my Qwen3.6-35 connected in Copilot and Claude Code and the difference in output between the 2 is night and day. I hate with a blind passion any cli written on nodejs especially after the GitHub incident but Claude Code is not to be denied. Sadly it's probably the most token heavy Harnes on the planet. Who the fuck"
+          },
+          {
+            "score": 7,
+            "body": "so they all were using same LLM under the hood right?"
+          }
+        ]
+      },
+      {
+        "subreddit": "Ollama",
+        "sort": "hot",
+        "title": "RTX vs Apple Silicon",
+        "score": 0,
+        "comments": 12,
+        "created_utc": 1779351895.0,
+        "url": "https://www.reddit.com/r/ollama/comments/1tje3hb/rtx_vs_apple_silicon/",
+        "external_url": null,
+        "selftext": "Local AI hardware is basically a religious war with better benchmarks. NVIDIA RTX GPUs are the sports cars: fast VRAM, CUDA, absurd token throughput if the model fits. Apple Silicon is the weirdly elegant camper van: unified memory means you can often fit much larger models locally, especially on something like an M4 Max with up to 128GB RAM. So the tradeoff is simple: RTX = faster kitchen Mac = bigger fridge I run Qwen 3.6 27B locally on an RTX 5090 inside Thoth because 32GB VRAM is the sweet spot for my daily driver setup: fast, private, and no API round trips. But Thoth is designed local-first, not NVIDIA-first. Ollama, llama.cpp, OpenAI-compatible local endpoints, the point is that your",
+        "post_id": "1tje3hb",
+        "top_comments": [
+          {
+            "score": 8,
+            "body": "RTX = raw horsepower, Apple Silicon = memory efficiency."
+          },
+          {
+            "score": 3,
+            "body": "Mac is never an option apart from proof of concept. It fails due to thermals (and bandwidth) in a production environment. This in particular in the macbook format with abysmal cooling. To try and play around with, sure, for 24/7 code work, save your money."
+          },
+          {
+            "score": 2,
+            "body": "Hail mighty Thoth!"
+          },
+          {
+            "score": 2,
+            "body": "Haha.. thanks"
+          },
+          {
+            "score": 2,
+            "body": "Where goes the Strix Halo ? The distant poor cousin ? :)"
+          },
+          {
+            "score": 1,
+            "body": "Exactly!"
+          },
+          {
+            "score": 1,
+            "body": "I do tend to agree with you a bit. In my testing I have found it painfully slow for any real work. I haven't tested the M4 Max or anything."
+          },
+          {
+            "score": 1,
+            "body": "Haha not the poor cousin, more like the interesting cousin who turned up late with a weirdly compelling party trick. I’d probably put Strix Halo closer to the Apple Silicon side of the conversation than the RTX side: unified memory, laptop/workstation form factor, and surprisingly useful for local models if you care about capacity and convenience. But for ra"
+          }
+        ]
+      },
+      {
+        "subreddit": "LocalLLaMA",
+        "sort": "new",
+        "title": "Built a personal Jarvis-style AI using MCP and open models",
+        "score": 0,
+        "comments": 1,
+        "created_utc": 1779398216.0,
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tjy7q0/built_a_personal_jarvisstyle_ai_using_mcp_and/",
+        "external_url": "https://www.reddit.com/gallery/1tjy7q0",
+        "selftext": "Still heavily work in progress, but I finally built a personal Jarvis-style AI using MCP and open models. It currently supports memory, autonomous file editing, visible tool-call tracing, confirmation before dangerous actions, persistent context, and hybrid local/cloud inference. I’m mainly using Qwen3-Coder 480B cloud for reasoning/tool usage because smaller local models hallucinate too much with MCP workflows. Right now I’m working on Windows UI automation, dynamic skills, and AI-generated skill creation so the assistant can expand its own capabilities over time. The overall goal is to create a practical AI operator that can actually interact with and automate my computer instead of just b",
+        "post_id": "1tjy7q0",
+        "top_comments": [
+          {
+            "score": 0,
+            "body": "No they don’t hallucinate your just not using them the way they were trained. Your better at 9b and took running than highe and fighting synthetic training. Hallucinations are not incorrect answers they are ‘42’"
+          }
+        ]
+      },
+      {
+        "subreddit": "artificial",
+        "sort": "hot",
+        "title": "An OpenAI model has disproved a central conjecture in discrete geometry",
+        "score": 458,
+        "comments": 213,
+        "created_utc": 1779307990.0,
+        "url": "https://www.reddit.com/r/artificial/comments/1tixhbv/an_openai_model_has_disproved_a_central/",
+        "external_url": "https://openai.com/index/model-disproves-discrete-geometry-conjecture/",
+        "selftext": "",
+        "post_id": "1tixhbv",
+        "top_comments": [
+          {
+            "score": 302,
+            "body": "This appears to be the real deal - it's not some random Erdos Problem that went unsolved because no one cared enough to put in the effort. The Planar Unit Distance problem is pretty foundational for discrete geometry, and it is very very very unlikely that this solution was in the training data (it would certainly have been recognized by mathematicians befor"
+          },
+          {
+            "score": 79,
+            "body": "Well, if you think about it right mathematics at the end of the day is just a highly structured language. So is coding. That's why it's good at it. I think this may get significantly better as well because we'll be able to train AI's that can think about patterns in a higher number of dimensions than us where our problems get bogged down."
+          },
+          {
+            "score": 43,
+            "body": "How long until the “Rs in strawberry” crowd shows up?"
+          },
+          {
+            "score": 43,
+            "body": "It's the duality of AI models, though. They regularly solve incredibly complex problems and fail at trivial problems. This is still true and strawberry Rs is a perfect illustration."
+          },
+          {
+            "score": 34,
+            "body": "why is it sad? why do we need to feel special about something just to have a purpose in our lives?"
+          },
+          {
+            "score": 30,
+            "body": "For some reason this makes me kind of sad… if we aren’t even needed to do complex reasoning like that, what’s left? Are we doomed to never discover anything ourselves ever again in just a few years?"
+          },
+          {
+            "score": 23,
+            "body": "On the other hand, what if it’s amazing? What if it means we can ask bigger questions? Solve more problems? Create better health outcomes? Create better materials? Create better energy sources? Faster, cleaner, more widely available, more cost-effective, etc? Nothing is guaranteed, but this is worth a read, to focus on positive outcomes, rather than the scar"
+          },
+          {
+            "score": 10,
+            "body": "We're all just stochastic parrots. It's just a question of how good our conditional probabilities are."
+          }
+        ]
+      },
+      {
+        "subreddit": "ClaudeCode",
+        "sort": "hot",
+        "title": "what's your \"nobody talks about this\" tip for Claude Code?",
+        "score": 147,
+        "comments": 150,
+        "created_utc": 1779370980.0,
+        "url": "https://www.reddit.com/r/ClaudeCode/comments/1tjkyea/whats_your_nobody_talks_about_this_tip_for_claude/",
+        "external_url": null,
+        "selftext": "When response times slow during US business hours, switching mid-session with `/model claude-opus-4-6[1m]` brings them back down. The gap between 4.6 and 4.7 is negligible for most coding work; some people on this sub actually prefer 4.6, so there's barely a downside. What else does this sub know that doesn't show up in the official docs? Drop whatever you've got.",
+        "post_id": "1tjkyea",
+        "top_comments": [
+          {
+            "score": 112,
+            "body": "You can create your cross-company internal Claude Code marketplace and plugins as a git repository. Then all your devs and non-devs can use and contribute to the skills, agents, and hooks that everyone are using. When defining the custom marketplace, mark its source as git, and mark the marketplace under /plugin as auto-updating. Also, whenever someone patch"
+          },
+          {
+            "score": 80,
+            "body": "mine: hit # at the start of a message and claude code writes it straight into CLAUDE.md for you, no leaving the session to go edit the file. so the second it does something dumb you just type # always run the tests before claiming its done, and it sticks for every future turn. i barely hand-edit CLAUDE.md anymore, i just correct it in the moment with # and t"
+          },
+          {
+            "score": 55,
+            "body": "U can render markdown files in vscode to make them more readable. Ctrl shift v. U can also ask Claude to make a diagram for you in mermaid and you can use the mermaid extension in vscode to see the flow or ER diagram in your markdown files."
+          },
+          {
+            "score": 38,
+            "body": "Claude Code is the finish line, not the road. Plan your project, write epics, users stories and tasks. Bring one task at a time in CC for implementation. New task, new session, ALWAYS. Source: I work in a huge and complex enterprise codebase. I rarely need more than 100k tokens for any given task. ETA: use Opus for planning only (with low or medium thinking)"
+          },
+          {
+            "score": 28,
+            "body": "So... like a git commit?"
+          },
+          {
+            "score": 25,
+            "body": "spawn_task"
+          },
+          {
+            "score": 18,
+            "body": "never let Claude do anything in memory, only. always write it's plan, it's progress, and what it's doing, to local files somewhere Claude crashes like anything else. and if you don't have your current working context written down, you'll have to rebuild everything from scratch. having everything written down means Claude can easily pick up where it left off,"
+          },
+          {
+            "score": 15,
+            "body": "My boring one: make Claude write a tiny receipt before you let it keep going. For anything bigger than a quick patch, I ask for: what changed, files touched, command/test run, what is still broken, and the exact next step. It feels slow for about 30 seconds, then saves you when the session gets long or the model starts acting like it remembers stuff it only"
+          }
+        ]
+      },
+      {
+        "subreddit": "ClaudeAI",
+        "sort": "hot",
+        "title": "from claude code to unicorn in 7 days",
+        "score": 1092,
+        "comments": 70,
+        "created_utc": 1779342618.0,
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1tjb8x9/from_claude_code_to_unicorn_in_7_days/",
+        "external_url": "https://i.redd.it/l35ui6w4jf2h1.jpeg",
+        "selftext": "day 1: opened claude code for the first time. day 2: watched three youtube tutorials on \"how to think like a founder.\" day 3: fully functional saas. day 4: needed a landing page so piped it through runable ai. day 5: linkedin post saying \"we're building something special.\" day 6: YC application. day 7: height calculator. the vision was always there.",
+        "post_id": "1tjb8x9",
+        "top_comments": [
+          {
+            "score": 101,
+            "body": "day 7: unicorn. day 8: claude hits rate limit"
+          },
+          {
+            "score": 28,
+            "body": "OP: \"I vibe coded a new identity provider\" Interviewer: \"This is just two dialogs? How is it an identity provider?\" OP: \"It provides the identity X = X\""
+          },
+          {
+            "score": 18,
+            "body": "Ground breaking. I can’t wait for the age and weight calculator."
+          },
+          {
+            "score": 7,
+            "body": "Yeahh once the app hits 1 million traffic would pitch VC and get funding for that💀💀"
+          },
+          {
+            "score": 6,
+            "body": "😂😂😂 fs fs"
+          },
+          {
+            "score": 5,
+            "body": "when that app gets the feature for cm to inches its going to take off, fr fr."
+          },
+          {
+            "score": 4,
+            "body": "How you plan to monetize and any exit strategy? Oh man and you definately need a logo - that will take the most of the time."
+          },
+          {
+            "score": 1,
+            "body": "**TL;DR of the discussion generated automatically after 40 comments.** **The thread has spoken: OP is a visionary, and this height calculator is the unicorn we've been waiting for.** Everyone's playing along with the shitpost, with the top comment wisely pointing out that the real challenge will be Claude's rate limit on Day 8. The rest of you are basically"
+          }
+        ]
+      }
+    ]
+  }
+]
