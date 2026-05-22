@@ -1,6 +1,6 @@
 {
-  "collected_at_ist": "2026-05-22 09:29 IST",
-  "runtime_sec": 10.99,
+  "collected_at_ist": "2026-05-22 09:30 IST",
+  "runtime_sec": 23.3,
   "auth_mode": "anonymous_with_fallbacks",
   "source_count_ok": 16,
   "sources_ok": [
@@ -27,7 +27,7 @@
       "subreddit": "ChatGPT",
       "sort": "hot",
       "title": "this tweet aged in the funniest possible way",
-      "score": 4419,
+      "score": 4429,
       "comments": 93,
       "created_utc": 1779372648.0,
       "url": "https://www.reddit.com/r/ChatGPT/comments/1tjlpz6/this_tweet_aged_in_the_funniest_possible_way/",
@@ -36,11 +36,11 @@
       "post_id": "1tjlpz6",
       "top_comments": [
         {
-          "score": 453,
+          "score": 456,
           "body": "2020: ‘AI will replace programmers.’ 2026: programmers spending 4 hours trying to decode what ‘cleaner but more premium’ means."
         },
         {
-          "score": 140,
+          "score": 139,
           "body": "Enlightenment in product design is realizing that users don't even know what they want. They ask for things to solve problems, but what they ask for is not what they really want. They want a solution to their problem."
         },
         {
@@ -48,19 +48,19 @@
           "body": "\"Make it POP!\""
         },
         {
-          "score": 56,
+          "score": 58,
           "body": "Large groups of people are GREAT at identifying what’s wrong with almost anything, and TERRIBLE at identifying how to fix it"
         },
         {
-          "score": 51,
+          "score": 49,
           "body": "Everyone thinks they're good communicators, so it's the AI's fault for not understanding me"
         },
         {
-          "score": 44,
+          "score": 43,
           "body": "People will also realize quickly as they fork over thousands in more tokens to get it to look the way they want, that multiple attempts will cost more money. Because I don't care what job, but we've all had customers say, \"I'm paying you for the final project, not the dozen drafts you did I didn't like\""
         },
         {
-          "score": 20,
+          "score": 18,
           "body": "More like helping them to find out what they want"
         },
         {
@@ -73,7 +73,7 @@
       "subreddit": "ChatGPT",
       "sort": "hot",
       "title": "Coders in 2030",
-      "score": 2775,
+      "score": 2779,
       "comments": 120,
       "created_utc": 1779365235.0,
       "url": "https://www.reddit.com/r/ChatGPT/comments/1tjihlc/coders_in_2030/",
@@ -82,11 +82,11 @@
       "post_id": "1tjihlc",
       "top_comments": [
         {
-          "score": 585,
+          "score": 587,
           "body": "I lost it when he closed his eyes, really had to focus on the brain to pull that answer out."
         },
         {
-          "score": 202,
+          "score": 205,
           "body": "this guy is honestly the best fking producer"
         },
         {
@@ -98,15 +98,15 @@
           "body": "![gif](giphy|l3fZFvp94ljepXoPe)"
         },
         {
-          "score": 62,
+          "score": 63,
           "body": "What do I get paid for? Knowing how to speak to the damn AI bots, that’s what. At times that might be harder than coding itself."
         },
         {
-          "score": 58,
+          "score": 57,
           "body": "Anybody know who he is?"
         },
         {
-          "score": 51,
+          "score": 49,
           "body": "Rick Rubin ladies and gentlemen"
         },
         {
@@ -119,53 +119,20 @@
       "subreddit": "LocalLLaMA",
       "sort": "hot",
       "title": "Heretic has been served a legal notice by Meta, Inc.",
-      "score": 1629,
+      "score": 1635,
       "comments": 247,
       "created_utc": 1779375044.0,
       "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tjmvx6/heretic_has_been_served_a_legal_notice_by_meta_inc/",
       "external_url": null,
       "selftext": "To Whomsoever it May Concern, The individual behind the Heretic Free Software Project (henceforth called \"Heretic\", notwithstanding unrelated entities of the same name) has been served a notice by a legal services provider representing Meta Platforms, Inc. (henceforth called \"Meta\"), via the digital communications medium variously known as Internet Mail, Electronic Mail, or simply \"email\". The Heretic Project conducts its affairs in full compliance with applicable laws, regulations, rules, guidelines, opinions, and hunches. Following the commendable example set by the renowned heretic Galileo Galilei in 1616, we are **recanting** the relevant materials, namely derivatives of Meta's \"Llama\" A",
       "post_id": "1tjmvx6",
-      "top_comments": [
-        {
-          "score": 528,
-          "body": "I love the slightly sassy \"168\" models added. You guys are amazing."
-        },
-        {
-          "score": 483,
-          "body": "same meta that torrented all books to train these models?"
-        },
-        {
-          "score": 258,
-          "body": "Bunch of wanker lawyers doing the stupid lawyer shit again just because they can do it"
-        },
-        {
-          "score": 248,
-          "body": "> The Llama model family ranks among the 200 best language models available today, trailing only 168 other models from 23 competitors on the LM Arena leaderboard Wow, sick burn"
-        },
-        {
-          "score": 167,
-          "body": "oh that's nothing, that is not even the tip of the proverbial iceberg, nothing in comparison to the unethical things Facebook has done in its history and keeps doing."
-        },
-        {
-          "score": 156,
-          "body": "Holy fuck.. that's a big L for meta. They haven't even released a model in ages and they care about the name?"
-        },
-        {
-          "score": 132,
-          "body": "When was the last time meta released anything noteworthy?"
-        },
-        {
-          "score": 1,
-          "body": "Your post is getting popular and we just featured it on our Discord! [Come check it out!](https://discord.gg/PgFhZ8cnWW) You've also been given a special flair for your contribution. We appreciate your post! *I am a bot and this action was performed automatically.*"
-        }
-      ]
+      "top_comments": []
     },
     {
       "subreddit": "ChatGPT",
       "sort": "hot",
       "title": "While we're at it: the ideal MOM BODY according to ChatGPT",
-      "score": 977,
+      "score": 981,
       "comments": 489,
       "created_utc": 1779363574.0,
       "url": "https://www.reddit.com/r/ChatGPT/comments/1tjhup2/while_were_at_it_the_ideal_mom_body_according_to/",
@@ -174,31 +141,31 @@
       "post_id": "1tjhup2",
       "top_comments": [
         {
-          "score": 920,
+          "score": 927,
           "body": "I’m not sure why people have a problem with this post. This absolutely IS the ideal. You are SUPPOSED to be healthy and have baseline fitness. Of course aesthetically having bone structure and skin like this is not realistic, but the points about musculature and body function are spot on. Our culture is so twisted - we pretend like being out of shape and unh"
         },
         {
-          "score": 703,
+          "score": 700,
           "body": "This is also how I see David's wife"
         },
         {
-          "score": 665,
+          "score": 664,
           "body": "This is how I SEE my wife’s body"
         },
         {
-          "score": 342,
+          "score": 343,
           "body": "I'm gonna get scammed so hard in like 15 years time. https://preview.redd.it/fh73awzq3j2h1.jpeg?width=428&format=pjpg&auto=webp&s=8e01bcb2422bef7574265d820bc0e96d44e8b65f"
         },
         {
-          "score": 223,
+          "score": 225,
           "body": "Fine ass momma."
         },
         {
-          "score": 177,
+          "score": 175,
           "body": "It's just a joke escalation from the original post of \"ideal woman's body\" to another post with \"ideal dad body\" to this. The dad body is obviously out of shape and the mom body on this post looks identical to the ideal female body. Anyone that's \"upset\" is upset about the double standard laid out in this series of posts."
         },
         {
-          "score": 174,
+          "score": 175,
           "body": "https://preview.redd.it/nsstdr8ezi2h1.jpeg?width=1122&format=pjpg&auto=webp&s=e45749a626a3f8d553bfc15b6f3f78e0cfcd93e1"
         },
         {
@@ -211,7 +178,7 @@
       "subreddit": "singularity",
       "sort": "hot",
       "title": "Elon Musk's pay package reveals what SpaceX actually is: a $1 trillion monster built to colonize Mars",
-      "score": 787,
+      "score": 785,
       "comments": 409,
       "created_utc": 1779372384.0,
       "url": "https://www.reddit.com/r/singularity/comments/1tjllk7/elon_musks_pay_package_reveals_what_spacex/",
@@ -220,15 +187,15 @@
       "post_id": "1tjllk7",
       "top_comments": [
         {
-          "score": 414,
+          "score": 420,
           "body": "He’s never going to see that money before he dies."
         },
         {
-          "score": 224,
+          "score": 223,
           "body": "I don't love Elon Musk but \"aha, big reveal: this is really about Mars!\" is hilarious to anyone who pays any attention to what he has been saying he wants to do since forever."
         },
         {
-          "score": 160,
+          "score": 156,
           "body": "It's getting eyeballs which is all it's intended to do."
         },
         {
@@ -240,11 +207,11 @@
           "body": "Can we just send him there? Please?"
         },
         {
-          "score": 46,
+          "score": 48,
           "body": "Well yes that's SpaceXs mission since day one lol"
         },
         {
-          "score": 37,
+          "score": 39,
           "body": "I will concede he's the most intelligent, biggest dicked man to ever live while also giving him his 1 trillion dollar package if he moves to mars. All in favour?"
         },
         {
@@ -257,7 +224,7 @@
       "subreddit": "ClaudeAI",
       "sort": "hot",
       "title": "Anthropic officially launched 13+ FREE AI courses with certificates (Including Agentic AI and Claude Code!)",
-      "score": 1429,
+      "score": 1441,
       "comments": 78,
       "created_utc": 1779380169.0,
       "url": "https://www.reddit.com/r/ClaudeAI/comments/1tjpfh8/anthropic_officially_launched_13_free_ai_courses/",
@@ -266,11 +233,11 @@
       "post_id": "1tjpfh8",
       "top_comments": [
         {
-          "score": 157,
+          "score": 156,
           "body": "To anyone skeptical like me, these are legit courses provided by Anthropic. The skilljar link comes from anthropic.com/learn"
         },
         {
-          "score": 105,
+          "score": 107,
           "body": "finally an anthropic product i can actually afford"
         },
         {
@@ -278,19 +245,19 @@
           "body": "I've taken 10/15 so far, and highly recommend them. Edit: the MCP and MCP Advanced Topics courses are definitely juice that's worth the squeeze, particularly learning STDIO and StreamableHTTP transport protocols."
         },
         {
-          "score": 55,
+          "score": 53,
           "body": "[https://anthropic.skilljar.com/](https://anthropic.skilljar.com/)"
         },
         {
-          "score": 49,
+          "score": 48,
           "body": "These aren't new. Lol. I took several of them last summer XD"
         },
         {
-          "score": 20,
+          "score": 19,
           "body": "Thank you for checking, I almost didn’t take this seriously."
         },
         {
-          "score": 15,
+          "score": 14,
           "body": "piggybacking on the top comment to point out that this gets posted every month, and this one is a wall of generated text by an account that's on here to farm karma and push their own services (look at OP's comment history)"
         },
         {
@@ -303,7 +270,7 @@
       "subreddit": "singularity",
       "sort": "hot",
       "title": "Google's latest creation: Gemini 3.5 Flash vs all",
-      "score": 693,
+      "score": 694,
       "comments": 212,
       "created_utc": 1779377911.0,
       "url": "https://www.reddit.com/r/singularity/comments/1tjoarz/googles_latest_creation_gemini_35_flash_vs_all/",
@@ -312,35 +279,35 @@
       "post_id": "1tjoarz",
       "top_comments": [
         {
-          "score": 171,
+          "score": 170,
           "body": "If you switch it to Extended thinking it gets it right. Seems that Thinking level \"Standard\" just means it doesn't think at all."
         },
         {
-          "score": 166,
+          "score": 165,
           "body": "Gemini ⅗ ?"
         },
         {
-          "score": 131,
+          "score": 132,
           "body": "just like me"
         },
         {
-          "score": 63,
+          "score": 62,
           "body": "https://preview.redd.it/whzg30z8hi2h1.png?width=1557&format=png&auto=webp&s=192481783e75626c47648f50954c4c8fe8fb60a7 I've got the same response. But remember the models on the Gemini apps are extremely nerfed and that's not new. You try to do that in AI studio and you aren't getting that mistake if you don't put the thinking level to \"minimum\" which is what"
         },
         {
-          "score": 52,
+          "score": 54,
           "body": "Gemini needs better tool calling logic because ChatGPT just farms this out to python."
         },
         {
-          "score": 50,
+          "score": 48,
           "body": "Gemini .35"
         },
         {
-          "score": 45,
+          "score": 40,
           "body": "I feel personally attacked"
         },
         {
-          "score": 31,
+          "score": 32,
           "body": "I gave flash 3.5 a 37 entry bug report made by claude on my codebase. It flew through the task in like 15 minutes and proclaimed itself a genius doing flawless work. I asked claude to review and it turned out out of 37 entries it only tackled 7, 3 of which were done incorrectly. Great job Google, see you again in the autumn"
         }
       ]
@@ -384,11 +351,11 @@
           "body": "Anyone gonna tell him?"
         },
         {
-          "score": 19,
+          "score": 17,
           "body": "Isn't this around $1000/month?"
         },
         {
-          "score": 10,
+          "score": 11,
           "body": "You hopefully dont really pay 1100usd for qwen3.6 35b a month?"
         },
         {
@@ -417,7 +384,7 @@
       "subreddit": "LocalLLaMA",
       "sort": "hot",
       "title": "110 tok/s with 12GB VRAM on Qwen3.6 35B A3B and ik_llama.cpp",
-      "score": 272,
+      "score": 274,
       "comments": 92,
       "created_utc": 1779361787.0,
       "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tjh7az/110_toks_with_12gb_vram_on_qwen36_35b_a3b_and_ik/",
@@ -426,7 +393,7 @@
       "post_id": "1tjh7az",
       "top_comments": [
         {
-          "score": 50,
+          "score": 49,
           "body": "little \"trick\" for who uses cachyos (kde wayland) and doesn't have a secondary gpu/igpu: create a custom cpu only sddm session. ```fish sudo nano /usr/share/wayland-sessions/plasma-cpu.desktop ``` ```config [Desktop Entry] Name=KDE Plasma (CPU) Comment=KDE Plasma on Wayland with software rendering Exec=env LIBGL_ALWAYS_SOFTWARE=1 GALLIUM_DRIVER=llvmpipe KWIN"
         },
         {
@@ -434,11 +401,11 @@
           "body": "Please include your llama.cpp full command as well. Also when did you try llama.cpp? Because couple of MTP related PRs got merged on llama.cpp side in last 24 hours."
         },
         {
-          "score": 24,
+          "score": 25,
           "body": "It looks like the speedup might come from the much higher acceptance rate with ik\\_llama.cpp. With ik\\_llama.cpp it's never below 0.790 and with llama.cpp it goes as low as 0.477. I wonder why that would be the case. Which settings were you using with llama.cpp?"
         },
         {
-          "score": 21,
+          "score": 20,
           "body": "It is a pity that @ikawrakow is no longer contributing with llama.cpp and we have this fragmentation. Hoping that one day this drama ends and huggingface him to bring his improvements to llama.cpp."
         },
         {
@@ -472,7 +439,7 @@
       "post_id": "1tjbhjk",
       "top_comments": [
         {
-          "score": 187,
+          "score": 190,
           "body": "Try multiple times, it can be just a normal variancy"
         },
         {
@@ -480,27 +447,27 @@
           "body": "\\^\\^\\^ This is the only right answer! There is so much randomness involved that one can not judge by single-shot picture! At least 10 attempts should be made and shown for each harness, then we can judge..."
         },
         {
-          "score": 20,
+          "score": 21,
           "body": "what about the token used? with local models in my tests, Pi is very fast and use less tokens because of the minimal system prompt"
         },
         {
-          "score": 14,
+          "score": 15,
           "body": "Have you seen <https://github.com/cartazio/benchkit_for_harnesses>? It also try to assess the the effect of the harness/coding agent."
         },
         {
-          "score": 12,
+          "score": 11,
           "body": "\"hey look at my one shot it's wonderful/terrible\""
         },
         {
-          "score": 12,
+          "score": 10,
           "body": "OpenCode's is having the time of his life"
         },
         {
-          "score": 8,
+          "score": 9,
           "body": "Тhe Harnes makes an insane difference I have my Qwen3.6-35 connected in Copilot and Claude Code and the difference in output between the 2 is night and day. I hate with a blind passion any cli written on nodejs especially after the GitHub incident but Claude Code is not to be denied. Sadly it's probably the most token heavy Harnes on the planet. Who the fuck"
         },
         {
-          "score": 7,
+          "score": 6,
           "body": "so they all were using same LLM under the hood right?"
         }
       ]
@@ -518,12 +485,8 @@
       "post_id": "1tje3hb",
       "top_comments": [
         {
-          "score": 8,
+          "score": 7,
           "body": "RTX = raw horsepower, Apple Silicon = memory efficiency."
-        },
-        {
-          "score": 3,
-          "body": "Mac is never an option apart from proof of concept. It fails due to thermals (and bandwidth) in a production environment. This in particular in the macbook format with abysmal cooling. To try and play around with, sure, for 24/7 code work, save your money."
         },
         {
           "score": 2,
@@ -532,6 +495,10 @@
         {
           "score": 2,
           "body": "Haha.. thanks"
+        },
+        {
+          "score": 2,
+          "body": "Mac is never an option apart from proof of concept. It fails due to thermals (and bandwidth) in a production environment. This in particular in the macbook format with abysmal cooling. To try and play around with, sure, for 24/7 code work, save your money."
         },
         {
           "score": 2,
@@ -573,7 +540,7 @@
       "subreddit": "artificial",
       "sort": "hot",
       "title": "An OpenAI model has disproved a central conjecture in discrete geometry",
-      "score": 458,
+      "score": 463,
       "comments": 213,
       "created_utc": 1779307990.0,
       "url": "https://www.reddit.com/r/artificial/comments/1tixhbv/an_openai_model_has_disproved_a_central/",
@@ -582,27 +549,27 @@
       "post_id": "1tixhbv",
       "top_comments": [
         {
-          "score": 302,
+          "score": 297,
           "body": "This appears to be the real deal - it's not some random Erdos Problem that went unsolved because no one cared enough to put in the effort. The Planar Unit Distance problem is pretty foundational for discrete geometry, and it is very very very unlikely that this solution was in the training data (it would certainly have been recognized by mathematicians befor"
         },
         {
-          "score": 79,
+          "score": 82,
           "body": "Well, if you think about it right mathematics at the end of the day is just a highly structured language. So is coding. That's why it's good at it. I think this may get significantly better as well because we'll be able to train AI's that can think about patterns in a higher number of dimensions than us where our problems get bogged down."
         },
         {
-          "score": 43,
-          "body": "How long until the “Rs in strawberry” crowd shows up?"
+          "score": 44,
+          "body": "It's the duality of AI models, though. They regularly solve incredibly complex problems and fail at trivial problems. This is still true and strawberry Rs is a perfect illustration."
         },
         {
-          "score": 43,
-          "body": "It's the duality of AI models, though. They regularly solve incredibly complex problems and fail at trivial problems. This is still true and strawberry Rs is a perfect illustration."
+          "score": 40,
+          "body": "How long until the “Rs in strawberry” crowd shows up?"
         },
         {
           "score": 34,
           "body": "why is it sad? why do we need to feel special about something just to have a purpose in our lives?"
         },
         {
-          "score": 30,
+          "score": 25,
           "body": "For some reason this makes me kind of sad… if we aren’t even needed to do complex reasoning like that, what’s left? Are we doomed to never discover anything ourselves ever again in just a few years?"
         },
         {
@@ -619,7 +586,7 @@
       "subreddit": "ClaudeCode",
       "sort": "hot",
       "title": "what's your \"nobody talks about this\" tip for Claude Code?",
-      "score": 147,
+      "score": 142,
       "comments": 150,
       "created_utc": 1779370980.0,
       "url": "https://www.reddit.com/r/ClaudeCode/comments/1tjkyea/whats_your_nobody_talks_about_this_tip_for_claude/",
@@ -628,31 +595,31 @@
       "post_id": "1tjkyea",
       "top_comments": [
         {
-          "score": 112,
+          "score": 113,
           "body": "You can create your cross-company internal Claude Code marketplace and plugins as a git repository. Then all your devs and non-devs can use and contribute to the skills, agents, and hooks that everyone are using. When defining the custom marketplace, mark its source as git, and mark the marketplace under /plugin as auto-updating. Also, whenever someone patch"
         },
         {
-          "score": 80,
+          "score": 76,
           "body": "mine: hit # at the start of a message and claude code writes it straight into CLAUDE.md for you, no leaving the session to go edit the file. so the second it does something dumb you just type # always run the tests before claiming its done, and it sticks for every future turn. i barely hand-edit CLAUDE.md anymore, i just correct it in the moment with # and t"
         },
         {
-          "score": 55,
+          "score": 56,
           "body": "U can render markdown files in vscode to make them more readable. Ctrl shift v. U can also ask Claude to make a diagram for you in mermaid and you can use the mermaid extension in vscode to see the flow or ER diagram in your markdown files."
         },
         {
-          "score": 38,
+          "score": 35,
           "body": "Claude Code is the finish line, not the road. Plan your project, write epics, users stories and tasks. Bring one task at a time in CC for implementation. New task, new session, ALWAYS. Source: I work in a huge and complex enterprise codebase. I rarely need more than 100k tokens for any given task. ETA: use Opus for planning only (with low or medium thinking)"
         },
         {
-          "score": 28,
+          "score": 29,
           "body": "So... like a git commit?"
         },
         {
-          "score": 25,
+          "score": 24,
           "body": "spawn_task"
         },
         {
-          "score": 18,
+          "score": 20,
           "body": "never let Claude do anything in memory, only. always write it's plan, it's progress, and what it's doing, to local files somewhere Claude crashes like anything else. and if you don't have your current working context written down, you'll have to rebuild everything from scratch. having everything written down means Claude can easily pick up where it left off,"
         },
         {
@@ -665,7 +632,7 @@
       "subreddit": "ClaudeAI",
       "sort": "hot",
       "title": "from claude code to unicorn in 7 days",
-      "score": 1092,
+      "score": 1089,
       "comments": 70,
       "created_utc": 1779342618.0,
       "url": "https://www.reddit.com/r/ClaudeAI/comments/1tjb8x9/from_claude_code_to_unicorn_in_7_days/",
@@ -674,11 +641,11 @@
       "post_id": "1tjb8x9",
       "top_comments": [
         {
-          "score": 101,
+          "score": 100,
           "body": "day 7: unicorn. day 8: claude hits rate limit"
         },
         {
-          "score": 28,
+          "score": 29,
           "body": "OP: \"I vibe coded a new identity provider\" Interviewer: \"This is just two dialogs? How is it an identity provider?\" OP: \"It provides the identity X = X\""
         },
         {
@@ -686,7 +653,7 @@
           "body": "Ground breaking. I can’t wait for the age and weight calculator."
         },
         {
-          "score": 7,
+          "score": 8,
           "body": "Yeahh once the app hits 1 million traffic would pitch VC and get funding for that💀💀"
         },
         {
@@ -724,7 +691,7 @@
       "subreddit": "ArtificialInteligence",
       "sort": "hot",
       "title": "Meta just fired 7,800 employees and used their daily work to train AI",
-      "score": 647,
+      "score": 645,
       "comments": 163,
       "created_utc": 1779346849.0,
       "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1tjcl0t/meta_just_fired_7800_employees_and_used_their/",
@@ -737,7 +704,7 @@
       "subreddit": "OpenAI",
       "sort": "hot",
       "title": "Former Google CEO Eric Schmidt, Big Machine Records CEO Scott Borchetta & Tavistock VP Gloria Caulfield were all booed at commencement speeches, as AI backlash is now hitting campus stages🇺🇸",
-      "score": 479,
+      "score": 482,
       "comments": 128,
       "created_utc": 1779324586.0,
       "url": "https://www.reddit.com/r/OpenAI/comments/1tj4qqw/former_google_ceo_eric_schmidt_big_machine/",
@@ -750,7 +717,7 @@
       "subreddit": "OpenAI",
       "sort": "hot",
       "title": "OpenAI cofounder Karpathy joins Anthropic to teach Claude to improve itself without humans",
-      "score": 376,
+      "score": 374,
       "comments": 48,
       "created_utc": 1779378982.0,
       "url": "https://www.reddit.com/r/OpenAI/comments/1tjotur/openai_cofounder_karpathy_joins_anthropic_to/",
@@ -763,7 +730,7 @@
       "subreddit": "ClaudeCode",
       "sort": "hot",
       "title": "It just keeps getting better and better",
-      "score": 182,
+      "score": 178,
       "comments": 93,
       "created_utc": 1779343032.0,
       "url": "https://www.reddit.com/r/ClaudeCode/comments/1tjbdm4/it_just_keeps_getting_better_and_better/",
@@ -776,7 +743,7 @@
       "subreddit": "AI_Agents",
       "sort": "hot",
       "title": "How are people keeping OpenClaw/Hermes agents running 24/7 without blowing through their API budget?",
-      "score": 8,
+      "score": 9,
       "comments": 30,
       "created_utc": 1779385356.0,
       "url": "https://www.reddit.com/r/AI_Agents/comments/1tjs12x/how_are_people_keeping_openclawhermes_agents/",
@@ -789,7 +756,7 @@
       "subreddit": "LocalLLaMA",
       "sort": "hot",
       "title": "Waiting for Qwen 3.7 open weight... The new King has arrived...",
-      "score": 361,
+      "score": 360,
       "comments": 110,
       "created_utc": 1779393381.0,
       "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tjvz6l/waiting_for_qwen_37_open_weight_the_new_king_has/",
@@ -815,7 +782,7 @@
       "subreddit": "LocalLLaMA",
       "sort": "top",
       "title": "Tencent Hy 30B/7B/1.8B",
-      "score": 79,
+      "score": 78,
       "comments": 25,
       "created_utc": 1779365022.0,
       "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tjien7/tencent_hy_30b7b18b/",
@@ -838,19 +805,6 @@
       "top_comments": []
     },
     {
-      "subreddit": "LocalLLaMA",
-      "sort": "top",
-      "title": "Qwen3.6 27B and llama.cpp appreciation post",
-      "score": 129,
-      "comments": 74,
-      "created_utc": 1779343402.0,
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tjbi24/qwen36_27b_and_llamacpp_appreciation_post/",
-      "external_url": null,
-      "selftext": "To preface, here's my config: llama-server \\ --host 0.0.0.0 \\ --port 1235 \\ --models-preset %h/Software/models.ini \\ --models-max 1 \\ --sleep-idle-seconds 3600 \\ --timeout 3600 \\ --parallel 1 \\ --device ROCm0,ROCm1 [*] flash-attn = on jinja = true fit = true ctxcp = 5 offline = true mmproj-offload = false mmap = false ; ... many other models here ... [tp-go-brrr-WORK-CODE] hf = unsloth/Qwen3.6-27B-MTP-GGUF:UD-Q5_K_XL ctx-size = 131072 temp = 0.6 top-p = 0.95 top-k = 20 presence-penalty = 0.0 min-p = 0.00 fitt = 1024,1024,0 spec-type = draft-mtp spec-draft-n-max = 2 chat-template-kwargs = {\"preserve_thinking\": true} sm = tensor And it's been a blast with a minimal Pi config. I've been running",
-      "post_id": "1tjbi24",
-      "top_comments": []
-    },
-    {
       "subreddit": "AI_Agents",
       "sort": "new",
       "title": "What nobody's measuring about dense MoE in production tool calling agents",
@@ -865,9 +819,22 @@
     },
     {
       "subreddit": "LocalLLaMA",
+      "sort": "top",
+      "title": "Qwen3.6 27B and llama.cpp appreciation post",
+      "score": 127,
+      "comments": 74,
+      "created_utc": 1779343402.0,
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tjbi24/qwen36_27b_and_llamacpp_appreciation_post/",
+      "external_url": null,
+      "selftext": "To preface, here's my config: llama-server \\ --host 0.0.0.0 \\ --port 1235 \\ --models-preset %h/Software/models.ini \\ --models-max 1 \\ --sleep-idle-seconds 3600 \\ --timeout 3600 \\ --parallel 1 \\ --device ROCm0,ROCm1 [*] flash-attn = on jinja = true fit = true ctxcp = 5 offline = true mmproj-offload = false mmap = false ; ... many other models here ... [tp-go-brrr-WORK-CODE] hf = unsloth/Qwen3.6-27B-MTP-GGUF:UD-Q5_K_XL ctx-size = 131072 temp = 0.6 top-p = 0.95 top-k = 20 presence-penalty = 0.0 min-p = 0.00 fitt = 1024,1024,0 spec-type = draft-mtp spec-draft-n-max = 2 chat-template-kwargs = {\"preserve_thinking\": true} sm = tensor And it's been a blast with a minimal Pi config. I've been running",
+      "post_id": "1tjbi24",
+      "top_comments": []
+    },
+    {
+      "subreddit": "LocalLLaMA",
       "sort": "hot",
       "title": "Latest b9274 Addresses MTP VRAM leak",
-      "score": 52,
+      "score": 54,
       "comments": 17,
       "created_utc": 1779403385.0,
       "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tk0grd/latest_b9274_addresses_mtp_vram_leak/",
@@ -880,8 +847,8 @@
       "subreddit": "LocalLLaMA",
       "sort": "hot",
       "title": "In theory, if I have $20k-ish to spend on hardware what would actually get me closest to local coding agent that would allow me to go totally off the social grid?",
-      "score": 24,
-      "comments": 55,
+      "score": 25,
+      "comments": 56,
       "created_utc": 1779409236.0,
       "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tk2s09/in_theory_if_i_have_20kish_to_spend_on_hardware/",
       "external_url": null,
@@ -893,7 +860,7 @@
       "subreddit": "artificial",
       "sort": "top",
       "title": "I built a zero-code visual client to test remote MCP servers instantly (Tested with Cloudflare’s free MCP).",
-      "score": 5,
+      "score": 6,
       "comments": 5,
       "created_utc": 1779381263.0,
       "url": "https://www.reddit.com/r/artificial/comments/1tjpywq/i_built_a_zerocode_visual_client_to_test_remote/",
@@ -903,29 +870,29 @@
       "top_comments": []
     },
     {
-      "subreddit": "AI_Agents",
-      "sort": "hot",
-      "title": "I build AI agents for businesses, here’s what actually breaks first when they run 24/7",
-      "score": 12,
-      "comments": 20,
-      "created_utc": 1779403966.0,
-      "url": "https://www.reddit.com/r/AI_Agents/comments/1tk0p4o/i_build_ai_agents_for_businesses_heres_what/",
-      "external_url": null,
-      "selftext": "A lot of people assume the first thing that breaks in production is the model. Honestly, it usually isn't. I work on AI Agents and AI Automation systems for businesses, and the first failures are usually much less exciting: **1. The handoffs break** Not the reasoning. The transitions. An agent qualifies a lead, but the CRM Automation step fails. A Voice AI assistant books an appointment, but the calendar field format is wrong. A support agent resolves the conversation, but the ticket status never updates. So now the agent *looks* like it worked, but the workflow didn't actually finish. **2. Source data gets messy fast** Agents are only as reliable as the business context they're grounded on.",
-      "post_id": "1tk0p4o",
-      "top_comments": []
-    },
-    {
       "subreddit": "LocalLLaMA",
       "sort": "hot",
       "title": "Qwen3.6 35Ba3 has changed my workflows and even how I use my computer",
-      "score": 190,
+      "score": 191,
       "comments": 45,
       "created_utc": 1779395033.0,
       "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tjwrp7/qwen36_35ba3_has_changed_my_workflows_and_even/",
       "external_url": null,
       "selftext": "My workflow has changed basically to ask Codex to do certain tasks and then document how to do them (including errors it found on its way) into a skill. I feed that skill to pi, and suddenly my qwen3.6 gets that hard stuff done: \\- devops on a VPS \\- using docling to create epubs from old PDFs \\- using playwright to test stuff \\- Doing code tickets And the list goes on. What also has changed for me is the way I use the computer. Suddenly, I talk to the OS with natural language: \"pi pal, install me please this python library in an .env and do X\"; \"hey pi, check what is using most space from the memory\"; \"clean X\"; \"check my network\"; \"change X configuration\", etc etc etc. There are times the",
       "post_id": "1tjwrp7",
+      "top_comments": []
+    },
+    {
+      "subreddit": "AI_Agents",
+      "sort": "hot",
+      "title": "I build AI agents for businesses, here’s what actually breaks first when they run 24/7",
+      "score": 11,
+      "comments": 20,
+      "created_utc": 1779403966.0,
+      "url": "https://www.reddit.com/r/AI_Agents/comments/1tk0p4o/i_build_ai_agents_for_businesses_heres_what/",
+      "external_url": null,
+      "selftext": "A lot of people assume the first thing that breaks in production is the model. Honestly, it usually isn't. I work on AI Agents and AI Automation systems for businesses, and the first failures are usually much less exciting: **1. The handoffs break** Not the reasoning. The transitions. An agent qualifies a lead, but the CRM Automation step fails. A Voice AI assistant books an appointment, but the calendar field format is wrong. A support agent resolves the conversation, but the ticket status never updates. So now the agent *looks* like it worked, but the workflow didn't actually finish. **2. Source data gets messy fast** Agents are only as reliable as the business context they're grounded on.",
+      "post_id": "1tk0p4o",
       "top_comments": []
     },
     {
@@ -942,19 +909,6 @@
       "top_comments": []
     },
     {
-      "subreddit": "LangChain",
-      "sort": "hot",
-      "title": "We replaced our RAG pipeline with persistent KV cache. It works. Here’s what we found.",
-      "score": 50,
-      "comments": 44,
-      "created_utc": 1779299582.0,
-      "url": "https://www.reddit.com/r/LangChain/comments/1titc6z/we_replaced_our_rag_pipeline_with_persistent_kv/",
-      "external_url": null,
-      "selftext": "We’ve been running RAG in production for a while. It worked but maintaining it was a constant tax. Re-embedding on data changes, tuning chunking strategies, debugging retrieval misses, managing the vector database. Every moving part was something that could break. So we ran an experiment. Instead of chunking and embedding documents, we loaded the full document into context, cached the KV state persistently, and reused that cache across every query. No vector database. No embedding pipeline. No retrieval step. Just the model with full document context, warm and ready. What we found: • Answer quality is noticeably better . no retrieval misses, no wrong chunks, full context every time • Updates",
-      "post_id": "1titc6z",
-      "top_comments": []
-    },
-    {
       "subreddit": "LocalLLaMA",
       "sort": "new",
       "title": "DRAM relief calendar",
@@ -968,6 +922,19 @@
       "top_comments": []
     },
     {
+      "subreddit": "LangChain",
+      "sort": "hot",
+      "title": "We replaced our RAG pipeline with persistent KV cache. It works. Here’s what we found.",
+      "score": 48,
+      "comments": 44,
+      "created_utc": 1779299582.0,
+      "url": "https://www.reddit.com/r/LangChain/comments/1titc6z/we_replaced_our_rag_pipeline_with_persistent_kv/",
+      "external_url": null,
+      "selftext": "We’ve been running RAG in production for a while. It worked but maintaining it was a constant tax. Re-embedding on data changes, tuning chunking strategies, debugging retrieval misses, managing the vector database. Every moving part was something that could break. So we ran an experiment. Instead of chunking and embedding documents, we loaded the full document into context, cached the KV state persistently, and reused that cache across every query. No vector database. No embedding pipeline. No retrieval step. Just the model with full document context, warm and ready. What we found: • Answer quality is noticeably better . no retrieval misses, no wrong chunks, full context every time • Updates",
+      "post_id": "1titc6z",
+      "top_comments": []
+    },
+    {
       "subreddit": "ClaudeCode",
       "sort": "hot",
       "title": "New Workflow tool? (2.1.147)",
@@ -978,6 +945,19 @@
       "external_url": null,
       "selftext": "The [changelog](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md) for 2.1.147 says: >Added the `Workflow` tool for deterministic multi-agent orchestration. It is off by default — set `CLAUDE_CODE_WORKFLOWS=1` to enable but I cannot find any, and I mean **ANY** documentation on how to use it other than \"set env to enable\". Who can shed more light?",
       "post_id": "1tjzxye",
+      "top_comments": []
+    },
+    {
+      "subreddit": "ClaudeAI",
+      "sort": "hot",
+      "title": "Word on the street",
+      "score": 786,
+      "comments": 85,
+      "created_utc": 1779340573.0,
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1tjalb5/word_on_the_street/",
+      "external_url": "https://i.redd.it/dfvmsyozcf2h1.png",
+      "selftext": "",
+      "post_id": "1tjalb5",
       "top_comments": []
     },
     {
@@ -1004,19 +984,6 @@
       "external_url": null,
       "selftext": "At the rate of change taking place we see Fortune 500s openly adopting Claude as their programmer of choice going forward along with entire companies springing up that couldn't exist before Claude because they didn't have or couldn't afford the ability. They find themselves suddenly reliant solely on this one provider for their entire business to function. They try gpt here and there and every now and then try a smaller provider but keeping them all in sync and in lockstep in the workflows is an afterthought not a hard rule. Then one day you get to work (if you are still lucky enough to have a job) and Anthropic is suffering a huge global outage. This rages on for a week then all is well for",
       "post_id": "1tk4a8m",
-      "top_comments": []
-    },
-    {
-      "subreddit": "ClaudeAI",
-      "sort": "hot",
-      "title": "Word on the street",
-      "score": 781,
-      "comments": 85,
-      "created_utc": 1779340573.0,
-      "url": "https://www.reddit.com/r/ClaudeAI/comments/1tjalb5/word_on_the_street/",
-      "external_url": "https://i.redd.it/dfvmsyozcf2h1.png",
-      "selftext": "",
-      "post_id": "1tjalb5",
       "top_comments": []
     }
   ]
