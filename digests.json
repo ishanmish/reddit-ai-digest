@@ -1,6 +1,7 @@
 [
   {
     "run_id": "2026-05-22 11:16 IST",
+    "brief_day": "2026-05-22",
     "collected_at_ist": "2026-05-22 11:16 IST",
     "runtime_sec": 10.18,
     "auth_mode": "anonymous_with_fallbacks",
@@ -713,7 +714,8 @@
           }
         ]
       }
-    ]
+    ],
+    "brief_number": 3
   },
   {
     "run_id": "2026-05-22 09:30 IST",
@@ -1392,7 +1394,8 @@
           }
         ]
       }
-    ]
+    ],
+    "brief_number": 2
   },
   {
     "run_id": "2026-05-22 09:29 IST",
@@ -2104,6 +2107,7 @@
           }
         ]
       }
-    ]
+    ],
+    "brief_number": 1
   }
 ]
