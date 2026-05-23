@@ -1,5 +1,380 @@
 [
   {
+    "run_id": "2026-05-23 12:01 IST",
+    "brief_day": "2026-05-23",
+    "collected_at_ist": "2026-05-23 12:01 IST",
+    "runtime_sec": 10.36,
+    "auth_mode": "anonymous_with_fallbacks",
+    "source_count_ok": 16,
+    "sources_ok": [
+      "AI_Agents",
+      "ArtificialInteligence",
+      "AutoGPT",
+      "ChatGPT",
+      "ClaudeAI",
+      "ClaudeCode",
+      "LangChain",
+      "LocalLLM",
+      "LocalLLaMA",
+      "MachineLearning",
+      "Ollama",
+      "OpenAI",
+      "OpenWebUI",
+      "StableDiffusion",
+      "artificial",
+      "singularity"
+    ],
+    "sources_failed_count": 0,
+    "posts": [
+      {
+        "subreddit": "ClaudeCode",
+        "sort": "hot",
+        "title": "/remote-control is a window into what the future is going to be like",
+        "score": 367,
+        "comments": 160,
+        "created_utc": 1779482340.0,
+        "url": "https://www.reddit.com/r/ClaudeCode/comments/1tkv87g/remotecontrol_is_a_window_into_what_the_future_is/",
+        "external_url": null,
+        "selftext": "If you are not using /remote-control you need to start using it now. It will be life changing. Especially if you feel like even 2-3 agents running at the same time is already overkill and giving you AI burnout. For those that don't know, you can enter /remote-control into either a CLI session or a Desktop session and the session will be immediately accessible and will sync in real time with your phone Claude app. First obvious super power is I could leave my office while still being \"plugged in\". I could sit in meetings, go to the gym, etc etc and still be \"working\", IE just keeping the agents on task and answering any questions they have. Similarly I could be plugged out and then come back",
+        "post_id": "1tkv87g",
+        "top_comments": [
+          {
+            "score": 325,
+            "body": "Tried it, works great, but I don't want to work all the time. Don't forget to live buddy"
+          },
+          {
+            "score": 91,
+            "body": "I've still found tailscale more reliable by just sshing into the host itself. Claude's remote-control has been at least historically rather buggy"
+          },
+          {
+            "score": 62,
+            "body": "My agents don’t sleep so how can I"
+          },
+          {
+            "score": 38,
+            "body": "> If you are not using /remote-control you need to start using it now. It will be life changing. man, this sub..."
+          },
+          {
+            "score": 31,
+            "body": "Tailscale+Termius+tmux. I'm not a dev but figured out how to setup on old laptop and works like a charm."
+          },
+          {
+            "score": 24,
+            "body": "I feel like generating the code isn’t the hard part, how are you reviewing all the code they generate? Is that something you’re easily able to do on your phone?"
+          },
+          {
+            "score": 18,
+            "body": "Yeah I thought I wanted remote control. Then i was checking at lunch, then at dinner, then at home, then on the weekends, then while exercising, and in meetings. All those things need their own attention. If you are in a meeting you should be present in the meeting or don't go. Our VP chastised the room once when he heard 20 people typing on their computers"
+          },
+          {
+            "score": 17,
+            "body": "It barely works for me, it gets stuck. Fails to be in sync. I just don't use it anymore."
+          }
+        ]
+      },
+      {
+        "subreddit": "LocalLLM",
+        "sort": "hot",
+        "title": "Visual fine-tuning to GGUF + on-device deployment. Benchmarks, limits, and AMA",
+        "score": 4,
+        "comments": 1,
+        "created_utc": 1779510566.0,
+        "url": "https://www.reddit.com/r/LocalLLM/comments/1tl67iq/visual_finetuning_to_gguf_ondevice_deployment/",
+        "external_url": "https://i.redd.it/7m1wbazpct2h1.png",
+        "selftext": "Hey r/LocalLLM, Long-time lurker. Today is launch day for us after 3 months of going all-in on building Ertas. Putting it in front of the audience that has been the most generous with feedback on this kind of work. **What we built** A visual canvas where you upload a dataset, pick a base model (Gemma 4 E2B/E4B, Qwen 3.6, Llama 3.2 1B/3B, Phi-4 mini, gpt-oss, and a few others), run an optimised QLoRA on cloud GPUs, evaluate against your real prompts, and export as GGUF. The whole loop is \\~2-4 minutes for the small models on a single H100. (Full fine-tune is available via our enterprise tier; the standard product is QLoRA-first.) The export drops straight into llama.cpp, Ollama, or LM Studio,",
+        "post_id": "1tl67iq",
+        "top_comments": [
+          {
+            "score": 2,
+            "body": "Platform: [www.ertas.ai](https://www.ertas.ai/) Docs and some cookbooks: [www.ertas.ai/docs](https://www.ertas.ai/docs)"
+          }
+        ]
+      },
+      {
+        "subreddit": "ClaudeAI",
+        "sort": "hot",
+        "title": "What's the most unexpectedly useful thing you've used Claude for?",
+        "score": 306,
+        "comments": 198,
+        "created_utc": 1779469392.0,
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1tkp1pg/whats_the_most_unexpectedly_useful_thing_youve/",
+        "external_url": null,
+        "selftext": "I've been using it as a UX strategy partner — not for generating designs, but for thinking through product decisions, writing copy variations, and pressure-testing pricing models. It's weirdly good at playing devil's advocate when you describe a feature you're about to build. What's surprised you?",
+        "post_id": "1tkp1pg",
+        "top_comments": [
+          {
+            "score": 136,
+            "body": "I'm making it my fitness and nutrition coach. It has direct API access into my Home Assistant installation, and my Home Assistant setup has integrations for Garmin (fitness watch, scale) as well as my bed (SleepNumber, tracks things like HRV and respiration rate). On Sunday mornings it (Cowork) emails me a workout and nutrition plan for the week, including r"
+          },
+          {
+            "score": 119,
+            "body": "I discovered it can generate autocad drawings. I designed a kitchen worktop with it and the manufacturer complimented me on the clarity of the drawing."
+          },
+          {
+            "score": 75,
+            "body": "My divorce. Fed it everything. It's like having a forensic accountant available 24/7."
+          },
+          {
+            "score": 57,
+            "body": "I create projects for all of my home DIY things and add the manuals as files. That way I can ask Claude and it references the manuals."
+          },
+          {
+            "score": 51,
+            "body": "My girlfriend bought an apartment without ever consulting with a single lawyer for the process itself, just Claude. 3x as fast as any lawyer said it was going to take, thousands in savings. Everything went perfect and she is living at her new place now (and I am moving in in a couple of weeks)"
+          },
+          {
+            "score": 50,
+            "body": "The problem with reading this is you gave me a project that I’ll need to complete and then tweak to perfection before actually getting back to the gym again."
+          },
+          {
+            "score": 46,
+            "body": "I had it scrape my local garden center’s website, research all of the plants, and build me a web app catalog which lets me see and filter which plants thrive in my zone, are deer resistant, like shade or sun, are drought tolerant, are considered invasive vs native, etc. It helped when I went to pick out some new plants for planting. I came with a short list"
+          },
+          {
+            "score": 1,
+            "body": "**TL;DR of the discussion generated automatically after 160 comments.** So, the consensus is that you guys are using Claude for basically everything short of running the country (and I wouldn't be surprised if someone's trying that too). The thread is overwhelmingly positive, with everyone sharing their own wild use cases. The top-voted and most talked-about"
+          }
+        ]
+      },
+      {
+        "subreddit": "ClaudeCode",
+        "sort": "hot",
+        "title": "I read threads complaining about claude every week... tf are y'alls workflows?",
+        "score": 127,
+        "comments": 71,
+        "created_utc": 1779464700.0,
+        "url": "https://www.reddit.com/r/ClaudeCode/comments/1tkmt5c/i_read_threads_complaining_about_claude_every/",
+        "external_url": null,
+        "selftext": "For context: I'm a software eng @ a fortune 500/FAANG tier company. We use AI. We treat all ai code with humans as the bottleneck. That is: You generate AI code, you own it. It has bugs? It's your bug. Claude has only gotten better. 4.7 reasoning has only improved, albeit it thinks more. My question is: what the hell are y'all up to that I constantly hear things like claude broke and everything sucks? You need to review the code. YOU need to understand what claude outputs. AI is nondeterministic, so I don't know why people are creating agentic flows for deterministic work. Need determinism? Generate an audit the code man. What are people's workflows here that I constantly hear about degraded",
+        "post_id": "1tkmt5c",
+        "top_comments": [
+          {
+            "score": 99,
+            "body": "Agree. Too many users don‘t know what they‘re doing and blaming Claude for it."
+          },
+          {
+            "score": 70,
+            "body": "You posted same shit on codex sub https://www.reddit.com/r/OpenAI/s/6wfxY9vrXj Karma farming bot"
+          },
+          {
+            "score": 51,
+            "body": "1 session at 1 million context window with 500 compactions since beginning of the year full of random questions and one shot vague requests. That’s my assumption."
+          },
+          {
+            "score": 15,
+            "body": "CC is an actual demigod and people are complaining that they can't comprehend what it's doing"
+          },
+          {
+            "score": 14,
+            "body": "I don't believe the average person is a developer in here. I think this sub attracts MORE developers on average, but I'd bet the majority of them aren't. People will ALWAYS NEVER understand that, for repeated workflows, you have to arm the ai with knowledge. No, it's not enough to attach supabase mcp and call it a day. You must make a skill, arm the skill wi"
+          },
+          {
+            "score": 9,
+            "body": "This is the answer. We use it heavily with processes similar to OP and it's a huge force multiplier with no degradation of quality."
+          },
+          {
+            "score": 4,
+            "body": "i would love to study that"
+          },
+          {
+            "score": 4,
+            "body": "I’m seeing this 100% in my work. I’m using CC as a force multiplier of my own skill and ability—-it’s faster and eases my load in generating tests, etc. but I’m not using CC in a way that it’s running beyond my own skill and ability level: anything Claude writes I understand and I could write it myself. I’ve worked with junior developers who get stuck or cau"
+          }
+        ]
+      },
+      {
+        "subreddit": "LocalLLaMA",
+        "sort": "hot",
+        "title": "NVIDIA Removes Gaming Revenue Category From Financial Reports",
+        "score": 456,
+        "comments": 162,
+        "created_utc": 1779484415.0,
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tkw5ri/nvidia_removes_gaming_revenue_category_from/",
+        "external_url": "https://www.guru3d.com/story/nvidia-removes-gaming-revenue-category-from-financial-reports/",
+        "selftext": "",
+        "post_id": "1tkw5ri",
+        "top_comments": [
+          {
+            "score": 193,
+            "body": "\\> does not suggest that NVIDIA is moving away from GeForce products It does however signal that NVIDIA is potentially planning to contribute to moving gaming into the cloud."
+          },
+          {
+            "score": 134,
+            "body": "Not a single comment so far has read the article. They've combined it with other categories because GPUs are used for gaming, inference, research, etc. The hardware is still part of the roadmap. They no longer report on gaming separately."
+          },
+          {
+            "score": 106,
+            "body": "I'll buy chinsese gpus before i give them the pleasure of owning my hardware.i hope they bankrupt themselves if they move like that"
+          },
+          {
+            "score": 106,
+            "body": "I remember a humorous TV ad for NVIDIA in the 2000s where the narrator snatches a chip from the hands of a scientist and says \"hey let's use this for games!\" Funny how the turn tables EDIT: Turns out it was 3DFX and nvidia is surprisingly humorless..."
+          },
+          {
+            "score": 68,
+            "body": "Yup. Again... consumer hardware is going away. Time for people to wake up. This is not something that is going to just blow over by '27 or '28. Its the new normal."
+          },
+          {
+            "score": 54,
+            "body": "I can’t imagine a world where gaming largely moves to the cloud. So much of gaming is competitive multiplayer where people *obsess* over input lag (myself included)"
+          },
+          {
+            "score": 46,
+            "body": "Why read the article first? Writing informed thoughts about the topic at hand isn't how you get those sweet, sweet internet points. Gotta post first, emotionally bait your audience, and then reap the karma. ;)"
+          },
+          {
+            "score": 1,
+            "body": "Your post is getting popular and we just featured it on our Discord! [Come check it out!](https://discord.gg/PgFhZ8cnWW) You've also been given a special flair for your contribution. We appreciate your post! *I am a bot and this action was performed automatically.*"
+          }
+        ]
+      },
+      {
+        "subreddit": "LocalLLM",
+        "sort": "hot",
+        "title": "Qwen3.6-27B on RTX 3090: tested 12 GGUF quants across HumanEval+, MBPP+, perplexity, throughput and needle-in-haystack. First-timer results.",
+        "score": 149,
+        "comments": 40,
+        "created_utc": 1779430014.0,
+        "url": "https://www.reddit.com/r/LocalLLM/comments/1tka614/qwen3627b_on_rtx_3090_tested_12_gguf_quants/",
+        "external_url": null,
+        "selftext": "## Disclaimer first I'm new to local LLMs — this was my first serious attempt at benchmarking and I'm posting the results in the hope they're useful to others, not because I'm claiming any expertise. I almost certainly made methodology choices that someone more experienced would do differently. Specifically: - I used **greedy decoding (T=0)** for reproducibility, but Unsloth's official recommendation for Qwen3.6 is `temperature=0.6/0.7` with `top_p`, `top_k` and `presence_penalty`. My numbers are likely an upper bound vs what people get in real use. - I ran all benchmarks with **thinking disabled** (`--reasoning off`) because EvalPlus doesn't play well with reasoning models (the model burns",
+        "post_id": "1tka614",
+        "top_comments": []
+      },
+      {
+        "subreddit": "Ollama",
+        "sort": "hot",
+        "title": "I built an open-source local coding agent with a 40-round agentic loop, 112 sub-agents, and a cyberpunk UI — Eve Agent V2 Unleashed",
+        "score": 17,
+        "comments": 17,
+        "created_utc": 1779425143.0,
+        "url": "https://www.reddit.com/r/ollama/comments/1tk8kxz/i_built_an_opensource_local_coding_agent_with_a/",
+        "external_url": null,
+        "selftext": "https://preview.redd.it/00lieq0gbm2h1.png?width=1858&format=png&auto=webp&s=cef6b6b5a143bc259b9dd6044d4e7709292780c8 Hey r/LocalLLaMA — I've been building Eve Agent V2 Unleashed, a fully local autonomous coding agent powered by Ollama, and just open-sourced it. What it does: * Autonomous 40-round tool loop — plans, writes files, runs bash, fixes errors, verifies, all without hand-holding * Real-time SSE streaming so you watch it think live * Workspace Picker: Change your working directory from the UI at any time * Full tool suite: bash (PowerShell-aware on Windows), file I/O, grep, glob, git, web search, URL fetch * 112 specialized sub-agents (Python, FastAPI, Rust, ML, DevOps, security...)",
+        "post_id": "1tk8kxz",
+        "top_comments": []
+      },
+      {
+        "subreddit": "StableDiffusion",
+        "sort": "hot",
+        "title": "Tencent released Z-Image 6B with pixel space gen. No VAE & 1k Resolution.",
+        "score": 593,
+        "comments": 170,
+        "created_utc": 1779455782.0,
+        "url": "https://www.reddit.com/r/StableDiffusion/comments/1tkipk6/tencent_released_zimage_6b_with_pixel_space_gen/",
+        "external_url": "https://i.redd.it/69r8ttxmvo2h1.jpeg",
+        "selftext": "Link: https://nju-pcalab.github.io/projects/L2P/",
+        "post_id": "1tkipk6",
+        "top_comments": []
+      },
+      {
+        "subreddit": "ClaudeAI",
+        "sort": "top",
+        "title": "Which MCP servers are actually changing your Claude workflow? Sharing mine",
+        "score": 152,
+        "comments": 102,
+        "created_utc": 1779443837.0,
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1tkec4e/which_mcp_servers_are_actually_changing_your/",
+        "external_url": null,
+        "selftext": "Running Claude with MCP for a couple months now, it really does feel like a whole new product. The ability to run real tools (file system, API, database, etc.) connected to Claude, and never have to cut/paste from context again, is huge. I'm trying a bunch of servers, some are pretty good and some aren't. My current normal is: filesystem server for docs on my computer; GitHub server for PR context; and a handful of other domain specific ones I found. One of the more interesting MCPs I have come across recently is Walter Writes MCP. This connects two tools directly within Claude, a detection tool that identifies if written content appears to be artificially generated and an application that c",
+        "post_id": "1tkec4e",
+        "top_comments": []
+      },
+      {
+        "subreddit": "AI_Agents",
+        "sort": "hot",
+        "title": "Help me choose an LLM Provider which doesn't take my life savings",
+        "score": 3,
+        "comments": 7,
+        "created_utc": 1779512236.0,
+        "url": "https://www.reddit.com/r/AI_Agents/comments/1tl6re3/help_me_choose_an_llm_provider_which_doesnt_take/",
+        "external_url": null,
+        "selftext": "Hi everyone 👋 I’m trying to choose an LLM provider for my personal projects and side experiments, but I also don’t want my API bill to quietly consume my entire salary 😅 My primary use cases are: * Coding assistance * Agentic workflows * Browser automation / browser agents * Multi-step reasoning tasks * Tool calling and structured outputs Right now, I’m leaning toward MiniMax M2.7 because it seems to offer a pretty strong balance between capability and cost.",
+        "post_id": "1tl6re3",
+        "top_comments": []
+      },
+      {
+        "subreddit": "LocalLLaMA",
+        "sort": "hot",
+        "title": "BeeLlama v0.2.0 – major DFlash update. Single RTX 3090: Qwen 3.6 27B up to 164 tps (4.40x), Gemma 4 31B up to 177.8 tps (4.93x). Prompt processing speed near baseline.",
+        "score": 165,
+        "comments": 101,
+        "created_utc": 1779471299.0,
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tkpz2y/beellama_v020_major_dflash_update_single_rtx_3090/",
+        "external_url": null,
+        "selftext": "**BeeLlama v0.2.0 is here!** >Not quite a pegasus, but close enough. [**GitHub**](https://github.com/Anbeeld/beellama.cpp) **|** [**Qwen 3.6 27B Quick Start**](https://github.com/Anbeeld/beellama.cpp/blob/main/docs/quickstart-qwen36-dflash.md) **|** [**Gemma 4 31B Quick Start**](https://github.com/Anbeeld/beellama.cpp/blob/main/docs/quickstart-gemma-4-31b-dflash.md) * Full Gemma 4 31B support with efficient DFlash implementation and vision. * Major Qwen 3.6 27B performance update from lower DFlash overhead, cleaner prefill handling, drafter K/V projection caching, and safer CUDA execution. * DFlash GGUFs with upstream architecture are now supported. * Fixes to adaptive profit behavior around",
+        "post_id": "1tkpz2y",
+        "top_comments": []
+      },
+      {
+        "subreddit": "LocalLLaMA",
+        "sort": "new",
+        "title": "club-rdna16: practical 16GB AMD/Radeon local LLM testing repo",
+        "score": 4,
+        "comments": 0,
+        "created_utc": 1779506183.0,
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tl4o1m/clubrdna16_practical_16gb_amdradeon_local_llm/",
+        "external_url": null,
+        "selftext": "Following on from club-5060ti, I’ve been doing some testing with my desktop AMD GPU and wanted to make a similar repo for 16GB Radeon cards. Repo: https://github.com/5p00kyy/club-rdna16 Pages/results: https://5p00kyy.github.io/club-rdna16/ The first test machine is an RX 6900 XT 16GB running llama.cpp with ROCm/HIP. I’ve mainly been testing Qwen3.6 27B and Qwen3.6 35B-A3B using the Unsloth MTP GGUFs, currently using the UD-IQ3\\_XXS model quant with q8 KV cache. The repo is meant to be practical rather than a synthetic leaderboard. I’m trying to capture the stuff that actually matters when someone wants to run a model locally: \\- exact llama.cpp launch profiles \\- context length that actually",
+        "post_id": "1tl4o1m",
+        "top_comments": []
+      },
+      {
+        "subreddit": "StableDiffusion",
+        "sort": "hot",
+        "title": "IMG Dataset Refiner v4.3 Pro is here! 🚀 The ultimate dataset prep tool for LoRAs",
+        "score": 32,
+        "comments": 2,
+        "created_utc": 1779502141.0,
+        "url": "https://www.reddit.com/r/StableDiffusion/comments/1tl36zc/img_dataset_refiner_v43_pro_is_here_the_ultimate/",
+        "external_url": "https://www.reddit.com/gallery/1tl36zc",
+        "selftext": "Hey everyone! A while back I shared v3 of my dataset tool. It was a great visual manager and balancer, but as I said back then: it didn't have auto-captioning. Well, that has completely changed! Welcome to v4.3 Pro. The project has taken a massive leap forward and is now a complete, professional *Data Engineering* suite for your AI model training (Flux, SD3, SDXL, etc.). **What's new?** 🤖 **Full AI Integration:** Local AI (LM Studio/Ollama) & Cloud APIs (Claude, Gemini, OpenAI) to auto-caption, translate, and even hunt down visual hallucinations. 🪄 **Smart AI Recipe Generation:** It automatically analyzes your entire dataset and generates the perfect keyword \"recipe\" (pinning your Trigger Wo",
+        "post_id": "1tl36zc",
+        "top_comments": []
+      },
+      {
+        "subreddit": "ClaudeCode",
+        "sort": "hot",
+        "title": "Do you actually use hooks in Claude Code?",
+        "score": 48,
+        "comments": 44,
+        "created_utc": 1779482844.0,
+        "url": "https://www.reddit.com/r/ClaudeCode/comments/1tkvg6t/do_you_actually_use_hooks_in_claude_code/",
+        "external_url": null,
+        "selftext": "Genuine question, because the answer keeps surprising me. I'll be talking to folk at AI events in Berlin this week who really knows Claude Code — CLI, MCP, subagents, etc — and I'll ask what hooks they run and where. Almost all go quiet, or mumble about things that are not hooks at all. So few have ever set one up, some most have never heard of them (though you might have seen Claude suggesting them at some point in conversation, and ignored it - like me at first). So if that's you: a hook is a small script the harness runs for you, automatically. On every prompt, on things the model does, when it stops. You write a rule once and it runs whether the model likes it or not. They're right there",
+        "post_id": "1tkvg6t",
+        "top_comments": []
+      },
+      {
+        "subreddit": "LocalLLM",
+        "sort": "hot",
+        "title": "IMG Dataset Refiner v4.3 Pro is here! 🚀 The ultimate dataset prep tool for LoRAs",
+        "score": 3,
+        "comments": 0,
+        "created_utc": 1779501940.0,
+        "url": "https://www.reddit.com/r/LocalLLM/comments/1tl34ao/img_dataset_refiner_v43_pro_is_here_the_ultimate/",
+        "external_url": "https://www.reddit.com/gallery/1tl34ao",
+        "selftext": "Hey everyone! A while back I shared v3 of my dataset tool. It was a great visual manager and balancer, but as I said back then: it didn't have auto-captioning. Well, that has completely changed! Welcome to v4.3 Pro. The project has taken a massive leap forward and is now a complete, professional *Data Engineering* suite for your AI model training (Flux, SD3, SDXL, etc.). **What's new?** 🤖 **Full AI Integration:** Local AI (LM Studio/Ollama) & Cloud APIs (Claude, Gemini, OpenAI) to auto-caption, translate, and even hunt down visual hallucinations. 🪄 **Smart AI Recipe Generation:** It automatically analyzes your entire dataset and generates the perfect keyword \"recipe\" (pinning your Trigger Wo",
+        "post_id": "1tl34ao",
+        "top_comments": []
+      },
+      {
+        "subreddit": "ArtificialInteligence",
+        "sort": "hot",
+        "title": "The bubble is slowly popping, investment isn't able to keep up",
+        "score": 151,
+        "comments": 202,
+        "created_utc": 1779473220.0,
+        "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1tkqwp1/the_bubble_is_slowly_popping_investment_isnt_able/",
+        "external_url": "https://i.redd.it/4lq0s2mhbq2h1.jpeg",
+        "selftext": "the investments are not keeping up with the demand, starting with open ai shutting sora and claude being absurd with their limits, it's slowly becoming very clear that the cheap commodity we use everyday is slowly showing the side effects of being overvalued and running purely on speculative investments. VC money is clearly unable to keep up with the growing consumer demand and I'd say enjoy your fill of cheap ai tokens or free usage and make the most of it asap before it becomes unaffordable or the premier models become inaccessible. If anyone thinks otherwise, prove me wrong. Any unique thoughts on this? EDIT: When I said the bubble is popping, I am not exactly talking about these models i",
+        "post_id": "1tkqwp1",
+        "top_comments": []
+      }
+    ],
+    "brief_number": 2
+  },
+  {
     "run_id": "2026-05-23 05:59 IST",
     "brief_day": "2026-05-23",
     "collected_at_ist": "2026-05-23 05:59 IST",
