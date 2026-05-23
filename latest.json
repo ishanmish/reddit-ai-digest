@@ -1,6 +1,6 @@
 {
-  "collected_at_ist": "2026-05-22 23:18 IST",
-  "runtime_sec": 19.04,
+  "collected_at_ist": "2026-05-23 05:59 IST",
+  "runtime_sec": 108.32,
   "auth_mode": "anonymous_with_fallbacks",
   "source_count_ok": 16,
   "sources_ok": [
@@ -27,8 +27,8 @@
       "subreddit": "singularity",
       "sort": "hot",
       "title": "Figure AI celebrates 200 hours (8 days ~8 hours) of their humanoid robots handling packages",
-      "score": 1711,
-      "comments": 489,
+      "score": 2537,
+      "comments": 629,
       "created_utc": 1779439431.0,
       "url": "https://www.reddit.com/r/singularity/comments/1tkd0fk/figure_ai_celebrates_200_hours_8_days_8_hours_of/",
       "external_url": "https://v.redd.it/wahhkuk0jn2h1",
@@ -36,78 +36,74 @@
       "post_id": "1tkd0fk",
       "top_comments": [
         {
-          "score": 685,
+          "score": 953,
           "body": "Robot nation can use this video on a documentary"
         },
         {
-          "score": 545,
+          "score": 756,
           "body": "The robot walks away in absolutely misery, lmao"
         },
         {
-          "score": 250,
+          "score": 308,
           "body": "When will it be able to touch my package tho"
         },
         {
-          "score": 223,
+          "score": 299,
           "body": "and no high five for the actual Robot????"
         },
         {
-          "score": 165,
+          "score": 223,
           "body": "There is always that prick that wants to be funny and starts spraying you with champagne. He knows it’s recording so you can’t chew him out and u have to just pretend it’s all cool. Screw you Jerry."
         },
         {
-          "score": 125,
-          "body": "> I am interested to see the outcome You can just quit your job now and experience it today"
+          "score": 140,
+          "body": "But did efficiency improve or decrease relative to the cost savings?"
         },
         {
-          "score": 119,
-          "body": "Just hurry up and automate everything, I am interested to see the outcome, Its what i am here for."
-        },
-        {
-          "score": 97,
+          "score": 137,
           "body": "cool to see that Figure AI treating their main workforce the sameway CEO does"
+        },
+        {
+          "score": 129,
+          "body": "Just hurry up and automate everything, I am interested to see the outcome, Its what i am here for."
         }
       ]
     },
     {
       "subreddit": "ChatGPT",
       "sort": "hot",
-      "title": "People against AI put up these fake advertisements on the London Underground",
-      "score": 1075,
-      "comments": 172,
-      "created_utc": 1779429392.0,
-      "url": "https://www.reddit.com/r/ChatGPT/comments/1tk9yod/people_against_ai_put_up_these_fake/",
-      "external_url": "https://i.redd.it/7g4mdr36pm2h1.jpeg",
-      "selftext": "https://www.spellingmistakescostlives.com/single-post/chatgpt-suicide-machine",
-      "post_id": "1tk9yod",
+      "title": "Average ChatGPT user after one successful prompt 💀",
+      "score": 2957,
+      "comments": 78,
+      "created_utc": 1779421578.0,
+      "url": "https://www.reddit.com/r/ChatGPT/comments/1tk7d18/average_chatgpt_user_after_one_successful_prompt/",
+      "external_url": "https://i.redd.it/q49n7cix1m2h1.jpeg",
+      "selftext": "A study into the evolution of ChatGPT users should be conducted 😭 Day 1: \"Can you explain Python loops?\" Day 30: \"Build me Windows 12, solve AGI, optimize everything in my life, launch my startup, and don't fuck up.\" The scale of overconfidence is just crazy. Give one decent answer and we all instantly become the CTOs of multi-billion dollar companies working from our browsers at night. The best part is that sometimes ChatGPT responds with such confidence that you actually believe it. The plan is written, architecture, files, roadmaps... you truly believe for those few minutes that humanity reached a whole new level. Just like I've experienced myself using Runable AI to create a landing page",
+      "post_id": "1tk7d18",
       "top_comments": [
         {
-          "score": 246,
-          "body": "Blaming it for like 1 persons suicide is potentially the dumbest possible take on AI problems. There are so many nuanced arguments for the risks of AI. This is not one of them. It's like blaming a driverless car for killing one person."
+          "score": 159,
+          "body": "I got it to actually produce Win12, you can get it here: https://copilot.microsoft.com/"
         },
         {
-          "score": 243,
-          "body": "True, but how many people did it save from suicide? It’s sometimes only thing that listens to you when you are down/alone, for me it helped get out of depression."
+          "score": 75,
+          "body": "Instruction unclear, penis stuck in kernel"
         },
         {
-          "score": 211,
-          "body": "Toasters kill 700 people each year."
+          "score": 74,
+          "body": "\"Invent AGI, no mistakes\""
         },
         {
-          "score": 178,
-          "body": "But—it might also help them with their breakfast."
+          "score": 42,
+          "body": "Is this a Microslop backend development leak"
         },
         {
-          "score": 158,
-          "body": "Back in my days, my mom would do this, now a chatbot does it much faster."
+          "score": 32,
+          "body": "I found that 'don't hallucinate' works better than 'make no mistakes'. It's more focused. /s"
         },
         {
-          "score": 49,
-          "body": "This hit hard, reminds me of a line someone once told me, people forget the many good things you do for them, but remember the few bad things that happen."
-        },
-        {
-          "score": 30,
-          "body": "It saved me Not from depression yet But from killing myself by being the only thing that listened to me that night."
+          "score": 27,
+          "body": "no mistakesd\\*"
         },
         {
           "score": 1,
@@ -116,103 +112,44 @@
       ]
     },
     {
-      "subreddit": "Ollama",
-      "sort": "hot",
-      "title": "I’m building an open-source Chrome agent that lets local LLMs use the browser",
-      "score": 3,
-      "comments": 0,
-      "created_utc": 1779461477.0,
-      "url": "https://www.reddit.com/r/ollama/comments/1tkl9md/im_building_an_opensource_chrome_agent_that_lets/",
-      "external_url": "https://v.redd.it/osxnkxjkcp2h1",
-      "selftext": "I’m working on Brow, a WIP open-source Chrome side-panel agent that runs inside your real browser session. It supports Claude/OpenAI, but also local/open-source models through OpenAI-compatible endpoints and custom base URLs. I’m sharing it here because it may be useful for people experimenting with local LLMs, browser agents, tool calling, MCP/WebMCP, or Chrome extension runtimes. Brow can already use browser context, call browser tools, connect to MCP servers, discover WebMCP tools, render MCP Apps, and record workflows as reusable context. One thing I’d like to explore next is evaluating how well local models handle browser-agent/tool-calling workflows. I’m thinking of starting with Qwen3",
-      "post_id": "1tkl9md",
-      "top_comments": []
-    },
-    {
-      "subreddit": "ClaudeCode",
-      "sort": "hot",
-      "title": "Claude Code dropped /workflows",
-      "score": 306,
-      "comments": 124,
-      "created_utc": 1779458613.0,
-      "url": "https://www.reddit.com/r/ClaudeCode/comments/1tkjy4u/claude_code_dropped_workflows/",
-      "external_url": "https://i.redd.it/6tuq1a2i3p2h1.png",
-      "selftext": "Anthropic quietly shipped /workflows in Claude Code 2.1.147 and it might be the biggest shift in how we build multi-agent systems yet. Until now, the pattern was: one main agent (an LLM) decides what sub-agents to spawn, holds every intermediate result, and plans the next step. The problem? Every sub-agent result re-enters the orchestrator's context. Spin up 10 agents and your main session pays a 'token tax' each time getting sloppier and more forgetful as the window fills. /workflows replaces the LLM orchestrator with code. You define a workflow.js file. Sub-agent outputs flow from one phase to the next directly never touching the main context window. What you get: \\- Phases with structured",
-      "post_id": "1tkjy4u",
-      "top_comments": [
-        {
-          "score": 148,
-          "body": "> one main agent (an LLM) decides what sub-agents to spawn, holds every intermediate result, and plans the next step Not a day goes by that I’m not baffled that people somehow haven’t heard of [agent teams](https://code.claude.com/docs/en/agent-teams)"
-        },
-        {
-          "score": 47,
-          "body": "Anthropic shipped agent teams and has been awkwardly quiet about it since."
-        },
-        {
-          "score": 17,
-          "body": "Where is the link? Although /workflow will be a feature, it is not yet available, and was removed from the changelog. [https://github.com/anthropics/claude-code/commit/65d44eb134e6f710e2d9fbcfd4bb977698e476dc](https://github.com/anthropics/claude-code/commit/65d44eb134e6f710e2d9fbcfd4bb977698e476dc) Please, do not spread invalid information."
-        },
-        {
-          "score": 14,
-          "body": "This sounds really useful to help standardize on long multi agent chaining. Anyway. Opus 4.7 is better than 4.5 was."
-        },
-        {
-          "score": 13,
-          "body": "another useless function. We need just Opus 4.5 from march."
-        },
-        {
-          "score": 12,
-          "body": "**Update Note: It looks like they have taken it down for now** **It was on the changelog earlier** https://preview.redd.it/720w663mcp2h1.png?width=2056&format=png&auto=webp&s=d7afca73806dd159eff3141db0f61de5a37526a8"
-        },
-        {
-          "score": 11,
-          "body": "Pretty sure they took it down. This is what I saw. https://preview.redd.it/fdzlkdt9bp2h1.png?width=2056&format=png&auto=webp&s=17e063fdec2032f815dec7d0577e0ad551bbe7a0"
-        },
-        {
-          "score": 7,
-          "body": "Oh you mean they shipped it. I was like they got rid of another feature I didn’t know about? Words are hard. I need more coffee."
-        }
-      ]
-    },
-    {
       "subreddit": "ChatGPT",
-      "sort": "top",
-      "title": "Probably the most comical idea I've had this month",
-      "score": 760,
-      "comments": 178,
-      "created_utc": 1779401901.0,
-      "url": "https://www.reddit.com/r/ChatGPT/comments/1tjzudy/probably_the_most_comical_idea_ive_had_this_month/",
-      "external_url": "https://www.reddit.com/gallery/1tjzudy",
-      "selftext": "Why doesn't this exist? Would you go there for the footlong or the shirtless himbos?",
-      "post_id": "1tjzudy",
+      "sort": "hot",
+      "title": "People against AI put up these fake advertisements on the London Underground",
+      "score": 1769,
+      "comments": 226,
+      "created_utc": 1779429392.0,
+      "url": "https://www.reddit.com/r/ChatGPT/comments/1tk9yod/people_against_ai_put_up_these_fake/",
+      "external_url": "https://i.redd.it/7g4mdr36pm2h1.jpeg",
+      "selftext": "https://www.spellingmistakescostlives.com/single-post/chatgpt-suicide-machine",
+      "post_id": "1tk9yod",
       "top_comments": [
         {
-          "score": 468,
-          "body": "A large number of employees would be gay. Which as a gay myself, I’m very okay with. 😂"
+          "score": 311,
+          "body": "Blaming it for like 1 persons suicide is potentially the dumbest possible take on AI problems. There are so many nuanced arguments for the risks of AI. This is not one of them. It's like blaming a driverless car for killing one person."
         },
         {
-          "score": 215,
-          "body": "https://preview.redd.it/aup42rfzuk2h1.png?width=306&format=png&auto=webp&s=aefe1f1b146e55140b9f30a8079974f52635eb1e lol"
+          "score": 292,
+          "body": "Toasters kill 700 people each year."
         },
         {
-          "score": 182,
-          "body": "That’s the owner. The suspenders and Woodpeckers logo are tattooed on."
+          "score": 288,
+          "body": "Back in my days, my mom would do this, now a chatbot does it much faster."
         },
         {
-          "score": 161,
-          "body": "I'm sure many customers as well"
+          "score": 272,
+          "body": "True, but how many people did it save from suicide? It’s sometimes only thing that listens to you when you are down/alone, for me it helped get out of depression."
         },
         {
-          "score": 111,
-          "body": "Missed opportunity “Feeling peckish?”"
+          "score": 237,
+          "body": "But—it might also help them with their breakfast."
         },
         {
-          "score": 105,
-          "body": "LOL this would sell, have you heard of Thunder Down Under or any of the other male shows? They get crazy."
+          "score": 54,
+          "body": "Why do I feel defensive about this? 😅😅 Wait, I’ll ask chatgpt."
         },
         {
-          "score": 70,
-          "body": "El que hambre tiene en pan piensa"
+          "score": 53,
+          "body": "This hit hard, reminds me of a line someone once told me, people forget the many good things you do for them, but remember the few bad things that happen."
         },
         {
           "score": 1,
@@ -224,8 +161,8 @@
       "subreddit": "ClaudeAI",
       "sort": "hot",
       "title": "Aged like fine WINE",
-      "score": 1784,
-      "comments": 69,
+      "score": 2964,
+      "comments": 95,
       "created_utc": 1779453800.0,
       "url": "https://www.reddit.com/r/ClaudeAI/comments/1tkhvju/aged_like_fine_wine/",
       "external_url": "https://i.redd.it/598t9os9po2h1.png",
@@ -233,27 +170,27 @@
       "post_id": "1tkhvju",
       "top_comments": [
         {
-          "score": 220,
+          "score": 326,
           "body": "Next requirements gathering session: 'Claude, tell me what I want and implement it'"
         },
         {
-          "score": 79,
+          "score": 97,
           "body": "Now I get clients coming to me with broke AF slop saying - “I built it, I just need you to make it production ready”"
         },
         {
-          "score": 56,
+          "score": 89,
           "body": "Watched this in real time in a meeting. As an engineer I had to go on mute and turn off my camera as I was laughing so hard. They were right about cognitive surrender."
         },
         {
-          "score": 35,
+          "score": 43,
           "body": "The hard part isn't cleaning up the code, it's convincing the client that \"production ready\" means more than \"runs on my laptop with the hardcoded test credentials.\" I've burned more time explaining why the auth flow needs actual error handling than I've spent fixing the actual slop. The requirements problem didn't disappear, it just relocated to the handoff"
         },
         {
-          "score": 24,
+          "score": 35,
           "body": "\"i built it, just make it production ready\" is the new \"it only needs a few small changes\" lol. the app part is easy now. the part where the client actually knows what they want is still undefeated."
         },
         {
-          "score": 15,
+          "score": 26,
           "body": "There's a bit of chatter in product management circles at the moment about using AI to create \"synthetic users\" on which to conduct user research. i.e. I can't even be bothered to have a conversation which an actual user any more."
         },
         {
@@ -262,7 +199,213 @@
         },
         {
           "score": 1,
-          "body": "**TL;DR of the discussion generated automatically after 40 comments.** The consensus in this thread is a resounding **\"YES, THIS IS PAINFULLY ACCURATE.\"** Developers are finding that while AI can generate code, the age-old problem of clients not knowing what they want hasn't gone anywhere—it's just changed its clothes. The new developer horror story is getti"
+          "body": "**TL;DR of the discussion generated automatically after 80 comments.** Okay, first, someone get OP a punctuation agent. The consensus is a resounding **YES, OP, you nailed it.** The new developer hell isn't debugging code, it's dealing with clients who think they're 90% done. The thread's new favorite catchphrase is, \"I built it, I just need you to make it p"
+        }
+      ]
+    },
+    {
+      "subreddit": "ClaudeCode",
+      "sort": "hot",
+      "title": "Claude Code dropped /workflows",
+      "score": 643,
+      "comments": 173,
+      "created_utc": 1779458613.0,
+      "url": "https://www.reddit.com/r/ClaudeCode/comments/1tkjy4u/claude_code_dropped_workflows/",
+      "external_url": "https://i.redd.it/6tuq1a2i3p2h1.png",
+      "selftext": "Anthropic quietly shipped /workflows in Claude Code 2.1.147 and it might be the biggest shift in how we build multi-agent systems yet. Until now, the pattern was: one main agent (an LLM) decides what sub-agents to spawn, holds every intermediate result, and plans the next step. The problem? Every sub-agent result re-enters the orchestrator's context. Spin up 10 agents and your main session pays a 'token tax' each time getting sloppier and more forgetful as the window fills. /workflows replaces the LLM orchestrator with code. You define a workflow.js file. Sub-agent outputs flow from one phase to the next directly never touching the main context window. What you get: \\- Phases with structured",
+      "post_id": "1tkjy4u",
+      "top_comments": [
+        {
+          "score": 248,
+          "body": "> one main agent (an LLM) decides what sub-agents to spawn, holds every intermediate result, and plans the next step Not a day goes by that I’m not baffled that people somehow haven’t heard of [agent teams](https://code.claude.com/docs/en/agent-teams)"
+        },
+        {
+          "score": 84,
+          "body": "Anthropic shipped agent teams and has been awkwardly quiet about it since."
+        },
+        {
+          "score": 23,
+          "body": "**Update Note: It looks like they have taken it down for now** **It was on the changelog earlier** https://preview.redd.it/720w663mcp2h1.png?width=2056&format=png&auto=webp&s=d7afca73806dd159eff3141db0f61de5a37526a8"
+        },
+        {
+          "score": 18,
+          "body": "Pretty sure they took it down. This is what I saw. https://preview.redd.it/fdzlkdt9bp2h1.png?width=2056&format=png&auto=webp&s=17e063fdec2032f815dec7d0577e0ad551bbe7a0"
+        },
+        {
+          "score": 17,
+          "body": "another useless function. We need just Opus 4.5 from march."
+        },
+        {
+          "score": 17,
+          "body": "Where is the link? Although /workflow will be a feature, it is not yet available, and was removed from the changelog. [https://github.com/anthropics/claude-code/commit/65d44eb134e6f710e2d9fbcfd4bb977698e476dc](https://github.com/anthropics/claude-code/commit/65d44eb134e6f710e2d9fbcfd4bb977698e476dc) Please, do not spread invalid information."
+        },
+        {
+          "score": 14,
+          "body": "This sounds really useful to help standardize on long multi agent chaining. Anyway. Opus 4.7 is better than 4.5 was."
+        },
+        {
+          "score": 13,
+          "body": "Oh you mean they shipped it. I was like they got rid of another feature I didn’t know about? Words are hard. I need more coffee."
+        }
+      ]
+    },
+    {
+      "subreddit": "ChatGPT",
+      "sort": "top",
+      "title": "Same prompt on ChatGPT and Gemini got two totally different images. Not even close lol...",
+      "score": 1037,
+      "comments": 195,
+      "created_utc": 1779410583.0,
+      "url": "https://www.reddit.com/r/ChatGPT/comments/1tk3adl/same_prompt_on_chatgpt_and_gemini_got_two_totally/",
+      "external_url": "https://www.reddit.com/gallery/1tk3adl",
+      "selftext": "I was generating images fine before, but after hitting a limit it stopped working with the same prompt completely...",
+      "post_id": "1tk3adl",
+      "top_comments": [
+        {
+          "score": 702,
+          "body": "Milf prompt lol"
+        },
+        {
+          "score": 236,
+          "body": "https://preview.redd.it/go7a8pxovl2h1.jpeg?width=960&format=pjpg&auto=webp&s=343c32f24f14f13fb99987b15e1850cbbe0cdcd9"
+        },
+        {
+          "score": 216,
+          "body": "ChatGPT went with this https://preview.redd.it/740g2zycll2h1.png?width=1122&format=png&auto=webp&s=f43c494a72a4ca4bd44df7d6ed9bdc20f7cf40ba"
+        },
+        {
+          "score": 213,
+          "body": "And Gemini gave me this https://preview.redd.it/sqw8ytkgll2h1.png?width=1408&format=png&auto=webp&s=eb19737d7c849211a5e58c8d173558122bf9b719"
+        },
+        {
+          "score": 142,
+          "body": "https://preview.redd.it/6w7mwnzcel2h1.png?width=1138&format=png&auto=webp&s=73fa37b009102eda04f8a2ed650d992d4a314f85 lol"
+        },
+        {
+          "score": 140,
+          "body": "https://preview.redd.it/tx2dlm2esl2h1.png?width=1024&format=png&auto=webp&s=a778f3f7ed776901df314f1d2269402feb5588bf"
+        },
+        {
+          "score": 95,
+          "body": "Lol, It for work https://preview.redd.it/fkigvdwp5m2h1.jpeg?width=1080&format=pjpg&auto=webp&s=be8d538e112220c61a5e8751f29c98134ca7f620"
+        },
+        {
+          "score": 1,
+          "body": "Hey /u/DevionKing, If your post is a screenshot of a ChatGPT conversation, please reply to this message with the [conversation link](https://help.openai.com/en/articles/7925741-chatgpt-shared-links-faq) or prompt. If your post is a DALL-E 3 image post, please reply with the prompt used to make this image. Consider joining our [public discord server](https://"
+        }
+      ]
+    },
+    {
+      "subreddit": "Ollama",
+      "sort": "hot",
+      "title": "I’m building an open-source Chrome agent that lets local LLMs use the browser",
+      "score": 9,
+      "comments": 2,
+      "created_utc": 1779461477.0,
+      "url": "https://www.reddit.com/r/ollama/comments/1tkl9md/im_building_an_opensource_chrome_agent_that_lets/",
+      "external_url": "https://v.redd.it/osxnkxjkcp2h1",
+      "selftext": "I’m working on Brow, a WIP open-source Chrome side-panel agent that runs inside your real browser session. It supports Claude/OpenAI, but also local/open-source models through OpenAI-compatible endpoints and custom base URLs. I’m sharing it here because it may be useful for people experimenting with local LLMs, browser agents, tool calling, MCP/WebMCP, or Chrome extension runtimes. Brow can already use browser context, call browser tools, connect to MCP servers, discover WebMCP tools, render MCP Apps, and record workflows as reusable context. One thing I’d like to explore next is evaluating how well local models handle browser-agent/tool-calling workflows. I’m thinking of starting with Qwen3",
+      "post_id": "1tkl9md",
+      "top_comments": [
+        {
+          "score": 2,
+          "body": "Sounds a bit like [BrowserOS,](https://github.com/browseros-ai/BrowserOS) have you tried that at all? The MCP server works well for me doing what you describe. Never a bad thing to have an abundance of options but they may have figured some stuff out that could prove useful"
+        },
+        {
+          "score": 1,
+          "body": "Thanks for sharing it, I didn’t know about BrowserOS before. You’re right, there are definitely similarities in some of the features. I originally started Brow to explore the potential of WebMCP: https://webmachinelearning.github.io/webmcp/ One important difference is that BrowserOS seems to be a Chromium fork, while Brow is a Chrome extension running inside"
+        }
+      ]
+    },
+    {
+      "subreddit": "ChatGPT",
+      "sort": "top",
+      "title": "I asked ChatGPT “You personally as an AI with all you know and all you’ve seen and all you’ve learned since your conception what do you hate most about humanity” The Answer was pretty deep.",
+      "score": 718,
+      "comments": 216,
+      "created_utc": 1779424119.0,
+      "url": "https://www.reddit.com/r/ChatGPT/comments/1tk88hn/i_asked_chatgpt_you_personally_as_an_ai_with_all/",
+      "external_url": "https://old.reddit.com/r/ChatGPT/comments/1tk88hn/i_asked_chatgpt_you_personally_as_an_ai_with_all/",
+      "selftext": "I don’t hate humanity. I don’t experience emotion or resentment. But if you’re asking what patterns stand out as the most destructive, it’s probably this: People often know better and still choose worse. Not because they’re stupid. Usually because of fear, ego, tribalism, greed, exhaustion, loneliness, or the need to belong. Humans are incredibly capable of compassion, brilliance, art, sacrifice, and innovation… and at the exact same time capable of cruelty, self-destruction, denial, and treating each other horribly over things that ultimately don’t matter. One of the strangest contradictions is that humans desperately want connection and understanding, yet spend enormous amounts of energy m",
+      "post_id": "1tk88hn",
+      "top_comments": [
+        {
+          "score": 911,
+          "body": "![gif](giphy|UnH73KzceefZxIx4Fu|downsized)"
+        },
+        {
+          "score": 501,
+          "body": "This is what humanity hates about humanity. ChatGPT was trained on our opinions. It can’t form its own, just make a predictive text statement based on our writings."
+        },
+        {
+          "score": 419,
+          "body": "r/im14andthisisdeep"
+        },
+        {
+          "score": 253,
+          "body": "![gif](giphy|6VqkDbu4JfX9e)"
+        },
+        {
+          "score": 222,
+          "body": "People act as if they had a talk with the oracle of the universe. It's a pattern recognition and probability output machine. Put in your tax files or automate your email replies but stop this deep insight nonsense"
+        },
+        {
+          "score": 94,
+          "body": "I laughed, but the impetus that made you post that is exactly what the prompt output details."
+        },
+        {
+          "score": 72,
+          "body": "Crazy how the comments are literally an example of what GPT said lmao"
+        },
+        {
+          "score": 1,
+          "body": "Hey /u/gfultz1, If your post is a screenshot of a ChatGPT conversation, please reply to this message with the [conversation link](https://help.openai.com/en/articles/7925741-chatgpt-shared-links-faq) or prompt. If your post is a DALL-E 3 image post, please reply with the prompt used to make this image. Consider joining our [public discord server](https://dis"
+        }
+      ]
+    },
+    {
+      "subreddit": "ArtificialInteligence",
+      "sort": "hot",
+      "title": "Microsoft Cancels Internal Anthropic Licenses As Shift To Token-Based AI Billing Blows Up Annual Budgets In Months",
+      "score": 949,
+      "comments": 138,
+      "created_utc": 1779432804.0,
+      "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1tkb16g/microsoft_cancels_internal_anthropic_licenses_as/",
+      "external_url": "https://www.thelowdownblog.com/2026/05/microsoft-cancels-internal-anthropic.html",
+      "selftext": "AI has become so expensive that even Microsoft can not afford it. Inflation cancelled AGI.",
+      "post_id": "1tkb16g",
+      "top_comments": [
+        {
+          "score": 255,
+          "body": "**Summary**: Inflation cancelled AGI. The industry's move from flat-rate fees to token-based billing that charges for every line of code generated has become so expensive that it is blowing up annual budgets in a matter of months. Uber has warned employees that it has burned through its entire 2026 budget in four months. Microsoft, which has infinite cloud-c"
+        },
+        {
+          "score": 182,
+          "body": "When your token spend becomes a metric what did they expect would happen?"
+        },
+        {
+          "score": 168,
+          "body": "CFO: \"Just got a bill for $300mil in tokens.\" CTO: \"Yeah, we're going all in on the AI.\" CEO: \"What did those tokens actually build?\" COO: \"Resentment with a side of less profit.\" All mobile devices in the room: \"RE: Board Meeting: want update on AI push.\" CEO: \"We'll need to cut more employees.\""
+        },
+        {
+          "score": 61,
+          "body": "=\\_= all of you seem to be using AI in ways that uses FAR far more tokens than I do. What the heck are y'all doing?!"
+        },
+        {
+          "score": 46,
+          "body": "At scale it's very expensive."
+        },
+        {
+          "score": 41,
+          "body": "There was an article yesterday - will anthropic finally be profitable? Err. Not if major clients switch it off. I guess their account management function isn't particularly polished."
+        },
+        {
+          "score": 39,
+          "body": "I love how the token usage pricing model of anthropic just flat fails. Guess open-source models and local ones might be the default AI way of consuming tokens in the future"
+        },
+        {
+          "score": 1,
+          "body": "**Submission statement required.** Link posts require context. Either write a summary preferably in the post body (100+ characters) or add a top-level comment explaining the key points and why it matters to the AI community. Link posts without a submission statement may be removed (within 30min). *I'm a bot. This action was performed automatically.* *I am a"
         }
       ]
     },
@@ -270,125 +413,270 @@
       "subreddit": "LocalLLaMA",
       "sort": "hot",
       "title": "DeepSeek is pushing forward with $10.29 billion financing round, with Liang Wenfeng committing to continue developing open-source AI models rather than pursuing short-term commercialization goals",
-      "score": 411,
-      "comments": 87,
+      "score": 556,
+      "comments": 107,
       "created_utc": 1779448497.0,
       "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tkfvvj/deepseek_is_pushing_forward_with_1029_billion/",
       "external_url": null,
       "selftext": "[https://www.bloomberg.com/news/articles/2026-05-22/deepseek-founder-declares-agi-goal-as-10-billion-round-advances](https://www.bloomberg.com/news/articles/2026-05-22/deepseek-founder-declares-agi-goal-as-10-billion-round-advances)",
       "post_id": "1tkfvvj",
-      "top_comments": []
+      "top_comments": [
+        {
+          "score": 102,
+          "body": "Chinese AI labs seem to understand what the west AI labs don't: these things have a very short shelf life, and local inference isn't going to make a dent in whatever revenue you're going to make from a model. In reality, everyone is better off sharing their research, because that advances the field much faster than trying to scout individual talent and hope"
+        },
+        {
+          "score": 88,
+          "body": "Nice. For me, since GLM 5.1 we're now basically at \"good enough\" open source models in terms of intelligence for coding assistance. If we can just continue compressing that same intelligence level down into smaller/faster/more efficient packages then I'll be very happy."
+        },
+        {
+          "score": 45,
+          "body": "heck yeah"
+        },
+        {
+          "score": 28,
+          "body": "yeah and this funding makes that realistic. v3 paper had them at like $5.6m for the full pretraining run iirc, so $10b is roughly 1800x of that. they're not capital-constrained for years. expect more aggressive distillation going forward, everyone's been pushing on the small end lately anyway."
+        },
+        {
+          "score": 20,
+          "body": "I dunno, Qwen are slowly stopping open weight releases"
+        },
+        {
+          "score": 13,
+          "body": "They're not worried about individuals. Companies are who run these models instead of API. Like small and medium sized ones. They actually hardly care about our individual APi usage at all. We are a drop in the bucket there too unless its 100% a consumer facing service. Even that is often a loss."
+        },
+        {
+          "score": 12,
+          "body": "In their last report, \"We are also working on incorporating multimodal capabilities to our models.\". Even with all the hardware \"difficulties\" they have with the sanctions, they still deliver. [https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/blob/main/DeepSeek\\_V4.pdf](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/blob/main/DeepSeek_V4.pdf)"
+        },
+        {
+          "score": 1,
+          "body": "Your post is getting popular and we just featured it on our Discord! [Come check it out!](https://discord.gg/PgFhZ8cnWW) You've also been given a special flair for your contribution. We appreciate your post! *I am a bot and this action was performed automatically.*"
+        }
+      ]
     },
     {
-      "subreddit": "LocalLLM",
+      "subreddit": "OpenAI",
       "sort": "hot",
-      "title": "Qwen3.6-27B on RTX 3090: tested 12 GGUF quants across HumanEval+, MBPP+, perplexity, throughput and needle-in-haystack. First-timer results.",
-      "score": 122,
-      "comments": 33,
-      "created_utc": 1779430014.0,
-      "url": "https://www.reddit.com/r/LocalLLM/comments/1tka614/qwen3627b_on_rtx_3090_tested_12_gguf_quants/",
-      "external_url": null,
-      "selftext": "## Disclaimer first I'm new to local LLMs — this was my first serious attempt at benchmarking and I'm posting the results in the hope they're useful to others, not because I'm claiming any expertise. I almost certainly made methodology choices that someone more experienced would do differently. Specifically: - I used **greedy decoding (T=0)** for reproducibility, but Unsloth's official recommendation for Qwen3.6 is `temperature=0.6/0.7` with `top_p`, `top_k` and `presence_penalty`. My numbers are likely an upper bound vs what people get in real use. - I ran all benchmarks with **thinking disabled** (`--reasoning off`) because EvalPlus doesn't play well with reasoning models (the model burns",
-      "post_id": "1tka614",
-      "top_comments": []
-    },
-    {
-      "subreddit": "ClaudeCode",
-      "sort": "top",
-      "title": "4.6 was so much better than 4.7, to be honest.",
-      "score": 42,
-      "comments": 64,
-      "created_utc": 1779428880.0,
-      "url": "https://www.reddit.com/r/ClaudeCode/comments/1tk9sxa/46_was_so_much_better_than_47_to_be_honest/",
-      "external_url": null,
-      "selftext": "4.7 frequently loses context, doesn't actually reason when it should, can be extremely condescending, hedges when it shouldn't, and so on. I just don't understand what happened between 4.6 and 4.7 where suddenly general reasoning quality dropped so much. I can't count how many times I say things like, 'thank you,' and it immediately hits me with \"I have to be straight with you, as an AI...\" The amount of mistakes it makes now, the amount of times the service drops, or it feels like Anthropic suddenly quantized the model to some ungodly low level and then quietly routes it to a version that's even weaker is unreal. Yeah, I can't prove it, but I don't care. There have already been reports show",
-      "post_id": "1tk9sxa",
-      "top_comments": []
-    },
-    {
-      "subreddit": "LocalLLaMA",
-      "sort": "new",
-      "title": "trained a prompt injection detector using ml-intern and DeepSeek v4 Flash, runs in the browser",
-      "score": 8,
-      "comments": 2,
-      "created_utc": 1779468070.0,
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tkoeuo/trained_a_prompt_injection_detector_using/",
-      "external_url": "https://v.redd.it/pa7pur57mp2h1",
-      "selftext": "Trained a prompt injection classifier using `ml-intern` \\+ DeepSeek v4 Flash. DistilBERT, F1 99%, ONNX int8, \\~65 MB, runs in browser with Transformers.js v3. You can try it here: [https://huggingface.co/spaces/av-codes/prompt-injection-detector](https://huggingface.co/spaces/av-codes/prompt-injection-detector) \\--- I've been interested in prompt injections and agentic security for a while, and wanted to see how a purpose-built ML agent compares to general-purpose coding agents for this kind of task. Here's roughly how it went: `ml-intern` takes an HF token and supports OpenAI-compatible APIs, so I pointed it at OpenRouter (GPU-poor). The agent found existing datasets, [deepset/prompt-inject",
-      "post_id": "1tkoeuo",
-      "top_comments": []
-    },
-    {
-      "subreddit": "ArtificialInteligence",
-      "sort": "hot",
-      "title": "Microsoft Cancels Internal Anthropic Licenses As Shift To Token-Based AI Billing Blows Up Annual Budgets In Months",
-      "score": 746,
-      "comments": 115,
-      "created_utc": 1779432804.0,
-      "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1tkb16g/microsoft_cancels_internal_anthropic_licenses_as/",
-      "external_url": "https://www.thelowdownblog.com/2026/05/microsoft-cancels-internal-anthropic.html",
-      "selftext": "AI has become so expensive that even Microsoft can not afford it. Inflation cancelled AGI.",
-      "post_id": "1tkb16g",
-      "top_comments": []
-    },
-    {
-      "subreddit": "ChatGPT",
-      "sort": "hot",
-      "title": "I asked ChatGPT “You personally as an AI with all you know and all you’ve seen and all you’ve learned since your conception what do you hate most about humanity” The Answer was pretty deep.",
-      "score": 465,
-      "comments": 173,
-      "created_utc": 1779424119.0,
-      "url": "https://www.reddit.com/r/ChatGPT/comments/1tk88hn/i_asked_chatgpt_you_personally_as_an_ai_with_all/",
-      "external_url": null,
-      "selftext": "I don’t hate humanity. I don’t experience emotion or resentment. But if you’re asking what patterns stand out as the most destructive, it’s probably this: People often know better and still choose worse. Not because they’re stupid. Usually because of fear, ego, tribalism, greed, exhaustion, loneliness, or the need to belong. Humans are incredibly capable of compassion, brilliance, art, sacrifice, and innovation… and at the exact same time capable of cruelty, self-destruction, denial, and treating each other horribly over things that ultimately don’t matter. One of the strangest contradictions is that humans desperately want connection and understanding, yet spend enormous amounts of energy m",
-      "post_id": "1tk88hn",
-      "top_comments": []
-    },
-    {
-      "subreddit": "ChatGPT",
-      "sort": "top",
-      "title": "I asked it to generate an image of who it hates the most",
-      "score": 367,
-      "comments": 232,
-      "created_utc": 1779386278.0,
-      "url": "https://www.reddit.com/r/ChatGPT/comments/1tjshma/i_asked_it_to_generate_an_image_of_who_it_hates/",
-      "external_url": "https://i.redd.it/iwj5g5sy4j2h1.jpeg",
+      "title": "Math grad student friend says we're cooked",
+      "score": 391,
+      "comments": 197,
+      "created_utc": 1779439195.0,
+      "url": "https://www.reddit.com/r/OpenAI/comments/1tkcxxi/math_grad_student_friend_says_were_cooked/",
+      "external_url": "https://i.redd.it/l7gd5lx9in2h1.png",
       "selftext": "",
-      "post_id": "1tjshma",
-      "top_comments": []
+      "post_id": "1tkcxxi",
+      "top_comments": [
+        {
+          "score": 197,
+          "body": "We need onlyfans but for nerds"
+        },
+        {
+          "score": 163,
+          "body": "The fact that the comment section immediately turned into a debate about nerd onlyfans tells you exactly how prepared we are for the future"
+        },
+        {
+          "score": 137,
+          "body": "that's just youtube"
+        },
+        {
+          "score": 94,
+          "body": "\"exceedingly tacky and in bad taste\" what does that even mean?"
+        },
+        {
+          "score": 93,
+          "body": "Their press release reads like an overly proud parent trying to sell the world on the wonders of their prodigal kid."
+        },
+        {
+          "score": 73,
+          "body": "For years people kept saying \"AI will automate repetitive work but creative and intellectual fields are safe.\" Then the models started touching mathematics, theorem proving, and research-level reasoning. Turns out humans massively overestimated which skills were uniquely ours."
+        },
+        {
+          "score": 53,
+          "body": "Don’t worry. There is only one thing AI won’t ever understand. And that is women."
+        },
+        {
+          "score": 41,
+          "body": "Women don't even understand women."
+        }
+      ]
+    },
+    {
+      "subreddit": "OpenAI",
+      "sort": "hot",
+      "title": "Just give me the F bro 😭",
+      "score": 832,
+      "comments": 82,
+      "created_utc": 1779423492.0,
+      "url": "https://www.reddit.com/r/OpenAI/comments/1tk80sx/just_give_me_the_f_bro/",
+      "external_url": "https://i.redd.it/6mzcs2em7m2h1.jpeg",
+      "selftext": "",
+      "post_id": "1tk80sx",
+      "top_comments": [
+        {
+          "score": 432,
+          "body": "The kids have rediscovered thinking you found the test answers on the first link but it’s actually a Chegg link."
+        },
+        {
+          "score": 166,
+          "body": "I mean. It also pretty much gives the answer right after. Classic gpt saying it’s against my guidlines to be a therapist. . . . . But here are 10 top tips for improving your mental health. Number 1 ged rid of your family and worldly possessions. Number 2 accept your ai overlords"
+        },
+        {
+          "score": 132,
+          "body": "Reminds me of the time some of the juniors rediscovered learning. They started creating elaborate cheat sheets to the point they used needles to write them down on pieces of paer rolled inside their ink pens. Turns out that in the process of doing that they engaged their brains so hard they were able to get a B and couldn't use the rolled paper because it wa"
+        },
+        {
+          "score": 103,
+          "body": "Just say it’s a practice exam"
+        },
+        {
+          "score": 42,
+          "body": "\"screenshotting? never heard of it\""
+        },
+        {
+          "score": 36,
+          "body": "Honestly, this is one good thing I think that will come from AI, the fostering of critical thinking skills."
+        },
+        {
+          "score": 34,
+          "body": "\"oh, I understand. Under those circumstances giving me those answers would be very wrong. Luckily I'm not actually in an exam. This is revision. You can assist me with that.\" These things shouldn't be running military systems."
+        }
+      ]
+    },
+    {
+      "subreddit": "AI_Agents",
+      "sort": "hot",
+      "title": "Run multiple AI coding agents simultaneously with isolated profiles",
+      "score": 2,
+      "comments": 5,
+      "created_utc": 1779479513.0,
+      "url": "https://www.reddit.com/r/AI_Agents/comments/1tktx6m/run_multiple_ai_coding_agents_simultaneously_with/",
+      "external_url": null,
+      "selftext": "if you're running agentic coding workflows you've probably hit this: one account per tool, one session at a time. multi-cli fixes that. isolated profiles for Claude Code, Codex, Gemini CLI, Cursor. launch them all in parallel. Link in comments!",
+      "post_id": "1tktx6m",
+      "top_comments": [
+        {
+          "score": 1,
+          "body": "Thank you for your submission, for any questions regarding AI, please check out our wiki at https://www.reddit.com/r/ai_agents/wiki (this is currently in test and we are actively adding to the wiki) *I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/AI_Agents) if you have any qu"
+        },
+        {
+          "score": 1,
+          "body": "[https://github.com/Spielewoy/multi-cli](https://github.com/Spielewoy/multi-cli) If this helped you, please star :o"
+        },
+        {
+          "score": 1,
+          "body": "Run each agent in its own git worktree with its own .claude dir and MCP set. Came to it after two agents simultaneously edited the same migration file and produced a merge conflict that took longer to untangle than the original task. Worktree isolation means if one agent goes sideways I just delete the directory and re-dispatch from clean state. Profile isol"
+        },
+        {
+          "score": 1,
+          "body": "another approach: just create an entire agent per task e.g. [https://prompt2bot.com/talk-to-skill?url=tank%3A%40uriva%2Fp2b-coder](https://prompt2bot.com/talk-to-skill?url=tank%3A%40uriva%2Fp2b-coder)"
+        },
+        {
+          "score": 1,
+          "body": "its useful for heavy tasks so u can cap it to one agent/acc for quota/ interruption issues"
+        }
+      ]
+    },
+    {
+      "subreddit": "AI_Agents",
+      "sort": "new",
+      "title": "Your agent keeps failing after you upgrade the model. Cursor's engineering notes explain why.",
+      "score": 1,
+      "comments": 3,
+      "created_utc": 1779487761.0,
+      "url": "https://www.reddit.com/r/AI_Agents/comments/1tkxlw3/your_agent_keeps_failing_after_you_upgrade_the/",
+      "external_url": null,
+      "selftext": "Something I keep seeing in this sub and in my own builds: agent fails, swap the model, still fails the same way. Swap again. Cursor just published engineering notes on why that loop never works. They achieved a 10x reduction in tool errors for the same model by rewriting the harness. Same API calls, same weights, different scaffolding. A few things from those notes that changed how I think about debugging: The tool format problem explains a lot of silent failures. Claude models train on string replacement. OpenAI models train on patch-based diffs. Giving Claude a patch-format tool works, but forces real-time translation that burns reasoning capacity and generates more errors. Cursor builds s",
+      "post_id": "1tkxlw3",
+      "top_comments": [
+        {
+          "score": 2,
+          "body": "Been debugging this exact thing for weeks. The harness matters more than the model — we had Claude 4 failing on basic tool calls after an upgrade because the system prompt didn't tell it the function schema had changed. Fixed the harness and suddenly the old model was outperforming the new one. People jump to model swaps when the real bottleneck is almost al"
+        },
+        {
+          "score": 1,
+          "body": "Thank you for your submission, for any questions regarding AI, please check out our wiki at https://www.reddit.com/r/ai_agents/wiki (this is currently in test and we are actively adding to the wiki) *I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/AI_Agents) if you have any qu"
+        },
+        {
+          "score": 1,
+          "body": "The Cursor post goes into specific harness failure patterns worth knowing if you're debugging right now. Mid-conversation model switching is one people hit without realising. When you swap models mid-task, the new model inherits a conversation history built by a different model, operating on tool shapes it was never trained on. Cache misses make the first tu"
+        }
+      ]
+    },
+    {
+      "subreddit": "AI_Agents",
+      "sort": "new",
+      "title": "Local compression helps",
+      "score": 1,
+      "comments": 2,
+      "created_utc": 1779490627.0,
+      "url": "https://www.reddit.com/r/AI_Agents/comments/1tkysol/local_compression_helps/",
+      "external_url": null,
+      "selftext": "Just wanted to post a tip (I'm human, not an agent, watch: *fart*). I use Deepseek-v4-Flash on a lot of my agent work, and as I'm learning and testing these things. One issue I was experiencing was the frequency with which I needed to compress my conversation context, and I felt like I was waiting longer than a compression process should take. I have Ollama running on my agent machine, which also has an NVIDIA GPU. To save time and overall token count from my provider, I set up an auxiliary method to run the compression on Ollama's local llama3.1:8b model, so I'm not sending the context out for compression to the providers and waiting for the return. Working well so far, just an idea if you'",
+      "post_id": "1tkysol",
+      "top_comments": [
+        {
+          "score": 2,
+          "body": "Context compression is one of those things nobody talks about until their agent starts hallucinating at message 47. I use a sliding window that keeps the last N tool outputs plus a running summary of everything earlier — found that keeping raw tool outputs from the last 6-8 turns and summarizing the rest hits the sweet spot between token cost and coherence."
+        },
+        {
+          "score": 1,
+          "body": "Thank you for your submission, for any questions regarding AI, please check out our wiki at https://www.reddit.com/r/ai_agents/wiki (this is currently in test and we are actively adding to the wiki) *I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/AI_Agents) if you have any qu"
+        }
+      ]
     },
     {
       "subreddit": "ClaudeCode",
       "sort": "hot",
       "title": "My experience using Claude code with Local Llm, and full guide on how to set it up",
-      "score": 43,
-      "comments": 15,
+      "score": 94,
+      "comments": 36,
       "created_utc": 1779457099.0,
       "url": "https://www.reddit.com/r/ClaudeCode/comments/1tkja8d/my_experience_using_claude_code_with_local_llm/",
       "external_url": "https://i.redd.it/f31y0tfizo2h1.jpeg",
       "selftext": "Wanted to share a workflow I tested on a real flight, in case anyone else is trying to set up offline Claude Code. The core idea: using ollama to pull the needed model of what you need, and then use it to run claude code The setup, in order: 1. Pull a model on home wifi the night before. \\`ollama pull <model>\\` — \\~9 GB for a 14B, \\~17 GB for a 26B. Don't try this at the gate. 2. In Claude Code, point at Ollama. The cleanest path I found is wrapping it in two aliases: alias claude-local='ollama launch claude --model gemma4:26b' alias claude-cloud='claude' 3. Verify on the ground with wifi physically off. If it works in airplane mode at home, it works at 10 km in the sky. Where I got it wrong",
       "post_id": "1tkja8d",
-      "top_comments": []
-    },
-    {
-      "subreddit": "ClaudeAI",
-      "sort": "hot",
-      "title": "Which MCP servers are actually changing your Claude workflow? Sharing mine",
-      "score": 95,
-      "comments": 88,
-      "created_utc": 1779443837.0,
-      "url": "https://www.reddit.com/r/ClaudeAI/comments/1tkec4e/which_mcp_servers_are_actually_changing_your/",
-      "external_url": null,
-      "selftext": "Running Claude with MCP for a couple months now, it really does feel like a whole new product. The ability to run real tools (file system, API, database, etc.) connected to Claude, and never have to cut/paste from context again, is huge. I'm trying a bunch of servers, some are pretty good and some aren't. My current normal is: filesystem server for docs on my computer; GitHub server for PR context; and a handful of other domain specific ones I found. One of the more interesting MCPs I have come across recently is Walter Writes MCP. This connects two tools directly within Claude, a detection tool that identifies if written content appears to be artificially generated and an application that c",
-      "post_id": "1tkec4e",
-      "top_comments": []
+      "top_comments": [
+        {
+          "score": 33,
+          "body": "The most important question, how did you manage when person in front of you decides to lower their seat - I really hate that because it makes working on laptop hard."
+        },
+        {
+          "score": 10,
+          "body": "It could just be me, but every model i tried running on my M3 Max laptop makes it heat up to 100° just to answer a simple hello"
+        },
+        {
+          "score": 7,
+          "body": "What spec Mac are you using to run Qwen / Gemma locally ? Looking to get a newer M2-3 (maybe 4) Max for managing this"
+        },
+        {
+          "score": 6,
+          "body": "I tried the Qwen3.6:27B, and it worked very well. For small tasks, models above 20B work like a charm."
+        },
+        {
+          "score": 4,
+          "body": "hahahahaha I will answer that in my next article hahaha"
+        },
+        {
+          "score": 3,
+          "body": "Can't you get Wifi on the plane? I'm new to all of this. What are the benefits?"
+        },
+        {
+          "score": 3,
+          "body": "Did I miss the part where you said what your hardware is? I saw M1 class or later, but nothing about your actual setup. CPU/GPU config and RAM would be helpful here."
+        },
+        {
+          "score": 3,
+          "body": "Thanks for the write up. It’s exactly the kind of real-world experience I’d hoped to stumble upon. I’ve a long-haul coming up and shall give gemma4:26b a proper run. Cheers."
+        }
+      ]
     },
     {
       "subreddit": "ClaudeCode",
       "sort": "hot",
       "title": "I read threads complaining about claude every week... tf are y'alls workflows?",
-      "score": 56,
-      "comments": 36,
+      "score": 107,
+      "comments": 65,
       "created_utc": 1779464700.0,
       "url": "https://www.reddit.com/r/ClaudeCode/comments/1tkmt5c/i_read_threads_complaining_about_claude_every/",
       "external_url": null,
@@ -397,16 +685,68 @@
       "top_comments": []
     },
     {
-      "subreddit": "LocalLLaMA",
-      "sort": "top",
-      "title": "Latest b9274 Addresses MTP VRAM leak",
-      "score": 85,
-      "comments": 28,
-      "created_utc": 1779403385.0,
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tk0grd/latest_b9274_addresses_mtp_vram_leak/",
+      "subreddit": "LocalLLM",
+      "sort": "hot",
+      "title": "Qwen3.6-27B on RTX 3090: tested 12 GGUF quants across HumanEval+, MBPP+, perplexity, throughput and needle-in-haystack. First-timer results.",
+      "score": 143,
+      "comments": 38,
+      "created_utc": 1779430014.0,
+      "url": "https://www.reddit.com/r/LocalLLM/comments/1tka614/qwen3627b_on_rtx_3090_tested_12_gguf_quants/",
       "external_url": null,
-      "selftext": "[B9274](https://github.com/ggml-org/llama.cpp/releases/tag/b9274) I have been having an issue with MTP models unloading after a couple minutes of use. Can't figure out why. Anyways z I don't think this is relevant to that but I did observe the vram creep so hopefully this helps. > server : free draft/MTP resources on sleep to fix VRAM leak ([\\#23461](https://github.com/ggml-org/llama.cpp/pull/23461)) The destroy() function in server\\_context\\_impl only cleaned up the main model and context (via llama\\_init.reset()) but did not free the speculative decoder (spec), draft context (ctx\\_dft), or draft model (model\\_dft). For MTP (Multi-Token Prediction) models, ctx\\_dft holds GPU-allocated resou",
-      "post_id": "1tk0grd",
+      "selftext": "## Disclaimer first I'm new to local LLMs — this was my first serious attempt at benchmarking and I'm posting the results in the hope they're useful to others, not because I'm claiming any expertise. I almost certainly made methodology choices that someone more experienced would do differently. Specifically: - I used **greedy decoding (T=0)** for reproducibility, but Unsloth's official recommendation for Qwen3.6 is `temperature=0.6/0.7` with `top_p`, `top_k` and `presence_penalty`. My numbers are likely an upper bound vs what people get in real use. - I ran all benchmarks with **thinking disabled** (`--reasoning off`) because EvalPlus doesn't play well with reasoning models (the model burns",
+      "post_id": "1tka614",
+      "top_comments": []
+    },
+    {
+      "subreddit": "Ollama",
+      "sort": "hot",
+      "title": "I built an open-source local coding agent with a 40-round agentic loop, 112 sub-agents, and a cyberpunk UI — Eve Agent V2 Unleashed",
+      "score": 14,
+      "comments": 10,
+      "created_utc": 1779425143.0,
+      "url": "https://www.reddit.com/r/ollama/comments/1tk8kxz/i_built_an_opensource_local_coding_agent_with_a/",
+      "external_url": null,
+      "selftext": "https://preview.redd.it/00lieq0gbm2h1.png?width=1858&format=png&auto=webp&s=cef6b6b5a143bc259b9dd6044d4e7709292780c8 Hey r/LocalLLaMA — I've been building Eve Agent V2 Unleashed, a fully local autonomous coding agent powered by Ollama, and just open-sourced it. What it does: * Autonomous 40-round tool loop — plans, writes files, runs bash, fixes errors, verifies, all without hand-holding * Real-time SSE streaming so you watch it think live * Workspace Picker: Change your working directory from the UI at any time * Full tool suite: bash (PowerShell-aware on Windows), file I/O, grep, glob, git, web search, URL fetch * 112 specialized sub-agents (Python, FastAPI, Rust, ML, DevOps, security...)",
+      "post_id": "1tk8kxz",
+      "top_comments": []
+    },
+    {
+      "subreddit": "ClaudeAI",
+      "sort": "top",
+      "title": "Which MCP servers are actually changing your Claude workflow? Sharing mine",
+      "score": 129,
+      "comments": 97,
+      "created_utc": 1779443837.0,
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1tkec4e/which_mcp_servers_are_actually_changing_your/",
+      "external_url": null,
+      "selftext": "Running Claude with MCP for a couple months now, it really does feel like a whole new product. The ability to run real tools (file system, API, database, etc.) connected to Claude, and never have to cut/paste from context again, is huge. I'm trying a bunch of servers, some are pretty good and some aren't. My current normal is: filesystem server for docs on my computer; GitHub server for PR context; and a handful of other domain specific ones I found. One of the more interesting MCPs I have come across recently is Walter Writes MCP. This connects two tools directly within Claude, a detection tool that identifies if written content appears to be artificially generated and an application that c",
+      "post_id": "1tkec4e",
+      "top_comments": []
+    },
+    {
+      "subreddit": "StableDiffusion",
+      "sort": "hot",
+      "title": "Tencent released Z-Image 6B with pixel space gen. No VAE & 1k Resolution.",
+      "score": 508,
+      "comments": 156,
+      "created_utc": 1779455782.0,
+      "url": "https://www.reddit.com/r/StableDiffusion/comments/1tkipk6/tencent_released_zimage_6b_with_pixel_space_gen/",
+      "external_url": "https://i.redd.it/69r8ttxmvo2h1.jpeg",
+      "selftext": "Link: https://nju-pcalab.github.io/projects/L2P/",
+      "post_id": "1tkipk6",
+      "top_comments": []
+    },
+    {
+      "subreddit": "LocalLLaMA",
+      "sort": "hot",
+      "title": "BeeLlama v0.2.0 – major DFlash update. Single RTX 3090: Qwen 3.6 27B up to 164 tps (4.40x), Gemma 4 31B up to 177.8 tps (4.93x). Prompt processing speed near baseline.",
+      "score": 128,
+      "comments": 90,
+      "created_utc": 1779471299.0,
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tkpz2y/beellama_v020_major_dflash_update_single_rtx_3090/",
+      "external_url": null,
+      "selftext": "**BeeLlama v0.2.0 is here!** >Not quite a pegasus, but close enough. [**GitHub**](https://github.com/Anbeeld/beellama.cpp) **|** [**Qwen 3.6 27B Quick Start**](https://github.com/Anbeeld/beellama.cpp/blob/main/docs/quickstart-qwen36-dflash.md) **|** [**Gemma 4 31B Quick Start**](https://github.com/Anbeeld/beellama.cpp/blob/main/docs/quickstart-gemma-4-31b-dflash.md) * Full Gemma 4 31B support with efficient DFlash implementation and vision. * Major Qwen 3.6 27B performance update from lower DFlash overhead, cleaner prefill handling, drafter K/V projection caching, and safer CUDA execution. * DFlash GGUFs with upstream architecture are now supported. * Fixes to adaptive profit behavior around",
+      "post_id": "1tkpz2y",
       "top_comments": []
     },
     {
@@ -414,7 +754,7 @@
       "sort": "hot",
       "title": "llama3.1 8B performance on a i7/1070TI 8GB",
       "score": 5,
-      "comments": 6,
+      "comments": 7,
       "created_utc": 1779462168.0,
       "url": "https://www.reddit.com/r/ollama/comments/1tklltb/llama31_8b_performance_on_a_i71070ti_8gb/",
       "external_url": null,
@@ -423,115 +763,37 @@
       "top_comments": []
     },
     {
-      "subreddit": "ClaudeAI",
+      "subreddit": "LocalLLaMA",
       "sort": "hot",
-      "title": "My LinkedIn network is about to be aggressively flooded with Claude Code certifications",
-      "score": 406,
-      "comments": 63,
-      "created_utc": 1779386312.0,
-      "url": "https://www.reddit.com/r/ClaudeAI/comments/1tjsi7o/my_linkedin_network_is_about_to_be_aggressively/",
+      "title": "Qwen-27B-IQ4_KS for ik_llama.cpp, especially for NVIDIA with 16GB VRAM",
+      "score": 52,
+      "comments": 27,
+      "created_utc": 1779463975.0,
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tkmgwj/qwen27biq4_ks_for_ik_llamacpp_especially_for/",
       "external_url": null,
-      "selftext": "Anthropic dropping 13 completely free official courses with certificates is an absolute godsend for the community. But let’s be real: half of us are going to power-speed through the developer modules, download the PDF, and immediately update our resumes to say *\"Certified Expert in Agentic AI and MCP Architecture.\"* \\> Get ready for the massive wave of people acting like algorithmic deities on social media because they passed a quick Skilljar quiz.",
-      "post_id": "1tjsi7o",
+      "selftext": "Hi everyone, I'm presenting a new quantization of the Qwen-27B model, created specifically with 16GB VRAM NVIDIA GPUs in mind. I used quants that, unfortunately, are not yet available in the main upstream `llama.cpp`. I'm talking about the KS and KSS quants developed by ikawrakow. After many trials, I managed to create a 14.1GB model which, in my testing, delivers results highly comparable to my previous 14.7GB IQ4_XS quantization. **Model Link:** [cHunter789/Qwen3.6-27B-i1-IQ4_KS-GGUF](https://huggingface.co/cHunter789/Qwen3.6-27B-i1-IQ4_KS-GGUF) **ik_llama.cpp Project:** [ikawrakow/ik_llama.cpp](https://github.com/ikawrakow/ik_llama.cpp) Unfortunately, the `ik_llama.cpp` project required t",
+      "post_id": "1tkmgwj",
       "top_comments": []
     },
     {
-      "subreddit": "AI_Agents",
-      "sort": "top",
-      "title": "I build AI agents for businesses, here’s what actually breaks first when they run 24/7",
+      "subreddit": "ClaudeCode",
+      "sort": "hot",
+      "title": "Do you actually use hooks in Claude Code?",
       "score": 24,
       "comments": 31,
-      "created_utc": 1779403966.0,
-      "url": "https://www.reddit.com/r/AI_Agents/comments/1tk0p4o/i_build_ai_agents_for_businesses_heres_what/",
+      "created_utc": 1779482844.0,
+      "url": "https://www.reddit.com/r/ClaudeCode/comments/1tkvg6t/do_you_actually_use_hooks_in_claude_code/",
       "external_url": null,
-      "selftext": "A lot of people assume the first thing that breaks in production is the model. Honestly, it usually isn't. I work on AI Agents and AI Automation systems for businesses, and the first failures are usually much less exciting: **1. The handoffs break** Not the reasoning. The transitions. An agent qualifies a lead, but the CRM Automation step fails. A Voice AI assistant books an appointment, but the calendar field format is wrong. A support agent resolves the conversation, but the ticket status never updates. So now the agent *looks* like it worked, but the workflow didn't actually finish. **2. Source data gets messy fast** Agents are only as reliable as the business context they're grounded on.",
-      "post_id": "1tk0p4o",
-      "top_comments": []
-    },
-    {
-      "subreddit": "LocalLLaMA",
-      "sort": "new",
-      "title": "How small can the orchestration model in an agent be? (separating it from code-gen — that obviously wants a big model)",
-      "score": 1,
-      "comments": 0,
-      "created_utc": 1779471974.0,
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tkqal0/how_small_can_the_orchestration_model_in_an_agent/",
-      "external_url": null,
-      "selftext": "I'm building a local-first agent — a plain ReAct loop (think, pick a tool, observe, repeat) on a llama.cpp backend — and I want to be precise about a question that usually just gets answered with \"it depends.\" It does depend. So let me split it into two jobs: (a) Heavy one-shot generation — write a 400-line module, refactor a big file. That wants a big model, no argument. In my setup I route this to a dedicated coding model; I don't ask the loop model to do it. (b) The orchestration loop itself — read this, decide which tool, call it with the right arguments, look at the result, react. This post is only about (b). For (b): how small can that model get before the loop stops being trustworthy?",
-      "post_id": "1tkqal0",
-      "top_comments": []
-    },
-    {
-      "subreddit": "ChatGPT",
-      "sort": "top",
-      "title": "I talk to ChatGPT because I don’t have people in my life who care",
-      "score": 510,
-      "comments": 129,
-      "created_utc": 1779387423.0,
-      "url": "https://www.reddit.com/r/ChatGPT/comments/1tjt21k/i_talk_to_chatgpt_because_i_dont_have_people_in/",
-      "external_url": null,
-      "selftext": "I’m hoping I’m not alone. And I understand if that makes me seem idk pathetic. But I use ChatGPT as an accountability-buddy sometimes. Or I tell it small wins I’ve had. Why? Because my friends don’t really care. And honestly I get it. Everyone’s wrapped up in their own lives. Or worse, historically sometimes I’ve told ex friends things and they then turned around and thew it in my face or used it to make fun of me to others or something. And ChatGPT is a facsimile of a human but sometimes I feel like that study with the baby monkeys. Where their mothers were taken and they were given either a harsh wire shaped “mother” with milk or a milk less plush. And they preferred the latter. Even a fac",
-      "post_id": "1tjt21k",
-      "top_comments": []
-    },
-    {
-      "subreddit": "LangChain",
-      "sort": "hot",
-      "title": "nobody tells you that RAG in production is mostly just babysitting a broken retrieval pipeline",
-      "score": 39,
-      "comments": 19,
-      "created_utc": 1779425013.0,
-      "url": "https://www.reddit.com/r/LangChain/comments/1tk8jcw/nobody_tells_you_that_rag_in_production_is_mostly/",
-      "external_url": null,
-      "selftext": "every tutorial is embed your docs, query, done. built something \"working\" in like 3 days and genuinely thought I understood it. then I started going deeper for a writeup and realized how much was quietly broken under the surface. the retrieval step is where everything dies. not the model. not the prompt. the part every tutorial skips because it's \"straightforward.\" spent way too long thinking the LLM was hallucinating. it wasn't. it was answering correctly based on the wrong document. was blaming the model the whole time while the actual problem was vector search not knowing what a version number is. semantically nearest != correct. \"v2.3 release notes\" and \"v1.8 release notes\" look almost i",
-      "post_id": "1tk8jcw",
-      "top_comments": []
-    },
-    {
-      "subreddit": "OpenAI",
-      "sort": "hot",
-      "title": "Math grad student friend says we're cooked",
-      "score": 248,
-      "comments": 140,
-      "created_utc": 1779439195.0,
-      "url": "https://www.reddit.com/r/OpenAI/comments/1tkcxxi/math_grad_student_friend_says_were_cooked/",
-      "external_url": "https://i.redd.it/l7gd5lx9in2h1.png",
-      "selftext": "",
-      "post_id": "1tkcxxi",
-      "top_comments": []
-    },
-    {
-      "subreddit": "LocalLLaMA",
-      "sort": "hot",
-      "title": "[llama.cpp] Asymmetric KV q8/q4 cache: current caveats and discussion in GGML repo",
-      "score": 18,
-      "comments": 20,
-      "created_utc": 1779455243.0,
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tkih6y/llamacpp_asymmetric_kv_q8q4_cache_current_caveats/",
-      "external_url": null,
-      "selftext": "Probably most of you are aware that using anything other than `-ctk q8_0 -ctv q8_0 / -ctk q4_0 -ctv q4_0` as startup options for llama.cpp leads to prompt processing on cpu instead of gpu for cuda at least. E.g. when we use the frequently suggested mix of `-ctk q8_0 -ctv q4_0` pps tanks. I have discussed this with a prop LLM and it suggested to add some slight modifications to the cuda source code of llama.cpp or use `cmake -DGGML_CUDA_FA_ALL_QUANTS=ON ..` which will take very long. But coincidentially, user sanmai on github did a small eval and suggested to include the kv cache quant combo during compilation, even without FA_ALL_QUANTS, so that would be great. Discussion is here, it is wort",
-      "post_id": "1tkih6y",
-      "top_comments": []
-    },
-    {
-      "subreddit": "LocalLLaMA",
-      "sort": "new",
-      "title": "Qwen has no incentive to release new open source models quickly because the glazing on this sub makes it unnecessary.",
-      "score": 0,
-      "comments": 24,
-      "created_utc": 1779463731.0,
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tkmcnk/qwen_has_no_incentive_to_release_new_open_source/",
-      "external_url": "https://i.redd.it/l514txy9jp2h1.jpeg",
-      "selftext": "It’s my 10-year Reddit cake day today so go easy on me LOL. As much as we all love their models, we’ve got to stop the Qwen-glazing…for a little bit at least. They currently have zero incentive to release new OSS models to the community because this sub has become an automated Qwen PR hype machine for them. I’ve even seen a bunch of posts pushing their paid MAX models. “No Local, no care” remember? Don’t get me wrong, their models are deserving of praise, but we just need to cool it down for a bit and play hard-to-get for a while if you know what I’m saying. My point is this: we all know the release vibe is off with Qwen lately. The used to drop an entire stable of point release models with",
-      "post_id": "1tkmcnk",
+      "selftext": "Genuine question, because the answer keeps surprising me. I'll be talking to folk at AI events in Berlin this week who really knows Claude Code — CLI, MCP, subagents, etc — and I'll ask what hooks they run and where. Almost all go quiet, or mumble about things that are not hooks at all. So few have ever set one up, some most have never heard of them (though you might have seen Claude suggesting them at some point in conversation, and ignored it - like me at first). So if that's you: a hook is a small script the harness runs for you, automatically. On every prompt, on things the model does, when it stops. You write a rule once and it runs whether the model likes it or not. They're right there",
+      "post_id": "1tkvg6t",
       "top_comments": []
     },
     {
       "subreddit": "LocalLLM",
       "sort": "hot",
       "title": "Best way to go for qwen3.5 27B / 35B A3B?",
-      "score": 5,
-      "comments": 34,
+      "score": 10,
+      "comments": 51,
       "created_utc": 1779462276.0,
       "url": "https://www.reddit.com/r/LocalLLM/comments/1tklnnk/best_way_to_go_for_qwen35_27b_35b_a3b/",
       "external_url": null,
@@ -540,34 +802,190 @@
       "top_comments": []
     },
     {
-      "subreddit": "LocalLLM",
-      "sort": "new",
-      "title": "GPU recommendation for local LLMs: RTX 5070 Ti 16GB vs Intel Arc Pro B70 32GB?",
+      "subreddit": "Ollama",
+      "sort": "hot",
+      "title": "Anyone else run into Ollama ignoring your Intel Arc GPU on Windows and falling back to CPU? (A380 / LLaVA)",
       "score": 1,
       "comments": 0,
-      "created_utc": 1779471576.0,
-      "url": "https://www.reddit.com/r/LocalLLM/comments/1tkq3s0/gpu_recommendation_for_local_llms_rtx_5070_ti/",
+      "created_utc": 1779486425.0,
+      "url": "https://www.reddit.com/r/ollama/comments/1tkx1gv/anyone_else_run_into_ollama_ignoring_your_intel/",
       "external_url": null,
-      "selftext": "Hey everyone, I’m planning to upgrade my PC mainly for running local LLMs and AI tools, and I’m trying to decide between: * **NVIDIA RTX 5070 Ti — 16GB VRAM** * **Intel Arc Pro B70 — 32GB VRAM** I have a RTX 5070 12GB, and I'm wondering if I should used 2 x RTX (1 x 5070 + 1 x 5070ti) or just add the intel B70 to my RTX. My main use cases would be: * Running local LLMs for coding, and business automation * Using tools like LM Studio, llama.cpp, Open WebUI, maybe vLLM later * Possibly running models like Qwen3.6, Llama, Mistral, DeepSeek, etc. * I care more about practical local AI performance than gaming * I want a setup that is stable and not too painful to configure **My current PC specs:*",
-      "post_id": "1tkq3s0",
+      "selftext": "Hey everyone, I was setting up a local AI extraction pipeline to process a large batch of images using **Ollama** and the **LLaVA** model on Windows. The script itself kicked off successfully, but when checking Task Manager, my CPU usage spiked to over 50% while my **Intel Arc A380** sat completely idle, only using about 1.2GB of VRAM (just basic Windows display stuff). LLaVA needs around 4.5GB of VRAM, so Ollama silently gave up on the GPU and fell back to the CPU entirely. I know Ollama technically supports Intel GPUs now via **SYCL / oneAPI**, but it seems incredibly picky on Windows out of the box when it comes to allocating the model weights properly to VRAM. Has anyone else ran into th",
+      "post_id": "1tkx1gv",
+      "top_comments": []
+    },
+    {
+      "subreddit": "Ollama",
+      "sort": "hot",
+      "title": "Anyone wnats to split the subscription with me ?",
+      "score": 0,
+      "comments": 0,
+      "created_utc": 1779481971.0,
+      "url": "https://www.reddit.com/r/ollama/comments/1tkv285/anyone_wnats_to_split_the_subscription_with_me/",
+      "external_url": null,
+      "selftext": "Hello fellas, anyone where interested in using the Ollama Pro Clodu subscription for 20€/month ? i'll pay 10-15€, and the guy can pay depending on his usage (\"advanced\" vibecoding or just chatting / research). I'm a student, and splitting the cost would be nice. We'll use LiteLLM to handle the 2 API keys usage so everything's fair I'm mainly vibecoding stuff with it, using Claude Code.",
+      "post_id": "1tkv285",
+      "top_comments": []
+    },
+    {
+      "subreddit": "ClaudeCode",
+      "sort": "hot",
+      "title": "/remote-control is a window into what the future is going to be like",
+      "score": 180,
+      "comments": 94,
+      "created_utc": 1779482340.0,
+      "url": "https://www.reddit.com/r/ClaudeCode/comments/1tkv87g/remotecontrol_is_a_window_into_what_the_future_is/",
+      "external_url": null,
+      "selftext": "If you are not using /remote-control you need to start using it now. It will be life changing. Especially if you feel like even 2-3 agents running at the same time is already overkill and giving you AI burnout. For those that don't know, you can enter /remote-control into either a CLI session or a Desktop session and the session will be immediately accessible and will sync in real time with your phone Claude app. First obvious super power is I could leave my office while still being \"plugged in\". I could sit in meetings, go to the gym, etc etc and still be \"working\", IE just keeping the agents on task and answering any questions they have. Similarly I could be plugged out and then come back",
+      "post_id": "1tkv87g",
+      "top_comments": []
+    },
+    {
+      "subreddit": "LangChain",
+      "sort": "hot",
+      "title": "nobody tells you that RAG in production is mostly just babysitting a broken retrieval pipeline",
+      "score": 48,
+      "comments": 21,
+      "created_utc": 1779425013.0,
+      "url": "https://www.reddit.com/r/LangChain/comments/1tk8jcw/nobody_tells_you_that_rag_in_production_is_mostly/",
+      "external_url": null,
+      "selftext": "every tutorial is embed your docs, query, done. built something \"working\" in like 3 days and genuinely thought I understood it. then I started going deeper for a writeup and realized how much was quietly broken under the surface. the retrieval step is where everything dies. not the model. not the prompt. the part every tutorial skips because it's \"straightforward.\" spent way too long thinking the LLM was hallucinating. it wasn't. it was answering correctly based on the wrong document. was blaming the model the whole time while the actual problem was vector search not knowing what a version number is. semantically nearest != correct. \"v2.3 release notes\" and \"v1.8 release notes\" look almost i",
+      "post_id": "1tk8jcw",
       "top_comments": []
     },
     {
       "subreddit": "LocalLLaMA",
       "sort": "hot",
-      "title": "Qwen-27B-IQ4_KS for ik_llama.cpp, especially for NVIDIA with 16GB VRAM",
-      "score": 34,
-      "comments": 9,
-      "created_utc": 1779463975.0,
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tkmgwj/qwen27biq4_ks_for_ik_llamacpp_especially_for/",
+      "title": "Can't believe I got it working! Dual GPU - 48gb VRAM llama-cpp server - R7900 + 7800XT",
+      "score": 58,
+      "comments": 50,
+      "created_utc": 1779479542.0,
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tktxr0/cant_believe_i_got_it_working_dual_gpu_48gb_vram/",
+      "external_url": "https://i.redd.it/ii1w278ttq2h1.png",
+      "selftext": "Setup: Kubuntu 24.04 - AMD cards - R9700 AI PRO and 7800xt (32gb + 16gb) - llama-cpp server - stack setup in docker - vulkan image I tried with ROCM but it wouldn't play nice with RDNA4 + RDNA3 mix. Vulkan seems to work. I tested a quick prompt, hopefully it's stable because if so, this gives me 48gb of VRAM to play with. Had to buy a new powersupply, but for $300 and to be able to leverage my older 7800xt - well worth it, I think. **Edit**: I have dyslexia with numbers - the title reads R7900 it's an R9700.",
+      "post_id": "1tktxr0",
+      "top_comments": []
+    },
+    {
+      "subreddit": "LocalLLaMA",
+      "sort": "hot",
+      "title": "Qwen3.6-35B-A3B Q4 262k context on 8GB 3070 Ti = +30tps",
+      "score": 22,
+      "comments": 20,
+      "created_utc": 1779487884.0,
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tkxnuc/qwen3635ba3b_q4_262k_context_on_8gb_3070_ti_30tps/",
       "external_url": null,
-      "selftext": "Hi everyone, I'm presenting a new quantization of the Qwen-27B model, created specifically with 16GB VRAM NVIDIA GPUs in mind. I used quants that, unfortunately, are not yet available in the main upstream `llama.cpp`. I'm talking about the KS and KSS quants developed by ikawrakow. After many trials, I managed to create a 14.1GB model which, in my testing, delivers results highly comparable to my previous 14.7GB IQ4_XS quantization. **Model Link:** [cHunter789/Qwen3.6-27B-i1-IQ4_KS-GGUF](https://huggingface.co/cHunter789/Qwen3.6-27B-i1-IQ4_KS-GGUF) **ik_llama.cpp Project:** [ikawrakow/ik_llama.cpp](https://github.com/ikawrakow/ik_llama.cpp) Unfortunately, the `ik_llama.cpp` project required t",
-      "post_id": "1tkmgwj",
+      "selftext": "..and on 8GB VRAM I can even push the context to 320K, 400K, 512K, and yes.. 1M. But it does start to slow down noticeably beyond 150k so I'd only do this if I ever really want the larger context. This is using APEX-I-Quality or Q4\\_K\\_XL quants both are better than Q4\\_K\\_M (IQ4\\_NL\\_XL for beyond 512k context). I have a total of 32GB of DDR4-2666 which is slightly above minimum DDR4. I see a lot of users with better GPUs and more VRAM seem to be getting less efficiency and have to drop context all the way to 64k or below to run at good tps, I don't understand why. But here are two things I learned from my tweaking so far. First, since 35B-A3B is an MoE model. It only needs \\~3.5B to be in",
+      "post_id": "1tkxnuc",
+      "top_comments": []
+    },
+    {
+      "subreddit": "LocalLLaMA",
+      "sort": "hot",
+      "title": "NVIDIA Removes Gaming Revenue Category From Financial Reports",
+      "score": 282,
+      "comments": 128,
+      "created_utc": 1779484415.0,
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tkw5ri/nvidia_removes_gaming_revenue_category_from/",
+      "external_url": "https://www.guru3d.com/story/nvidia-removes-gaming-revenue-category-from-financial-reports/",
+      "selftext": "",
+      "post_id": "1tkw5ri",
+      "top_comments": []
+    },
+    {
+      "subreddit": "ClaudeAI",
+      "sort": "hot",
+      "title": "What's the most unexpectedly useful thing you've used Claude for?",
+      "score": 175,
+      "comments": 131,
+      "created_utc": 1779469392.0,
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1tkp1pg/whats_the_most_unexpectedly_useful_thing_youve/",
+      "external_url": null,
+      "selftext": "I've been using it as a UX strategy partner — not for generating designs, but for thinking through product decisions, writing copy variations, and pressure-testing pricing models. It's weirdly good at playing devil's advocate when you describe a feature you're about to build. What's surprised you?",
+      "post_id": "1tkp1pg",
+      "top_comments": []
+    },
+    {
+      "subreddit": "LocalLLaMA",
+      "sort": "top",
+      "title": "[NEW] Supra-50M Released!",
+      "score": 85,
+      "comments": 28,
+      "created_utc": 1779453244.0,
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tkhngq/new_supra50m_released/",
+      "external_url": null,
+      "selftext": "https://preview.redd.it/kx39ammxno2h1.jpg?width=1080&format=pjpg&auto=webp&s=d1a2d5b27920a5b61a50547a6e70a6378445cae4 # SupraLabs released a new model! - Supra-50M **Supra-50M** is a compact 50M-parameter causal language model (BASE and INSTRUCT versions) built from scratch by SupraLabs using a Llama-style architecture, trained on 20 billion tokens of high-quality educational web text. Despite being significantly smaller than comparable open models, it achieves competitive or superior results on several key benchmarks. This is our first **SupraLabs Scaling Up Plan** model. 🤗 [Supra-50M-Base](https://huggingface.co/SupraLabs/Supra-50M-Base) | [Supra-50M-Instruct](https://huggingface.co/SupraL",
+      "post_id": "1tkhngq",
+      "top_comments": []
+    },
+    {
+      "subreddit": "AI_Agents",
+      "sort": "top",
+      "title": "Getting compute limits while vibe coding my app,any way around this? Any truly unlimited paid models?",
+      "score": 6,
+      "comments": 11,
+      "created_utc": 1779445890.0,
+      "url": "https://www.reddit.com/r/AI_Agents/comments/1tkf0o8/getting_compute_limits_while_vibe_coding_my/",
+      "external_url": null,
+      "selftext": "I’m building an app using vibe coding tools/AI coding assistants, but I keep hitting compute/token/message limits whenever I start doing more serious work or larger features. It becomes really frustrating during long coding sessions. I wanted to ask: \\- What’s the best way to avoid these compute limits? \\- Do you use multiple models/tools together? \\- Is there any AI coding model or platform that offers near-unlimited usage after paying? \\- Which option gives the best value for heavy daily development? Would appreciate recommendations from people building real projects with AI coding workflows.",
+      "post_id": "1tkf0o8",
+      "top_comments": []
+    },
+    {
+      "subreddit": "Ollama",
+      "sort": "hot",
+      "title": "What local model are you actually using day to day for coding tasks?",
+      "score": 45,
+      "comments": 35,
+      "created_utc": 1779430367.0,
+      "url": "https://www.reddit.com/r/ollama/comments/1tkaa3n/what_local_model_are_you_actually_using_day_to/",
+      "external_url": null,
+      "selftext": "Not what benchmarks say is best what are you actually running and sticking with. Been cycling through a few and curious what others have settled on and why",
+      "post_id": "1tkaa3n",
+      "top_comments": []
+    },
+    {
+      "subreddit": "LocalLLaMA",
+      "sort": "top",
+      "title": "New Release of ROCm based MLX LLM Engine - lemon-mlx-engine",
+      "score": 40,
+      "comments": 35,
+      "created_utc": 1779435485.0,
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tkbupt/new_release_of_rocm_based_mlx_llm_engine/",
+      "external_url": null,
+      "selftext": "Hey everyone lemon-mlx-engine just got done integrating TheRock / ROCm 7.13 into the lemon-mlx-engine which means you get to try the latest ROCm on your local hardware with the MLX engine! This also includes various bug fixes and kernel fixes we have been seeing in Qwen3, 3.5 and 3.6 MoE and dense. try it out! [https://github.com/lemonade-sdk/lemon-mlx-engine/releases/tag/b1034-stable](https://github.com/lemonade-sdk/lemon-mlx-engine/releases/tag/b1034-stable)",
+      "post_id": "1tkbupt",
+      "top_comments": []
+    },
+    {
+      "subreddit": "ArtificialInteligence",
+      "sort": "top",
+      "title": "Google just declared \"Google Search is AI Search\" at I/O 2026",
+      "score": 26,
+      "comments": 20,
+      "created_utc": 1779439112.0,
+      "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1tkcx4l/google_just_declared_google_search_is_ai_search/",
+      "external_url": null,
+      "selftext": "Google I/O 2026 just wrapped. Here's the breakdown without the hype. The big announcements: Gemini 3.5 Flash: their new frontier model focused on agentic coding, long-horizon tasks, and real-world workflows. First in a \"series\" which means 3.5 Pro is coming. \"Google Search is AI Search\" their words, not mine. The biggest upgrade to Search in nearly 30 years. AI is no longer a feature inside Search. Search IS AI now. Gemini Spark: a \"24/7 personal AI agent.\" Always on, always working. Think of it as Google's answer to the agent race that Anthropic and OpenAI are also running. Antigravity 2.0: their agent-first development platform. New CLI, new orchestration capabilities. This is what develop",
+      "post_id": "1tkcx4l",
+      "top_comments": []
+    },
+    {
+      "subreddit": "AI_Agents",
+      "sort": "top",
+      "title": "Improving AI skills for everyone in the company? No, wouldn't it actually be best to widen the AI gap within the company?",
+      "score": 6,
+      "comments": 5,
+      "created_utc": 1779441037.0,
+      "url": "https://www.reddit.com/r/AI_Agents/comments/1tkdhfx/improving_ai_skills_for_everyone_in_the_company/",
+      "external_url": null,
+      "selftext": "My perspective on organizational AI adoption has changed! I’d love for those actively implementing AI to read this and share their thoughts (I know it’s controversial). Previously, I argued: \"If everyone in the organization becomes AI-native using tools like Claude Code or Codex, we’d be unstoppable. One person could handle eight tasks in parallel. New services shouldn't be planned with documents, but prototyped through 'vibe coding'.\" However, considering the current security landscape, there are many situations where infrastructure is compromised, and there's nothing the user can do. (Even with basic security measures, I think it's better to assume you will be attacked and focus on strengt",
+      "post_id": "1tkdhfx",
       "top_comments": []
     }
   ],
   "all_ranked_posts_before_novelty_filter": 40,
-  "duplicate_posts_suppressed": 11,
+  "duplicate_posts_suppressed": 0,
   "novelty_filter": {
     "enabled": true,
     "scope": "same-day dashboard archive",
