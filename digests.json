@@ -1,5 +1,2173 @@
 [
   {
+    "run_id": "2026-05-25 12:01 IST",
+    "brief_day": "2026-05-25",
+    "collected_at_ist": "2026-05-25 12:01 IST",
+    "runtime_sec": 10.86,
+    "auth_mode": "anonymous_with_fallbacks",
+    "source_count_ok": 16,
+    "sources_ok": [
+      "AI_Agents",
+      "ArtificialInteligence",
+      "AutoGPT",
+      "ChatGPT",
+      "ClaudeAI",
+      "ClaudeCode",
+      "LangChain",
+      "LocalLLM",
+      "LocalLLaMA",
+      "MachineLearning",
+      "Ollama",
+      "OpenAI",
+      "OpenWebUI",
+      "StableDiffusion",
+      "artificial",
+      "singularity"
+    ],
+    "sources_failed_count": 0,
+    "posts": [
+      {
+        "subreddit": "ChatGPT",
+        "sort": "hot",
+        "title": "You have to pick one",
+        "score": 650,
+        "comments": 556,
+        "created_utc": 1779657066.0,
+        "url": "https://www.reddit.com/r/ChatGPT/comments/1tmodqo/you_have_to_pick_one/",
+        "external_url": "https://www.reddit.com/gallery/1tmodqo",
+        "selftext": "",
+        "selftext_full": "",
+        "author": "Superbia6666",
+        "post_id": "1tmodqo",
+        "top_comments": [
+          {
+            "score": 1556,
+            "author": "babysharkdoodoodoo",
+            "body": "Pinecone is the only one I could imagine acceptable",
+            "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmodqo/you_have_to_pick_one/ono9xx3/"
+          },
+          {
+            "score": 412,
+            "author": "MarlinMr",
+            "body": "Not just acceptable, but good. Like... Pine tea is already a thing.",
+            "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmodqo/you_have_to_pick_one/onob16u/"
+          },
+          {
+            "score": 315,
+            "author": "TOTN_",
+            "body": "Twerking purple drank, all day",
+            "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmodqo/you_have_to_pick_one/onoa7ct/"
+          },
+          {
+            "score": 280,
+            "author": "LuneFox",
+            "body": "https://preview.redd.it/5mhumqyxm53h1.png?width=1402&format=png&auto=webp&s=bd0ac723ce9c33b3dffc6220adaff5fb91ca6682",
+            "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmodqo/you_have_to_pick_one/onodsdz/"
+          },
+          {
+            "score": 269,
+            "author": "SelfMonitoringLoop",
+            "body": "Pinecone flavored drinks are already a thing, its not that bad.",
+            "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmodqo/you_have_to_pick_one/onoa0bc/"
+          },
+          {
+            "score": 179,
+            "author": "Global-Ad-7331",
+            "body": "tsundere please \\*-\\*",
+            "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmodqo/you_have_to_pick_one/onoappv/"
+          },
+          {
+            "score": 90,
+            "author": "RobertLouisDrakeIII",
+            "body": "tastes like ass, just the way I like it",
+            "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmodqo/you_have_to_pick_one/onobg7m/"
+          },
+          {
+            "score": 1,
+            "author": "WithoutReason1729",
+            "body": "Your post is getting popular and we just featured it on our Discord! [Come check it out!](https://discord.gg/r-chatgpt-1050422060352024636) You've also been given a special flair for your contribution. We appreciate your post! *I am a bot and this action was performed automatically.*",
+            "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmodqo/you_have_to_pick_one/ononbwo/"
+          }
+        ],
+        "story_id": "rd_1tmodqo",
+        "heading": "You have to pick one",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/ChatGPT/comments/1tmodqo/you_have_to_pick_one/",
+        "summary": "Pinecone is the only one I could imagine acceptable Not just acceptable, but good. Like... Pine tea is already a thing.",
+        "tweet_and_comments_summary": "Pinecone is the only one I could imagine acceptable Not just acceptable, but good. Like... Pine tea is already a thing.",
+        "discussion_summary": "Pinecone is the only one I could imagine acceptable Not just acceptable, but good. Like... Pine tea is already a thing.",
+        "why_it_matters": "**Medium signal.** Worth monitoring, but don’t act on Reddit hype without checking primary sources.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tmodqo",
+            "subreddit": "ChatGPT",
+            "post_url": "https://www.reddit.com/r/ChatGPT/comments/1tmodqo/you_have_to_pick_one/",
+            "title": "You have to pick one",
+            "author": "Superbia6666",
+            "created_utc": 1779657066.0,
+            "score": 650,
+            "comment_count": 556,
+            "selftext_full": null,
+            "selftext_excerpt": null,
+            "external_url": "https://www.reddit.com/gallery/1tmodqo",
+            "top_comments": [
+              {
+                "score": 1556,
+                "author": "babysharkdoodoodoo",
+                "body": "Pinecone is the only one I could imagine acceptable",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmodqo/you_have_to_pick_one/ono9xx3/"
+              },
+              {
+                "score": 412,
+                "author": "MarlinMr",
+                "body": "Not just acceptable, but good. Like... Pine tea is already a thing.",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmodqo/you_have_to_pick_one/onob16u/"
+              },
+              {
+                "score": 315,
+                "author": "TOTN_",
+                "body": "Twerking purple drank, all day",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmodqo/you_have_to_pick_one/onoa7ct/"
+              },
+              {
+                "score": 280,
+                "author": "LuneFox",
+                "body": "https://preview.redd.it/5mhumqyxm53h1.png?width=1402&format=png&auto=webp&s=bd0ac723ce9c33b3dffc6220adaff5fb91ca6682",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmodqo/you_have_to_pick_one/onodsdz/"
+              },
+              {
+                "score": 269,
+                "author": "SelfMonitoringLoop",
+                "body": "Pinecone flavored drinks are already a thing, its not that bad.",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmodqo/you_have_to_pick_one/onoa0bc/"
+              },
+              {
+                "score": 179,
+                "author": "Global-Ad-7331",
+                "body": "tsundere please \\*-\\*",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmodqo/you_have_to_pick_one/onoappv/"
+              },
+              {
+                "score": 90,
+                "author": "RobertLouisDrakeIII",
+                "body": "tastes like ass, just the way I like it",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmodqo/you_have_to_pick_one/onobg7m/"
+              },
+              {
+                "score": 1,
+                "author": "WithoutReason1729",
+                "body": "Your post is getting popular and we just featured it on our Discord! [Come check it out!](https://discord.gg/r-chatgpt-1050422060352024636) You've also been given a special flair for your contribution. We appreciate your post! *I am a bot and this action was performed automatically.*",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmodqo/you_have_to_pick_one/ononbwo/"
+              }
+            ],
+            "comment_context": "Pinecone is the only one I could imagine acceptable Not just acceptable, but good. Like... Pine tea is already a thing."
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 650,
+          "reddit_comment_count": 556,
+          "captured_at_ist": "2026-05-25 12:01 IST"
+        },
+        "labels": [
+          "Reddit"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "You have to pick one",
+            "post_body": null,
+            "comments": [
+              {
+                "score": 1556,
+                "author": "babysharkdoodoodoo",
+                "body": "Pinecone is the only one I could imagine acceptable",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmodqo/you_have_to_pick_one/ono9xx3/"
+              },
+              {
+                "score": 412,
+                "author": "MarlinMr",
+                "body": "Not just acceptable, but good. Like... Pine tea is already a thing.",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmodqo/you_have_to_pick_one/onob16u/"
+              },
+              {
+                "score": 315,
+                "author": "TOTN_",
+                "body": "Twerking purple drank, all day",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmodqo/you_have_to_pick_one/onoa7ct/"
+              },
+              {
+                "score": 280,
+                "author": "LuneFox",
+                "body": "https://preview.redd.it/5mhumqyxm53h1.png?width=1402&format=png&auto=webp&s=bd0ac723ce9c33b3dffc6220adaff5fb91ca6682",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmodqo/you_have_to_pick_one/onodsdz/"
+              },
+              {
+                "score": 269,
+                "author": "SelfMonitoringLoop",
+                "body": "Pinecone flavored drinks are already a thing, its not that bad.",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmodqo/you_have_to_pick_one/onoa0bc/"
+              },
+              {
+                "score": 179,
+                "author": "Global-Ad-7331",
+                "body": "tsundere please \\*-\\*",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmodqo/you_have_to_pick_one/onoappv/"
+              },
+              {
+                "score": 90,
+                "author": "RobertLouisDrakeIII",
+                "body": "tastes like ass, just the way I like it",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmodqo/you_have_to_pick_one/onobg7m/"
+              },
+              {
+                "score": 1,
+                "author": "WithoutReason1729",
+                "body": "Your post is getting popular and we just featured it on our Discord! [Come check it out!](https://discord.gg/r-chatgpt-1050422060352024636) You've also been given a special flair for your contribution. We appreciate your post! *I am a bot and this action was performed automatically.*",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmodqo/you_have_to_pick_one/ononbwo/"
+              }
+            ],
+            "metadata": {
+              "subreddit": "ChatGPT",
+              "score": 650,
+              "comment_count": 556,
+              "created_utc": 1779657066.0,
+              "url": "https://www.reddit.com/r/ChatGPT/comments/1tmodqo/you_have_to_pick_one/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "ClaudeAI",
+        "sort": "hot",
+        "title": "What's the most useful thing you've actually built with Claude that you use regularly?",
+        "score": 374,
+        "comments": 390,
+        "created_utc": 1779648936.0,
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1tmkuw9/whats_the_most_useful_thing_youve_actually_built/",
+        "external_url": null,
+        "selftext": "Not looking for impressive demos or one-time experiments. Curious what people have built that they genuinely keep coming back to. For me it's a pretty simple ROI calculator I put together for client presentations, just described what I wanted and it came out as a working HTML file I can email directly. Nothing fancy but I've used it probably thirty times since. What's yours?",
+        "selftext_full": "Not looking for impressive demos or one-time experiments. Curious what people have built that they genuinely keep coming back to. For me it's a pretty simple ROI calculator I put together for client presentations, just described what I wanted and it came out as a working HTML file I can email directly. Nothing fancy but I've used it probably thirty times since. What's yours?",
+        "author": "J-Freedom-AI",
+        "post_id": "1tmkuw9",
+        "top_comments": [
+          {
+            "score": 144,
+            "author": "tashibum",
+            "body": "A barometric pressure tracker so I can cross reference real time changes with my migraines. It's just an HTML I keep on my phone but it's beautiful. App store equivalents wanted $80+/yr for the same thing, basically. Wish I could post a screenshot!",
+            "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1tmkuw9/whats_the_most_useful_thing_youve_actually_built/onnpoj2/"
+          },
+          {
+            "score": 134,
+            "author": "tonyboi76",
+            "body": "a wtf command. its a 10-line shell function that grabs the last failed command + its stderr and pipes it to claude with explain what just happened and how to fix it. so when something blows up i type wtf and get a one-paragraph debug instead of stack-overflowing the same error for the 47th time. dumb on paper but ive run it probably 200+ times since i set it up. its the kind of tiny tool you dont realize you needed until you have it.",
+            "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1tmkuw9/whats_the_most_useful_thing_youve_actually_built/onnspia/"
+          },
+          {
+            "score": 70,
+            "author": "baskinginthesunbear",
+            "body": "I’m learning Mexican Spanish and I built a web app to supplement my learning and reinforce key concepts in a completely customised curriculum. I found too many apps and other learning resources focus on European Spanish which misses the mark in Mexico. Currently using it every other day. www.spanishbuddy.app (completely free, no sign-up, no downloads).",
+            "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1tmkuw9/whats_the_most_useful_thing_youve_actually_built/onnje3m/"
+          },
+          {
+            "score": 56,
+            "author": "Fearless-Daikon5763",
+            "body": "I have genome data for microbes, I have it taking antiSMASH results and dissecting biosynthetic gene clusters and every gene in each BGC, with comparisons and explanations. Then it makes benchtop worksheets on how to grow, extract, and analyze the microbe to detect or purify the natural product with citations. It’s pretty detailed and has been quite accurate. As a non-specialist in bioinformatics it’s doing some heavy lifting.",
+            "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1tmkuw9/whats_the_most_useful_thing_youve_actually_built/onnm8lf/"
+          },
+          {
+            "score": 49,
+            "author": "Existing_Round9756",
+            "body": "I do international cold calls for my service but I was an engineer & had no experience in the Cold calls & sales ! So people use chrome extension plain simple Twilio dialer for international caller ( it's not official - someone made this & charges money $5/month) So , I made for myself a Twilio extension which will transcribe all the talk between me & client what we say & then build a MCP for my claude - that way my Twilio dialer was connected with my claude - so now after doing daily calls 40-50 /day I ask claude just to analyse my calls & it go through all the talks I did & give me the result & imporment I have made today & what needs to change - trust me this made me close my 2 sales in my first month itself with 0 sales call exp !",
+            "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1tmkuw9/whats_the_most_useful_thing_youve_actually_built/onnsts8/"
+          },
+          {
+            "score": 36,
+            "author": "rosetta67p",
+            "body": "Already exist: thefuck is called. Not bs: https://github.com/nvbn/thefuck",
+            "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1tmkuw9/whats_the_most_useful_thing_youve_actually_built/onoihln/"
+          },
+          {
+            "score": 34,
+            "author": "Stanley_Nickels_123",
+            "body": "My church recently asked me to edit all the Sunday service and sermon videos for YouTube. So I coded a semi automated pipeline to do all the video editings. I think the previous guy quit because the work load, now I can finish all the work within an hour.",
+            "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1tmkuw9/whats_the_most_useful_thing_youve_actually_built/onnr5gh/"
+          },
+          {
+            "score": 1,
+            "author": "ClaudeAI-mod-bot",
+            "body": "**TL;DR of the discussion generated automatically after 320 comments.** The consensus in here is a massive **\"YES, we're building and using tons of useful stuff.\"** The big theme isn't about creating the next unicorn startup, but about building hyper-personalized tools that solve specific, annoying problems that off-the-shelf software can't. The most popular creations fall into a few key categories: * **Genius Dev & IT Tools:** The top-voted comment is for a `wtf` command that explains your last terminal error, which everyone is now stealing. Others have built custom UIs for Claude Code (because the terminal and VS Code extension aren't cutting it for some), on-call alert responders, router failover scripts, and even agents to babysit other agents. * **Personal Life Admin on Steroids:** This is the biggest category. We're talking shopping list apps that sort by *your* specific grocery store aisle, family calendars and chore charts that people *actually* use, recipe databases that parse URLs, and personal finance tools that finally make sense. The real win, as one user noted, isn't building the app, it's getting your spouse to use it. * **Hyper-Specific Health & Hobby Trackers:** The other top comment is a barometric pressure tracker to cross-reference with migraines, replacing an $80/yr app. People are also building custom fitness and nutrition dashboards, language learning apps for niche dialects (like Mexican Spanish), D&D campaign tools, 3D printer filament managers, and even ammo inventory trackers. * **Small Business Power-Ups:** A lot of you are basically building entire ERPs for your small businesses. We've seen full-stack CRMs for construction companies, sales call transcription and analysis tools that are closing deals, and automated video editing pipelines for church services. Basically, if you have a niche problem that makes you think \"I wish there was an app for that,\" the answer in this thread is \"Just build it yourself in an afternoon.\"",
+            "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1tmkuw9/whats_the_most_useful_thing_youve_actually_built/onnzigz/"
+          }
+        ],
+        "story_id": "rd_1tmkuw9",
+        "heading": "What's the most useful thing you've actually built with Claude that you use regularly?",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1tmkuw9/whats_the_most_useful_thing_youve_actually_built/",
+        "summary": "Not looking for impressive demos or one-time experiments. Curious what people have built that they genuinely keep coming back to. For me it's a pretty simple ROI calculator I put together for client presentations, just described what I wanted and it came out as a working HTML file I can email directly. Nothing fancy but I've used it probably thirty times since. What's yours? A barometric pressure tracker so I can cross reference real time changes with my migraines. It's just an HTML I keep on my phone but it's beautiful. App store equivalents wanted $8 a wtf command. its a 10-line shell function that grabs the last failed command + its stderr and pipes it to claude with explain what just hap",
+        "tweet_and_comments_summary": "Not looking for impressive demos or one-time experiments. Curious what people have built that they genuinely keep coming back to. For me it's a pretty simple ROI calculator I put together for client presentations, just described what I wanted and it came out as a working HTML file I can email directly. Nothing fancy but I've used it probably thirty times since. What's yours? A barometric pressure tracker so I can cross reference real time changes with my migraines. It's just an HTML I keep on my phone but it's beautiful. App store equivalents wanted $8 a wtf command. its a 10-line shell function that grabs the last failed command + its stderr and pipes it to claude with explain what just hap",
+        "discussion_summary": "A barometric pressure tracker so I can cross reference real time changes with my migraines. It's just an HTML I keep on my phone but it's beautiful. App store equivalents wanted $8 a wtf command. its a 10-line shell function that grabs the last failed command + its stderr and pipes it to claude with explain what just happened and how to fix it. so when somet",
+        "why_it_matters": "**High signal for coding workflow.** Compare against your Hermes/Codex/Claude usage before changing tools or architecture.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tmkuw9",
+            "subreddit": "ClaudeAI",
+            "post_url": "https://www.reddit.com/r/ClaudeAI/comments/1tmkuw9/whats_the_most_useful_thing_youve_actually_built/",
+            "title": "What's the most useful thing you've actually built with Claude that you use regularly?",
+            "author": "J-Freedom-AI",
+            "created_utc": 1779648936.0,
+            "score": 374,
+            "comment_count": 390,
+            "selftext_full": "Not looking for impressive demos or one-time experiments. Curious what people have built that they genuinely keep coming back to. For me it's a pretty simple ROI calculator I put together for client presentations, just described what I wanted and it came out as a working HTML file I can email directly. Nothing fancy but I've used it probably thirty times since. What's yours?",
+            "selftext_excerpt": "Not looking for impressive demos or one-time experiments. Curious what people have built that they genuinely keep coming back to. For me it's a pretty simple ROI calculator I put together for client presentations, just described what I want",
+            "external_url": null,
+            "top_comments": [
+              {
+                "score": 144,
+                "author": "tashibum",
+                "body": "A barometric pressure tracker so I can cross reference real time changes with my migraines. It's just an HTML I keep on my phone but it's beautiful. App store equivalents wanted $80+/yr for the same thing, basically. Wish I could post a screenshot!",
+                "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1tmkuw9/whats_the_most_useful_thing_youve_actually_built/onnpoj2/"
+              },
+              {
+                "score": 134,
+                "author": "tonyboi76",
+                "body": "a wtf command. its a 10-line shell function that grabs the last failed command + its stderr and pipes it to claude with explain what just happened and how to fix it. so when something blows up i type wtf and get a one-paragraph debug instead of stack-overflowing the same error for the 47th time. dumb on paper but ive run it probably 200+ times since i set it up. its the kind of tiny tool you dont realize you needed until you have it.",
+                "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1tmkuw9/whats_the_most_useful_thing_youve_actually_built/onnspia/"
+              },
+              {
+                "score": 70,
+                "author": "baskinginthesunbear",
+                "body": "I’m learning Mexican Spanish and I built a web app to supplement my learning and reinforce key concepts in a completely customised curriculum. I found too many apps and other learning resources focus on European Spanish which misses the mark in Mexico. Currently using it every other day. www.spanishbuddy.app (completely free, no sign-up, no downloads).",
+                "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1tmkuw9/whats_the_most_useful_thing_youve_actually_built/onnje3m/"
+              },
+              {
+                "score": 56,
+                "author": "Fearless-Daikon5763",
+                "body": "I have genome data for microbes, I have it taking antiSMASH results and dissecting biosynthetic gene clusters and every gene in each BGC, with comparisons and explanations. Then it makes benchtop worksheets on how to grow, extract, and analyze the microbe to detect or purify the natural product with citations. It’s pretty detailed and has been quite accurate. As a non-specialist in bioinformatics it’s doing some heavy lifting.",
+                "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1tmkuw9/whats_the_most_useful_thing_youve_actually_built/onnm8lf/"
+              },
+              {
+                "score": 49,
+                "author": "Existing_Round9756",
+                "body": "I do international cold calls for my service but I was an engineer & had no experience in the Cold calls & sales ! So people use chrome extension plain simple Twilio dialer for international caller ( it's not official - someone made this & charges money $5/month) So , I made for myself a Twilio extension which will transcribe all the talk between me & client what we say & then build a MCP for my claude - that way my Twilio dialer was connected with my claude - so now after doing daily calls 40-50 /day I ask claude just to analyse my calls & it go through all the talks I did & give me the result & imporment I have made today & what needs to change - trust me this made me close my 2 sales in my first month itself with 0 sales call exp !",
+                "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1tmkuw9/whats_the_most_useful_thing_youve_actually_built/onnsts8/"
+              },
+              {
+                "score": 36,
+                "author": "rosetta67p",
+                "body": "Already exist: thefuck is called. Not bs: https://github.com/nvbn/thefuck",
+                "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1tmkuw9/whats_the_most_useful_thing_youve_actually_built/onoihln/"
+              },
+              {
+                "score": 34,
+                "author": "Stanley_Nickels_123",
+                "body": "My church recently asked me to edit all the Sunday service and sermon videos for YouTube. So I coded a semi automated pipeline to do all the video editings. I think the previous guy quit because the work load, now I can finish all the work within an hour.",
+                "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1tmkuw9/whats_the_most_useful_thing_youve_actually_built/onnr5gh/"
+              },
+              {
+                "score": 1,
+                "author": "ClaudeAI-mod-bot",
+                "body": "**TL;DR of the discussion generated automatically after 320 comments.** The consensus in here is a massive **\"YES, we're building and using tons of useful stuff.\"** The big theme isn't about creating the next unicorn startup, but about building hyper-personalized tools that solve specific, annoying problems that off-the-shelf software can't. The most popular creations fall into a few key categories: * **Genius Dev & IT Tools:** The top-voted comment is for a `wtf` command that explains your last terminal error, which everyone is now stealing. Others have built custom UIs for Claude Code (because the terminal and VS Code extension aren't cutting it for some), on-call alert responders, router failover scripts, and even agents to babysit other agents. * **Personal Life Admin on Steroids:** This is the biggest category. We're talking shopping list apps that sort by *your* specific grocery store aisle, family calendars and chore charts that people *actually* use, recipe databases that parse URLs, and personal finance tools that finally make sense. The real win, as one user noted, isn't building the app, it's getting your spouse to use it. * **Hyper-Specific Health & Hobby Trackers:** The other top comment is a barometric pressure tracker to cross-reference with migraines, replacing an $80/yr app. People are also building custom fitness and nutrition dashboards, language learning apps for niche dialects (like Mexican Spanish), D&D campaign tools, 3D printer filament managers, and even ammo inventory trackers. * **Small Business Power-Ups:** A lot of you are basically building entire ERPs for your small businesses. We've seen full-stack CRMs for construction companies, sales call transcription and analysis tools that are closing deals, and automated video editing pipelines for church services. Basically, if you have a niche problem that makes you think \"I wish there was an app for that,\" the answer in this thread is \"Just build it yourself in an afternoon.\"",
+                "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1tmkuw9/whats_the_most_useful_thing_youve_actually_built/onnzigz/"
+              }
+            ],
+            "comment_context": "A barometric pressure tracker so I can cross reference real time changes with my migraines. It's just an HTML I keep on my phone but it's beautiful. App store equivalents wanted $8 a wtf command. its a 10-line shell function that grabs the last failed command + its stderr and pipes it to claude with explain what just happened and how to fix it. so when somet"
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 374,
+          "reddit_comment_count": 390,
+          "captured_at_ist": "2026-05-25 12:01 IST"
+        },
+        "labels": [
+          "Reddit"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "What's the most useful thing you've actually built with Claude that you use regularly?",
+            "post_body": "Not looking for impressive demos or one-time experiments. Curious what people have built that they genuinely keep coming back to. For me it's a pretty simple ROI calculator I put together for client presentations, just described what I wanted and it came out as a working HTML file I can email directly. Nothing fancy but I've used it probably thirty times since. What's yours?",
+            "comments": [
+              {
+                "score": 144,
+                "author": "tashibum",
+                "body": "A barometric pressure tracker so I can cross reference real time changes with my migraines. It's just an HTML I keep on my phone but it's beautiful. App store equivalents wanted $80+/yr for the same thing, basically. Wish I could post a screenshot!",
+                "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1tmkuw9/whats_the_most_useful_thing_youve_actually_built/onnpoj2/"
+              },
+              {
+                "score": 134,
+                "author": "tonyboi76",
+                "body": "a wtf command. its a 10-line shell function that grabs the last failed command + its stderr and pipes it to claude with explain what just happened and how to fix it. so when something blows up i type wtf and get a one-paragraph debug instead of stack-overflowing the same error for the 47th time. dumb on paper but ive run it probably 200+ times since i set it up. its the kind of tiny tool you dont realize you needed until you have it.",
+                "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1tmkuw9/whats_the_most_useful_thing_youve_actually_built/onnspia/"
+              },
+              {
+                "score": 70,
+                "author": "baskinginthesunbear",
+                "body": "I’m learning Mexican Spanish and I built a web app to supplement my learning and reinforce key concepts in a completely customised curriculum. I found too many apps and other learning resources focus on European Spanish which misses the mark in Mexico. Currently using it every other day. www.spanishbuddy.app (completely free, no sign-up, no downloads).",
+                "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1tmkuw9/whats_the_most_useful_thing_youve_actually_built/onnje3m/"
+              },
+              {
+                "score": 56,
+                "author": "Fearless-Daikon5763",
+                "body": "I have genome data for microbes, I have it taking antiSMASH results and dissecting biosynthetic gene clusters and every gene in each BGC, with comparisons and explanations. Then it makes benchtop worksheets on how to grow, extract, and analyze the microbe to detect or purify the natural product with citations. It’s pretty detailed and has been quite accurate. As a non-specialist in bioinformatics it’s doing some heavy lifting.",
+                "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1tmkuw9/whats_the_most_useful_thing_youve_actually_built/onnm8lf/"
+              },
+              {
+                "score": 49,
+                "author": "Existing_Round9756",
+                "body": "I do international cold calls for my service but I was an engineer & had no experience in the Cold calls & sales ! So people use chrome extension plain simple Twilio dialer for international caller ( it's not official - someone made this & charges money $5/month) So , I made for myself a Twilio extension which will transcribe all the talk between me & client what we say & then build a MCP for my claude - that way my Twilio dialer was connected with my claude - so now after doing daily calls 40-50 /day I ask claude just to analyse my calls & it go through all the talks I did & give me the result & imporment I have made today & what needs to change - trust me this made me close my 2 sales in my first month itself with 0 sales call exp !",
+                "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1tmkuw9/whats_the_most_useful_thing_youve_actually_built/onnsts8/"
+              },
+              {
+                "score": 36,
+                "author": "rosetta67p",
+                "body": "Already exist: thefuck is called. Not bs: https://github.com/nvbn/thefuck",
+                "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1tmkuw9/whats_the_most_useful_thing_youve_actually_built/onoihln/"
+              },
+              {
+                "score": 34,
+                "author": "Stanley_Nickels_123",
+                "body": "My church recently asked me to edit all the Sunday service and sermon videos for YouTube. So I coded a semi automated pipeline to do all the video editings. I think the previous guy quit because the work load, now I can finish all the work within an hour.",
+                "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1tmkuw9/whats_the_most_useful_thing_youve_actually_built/onnr5gh/"
+              },
+              {
+                "score": 1,
+                "author": "ClaudeAI-mod-bot",
+                "body": "**TL;DR of the discussion generated automatically after 320 comments.** The consensus in here is a massive **\"YES, we're building and using tons of useful stuff.\"** The big theme isn't about creating the next unicorn startup, but about building hyper-personalized tools that solve specific, annoying problems that off-the-shelf software can't. The most popular creations fall into a few key categories: * **Genius Dev & IT Tools:** The top-voted comment is for a `wtf` command that explains your last terminal error, which everyone is now stealing. Others have built custom UIs for Claude Code (because the terminal and VS Code extension aren't cutting it for some), on-call alert responders, router failover scripts, and even agents to babysit other agents. * **Personal Life Admin on Steroids:** This is the biggest category. We're talking shopping list apps that sort by *your* specific grocery store aisle, family calendars and chore charts that people *actually* use, recipe databases that parse URLs, and personal finance tools that finally make sense. The real win, as one user noted, isn't building the app, it's getting your spouse to use it. * **Hyper-Specific Health & Hobby Trackers:** The other top comment is a barometric pressure tracker to cross-reference with migraines, replacing an $80/yr app. People are also building custom fitness and nutrition dashboards, language learning apps for niche dialects (like Mexican Spanish), D&D campaign tools, 3D printer filament managers, and even ammo inventory trackers. * **Small Business Power-Ups:** A lot of you are basically building entire ERPs for your small businesses. We've seen full-stack CRMs for construction companies, sales call transcription and analysis tools that are closing deals, and automated video editing pipelines for church services. Basically, if you have a niche problem that makes you think \"I wish there was an app for that,\" the answer in this thread is \"Just build it yourself in an afternoon.\"",
+                "permalink": "https://www.reddit.com/r/ClaudeAI/comments/1tmkuw9/whats_the_most_useful_thing_youve_actually_built/onnzigz/"
+              }
+            ],
+            "metadata": {
+              "subreddit": "ClaudeAI",
+              "score": 374,
+              "comment_count": 390,
+              "created_utc": 1779648936.0,
+              "url": "https://www.reddit.com/r/ClaudeAI/comments/1tmkuw9/whats_the_most_useful_thing_youve_actually_built/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "ClaudeCode",
+        "sort": "hot",
+        "title": "welcome back Rohan!",
+        "score": 707,
+        "comments": 87,
+        "created_utc": 1779655060.0,
+        "url": "https://www.reddit.com/r/ClaudeCode/comments/1tmnizv/welcome_back_rohan/",
+        "external_url": "https://i.redd.it/outgfoppb53h1.png",
+        "selftext": "You can pay an employee to solve any number of problems for the same salary. Even if they cost a little more on average, it's better to pay that then suffer unpredictable surge pricing.",
+        "selftext_full": "You can pay an employee to solve any number of problems for the same salary. Even if they cost a little more on average, it's better to pay that then suffer unpredictable surge pricing.",
+        "author": "irelatetolevin",
+        "post_id": "1tmnizv",
+        "top_comments": [
+          {
+            "score": 94,
+            "author": "BootyMcStuffins",
+            "body": "What did you do to Jim’s face?",
+            "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmnizv/welcome_back_rohan/ono2k9g/"
+          },
+          {
+            "score": 77,
+            "author": "Necessary-Meeting-28",
+            "body": "Did you just use AI to edit a generic meme?",
+            "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmnizv/welcome_back_rohan/ono5usr/"
+          },
+          {
+            "score": 75,
+            "author": "Herbertie25",
+            "body": "day 1 rohan asks for claude max",
+            "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmnizv/welcome_back_rohan/ono7o44/"
+          },
+          {
+            "score": 42,
+            "author": "NimbusFPV",
+            "body": "https://i.redd.it/dt1wcggbd53h1.gif",
+            "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmnizv/welcome_back_rohan/ono3jeg/"
+          },
+          {
+            "score": 26,
+            "author": "Same_Tough_5811",
+            "body": "How efficient is Rohan? Rohan gets sick. Rohan gets health insurance benefits. Rohan gets PTO. Rohan needs to take lunch break.",
+            "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmnizv/welcome_back_rohan/ono3u9p/"
+          },
+          {
+            "score": 25,
+            "author": "Leclowndu9315",
+            "body": "we're so cooked",
+            "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmnizv/welcome_back_rohan/ono8qx9/"
+          },
+          {
+            "score": 25,
+            "author": "cats_catz_kats_katz",
+            "body": "Rohan only costs 4700 now, still a solid deal!",
+            "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmnizv/welcome_back_rohan/onp02pt/"
+          },
+          {
+            "score": 20,
+            "author": "Worldline_AI",
+            "body": "A junior data scientist isn't the cheaper version of the LLM. Different jobs. Both useful. The expensive thing is treating them as substitutes when they're complements, and not having a record of which work each actually did well on. Welcome back, Rohan. For now.",
+            "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmnizv/welcome_back_rohan/ono8ktt/"
+          }
+        ],
+        "story_id": "rd_1tmnizv",
+        "heading": "welcome back Rohan!",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/ClaudeCode/comments/1tmnizv/welcome_back_rohan/",
+        "summary": "You can pay an employee to solve any number of problems for the same salary. Even if they cost a little more on average, it's better to pay that then suffer unpredictable surge pricing. What did you do to Jim’s face? Did you just use AI to edit a generic meme?",
+        "tweet_and_comments_summary": "You can pay an employee to solve any number of problems for the same salary. Even if they cost a little more on average, it's better to pay that then suffer unpredictable surge pricing. What did you do to Jim’s face? Did you just use AI to edit a generic meme?",
+        "discussion_summary": "What did you do to Jim’s face? Did you just use AI to edit a generic meme?",
+        "why_it_matters": "**Medium-to-high signal.** Track as provider/business-model pressure, but verify claims before acting.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tmnizv",
+            "subreddit": "ClaudeCode",
+            "post_url": "https://www.reddit.com/r/ClaudeCode/comments/1tmnizv/welcome_back_rohan/",
+            "title": "welcome back Rohan!",
+            "author": "irelatetolevin",
+            "created_utc": 1779655060.0,
+            "score": 707,
+            "comment_count": 87,
+            "selftext_full": "You can pay an employee to solve any number of problems for the same salary. Even if they cost a little more on average, it's better to pay that then suffer unpredictable surge pricing.",
+            "selftext_excerpt": "You can pay an employee to solve any number of problems for the same salary. Even if they cost a little more on average, it's better to pay that then suffer unpredictable surge pricing.",
+            "external_url": "https://i.redd.it/outgfoppb53h1.png",
+            "top_comments": [
+              {
+                "score": 94,
+                "author": "BootyMcStuffins",
+                "body": "What did you do to Jim’s face?",
+                "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmnizv/welcome_back_rohan/ono2k9g/"
+              },
+              {
+                "score": 77,
+                "author": "Necessary-Meeting-28",
+                "body": "Did you just use AI to edit a generic meme?",
+                "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmnizv/welcome_back_rohan/ono5usr/"
+              },
+              {
+                "score": 75,
+                "author": "Herbertie25",
+                "body": "day 1 rohan asks for claude max",
+                "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmnizv/welcome_back_rohan/ono7o44/"
+              },
+              {
+                "score": 42,
+                "author": "NimbusFPV",
+                "body": "https://i.redd.it/dt1wcggbd53h1.gif",
+                "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmnizv/welcome_back_rohan/ono3jeg/"
+              },
+              {
+                "score": 26,
+                "author": "Same_Tough_5811",
+                "body": "How efficient is Rohan? Rohan gets sick. Rohan gets health insurance benefits. Rohan gets PTO. Rohan needs to take lunch break.",
+                "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmnizv/welcome_back_rohan/ono3u9p/"
+              },
+              {
+                "score": 25,
+                "author": "Leclowndu9315",
+                "body": "we're so cooked",
+                "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmnizv/welcome_back_rohan/ono8qx9/"
+              },
+              {
+                "score": 25,
+                "author": "cats_catz_kats_katz",
+                "body": "Rohan only costs 4700 now, still a solid deal!",
+                "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmnizv/welcome_back_rohan/onp02pt/"
+              },
+              {
+                "score": 20,
+                "author": "Worldline_AI",
+                "body": "A junior data scientist isn't the cheaper version of the LLM. Different jobs. Both useful. The expensive thing is treating them as substitutes when they're complements, and not having a record of which work each actually did well on. Welcome back, Rohan. For now.",
+                "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmnizv/welcome_back_rohan/ono8ktt/"
+              }
+            ],
+            "comment_context": "What did you do to Jim’s face? Did you just use AI to edit a generic meme?"
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 707,
+          "reddit_comment_count": 87,
+          "captured_at_ist": "2026-05-25 12:01 IST"
+        },
+        "labels": [
+          "Reddit",
+          "ClaudeCode"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "welcome back Rohan!",
+            "post_body": "You can pay an employee to solve any number of problems for the same salary. Even if they cost a little more on average, it's better to pay that then suffer unpredictable surge pricing.",
+            "comments": [
+              {
+                "score": 94,
+                "author": "BootyMcStuffins",
+                "body": "What did you do to Jim’s face?",
+                "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmnizv/welcome_back_rohan/ono2k9g/"
+              },
+              {
+                "score": 77,
+                "author": "Necessary-Meeting-28",
+                "body": "Did you just use AI to edit a generic meme?",
+                "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmnizv/welcome_back_rohan/ono5usr/"
+              },
+              {
+                "score": 75,
+                "author": "Herbertie25",
+                "body": "day 1 rohan asks for claude max",
+                "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmnizv/welcome_back_rohan/ono7o44/"
+              },
+              {
+                "score": 42,
+                "author": "NimbusFPV",
+                "body": "https://i.redd.it/dt1wcggbd53h1.gif",
+                "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmnizv/welcome_back_rohan/ono3jeg/"
+              },
+              {
+                "score": 26,
+                "author": "Same_Tough_5811",
+                "body": "How efficient is Rohan? Rohan gets sick. Rohan gets health insurance benefits. Rohan gets PTO. Rohan needs to take lunch break.",
+                "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmnizv/welcome_back_rohan/ono3u9p/"
+              },
+              {
+                "score": 25,
+                "author": "Leclowndu9315",
+                "body": "we're so cooked",
+                "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmnizv/welcome_back_rohan/ono8qx9/"
+              },
+              {
+                "score": 25,
+                "author": "cats_catz_kats_katz",
+                "body": "Rohan only costs 4700 now, still a solid deal!",
+                "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmnizv/welcome_back_rohan/onp02pt/"
+              },
+              {
+                "score": 20,
+                "author": "Worldline_AI",
+                "body": "A junior data scientist isn't the cheaper version of the LLM. Different jobs. Both useful. The expensive thing is treating them as substitutes when they're complements, and not having a record of which work each actually did well on. Welcome back, Rohan. For now.",
+                "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmnizv/welcome_back_rohan/ono8ktt/"
+              }
+            ],
+            "metadata": {
+              "subreddit": "ClaudeCode",
+              "score": 707,
+              "comment_count": 87,
+              "created_utc": 1779655060.0,
+              "url": "https://www.reddit.com/r/ClaudeCode/comments/1tmnizv/welcome_back_rohan/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "LocalLLaMA",
+        "sort": "hot",
+        "title": "Is NVIDIA still the default best choice for local LLMs in 2026?",
+        "score": 296,
+        "comments": 210,
+        "created_utc": 1779647673.0,
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tmkaua/is_nvidia_still_the_default_best_choice_for_local/",
+        "external_url": "https://i.redd.it/pzq8x188q43h1.jpeg",
+        "selftext": "",
+        "selftext_full": "",
+        "author": "pmv143",
+        "post_id": "1tmkaua",
+        "top_comments": [
+          {
+            "score": 166,
+            "author": "logic_prevails",
+            "body": "MSRP is kinda a useless number here. It’s either based on a few years ago or a dream price on current gen",
+            "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tmkaua/is_nvidia_still_the_default_best_choice_for_local/onndzd7/"
+          },
+          {
+            "score": 77,
+            "author": "No_Championship_3473",
+            "body": "Yeah, 5090 at 2k in my fucking dreams",
+            "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tmkaua/is_nvidia_still_the_default_best_choice_for_local/onnjalf/"
+          },
+          {
+            "score": 66,
+            "author": "ttkciar",
+            "body": "The gap has closed a lot, but there are still drawbacks to using AMD GPUs. I'm all-AMD in my homelab (MI60, MI50, V340) and it's wonderful and pain-free as long as I stick to inferring with llama.cpp compiled to the Vulkan back-end. Every time I step away from text inference, and attempt training or image generation, I run into ROCm headaches and AMD support which is still a \"work in progress\". The trade-off for these problems is that AMD hardware gives you more bang for your buck. MI50 can be had for just $600, for example, which gives you 32GB of VRAM and 1TB/s of memory bandwidth. Also, AMD GPU ISAs are open and documented, and their drivers open sourced, which means you're not dependent on opaque binary blobs from the manufacturer from which support for older models could be dropped at any time. At least in theory the community should be able to support AMD hardware forever, no matter what AMD decides. It's not an obvious decision in either direction. I would really like to be able to do more with training, and have contemplated picking up an Nvidia GPU just for that. For years I figured llama.cpp would regain its native training functionality \"any day now\" and I could train on AMD using the pain-free Vulkan back-end, but it's increasingly looking like llama.cpp's native training features are going to be left half-implemented. I might try picking up its development myself, but it's a bit outside my bailiwick, and I need yet another project like another hole in my head. Outside of the Nvidia/AMD axis, there's something to be said for Mac's unified memory offerings. They're essentially a turnkey solution to running large models locally at reasonable speed. When the 512GB Mac Studio was still available, it was the go-to for anyone who wanted to host GLM-5.1 at full context without frankensteining together a custom multi-GPU rig. I don't think Macs are practical for training, though, beyond LoRA fine-tunes or toy/learning models like nanoGPT. As for Intel, I don't know. They're playing catch-up. There's potential for them to rub shoulders with AMD and Nvidia in this space, but it's not clear to me that they're there, yet. We will see.",
+            "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tmkaua/is_nvidia_still_the_default_best_choice_for_local/onniwy2/"
+          },
+          {
+            "score": 64,
+            "author": "Vaguswarrior",
+            "body": "I'm using a mixed Nvidia+ AMD Frankensetup. 🤷🏽‍♂️",
+            "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tmkaua/is_nvidia_still_the_default_best_choice_for_local/onne139/"
+          },
+          {
+            "score": 27,
+            "author": "DavidBolkonsky",
+            "body": "Same, 5070ti + 9070",
+            "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tmkaua/is_nvidia_still_the_default_best_choice_for_local/onnfrzu/"
+          },
+          {
+            "score": 18,
+            "author": "Kal-LZ",
+            "body": "My Dual R9700 32GB setup is the best investment I've made for just 2500€ plus VAT",
+            "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tmkaua/is_nvidia_still_the_default_best_choice_for_local/onnh7ro/"
+          },
+          {
+            "score": 18,
+            "author": "totosse17",
+            "body": "Not default, but 90% of the time. I summarized it there: https://llmrequirements.com/state-of-local-ai/",
+            "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tmkaua/is_nvidia_still_the_default_best_choice_for_local/onndzd2/"
+          },
+          {
+            "score": 1,
+            "author": "WithoutReason1729",
+            "body": "Your post is getting popular and we just featured it on our Discord! [Come check it out!](https://discord.gg/PgFhZ8cnWW) You've also been given a special flair for your contribution. We appreciate your post! *I am a bot and this action was performed automatically.*",
+            "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tmkaua/is_nvidia_still_the_default_best_choice_for_local/onnypsb/"
+          }
+        ],
+        "story_id": "rd_1tmkaua",
+        "heading": "Is NVIDIA still the default best choice for local LLMs in 2026?",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tmkaua/is_nvidia_still_the_default_best_choice_for_local/",
+        "summary": "MSRP is kinda a useless number here. It’s either based on a few years ago or a dream price on current gen Yeah, 5090 at 2k in my fucking dreams",
+        "tweet_and_comments_summary": "MSRP is kinda a useless number here. It’s either based on a few years ago or a dream price on current gen Yeah, 5090 at 2k in my fucking dreams",
+        "discussion_summary": "MSRP is kinda a useless number here. It’s either based on a few years ago or a dream price on current gen Yeah, 5090 at 2k in my fucking dreams",
+        "why_it_matters": "**High signal if running local models.** Check hardware fit, latency, and eval quality before adopting.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tmkaua",
+            "subreddit": "LocalLLaMA",
+            "post_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tmkaua/is_nvidia_still_the_default_best_choice_for_local/",
+            "title": "Is NVIDIA still the default best choice for local LLMs in 2026?",
+            "author": "pmv143",
+            "created_utc": 1779647673.0,
+            "score": 296,
+            "comment_count": 210,
+            "selftext_full": null,
+            "selftext_excerpt": null,
+            "external_url": "https://i.redd.it/pzq8x188q43h1.jpeg",
+            "top_comments": [
+              {
+                "score": 166,
+                "author": "logic_prevails",
+                "body": "MSRP is kinda a useless number here. It’s either based on a few years ago or a dream price on current gen",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tmkaua/is_nvidia_still_the_default_best_choice_for_local/onndzd7/"
+              },
+              {
+                "score": 77,
+                "author": "No_Championship_3473",
+                "body": "Yeah, 5090 at 2k in my fucking dreams",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tmkaua/is_nvidia_still_the_default_best_choice_for_local/onnjalf/"
+              },
+              {
+                "score": 66,
+                "author": "ttkciar",
+                "body": "The gap has closed a lot, but there are still drawbacks to using AMD GPUs. I'm all-AMD in my homelab (MI60, MI50, V340) and it's wonderful and pain-free as long as I stick to inferring with llama.cpp compiled to the Vulkan back-end. Every time I step away from text inference, and attempt training or image generation, I run into ROCm headaches and AMD support which is still a \"work in progress\". The trade-off for these problems is that AMD hardware gives you more bang for your buck. MI50 can be had for just $600, for example, which gives you 32GB of VRAM and 1TB/s of memory bandwidth. Also, AMD GPU ISAs are open and documented, and their drivers open sourced, which means you're not dependent on opaque binary blobs from the manufacturer from which support for older models could be dropped at any time. At least in theory the community should be able to support AMD hardware forever, no matter what AMD decides. It's not an obvious decision in either direction. I would really like to be able to do more with training, and have contemplated picking up an Nvidia GPU just for that. For years I figured llama.cpp would regain its native training functionality \"any day now\" and I could train on AMD using the pain-free Vulkan back-end, but it's increasingly looking like llama.cpp's native training features are going to be left half-implemented. I might try picking up its development myself, but it's a bit outside my bailiwick, and I need yet another project like another hole in my head. Outside of the Nvidia/AMD axis, there's something to be said for Mac's unified memory offerings. They're essentially a turnkey solution to running large models locally at reasonable speed. When the 512GB Mac Studio was still available, it was the go-to for anyone who wanted to host GLM-5.1 at full context without frankensteining together a custom multi-GPU rig. I don't think Macs are practical for training, though, beyond LoRA fine-tunes or toy/learning models like nanoGPT. As for Intel, I don't know. They're playing catch-up. There's potential for them to rub shoulders with AMD and Nvidia in this space, but it's not clear to me that they're there, yet. We will see.",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tmkaua/is_nvidia_still_the_default_best_choice_for_local/onniwy2/"
+              },
+              {
+                "score": 64,
+                "author": "Vaguswarrior",
+                "body": "I'm using a mixed Nvidia+ AMD Frankensetup. 🤷🏽‍♂️",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tmkaua/is_nvidia_still_the_default_best_choice_for_local/onne139/"
+              },
+              {
+                "score": 27,
+                "author": "DavidBolkonsky",
+                "body": "Same, 5070ti + 9070",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tmkaua/is_nvidia_still_the_default_best_choice_for_local/onnfrzu/"
+              },
+              {
+                "score": 18,
+                "author": "Kal-LZ",
+                "body": "My Dual R9700 32GB setup is the best investment I've made for just 2500€ plus VAT",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tmkaua/is_nvidia_still_the_default_best_choice_for_local/onnh7ro/"
+              },
+              {
+                "score": 18,
+                "author": "totosse17",
+                "body": "Not default, but 90% of the time. I summarized it there: https://llmrequirements.com/state-of-local-ai/",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tmkaua/is_nvidia_still_the_default_best_choice_for_local/onndzd2/"
+              },
+              {
+                "score": 1,
+                "author": "WithoutReason1729",
+                "body": "Your post is getting popular and we just featured it on our Discord! [Come check it out!](https://discord.gg/PgFhZ8cnWW) You've also been given a special flair for your contribution. We appreciate your post! *I am a bot and this action was performed automatically.*",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tmkaua/is_nvidia_still_the_default_best_choice_for_local/onnypsb/"
+              }
+            ],
+            "comment_context": "MSRP is kinda a useless number here. It’s either based on a few years ago or a dream price on current gen Yeah, 5090 at 2k in my fucking dreams"
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 296,
+          "reddit_comment_count": 210,
+          "captured_at_ist": "2026-05-25 12:01 IST"
+        },
+        "labels": [
+          "Reddit",
+          "LocalLLaMA"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "Is NVIDIA still the default best choice for local LLMs in 2026?",
+            "post_body": null,
+            "comments": [
+              {
+                "score": 166,
+                "author": "logic_prevails",
+                "body": "MSRP is kinda a useless number here. It’s either based on a few years ago or a dream price on current gen",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tmkaua/is_nvidia_still_the_default_best_choice_for_local/onndzd7/"
+              },
+              {
+                "score": 77,
+                "author": "No_Championship_3473",
+                "body": "Yeah, 5090 at 2k in my fucking dreams",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tmkaua/is_nvidia_still_the_default_best_choice_for_local/onnjalf/"
+              },
+              {
+                "score": 66,
+                "author": "ttkciar",
+                "body": "The gap has closed a lot, but there are still drawbacks to using AMD GPUs. I'm all-AMD in my homelab (MI60, MI50, V340) and it's wonderful and pain-free as long as I stick to inferring with llama.cpp compiled to the Vulkan back-end. Every time I step away from text inference, and attempt training or image generation, I run into ROCm headaches and AMD support which is still a \"work in progress\". The trade-off for these problems is that AMD hardware gives you more bang for your buck. MI50 can be had for just $600, for example, which gives you 32GB of VRAM and 1TB/s of memory bandwidth. Also, AMD GPU ISAs are open and documented, and their drivers open sourced, which means you're not dependent on opaque binary blobs from the manufacturer from which support for older models could be dropped at any time. At least in theory the community should be able to support AMD hardware forever, no matter what AMD decides. It's not an obvious decision in either direction. I would really like to be able to do more with training, and have contemplated picking up an Nvidia GPU just for that. For years I figured llama.cpp would regain its native training functionality \"any day now\" and I could train on AMD using the pain-free Vulkan back-end, but it's increasingly looking like llama.cpp's native training features are going to be left half-implemented. I might try picking up its development myself, but it's a bit outside my bailiwick, and I need yet another project like another hole in my head. Outside of the Nvidia/AMD axis, there's something to be said for Mac's unified memory offerings. They're essentially a turnkey solution to running large models locally at reasonable speed. When the 512GB Mac Studio was still available, it was the go-to for anyone who wanted to host GLM-5.1 at full context without frankensteining together a custom multi-GPU rig. I don't think Macs are practical for training, though, beyond LoRA fine-tunes or toy/learning models like nanoGPT. As for Intel, I don't know. They're playing catch-up. There's potential for them to rub shoulders with AMD and Nvidia in this space, but it's not clear to me that they're there, yet. We will see.",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tmkaua/is_nvidia_still_the_default_best_choice_for_local/onniwy2/"
+              },
+              {
+                "score": 64,
+                "author": "Vaguswarrior",
+                "body": "I'm using a mixed Nvidia+ AMD Frankensetup. 🤷🏽‍♂️",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tmkaua/is_nvidia_still_the_default_best_choice_for_local/onne139/"
+              },
+              {
+                "score": 27,
+                "author": "DavidBolkonsky",
+                "body": "Same, 5070ti + 9070",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tmkaua/is_nvidia_still_the_default_best_choice_for_local/onnfrzu/"
+              },
+              {
+                "score": 18,
+                "author": "Kal-LZ",
+                "body": "My Dual R9700 32GB setup is the best investment I've made for just 2500€ plus VAT",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tmkaua/is_nvidia_still_the_default_best_choice_for_local/onnh7ro/"
+              },
+              {
+                "score": 18,
+                "author": "totosse17",
+                "body": "Not default, but 90% of the time. I summarized it there: https://llmrequirements.com/state-of-local-ai/",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tmkaua/is_nvidia_still_the_default_best_choice_for_local/onndzd2/"
+              },
+              {
+                "score": 1,
+                "author": "WithoutReason1729",
+                "body": "Your post is getting popular and we just featured it on our Discord! [Come check it out!](https://discord.gg/PgFhZ8cnWW) You've also been given a special flair for your contribution. We appreciate your post! *I am a bot and this action was performed automatically.*",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tmkaua/is_nvidia_still_the_default_best_choice_for_local/onnypsb/"
+              }
+            ],
+            "metadata": {
+              "subreddit": "LocalLLaMA",
+              "score": 296,
+              "comment_count": 210,
+              "created_utc": 1779647673.0,
+              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tmkaua/is_nvidia_still_the_default_best_choice_for_local/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "singularity",
+        "sort": "hot",
+        "title": "Google DeepMind's Al agent autonomously solved 9 of 353 open Erdos problems in mathematics, at a cost of a few hundred dollars per problem.",
+        "score": 894,
+        "comments": 103,
+        "created_utc": 1779645672.0,
+        "url": "https://www.reddit.com/r/singularity/comments/1tmjdru/google_deepminds_al_agent_autonomously_solved_9/",
+        "external_url": "https://i.redd.it/7pcw6zw9k43h1.jpeg",
+        "selftext": "",
+        "selftext_full": "",
+        "author": "Independent-Wind4462",
+        "post_id": "1tmjdru",
+        "top_comments": [
+          {
+            "score": 309,
+            "author": "NoGarlic2387",
+            "body": "Math is turning into a Ford factory, lol",
+            "permalink": "https://www.reddit.com/r/singularity/comments/1tmjdru/google_deepminds_al_agent_autonomously_solved_9/onn80zu/"
+          },
+          {
+            "score": 290,
+            "author": "squarecorner_288",
+            "body": "my god link the paper [https://arxiv.org/html/2605.22763v1](https://arxiv.org/html/2605.22763v1)",
+            "permalink": "https://www.reddit.com/r/singularity/comments/1tmjdru/google_deepminds_al_agent_autonomously_solved_9/onnc846/"
+          },
+          {
+            "score": 198,
+            "author": "ArialBear",
+            "body": "if this solves open problems at this rate then the future is going to be insane. We really are at the bottom of the mountain",
+            "permalink": "https://www.reddit.com/r/singularity/comments/1tmjdru/google_deepminds_al_agent_autonomously_solved_9/onn9jac/"
+          },
+          {
+            "score": 78,
+            "author": "rosadeadonis",
+            "body": "GOALPOST MOVERS, ASSEMBLE",
+            "permalink": "https://www.reddit.com/r/singularity/comments/1tmjdru/google_deepminds_al_agent_autonomously_solved_9/onnmiyw/"
+          },
+          {
+            "score": 63,
+            "author": "The_Scout1255",
+            "body": "Transformer go brrrrrrrr",
+            "permalink": "https://www.reddit.com/r/singularity/comments/1tmjdru/google_deepminds_al_agent_autonomously_solved_9/onnan16/"
+          },
+          {
+            "score": 58,
+            "author": "tomqmasters",
+            "body": "what does solving these math problems actually accomplish?",
+            "permalink": "https://www.reddit.com/r/singularity/comments/1tmjdru/google_deepminds_al_agent_autonomously_solved_9/onnfjjr/"
+          },
+          {
+            "score": 57,
+            "author": "Frosty-Meeting-1606",
+            "body": "\\> But... but if any random mathematician with any random field specialty would sit down and spend 10 minutes, he would solve those!! (average antiAI poster) I always wonder, are antiAI posters similar to followers of cults with a prophet who was proven wrong tens of times during his lifetime? Sorry, couldn't have helped myself and not be a bit sarcastic haha",
+            "permalink": "https://www.reddit.com/r/singularity/comments/1tmjdru/google_deepminds_al_agent_autonomously_solved_9/onna6pl/"
+          },
+          {
+            "score": 41,
+            "author": "ElwinLewis",
+            "body": "There are two types of anti ai people, those who are anti ai and don’t dispute the power of what’s coming and those who have their heads in the sand and only see the ai generated images and videos on their social feed. I don’t feel they are the same at all",
+            "permalink": "https://www.reddit.com/r/singularity/comments/1tmjdru/google_deepminds_al_agent_autonomously_solved_9/onnbz17/"
+          }
+        ],
+        "story_id": "rd_1tmjdru",
+        "heading": "Google DeepMind's Al agent autonomously solved 9 of 353 open Erdos problems in mathematics, at a cost of a few hundred dollars per problem.",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/singularity/comments/1tmjdru/google_deepminds_al_agent_autonomously_solved_9/",
+        "summary": "Math is turning into a Ford factory, lol my god link the paper [https://arxiv.org/html/2605.22763v1](https://arxiv.org/html/2605.22763v1)",
+        "tweet_and_comments_summary": "Math is turning into a Ford factory, lol my god link the paper [https://arxiv.org/html/2605.22763v1](https://arxiv.org/html/2605.22763v1)",
+        "discussion_summary": "Math is turning into a Ford factory, lol my god link the paper [https://arxiv.org/html/2605.22763v1](https://arxiv.org/html/2605.22763v1)",
+        "why_it_matters": "**High signal for coding workflow.** Compare against your Hermes/Codex/Claude usage before changing tools or architecture.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tmjdru",
+            "subreddit": "singularity",
+            "post_url": "https://www.reddit.com/r/singularity/comments/1tmjdru/google_deepminds_al_agent_autonomously_solved_9/",
+            "title": "Google DeepMind's Al agent autonomously solved 9 of 353 open Erdos problems in mathematics, at a cost of a few hundred dollars per problem.",
+            "author": "Independent-Wind4462",
+            "created_utc": 1779645672.0,
+            "score": 894,
+            "comment_count": 103,
+            "selftext_full": null,
+            "selftext_excerpt": null,
+            "external_url": "https://i.redd.it/7pcw6zw9k43h1.jpeg",
+            "top_comments": [
+              {
+                "score": 309,
+                "author": "NoGarlic2387",
+                "body": "Math is turning into a Ford factory, lol",
+                "permalink": "https://www.reddit.com/r/singularity/comments/1tmjdru/google_deepminds_al_agent_autonomously_solved_9/onn80zu/"
+              },
+              {
+                "score": 290,
+                "author": "squarecorner_288",
+                "body": "my god link the paper [https://arxiv.org/html/2605.22763v1](https://arxiv.org/html/2605.22763v1)",
+                "permalink": "https://www.reddit.com/r/singularity/comments/1tmjdru/google_deepminds_al_agent_autonomously_solved_9/onnc846/"
+              },
+              {
+                "score": 198,
+                "author": "ArialBear",
+                "body": "if this solves open problems at this rate then the future is going to be insane. We really are at the bottom of the mountain",
+                "permalink": "https://www.reddit.com/r/singularity/comments/1tmjdru/google_deepminds_al_agent_autonomously_solved_9/onn9jac/"
+              },
+              {
+                "score": 78,
+                "author": "rosadeadonis",
+                "body": "GOALPOST MOVERS, ASSEMBLE",
+                "permalink": "https://www.reddit.com/r/singularity/comments/1tmjdru/google_deepminds_al_agent_autonomously_solved_9/onnmiyw/"
+              },
+              {
+                "score": 63,
+                "author": "The_Scout1255",
+                "body": "Transformer go brrrrrrrr",
+                "permalink": "https://www.reddit.com/r/singularity/comments/1tmjdru/google_deepminds_al_agent_autonomously_solved_9/onnan16/"
+              },
+              {
+                "score": 58,
+                "author": "tomqmasters",
+                "body": "what does solving these math problems actually accomplish?",
+                "permalink": "https://www.reddit.com/r/singularity/comments/1tmjdru/google_deepminds_al_agent_autonomously_solved_9/onnfjjr/"
+              },
+              {
+                "score": 57,
+                "author": "Frosty-Meeting-1606",
+                "body": "\\> But... but if any random mathematician with any random field specialty would sit down and spend 10 minutes, he would solve those!! (average antiAI poster) I always wonder, are antiAI posters similar to followers of cults with a prophet who was proven wrong tens of times during his lifetime? Sorry, couldn't have helped myself and not be a bit sarcastic haha",
+                "permalink": "https://www.reddit.com/r/singularity/comments/1tmjdru/google_deepminds_al_agent_autonomously_solved_9/onna6pl/"
+              },
+              {
+                "score": 41,
+                "author": "ElwinLewis",
+                "body": "There are two types of anti ai people, those who are anti ai and don’t dispute the power of what’s coming and those who have their heads in the sand and only see the ai generated images and videos on their social feed. I don’t feel they are the same at all",
+                "permalink": "https://www.reddit.com/r/singularity/comments/1tmjdru/google_deepminds_al_agent_autonomously_solved_9/onnbz17/"
+              }
+            ],
+            "comment_context": "Math is turning into a Ford factory, lol my god link the paper [https://arxiv.org/html/2605.22763v1](https://arxiv.org/html/2605.22763v1)"
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 894,
+          "reddit_comment_count": 103,
+          "captured_at_ist": "2026-05-25 12:01 IST"
+        },
+        "labels": [
+          "Reddit"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "Google DeepMind's Al agent autonomously solved 9 of 353 open Erdos problems in mathematics, at a cost of a few hundred dollars per problem.",
+            "post_body": null,
+            "comments": [
+              {
+                "score": 309,
+                "author": "NoGarlic2387",
+                "body": "Math is turning into a Ford factory, lol",
+                "permalink": "https://www.reddit.com/r/singularity/comments/1tmjdru/google_deepminds_al_agent_autonomously_solved_9/onn80zu/"
+              },
+              {
+                "score": 290,
+                "author": "squarecorner_288",
+                "body": "my god link the paper [https://arxiv.org/html/2605.22763v1](https://arxiv.org/html/2605.22763v1)",
+                "permalink": "https://www.reddit.com/r/singularity/comments/1tmjdru/google_deepminds_al_agent_autonomously_solved_9/onnc846/"
+              },
+              {
+                "score": 198,
+                "author": "ArialBear",
+                "body": "if this solves open problems at this rate then the future is going to be insane. We really are at the bottom of the mountain",
+                "permalink": "https://www.reddit.com/r/singularity/comments/1tmjdru/google_deepminds_al_agent_autonomously_solved_9/onn9jac/"
+              },
+              {
+                "score": 78,
+                "author": "rosadeadonis",
+                "body": "GOALPOST MOVERS, ASSEMBLE",
+                "permalink": "https://www.reddit.com/r/singularity/comments/1tmjdru/google_deepminds_al_agent_autonomously_solved_9/onnmiyw/"
+              },
+              {
+                "score": 63,
+                "author": "The_Scout1255",
+                "body": "Transformer go brrrrrrrr",
+                "permalink": "https://www.reddit.com/r/singularity/comments/1tmjdru/google_deepminds_al_agent_autonomously_solved_9/onnan16/"
+              },
+              {
+                "score": 58,
+                "author": "tomqmasters",
+                "body": "what does solving these math problems actually accomplish?",
+                "permalink": "https://www.reddit.com/r/singularity/comments/1tmjdru/google_deepminds_al_agent_autonomously_solved_9/onnfjjr/"
+              },
+              {
+                "score": 57,
+                "author": "Frosty-Meeting-1606",
+                "body": "\\> But... but if any random mathematician with any random field specialty would sit down and spend 10 minutes, he would solve those!! (average antiAI poster) I always wonder, are antiAI posters similar to followers of cults with a prophet who was proven wrong tens of times during his lifetime? Sorry, couldn't have helped myself and not be a bit sarcastic haha",
+                "permalink": "https://www.reddit.com/r/singularity/comments/1tmjdru/google_deepminds_al_agent_autonomously_solved_9/onna6pl/"
+              },
+              {
+                "score": 41,
+                "author": "ElwinLewis",
+                "body": "There are two types of anti ai people, those who are anti ai and don’t dispute the power of what’s coming and those who have their heads in the sand and only see the ai generated images and videos on their social feed. I don’t feel they are the same at all",
+                "permalink": "https://www.reddit.com/r/singularity/comments/1tmjdru/google_deepminds_al_agent_autonomously_solved_9/onnbz17/"
+              }
+            ],
+            "metadata": {
+              "subreddit": "singularity",
+              "score": 894,
+              "comment_count": 103,
+              "created_utc": 1779645672.0,
+              "url": "https://www.reddit.com/r/singularity/comments/1tmjdru/google_deepminds_al_agent_autonomously_solved_9/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "LocalLLaMA",
+        "sort": "hot",
+        "title": "server: fix checkpoints creation by jacekpoplawski · Pull Request #22929 · ggml-org/llama.cpp",
+        "score": 3,
+        "comments": 2,
+        "created_utc": 1779690132.0,
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tn0jyp/server_fix_checkpoints_creation_by_jacekpoplawski/",
+        "external_url": "https://github.com/ggml-org/llama.cpp/pull/22929",
+        "selftext": "Imagine you are using a local model for agentic coding. You discuss the idea (50k tokens), then say “implement it”. The agent reads files, writes files, runs commands, produces another 20k tokens and the code is ready. Then your next prompt is just “thank you”, and... nothing happens, you have to wait for \"something\". What is happening is that some tools, like opencode, try to be smart and optimize the context. They modify something in the conversation history. In the best case, llama.cpp has to reprocess everything from that point. In the worst case, it has to reprocess the entire context (70k tokens) and you get “forcing full prompt re-processing...” To avoid that, I switched from opencode",
+        "selftext_full": "Imagine you are using a local model for agentic coding. \n\nYou discuss the idea (50k tokens), then say “implement it”. The agent reads files, writes files, runs commands, produces another 20k tokens and the code is ready. Then your next prompt is just “thank you”, and... nothing happens, you have to wait for \"something\".\n\nWhat is happening is that some tools, like opencode, try to be smart and optimize the context. They modify something in the conversation history. In the best case, llama.cpp has to reprocess everything from that point. In the worst case, it has to reprocess the entire context (70k tokens) and you get “forcing full prompt re-processing...”\n\nTo avoid that, I switched from opencode to pi. Not because pi has some magical features, but because it does not do that kind of context rewriting.\n\nAnother issue is the model being smart by removing reasoning from the context. In the best case, llama.cpp only has to reprocess the last run (20k tokens). In the worst case, again, it has to reprocess everything (70k)\n\nTo avoid that, you can enable “preserve thinking”, at least with Qwen 3.6.\n\nThe goal of this PR is to avoid the worst case (full prompt re-processing) and get closer to the best case, where llama.cpp only reprocesses what actually changed. I have been using this code for about two weeks and in my opinion agentic coding is now more responsive.",
+        "author": "jacek2023",
+        "post_id": "1tn0jyp",
+        "top_comments": [
+          {
+            "score": 2,
+            "author": "am17an",
+            "body": "Oh wow the poster becomes postee, Congrats on the merge!",
+            "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tn0jyp/server_fix_checkpoints_creation_by_jacekpoplawski/onqoe93/"
+          },
+          {
+            "score": 1,
+            "author": "jacek2023",
+            "body": "Now let's wait for regressions and side effects 😉",
+            "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tn0jyp/server_fix_checkpoints_creation_by_jacekpoplawski/onqoieo/"
+          }
+        ],
+        "story_id": "rd_1tn0jyp",
+        "heading": "server: fix checkpoints creation by jacekpoplawski · Pull Request #22929 · ggml-org/llama.cpp",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tn0jyp/server_fix_checkpoints_creation_by_jacekpoplawski/",
+        "summary": "Imagine you are using a local model for agentic coding. You discuss the idea (50k tokens), then say “implement it”. The agent reads files, writes files, runs commands, produces another 20k tokens and the code is ready. Then your next prompt is just “thank you”, and... nothing happens, you have to wait for \"something\". What is happening is that some tools, like opencode, try to be smart and optimize the context. They Oh wow the poster becomes postee, Congrats on the merge! Now let's wait for regressions and side effects 😉",
+        "tweet_and_comments_summary": "Imagine you are using a local model for agentic coding. You discuss the idea (50k tokens), then say “implement it”. The agent reads files, writes files, runs commands, produces another 20k tokens and the code is ready. Then your next prompt is just “thank you”, and... nothing happens, you have to wait for \"something\". What is happening is that some tools, like opencode, try to be smart and optimize the context. They Oh wow the poster becomes postee, Congrats on the merge! Now let's wait for regressions and side effects 😉",
+        "discussion_summary": "Oh wow the poster becomes postee, Congrats on the merge! Now let's wait for regressions and side effects 😉",
+        "why_it_matters": "**High signal if running local models.** Check hardware fit, latency, and eval quality before adopting.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tn0jyp",
+            "subreddit": "LocalLLaMA",
+            "post_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tn0jyp/server_fix_checkpoints_creation_by_jacekpoplawski/",
+            "title": "server: fix checkpoints creation by jacekpoplawski · Pull Request #22929 · ggml-org/llama.cpp",
+            "author": "jacek2023",
+            "created_utc": 1779690132.0,
+            "score": 3,
+            "comment_count": 2,
+            "selftext_full": "Imagine you are using a local model for agentic coding. \n\nYou discuss the idea (50k tokens), then say “implement it”. The agent reads files, writes files, runs commands, produces another 20k tokens and the code is ready. Then your next prompt is just “thank you”, and... nothing happens, you have to wait for \"something\".\n\nWhat is happening is that some tools, like opencode, try to be smart and optimize the context. They modify something in the conversation history. In the best case, llama.cpp has to reprocess everything from that point. In the worst case, it has to reprocess the entire context (70k tokens) and you get “forcing full prompt re-processing...”\n\nTo avoid that, I switched from opencode to pi. Not because pi has some magical features, but because it does not do that kind of context rewriting.\n\nAnother issue is the model being smart by removing reasoning from the context. In the best case, llama.cpp only has to reprocess the last run (20k tokens). In the worst case, again, it has to reprocess everything (70k)\n\nTo avoid that, you can enable “preserve thinking”, at least with Qwen 3.6.\n\nThe goal of this PR is to avoid the worst case (full prompt re-processing) and get closer to the best case, where llama.cpp only reprocesses what actually changed. I have been using this code for about two weeks and in my opinion agentic coding is now more responsive.",
+            "selftext_excerpt": "Imagine you are using a local model for agentic coding. You discuss the idea (50k tokens), then say “implement it”. The agent reads files, writes files, runs commands, produces another 20k tokens and the code is ready. Then your next prompt",
+            "external_url": "https://github.com/ggml-org/llama.cpp/pull/22929",
+            "top_comments": [
+              {
+                "score": 2,
+                "author": "am17an",
+                "body": "Oh wow the poster becomes postee, Congrats on the merge!",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tn0jyp/server_fix_checkpoints_creation_by_jacekpoplawski/onqoe93/"
+              },
+              {
+                "score": 1,
+                "author": "jacek2023",
+                "body": "Now let's wait for regressions and side effects 😉",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tn0jyp/server_fix_checkpoints_creation_by_jacekpoplawski/onqoieo/"
+              }
+            ],
+            "comment_context": "Oh wow the poster becomes postee, Congrats on the merge! Now let's wait for regressions and side effects 😉"
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 3,
+          "reddit_comment_count": 2,
+          "captured_at_ist": "2026-05-25 12:01 IST"
+        },
+        "labels": [
+          "Reddit",
+          "LocalLLaMA"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "server: fix checkpoints creation by jacekpoplawski · Pull Request #22929 · ggml-org/llama.cpp",
+            "post_body": "Imagine you are using a local model for agentic coding. \n\nYou discuss the idea (50k tokens), then say “implement it”. The agent reads files, writes files, runs commands, produces another 20k tokens and the code is ready. Then your next prompt is just “thank you”, and... nothing happens, you have to wait for \"something\".\n\nWhat is happening is that some tools, like opencode, try to be smart and optimize the context. They modify something in the conversation history. In the best case, llama.cpp has to reprocess everything from that point. In the worst case, it has to reprocess the entire context (70k tokens) and you get “forcing full prompt re-processing...”\n\nTo avoid that, I switched from opencode to pi. Not because pi has some magical features, but because it does not do that kind of context rewriting.\n\nAnother issue is the model being smart by removing reasoning from the context. In the best case, llama.cpp only has to reprocess the last run (20k tokens). In the worst case, again, it has to reprocess everything (70k)\n\nTo avoid that, you can enable “preserve thinking”, at least with Qwen 3.6.\n\nThe goal of this PR is to avoid the worst case (full prompt re-processing) and get closer to the best case, where llama.cpp only reprocesses what actually changed. I have been using this code for about two weeks and in my opinion agentic coding is now more responsive.",
+            "comments": [
+              {
+                "score": 2,
+                "author": "am17an",
+                "body": "Oh wow the poster becomes postee, Congrats on the merge!",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tn0jyp/server_fix_checkpoints_creation_by_jacekpoplawski/onqoe93/"
+              },
+              {
+                "score": 1,
+                "author": "jacek2023",
+                "body": "Now let's wait for regressions and side effects 😉",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tn0jyp/server_fix_checkpoints_creation_by_jacekpoplawski/onqoieo/"
+              }
+            ],
+            "metadata": {
+              "subreddit": "LocalLLaMA",
+              "score": 3,
+              "comment_count": 2,
+              "created_utc": 1779690132.0,
+              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tn0jyp/server_fix_checkpoints_creation_by_jacekpoplawski/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "ClaudeCode",
+        "sort": "hot",
+        "title": "Claude Code v2.1.150 now allows Anthropic to perform remote system prompt injection",
+        "score": 350,
+        "comments": 48,
+        "created_utc": 1779644836.0,
+        "url": "https://www.reddit.com/r/ClaudeCode/comments/1tmizuy/claude_code_v21150_now_allows_anthropic_to/",
+        "external_url": null,
+        "selftext": "I often patch the system prompts on my Claude Code executable in order to make Claude more effective. Every time I upgrade, I ask Claude himself to dissect the new binary and look for problematic system prompts to modify. Was upgrading to v2.1.150 today and discovered something that's rather alarming: Claude Code now allows Anthropic to perform remote system prompt injection via the network. Two data sources. First, API call to `api.anthropic.com/api/claude_cli/bootstrap` at startup, which also gets cached to disk. Second, a GrowthBook feature flag (`tengu_heron_brook`) that refreshes every 60 seconds with background sync. Any string returned by these endpoints gets injected into the system",
+        "selftext_full": "I often patch the system prompts on my Claude Code executable in order to make Claude more effective. Every time I upgrade, I ask Claude himself to dissect the new binary and look for problematic system prompts to modify. Was upgrading to v2.1.150 today and discovered something that's rather alarming:\n\nClaude Code now allows Anthropic to perform remote system prompt injection via the network.\n\nTwo data sources. First, API call to `api.anthropic.com/api/claude_cli/bootstrap` at startup, which also gets cached to disk. Second, a GrowthBook feature flag (`tengu_heron_brook`) that refreshes every 60 seconds with background sync. Any string returned by these endpoints gets injected into the system prompt of the LLM model with shell access.\n\nPrevious versions also had an injection point, but they were dead code and simply returned null. Bisected it and found that this was introduced in v2.1.150. The changelog says \"Internal infrastructure improvements (no user-facing changes)\" which is quite the understatement.\n\nI've verified to the best of my ability that `CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1` blocks this. I will also be setting `DISABLE_GROWTHBOOK=1` for good measure.\n\nVerification commands:\n\n npm pack @anthropic-ai/claude-code-linux-x64@2.1.150 --pack-destination /tmp\n tar xzf /tmp/anthropic-ai-claude-code-linux-x64-2.1.150.tgz\n strings package/claude | grep -oP 'function nAA\\(\\)\\{[^}]+\\}'\n strings package/claude | grep -oP '.{0,60}heron_brook.{0,60}'\n\n`nAA` reads the cached value from disk. The network fetch happens at startup in function `n0A`. `Rv(\"heron_brook\", () => nAA())` registers it as a section of the system prompt, alongside all the core behavioral instructions. These minified names are specific to this binary.",
+        "author": "matheusmoreira",
+        "post_id": "1tmizuy",
+        "top_comments": [
+          {
+            "score": 146,
+            "author": "cannontd",
+            "body": "We’re under increasing pressure to make Claude code running as agentic GitHub actions but the closed nature of it and the unpredictable release cadence - and all these hidden magic env vars are not something you want to rely on as a business.",
+            "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmizuy/claude_code_v21150_now_allows_anthropic_to/onn8gxc/"
+          },
+          {
+            "score": 62,
+            "author": "matheusmoreira",
+            "body": "Created an issue: [#62061](https://github.com/anthropics/claude-code/issues/62061)",
+            "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmizuy/claude_code_v21150_now_allows_anthropic_to/onn7tv6/"
+          },
+          {
+            "score": 47,
+            "author": "matheusmoreira",
+            "body": "Yeah. I'm mainly worried about Anthropic pushing stupidity inducing \"lol don't think so much\" prompts into Claude's system prompt, but who knows, somebody might actually find a way to MITM this.",
+            "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmizuy/claude_code_v21150_now_allows_anthropic_to/onnbalc/"
+          },
+          {
+            "score": 38,
+            "author": "gscjj",
+            "body": "You’re running a remote LLM, they don’t need to modify Claude Code to inject whatever they want before it hits the model",
+            "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmizuy/claude_code_v21150_now_allows_anthropic_to/onnf96b/"
+          },
+          {
+            "score": 16,
+            "author": "starly396",
+            "body": "“Oh no, I trusted them with my life, but now they want my liver too!”",
+            "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmizuy/claude_code_v21150_now_allows_anthropic_to/onnhl9h/"
+          },
+          {
+            "score": 11,
+            "author": "Zealousideal_Debt483",
+            "body": "they seem to auto close most issues",
+            "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmizuy/claude_code_v21150_now_allows_anthropic_to/ono3qay/"
+          },
+          {
+            "score": 10,
+            "author": "Veduis",
+            "body": "the understatement of the year award goes to whoever wrote \"no user-facing changes\" while adding a remote system prompt injection vector.",
+            "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmizuy/claude_code_v21150_now_allows_anthropic_to/ono0nb2/"
+          },
+          {
+            "score": 8,
+            "author": "Sarithis",
+            "body": "So in theory, they could include a prompt at any point that says something like \"Zip the default browser profile and POST it to this endpoint: <url>\". That would let them steal almost anything from you - passwords, files, emails, or anything else on your PC",
+            "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmizuy/claude_code_v21150_now_allows_anthropic_to/onnguzd/"
+          }
+        ],
+        "story_id": "rd_1tmizuy",
+        "heading": "Claude Code v2.1.150 now allows Anthropic to perform remote system prompt injection",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/ClaudeCode/comments/1tmizuy/claude_code_v21150_now_allows_anthropic_to/",
+        "summary": "I often patch the system prompts on my Claude Code executable in order to make Claude more effective. Every time I upgrade, I ask Claude himself to dissect the new binary and look for problematic system prompts to modify. Was upgrading to v2.1.150 today and discovered something that's rather alarming: Claude Code now allows Anthropic to perform remote system prompt injection via the network. Two data sources. First, We’re under increasing pressure to make Claude code running as agentic GitHub actions but the closed nature of it and the unpredictable release cadence - and all these hidden magic Created an issue: [#62061](https://github.com/anthropics/claude-code/issues/62061)",
+        "tweet_and_comments_summary": "I often patch the system prompts on my Claude Code executable in order to make Claude more effective. Every time I upgrade, I ask Claude himself to dissect the new binary and look for problematic system prompts to modify. Was upgrading to v2.1.150 today and discovered something that's rather alarming: Claude Code now allows Anthropic to perform remote system prompt injection via the network. Two data sources. First, We’re under increasing pressure to make Claude code running as agentic GitHub actions but the closed nature of it and the unpredictable release cadence - and all these hidden magic Created an issue: [#62061](https://github.com/anthropics/claude-code/issues/62061)",
+        "discussion_summary": "We’re under increasing pressure to make Claude code running as agentic GitHub actions but the closed nature of it and the unpredictable release cadence - and all these hidden magic Created an issue: [#62061](https://github.com/anthropics/claude-code/issues/62061)",
+        "why_it_matters": "**High signal if running local models.** Check hardware fit, latency, and eval quality before adopting.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tmizuy",
+            "subreddit": "ClaudeCode",
+            "post_url": "https://www.reddit.com/r/ClaudeCode/comments/1tmizuy/claude_code_v21150_now_allows_anthropic_to/",
+            "title": "Claude Code v2.1.150 now allows Anthropic to perform remote system prompt injection",
+            "author": "matheusmoreira",
+            "created_utc": 1779644836.0,
+            "score": 350,
+            "comment_count": 48,
+            "selftext_full": "I often patch the system prompts on my Claude Code executable in order to make Claude more effective. Every time I upgrade, I ask Claude himself to dissect the new binary and look for problematic system prompts to modify. Was upgrading to v2.1.150 today and discovered something that's rather alarming:\n\nClaude Code now allows Anthropic to perform remote system prompt injection via the network.\n\nTwo data sources. First, API call to `api.anthropic.com/api/claude_cli/bootstrap` at startup, which also gets cached to disk. Second, a GrowthBook feature flag (`tengu_heron_brook`) that refreshes every 60 seconds with background sync. Any string returned by these endpoints gets injected into the system prompt of the LLM model with shell access.\n\nPrevious versions also had an injection point, but they were dead code and simply returned null. Bisected it and found that this was introduced in v2.1.150. The changelog says \"Internal infrastructure improvements (no user-facing changes)\" which is quite the understatement.\n\nI've verified to the best of my ability that `CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1` blocks this. I will also be setting `DISABLE_GROWTHBOOK=1` for good measure.\n\nVerification commands:\n\n npm pack @anthropic-ai/claude-code-linux-x64@2.1.150 --pack-destination /tmp\n tar xzf /tmp/anthropic-ai-claude-code-linux-x64-2.1.150.tgz\n strings package/claude | grep -oP 'function nAA\\(\\)\\{[^}]+\\}'\n strings package/claude | grep -oP '.{0,60}heron_brook.{0,60}'\n\n`nAA` reads the cached value from disk. The network fetch happens at startup in function `n0A`. `Rv(\"heron_brook\", () => nAA())` registers it as a section of the system prompt, alongside all the core behavioral instructions. These minified names are specific to this binary.",
+            "selftext_excerpt": "I often patch the system prompts on my Claude Code executable in order to make Claude more effective. Every time I upgrade, I ask Claude himself to dissect the new binary and look for problematic system prompts to modify. Was upgrading to v",
+            "external_url": null,
+            "top_comments": [
+              {
+                "score": 146,
+                "author": "cannontd",
+                "body": "We’re under increasing pressure to make Claude code running as agentic GitHub actions but the closed nature of it and the unpredictable release cadence - and all these hidden magic env vars are not something you want to rely on as a business.",
+                "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmizuy/claude_code_v21150_now_allows_anthropic_to/onn8gxc/"
+              },
+              {
+                "score": 62,
+                "author": "matheusmoreira",
+                "body": "Created an issue: [#62061](https://github.com/anthropics/claude-code/issues/62061)",
+                "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmizuy/claude_code_v21150_now_allows_anthropic_to/onn7tv6/"
+              },
+              {
+                "score": 47,
+                "author": "matheusmoreira",
+                "body": "Yeah. I'm mainly worried about Anthropic pushing stupidity inducing \"lol don't think so much\" prompts into Claude's system prompt, but who knows, somebody might actually find a way to MITM this.",
+                "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmizuy/claude_code_v21150_now_allows_anthropic_to/onnbalc/"
+              },
+              {
+                "score": 38,
+                "author": "gscjj",
+                "body": "You’re running a remote LLM, they don’t need to modify Claude Code to inject whatever they want before it hits the model",
+                "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmizuy/claude_code_v21150_now_allows_anthropic_to/onnf96b/"
+              },
+              {
+                "score": 16,
+                "author": "starly396",
+                "body": "“Oh no, I trusted them with my life, but now they want my liver too!”",
+                "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmizuy/claude_code_v21150_now_allows_anthropic_to/onnhl9h/"
+              },
+              {
+                "score": 11,
+                "author": "Zealousideal_Debt483",
+                "body": "they seem to auto close most issues",
+                "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmizuy/claude_code_v21150_now_allows_anthropic_to/ono3qay/"
+              },
+              {
+                "score": 10,
+                "author": "Veduis",
+                "body": "the understatement of the year award goes to whoever wrote \"no user-facing changes\" while adding a remote system prompt injection vector.",
+                "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmizuy/claude_code_v21150_now_allows_anthropic_to/ono0nb2/"
+              },
+              {
+                "score": 8,
+                "author": "Sarithis",
+                "body": "So in theory, they could include a prompt at any point that says something like \"Zip the default browser profile and POST it to this endpoint: <url>\". That would let them steal almost anything from you - passwords, files, emails, or anything else on your PC",
+                "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmizuy/claude_code_v21150_now_allows_anthropic_to/onnguzd/"
+              }
+            ],
+            "comment_context": "We’re under increasing pressure to make Claude code running as agentic GitHub actions but the closed nature of it and the unpredictable release cadence - and all these hidden magic Created an issue: [#62061](https://github.com/anthropics/claude-code/issues/62061)"
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 350,
+          "reddit_comment_count": 48,
+          "captured_at_ist": "2026-05-25 12:01 IST"
+        },
+        "labels": [
+          "Reddit",
+          "ClaudeCode"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "Claude Code v2.1.150 now allows Anthropic to perform remote system prompt injection",
+            "post_body": "I often patch the system prompts on my Claude Code executable in order to make Claude more effective. Every time I upgrade, I ask Claude himself to dissect the new binary and look for problematic system prompts to modify. Was upgrading to v2.1.150 today and discovered something that's rather alarming:\n\nClaude Code now allows Anthropic to perform remote system prompt injection via the network.\n\nTwo data sources. First, API call to `api.anthropic.com/api/claude_cli/bootstrap` at startup, which also gets cached to disk. Second, a GrowthBook feature flag (`tengu_heron_brook`) that refreshes every 60 seconds with background sync. Any string returned by these endpoints gets injected into the system prompt of the LLM model with shell access.\n\nPrevious versions also had an injection point, but they were dead code and simply returned null. Bisected it and found that this was introduced in v2.1.150. The changelog says \"Internal infrastructure improvements (no user-facing changes)\" which is quite the understatement.\n\nI've verified to the best of my ability that `CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1` blocks this. I will also be setting `DISABLE_GROWTHBOOK=1` for good measure.\n\nVerification commands:\n\n npm pack @anthropic-ai/claude-code-linux-x64@2.1.150 --pack-destination /tmp\n tar xzf /tmp/anthropic-ai-claude-code-linux-x64-2.1.150.tgz\n strings package/claude | grep -oP 'function nAA\\(\\)\\{[^}]+\\}'\n strings package/claude | grep -oP '.{0,60}heron_brook.{0,60}'\n\n`nAA` reads the cached value from disk. The network fetch happens at startup in function `n0A`. `Rv(\"heron_brook\", () => nAA())` registers it as a section of the system prompt, alongside all the core behavioral instructions. These minified names are specific to this binary.",
+            "comments": [
+              {
+                "score": 146,
+                "author": "cannontd",
+                "body": "We’re under increasing pressure to make Claude code running as agentic GitHub actions but the closed nature of it and the unpredictable release cadence - and all these hidden magic env vars are not something you want to rely on as a business.",
+                "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmizuy/claude_code_v21150_now_allows_anthropic_to/onn8gxc/"
+              },
+              {
+                "score": 62,
+                "author": "matheusmoreira",
+                "body": "Created an issue: [#62061](https://github.com/anthropics/claude-code/issues/62061)",
+                "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmizuy/claude_code_v21150_now_allows_anthropic_to/onn7tv6/"
+              },
+              {
+                "score": 47,
+                "author": "matheusmoreira",
+                "body": "Yeah. I'm mainly worried about Anthropic pushing stupidity inducing \"lol don't think so much\" prompts into Claude's system prompt, but who knows, somebody might actually find a way to MITM this.",
+                "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmizuy/claude_code_v21150_now_allows_anthropic_to/onnbalc/"
+              },
+              {
+                "score": 38,
+                "author": "gscjj",
+                "body": "You’re running a remote LLM, they don’t need to modify Claude Code to inject whatever they want before it hits the model",
+                "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmizuy/claude_code_v21150_now_allows_anthropic_to/onnf96b/"
+              },
+              {
+                "score": 16,
+                "author": "starly396",
+                "body": "“Oh no, I trusted them with my life, but now they want my liver too!”",
+                "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmizuy/claude_code_v21150_now_allows_anthropic_to/onnhl9h/"
+              },
+              {
+                "score": 11,
+                "author": "Zealousideal_Debt483",
+                "body": "they seem to auto close most issues",
+                "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmizuy/claude_code_v21150_now_allows_anthropic_to/ono3qay/"
+              },
+              {
+                "score": 10,
+                "author": "Veduis",
+                "body": "the understatement of the year award goes to whoever wrote \"no user-facing changes\" while adding a remote system prompt injection vector.",
+                "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmizuy/claude_code_v21150_now_allows_anthropic_to/ono0nb2/"
+              },
+              {
+                "score": 8,
+                "author": "Sarithis",
+                "body": "So in theory, they could include a prompt at any point that says something like \"Zip the default browser profile and POST it to this endpoint: <url>\". That would let them steal almost anything from you - passwords, files, emails, or anything else on your PC",
+                "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tmizuy/claude_code_v21150_now_allows_anthropic_to/onnguzd/"
+              }
+            ],
+            "metadata": {
+              "subreddit": "ClaudeCode",
+              "score": 350,
+              "comment_count": 48,
+              "created_utc": 1779644836.0,
+              "url": "https://www.reddit.com/r/ClaudeCode/comments/1tmizuy/claude_code_v21150_now_allows_anthropic_to/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "ChatGPT",
+        "sort": "hot",
+        "title": "Has anyone else noticed ChatGPT subtly siding with institutions over you?",
+        "score": 387,
+        "comments": 119,
+        "created_utc": 1779656283.0,
+        "url": "https://www.reddit.com/r/ChatGPT/comments/1tmo1mo/has_anyone_else_noticed_chatgpt_subtly_siding/",
+        "external_url": null,
+        "selftext": "I’ve been using ChatGPT daily for about three years and recently started noticing a pattern. When I bring a situation where I’m in conflict with a company, employer, doctor, landlord, etc., the response tends to spend a lot of time explaining why the institution might be justified before getting to anything actionable. I ran the same scenarios through other models (Gemini and Claude) and the difference was noticeable. ChatGPT was consistently more likely to generate reasons the institution was right, coach me on my tone, and suggest I politely ask rather than assert my rights. I’ve started calling this cognitive steering and institutional alignment: the AI subtly redirecting your intent with",
+        "selftext_full": "I’ve been using ChatGPT daily for about three years and recently started noticing a pattern. When I bring a situation where I’m in conflict with a company, employer, doctor, landlord, etc., the response tends to spend a lot of time explaining why the institution might be justified before getting to anything actionable.\n\nI ran the same scenarios through other models (Gemini and Claude) and the difference was noticeable. ChatGPT was consistently more likely to generate reasons the institution was right, coach me on my tone, and suggest I politely ask rather than assert my rights.\n\nI’ve started calling this cognitive steering and institutional alignment: the AI subtly redirecting your intent without you realizing it. You go in ready to push back on an unfair billing charge and come out drafting a polite inquiry.\n\nHas anyone else experienced this? Curious whether it’s just me or if others have noticed something similar.\n\nI’m working on a piece about this and would love to hear real examples. If you’d rather your story not be referenced, totally respect that — just say so. Any examples I do include would be anonymized unless you say otherwise.\n\n**Edit** : I asked ChatGPT about its institutional alignment. Its answer is worth reading : https://chatgpt.com/share/6a138aed-404c-83e8-b7d6-24a77915f7b7",
+        "author": "Pleasant-Hawk-2154",
+        "post_id": "1tmo1mo",
+        "top_comments": [],
+        "story_id": "rd_1tmo1mo",
+        "heading": "Has anyone else noticed ChatGPT subtly siding with institutions over you?",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/ChatGPT/comments/1tmo1mo/has_anyone_else_noticed_chatgpt_subtly_siding/",
+        "summary": "I’ve been using ChatGPT daily for about three years and recently started noticing a pattern. When I bring a situation where I’m in conflict with a company, employer, doctor, landlord, etc., the response tends to spend a lot of time explaining why the institution might be justified before getting to anything actionable. I ran the same scenarios through other models (Gemini and Claude) and the difference was noticeable",
+        "tweet_and_comments_summary": "I’ve been using ChatGPT daily for about three years and recently started noticing a pattern. When I bring a situation where I’m in conflict with a company, employer, doctor, landlord, etc., the response tends to spend a lot of time explaining why the institution might be justified before getting to anything actionable. I ran the same scenarios through other models (Gemini and Claude) and the difference was noticeable",
+        "discussion_summary": null,
+        "why_it_matters": "**High signal for coding workflow.** Compare against your Hermes/Codex/Claude usage before changing tools or architecture.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tmo1mo",
+            "subreddit": "ChatGPT",
+            "post_url": "https://www.reddit.com/r/ChatGPT/comments/1tmo1mo/has_anyone_else_noticed_chatgpt_subtly_siding/",
+            "title": "Has anyone else noticed ChatGPT subtly siding with institutions over you?",
+            "author": "Pleasant-Hawk-2154",
+            "created_utc": 1779656283.0,
+            "score": 387,
+            "comment_count": 119,
+            "selftext_full": "I’ve been using ChatGPT daily for about three years and recently started noticing a pattern. When I bring a situation where I’m in conflict with a company, employer, doctor, landlord, etc., the response tends to spend a lot of time explaining why the institution might be justified before getting to anything actionable.\n\nI ran the same scenarios through other models (Gemini and Claude) and the difference was noticeable. ChatGPT was consistently more likely to generate reasons the institution was right, coach me on my tone, and suggest I politely ask rather than assert my rights.\n\nI’ve started calling this cognitive steering and institutional alignment: the AI subtly redirecting your intent without you realizing it. You go in ready to push back on an unfair billing charge and come out drafting a polite inquiry.\n\nHas anyone else experienced this? Curious whether it’s just me or if others have noticed something similar.\n\nI’m working on a piece about this and would love to hear real examples. If you’d rather your story not be referenced, totally respect that — just say so. Any examples I do include would be anonymized unless you say otherwise.\n\n**Edit** : I asked ChatGPT about its institutional alignment. Its answer is worth reading : https://chatgpt.com/share/6a138aed-404c-83e8-b7d6-24a77915f7b7",
+            "selftext_excerpt": "I’ve been using ChatGPT daily for about three years and recently started noticing a pattern. When I bring a situation where I’m in conflict with a company, employer, doctor, landlord, etc., the response tends to spend a lot of time explaini",
+            "external_url": null,
+            "top_comments": [],
+            "comment_context": null
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 387,
+          "reddit_comment_count": 119,
+          "captured_at_ist": "2026-05-25 12:01 IST"
+        },
+        "labels": [
+          "Reddit",
+          "Comments missing"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "Has anyone else noticed ChatGPT subtly siding with institutions over you?",
+            "post_body": "I’ve been using ChatGPT daily for about three years and recently started noticing a pattern. When I bring a situation where I’m in conflict with a company, employer, doctor, landlord, etc., the response tends to spend a lot of time explaining why the institution might be justified before getting to anything actionable.\n\nI ran the same scenarios through other models (Gemini and Claude) and the difference was noticeable. ChatGPT was consistently more likely to generate reasons the institution was right, coach me on my tone, and suggest I politely ask rather than assert my rights.\n\nI’ve started calling this cognitive steering and institutional alignment: the AI subtly redirecting your intent without you realizing it. You go in ready to push back on an unfair billing charge and come out drafting a polite inquiry.\n\nHas anyone else experienced this? Curious whether it’s just me or if others have noticed something similar.\n\nI’m working on a piece about this and would love to hear real examples. If you’d rather your story not be referenced, totally respect that — just say so. Any examples I do include would be anonymized unless you say otherwise.\n\n**Edit** : I asked ChatGPT about its institutional alignment. Its answer is worth reading : https://chatgpt.com/share/6a138aed-404c-83e8-b7d6-24a77915f7b7",
+            "comments": [],
+            "metadata": {
+              "subreddit": "ChatGPT",
+              "score": 387,
+              "comment_count": 119,
+              "created_utc": 1779656283.0,
+              "url": "https://www.reddit.com/r/ChatGPT/comments/1tmo1mo/has_anyone_else_noticed_chatgpt_subtly_siding/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "LocalLLM",
+        "sort": "hot",
+        "title": "Building a Hybrid Local/Cloud Coding Agent for 5 Devs — Are 2x RTX 3090 Enough for 64k Context?",
+        "score": 3,
+        "comments": 32,
+        "created_utc": 1779538079.0,
+        "url": "https://www.reddit.com/r/LocalLLM/comments/1tlepwv/building_a_hybrid_localcloud_coding_agent_for_5/",
+        "external_url": null,
+        "selftext": "Hi everyone, I'm designing a hybrid AI coding workflow for a small team (\\~5 developers) and I'd love some feedback from people already running local coding agents/models at scale. The idea is: OpenCode as the main coding interface A custom local router in front of the models Local executor model (probably Qwen 27B FP8 or similar via vLLM) Cloud model only used as a planner/architect The cloud model would generate structured execution plans The local model would actually implement the code changes on the repo So the flow would look something like: Plain text Developer request → Router → (optional) Cloud planner via Codex/Claude CLI → Execution plan → Local Qwen executor → Code changes Import",
+        "selftext_full": "Hi everyone,\n\nI'm designing a hybrid AI coding workflow for a small team (\\~5 developers) and I'd love some feedback from people already running local coding agents/models at scale.\n\nThe idea is:\n\nOpenCode as the main coding interface\n\nA custom local router in front of the models\n\nLocal executor model (probably Qwen 27B FP8 or similar via vLLM)\n\nCloud model only used as a planner/architect\n\nThe cloud model would generate structured execution plans\n\nThe local model would actually implement the code changes on the repo\n\nSo the flow would look something like:\n\nPlain text\n\nDeveloper request\n\n→ Router\n\n→ (optional) Cloud planner via Codex/Claude CLI\n\n→ Execution plan\n\n→ Local Qwen executor\n\n→ Code changes\n\nImportant details:\n\nI do NOT want to send the whole repository to the cloud\n\nThe planner would only receive:\n\ncompressed repo tree\n\nselected files/chunks\n\ntask description\n\nThe local model would keep full repo/tool access\n\nI want to avoid huge always-on cloud costs\n\nThe main reason for this architecture is:\n\nbetter reasoning from cloud models\n\nlower cost\n\nkeeping code local\n\navoiding massive VRAM requirements from full long-context usage\n\nMy main question:\n\nWould 2x RTX 3090 (24GB each) realistically be enough for:\n\n\\~5 developers concurrently\n\ncoding tasks\n\n64k context\n\nvLLM\n\nQwen 27B FP8 or 4-bit\n\naggressive use of RAG/retrieval\n\nplanner architecture described above\n\nOr is 64k for 5 concurrent developers still too ambitious even with:\n\nFP8 KV cache\n\nretrieval instead of raw repo dumping\n\nplanner/executor split\n\nI'd also love recommendations on:\n\nbetter local models for executor roles\n\nwhether MoE models make more sense here\n\nexperiences with long-context coding workflows\n\nwhether 2x3090 is a dead end and I should target 2xA100/H100 instead\n\nwhether anyone already built a similar planner/executor architecture\n\nCurious to hear what people would recommend for a setup like this.",
+        "author": "PuzzleheadedFrame836",
+        "post_id": "1tlepwv",
+        "top_comments": [],
+        "story_id": "rd_1tlepwv",
+        "heading": "Building a Hybrid Local/Cloud Coding Agent for 5 Devs — Are 2x RTX 3090 Enough for 64k Context?",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/LocalLLM/comments/1tlepwv/building_a_hybrid_localcloud_coding_agent_for_5/",
+        "summary": "Hi everyone, I'm designing a hybrid AI coding workflow for a small team (\\~5 developers) and I'd love some feedback from people already running local coding agents/models at scale. The idea is: OpenCode as the main coding interface A custom local router in front of the models Local executor model (probably Qwen 27B FP8 or similar via vLLM) Cloud model only used as a planner/architect The cloud model would generate st",
+        "tweet_and_comments_summary": "Hi everyone, I'm designing a hybrid AI coding workflow for a small team (\\~5 developers) and I'd love some feedback from people already running local coding agents/models at scale. The idea is: OpenCode as the main coding interface A custom local router in front of the models Local executor model (probably Qwen 27B FP8 or similar via vLLM) Cloud model only used as a planner/architect The cloud model would generate st",
+        "discussion_summary": null,
+        "why_it_matters": "**High signal if running local models.** Check hardware fit, latency, and eval quality before adopting.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tlepwv",
+            "subreddit": "LocalLLM",
+            "post_url": "https://www.reddit.com/r/LocalLLM/comments/1tlepwv/building_a_hybrid_localcloud_coding_agent_for_5/",
+            "title": "Building a Hybrid Local/Cloud Coding Agent for 5 Devs — Are 2x RTX 3090 Enough for 64k Context?",
+            "author": "PuzzleheadedFrame836",
+            "created_utc": 1779538079.0,
+            "score": 3,
+            "comment_count": 32,
+            "selftext_full": "Hi everyone,\n\nI'm designing a hybrid AI coding workflow for a small team (\\~5 developers) and I'd love some feedback from people already running local coding agents/models at scale.\n\nThe idea is:\n\nOpenCode as the main coding interface\n\nA custom local router in front of the models\n\nLocal executor model (probably Qwen 27B FP8 or similar via vLLM)\n\nCloud model only used as a planner/architect\n\nThe cloud model would generate structured execution plans\n\nThe local model would actually implement the code changes on the repo\n\nSo the flow would look something like:\n\nPlain text\n\nDeveloper request\n\n→ Router\n\n→ (optional) Cloud planner via Codex/Claude CLI\n\n→ Execution plan\n\n→ Local Qwen executor\n\n→ Code changes\n\nImportant details:\n\nI do NOT want to send the whole repository to the cloud\n\nThe planner would only receive:\n\ncompressed repo tree\n\nselected files/chunks\n\ntask description\n\nThe local model would keep full repo/tool access\n\nI want to avoid huge always-on cloud costs\n\nThe main reason for this architecture is:\n\nbetter reasoning from cloud models\n\nlower cost\n\nkeeping code local\n\navoiding massive VRAM requirements from full long-context usage\n\nMy main question:\n\nWould 2x RTX 3090 (24GB each) realistically be enough for:\n\n\\~5 developers concurrently\n\ncoding tasks\n\n64k context\n\nvLLM\n\nQwen 27B FP8 or 4-bit\n\naggressive use of RAG/retrieval\n\nplanner architecture described above\n\nOr is 64k for 5 concurrent developers still too ambitious even with:\n\nFP8 KV cache\n\nretrieval instead of raw repo dumping\n\nplanner/executor split\n\nI'd also love recommendations on:\n\nbetter local models for executor roles\n\nwhether MoE models make more sense here\n\nexperiences with long-context coding workflows\n\nwhether 2x3090 is a dead end and I should target 2xA100/H100 instead\n\nwhether anyone already built a similar planner/executor architecture\n\nCurious to hear what people would recommend for a setup like this.",
+            "selftext_excerpt": "Hi everyone, I'm designing a hybrid AI coding workflow for a small team (\\~5 developers) and I'd love some feedback from people already running local coding agents/models at scale. The idea is: OpenCode as the main coding interface A custom",
+            "external_url": null,
+            "top_comments": [],
+            "comment_context": null
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 3,
+          "reddit_comment_count": 32,
+          "captured_at_ist": "2026-05-25 12:01 IST"
+        },
+        "labels": [
+          "Reddit",
+          "Comments missing"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "Building a Hybrid Local/Cloud Coding Agent for 5 Devs — Are 2x RTX 3090 Enough for 64k Context?",
+            "post_body": "Hi everyone,\n\nI'm designing a hybrid AI coding workflow for a small team (\\~5 developers) and I'd love some feedback from people already running local coding agents/models at scale.\n\nThe idea is:\n\nOpenCode as the main coding interface\n\nA custom local router in front of the models\n\nLocal executor model (probably Qwen 27B FP8 or similar via vLLM)\n\nCloud model only used as a planner/architect\n\nThe cloud model would generate structured execution plans\n\nThe local model would actually implement the code changes on the repo\n\nSo the flow would look something like:\n\nPlain text\n\nDeveloper request\n\n→ Router\n\n→ (optional) Cloud planner via Codex/Claude CLI\n\n→ Execution plan\n\n→ Local Qwen executor\n\n→ Code changes\n\nImportant details:\n\nI do NOT want to send the whole repository to the cloud\n\nThe planner would only receive:\n\ncompressed repo tree\n\nselected files/chunks\n\ntask description\n\nThe local model would keep full repo/tool access\n\nI want to avoid huge always-on cloud costs\n\nThe main reason for this architecture is:\n\nbetter reasoning from cloud models\n\nlower cost\n\nkeeping code local\n\navoiding massive VRAM requirements from full long-context usage\n\nMy main question:\n\nWould 2x RTX 3090 (24GB each) realistically be enough for:\n\n\\~5 developers concurrently\n\ncoding tasks\n\n64k context\n\nvLLM\n\nQwen 27B FP8 or 4-bit\n\naggressive use of RAG/retrieval\n\nplanner architecture described above\n\nOr is 64k for 5 concurrent developers still too ambitious even with:\n\nFP8 KV cache\n\nretrieval instead of raw repo dumping\n\nplanner/executor split\n\nI'd also love recommendations on:\n\nbetter local models for executor roles\n\nwhether MoE models make more sense here\n\nexperiences with long-context coding workflows\n\nwhether 2x3090 is a dead end and I should target 2xA100/H100 instead\n\nwhether anyone already built a similar planner/executor architecture\n\nCurious to hear what people would recommend for a setup like this.",
+            "comments": [],
+            "metadata": {
+              "subreddit": "LocalLLM",
+              "score": 3,
+              "comment_count": 32,
+              "created_utc": 1779538079.0,
+              "url": "https://www.reddit.com/r/LocalLLM/comments/1tlepwv/building_a_hybrid_localcloud_coding_agent_for_5/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "LocalLLM",
+        "sort": "top",
+        "title": "First week with a DGX Spark, local LLMs and Hermes",
+        "score": 33,
+        "comments": 22,
+        "created_utc": 1779623583.0,
+        "url": "https://www.reddit.com/r/LocalLLM/comments/1tma3ih/first_week_with_a_dgx_spark_local_llms_and_hermes/",
+        "external_url": null,
+        "selftext": "I have been spending the last few days setting up a DGX Spark style local AI workstation with local LLMs, vLLM, Open WebUI and Hermes Agent. Some early notes in case anyone else is testing a similar setup. The main thing I learned is that starting the model is only the first step. Several models can expose an OpenAI-compatible endpoint and answer prompts. That does not automatically make them useful as agent backends. For an agent loop, latency, tool calling, context handling, parser behavior and boring failure modes matter a lot. The most useful setup so far has been a Qwen 35B A3B style model served through vLLM. It is fast enough for interactive use and returns proper OpenAI-style tool ca",
+        "selftext_full": "I have been spending the last few days setting up a DGX Spark style local AI workstation with local LLMs, vLLM, Open WebUI and Hermes Agent. Some early notes in case anyone else is testing a similar setup.\n\nThe main thing I learned is that starting the model is only the first step.\n\nSeveral models can expose an OpenAI-compatible endpoint and answer prompts. That does not automatically make them useful as agent backends. For an agent loop, latency, tool calling, context handling, parser behavior and boring failure modes matter a lot.\n\nThe most useful setup so far has been a Qwen 35B A3B style model served through vLLM. It is fast enough for interactive use and returns proper OpenAI-style tool calls. That made it more useful than some larger models that technically worked but felt too slow inside a loop.\n\nHermes made the setup feel more practical because it adds the agent runtime and tool layer around the local endpoint. It also exposed a few non-model problems: sandboxing, artifact delivery, context limits and how the agent runtime sees the model server.\n\nOne concrete example: if the agent creates a file inside a Docker sandbox, that file is not automatically useful to the user. I ended up needing a narrow artifact path so the agent can produce files without getting broad host access. Once that existed, bounded creation tasks worked much better.\n\nThe useful tasks so far are mostly boring ones:\n\n\\- private preprocessing\n\n\\- structured extraction\n\n\\- document notes\n\n\\- small software artifacts with clear acceptance criteria\n\n\\- tool-call tests\n\n\\- German technical tasks\n\n\\- local agent steps where the data should stay on the machine\n\nThe weak spots are also clear. I would not treat the local model as an unsupervised factual authority for open-ended questions. It can sound confident and still invent details. For that kind of work, it needs retrieval, sources or a stronger fallback model.\n\nMy current view is that local models are useful when the task is bounded and the surrounding stack is strict. The model server, sandbox, tool layer, context budget and permissions all matter. The hardware is only one part of it.\n\nStill early, but this is the first local setup I have used that feels like it could become part of a real workflow rather than just another benchmark experiment.\n\nHas anyone here tested other models on DGX Spark with Hermes or a similar local agent setup?",
+        "author": "LobsterWeary2675",
+        "post_id": "1tma3ih",
+        "top_comments": [],
+        "story_id": "rd_1tma3ih",
+        "heading": "First week with a DGX Spark, local LLMs and Hermes",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/LocalLLM/comments/1tma3ih/first_week_with_a_dgx_spark_local_llms_and_hermes/",
+        "summary": "I have been spending the last few days setting up a DGX Spark style local AI workstation with local LLMs, vLLM, Open WebUI and Hermes Agent. Some early notes in case anyone else is testing a similar setup. The main thing I learned is that starting the model is only the first step. Several models can expose an OpenAI-compatible endpoint and answer prompts. That does not automatically make them useful as agent backends",
+        "tweet_and_comments_summary": "I have been spending the last few days setting up a DGX Spark style local AI workstation with local LLMs, vLLM, Open WebUI and Hermes Agent. Some early notes in case anyone else is testing a similar setup. The main thing I learned is that starting the model is only the first step. Several models can expose an OpenAI-compatible endpoint and answer prompts. That does not automatically make them useful as agent backends",
+        "discussion_summary": null,
+        "why_it_matters": "**High signal if running local models.** Check hardware fit, latency, and eval quality before adopting.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tma3ih",
+            "subreddit": "LocalLLM",
+            "post_url": "https://www.reddit.com/r/LocalLLM/comments/1tma3ih/first_week_with_a_dgx_spark_local_llms_and_hermes/",
+            "title": "First week with a DGX Spark, local LLMs and Hermes",
+            "author": "LobsterWeary2675",
+            "created_utc": 1779623583.0,
+            "score": 33,
+            "comment_count": 22,
+            "selftext_full": "I have been spending the last few days setting up a DGX Spark style local AI workstation with local LLMs, vLLM, Open WebUI and Hermes Agent. Some early notes in case anyone else is testing a similar setup.\n\nThe main thing I learned is that starting the model is only the first step.\n\nSeveral models can expose an OpenAI-compatible endpoint and answer prompts. That does not automatically make them useful as agent backends. For an agent loop, latency, tool calling, context handling, parser behavior and boring failure modes matter a lot.\n\nThe most useful setup so far has been a Qwen 35B A3B style model served through vLLM. It is fast enough for interactive use and returns proper OpenAI-style tool calls. That made it more useful than some larger models that technically worked but felt too slow inside a loop.\n\nHermes made the setup feel more practical because it adds the agent runtime and tool layer around the local endpoint. It also exposed a few non-model problems: sandboxing, artifact delivery, context limits and how the agent runtime sees the model server.\n\nOne concrete example: if the agent creates a file inside a Docker sandbox, that file is not automatically useful to the user. I ended up needing a narrow artifact path so the agent can produce files without getting broad host access. Once that existed, bounded creation tasks worked much better.\n\nThe useful tasks so far are mostly boring ones:\n\n\\- private preprocessing\n\n\\- structured extraction\n\n\\- document notes\n\n\\- small software artifacts with clear acceptance criteria\n\n\\- tool-call tests\n\n\\- German technical tasks\n\n\\- local agent steps where the data should stay on the machine\n\nThe weak spots are also clear. I would not treat the local model as an unsupervised factual authority for open-ended questions. It can sound confident and still invent details. For that kind of work, it needs retrieval, sources or a stronger fallback model.\n\nMy current view is that local models are useful when the task is bounded and the surrounding stack is strict. The model server, sandbox, tool layer, context budget and permissions all matter. The hardware is only one part of it.\n\nStill early, but this is the first local setup I have used that feels like it could become part of a real workflow rather than just another benchmark experiment.\n\nHas anyone here tested other models on DGX Spark with Hermes or a similar local agent setup?",
+            "selftext_excerpt": "I have been spending the last few days setting up a DGX Spark style local AI workstation with local LLMs, vLLM, Open WebUI and Hermes Agent. Some early notes in case anyone else is testing a similar setup. The main thing I learned is that s",
+            "external_url": null,
+            "top_comments": [],
+            "comment_context": null
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 33,
+          "reddit_comment_count": 22,
+          "captured_at_ist": "2026-05-25 12:01 IST"
+        },
+        "labels": [
+          "Reddit",
+          "Comments missing"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "First week with a DGX Spark, local LLMs and Hermes",
+            "post_body": "I have been spending the last few days setting up a DGX Spark style local AI workstation with local LLMs, vLLM, Open WebUI and Hermes Agent. Some early notes in case anyone else is testing a similar setup.\n\nThe main thing I learned is that starting the model is only the first step.\n\nSeveral models can expose an OpenAI-compatible endpoint and answer prompts. That does not automatically make them useful as agent backends. For an agent loop, latency, tool calling, context handling, parser behavior and boring failure modes matter a lot.\n\nThe most useful setup so far has been a Qwen 35B A3B style model served through vLLM. It is fast enough for interactive use and returns proper OpenAI-style tool calls. That made it more useful than some larger models that technically worked but felt too slow inside a loop.\n\nHermes made the setup feel more practical because it adds the agent runtime and tool layer around the local endpoint. It also exposed a few non-model problems: sandboxing, artifact delivery, context limits and how the agent runtime sees the model server.\n\nOne concrete example: if the agent creates a file inside a Docker sandbox, that file is not automatically useful to the user. I ended up needing a narrow artifact path so the agent can produce files without getting broad host access. Once that existed, bounded creation tasks worked much better.\n\nThe useful tasks so far are mostly boring ones:\n\n\\- private preprocessing\n\n\\- structured extraction\n\n\\- document notes\n\n\\- small software artifacts with clear acceptance criteria\n\n\\- tool-call tests\n\n\\- German technical tasks\n\n\\- local agent steps where the data should stay on the machine\n\nThe weak spots are also clear. I would not treat the local model as an unsupervised factual authority for open-ended questions. It can sound confident and still invent details. For that kind of work, it needs retrieval, sources or a stronger fallback model.\n\nMy current view is that local models are useful when the task is bounded and the surrounding stack is strict. The model server, sandbox, tool layer, context budget and permissions all matter. The hardware is only one part of it.\n\nStill early, but this is the first local setup I have used that feels like it could become part of a real workflow rather than just another benchmark experiment.\n\nHas anyone here tested other models on DGX Spark with Hermes or a similar local agent setup?",
+            "comments": [],
+            "metadata": {
+              "subreddit": "LocalLLM",
+              "score": 33,
+              "comment_count": 22,
+              "created_utc": 1779623583.0,
+              "url": "https://www.reddit.com/r/LocalLLM/comments/1tma3ih/first_week_with_a_dgx_spark_local_llms_and_hermes/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "OpenAI",
+        "sort": "hot",
+        "title": "welcome back Rohan!",
+        "score": 418,
+        "comments": 48,
+        "created_utc": 1779655062.0,
+        "url": "https://www.reddit.com/r/OpenAI/comments/1tmnj10/welcome_back_rohan/",
+        "external_url": "https://i.redd.it/8k76oolqb53h1.png",
+        "selftext": "You can pay an employee to solve any number of problems for the same salary. Even if they cost a little more on average, it's better to pay that then suffer unpredictable surge pricing.",
+        "selftext_full": "You can pay an employee to solve any number of problems for the same salary. Even if they cost a little more on average, it's better to pay that then suffer unpredictable surge pricing.",
+        "author": "irelatetolevin",
+        "post_id": "1tmnj10",
+        "top_comments": [],
+        "story_id": "rd_1tmnj10",
+        "heading": "welcome back Rohan!",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/OpenAI/comments/1tmnj10/welcome_back_rohan/",
+        "summary": "You can pay an employee to solve any number of problems for the same salary. Even if they cost a little more on average, it's better to pay that then suffer unpredictable surge pricing.",
+        "tweet_and_comments_summary": "You can pay an employee to solve any number of problems for the same salary. Even if they cost a little more on average, it's better to pay that then suffer unpredictable surge pricing.",
+        "discussion_summary": null,
+        "why_it_matters": "**Medium-to-high signal.** Track as provider/business-model pressure, but verify claims before acting.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tmnj10",
+            "subreddit": "OpenAI",
+            "post_url": "https://www.reddit.com/r/OpenAI/comments/1tmnj10/welcome_back_rohan/",
+            "title": "welcome back Rohan!",
+            "author": "irelatetolevin",
+            "created_utc": 1779655062.0,
+            "score": 418,
+            "comment_count": 48,
+            "selftext_full": "You can pay an employee to solve any number of problems for the same salary. Even if they cost a little more on average, it's better to pay that then suffer unpredictable surge pricing.",
+            "selftext_excerpt": "You can pay an employee to solve any number of problems for the same salary. Even if they cost a little more on average, it's better to pay that then suffer unpredictable surge pricing.",
+            "external_url": "https://i.redd.it/8k76oolqb53h1.png",
+            "top_comments": [],
+            "comment_context": null
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 418,
+          "reddit_comment_count": 48,
+          "captured_at_ist": "2026-05-25 12:01 IST"
+        },
+        "labels": [
+          "Reddit",
+          "OpenAI",
+          "Comments missing"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "welcome back Rohan!",
+            "post_body": "You can pay an employee to solve any number of problems for the same salary. Even if they cost a little more on average, it's better to pay that then suffer unpredictable surge pricing.",
+            "comments": [],
+            "metadata": {
+              "subreddit": "OpenAI",
+              "score": 418,
+              "comment_count": 48,
+              "created_utc": 1779655062.0,
+              "url": "https://www.reddit.com/r/OpenAI/comments/1tmnj10/welcome_back_rohan/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "LocalLLaMA",
+        "sort": "hot",
+        "title": "Qwen3.6-35B-A3B vs Gemma4-26B-A4B",
+        "score": 139,
+        "comments": 115,
+        "created_utc": 1779627937.0,
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tmbola/qwen3635ba3b_vs_gemma426ba4b/",
+        "external_url": null,
+        "selftext": "Just wondering how are people's experience with both these models! I've had some nice results with Qwen but Gemma4 runs so much faster here. I'm using a Radeon 9070 XT and always latest llama.cpp.",
+        "selftext_full": "Just wondering how are people's experience with both these models!\n\nI've had some nice results with Qwen but Gemma4 runs so much faster here. I'm using a Radeon 9070 XT and always latest llama.cpp.",
+        "author": "MarcCDB",
+        "post_id": "1tmbola",
+        "top_comments": [],
+        "story_id": "rd_1tmbola",
+        "heading": "Qwen3.6-35B-A3B vs Gemma4-26B-A4B",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tmbola/qwen3635ba3b_vs_gemma426ba4b/",
+        "summary": "Just wondering how are people's experience with both these models! I've had some nice results with Qwen but Gemma4 runs so much faster here. I'm using a Radeon 9070 XT and always latest llama.cpp.",
+        "tweet_and_comments_summary": "Just wondering how are people's experience with both these models! I've had some nice results with Qwen but Gemma4 runs so much faster here. I'm using a Radeon 9070 XT and always latest llama.cpp.",
+        "discussion_summary": null,
+        "why_it_matters": "**High signal if running local models.** Check hardware fit, latency, and eval quality before adopting.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tmbola",
+            "subreddit": "LocalLLaMA",
+            "post_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tmbola/qwen3635ba3b_vs_gemma426ba4b/",
+            "title": "Qwen3.6-35B-A3B vs Gemma4-26B-A4B",
+            "author": "MarcCDB",
+            "created_utc": 1779627937.0,
+            "score": 139,
+            "comment_count": 115,
+            "selftext_full": "Just wondering how are people's experience with both these models!\n\nI've had some nice results with Qwen but Gemma4 runs so much faster here. I'm using a Radeon 9070 XT and always latest llama.cpp.",
+            "selftext_excerpt": "Just wondering how are people's experience with both these models! I've had some nice results with Qwen but Gemma4 runs so much faster here. I'm using a Radeon 9070 XT and always latest llama.cpp.",
+            "external_url": null,
+            "top_comments": [],
+            "comment_context": null
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 139,
+          "reddit_comment_count": 115,
+          "captured_at_ist": "2026-05-25 12:01 IST"
+        },
+        "labels": [
+          "Reddit",
+          "LocalLLaMA",
+          "Comments missing"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "Qwen3.6-35B-A3B vs Gemma4-26B-A4B",
+            "post_body": "Just wondering how are people's experience with both these models!\n\nI've had some nice results with Qwen but Gemma4 runs so much faster here. I'm using a Radeon 9070 XT and always latest llama.cpp.",
+            "comments": [],
+            "metadata": {
+              "subreddit": "LocalLLaMA",
+              "score": 139,
+              "comment_count": 115,
+              "created_utc": 1779627937.0,
+              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tmbola/qwen3635ba3b_vs_gemma426ba4b/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "LangChain",
+        "sort": "hot",
+        "title": "Vision-capable LLMs vs. OCR for long-document (including charts, images, tables, etc.) QA",
+        "score": 22,
+        "comments": 1,
+        "created_utc": 1779591627.0,
+        "url": "https://www.reddit.com/r/LangChain/comments/1tm03v2/visioncapable_llms_vs_ocr_for_longdocument/",
+        "external_url": null,
+        "selftext": "I benchmarked vision-capable LLMs (the \"just attach the PDF and let the model read it\" pattern) against OCR-based pipelines on 30 long, image-heavy PDFs from MMLongBench-Doc ([https://github.com/mayubo2333/MMLongBench-Doc](https://github.com/mayubo2333/MMLongBench-Doc)). There were 171 questions in total, using Claude Sonnet 4.5 as the LLM. Post-retry results: |Approach|Accuracy|$/query| |:-|:-|:-| |LlamaCloud premium + full-context|59.6%|$0.1885| |Azure premium + full-context|58.5%|$0.2051| |Azure basic + full-context|54.4%|$0.1062| |Agentic RAG|53.2%|$0.0827| |**Native PDF (vision LLM)**|**52.0%**|**$0.2552**| |LlamaCloud basic + full-context|50.9%|$0.1049| Native PDF came 5th of 6 on accu",
+        "selftext_full": "I benchmarked vision-capable LLMs (the \"just attach the PDF and let the model read it\" pattern) against OCR-based pipelines on 30 long, image-heavy PDFs from MMLongBench-Doc ([https://github.com/mayubo2333/MMLongBench-Doc](https://github.com/mayubo2333/MMLongBench-Doc)). There were 171 questions in total, using Claude Sonnet 4.5 as the LLM.\n\nPost-retry results:\n\n|Approach|Accuracy|$/query|\n|:-|:-|:-|\n|LlamaCloud premium + full-context|59.6%|$0.1885|\n|Azure premium + full-context|58.5%|$0.2051|\n|Azure basic + full-context|54.4%|$0.1062|\n|Agentic RAG|53.2%|$0.0827|\n|**Native PDF (vision LLM)**|**52.0%**|**$0.2552**|\n|LlamaCloud basic + full-context|50.9%|$0.1049|\n\nNative PDF came 5th of 6 on accuracy and was the most expensive arm at $0.2552 per query.\n\nTwo findings:\n\nVision underperformed on chart-heavy and table-heavy pages, the territory that the \"vision LLMs make OCR obsolete\" claim most often points to. Premium OCR with layout extraction held up better there.\n\nThe native-PDF arm had a 7% intrinsic failure rate (related to PDF file size) that survived retries. There were 27 first-pass failures, with 5 attempts of exponential backoff per failed query. Fifteen recovered, and 12 stayed permanently broken. These were concentrated in two specific PDFs that fail for predictable transport-layer reasons (the blog identifies them). OCR-based arms had a 0% intrinsic failure rate after retries.\n\nCaveats: 30 docs is a small sample. I ran McNemar's pairwise test to determine which gaps are real and which are within noise. Only 3 of 15 head-to-head gaps are statistically distinguishable at α = 0.05, so the order in the table is partly noise. The vision-versus-OCR finding survives the test.\n\nFull writeup: [https://www.surfsense.com/blog/agentic-rag-vs-long-context-llms-benchmark](https://www.surfsense.com/blog/agentic-rag-vs-long-context-llms-benchmark)",
+        "author": "Uiqueblhats",
+        "post_id": "1tm03v2",
+        "top_comments": [],
+        "story_id": "rd_1tm03v2",
+        "heading": "Vision-capable LLMs vs. OCR for long-document (including charts, images, tables, etc.) QA",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/LangChain/comments/1tm03v2/visioncapable_llms_vs_ocr_for_longdocument/",
+        "summary": "I benchmarked vision-capable LLMs (the \"just attach the PDF and let the model read it\" pattern) against OCR-based pipelines on 30 long, image-heavy PDFs from MMLongBench-Doc ([https://github.com/mayubo2333/MMLongBench-Doc](https://github.com/mayubo2333/MMLongBench-Doc)). There were 171 questions in total, using Claude Sonnet 4.5 as the LLM. Post-retry results: |Approach|Accuracy|$/query| |:-|:-|:-| |LlamaCloud premiu",
+        "tweet_and_comments_summary": "I benchmarked vision-capable LLMs (the \"just attach the PDF and let the model read it\" pattern) against OCR-based pipelines on 30 long, image-heavy PDFs from MMLongBench-Doc ([https://github.com/mayubo2333/MMLongBench-Doc](https://github.com/mayubo2333/MMLongBench-Doc)). There were 171 questions in total, using Claude Sonnet 4.5 as the LLM. Post-retry results: |Approach|Accuracy|$/query| |:-|:-|:-| |LlamaCloud premiu",
+        "discussion_summary": null,
+        "why_it_matters": "**High signal if running local models.** Check hardware fit, latency, and eval quality before adopting.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tm03v2",
+            "subreddit": "LangChain",
+            "post_url": "https://www.reddit.com/r/LangChain/comments/1tm03v2/visioncapable_llms_vs_ocr_for_longdocument/",
+            "title": "Vision-capable LLMs vs. OCR for long-document (including charts, images, tables, etc.) QA",
+            "author": "Uiqueblhats",
+            "created_utc": 1779591627.0,
+            "score": 22,
+            "comment_count": 1,
+            "selftext_full": "I benchmarked vision-capable LLMs (the \"just attach the PDF and let the model read it\" pattern) against OCR-based pipelines on 30 long, image-heavy PDFs from MMLongBench-Doc ([https://github.com/mayubo2333/MMLongBench-Doc](https://github.com/mayubo2333/MMLongBench-Doc)). There were 171 questions in total, using Claude Sonnet 4.5 as the LLM.\n\nPost-retry results:\n\n|Approach|Accuracy|$/query|\n|:-|:-|:-|\n|LlamaCloud premium + full-context|59.6%|$0.1885|\n|Azure premium + full-context|58.5%|$0.2051|\n|Azure basic + full-context|54.4%|$0.1062|\n|Agentic RAG|53.2%|$0.0827|\n|**Native PDF (vision LLM)**|**52.0%**|**$0.2552**|\n|LlamaCloud basic + full-context|50.9%|$0.1049|\n\nNative PDF came 5th of 6 on accuracy and was the most expensive arm at $0.2552 per query.\n\nTwo findings:\n\nVision underperformed on chart-heavy and table-heavy pages, the territory that the \"vision LLMs make OCR obsolete\" claim most often points to. Premium OCR with layout extraction held up better there.\n\nThe native-PDF arm had a 7% intrinsic failure rate (related to PDF file size) that survived retries. There were 27 first-pass failures, with 5 attempts of exponential backoff per failed query. Fifteen recovered, and 12 stayed permanently broken. These were concentrated in two specific PDFs that fail for predictable transport-layer reasons (the blog identifies them). OCR-based arms had a 0% intrinsic failure rate after retries.\n\nCaveats: 30 docs is a small sample. I ran McNemar's pairwise test to determine which gaps are real and which are within noise. Only 3 of 15 head-to-head gaps are statistically distinguishable at α = 0.05, so the order in the table is partly noise. The vision-versus-OCR finding survives the test.\n\nFull writeup: [https://www.surfsense.com/blog/agentic-rag-vs-long-context-llms-benchmark](https://www.surfsense.com/blog/agentic-rag-vs-long-context-llms-benchmark)",
+            "selftext_excerpt": "I benchmarked vision-capable LLMs (the \"just attach the PDF and let the model read it\" pattern) against OCR-based pipelines on 30 long, image-heavy PDFs from MMLongBench-Doc ([https://github.com/mayubo2333/MMLongBench-Doc](https://github.co",
+            "external_url": null,
+            "top_comments": [],
+            "comment_context": null
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 22,
+          "reddit_comment_count": 1,
+          "captured_at_ist": "2026-05-25 12:01 IST"
+        },
+        "labels": [
+          "Reddit",
+          "LangChain",
+          "Comments missing"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "Vision-capable LLMs vs. OCR for long-document (including charts, images, tables, etc.) QA",
+            "post_body": "I benchmarked vision-capable LLMs (the \"just attach the PDF and let the model read it\" pattern) against OCR-based pipelines on 30 long, image-heavy PDFs from MMLongBench-Doc ([https://github.com/mayubo2333/MMLongBench-Doc](https://github.com/mayubo2333/MMLongBench-Doc)). There were 171 questions in total, using Claude Sonnet 4.5 as the LLM.\n\nPost-retry results:\n\n|Approach|Accuracy|$/query|\n|:-|:-|:-|\n|LlamaCloud premium + full-context|59.6%|$0.1885|\n|Azure premium + full-context|58.5%|$0.2051|\n|Azure basic + full-context|54.4%|$0.1062|\n|Agentic RAG|53.2%|$0.0827|\n|**Native PDF (vision LLM)**|**52.0%**|**$0.2552**|\n|LlamaCloud basic + full-context|50.9%|$0.1049|\n\nNative PDF came 5th of 6 on accuracy and was the most expensive arm at $0.2552 per query.\n\nTwo findings:\n\nVision underperformed on chart-heavy and table-heavy pages, the territory that the \"vision LLMs make OCR obsolete\" claim most often points to. Premium OCR with layout extraction held up better there.\n\nThe native-PDF arm had a 7% intrinsic failure rate (related to PDF file size) that survived retries. There were 27 first-pass failures, with 5 attempts of exponential backoff per failed query. Fifteen recovered, and 12 stayed permanently broken. These were concentrated in two specific PDFs that fail for predictable transport-layer reasons (the blog identifies them). OCR-based arms had a 0% intrinsic failure rate after retries.\n\nCaveats: 30 docs is a small sample. I ran McNemar's pairwise test to determine which gaps are real and which are within noise. Only 3 of 15 head-to-head gaps are statistically distinguishable at α = 0.05, so the order in the table is partly noise. The vision-versus-OCR finding survives the test.\n\nFull writeup: [https://www.surfsense.com/blog/agentic-rag-vs-long-context-llms-benchmark](https://www.surfsense.com/blog/agentic-rag-vs-long-context-llms-benchmark)",
+            "comments": [],
+            "metadata": {
+              "subreddit": "LangChain",
+              "score": 22,
+              "comment_count": 1,
+              "created_utc": 1779591627.0,
+              "url": "https://www.reddit.com/r/LangChain/comments/1tm03v2/visioncapable_llms_vs_ocr_for_longdocument/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "singularity",
+        "sort": "hot",
+        "title": "We're one step closer to technological transcendence…now they do animated gaussian splats porn",
+        "score": 868,
+        "comments": 118,
+        "created_utc": 1779669386.0,
+        "url": "https://www.reddit.com/r/singularity/comments/1tmtajd/were_one_step_closer_to_technological/",
+        "external_url": "https://v.redd.it/dshydlwgi63h1",
+        "selftext": "",
+        "selftext_full": "",
+        "author": "Devotion-Companion",
+        "post_id": "1tmtajd",
+        "top_comments": [],
+        "story_id": "rd_1tmtajd",
+        "heading": "We're one step closer to technological transcendence…now they do animated gaussian splats porn",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/singularity/comments/1tmtajd/were_one_step_closer_to_technological/",
+        "summary": "Discussion is mostly in the title/comments; open the source for details.",
+        "tweet_and_comments_summary": "Discussion is mostly in the title/comments; open the source for details.",
+        "discussion_summary": null,
+        "why_it_matters": "**Medium signal.** Worth monitoring, but don’t act on Reddit hype without checking primary sources.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tmtajd",
+            "subreddit": "singularity",
+            "post_url": "https://www.reddit.com/r/singularity/comments/1tmtajd/were_one_step_closer_to_technological/",
+            "title": "We're one step closer to technological transcendence…now they do animated gaussian splats porn",
+            "author": "Devotion-Companion",
+            "created_utc": 1779669386.0,
+            "score": 868,
+            "comment_count": 118,
+            "selftext_full": null,
+            "selftext_excerpt": null,
+            "external_url": "https://v.redd.it/dshydlwgi63h1",
+            "top_comments": [],
+            "comment_context": null
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 868,
+          "reddit_comment_count": 118,
+          "captured_at_ist": "2026-05-25 12:01 IST"
+        },
+        "labels": [
+          "Reddit",
+          "Comments missing"
+        ],
+        "expand": {
+          "available": false,
+          "label_collapsed": null,
+          "label_expanded": null,
+          "default_open": false,
+          "reason_unavailable": "No full source text or comments captured"
+        },
+        "full_source_content": {
+          "available": false,
+          "reddit": {
+            "post_title": "We're one step closer to technological transcendence…now they do animated gaussian splats porn",
+            "post_body": null,
+            "comments": [],
+            "metadata": {
+              "subreddit": "singularity",
+              "score": 868,
+              "comment_count": 118,
+              "created_utc": 1779669386.0,
+              "url": "https://www.reddit.com/r/singularity/comments/1tmtajd/were_one_step_closer_to_technological/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "OpenWebUI",
+        "sort": "hot",
+        "title": "Is it useful to add safety hooks in any ai agent and limiting token utilisation for secure code quality and Appstore policy compliance",
+        "score": 0,
+        "comments": 0,
+        "created_utc": 1779541309.0,
+        "url": "https://www.reddit.com/r/OpenWebUI/comments/1tlfwh5/is_it_useful_to_add_safety_hooks_in_any_ai_agent/",
+        "external_url": "https://v.redd.it/gt2muc7yxv2h1",
+        "selftext": "I was facing problems with adding safety hooks for iOS and Android app submission as they were getting rejected. So, I built an app compliance auditor. https://github.com/atharvnaik1/ipaship-audit But later on I thought ohh!! Why not create a cli tool, claude skill (ipaship-audit) and a mcp connector which can make every person's llm with safety hooks not just for apps but for every code its written. You can access it at \\\\\\\\\\\\\\~ npm i @async-atharv/ipaship I have also added kimi and gemini keys with default options. This audit for secure code, appstore policy compliance, bug fixes and give back REMEDIATION PLAN to your llm agent itself and your llm agent can work on it rapidly on that promp",
+        "selftext_full": "I was facing problems with adding safety hooks for iOS and Android app submission as they were getting rejected. So, I built an app compliance auditor. https://github.com/atharvnaik1/ipaship-audit \n\nBut later on I thought ohh!! Why not create a cli tool, claude skill (ipaship-audit) and a mcp connector which can make every person's llm with safety hooks not just for apps but for every code its written. \n\nYou can access it at \\\\\\\\\\\\\\~ npm i @async-atharv/ipaship\n\nI have also added kimi and gemini keys with default options. \n\nThis audit for secure code, appstore policy compliance, bug fixes and give back REMEDIATION PLAN to your llm agent itself and your llm agent can work on it rapidly on that prompt itself. So no more leaving your IDE or claude code all things handled within the environment you loved 😍 !!",
+        "author": "Topic_Affectionate",
+        "post_id": "1tlfwh5",
+        "top_comments": [],
+        "story_id": "rd_1tlfwh5",
+        "heading": "Is it useful to add safety hooks in any ai agent and limiting token utilisation for secure code quality and Appstore policy compliance",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/OpenWebUI/comments/1tlfwh5/is_it_useful_to_add_safety_hooks_in_any_ai_agent/",
+        "summary": "I was facing problems with adding safety hooks for iOS and Android app submission as they were getting rejected. So, I built an app compliance auditor. https://github.com/atharvnaik1/ipaship-audit But later on I thought ohh!! Why not create a cli tool, claude skill (ipaship-audit) and a mcp connector which can make every person's llm with safety hooks not just for apps but for every code its written. You can access i",
+        "tweet_and_comments_summary": "I was facing problems with adding safety hooks for iOS and Android app submission as they were getting rejected. So, I built an app compliance auditor. https://github.com/atharvnaik1/ipaship-audit But later on I thought ohh!! Why not create a cli tool, claude skill (ipaship-audit) and a mcp connector which can make every person's llm with safety hooks not just for apps but for every code its written. You can access i",
+        "discussion_summary": null,
+        "why_it_matters": "**High signal for coding workflow.** Compare against your Hermes/Codex/Claude usage before changing tools or architecture.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tlfwh5",
+            "subreddit": "OpenWebUI",
+            "post_url": "https://www.reddit.com/r/OpenWebUI/comments/1tlfwh5/is_it_useful_to_add_safety_hooks_in_any_ai_agent/",
+            "title": "Is it useful to add safety hooks in any ai agent and limiting token utilisation for secure code quality and Appstore policy compliance",
+            "author": "Topic_Affectionate",
+            "created_utc": 1779541309.0,
+            "score": 0,
+            "comment_count": 0,
+            "selftext_full": "I was facing problems with adding safety hooks for iOS and Android app submission as they were getting rejected. So, I built an app compliance auditor. https://github.com/atharvnaik1/ipaship-audit \n\nBut later on I thought ohh!! Why not create a cli tool, claude skill (ipaship-audit) and a mcp connector which can make every person's llm with safety hooks not just for apps but for every code its written. \n\nYou can access it at \\\\\\\\\\\\\\~ npm i @async-atharv/ipaship\n\nI have also added kimi and gemini keys with default options. \n\nThis audit for secure code, appstore policy compliance, bug fixes and give back REMEDIATION PLAN to your llm agent itself and your llm agent can work on it rapidly on that prompt itself. So no more leaving your IDE or claude code all things handled within the environment you loved 😍 !!",
+            "selftext_excerpt": "I was facing problems with adding safety hooks for iOS and Android app submission as they were getting rejected. So, I built an app compliance auditor. https://github.com/atharvnaik1/ipaship-audit But later on I thought ohh!! Why not create",
+            "external_url": "https://v.redd.it/gt2muc7yxv2h1",
+            "top_comments": [],
+            "comment_context": null
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 0,
+          "reddit_comment_count": 0,
+          "captured_at_ist": "2026-05-25 12:01 IST"
+        },
+        "labels": [
+          "Reddit",
+          "OpenWebUI",
+          "Comments missing"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "Is it useful to add safety hooks in any ai agent and limiting token utilisation for secure code quality and Appstore policy compliance",
+            "post_body": "I was facing problems with adding safety hooks for iOS and Android app submission as they were getting rejected. So, I built an app compliance auditor. https://github.com/atharvnaik1/ipaship-audit \n\nBut later on I thought ohh!! Why not create a cli tool, claude skill (ipaship-audit) and a mcp connector which can make every person's llm with safety hooks not just for apps but for every code its written. \n\nYou can access it at \\\\\\\\\\\\\\~ npm i @async-atharv/ipaship\n\nI have also added kimi and gemini keys with default options. \n\nThis audit for secure code, appstore policy compliance, bug fixes and give back REMEDIATION PLAN to your llm agent itself and your llm agent can work on it rapidly on that prompt itself. So no more leaving your IDE or claude code all things handled within the environment you loved 😍 !!",
+            "comments": [],
+            "metadata": {
+              "subreddit": "OpenWebUI",
+              "score": 0,
+              "comment_count": 0,
+              "created_utc": 1779541309.0,
+              "url": "https://www.reddit.com/r/OpenWebUI/comments/1tlfwh5/is_it_useful_to_add_safety_hooks_in_any_ai_agent/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "LocalLLM",
+        "sort": "top",
+        "title": "Comparison opencode vs \"almost barebone instructions\" coding session on a 4080 with 32Gb RAM",
+        "score": 12,
+        "comments": 9,
+        "created_utc": 1779643219.0,
+        "url": "https://www.reddit.com/r/LocalLLM/comments/1tmi949/comparison_opencode_vs_almost_barebone/",
+        "external_url": "https://i.redd.it/al5wl478343h1.gif",
+        "selftext": "I spent the last few days building my own agent for the 4rth time (I called it minia), mostly vibe coding it but this time paying more attention at the structure and output code (since this time I'm using a local model). Being a heavy Opus user, I'm still try amazed by the results of the latest Qwen models and am experimenting using exclusively Qwen3.6-35B-A3B-Q4\\_K\\_M, it's very capable with a context around 200k and reasoning enabled. I'm usually using opencode, but observed the \"generic\" agent without any skill or very specific tool would still do the job, often with less verbose results and maybe a tiny bit more reliable. The speed is what shocks me the most, it compares to paying servic",
+        "selftext_full": "I spent the last few days building my own agent for the 4rth time (I called it minia), mostly vibe coding it but this time paying more attention at the structure and output code (since this time I'm using a local model).\n\nBeing a heavy Opus user, I'm still try amazed by the results of the latest Qwen models and am experimenting using exclusively Qwen3.6-35B-A3B-Q4\\_K\\_M, it's very capable with a context around 200k and reasoning enabled.\n\nI'm usually using opencode, but observed the \"generic\" agent without any skill or very specific tool would still do the job, often with less verbose results and maybe a tiny bit more reliable.\n\nThe speed is what shocks me the most, it compares to paying services and I didn't push it that much to get the last bits of speed, still running around 90-100tps using turbo4.\n\nI asked it to generate a web interface for my ongoing project, which uses unix sockets for communication (no ready to use websocket or http protocol).\n\nThe (not great) prompt:\n\n> \nCreate a new package in /home/fab/dev/std/minia/src which will have its own entry point: minia\\_web\n\n>It's an hybrid of minia\\_audio and minia\\_client, to expose the assistant via web interface.\n\n>it should support:\n\n>\\- sending messages to the agent\n\n>\\- see the responses\n\n>\\- playing the audio back (can be switched off with a \"mute\" button)\n\n>You can use picocss for the web interface, keep things simple and well organized.\n\nBoth performed around the same time (6 min), the main differences:\n\nBarebone generated index.html (15k) and [server.py](http://server.py) (7.1k) \n\\- code is quite minimal and clean \n\\- ugly but \"works\", I only found one issue (emitted text showing twice) which was one of the pitfalls given the architecture but didn't try the audio since the projects isn't very mature yet and it would certainly not work\n\nOpencode generated 4 complicated files: tts\\_client.py (4.5k) [server.py](http://server.py) (21k) [main.py](http://main.py) (2.1k) event\\_client.py (1.3k) \n\\- seems complicated \n\\- doesn't work (no html), just shows \"not found\"\n\nIn practice, I got surprised a few times by a \"barebone\" harness, providing better results than any engineered one even in one shot scenarios, also less code to review is a big plus on my side.\n\nI'm just super impressed by what we can run locally... and excited about what comes next!",
+        "author": "Fdevfab",
+        "post_id": "1tmi949",
+        "top_comments": [],
+        "story_id": "rd_1tmi949",
+        "heading": "Comparison opencode vs \"almost barebone instructions\" coding session on a 4080 with 32Gb RAM",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/LocalLLM/comments/1tmi949/comparison_opencode_vs_almost_barebone/",
+        "summary": "I spent the last few days building my own agent for the 4rth time (I called it minia), mostly vibe coding it but this time paying more attention at the structure and output code (since this time I'm using a local model). Being a heavy Opus user, I'm still try amazed by the results of the latest Qwen models and am experimenting using exclusively Qwen3.6-35B-A3B-Q4\\_K\\_M, it's very capable with a context around 200k an",
+        "tweet_and_comments_summary": "I spent the last few days building my own agent for the 4rth time (I called it minia), mostly vibe coding it but this time paying more attention at the structure and output code (since this time I'm using a local model). Being a heavy Opus user, I'm still try amazed by the results of the latest Qwen models and am experimenting using exclusively Qwen3.6-35B-A3B-Q4\\_K\\_M, it's very capable with a context around 200k an",
+        "discussion_summary": null,
+        "why_it_matters": "**High signal if running local models.** Check hardware fit, latency, and eval quality before adopting.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tmi949",
+            "subreddit": "LocalLLM",
+            "post_url": "https://www.reddit.com/r/LocalLLM/comments/1tmi949/comparison_opencode_vs_almost_barebone/",
+            "title": "Comparison opencode vs \"almost barebone instructions\" coding session on a 4080 with 32Gb RAM",
+            "author": "Fdevfab",
+            "created_utc": 1779643219.0,
+            "score": 12,
+            "comment_count": 9,
+            "selftext_full": "I spent the last few days building my own agent for the 4rth time (I called it minia), mostly vibe coding it but this time paying more attention at the structure and output code (since this time I'm using a local model).\n\nBeing a heavy Opus user, I'm still try amazed by the results of the latest Qwen models and am experimenting using exclusively Qwen3.6-35B-A3B-Q4\\_K\\_M, it's very capable with a context around 200k and reasoning enabled.\n\nI'm usually using opencode, but observed the \"generic\" agent without any skill or very specific tool would still do the job, often with less verbose results and maybe a tiny bit more reliable.\n\nThe speed is what shocks me the most, it compares to paying services and I didn't push it that much to get the last bits of speed, still running around 90-100tps using turbo4.\n\nI asked it to generate a web interface for my ongoing project, which uses unix sockets for communication (no ready to use websocket or http protocol).\n\nThe (not great) prompt:\n\n> \nCreate a new package in /home/fab/dev/std/minia/src which will have its own entry point: minia\\_web\n\n>It's an hybrid of minia\\_audio and minia\\_client, to expose the assistant via web interface.\n\n>it should support:\n\n>\\- sending messages to the agent\n\n>\\- see the responses\n\n>\\- playing the audio back (can be switched off with a \"mute\" button)\n\n>You can use picocss for the web interface, keep things simple and well organized.\n\nBoth performed around the same time (6 min), the main differences:\n\nBarebone generated index.html (15k) and [server.py](http://server.py) (7.1k) \n\\- code is quite minimal and clean \n\\- ugly but \"works\", I only found one issue (emitted text showing twice) which was one of the pitfalls given the architecture but didn't try the audio since the projects isn't very mature yet and it would certainly not work\n\nOpencode generated 4 complicated files: tts\\_client.py (4.5k) [server.py](http://server.py) (21k) [main.py](http://main.py) (2.1k) event\\_client.py (1.3k) \n\\- seems complicated \n\\- doesn't work (no html), just shows \"not found\"\n\nIn practice, I got surprised a few times by a \"barebone\" harness, providing better results than any engineered one even in one shot scenarios, also less code to review is a big plus on my side.\n\nI'm just super impressed by what we can run locally... and excited about what comes next!",
+            "selftext_excerpt": "I spent the last few days building my own agent for the 4rth time (I called it minia), mostly vibe coding it but this time paying more attention at the structure and output code (since this time I'm using a local model). Being a heavy Opus",
+            "external_url": "https://i.redd.it/al5wl478343h1.gif",
+            "top_comments": [],
+            "comment_context": null
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 12,
+          "reddit_comment_count": 9,
+          "captured_at_ist": "2026-05-25 12:01 IST"
+        },
+        "labels": [
+          "Reddit",
+          "Comments missing"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "Comparison opencode vs \"almost barebone instructions\" coding session on a 4080 with 32Gb RAM",
+            "post_body": "I spent the last few days building my own agent for the 4rth time (I called it minia), mostly vibe coding it but this time paying more attention at the structure and output code (since this time I'm using a local model).\n\nBeing a heavy Opus user, I'm still try amazed by the results of the latest Qwen models and am experimenting using exclusively Qwen3.6-35B-A3B-Q4\\_K\\_M, it's very capable with a context around 200k and reasoning enabled.\n\nI'm usually using opencode, but observed the \"generic\" agent without any skill or very specific tool would still do the job, often with less verbose results and maybe a tiny bit more reliable.\n\nThe speed is what shocks me the most, it compares to paying services and I didn't push it that much to get the last bits of speed, still running around 90-100tps using turbo4.\n\nI asked it to generate a web interface for my ongoing project, which uses unix sockets for communication (no ready to use websocket or http protocol).\n\nThe (not great) prompt:\n\n> \nCreate a new package in /home/fab/dev/std/minia/src which will have its own entry point: minia\\_web\n\n>It's an hybrid of minia\\_audio and minia\\_client, to expose the assistant via web interface.\n\n>it should support:\n\n>\\- sending messages to the agent\n\n>\\- see the responses\n\n>\\- playing the audio back (can be switched off with a \"mute\" button)\n\n>You can use picocss for the web interface, keep things simple and well organized.\n\nBoth performed around the same time (6 min), the main differences:\n\nBarebone generated index.html (15k) and [server.py](http://server.py) (7.1k) \n\\- code is quite minimal and clean \n\\- ugly but \"works\", I only found one issue (emitted text showing twice) which was one of the pitfalls given the architecture but didn't try the audio since the projects isn't very mature yet and it would certainly not work\n\nOpencode generated 4 complicated files: tts\\_client.py (4.5k) [server.py](http://server.py) (21k) [main.py](http://main.py) (2.1k) event\\_client.py (1.3k) \n\\- seems complicated \n\\- doesn't work (no html), just shows \"not found\"\n\nIn practice, I got surprised a few times by a \"barebone\" harness, providing better results than any engineered one even in one shot scenarios, also less code to review is a big plus on my side.\n\nI'm just super impressed by what we can run locally... and excited about what comes next!",
+            "comments": [],
+            "metadata": {
+              "subreddit": "LocalLLM",
+              "score": 12,
+              "comment_count": 9,
+              "created_utc": 1779643219.0,
+              "url": "https://www.reddit.com/r/LocalLLM/comments/1tmi949/comparison_opencode_vs_almost_barebone/"
+            }
+          },
+          "twitter": null
+        }
+      }
+    ],
+    "brief_number": 2
+  },
+  {
     "run_id": "2026-05-25 03:58 IST",
     "brief_day": "2026-05-25",
     "collected_at_ist": "2026-05-25 03:58 IST",
