@@ -1,5 +1,1718 @@
 [
   {
+    "run_id": "2026-05-25 18:03 IST",
+    "brief_day": "2026-05-25",
+    "collected_at_ist": "2026-05-25 18:03 IST",
+    "runtime_sec": 18.2,
+    "auth_mode": "anonymous_with_fallbacks",
+    "source_count_ok": 16,
+    "sources_ok": [
+      "AI_Agents",
+      "ArtificialInteligence",
+      "AutoGPT",
+      "ChatGPT",
+      "ClaudeAI",
+      "ClaudeCode",
+      "LangChain",
+      "LocalLLM",
+      "LocalLLaMA",
+      "MachineLearning",
+      "Ollama",
+      "OpenAI",
+      "OpenWebUI",
+      "StableDiffusion",
+      "artificial",
+      "singularity"
+    ],
+    "sources_failed_count": 0,
+    "posts": [
+      {
+        "subreddit": "Ollama",
+        "sort": "hot",
+        "title": "Harnesses",
+        "score": 20,
+        "comments": 13,
+        "created_utc": 1779699957.0,
+        "url": "https://www.reddit.com/r/ollama/comments/1tn3l7y/harnesses/",
+        "external_url": null,
+        "selftext": "I've been running a fully local AI agent for 3 months on my own hardware (DGX Spark + Mac Mini + A5000) using Ollama. No cloud APIs, no per-token costs, no data leaving my machine. Runs across Discord, Telegram, and WhatsApp simultaneously. Here is what actually worked and what failed badly. **The problem nobody is talking about** LangChain, CrewAI, AutoGen all assume GPT-5 or Claude is driving. They hand the model 15+ tools and let it figure out the workflow. Local models in the 7-30B range cannot do this. They narrate tool calls instead of executing them. They hallucinate tool names when given too many options. They burn tokens on internal reasoning and return empty responses. They fail JS",
+        "selftext_full": "I've been running a fully local AI agent for 3 months on my own hardware (DGX Spark + Mac Mini + A5000) using Ollama. No cloud APIs, no per-token costs, no data leaving my machine. Runs across Discord, Telegram, and WhatsApp simultaneously.\n\nHere is what actually worked and what failed badly.\n\n**The problem nobody is talking about**\n\nLangChain, CrewAI, AutoGen all assume GPT-5 or Claude is driving. They hand the model 15+ tools and let it figure out the workflow.\n\nLocal models in the 7-30B range cannot do this. They narrate tool calls instead of executing them. They hallucinate tool names when given too many options. They burn tokens on internal reasoning and return empty responses. They fail JSON parsing with complex schemas.\n\nThe solution is not a better prompt. It is a better architecture.\n\n**Stop giving local models 39 tools**\n\nThis was the single biggest win.\n\nI use a fast router model (phi4:14b, \\~50ms) that classifies intent into categories, then hands off to a specialist that only sees 3-6 relevant tools.\n\n User → Router (phi4:14b) → Category\n → web_search specialist (3 tools)\n → exec specialist (4 tools)\n → memory specialist (3 tools)\n → chat (no tools, just conversation)\n\nA 30B model choosing between 6 tools is reliable. The same model choosing between 39 tools wanders, picks wrong tools, and burns iterations. The accuracy difference is not subtle.\n\nLesson learned the hard way: I tried using phi4-mini as a cheaper router for short messages to save latency. It started producing \"As an AI developed by Microsoft\" responses and broke mid-conversation routing. Short messages mid-conversation need context, not a cheaper model. Everything routes through phi4:14b now.\n\n**Stop letting the model decide anything deterministic**\n\nMost of my categories do not use a ReAct loop at all. They use deterministic pipelines where code controls the workflow.\n\n web_search: extract_params → search → pick_urls → \n fetch_pages (3 concurrent) → synthesize → quality_review → [revision]\n \n research: plan_queries → parallel_search → parallel_fetch → \n synthesize → charts → branch(deck|report) → render → [quality_review]\n\nThe model does two things: extracts parameters and synthesizes text. Code handles everything else. Tool ordering, parallel execution, error recovery, quality gates.\n\nI tried letting the model freely orchestrate exec tools in a ReAct loop. It used 8 steps for a simple ls command. Called exec correctly then tried find, chmod, which before stopping. Local models cannot self-regulate in open-ended tool loops for simple tasks. Do not let them try.\n\n**Flat vector memory will eventually fail you**\n\nI started with a flat JSONL fact store. It accumulated 14 near-duplicate facts about the same topic. Layered dedup defenses were individually weak. Facts only surfaced in scheduled briefings, never in actual conversations.\n\nSwitched to FalkorDB. Graph database with native HNSW vector search that speaks Redis wire protocol. 20MB memory footprint, sub-millisecond queries, runs in Docker.\n\nThe schema:\n\n (:Fact {text, importance, embedding}) -[:ABOUT]-> (:Entity {name, type})\n (:Fact) -[:SUPERSEDES]-> (:Fact)\n (:Fact) -[:TAGGED]-> (:Tag)\n (:Turn) -[:MENTIONS]-> (:Entity)\n\nWhat the graph gives you that vectors alone cannot: entity traversal, SUPERSEDES chains so fact evolution is preserved with history, cross-session search through entity connections, and multi-signal scoring that lets you weight importance over recency when it matters.\n\nOn every incoming message, relevant facts are silently injected into the specialist context. The agent knows who you are without asking every time.\n\n**The mistake that made me blame the model for a week**\n\nThinking models like qwen3.6 and nemotron use internal reasoning tokens before producing visible output.\n\nI had num\\_predict set to 1024. The models were spending everything on internal reasoning and returning empty responses. I swapped models three times before realizing the constraint was mine.\n\nIf a model keeps returning empty responses, check your token limits before blaming capability.\n\n**Code curates, model reasons. Not the other way around.**\n\nThe original heartbeat let the model search memory randomly. Each run surfaced different facts with different formatting. The task board had the model compute urgency and it said everything was urgent.\n\nNow code handles the what. Which facts changed, which tasks are overdue, what day it is. The model handles the so what. What does it mean, what is connected, what should you know about it.\n\nTask urgency and calendar labels are computed in TypeScript. I tried three prompt rewrites to get the model to do it reliably. It kept saying things like \"264 days remaining, requiring attention soon.\" If a model fails at something deterministic after three attempts, move it to code. That is the rule now.\n\n**The full stack if you are curious**\n\n|Role|Model|Why|\n|:-|:-|:-|\n|Router|phi4:14b|Fast classification, \\~200 tokens per decision|\n|Specialists|qwen3-coder:30b|Reliable tool sequencing|\n|Chat|gemma4:26b (MoE)|3.8B active params, fast, clean conversation|\n|Briefing|qwen3.6:35b|Better reasoning, respects pre-labeled data|\n|Embedding|qwen3-embedding:8b|Vector search|\n|Vision|qwen3-vl:8b|Image analysis|\n\nRunning on DGX Spark (128GB) + Mac Mini + A5000. 48 models available, 39 tools, 11 pipelines, 7 channel adapters. FalkorDB graph currently at 817 nodes, 294 edges. All local.\n\n**The honest tradeoff**\n\nYou get full control over routing, tool access, memory, scheduling. No vendor lock-in, no per-token costs, complete privacy, the ability to tune every layer independently.\n\nWhat it costs is that everything breaks in small, different ways. Each model has its own failure modes. You are building the floor that makes probabilistic noise usable and that floor is a lot of code.\n\nIf you are running Ollama seriously and want an agent that actually knows who you are, remembers your conversations, searches the web, manages tasks, and delivers proactive briefings, the harness is where the real engineering happens.\n\nThe model is just a component.\n\nHappy to answer questions about any of these patterns.",
+        "author": "grawl_dorgiers",
+        "post_id": "1tn3l7y",
+        "top_comments": [
+          {
+            "score": 2,
+            "author": "grawl_dorgiers",
+            "body": "For anyone who wants to see the implementation, here is the repo: [https://github.com/PeterGreenAppliedAI/LocalClaw](https://github.com/PeterGreenAppliedAI/LocalClaw)",
+            "permalink": "https://www.reddit.com/r/ollama/comments/1tn3l7y/harnesses/onr6pfv/"
+          },
+          {
+            "score": 2,
+            "author": "grawl_dorgiers",
+            "body": "3 tier fallback Pre-model overrides - high-confidence keyword patterns Model classification - the phi4 model classifies into categories with single word responses keyword fallback - pattern matching catches it if the model fails or times out. Dispatch adds more layers on top, things like sticky routing (keeps follow-ups on chat), conversational guard (prevents pipeline misroutes mid conversation), and the silent re-route.",
+            "permalink": "https://www.reddit.com/r/ollama/comments/1tn3l7y/harnesses/onr7la9/"
+          },
+          {
+            "score": 2,
+            "author": "grawl_dorgiers",
+            "body": "That is actually a fair question. I spent a lot of time on the deterministic pipelines so some categories are rock solid and others still have rough edges. I fix it pipeline by pipeline rather than treating it as one monolithic thing. There is also the ReAct loop which handles the more open ended reasoning cases where deterministic flow is not the right fit. But practically speaking it does what I need it to do. Searches the web, manages my tasks, runs cron jobs, delivers briefings three times a day, and remembers who I am across sessions through the graph memory. That last part was the one that actually changed how I use it daily. The multi model approach genuinely improves usability because each model is only doing what it is good at. A fast router does not need to be smart, it just needs to be fast and decisive. A chat model does not need tool discipline, it needs to feel natural. A tool calling specialist does not need personality, it needs to sequence reliably. You stop trying to find one model that does everything and start matching the model to the job.",
+            "permalink": "https://www.reddit.com/r/ollama/comments/1tn3l7y/harnesses/onra7g9/"
+          },
+          {
+            "score": 1,
+            "author": "serendipity98765",
+            "body": "How do you do the routing",
+            "permalink": "https://www.reddit.com/r/ollama/comments/1tn3l7y/harnesses/onr74hy/"
+          },
+          {
+            "score": 1,
+            "author": "Due_Duck_8472",
+            "body": "Sounds like it needs a lot of constant bug fixing and dependency fire fighting when using so many model sub-components instead of one know-it-all-do-it-all model. How is usability?",
+            "permalink": "https://www.reddit.com/r/ollama/comments/1tn3l7y/harnesses/onr9rf0/"
+          },
+          {
+            "score": 1,
+            "author": "Think_Egg_3066",
+            "body": "I thought Gemma 4 model has vision capabilities already. Could slim down the overall package a little.",
+            "permalink": "https://www.reddit.com/r/ollama/comments/1tn3l7y/harnesses/onrawlc/"
+          },
+          {
+            "score": 1,
+            "author": "Equal_Jellyfish_4771",
+            "body": "The router-specialist pattern is basically what [Ratel](https://github.com/ratel-ai/ratel) does under the hood. How much latency does the phi4 routing add when you're hitting it before every task?",
+            "permalink": "https://www.reddit.com/r/ollama/comments/1tn3l7y/harnesses/onri81a/"
+          },
+          {
+            "score": 1,
+            "author": "MikkyMo",
+            "body": "This is a lot of work great job setting it up. I feel like this could’ve been handled by just finding one bigger smarter model you would loose on tpsbut it would probably save of all the time debugging and touting all these different llms",
+            "permalink": "https://www.reddit.com/r/ollama/comments/1tn3l7y/harnesses/onrv3bu/"
+          }
+        ],
+        "story_id": "rd_1tn3l7y",
+        "heading": "Harnesses",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/ollama/comments/1tn3l7y/harnesses/",
+        "summary": "I've been running a fully local AI agent for 3 months on my own hardware (DGX Spark + Mac Mini + A5000) using Ollama. No cloud APIs, no per-token costs, no data leaving my machine. Runs across Discord, Telegram, and WhatsApp simultaneously. Here is what actually worked and what failed badly. **The problem nobody is talking about** LangChain, CrewAI, AutoGen all assume GPT-5 or Claude is driving. They hand the model 1 For anyone who wants to see the implementation, here is the repo: [https://github.com/PeterGreenAppliedAI/LocalClaw](https://github.com/PeterGreenAppliedAI/LocalClaw) 3 tier fallback Pre-model overrides - high-confidence keyword patterns Model classification - the phi4 model cla",
+        "tweet_and_comments_summary": "I've been running a fully local AI agent for 3 months on my own hardware (DGX Spark + Mac Mini + A5000) using Ollama. No cloud APIs, no per-token costs, no data leaving my machine. Runs across Discord, Telegram, and WhatsApp simultaneously. Here is what actually worked and what failed badly. **The problem nobody is talking about** LangChain, CrewAI, AutoGen all assume GPT-5 or Claude is driving. They hand the model 1 For anyone who wants to see the implementation, here is the repo: [https://github.com/PeterGreenAppliedAI/LocalClaw](https://github.com/PeterGreenAppliedAI/LocalClaw) 3 tier fallback Pre-model overrides - high-confidence keyword patterns Model classification - the phi4 model cla",
+        "discussion_summary": "For anyone who wants to see the implementation, here is the repo: [https://github.com/PeterGreenAppliedAI/LocalClaw](https://github.com/PeterGreenAppliedAI/LocalClaw) 3 tier fallback Pre-model overrides - high-confidence keyword patterns Model classification - the phi4 model classifies into categories with single word responses keyword fallback",
+        "why_it_matters": "**High signal if running local models.** Check hardware fit, latency, and eval quality before adopting.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tn3l7y",
+            "subreddit": "Ollama",
+            "post_url": "https://www.reddit.com/r/ollama/comments/1tn3l7y/harnesses/",
+            "title": "Harnesses",
+            "author": "grawl_dorgiers",
+            "created_utc": 1779699957.0,
+            "score": 20,
+            "comment_count": 13,
+            "selftext_full": "I've been running a fully local AI agent for 3 months on my own hardware (DGX Spark + Mac Mini + A5000) using Ollama. No cloud APIs, no per-token costs, no data leaving my machine. Runs across Discord, Telegram, and WhatsApp simultaneously.\n\nHere is what actually worked and what failed badly.\n\n**The problem nobody is talking about**\n\nLangChain, CrewAI, AutoGen all assume GPT-5 or Claude is driving. They hand the model 15+ tools and let it figure out the workflow.\n\nLocal models in the 7-30B range cannot do this. They narrate tool calls instead of executing them. They hallucinate tool names when given too many options. They burn tokens on internal reasoning and return empty responses. They fail JSON parsing with complex schemas.\n\nThe solution is not a better prompt. It is a better architecture.\n\n**Stop giving local models 39 tools**\n\nThis was the single biggest win.\n\nI use a fast router model (phi4:14b, \\~50ms) that classifies intent into categories, then hands off to a specialist that only sees 3-6 relevant tools.\n\n User → Router (phi4:14b) → Category\n → web_search specialist (3 tools)\n → exec specialist (4 tools)\n → memory specialist (3 tools)\n → chat (no tools, just conversation)\n\nA 30B model choosing between 6 tools is reliable. The same model choosing between 39 tools wanders, picks wrong tools, and burns iterations. The accuracy difference is not subtle.\n\nLesson learned the hard way: I tried using phi4-mini as a cheaper router for short messages to save latency. It started producing \"As an AI developed by Microsoft\" responses and broke mid-conversation routing. Short messages mid-conversation need context, not a cheaper model. Everything routes through phi4:14b now.\n\n**Stop letting the model decide anything deterministic**\n\nMost of my categories do not use a ReAct loop at all. They use deterministic pipelines where code controls the workflow.\n\n web_search: extract_params → search → pick_urls → \n fetch_pages (3 concurrent) → synthesize → quality_review → [revision]\n \n research: plan_queries → parallel_search → parallel_fetch → \n synthesize → charts → branch(deck|report) → render → [quality_review]\n\nThe model does two things: extracts parameters and synthesizes text. Code handles everything else. Tool ordering, parallel execution, error recovery, quality gates.\n\nI tried letting the model freely orchestrate exec tools in a ReAct loop. It used 8 steps for a simple ls command. Called exec correctly then tried find, chmod, which before stopping. Local models cannot self-regulate in open-ended tool loops for simple tasks. Do not let them try.\n\n**Flat vector memory will eventually fail you**\n\nI started with a flat JSONL fact store. It accumulated 14 near-duplicate facts about the same topic. Layered dedup defenses were individually weak. Facts only surfaced in scheduled briefings, never in actual conversations.\n\nSwitched to FalkorDB. Graph database with native HNSW vector search that speaks Redis wire protocol. 20MB memory footprint, sub-millisecond queries, runs in Docker.\n\nThe schema:\n\n (:Fact {text, importance, embedding}) -[:ABOUT]-> (:Entity {name, type})\n (:Fact) -[:SUPERSEDES]-> (:Fact)\n (:Fact) -[:TAGGED]-> (:Tag)\n (:Turn) -[:MENTIONS]-> (:Entity)\n\nWhat the graph gives you that vectors alone cannot: entity traversal, SUPERSEDES chains so fact evolution is preserved with history, cross-session search through entity connections, and multi-signal scoring that lets you weight importance over recency when it matters.\n\nOn every incoming message, relevant facts are silently injected into the specialist context. The agent knows who you are without asking every time.\n\n**The mistake that made me blame the model for a week**\n\nThinking models like qwen3.6 and nemotron use internal reasoning tokens before producing visible output.\n\nI had num\\_predict set to 1024. The models were spending everything on internal reasoning and returning empty responses. I swapped models three times before realizing the constraint was mine.\n\nIf a model keeps returning empty responses, check your token limits before blaming capability.\n\n**Code curates, model reasons. Not the other way around.**\n\nThe original heartbeat let the model search memory randomly. Each run surfaced different facts with different formatting. The task board had the model compute urgency and it said everything was urgent.\n\nNow code handles the what. Which facts changed, which tasks are overdue, what day it is. The model handles the so what. What does it mean, what is connected, what should you know about it.\n\nTask urgency and calendar labels are computed in TypeScript. I tried three prompt rewrites to get the model to do it reliably. It kept saying things like \"264 days remaining, requiring attention soon.\" If a model fails at something deterministic after three attempts, move it to code. That is the rule now.\n\n**The full stack if you are curious**\n\n|Role|Model|Why|\n|:-|:-|:-|\n|Router|phi4:14b|Fast classification, \\~200 tokens per decision|\n|Specialists|qwen3-coder:30b|Reliable tool sequencing|\n|Chat|gemma4:26b (MoE)|3.8B active params, fast, clean conversation|\n|Briefing|qwen3.6:35b|Better reasoning, respects pre-labeled data|\n|Embedding|qwen3-embedding:8b|Vector search|\n|Vision|qwen3-vl:8b|Image analysis|\n\nRunning on DGX Spark (128GB) + Mac Mini + A5000. 48 models available, 39 tools, 11 pipelines, 7 channel adapters. FalkorDB graph currently at 817 nodes, 294 edges. All local.\n\n**The honest tradeoff**\n\nYou get full control over routing, tool access, memory, scheduling. No vendor lock-in, no per-token costs, complete privacy, the ability to tune every layer independently.\n\nWhat it costs is that everything breaks in small, different ways. Each model has its own failure modes. You are building the floor that makes probabilistic noise usable and that floor is a lot of code.\n\nIf you are running Ollama seriously and want an agent that actually knows who you are, remembers your conversations, searches the web, manages tasks, and delivers proactive briefings, the harness is where the real engineering happens.\n\nThe model is just a component.\n\nHappy to answer questions about any of these patterns.",
+            "selftext_excerpt": "I've been running a fully local AI agent for 3 months on my own hardware (DGX Spark + Mac Mini + A5000) using Ollama. No cloud APIs, no per-token costs, no data leaving my machine. Runs across Discord, Telegram, and WhatsApp simultaneously.",
+            "external_url": null,
+            "top_comments": [
+              {
+                "score": 2,
+                "author": "grawl_dorgiers",
+                "body": "For anyone who wants to see the implementation, here is the repo: [https://github.com/PeterGreenAppliedAI/LocalClaw](https://github.com/PeterGreenAppliedAI/LocalClaw)",
+                "permalink": "https://www.reddit.com/r/ollama/comments/1tn3l7y/harnesses/onr6pfv/"
+              },
+              {
+                "score": 2,
+                "author": "grawl_dorgiers",
+                "body": "3 tier fallback Pre-model overrides - high-confidence keyword patterns Model classification - the phi4 model classifies into categories with single word responses keyword fallback - pattern matching catches it if the model fails or times out. Dispatch adds more layers on top, things like sticky routing (keeps follow-ups on chat), conversational guard (prevents pipeline misroutes mid conversation), and the silent re-route.",
+                "permalink": "https://www.reddit.com/r/ollama/comments/1tn3l7y/harnesses/onr7la9/"
+              },
+              {
+                "score": 2,
+                "author": "grawl_dorgiers",
+                "body": "That is actually a fair question. I spent a lot of time on the deterministic pipelines so some categories are rock solid and others still have rough edges. I fix it pipeline by pipeline rather than treating it as one monolithic thing. There is also the ReAct loop which handles the more open ended reasoning cases where deterministic flow is not the right fit. But practically speaking it does what I need it to do. Searches the web, manages my tasks, runs cron jobs, delivers briefings three times a day, and remembers who I am across sessions through the graph memory. That last part was the one that actually changed how I use it daily. The multi model approach genuinely improves usability because each model is only doing what it is good at. A fast router does not need to be smart, it just needs to be fast and decisive. A chat model does not need tool discipline, it needs to feel natural. A tool calling specialist does not need personality, it needs to sequence reliably. You stop trying to find one model that does everything and start matching the model to the job.",
+                "permalink": "https://www.reddit.com/r/ollama/comments/1tn3l7y/harnesses/onra7g9/"
+              },
+              {
+                "score": 1,
+                "author": "serendipity98765",
+                "body": "How do you do the routing",
+                "permalink": "https://www.reddit.com/r/ollama/comments/1tn3l7y/harnesses/onr74hy/"
+              },
+              {
+                "score": 1,
+                "author": "Due_Duck_8472",
+                "body": "Sounds like it needs a lot of constant bug fixing and dependency fire fighting when using so many model sub-components instead of one know-it-all-do-it-all model. How is usability?",
+                "permalink": "https://www.reddit.com/r/ollama/comments/1tn3l7y/harnesses/onr9rf0/"
+              },
+              {
+                "score": 1,
+                "author": "Think_Egg_3066",
+                "body": "I thought Gemma 4 model has vision capabilities already. Could slim down the overall package a little.",
+                "permalink": "https://www.reddit.com/r/ollama/comments/1tn3l7y/harnesses/onrawlc/"
+              },
+              {
+                "score": 1,
+                "author": "Equal_Jellyfish_4771",
+                "body": "The router-specialist pattern is basically what [Ratel](https://github.com/ratel-ai/ratel) does under the hood. How much latency does the phi4 routing add when you're hitting it before every task?",
+                "permalink": "https://www.reddit.com/r/ollama/comments/1tn3l7y/harnesses/onri81a/"
+              },
+              {
+                "score": 1,
+                "author": "MikkyMo",
+                "body": "This is a lot of work great job setting it up. I feel like this could’ve been handled by just finding one bigger smarter model you would loose on tpsbut it would probably save of all the time debugging and touting all these different llms",
+                "permalink": "https://www.reddit.com/r/ollama/comments/1tn3l7y/harnesses/onrv3bu/"
+              }
+            ],
+            "comment_context": "For anyone who wants to see the implementation, here is the repo: [https://github.com/PeterGreenAppliedAI/LocalClaw](https://github.com/PeterGreenAppliedAI/LocalClaw) 3 tier fallback Pre-model overrides - high-confidence keyword patterns Model classification - the phi4 model classifies into categories with single word responses keyword fallback"
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 20,
+          "reddit_comment_count": 13,
+          "captured_at_ist": "2026-05-25 18:03 IST"
+        },
+        "labels": [
+          "Reddit",
+          "Ollama"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "Harnesses",
+            "post_body": "I've been running a fully local AI agent for 3 months on my own hardware (DGX Spark + Mac Mini + A5000) using Ollama. No cloud APIs, no per-token costs, no data leaving my machine. Runs across Discord, Telegram, and WhatsApp simultaneously.\n\nHere is what actually worked and what failed badly.\n\n**The problem nobody is talking about**\n\nLangChain, CrewAI, AutoGen all assume GPT-5 or Claude is driving. They hand the model 15+ tools and let it figure out the workflow.\n\nLocal models in the 7-30B range cannot do this. They narrate tool calls instead of executing them. They hallucinate tool names when given too many options. They burn tokens on internal reasoning and return empty responses. They fail JSON parsing with complex schemas.\n\nThe solution is not a better prompt. It is a better architecture.\n\n**Stop giving local models 39 tools**\n\nThis was the single biggest win.\n\nI use a fast router model (phi4:14b, \\~50ms) that classifies intent into categories, then hands off to a specialist that only sees 3-6 relevant tools.\n\n User → Router (phi4:14b) → Category\n → web_search specialist (3 tools)\n → exec specialist (4 tools)\n → memory specialist (3 tools)\n → chat (no tools, just conversation)\n\nA 30B model choosing between 6 tools is reliable. The same model choosing between 39 tools wanders, picks wrong tools, and burns iterations. The accuracy difference is not subtle.\n\nLesson learned the hard way: I tried using phi4-mini as a cheaper router for short messages to save latency. It started producing \"As an AI developed by Microsoft\" responses and broke mid-conversation routing. Short messages mid-conversation need context, not a cheaper model. Everything routes through phi4:14b now.\n\n**Stop letting the model decide anything deterministic**\n\nMost of my categories do not use a ReAct loop at all. They use deterministic pipelines where code controls the workflow.\n\n web_search: extract_params → search → pick_urls → \n fetch_pages (3 concurrent) → synthesize → quality_review → [revision]\n \n research: plan_queries → parallel_search → parallel_fetch → \n synthesize → charts → branch(deck|report) → render → [quality_review]\n\nThe model does two things: extracts parameters and synthesizes text. Code handles everything else. Tool ordering, parallel execution, error recovery, quality gates.\n\nI tried letting the model freely orchestrate exec tools in a ReAct loop. It used 8 steps for a simple ls command. Called exec correctly then tried find, chmod, which before stopping. Local models cannot self-regulate in open-ended tool loops for simple tasks. Do not let them try.\n\n**Flat vector memory will eventually fail you**\n\nI started with a flat JSONL fact store. It accumulated 14 near-duplicate facts about the same topic. Layered dedup defenses were individually weak. Facts only surfaced in scheduled briefings, never in actual conversations.\n\nSwitched to FalkorDB. Graph database with native HNSW vector search that speaks Redis wire protocol. 20MB memory footprint, sub-millisecond queries, runs in Docker.\n\nThe schema:\n\n (:Fact {text, importance, embedding}) -[:ABOUT]-> (:Entity {name, type})\n (:Fact) -[:SUPERSEDES]-> (:Fact)\n (:Fact) -[:TAGGED]-> (:Tag)\n (:Turn) -[:MENTIONS]-> (:Entity)\n\nWhat the graph gives you that vectors alone cannot: entity traversal, SUPERSEDES chains so fact evolution is preserved with history, cross-session search through entity connections, and multi-signal scoring that lets you weight importance over recency when it matters.\n\nOn every incoming message, relevant facts are silently injected into the specialist context. The agent knows who you are without asking every time.\n\n**The mistake that made me blame the model for a week**\n\nThinking models like qwen3.6 and nemotron use internal reasoning tokens before producing visible output.\n\nI had num\\_predict set to 1024. The models were spending everything on internal reasoning and returning empty responses. I swapped models three times before realizing the constraint was mine.\n\nIf a model keeps returning empty responses, check your token limits before blaming capability.\n\n**Code curates, model reasons. Not the other way around.**\n\nThe original heartbeat let the model search memory randomly. Each run surfaced different facts with different formatting. The task board had the model compute urgency and it said everything was urgent.\n\nNow code handles the what. Which facts changed, which tasks are overdue, what day it is. The model handles the so what. What does it mean, what is connected, what should you know about it.\n\nTask urgency and calendar labels are computed in TypeScript. I tried three prompt rewrites to get the model to do it reliably. It kept saying things like \"264 days remaining, requiring attention soon.\" If a model fails at something deterministic after three attempts, move it to code. That is the rule now.\n\n**The full stack if you are curious**\n\n|Role|Model|Why|\n|:-|:-|:-|\n|Router|phi4:14b|Fast classification, \\~200 tokens per decision|\n|Specialists|qwen3-coder:30b|Reliable tool sequencing|\n|Chat|gemma4:26b (MoE)|3.8B active params, fast, clean conversation|\n|Briefing|qwen3.6:35b|Better reasoning, respects pre-labeled data|\n|Embedding|qwen3-embedding:8b|Vector search|\n|Vision|qwen3-vl:8b|Image analysis|\n\nRunning on DGX Spark (128GB) + Mac Mini + A5000. 48 models available, 39 tools, 11 pipelines, 7 channel adapters. FalkorDB graph currently at 817 nodes, 294 edges. All local.\n\n**The honest tradeoff**\n\nYou get full control over routing, tool access, memory, scheduling. No vendor lock-in, no per-token costs, complete privacy, the ability to tune every layer independently.\n\nWhat it costs is that everything breaks in small, different ways. Each model has its own failure modes. You are building the floor that makes probabilistic noise usable and that floor is a lot of code.\n\nIf you are running Ollama seriously and want an agent that actually knows who you are, remembers your conversations, searches the web, manages tasks, and delivers proactive briefings, the harness is where the real engineering happens.\n\nThe model is just a component.\n\nHappy to answer questions about any of these patterns.",
+            "comments": [
+              {
+                "score": 2,
+                "author": "grawl_dorgiers",
+                "body": "For anyone who wants to see the implementation, here is the repo: [https://github.com/PeterGreenAppliedAI/LocalClaw](https://github.com/PeterGreenAppliedAI/LocalClaw)",
+                "permalink": "https://www.reddit.com/r/ollama/comments/1tn3l7y/harnesses/onr6pfv/"
+              },
+              {
+                "score": 2,
+                "author": "grawl_dorgiers",
+                "body": "3 tier fallback Pre-model overrides - high-confidence keyword patterns Model classification - the phi4 model classifies into categories with single word responses keyword fallback - pattern matching catches it if the model fails or times out. Dispatch adds more layers on top, things like sticky routing (keeps follow-ups on chat), conversational guard (prevents pipeline misroutes mid conversation), and the silent re-route.",
+                "permalink": "https://www.reddit.com/r/ollama/comments/1tn3l7y/harnesses/onr7la9/"
+              },
+              {
+                "score": 2,
+                "author": "grawl_dorgiers",
+                "body": "That is actually a fair question. I spent a lot of time on the deterministic pipelines so some categories are rock solid and others still have rough edges. I fix it pipeline by pipeline rather than treating it as one monolithic thing. There is also the ReAct loop which handles the more open ended reasoning cases where deterministic flow is not the right fit. But practically speaking it does what I need it to do. Searches the web, manages my tasks, runs cron jobs, delivers briefings three times a day, and remembers who I am across sessions through the graph memory. That last part was the one that actually changed how I use it daily. The multi model approach genuinely improves usability because each model is only doing what it is good at. A fast router does not need to be smart, it just needs to be fast and decisive. A chat model does not need tool discipline, it needs to feel natural. A tool calling specialist does not need personality, it needs to sequence reliably. You stop trying to find one model that does everything and start matching the model to the job.",
+                "permalink": "https://www.reddit.com/r/ollama/comments/1tn3l7y/harnesses/onra7g9/"
+              },
+              {
+                "score": 1,
+                "author": "serendipity98765",
+                "body": "How do you do the routing",
+                "permalink": "https://www.reddit.com/r/ollama/comments/1tn3l7y/harnesses/onr74hy/"
+              },
+              {
+                "score": 1,
+                "author": "Due_Duck_8472",
+                "body": "Sounds like it needs a lot of constant bug fixing and dependency fire fighting when using so many model sub-components instead of one know-it-all-do-it-all model. How is usability?",
+                "permalink": "https://www.reddit.com/r/ollama/comments/1tn3l7y/harnesses/onr9rf0/"
+              },
+              {
+                "score": 1,
+                "author": "Think_Egg_3066",
+                "body": "I thought Gemma 4 model has vision capabilities already. Could slim down the overall package a little.",
+                "permalink": "https://www.reddit.com/r/ollama/comments/1tn3l7y/harnesses/onrawlc/"
+              },
+              {
+                "score": 1,
+                "author": "Equal_Jellyfish_4771",
+                "body": "The router-specialist pattern is basically what [Ratel](https://github.com/ratel-ai/ratel) does under the hood. How much latency does the phi4 routing add when you're hitting it before every task?",
+                "permalink": "https://www.reddit.com/r/ollama/comments/1tn3l7y/harnesses/onri81a/"
+              },
+              {
+                "score": 1,
+                "author": "MikkyMo",
+                "body": "This is a lot of work great job setting it up. I feel like this could’ve been handled by just finding one bigger smarter model you would loose on tpsbut it would probably save of all the time debugging and touting all these different llms",
+                "permalink": "https://www.reddit.com/r/ollama/comments/1tn3l7y/harnesses/onrv3bu/"
+              }
+            ],
+            "metadata": {
+              "subreddit": "Ollama",
+              "score": 20,
+              "comment_count": 13,
+              "created_utc": 1779699957.0,
+              "url": "https://www.reddit.com/r/ollama/comments/1tn3l7y/harnesses/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "ChatGPT",
+        "sort": "hot",
+        "title": "Figure AI had a livestream of their robots sorting packages 24/7 for 8 days straight. These aren't staged demos anymore.",
+        "score": 787,
+        "comments": 226,
+        "created_utc": 1779688108.0,
+        "url": "https://www.reddit.com/r/ChatGPT/comments/1tmzwcr/figure_ai_had_a_livestream_of_their_robots/",
+        "external_url": "https://v.redd.it/ex0w9auf283h1",
+        "selftext": "",
+        "selftext_full": "",
+        "author": "EchoOfOppenheimer",
+        "post_id": "1tmzwcr",
+        "top_comments": [
+          {
+            "score": 562,
+            "author": "Major_Shlongage",
+            "body": "Looks like it's imitating the motion of a guy rolling his chair back from a table and getting up off his chair.",
+            "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmzwcr/figure_ai_had_a_livestream_of_their_robots/onqll21/"
+          },
+          {
+            "score": 297,
+            "author": "mesalocal",
+            "body": "so... 24/8?",
+            "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmzwcr/figure_ai_had_a_livestream_of_their_robots/onqkkco/"
+          },
+          {
+            "score": 199,
+            "author": "norindermoodi",
+            "body": "The robot is orienting the printed sticker downward. For a few of the parcels it's already that way. It's mind numbing work but required for sorting machines to identify and allocate any parcel to the right route.",
+            "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmzwcr/figure_ai_had_a_livestream_of_their_robots/onqsokt/"
+          },
+          {
+            "score": 163,
+            "author": "broccollinear",
+            "body": "\"Rohit has disconnected. Session length: 12000 minutes\"",
+            "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmzwcr/figure_ai_had_a_livestream_of_their_robots/onqwwyj/"
+          },
+          {
+            "score": 163,
+            "author": "Felidori",
+            "body": "Not really sorting them in any meaningful way, just pushing them alone. How is this helpful, am I missing something?",
+            "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmzwcr/figure_ai_had_a_livestream_of_their_robots/onqqa1f/"
+          },
+          {
+            "score": 161,
+            "author": "Inside_Guitar_9559",
+            "body": "the robot had it when it got sprayed by champaign",
+            "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmzwcr/figure_ai_had_a_livestream_of_their_robots/onqvl5v/"
+          },
+          {
+            "score": 125,
+            "author": "DegTrader",
+            "body": "Even robots have to deal with the 24/8 corporate grind now. Nowhere is safe.",
+            "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmzwcr/figure_ai_had_a_livestream_of_their_robots/onquhmg/"
+          },
+          {
+            "score": 1,
+            "author": "AutoModerator",
+            "body": "Hey /u/EchoOfOppenheimer, If your post is a screenshot of a ChatGPT conversation, please reply to this message with the [conversation link](https://help.openai.com/en/articles/7925741-chatgpt-shared-links-faq) or prompt. If your post is a DALL-E 3 image post, please reply with the prompt used to make this image. Consider joining our [public discord server](https://discord.gg/r-chatgpt-1050422060352024636)! We have free bots with GPT-4 (with vision), image generators, and more! 🤖 Note: For any ChatGPT-related concerns, email support@openai.com - this subreddit is not part of OpenAI and is not a support channel. *I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/ChatGPT) if you have any questions or concerns.*",
+            "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmzwcr/figure_ai_had_a_livestream_of_their_robots/onqjdgg/"
+          }
+        ],
+        "story_id": "rd_1tmzwcr",
+        "heading": "Figure AI had a livestream of their robots sorting packages 24/7 for 8 days straight. These aren't staged demos anymore.",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/ChatGPT/comments/1tmzwcr/figure_ai_had_a_livestream_of_their_robots/",
+        "summary": "Looks like it's imitating the motion of a guy rolling his chair back from a table and getting up off his chair. so... 24/8?",
+        "tweet_and_comments_summary": "Looks like it's imitating the motion of a guy rolling his chair back from a table and getting up off his chair. so... 24/8?",
+        "discussion_summary": "Looks like it's imitating the motion of a guy rolling his chair back from a table and getting up off his chair. so... 24/8?",
+        "why_it_matters": "**Medium signal.** Worth monitoring, but don’t act on Reddit hype without checking primary sources.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tmzwcr",
+            "subreddit": "ChatGPT",
+            "post_url": "https://www.reddit.com/r/ChatGPT/comments/1tmzwcr/figure_ai_had_a_livestream_of_their_robots/",
+            "title": "Figure AI had a livestream of their robots sorting packages 24/7 for 8 days straight. These aren't staged demos anymore.",
+            "author": "EchoOfOppenheimer",
+            "created_utc": 1779688108.0,
+            "score": 787,
+            "comment_count": 226,
+            "selftext_full": null,
+            "selftext_excerpt": null,
+            "external_url": "https://v.redd.it/ex0w9auf283h1",
+            "top_comments": [
+              {
+                "score": 562,
+                "author": "Major_Shlongage",
+                "body": "Looks like it's imitating the motion of a guy rolling his chair back from a table and getting up off his chair.",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmzwcr/figure_ai_had_a_livestream_of_their_robots/onqll21/"
+              },
+              {
+                "score": 297,
+                "author": "mesalocal",
+                "body": "so... 24/8?",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmzwcr/figure_ai_had_a_livestream_of_their_robots/onqkkco/"
+              },
+              {
+                "score": 199,
+                "author": "norindermoodi",
+                "body": "The robot is orienting the printed sticker downward. For a few of the parcels it's already that way. It's mind numbing work but required for sorting machines to identify and allocate any parcel to the right route.",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmzwcr/figure_ai_had_a_livestream_of_their_robots/onqsokt/"
+              },
+              {
+                "score": 163,
+                "author": "broccollinear",
+                "body": "\"Rohit has disconnected. Session length: 12000 minutes\"",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmzwcr/figure_ai_had_a_livestream_of_their_robots/onqwwyj/"
+              },
+              {
+                "score": 163,
+                "author": "Felidori",
+                "body": "Not really sorting them in any meaningful way, just pushing them alone. How is this helpful, am I missing something?",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmzwcr/figure_ai_had_a_livestream_of_their_robots/onqqa1f/"
+              },
+              {
+                "score": 161,
+                "author": "Inside_Guitar_9559",
+                "body": "the robot had it when it got sprayed by champaign",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmzwcr/figure_ai_had_a_livestream_of_their_robots/onqvl5v/"
+              },
+              {
+                "score": 125,
+                "author": "DegTrader",
+                "body": "Even robots have to deal with the 24/8 corporate grind now. Nowhere is safe.",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmzwcr/figure_ai_had_a_livestream_of_their_robots/onquhmg/"
+              },
+              {
+                "score": 1,
+                "author": "AutoModerator",
+                "body": "Hey /u/EchoOfOppenheimer, If your post is a screenshot of a ChatGPT conversation, please reply to this message with the [conversation link](https://help.openai.com/en/articles/7925741-chatgpt-shared-links-faq) or prompt. If your post is a DALL-E 3 image post, please reply with the prompt used to make this image. Consider joining our [public discord server](https://discord.gg/r-chatgpt-1050422060352024636)! We have free bots with GPT-4 (with vision), image generators, and more! 🤖 Note: For any ChatGPT-related concerns, email support@openai.com - this subreddit is not part of OpenAI and is not a support channel. *I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/ChatGPT) if you have any questions or concerns.*",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmzwcr/figure_ai_had_a_livestream_of_their_robots/onqjdgg/"
+              }
+            ],
+            "comment_context": "Looks like it's imitating the motion of a guy rolling his chair back from a table and getting up off his chair. so... 24/8?"
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 787,
+          "reddit_comment_count": 226,
+          "captured_at_ist": "2026-05-25 18:03 IST"
+        },
+        "labels": [
+          "Reddit"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "Figure AI had a livestream of their robots sorting packages 24/7 for 8 days straight. These aren't staged demos anymore.",
+            "post_body": null,
+            "comments": [
+              {
+                "score": 562,
+                "author": "Major_Shlongage",
+                "body": "Looks like it's imitating the motion of a guy rolling his chair back from a table and getting up off his chair.",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmzwcr/figure_ai_had_a_livestream_of_their_robots/onqll21/"
+              },
+              {
+                "score": 297,
+                "author": "mesalocal",
+                "body": "so... 24/8?",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmzwcr/figure_ai_had_a_livestream_of_their_robots/onqkkco/"
+              },
+              {
+                "score": 199,
+                "author": "norindermoodi",
+                "body": "The robot is orienting the printed sticker downward. For a few of the parcels it's already that way. It's mind numbing work but required for sorting machines to identify and allocate any parcel to the right route.",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmzwcr/figure_ai_had_a_livestream_of_their_robots/onqsokt/"
+              },
+              {
+                "score": 163,
+                "author": "broccollinear",
+                "body": "\"Rohit has disconnected. Session length: 12000 minutes\"",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmzwcr/figure_ai_had_a_livestream_of_their_robots/onqwwyj/"
+              },
+              {
+                "score": 163,
+                "author": "Felidori",
+                "body": "Not really sorting them in any meaningful way, just pushing them alone. How is this helpful, am I missing something?",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmzwcr/figure_ai_had_a_livestream_of_their_robots/onqqa1f/"
+              },
+              {
+                "score": 161,
+                "author": "Inside_Guitar_9559",
+                "body": "the robot had it when it got sprayed by champaign",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmzwcr/figure_ai_had_a_livestream_of_their_robots/onqvl5v/"
+              },
+              {
+                "score": 125,
+                "author": "DegTrader",
+                "body": "Even robots have to deal with the 24/8 corporate grind now. Nowhere is safe.",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmzwcr/figure_ai_had_a_livestream_of_their_robots/onquhmg/"
+              },
+              {
+                "score": 1,
+                "author": "AutoModerator",
+                "body": "Hey /u/EchoOfOppenheimer, If your post is a screenshot of a ChatGPT conversation, please reply to this message with the [conversation link](https://help.openai.com/en/articles/7925741-chatgpt-shared-links-faq) or prompt. If your post is a DALL-E 3 image post, please reply with the prompt used to make this image. Consider joining our [public discord server](https://discord.gg/r-chatgpt-1050422060352024636)! We have free bots with GPT-4 (with vision), image generators, and more! 🤖 Note: For any ChatGPT-related concerns, email support@openai.com - this subreddit is not part of OpenAI and is not a support channel. *I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/ChatGPT) if you have any questions or concerns.*",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tmzwcr/figure_ai_had_a_livestream_of_their_robots/onqjdgg/"
+              }
+            ],
+            "metadata": {
+              "subreddit": "ChatGPT",
+              "score": 787,
+              "comment_count": 226,
+              "created_utc": 1779688108.0,
+              "url": "https://www.reddit.com/r/ChatGPT/comments/1tmzwcr/figure_ai_had_a_livestream_of_their_robots/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "Ollama",
+        "sort": "hot",
+        "title": "I built a powerful RAG and knowledge graph agent that actually runs locally",
+        "score": 1,
+        "comments": 1,
+        "created_utc": 1779698472.0,
+        "url": "https://www.reddit.com/r/ollama/comments/1tn355a/i_built_a_powerful_rag_and_knowledge_graph_agent/",
+        "external_url": null,
+        "selftext": "Claw-Coder is an AI agent that runs locally on your laptop and has access to powerful tools instead of configuring claude or codex to use a local model just use claw-coder. Why was claw-coder created? Answer: To solve the problem of privacy and security. When you use an agent that is configured with a cloud model like codex, cursor, Claude etc. You are not just getting the agent but you are giving up your codebase to train an llm which is a bit concerning and this reduces trust in the technology called AI but now another problem comes in performance when you switch to a local model that is not made for that workflow you lose performance, speed, and it becomes really a tradeoff so that's wher",
+        "selftext_full": "Claw-Coder is an AI agent that runs locally on your laptop and has access to powerful tools instead of configuring claude or codex to use a local model just use claw-coder.\n\nWhy was claw-coder created?\n\nAnswer: To solve the problem of privacy and security. When you use an agent that is configured with a cloud model like codex, cursor, Claude etc. You are not just getting the agent but you are giving up your codebase to train an llm which is a bit concerning and this reduces trust in the technology called AI but now another problem comes in performance when you switch to a local model that is not made for that workflow you lose performance, speed, and it becomes really a tradeoff so that's where claw-coder comes in it not only runs on your machine but all the code, rag, knowledge graph etc info is kept local making the privacy problem solved but now what about performance.\n\nPerformance:\n\nLocal llms are not built to do the cool things cloud models do because the model sizes are not even capable of building real apps like the 8b models, 13b, even 1b so the solution I came up with was to give these small models access to tools and features that make it actually work well in coding performance.\n\nSo what does claw-coder have access to:\n\nA knowledge graph:\n\nA knowledge graph is an interconnected network of real-world entities—such as people, places, concepts, or events—and the relationships between them. It organizes information into a readable web of meaning rather than static lists, allowing both humans and AI to understand context.\n\nSo how does this help an AI, it gives the AI the ability to tell relationships between code in your codebase, a cloned unknown repo and so forth this increases performance of local llms by far in coding tasks and reasoning abilities.\n\nRag:\n\nWe have ever had of RAG at some point but there is a catch the context window of local llms can't bear large codebases and repos so RAG isn't optional by storing vectors in a vector store you enable the AI to actually know what the code means and what each piece does to the other letting you load millions of lines into the vector store without blowing up the context window.\n\nTools:\n\nSo we have discussed the tiny but powerful ways to improve local llm performance but an agent to be an agent it needs to take action this is where exposing tools to the local llm helps so what tools have been implemented into claw-coder.\n\n1. search\\_tool\n\nThis enables the ai agent to actually search up to date info so that it doesnt hallucinate on info it doesn't know which is common in local llms.\n\n2. Docker execution\n\nThis agent has a special folder called workspace where it does its work without destroying your desktop but this is not enough to protect your desktop from being destroyed by cheap code so this is where docker comes in I have implemented docker containers of various languages where the agent can validate its own code this is powerful because all llms not only local ones generate code they can't even confirm works because they are just powerful predictors so enabling it to run its code can surprisingly increase the usefulness of the generated code because it now knows it works or not even for html and css the ai agent has been given a helpful vision llm to actually explain what rendered in the browser. This is the surprising power of giving an llm a docker execution tool.\n\nWe have looked at a lot of how claw-coder is different enabling local llms to actually do real work.\n\nBut how do you actually try it out yourself:\n\nClaw-coder is open-source because it doesn't stop people from trying it on real codebase and giving feedback to get started use:\n\n git clone https://github.com/gabriel-c70/claw-coder.git\n\n npm install -g\n\n claw setup and claw doctor\n\n claw login\n\n",
+        "author": "AI-research-byGB",
+        "post_id": "1tn355a",
+        "top_comments": [
+          {
+            "score": 4,
+            "author": "Technical_Ad_6106",
+            "body": "just what we needed. another ai slop rag structure.",
+            "permalink": "https://www.reddit.com/r/ollama/comments/1tn355a/i_built_a_powerful_rag_and_knowledge_graph_agent/onrbt5z/"
+          }
+        ],
+        "story_id": "rd_1tn355a",
+        "heading": "I built a powerful RAG and knowledge graph agent that actually runs locally",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/ollama/comments/1tn355a/i_built_a_powerful_rag_and_knowledge_graph_agent/",
+        "summary": "Claw-Coder is an AI agent that runs locally on your laptop and has access to powerful tools instead of configuring claude or codex to use a local model just use claw-coder. Why was claw-coder created? Answer: To solve the problem of privacy and security. When you use an agent that is configured with a cloud model like codex, cursor, Claude etc. You are not just getting the agent but you are giving up your codebase to just what we needed. another ai slop rag structure.",
+        "tweet_and_comments_summary": "Claw-Coder is an AI agent that runs locally on your laptop and has access to powerful tools instead of configuring claude or codex to use a local model just use claw-coder. Why was claw-coder created? Answer: To solve the problem of privacy and security. When you use an agent that is configured with a cloud model like codex, cursor, Claude etc. You are not just getting the agent but you are giving up your codebase to just what we needed. another ai slop rag structure.",
+        "discussion_summary": "just what we needed. another ai slop rag structure.",
+        "why_it_matters": "**High signal if running local models.** Check hardware fit, latency, and eval quality before adopting.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tn355a",
+            "subreddit": "Ollama",
+            "post_url": "https://www.reddit.com/r/ollama/comments/1tn355a/i_built_a_powerful_rag_and_knowledge_graph_agent/",
+            "title": "I built a powerful RAG and knowledge graph agent that actually runs locally",
+            "author": "AI-research-byGB",
+            "created_utc": 1779698472.0,
+            "score": 1,
+            "comment_count": 1,
+            "selftext_full": "Claw-Coder is an AI agent that runs locally on your laptop and has access to powerful tools instead of configuring claude or codex to use a local model just use claw-coder.\n\nWhy was claw-coder created?\n\nAnswer: To solve the problem of privacy and security. When you use an agent that is configured with a cloud model like codex, cursor, Claude etc. You are not just getting the agent but you are giving up your codebase to train an llm which is a bit concerning and this reduces trust in the technology called AI but now another problem comes in performance when you switch to a local model that is not made for that workflow you lose performance, speed, and it becomes really a tradeoff so that's where claw-coder comes in it not only runs on your machine but all the code, rag, knowledge graph etc info is kept local making the privacy problem solved but now what about performance.\n\nPerformance:\n\nLocal llms are not built to do the cool things cloud models do because the model sizes are not even capable of building real apps like the 8b models, 13b, even 1b so the solution I came up with was to give these small models access to tools and features that make it actually work well in coding performance.\n\nSo what does claw-coder have access to:\n\nA knowledge graph:\n\nA knowledge graph is an interconnected network of real-world entities—such as people, places, concepts, or events—and the relationships between them. It organizes information into a readable web of meaning rather than static lists, allowing both humans and AI to understand context.\n\nSo how does this help an AI, it gives the AI the ability to tell relationships between code in your codebase, a cloned unknown repo and so forth this increases performance of local llms by far in coding tasks and reasoning abilities.\n\nRag:\n\nWe have ever had of RAG at some point but there is a catch the context window of local llms can't bear large codebases and repos so RAG isn't optional by storing vectors in a vector store you enable the AI to actually know what the code means and what each piece does to the other letting you load millions of lines into the vector store without blowing up the context window.\n\nTools:\n\nSo we have discussed the tiny but powerful ways to improve local llm performance but an agent to be an agent it needs to take action this is where exposing tools to the local llm helps so what tools have been implemented into claw-coder.\n\n1. search\\_tool\n\nThis enables the ai agent to actually search up to date info so that it doesnt hallucinate on info it doesn't know which is common in local llms.\n\n2. Docker execution\n\nThis agent has a special folder called workspace where it does its work without destroying your desktop but this is not enough to protect your desktop from being destroyed by cheap code so this is where docker comes in I have implemented docker containers of various languages where the agent can validate its own code this is powerful because all llms not only local ones generate code they can't even confirm works because they are just powerful predictors so enabling it to run its code can surprisingly increase the usefulness of the generated code because it now knows it works or not even for html and css the ai agent has been given a helpful vision llm to actually explain what rendered in the browser. This is the surprising power of giving an llm a docker execution tool.\n\nWe have looked at a lot of how claw-coder is different enabling local llms to actually do real work.\n\nBut how do you actually try it out yourself:\n\nClaw-coder is open-source because it doesn't stop people from trying it on real codebase and giving feedback to get started use:\n\n git clone https://github.com/gabriel-c70/claw-coder.git\n\n npm install -g\n\n claw setup and claw doctor\n\n claw login\n\n",
+            "selftext_excerpt": "Claw-Coder is an AI agent that runs locally on your laptop and has access to powerful tools instead of configuring claude or codex to use a local model just use claw-coder. Why was claw-coder created? Answer: To solve the problem of privacy",
+            "external_url": null,
+            "top_comments": [
+              {
+                "score": 4,
+                "author": "Technical_Ad_6106",
+                "body": "just what we needed. another ai slop rag structure.",
+                "permalink": "https://www.reddit.com/r/ollama/comments/1tn355a/i_built_a_powerful_rag_and_knowledge_graph_agent/onrbt5z/"
+              }
+            ],
+            "comment_context": "just what we needed. another ai slop rag structure."
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 1,
+          "reddit_comment_count": 1,
+          "captured_at_ist": "2026-05-25 18:03 IST"
+        },
+        "labels": [
+          "Reddit",
+          "Ollama"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "I built a powerful RAG and knowledge graph agent that actually runs locally",
+            "post_body": "Claw-Coder is an AI agent that runs locally on your laptop and has access to powerful tools instead of configuring claude or codex to use a local model just use claw-coder.\n\nWhy was claw-coder created?\n\nAnswer: To solve the problem of privacy and security. When you use an agent that is configured with a cloud model like codex, cursor, Claude etc. You are not just getting the agent but you are giving up your codebase to train an llm which is a bit concerning and this reduces trust in the technology called AI but now another problem comes in performance when you switch to a local model that is not made for that workflow you lose performance, speed, and it becomes really a tradeoff so that's where claw-coder comes in it not only runs on your machine but all the code, rag, knowledge graph etc info is kept local making the privacy problem solved but now what about performance.\n\nPerformance:\n\nLocal llms are not built to do the cool things cloud models do because the model sizes are not even capable of building real apps like the 8b models, 13b, even 1b so the solution I came up with was to give these small models access to tools and features that make it actually work well in coding performance.\n\nSo what does claw-coder have access to:\n\nA knowledge graph:\n\nA knowledge graph is an interconnected network of real-world entities—such as people, places, concepts, or events—and the relationships between them. It organizes information into a readable web of meaning rather than static lists, allowing both humans and AI to understand context.\n\nSo how does this help an AI, it gives the AI the ability to tell relationships between code in your codebase, a cloned unknown repo and so forth this increases performance of local llms by far in coding tasks and reasoning abilities.\n\nRag:\n\nWe have ever had of RAG at some point but there is a catch the context window of local llms can't bear large codebases and repos so RAG isn't optional by storing vectors in a vector store you enable the AI to actually know what the code means and what each piece does to the other letting you load millions of lines into the vector store without blowing up the context window.\n\nTools:\n\nSo we have discussed the tiny but powerful ways to improve local llm performance but an agent to be an agent it needs to take action this is where exposing tools to the local llm helps so what tools have been implemented into claw-coder.\n\n1. search\\_tool\n\nThis enables the ai agent to actually search up to date info so that it doesnt hallucinate on info it doesn't know which is common in local llms.\n\n2. Docker execution\n\nThis agent has a special folder called workspace where it does its work without destroying your desktop but this is not enough to protect your desktop from being destroyed by cheap code so this is where docker comes in I have implemented docker containers of various languages where the agent can validate its own code this is powerful because all llms not only local ones generate code they can't even confirm works because they are just powerful predictors so enabling it to run its code can surprisingly increase the usefulness of the generated code because it now knows it works or not even for html and css the ai agent has been given a helpful vision llm to actually explain what rendered in the browser. This is the surprising power of giving an llm a docker execution tool.\n\nWe have looked at a lot of how claw-coder is different enabling local llms to actually do real work.\n\nBut how do you actually try it out yourself:\n\nClaw-coder is open-source because it doesn't stop people from trying it on real codebase and giving feedback to get started use:\n\n git clone https://github.com/gabriel-c70/claw-coder.git\n\n npm install -g\n\n claw setup and claw doctor\n\n claw login\n\n",
+            "comments": [
+              {
+                "score": 4,
+                "author": "Technical_Ad_6106",
+                "body": "just what we needed. another ai slop rag structure.",
+                "permalink": "https://www.reddit.com/r/ollama/comments/1tn355a/i_built_a_powerful_rag_and_knowledge_graph_agent/onrbt5z/"
+              }
+            ],
+            "metadata": {
+              "subreddit": "Ollama",
+              "score": 1,
+              "comment_count": 1,
+              "created_utc": 1779698472.0,
+              "url": "https://www.reddit.com/r/ollama/comments/1tn355a/i_built_a_powerful_rag_and_knowledge_graph_agent/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "ChatGPT",
+        "sort": "hot",
+        "title": "Sure I guess",
+        "score": 1052,
+        "comments": 112,
+        "created_utc": 1779692413.0,
+        "url": "https://www.reddit.com/r/ChatGPT/comments/1tn19y6/sure_i_guess/",
+        "external_url": "https://i.redd.it/jcelali9f83h1.jpeg",
+        "selftext": "",
+        "selftext_full": "",
+        "author": "cheesy_panini",
+        "post_id": "1tn19y6",
+        "top_comments": [
+          {
+            "score": 152,
+            "author": "idontknow87654321",
+            "body": "https://preview.redd.it/nv6l0ge3j83h1.jpeg?width=1080&format=pjpg&auto=webp&s=2b72014deff37005f9c29f0a164053f5bbc8027b",
+            "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tn19y6/sure_i_guess/onqujdu/"
+          },
+          {
+            "score": 111,
+            "author": "Intelligent_Yak_8452",
+            "body": "r/technicallythetruth",
+            "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tn19y6/sure_i_guess/onqus0l/"
+          },
+          {
+            "score": 96,
+            "author": "TopConcentrate8484",
+            "body": "now make them kiss",
+            "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tn19y6/sure_i_guess/onquerh/"
+          },
+          {
+            "score": 48,
+            "author": "SensoriRumeMusic",
+            "body": "perfect time to pitch my new fun sub r/ai_art_battles https://preview.redd.it/jplijytr493h1.png?width=1341&format=png&auto=webp&s=d30f224fdd5e37bb5f29a0138ae536fd11d97125",
+            "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tn19y6/sure_i_guess/onr8e1l/"
+          },
+          {
+            "score": 38,
+            "author": "tokyo_g",
+            "body": "Jamie pull that up",
+            "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tn19y6/sure_i_guess/onqwd65/"
+          },
+          {
+            "score": 34,
+            "author": "VyvanseRamble",
+            "body": "a lot of wooshing going on this thread. OP wanted to know joe rogan's political views.",
+            "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tn19y6/sure_i_guess/onqvf5c/"
+          },
+          {
+            "score": 25,
+            "author": "swagoverlord1996",
+            "body": "actually though it does generate a photo when I specifically asked for text a annoying amount of the time recently. even when I tell it to stop doing that",
+            "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tn19y6/sure_i_guess/onqttov/"
+          },
+          {
+            "score": 1,
+            "author": "WithoutReason1729",
+            "body": "Your post is getting popular and we just featured it on our Discord! [Come check it out!](https://discord.gg/r-chatgpt-1050422060352024636) You've also been given a special flair for your contribution. We appreciate your post! *I am a bot and this action was performed automatically.*",
+            "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tn19y6/sure_i_guess/onr59t2/"
+          }
+        ],
+        "story_id": "rd_1tn19y6",
+        "heading": "Sure I guess",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/ChatGPT/comments/1tn19y6/sure_i_guess/",
+        "summary": "https://preview.redd.it/nv6l0ge3j83h1.jpeg?width=1080&format=pjpg&auto=webp&s=2b72014deff37005f9c29f0a164053f5bbc8027b r/technicallythetruth",
+        "tweet_and_comments_summary": "https://preview.redd.it/nv6l0ge3j83h1.jpeg?width=1080&format=pjpg&auto=webp&s=2b72014deff37005f9c29f0a164053f5bbc8027b r/technicallythetruth",
+        "discussion_summary": "https://preview.redd.it/nv6l0ge3j83h1.jpeg?width=1080&format=pjpg&auto=webp&s=2b72014deff37005f9c29f0a164053f5bbc8027b r/technicallythetruth",
+        "why_it_matters": "**Medium signal.** Worth monitoring, but don’t act on Reddit hype without checking primary sources.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tn19y6",
+            "subreddit": "ChatGPT",
+            "post_url": "https://www.reddit.com/r/ChatGPT/comments/1tn19y6/sure_i_guess/",
+            "title": "Sure I guess",
+            "author": "cheesy_panini",
+            "created_utc": 1779692413.0,
+            "score": 1052,
+            "comment_count": 112,
+            "selftext_full": null,
+            "selftext_excerpt": null,
+            "external_url": "https://i.redd.it/jcelali9f83h1.jpeg",
+            "top_comments": [
+              {
+                "score": 152,
+                "author": "idontknow87654321",
+                "body": "https://preview.redd.it/nv6l0ge3j83h1.jpeg?width=1080&format=pjpg&auto=webp&s=2b72014deff37005f9c29f0a164053f5bbc8027b",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tn19y6/sure_i_guess/onqujdu/"
+              },
+              {
+                "score": 111,
+                "author": "Intelligent_Yak_8452",
+                "body": "r/technicallythetruth",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tn19y6/sure_i_guess/onqus0l/"
+              },
+              {
+                "score": 96,
+                "author": "TopConcentrate8484",
+                "body": "now make them kiss",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tn19y6/sure_i_guess/onquerh/"
+              },
+              {
+                "score": 48,
+                "author": "SensoriRumeMusic",
+                "body": "perfect time to pitch my new fun sub r/ai_art_battles https://preview.redd.it/jplijytr493h1.png?width=1341&format=png&auto=webp&s=d30f224fdd5e37bb5f29a0138ae536fd11d97125",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tn19y6/sure_i_guess/onr8e1l/"
+              },
+              {
+                "score": 38,
+                "author": "tokyo_g",
+                "body": "Jamie pull that up",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tn19y6/sure_i_guess/onqwd65/"
+              },
+              {
+                "score": 34,
+                "author": "VyvanseRamble",
+                "body": "a lot of wooshing going on this thread. OP wanted to know joe rogan's political views.",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tn19y6/sure_i_guess/onqvf5c/"
+              },
+              {
+                "score": 25,
+                "author": "swagoverlord1996",
+                "body": "actually though it does generate a photo when I specifically asked for text a annoying amount of the time recently. even when I tell it to stop doing that",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tn19y6/sure_i_guess/onqttov/"
+              },
+              {
+                "score": 1,
+                "author": "WithoutReason1729",
+                "body": "Your post is getting popular and we just featured it on our Discord! [Come check it out!](https://discord.gg/r-chatgpt-1050422060352024636) You've also been given a special flair for your contribution. We appreciate your post! *I am a bot and this action was performed automatically.*",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tn19y6/sure_i_guess/onr59t2/"
+              }
+            ],
+            "comment_context": "https://preview.redd.it/nv6l0ge3j83h1.jpeg?width=1080&format=pjpg&auto=webp&s=2b72014deff37005f9c29f0a164053f5bbc8027b r/technicallythetruth"
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 1052,
+          "reddit_comment_count": 112,
+          "captured_at_ist": "2026-05-25 18:03 IST"
+        },
+        "labels": [
+          "Reddit"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "Sure I guess",
+            "post_body": null,
+            "comments": [
+              {
+                "score": 152,
+                "author": "idontknow87654321",
+                "body": "https://preview.redd.it/nv6l0ge3j83h1.jpeg?width=1080&format=pjpg&auto=webp&s=2b72014deff37005f9c29f0a164053f5bbc8027b",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tn19y6/sure_i_guess/onqujdu/"
+              },
+              {
+                "score": 111,
+                "author": "Intelligent_Yak_8452",
+                "body": "r/technicallythetruth",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tn19y6/sure_i_guess/onqus0l/"
+              },
+              {
+                "score": 96,
+                "author": "TopConcentrate8484",
+                "body": "now make them kiss",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tn19y6/sure_i_guess/onquerh/"
+              },
+              {
+                "score": 48,
+                "author": "SensoriRumeMusic",
+                "body": "perfect time to pitch my new fun sub r/ai_art_battles https://preview.redd.it/jplijytr493h1.png?width=1341&format=png&auto=webp&s=d30f224fdd5e37bb5f29a0138ae536fd11d97125",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tn19y6/sure_i_guess/onr8e1l/"
+              },
+              {
+                "score": 38,
+                "author": "tokyo_g",
+                "body": "Jamie pull that up",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tn19y6/sure_i_guess/onqwd65/"
+              },
+              {
+                "score": 34,
+                "author": "VyvanseRamble",
+                "body": "a lot of wooshing going on this thread. OP wanted to know joe rogan's political views.",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tn19y6/sure_i_guess/onqvf5c/"
+              },
+              {
+                "score": 25,
+                "author": "swagoverlord1996",
+                "body": "actually though it does generate a photo when I specifically asked for text a annoying amount of the time recently. even when I tell it to stop doing that",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tn19y6/sure_i_guess/onqttov/"
+              },
+              {
+                "score": 1,
+                "author": "WithoutReason1729",
+                "body": "Your post is getting popular and we just featured it on our Discord! [Come check it out!](https://discord.gg/r-chatgpt-1050422060352024636) You've also been given a special flair for your contribution. We appreciate your post! *I am a bot and this action was performed automatically.*",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tn19y6/sure_i_guess/onr59t2/"
+              }
+            ],
+            "metadata": {
+              "subreddit": "ChatGPT",
+              "score": 1052,
+              "comment_count": 112,
+              "created_utc": 1779692413.0,
+              "url": "https://www.reddit.com/r/ChatGPT/comments/1tn19y6/sure_i_guess/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "OpenAI",
+        "sort": "new",
+        "title": "GPT-5.5 tops the benchmarks but sits at #22 for actual usage - I built a live index that tracks both (open source)",
+        "score": 0,
+        "comments": 0,
+        "created_utc": 1779709253.0,
+        "url": "https://www.reddit.com/r/OpenAI/comments/1tn6m96/gpt55_tops_the_benchmarks_but_sits_at_22_for/",
+        "external_url": "https://v.redd.it/gppqp5d6t93h1",
+        "selftext": "I built AgentTape to rank models on more than just benchmarks - it blends benchmark performance with who's actually using and talking about a model, plus cost and speed. It scores every public model from public signals (GitHub, Hugging Face, OpenRouter, MCP registries, npm, PyPI, arXiv, Hacker News) refreshed hourly, plus the main benchmark leaderboards daily. Right now OpenAI sits at the top: GPT-5 is #1, with 5.2, 5.1 and 5.4 Mini rounding out the top 5, and 5.2-Codex and 5.4 just behind - 6 of the top 7. The only thing breaking the run is xAI's Grok 4.20, level on score at #2. GPT-5.5 is the clearest example - it sits at #22 overall, and the breakdown shows why: * Quality: 96.4 - 2nd high",
+        "selftext_full": "I built AgentTape to rank models on more than just benchmarks - it blends benchmark performance with who's actually using and talking about a model, plus cost and speed. It scores every public model from public signals (GitHub, Hugging Face, OpenRouter, MCP registries, npm, PyPI, arXiv, Hacker News) refreshed hourly, plus the main benchmark leaderboards daily.\n\nRight now OpenAI sits at the top: GPT-5 is #1, with 5.2, 5.1 and 5.4 Mini rounding out the top 5, and 5.2-Codex and 5.4 just behind - 6 of the top 7. The only thing breaking the run is xAI's Grok 4.20, level on score at #2.\n\nGPT-5.5 is the clearest example - it sits at #22 overall, and the breakdown shows why:\n\n* Quality: 96.4 - 2nd highest on the whole board, only pipped by Gemini 3.1 Pro Preview (97.2). On benchmarks alone it'd be near the top.\n* Adoption: 15 and Efficiency: 36 - both low. New release, steep price, so hardly anyone's using it day-to-day yet.\n* Biggest 24h climber on the board (+6) - so that's starting to shift.\n\nA benchmark-only board would put GPT-5.5 near #1 (second only to Gemini 3.1 Pro). That gap between topping the benchmarks and actually getting used is the whole reason I built this.\n\nEarly days and I'm still tuning the methodology, so I'd love your thoughts - does weighting adoption alongside benchmarks match how you'd rank the GPT line-up, or would you trust the raw benchmark order?",
+        "author": "Celestialien",
+        "post_id": "1tn6m96",
+        "top_comments": [],
+        "story_id": "rd_1tn6m96",
+        "heading": "GPT-5.5 tops the benchmarks but sits at #22 for actual usage - I built a live index that tracks both (open source)",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/OpenAI/comments/1tn6m96/gpt55_tops_the_benchmarks_but_sits_at_22_for/",
+        "summary": "I built AgentTape to rank models on more than just benchmarks - it blends benchmark performance with who's actually using and talking about a model, plus cost and speed. It scores every public model from public signals (GitHub, Hugging Face, OpenRouter, MCP registries, npm, PyPI, arXiv, Hacker News) refreshed hourly, plus the main benchmark leaderboards daily. Right now OpenAI sits at the top: GPT-5 is #1, with 5.2,",
+        "tweet_and_comments_summary": "I built AgentTape to rank models on more than just benchmarks - it blends benchmark performance with who's actually using and talking about a model, plus cost and speed. It scores every public model from public signals (GitHub, Hugging Face, OpenRouter, MCP registries, npm, PyPI, arXiv, Hacker News) refreshed hourly, plus the main benchmark leaderboards daily. Right now OpenAI sits at the top: GPT-5 is #1, with 5.2,",
+        "discussion_summary": null,
+        "why_it_matters": "**High signal if running local models.** Check hardware fit, latency, and eval quality before adopting.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tn6m96",
+            "subreddit": "OpenAI",
+            "post_url": "https://www.reddit.com/r/OpenAI/comments/1tn6m96/gpt55_tops_the_benchmarks_but_sits_at_22_for/",
+            "title": "GPT-5.5 tops the benchmarks but sits at #22 for actual usage - I built a live index that tracks both (open source)",
+            "author": "Celestialien",
+            "created_utc": 1779709253.0,
+            "score": 0,
+            "comment_count": 0,
+            "selftext_full": "I built AgentTape to rank models on more than just benchmarks - it blends benchmark performance with who's actually using and talking about a model, plus cost and speed. It scores every public model from public signals (GitHub, Hugging Face, OpenRouter, MCP registries, npm, PyPI, arXiv, Hacker News) refreshed hourly, plus the main benchmark leaderboards daily.\n\nRight now OpenAI sits at the top: GPT-5 is #1, with 5.2, 5.1 and 5.4 Mini rounding out the top 5, and 5.2-Codex and 5.4 just behind - 6 of the top 7. The only thing breaking the run is xAI's Grok 4.20, level on score at #2.\n\nGPT-5.5 is the clearest example - it sits at #22 overall, and the breakdown shows why:\n\n* Quality: 96.4 - 2nd highest on the whole board, only pipped by Gemini 3.1 Pro Preview (97.2). On benchmarks alone it'd be near the top.\n* Adoption: 15 and Efficiency: 36 - both low. New release, steep price, so hardly anyone's using it day-to-day yet.\n* Biggest 24h climber on the board (+6) - so that's starting to shift.\n\nA benchmark-only board would put GPT-5.5 near #1 (second only to Gemini 3.1 Pro). That gap between topping the benchmarks and actually getting used is the whole reason I built this.\n\nEarly days and I'm still tuning the methodology, so I'd love your thoughts - does weighting adoption alongside benchmarks match how you'd rank the GPT line-up, or would you trust the raw benchmark order?",
+            "selftext_excerpt": "I built AgentTape to rank models on more than just benchmarks - it blends benchmark performance with who's actually using and talking about a model, plus cost and speed. It scores every public model from public signals (GitHub, Hugging Face",
+            "external_url": "https://v.redd.it/gppqp5d6t93h1",
+            "top_comments": [],
+            "comment_context": null
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 0,
+          "reddit_comment_count": 0,
+          "captured_at_ist": "2026-05-25 18:03 IST"
+        },
+        "labels": [
+          "Reddit",
+          "OpenAI",
+          "Comments missing"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "GPT-5.5 tops the benchmarks but sits at #22 for actual usage - I built a live index that tracks both (open source)",
+            "post_body": "I built AgentTape to rank models on more than just benchmarks - it blends benchmark performance with who's actually using and talking about a model, plus cost and speed. It scores every public model from public signals (GitHub, Hugging Face, OpenRouter, MCP registries, npm, PyPI, arXiv, Hacker News) refreshed hourly, plus the main benchmark leaderboards daily.\n\nRight now OpenAI sits at the top: GPT-5 is #1, with 5.2, 5.1 and 5.4 Mini rounding out the top 5, and 5.2-Codex and 5.4 just behind - 6 of the top 7. The only thing breaking the run is xAI's Grok 4.20, level on score at #2.\n\nGPT-5.5 is the clearest example - it sits at #22 overall, and the breakdown shows why:\n\n* Quality: 96.4 - 2nd highest on the whole board, only pipped by Gemini 3.1 Pro Preview (97.2). On benchmarks alone it'd be near the top.\n* Adoption: 15 and Efficiency: 36 - both low. New release, steep price, so hardly anyone's using it day-to-day yet.\n* Biggest 24h climber on the board (+6) - so that's starting to shift.\n\nA benchmark-only board would put GPT-5.5 near #1 (second only to Gemini 3.1 Pro). That gap between topping the benchmarks and actually getting used is the whole reason I built this.\n\nEarly days and I'm still tuning the methodology, so I'd love your thoughts - does weighting adoption alongside benchmarks match how you'd rank the GPT line-up, or would you trust the raw benchmark order?",
+            "comments": [],
+            "metadata": {
+              "subreddit": "OpenAI",
+              "score": 0,
+              "comment_count": 0,
+              "created_utc": 1779709253.0,
+              "url": "https://www.reddit.com/r/OpenAI/comments/1tn6m96/gpt55_tops_the_benchmarks_but_sits_at_22_for/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "OpenAI",
+        "sort": "hot",
+        "title": "OpenAI is paying people in NYC to install 360-degree cameras in their homes that record everything. Vacuuming, washing dishes, cooking, etc.",
+        "score": 522,
+        "comments": 92,
+        "created_utc": 1779690328.0,
+        "url": "https://www.reddit.com/r/OpenAI/comments/1tn0m8k/openai_is_paying_people_in_nyc_to_install/",
+        "external_url": "https://i.redd.it/ul2r26m1983h1.png",
+        "selftext": "",
+        "selftext_full": "",
+        "author": "Confident_Salt_8108",
+        "post_id": "1tn0m8k",
+        "top_comments": [],
+        "story_id": "rd_1tn0m8k",
+        "heading": "OpenAI is paying people in NYC to install 360-degree cameras in their homes that record everything. Vacuuming, washing dishes, cooking, etc.",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/OpenAI/comments/1tn0m8k/openai_is_paying_people_in_nyc_to_install/",
+        "summary": "Discussion is mostly in the title/comments; open the source for details.",
+        "tweet_and_comments_summary": "Discussion is mostly in the title/comments; open the source for details.",
+        "discussion_summary": null,
+        "why_it_matters": "**Medium signal.** Worth monitoring, but don’t act on Reddit hype without checking primary sources.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tn0m8k",
+            "subreddit": "OpenAI",
+            "post_url": "https://www.reddit.com/r/OpenAI/comments/1tn0m8k/openai_is_paying_people_in_nyc_to_install/",
+            "title": "OpenAI is paying people in NYC to install 360-degree cameras in their homes that record everything. Vacuuming, washing dishes, cooking, etc.",
+            "author": "Confident_Salt_8108",
+            "created_utc": 1779690328.0,
+            "score": 522,
+            "comment_count": 92,
+            "selftext_full": null,
+            "selftext_excerpt": null,
+            "external_url": "https://i.redd.it/ul2r26m1983h1.png",
+            "top_comments": [],
+            "comment_context": null
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 522,
+          "reddit_comment_count": 92,
+          "captured_at_ist": "2026-05-25 18:03 IST"
+        },
+        "labels": [
+          "Reddit",
+          "OpenAI",
+          "Comments missing"
+        ],
+        "expand": {
+          "available": false,
+          "label_collapsed": null,
+          "label_expanded": null,
+          "default_open": false,
+          "reason_unavailable": "No full source text or comments captured"
+        },
+        "full_source_content": {
+          "available": false,
+          "reddit": {
+            "post_title": "OpenAI is paying people in NYC to install 360-degree cameras in their homes that record everything. Vacuuming, washing dishes, cooking, etc.",
+            "post_body": null,
+            "comments": [],
+            "metadata": {
+              "subreddit": "OpenAI",
+              "score": 522,
+              "comment_count": 92,
+              "created_utc": 1779690328.0,
+              "url": "https://www.reddit.com/r/OpenAI/comments/1tn0m8k/openai_is_paying_people_in_nyc_to_install/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "ChatGPT",
+        "sort": "top",
+        "title": "Average store customer",
+        "score": 187,
+        "comments": 262,
+        "created_utc": 1779640486.0,
+        "url": "https://www.reddit.com/r/ChatGPT/comments/1tmh197/average_store_customer/",
+        "external_url": "https://i.redd.it/onryzsyu443h1.jpeg",
+        "selftext": "Caricature image showing Average Walmart customer Average target customer Average Whole Foods customer Average Trader Joe’s customer. Image should say which one is whom. All 4 on same image.",
+        "selftext_full": "Caricature image showing \nAverage Walmart customer \nAverage target customer \nAverage Whole Foods customer \nAverage Trader Joe’s customer. \n\nImage should say which one is whom. All 4 on same image. ",
+        "author": "carmichaelcar",
+        "post_id": "1tmh197",
+        "top_comments": [],
+        "story_id": "rd_1tmh197",
+        "heading": "Average store customer",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/ChatGPT/comments/1tmh197/average_store_customer/",
+        "summary": "Caricature image showing Average Walmart customer Average target customer Average Whole Foods customer Average Trader Joe’s customer. Image should say which one is whom. All 4 on same image.",
+        "tweet_and_comments_summary": "Caricature image showing Average Walmart customer Average target customer Average Whole Foods customer Average Trader Joe’s customer. Image should say which one is whom. All 4 on same image.",
+        "discussion_summary": null,
+        "why_it_matters": "**Medium signal.** Worth monitoring, but don’t act on Reddit hype without checking primary sources.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tmh197",
+            "subreddit": "ChatGPT",
+            "post_url": "https://www.reddit.com/r/ChatGPT/comments/1tmh197/average_store_customer/",
+            "title": "Average store customer",
+            "author": "carmichaelcar",
+            "created_utc": 1779640486.0,
+            "score": 187,
+            "comment_count": 262,
+            "selftext_full": "Caricature image showing \nAverage Walmart customer \nAverage target customer \nAverage Whole Foods customer \nAverage Trader Joe’s customer. \n\nImage should say which one is whom. All 4 on same image. ",
+            "selftext_excerpt": "Caricature image showing Average Walmart customer Average target customer Average Whole Foods customer Average Trader Joe’s customer. Image should say which one is whom. All 4 on same image.",
+            "external_url": "https://i.redd.it/onryzsyu443h1.jpeg",
+            "top_comments": [],
+            "comment_context": null
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 187,
+          "reddit_comment_count": 262,
+          "captured_at_ist": "2026-05-25 18:03 IST"
+        },
+        "labels": [
+          "Reddit",
+          "Comments missing"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "Average store customer",
+            "post_body": "Caricature image showing \nAverage Walmart customer \nAverage target customer \nAverage Whole Foods customer \nAverage Trader Joe’s customer. \n\nImage should say which one is whom. All 4 on same image. ",
+            "comments": [],
+            "metadata": {
+              "subreddit": "ChatGPT",
+              "score": 187,
+              "comment_count": 262,
+              "created_utc": 1779640486.0,
+              "url": "https://www.reddit.com/r/ChatGPT/comments/1tmh197/average_store_customer/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "singularity",
+        "sort": "hot",
+        "title": "Inaudible sounds to humans can be hidden in YouTube videos, podcasts, or music and used to secretly trigger AI voice assistants into carrying out unauthorized commands without the user noticing, exposing a new class of “auditory prompt inje",
+        "score": 924,
+        "comments": 72,
+        "created_utc": 1779626688.0,
+        "url": "https://www.reddit.com/r/singularity/comments/1tmb7mz/inaudible_sounds_to_humans_can_be_hidden_in/",
+        "external_url": "https://cybernews.com/security/ai-voice-bots-hidden-audio-hijack-attacks/",
+        "selftext": "",
+        "selftext_full": "",
+        "author": "Distinct-Question-16",
+        "post_id": "1tmb7mz",
+        "top_comments": [],
+        "story_id": "rd_1tmb7mz",
+        "heading": "Inaudible sounds to humans can be hidden in YouTube videos, podcasts, or music and used to secretly trigger AI voice assistants into carrying out unauthorized commands without the user noticing, exposing a new class of “auditory prompt inje",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/singularity/comments/1tmb7mz/inaudible_sounds_to_humans_can_be_hidden_in/",
+        "summary": "Discussion is mostly in the title/comments; open the source for details.",
+        "tweet_and_comments_summary": "Discussion is mostly in the title/comments; open the source for details.",
+        "discussion_summary": null,
+        "why_it_matters": "**Medium signal.** Worth monitoring, but don’t act on Reddit hype without checking primary sources.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tmb7mz",
+            "subreddit": "singularity",
+            "post_url": "https://www.reddit.com/r/singularity/comments/1tmb7mz/inaudible_sounds_to_humans_can_be_hidden_in/",
+            "title": "Inaudible sounds to humans can be hidden in YouTube videos, podcasts, or music and used to secretly trigger AI voice assistants into carrying out unauthorized commands without the user noticing, exposing a new class of “auditory prompt inje",
+            "author": "Distinct-Question-16",
+            "created_utc": 1779626688.0,
+            "score": 924,
+            "comment_count": 72,
+            "selftext_full": null,
+            "selftext_excerpt": null,
+            "external_url": "https://cybernews.com/security/ai-voice-bots-hidden-audio-hijack-attacks/",
+            "top_comments": [],
+            "comment_context": null
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 924,
+          "reddit_comment_count": 72,
+          "captured_at_ist": "2026-05-25 18:03 IST"
+        },
+        "labels": [
+          "Reddit",
+          "Comments missing"
+        ],
+        "expand": {
+          "available": false,
+          "label_collapsed": null,
+          "label_expanded": null,
+          "default_open": false,
+          "reason_unavailable": "No full source text or comments captured"
+        },
+        "full_source_content": {
+          "available": false,
+          "reddit": {
+            "post_title": "Inaudible sounds to humans can be hidden in YouTube videos, podcasts, or music and used to secretly trigger AI voice assistants into carrying out unauthorized commands without the user noticing, exposing a new class of “auditory prompt inje",
+            "post_body": null,
+            "comments": [],
+            "metadata": {
+              "subreddit": "singularity",
+              "score": 924,
+              "comment_count": 72,
+              "created_utc": 1779626688.0,
+              "url": "https://www.reddit.com/r/singularity/comments/1tmb7mz/inaudible_sounds_to_humans_can_be_hidden_in/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "ClaudeCode",
+        "sort": "new",
+        "title": "Stop Claude from wasting tokens exploring your codebase [archmcp]",
+        "score": 1,
+        "comments": 1,
+        "created_utc": 1779709264.0,
+        "url": "https://www.reddit.com/r/ClaudeCode/comments/1tn6mdt/stop_claude_from_wasting_tokens_exploring_your/",
+        "external_url": null,
+        "selftext": "* **Author:** Dejo * **Repo:** [archmcp on GitHub](https://github.com/dejo1307/archmcp) * **Cost:** Free AI coding agents spend a surprising amount of time: * crawling files * guessing architecture * tracing dependencies * rebuilding context every session So my friend built **archmcp**, a local MCP server that generates a compact architectural snapshot of a repository before the agent reads a single file. Instead of starting blind, Claude Code gets structured context about: * modules * symbols * dependencies * routes * architectural patterns It’s giving AI agents enough architectural awareness to stop wasting tokens and time rediscovering the codebase from scratch. It also supports multi-rep",
+        "selftext_full": "* **Author:** Dejo\n* **Repo:** [archmcp on GitHub](https://github.com/dejo1307/archmcp)\n* **Cost:** Free\n\nAI coding agents spend a surprising amount of time:\n\n* crawling files\n* guessing architecture\n* tracing dependencies\n* rebuilding context every session\n\nSo my friend built **archmcp**, a local MCP server that generates a compact architectural snapshot of a repository before the agent reads a single file.\n\nInstead of starting blind, Claude Code gets structured context about:\n\n* modules\n* symbols\n* dependencies\n* routes\n* architectural patterns\n\nIt’s giving AI agents enough architectural awareness to stop wasting tokens and time rediscovering the codebase from scratch.\n\nIt also supports multi-repo setups, so agents can reason across systems like:\n\n* Go backend\n* TypeScript frontend\n* Python FastAPI services\n* mobile apps\n* shared libraries\n\nWould love feedback from people who give it a go.",
+        "author": "yellow-llama1",
+        "post_id": "1tn6mdt",
+        "top_comments": [],
+        "story_id": "rd_1tn6mdt",
+        "heading": "Stop Claude from wasting tokens exploring your codebase [archmcp]",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/ClaudeCode/comments/1tn6mdt/stop_claude_from_wasting_tokens_exploring_your/",
+        "summary": "* **Author:** Dejo * **Repo:** [archmcp on GitHub](https://github.com/dejo1307/archmcp) * **Cost:** Free AI coding agents spend a surprising amount of time: * crawling files * guessing architecture * tracing dependencies * rebuilding context every session So my friend built **archmcp**, a local MCP server that generates a compact architectural snapshot of a repository before the agent reads a single file. Instead of",
+        "tweet_and_comments_summary": "* **Author:** Dejo * **Repo:** [archmcp on GitHub](https://github.com/dejo1307/archmcp) * **Cost:** Free AI coding agents spend a surprising amount of time: * crawling files * guessing architecture * tracing dependencies * rebuilding context every session So my friend built **archmcp**, a local MCP server that generates a compact architectural snapshot of a repository before the agent reads a single file. Instead of",
+        "discussion_summary": null,
+        "why_it_matters": "**High signal if running local models.** Check hardware fit, latency, and eval quality before adopting.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tn6mdt",
+            "subreddit": "ClaudeCode",
+            "post_url": "https://www.reddit.com/r/ClaudeCode/comments/1tn6mdt/stop_claude_from_wasting_tokens_exploring_your/",
+            "title": "Stop Claude from wasting tokens exploring your codebase [archmcp]",
+            "author": "yellow-llama1",
+            "created_utc": 1779709264.0,
+            "score": 1,
+            "comment_count": 1,
+            "selftext_full": "* **Author:** Dejo\n* **Repo:** [archmcp on GitHub](https://github.com/dejo1307/archmcp)\n* **Cost:** Free\n\nAI coding agents spend a surprising amount of time:\n\n* crawling files\n* guessing architecture\n* tracing dependencies\n* rebuilding context every session\n\nSo my friend built **archmcp**, a local MCP server that generates a compact architectural snapshot of a repository before the agent reads a single file.\n\nInstead of starting blind, Claude Code gets structured context about:\n\n* modules\n* symbols\n* dependencies\n* routes\n* architectural patterns\n\nIt’s giving AI agents enough architectural awareness to stop wasting tokens and time rediscovering the codebase from scratch.\n\nIt also supports multi-repo setups, so agents can reason across systems like:\n\n* Go backend\n* TypeScript frontend\n* Python FastAPI services\n* mobile apps\n* shared libraries\n\nWould love feedback from people who give it a go.",
+            "selftext_excerpt": "* **Author:** Dejo * **Repo:** [archmcp on GitHub](https://github.com/dejo1307/archmcp) * **Cost:** Free AI coding agents spend a surprising amount of time: * crawling files * guessing architecture * tracing dependencies * rebuilding contex",
+            "external_url": null,
+            "top_comments": [],
+            "comment_context": null
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 1,
+          "reddit_comment_count": 1,
+          "captured_at_ist": "2026-05-25 18:03 IST"
+        },
+        "labels": [
+          "Reddit",
+          "ClaudeCode",
+          "Comments missing"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "Stop Claude from wasting tokens exploring your codebase [archmcp]",
+            "post_body": "* **Author:** Dejo\n* **Repo:** [archmcp on GitHub](https://github.com/dejo1307/archmcp)\n* **Cost:** Free\n\nAI coding agents spend a surprising amount of time:\n\n* crawling files\n* guessing architecture\n* tracing dependencies\n* rebuilding context every session\n\nSo my friend built **archmcp**, a local MCP server that generates a compact architectural snapshot of a repository before the agent reads a single file.\n\nInstead of starting blind, Claude Code gets structured context about:\n\n* modules\n* symbols\n* dependencies\n* routes\n* architectural patterns\n\nIt’s giving AI agents enough architectural awareness to stop wasting tokens and time rediscovering the codebase from scratch.\n\nIt also supports multi-repo setups, so agents can reason across systems like:\n\n* Go backend\n* TypeScript frontend\n* Python FastAPI services\n* mobile apps\n* shared libraries\n\nWould love feedback from people who give it a go.",
+            "comments": [],
+            "metadata": {
+              "subreddit": "ClaudeCode",
+              "score": 1,
+              "comment_count": 1,
+              "created_utc": 1779709264.0,
+              "url": "https://www.reddit.com/r/ClaudeCode/comments/1tn6mdt/stop_claude_from_wasting_tokens_exploring_your/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "ClaudeCode",
+        "sort": "hot",
+        "title": "Can someone explain the real difference between Hooks, Skills, Plugins, SKILL.md, CLAUDE.md and agents.md in Claude Code?",
+        "score": 424,
+        "comments": 68,
+        "created_utc": 1779661598.0,
+        "url": "https://www.reddit.com/r/ClaudeCode/comments/1tmq9kz/can_someone_explain_the_real_difference_between/",
+        "external_url": null,
+        "selftext": "I keep seeing these terms thrown around in tutorials and videos, but I've never seen anyone give a concrete example that makes the difference actually click. Everyone says: • \"just create a skill for that\" \"use a hook here\" \"install the plugin\" \"put it in your CLAUDE.md\" But when I dig deeper, the explanations are always vague or too theoretical. Same goes for the markdown files - I see people mentioning CLAUDE. md, SKILL.md, and agents. md like they're obvious, but no one explains: • What actually goes in each one? Are they just documentation, or do they actively change how Claude behaves? • When does Claude even read them? What I'm looking for is something like: \"If you're thinking X, that",
+        "selftext_full": "I keep seeing these terms thrown around in tutorials and videos, but I've never seen anyone give a concrete example that makes the difference actually click.\n\nEveryone says:\n\n• \"just create a skill for that\"\n\n\"use a hook here\"\n\n\"install the plugin\"\n\n\"put it in your CLAUDE.md\"\n\nBut when I dig deeper, the explanations are always vague or too theoretical.\n\nSame goes for the markdown files - I see people mentioning CLAUDE. md, SKILL.md, and agents. md like they're obvious, but no one explains:\n\n• What actually goes in each one?\n\nAre they just documentation, or do they actively change how Claude behaves?\n\n• When does Claude even read them?\n\nWhat I'm looking for is something like:\n\n\"If you're thinking X, that's probably a Hook. If you're thinking Y, that's a Skill. If you need Z, that's what CLAUDE.md is for.\"\n\nReal-world examples would be hugely appreciated.",
+        "author": "eaiarthur_",
+        "post_id": "1tmq9kz",
+        "top_comments": [],
+        "story_id": "rd_1tmq9kz",
+        "heading": "Can someone explain the real difference between Hooks, Skills, Plugins, SKILL.md, CLAUDE.md and agents.md in Claude Code?",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/ClaudeCode/comments/1tmq9kz/can_someone_explain_the_real_difference_between/",
+        "summary": "I keep seeing these terms thrown around in tutorials and videos, but I've never seen anyone give a concrete example that makes the difference actually click. Everyone says: • \"just create a skill for that\" \"use a hook here\" \"install the plugin\" \"put it in your CLAUDE.md\" But when I dig deeper, the explanations are always vague or too theoretical. Same goes for the markdown files - I see people mentioning CLAUDE. md,",
+        "tweet_and_comments_summary": "I keep seeing these terms thrown around in tutorials and videos, but I've never seen anyone give a concrete example that makes the difference actually click. Everyone says: • \"just create a skill for that\" \"use a hook here\" \"install the plugin\" \"put it in your CLAUDE.md\" But when I dig deeper, the explanations are always vague or too theoretical. Same goes for the markdown files - I see people mentioning CLAUDE. md,",
+        "discussion_summary": null,
+        "why_it_matters": "**High signal for coding workflow.** Compare against your Hermes/Codex/Claude usage before changing tools or architecture.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tmq9kz",
+            "subreddit": "ClaudeCode",
+            "post_url": "https://www.reddit.com/r/ClaudeCode/comments/1tmq9kz/can_someone_explain_the_real_difference_between/",
+            "title": "Can someone explain the real difference between Hooks, Skills, Plugins, SKILL.md, CLAUDE.md and agents.md in Claude Code?",
+            "author": "eaiarthur_",
+            "created_utc": 1779661598.0,
+            "score": 424,
+            "comment_count": 68,
+            "selftext_full": "I keep seeing these terms thrown around in tutorials and videos, but I've never seen anyone give a concrete example that makes the difference actually click.\n\nEveryone says:\n\n• \"just create a skill for that\"\n\n\"use a hook here\"\n\n\"install the plugin\"\n\n\"put it in your CLAUDE.md\"\n\nBut when I dig deeper, the explanations are always vague or too theoretical.\n\nSame goes for the markdown files - I see people mentioning CLAUDE. md, SKILL.md, and agents. md like they're obvious, but no one explains:\n\n• What actually goes in each one?\n\nAre they just documentation, or do they actively change how Claude behaves?\n\n• When does Claude even read them?\n\nWhat I'm looking for is something like:\n\n\"If you're thinking X, that's probably a Hook. If you're thinking Y, that's a Skill. If you need Z, that's what CLAUDE.md is for.\"\n\nReal-world examples would be hugely appreciated.",
+            "selftext_excerpt": "I keep seeing these terms thrown around in tutorials and videos, but I've never seen anyone give a concrete example that makes the difference actually click. Everyone says: • \"just create a skill for that\" \"use a hook here\" \"install the plu",
+            "external_url": null,
+            "top_comments": [],
+            "comment_context": null
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 424,
+          "reddit_comment_count": 68,
+          "captured_at_ist": "2026-05-25 18:03 IST"
+        },
+        "labels": [
+          "Reddit",
+          "ClaudeCode",
+          "Comments missing"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "Can someone explain the real difference between Hooks, Skills, Plugins, SKILL.md, CLAUDE.md and agents.md in Claude Code?",
+            "post_body": "I keep seeing these terms thrown around in tutorials and videos, but I've never seen anyone give a concrete example that makes the difference actually click.\n\nEveryone says:\n\n• \"just create a skill for that\"\n\n\"use a hook here\"\n\n\"install the plugin\"\n\n\"put it in your CLAUDE.md\"\n\nBut when I dig deeper, the explanations are always vague or too theoretical.\n\nSame goes for the markdown files - I see people mentioning CLAUDE. md, SKILL.md, and agents. md like they're obvious, but no one explains:\n\n• What actually goes in each one?\n\nAre they just documentation, or do they actively change how Claude behaves?\n\n• When does Claude even read them?\n\nWhat I'm looking for is something like:\n\n\"If you're thinking X, that's probably a Hook. If you're thinking Y, that's a Skill. If you need Z, that's what CLAUDE.md is for.\"\n\nReal-world examples would be hugely appreciated.",
+            "comments": [],
+            "metadata": {
+              "subreddit": "ClaudeCode",
+              "score": 424,
+              "comment_count": 68,
+              "created_utc": 1779661598.0,
+              "url": "https://www.reddit.com/r/ClaudeCode/comments/1tmq9kz/can_someone_explain_the_real_difference_between/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "singularity",
+        "sort": "hot",
+        "title": "reconstructing different angles from live footage",
+        "score": 884,
+        "comments": 110,
+        "created_utc": 1779681583.0,
+        "url": "https://www.reddit.com/r/singularity/comments/1tmxpbj/reconstructing_different_angles_from_live_footage/",
+        "external_url": "https://v.redd.it/0c4w5hcti73h1",
+        "selftext": "damn i just found this out today - 4D Gaussian Splating that converts flat images into three-dimensional spatial data.",
+        "selftext_full": "damn i just found this out today - 4D Gaussian Splating that converts flat images into three-dimensional spatial data.",
+        "author": "keemalexis",
+        "post_id": "1tmxpbj",
+        "top_comments": [],
+        "story_id": "rd_1tmxpbj",
+        "heading": "reconstructing different angles from live footage",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/singularity/comments/1tmxpbj/reconstructing_different_angles_from_live_footage/",
+        "summary": "damn i just found this out today - 4D Gaussian Splating that converts flat images into three-dimensional spatial data.",
+        "tweet_and_comments_summary": "damn i just found this out today - 4D Gaussian Splating that converts flat images into three-dimensional spatial data.",
+        "discussion_summary": null,
+        "why_it_matters": "**Medium signal.** Worth monitoring, but don’t act on Reddit hype without checking primary sources.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tmxpbj",
+            "subreddit": "singularity",
+            "post_url": "https://www.reddit.com/r/singularity/comments/1tmxpbj/reconstructing_different_angles_from_live_footage/",
+            "title": "reconstructing different angles from live footage",
+            "author": "keemalexis",
+            "created_utc": 1779681583.0,
+            "score": 884,
+            "comment_count": 110,
+            "selftext_full": "damn i just found this out today - 4D Gaussian Splating that converts flat images into three-dimensional spatial data.",
+            "selftext_excerpt": "damn i just found this out today - 4D Gaussian Splating that converts flat images into three-dimensional spatial data.",
+            "external_url": "https://v.redd.it/0c4w5hcti73h1",
+            "top_comments": [],
+            "comment_context": null
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 884,
+          "reddit_comment_count": 110,
+          "captured_at_ist": "2026-05-25 18:03 IST"
+        },
+        "labels": [
+          "Reddit",
+          "Comments missing"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "reconstructing different angles from live footage",
+            "post_body": "damn i just found this out today - 4D Gaussian Splating that converts flat images into three-dimensional spatial data.",
+            "comments": [],
+            "metadata": {
+              "subreddit": "singularity",
+              "score": 884,
+              "comment_count": 110,
+              "created_utc": 1779681583.0,
+              "url": "https://www.reddit.com/r/singularity/comments/1tmxpbj/reconstructing_different_angles_from_live_footage/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "ChatGPT",
+        "sort": "top",
+        "title": "oow",
+        "score": 867,
+        "comments": 110,
+        "created_utc": 1779631546.0,
+        "url": "https://www.reddit.com/r/ChatGPT/comments/1tmd4uq/oow/",
+        "external_url": "https://i.imgur.com/sGgILnM.jpeg",
+        "selftext": "",
+        "selftext_full": "",
+        "author": "spaceguydudeman",
+        "post_id": "1tmd4uq",
+        "top_comments": [],
+        "story_id": "rd_1tmd4uq",
+        "heading": "oow",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/ChatGPT/comments/1tmd4uq/oow/",
+        "summary": "Discussion is mostly in the title/comments; open the source for details.",
+        "tweet_and_comments_summary": "Discussion is mostly in the title/comments; open the source for details.",
+        "discussion_summary": null,
+        "why_it_matters": "**Medium signal.** Worth monitoring, but don’t act on Reddit hype without checking primary sources.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tmd4uq",
+            "subreddit": "ChatGPT",
+            "post_url": "https://www.reddit.com/r/ChatGPT/comments/1tmd4uq/oow/",
+            "title": "oow",
+            "author": "spaceguydudeman",
+            "created_utc": 1779631546.0,
+            "score": 867,
+            "comment_count": 110,
+            "selftext_full": null,
+            "selftext_excerpt": null,
+            "external_url": "https://i.imgur.com/sGgILnM.jpeg",
+            "top_comments": [],
+            "comment_context": null
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 867,
+          "reddit_comment_count": 110,
+          "captured_at_ist": "2026-05-25 18:03 IST"
+        },
+        "labels": [
+          "Reddit",
+          "Comments missing"
+        ],
+        "expand": {
+          "available": false,
+          "label_collapsed": null,
+          "label_expanded": null,
+          "default_open": false,
+          "reason_unavailable": "No full source text or comments captured"
+        },
+        "full_source_content": {
+          "available": false,
+          "reddit": {
+            "post_title": "oow",
+            "post_body": null,
+            "comments": [],
+            "metadata": {
+              "subreddit": "ChatGPT",
+              "score": 867,
+              "comment_count": 110,
+              "created_utc": 1779631546.0,
+              "url": "https://www.reddit.com/r/ChatGPT/comments/1tmd4uq/oow/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "ClaudeAI",
+        "sort": "new",
+        "title": "I measured my Claude Code MCP stack on two axes — byte savings AND cache-friendliness. My \"best\" byte-saver was defeating Anthropic's prompt cache (counter-example + open benchmark)",
+        "score": 1,
+        "comments": 4,
+        "created_utc": 1779708477.0,
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1tn6cey/i_measured_my_claude_code_mcp_stack_on_two_axes/",
+        "external_url": null,
+        "selftext": "**TL;DR** — Single-axis benchmarks for MCPs, compressors, and retrieval layers can recommend a system that's *strictly worse* in production. The missing axis: **cache-friendliness** — whether the same input produces byte-identical bytes across runs, so Anthropic's prompt cache hits. In my coding-agent stack, my biggest byte-saver (retrieval MCP, 60–70% reduction) was defeating the 5-min TTL prompt cache on every call. Two runs of the same query produced different bytes because of `rg --files-with-matches` output order leaking through a `Map` insertion sequence into the final context. The fix was 2 lines: sort the rg hits before slicing, sort the `Map` entries by path. Byte savings unchanged,",
+        "selftext_full": "**TL;DR** — Single-axis benchmarks for MCPs, compressors, and retrieval layers can recommend a system that's *strictly worse* in production. The missing axis: **cache-friendliness** — whether the same input produces byte-identical bytes across runs, so Anthropic's prompt cache hits.\n\nIn my coding-agent stack, my biggest byte-saver (retrieval MCP, 60–70% reduction) was defeating the 5-min TTL prompt cache on every call. Two runs of the same query produced different bytes because of `rg --files-with-matches` output order leaking through a `Map` insertion sequence into the final context. The fix was 2 lines: sort the rg hits before slicing, sort the `Map` entries by path. Byte savings unchanged, `cache_friendly_score` went from \\~0% to 100%.\n\nhttps://preview.redd.it/x5foipotq93h1.png?width=1600&format=png&auto=webp&s=c0930422e882e23d1fc34ded25934c74db692a21\n\n**Article + open benchmark harness:**\n\n* Article: [https://gregshevchenko.com/research/mcp-stack-token-economy/](https://gregshevchenko.com/research/mcp-stack-token-economy/)\n* Harness (stdlib-only Python, offline): [https://github.com/g-shevchenko/mcp-token-savers](https://github.com/g-shevchenko/mcp-token-savers) — see `methods/` for formal definitions, cluster-bootstrap CIs, Wilson CIs, preregistration, real-data Cohen's κ.\n\n**What the harness measures:**\n\n* `mean_ratio` \\+ CV across N≥5 runs per fixture → byte-saving axis\n* `unique_md5_count == 1` check → cache-friendliness axis (0–100%)\n* 12-anti-pattern audit on tool definitions (DSA reference)\n\n**What named alternatives publicly disclose:**\n\nI surveyed the public docs for Cursor codebase index, Sourcegraph Cody, Aider repo-map, Microsoft LLMLingua / LLMLingua-2, Firecrawl / Jina Reader, RouteLLM / Martian (May 2026).\n\nhttps://preview.redd.it/ailemo1wq93h1.png?width=1600&format=png&auto=webp&s=4732f5d03f53ba95d2b5aaac0c7f21f1858a36a4\n\n**Limitations:**\n\n* I hypothesized that the prep layer triggers more downstream cache hits on subsequent turns. It didn't reach significance: Welch p=0.32, Cohen's d ≈ 0.18, N=137.\n* Two-judge Cohen's κ on the corpus (cerebras-llama × groq-llama, N=25): κ = 0.5955 (moderate, below the 0.7 substantial threshold). 4 of 5 inter-judge disagreements concentrate on one task with an ambiguous acceptance criterion. Sharpening the spec would push κ to \\~0.83.\n\n**Disclosure:** I'm the author. No commercial affiliation with the listed tools. The harness is MIT-licensed and takes any compressor as `(str) -> str`. Curious what `cache_friendly_score` looks like on others' Claude Code stacks.",
+        "author": "Level_Credit1535",
+        "post_id": "1tn6cey",
+        "top_comments": [],
+        "story_id": "rd_1tn6cey",
+        "heading": "I measured my Claude Code MCP stack on two axes — byte savings AND cache-friendliness. My \"best\" byte-saver was defeating Anthropic's prompt cache (counter-example + open benchmark)",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1tn6cey/i_measured_my_claude_code_mcp_stack_on_two_axes/",
+        "summary": "**TL;DR** — Single-axis benchmarks for MCPs, compressors, and retrieval layers can recommend a system that's *strictly worse* in production. The missing axis: **cache-friendliness** — whether the same input produces byte-identical bytes across runs, so Anthropic's prompt cache hits. In my coding-agent stack, my biggest byte-saver (retrieval MCP, 60–70% reduction) was defeating the 5-min TTL prompt cache on every call",
+        "tweet_and_comments_summary": "**TL;DR** — Single-axis benchmarks for MCPs, compressors, and retrieval layers can recommend a system that's *strictly worse* in production. The missing axis: **cache-friendliness** — whether the same input produces byte-identical bytes across runs, so Anthropic's prompt cache hits. In my coding-agent stack, my biggest byte-saver (retrieval MCP, 60–70% reduction) was defeating the 5-min TTL prompt cache on every call",
+        "discussion_summary": null,
+        "why_it_matters": "**High signal if running local models.** Check hardware fit, latency, and eval quality before adopting.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tn6cey",
+            "subreddit": "ClaudeAI",
+            "post_url": "https://www.reddit.com/r/ClaudeAI/comments/1tn6cey/i_measured_my_claude_code_mcp_stack_on_two_axes/",
+            "title": "I measured my Claude Code MCP stack on two axes — byte savings AND cache-friendliness. My \"best\" byte-saver was defeating Anthropic's prompt cache (counter-example + open benchmark)",
+            "author": "Level_Credit1535",
+            "created_utc": 1779708477.0,
+            "score": 1,
+            "comment_count": 4,
+            "selftext_full": "**TL;DR** — Single-axis benchmarks for MCPs, compressors, and retrieval layers can recommend a system that's *strictly worse* in production. The missing axis: **cache-friendliness** — whether the same input produces byte-identical bytes across runs, so Anthropic's prompt cache hits.\n\nIn my coding-agent stack, my biggest byte-saver (retrieval MCP, 60–70% reduction) was defeating the 5-min TTL prompt cache on every call. Two runs of the same query produced different bytes because of `rg --files-with-matches` output order leaking through a `Map` insertion sequence into the final context. The fix was 2 lines: sort the rg hits before slicing, sort the `Map` entries by path. Byte savings unchanged, `cache_friendly_score` went from \\~0% to 100%.\n\nhttps://preview.redd.it/x5foipotq93h1.png?width=1600&format=png&auto=webp&s=c0930422e882e23d1fc34ded25934c74db692a21\n\n**Article + open benchmark harness:**\n\n* Article: [https://gregshevchenko.com/research/mcp-stack-token-economy/](https://gregshevchenko.com/research/mcp-stack-token-economy/)\n* Harness (stdlib-only Python, offline): [https://github.com/g-shevchenko/mcp-token-savers](https://github.com/g-shevchenko/mcp-token-savers) — see `methods/` for formal definitions, cluster-bootstrap CIs, Wilson CIs, preregistration, real-data Cohen's κ.\n\n**What the harness measures:**\n\n* `mean_ratio` \\+ CV across N≥5 runs per fixture → byte-saving axis\n* `unique_md5_count == 1` check → cache-friendliness axis (0–100%)\n* 12-anti-pattern audit on tool definitions (DSA reference)\n\n**What named alternatives publicly disclose:**\n\nI surveyed the public docs for Cursor codebase index, Sourcegraph Cody, Aider repo-map, Microsoft LLMLingua / LLMLingua-2, Firecrawl / Jina Reader, RouteLLM / Martian (May 2026).\n\nhttps://preview.redd.it/ailemo1wq93h1.png?width=1600&format=png&auto=webp&s=4732f5d03f53ba95d2b5aaac0c7f21f1858a36a4\n\n**Limitations:**\n\n* I hypothesized that the prep layer triggers more downstream cache hits on subsequent turns. It didn't reach significance: Welch p=0.32, Cohen's d ≈ 0.18, N=137.\n* Two-judge Cohen's κ on the corpus (cerebras-llama × groq-llama, N=25): κ = 0.5955 (moderate, below the 0.7 substantial threshold). 4 of 5 inter-judge disagreements concentrate on one task with an ambiguous acceptance criterion. Sharpening the spec would push κ to \\~0.83.\n\n**Disclosure:** I'm the author. No commercial affiliation with the listed tools. The harness is MIT-licensed and takes any compressor as `(str) -> str`. Curious what `cache_friendly_score` looks like on others' Claude Code stacks.",
+            "selftext_excerpt": "**TL;DR** — Single-axis benchmarks for MCPs, compressors, and retrieval layers can recommend a system that's *strictly worse* in production. The missing axis: **cache-friendliness** — whether the same input produces byte-identical bytes acr",
+            "external_url": null,
+            "top_comments": [],
+            "comment_context": null
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 1,
+          "reddit_comment_count": 4,
+          "captured_at_ist": "2026-05-25 18:03 IST"
+        },
+        "labels": [
+          "Reddit",
+          "Comments missing"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "I measured my Claude Code MCP stack on two axes — byte savings AND cache-friendliness. My \"best\" byte-saver was defeating Anthropic's prompt cache (counter-example + open benchmark)",
+            "post_body": "**TL;DR** — Single-axis benchmarks for MCPs, compressors, and retrieval layers can recommend a system that's *strictly worse* in production. The missing axis: **cache-friendliness** — whether the same input produces byte-identical bytes across runs, so Anthropic's prompt cache hits.\n\nIn my coding-agent stack, my biggest byte-saver (retrieval MCP, 60–70% reduction) was defeating the 5-min TTL prompt cache on every call. Two runs of the same query produced different bytes because of `rg --files-with-matches` output order leaking through a `Map` insertion sequence into the final context. The fix was 2 lines: sort the rg hits before slicing, sort the `Map` entries by path. Byte savings unchanged, `cache_friendly_score` went from \\~0% to 100%.\n\nhttps://preview.redd.it/x5foipotq93h1.png?width=1600&format=png&auto=webp&s=c0930422e882e23d1fc34ded25934c74db692a21\n\n**Article + open benchmark harness:**\n\n* Article: [https://gregshevchenko.com/research/mcp-stack-token-economy/](https://gregshevchenko.com/research/mcp-stack-token-economy/)\n* Harness (stdlib-only Python, offline): [https://github.com/g-shevchenko/mcp-token-savers](https://github.com/g-shevchenko/mcp-token-savers) — see `methods/` for formal definitions, cluster-bootstrap CIs, Wilson CIs, preregistration, real-data Cohen's κ.\n\n**What the harness measures:**\n\n* `mean_ratio` \\+ CV across N≥5 runs per fixture → byte-saving axis\n* `unique_md5_count == 1` check → cache-friendliness axis (0–100%)\n* 12-anti-pattern audit on tool definitions (DSA reference)\n\n**What named alternatives publicly disclose:**\n\nI surveyed the public docs for Cursor codebase index, Sourcegraph Cody, Aider repo-map, Microsoft LLMLingua / LLMLingua-2, Firecrawl / Jina Reader, RouteLLM / Martian (May 2026).\n\nhttps://preview.redd.it/ailemo1wq93h1.png?width=1600&format=png&auto=webp&s=4732f5d03f53ba95d2b5aaac0c7f21f1858a36a4\n\n**Limitations:**\n\n* I hypothesized that the prep layer triggers more downstream cache hits on subsequent turns. It didn't reach significance: Welch p=0.32, Cohen's d ≈ 0.18, N=137.\n* Two-judge Cohen's κ on the corpus (cerebras-llama × groq-llama, N=25): κ = 0.5955 (moderate, below the 0.7 substantial threshold). 4 of 5 inter-judge disagreements concentrate on one task with an ambiguous acceptance criterion. Sharpening the spec would push κ to \\~0.83.\n\n**Disclosure:** I'm the author. No commercial affiliation with the listed tools. The harness is MIT-licensed and takes any compressor as `(str) -> str`. Curious what `cache_friendly_score` looks like on others' Claude Code stacks.",
+            "comments": [],
+            "metadata": {
+              "subreddit": "ClaudeAI",
+              "score": 1,
+              "comment_count": 4,
+              "created_utc": 1779708477.0,
+              "url": "https://www.reddit.com/r/ClaudeAI/comments/1tn6cey/i_measured_my_claude_code_mcp_stack_on_two_axes/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "AI_Agents",
+        "sort": "hot",
+        "title": "New to agents, mcp , etc how do I get to a point where i can lay back and let my agents do the work",
+        "score": 8,
+        "comments": 12,
+        "created_utc": 1779684678.0,
+        "url": "https://www.reddit.com/r/AI_Agents/comments/1tmyrid/new_to_agents_mcp_etc_how_do_i_get_to_a_point/",
+        "external_url": null,
+        "selftext": "Currently working on some projects. I have some agents and chrome scrap tasks id like it to do. Does Aider need permission for certain commands or is there a safety guardrail? Is Aider the best, I think I am done with Antigravity with Gemini models for coding it is trash.",
+        "selftext_full": "Currently working on some projects. I have some agents and chrome scrap tasks id like it to do. Does Aider need permission for certain commands or is there a safety guardrail? Is Aider the best, I think I am done with Antigravity with Gemini models for coding it is trash.",
+        "author": "Lazyrecipe5264",
+        "post_id": "1tmyrid",
+        "top_comments": [],
+        "story_id": "rd_1tmyrid",
+        "heading": "New to agents, mcp , etc how do I get to a point where i can lay back and let my agents do the work",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/AI_Agents/comments/1tmyrid/new_to_agents_mcp_etc_how_do_i_get_to_a_point/",
+        "summary": "Currently working on some projects. I have some agents and chrome scrap tasks id like it to do. Does Aider need permission for certain commands or is there a safety guardrail? Is Aider the best, I think I am done with Antigravity with Gemini models for coding it is trash.",
+        "tweet_and_comments_summary": "Currently working on some projects. I have some agents and chrome scrap tasks id like it to do. Does Aider need permission for certain commands or is there a safety guardrail? Is Aider the best, I think I am done with Antigravity with Gemini models for coding it is trash.",
+        "discussion_summary": null,
+        "why_it_matters": "**High signal for coding workflow.** Compare against your Hermes/Codex/Claude usage before changing tools or architecture.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tmyrid",
+            "subreddit": "AI_Agents",
+            "post_url": "https://www.reddit.com/r/AI_Agents/comments/1tmyrid/new_to_agents_mcp_etc_how_do_i_get_to_a_point/",
+            "title": "New to agents, mcp , etc how do I get to a point where i can lay back and let my agents do the work",
+            "author": "Lazyrecipe5264",
+            "created_utc": 1779684678.0,
+            "score": 8,
+            "comment_count": 12,
+            "selftext_full": "Currently working on some projects. I have some agents and chrome scrap tasks id like it to do. Does Aider need permission for certain commands or is there a safety guardrail? Is Aider the best, I think I am done with Antigravity with Gemini models for coding it is trash.",
+            "selftext_excerpt": "Currently working on some projects. I have some agents and chrome scrap tasks id like it to do. Does Aider need permission for certain commands or is there a safety guardrail? Is Aider the best, I think I am done with Antigravity with Gemin",
+            "external_url": null,
+            "top_comments": [],
+            "comment_context": null
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 8,
+          "reddit_comment_count": 12,
+          "captured_at_ist": "2026-05-25 18:03 IST"
+        },
+        "labels": [
+          "Reddit",
+          "AI_Agents",
+          "Comments missing"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "New to agents, mcp , etc how do I get to a point where i can lay back and let my agents do the work",
+            "post_body": "Currently working on some projects. I have some agents and chrome scrap tasks id like it to do. Does Aider need permission for certain commands or is there a safety guardrail? Is Aider the best, I think I am done with Antigravity with Gemini models for coding it is trash.",
+            "comments": [],
+            "metadata": {
+              "subreddit": "AI_Agents",
+              "score": 8,
+              "comment_count": 12,
+              "created_utc": 1779684678.0,
+              "url": "https://www.reddit.com/r/AI_Agents/comments/1tmyrid/new_to_agents_mcp_etc_how_do_i_get_to_a_point/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "LangChain",
+        "sort": "hot",
+        "title": "AI Agent Reliability Comes From Coordination, Not Prompting",
+        "score": 12,
+        "comments": 4,
+        "created_utc": 1779659116.0,
+        "url": "https://www.reddit.com/r/LangChain/comments/1tmp8py/ai_agent_reliability_comes_from_coordination_not/",
+        "external_url": null,
+        "selftext": "Having worked on agentic systems over the past year, one mistake I keep seeing is people treating AI agents as something completely separate from software engineering. Most products and engineering examples using agents still rely on one large agent handling planning, retrieval, reasoning, and synthesis together. It works, but scaling quickly becomes messy: • debugging LLM / Agent tool call gets cumbersome • context keeps growing • prompt chains turn unpredictable So I tried splitting responsibilities across multiple specialized agents instead. One plans. Others investigate in parallel. Separate agents synthesize results. Everything moves through structured outputs. The biggest surprise: The",
+        "selftext_full": "Having worked on agentic systems over the past year, one mistake I keep seeing is people treating AI agents as something completely separate from software engineering.\n\nMost products and engineering examples using agents still rely on one large agent handling planning, retrieval, reasoning, and synthesis together.\n\nIt works, but scaling quickly becomes messy: \n• debugging LLM / Agent tool call gets cumbersome \n• context keeps growing \n• prompt chains turn unpredictable\n\nSo I tried splitting responsibilities across multiple specialized agents instead.\n\nOne plans. \nOthers investigate in parallel. \nSeparate agents synthesize results. \nEverything moves through structured outputs.\n\nThe biggest surprise:\n\nThe improvement didn’t come from larger, sophisticated prompting.\n\nIt came from coordination, specialization, and being able to trace the workflow end to end.\n\nThe system became far more reliable once agents had narrow responsibilities instead of trying to do everything at once.\n\n \nShared a [walkthrough + code](https://www.youtube.com/watch?v=IDz81PoeMEE) if anyone wants to experiment with this kind of setup.",
+        "author": "Creepy-Row970",
+        "post_id": "1tmp8py",
+        "top_comments": [],
+        "story_id": "rd_1tmp8py",
+        "heading": "AI Agent Reliability Comes From Coordination, Not Prompting",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/LangChain/comments/1tmp8py/ai_agent_reliability_comes_from_coordination_not/",
+        "summary": "Having worked on agentic systems over the past year, one mistake I keep seeing is people treating AI agents as something completely separate from software engineering. Most products and engineering examples using agents still rely on one large agent handling planning, retrieval, reasoning, and synthesis together. It works, but scaling quickly becomes messy: • debugging LLM / Agent tool call gets cumbersome • context",
+        "tweet_and_comments_summary": "Having worked on agentic systems over the past year, one mistake I keep seeing is people treating AI agents as something completely separate from software engineering. Most products and engineering examples using agents still rely on one large agent handling planning, retrieval, reasoning, and synthesis together. It works, but scaling quickly becomes messy: • debugging LLM / Agent tool call gets cumbersome • context",
+        "discussion_summary": null,
+        "why_it_matters": "**High signal for coding workflow.** Compare against your Hermes/Codex/Claude usage before changing tools or architecture.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tmp8py",
+            "subreddit": "LangChain",
+            "post_url": "https://www.reddit.com/r/LangChain/comments/1tmp8py/ai_agent_reliability_comes_from_coordination_not/",
+            "title": "AI Agent Reliability Comes From Coordination, Not Prompting",
+            "author": "Creepy-Row970",
+            "created_utc": 1779659116.0,
+            "score": 12,
+            "comment_count": 4,
+            "selftext_full": "Having worked on agentic systems over the past year, one mistake I keep seeing is people treating AI agents as something completely separate from software engineering.\n\nMost products and engineering examples using agents still rely on one large agent handling planning, retrieval, reasoning, and synthesis together.\n\nIt works, but scaling quickly becomes messy: \n• debugging LLM / Agent tool call gets cumbersome \n• context keeps growing \n• prompt chains turn unpredictable\n\nSo I tried splitting responsibilities across multiple specialized agents instead.\n\nOne plans. \nOthers investigate in parallel. \nSeparate agents synthesize results. \nEverything moves through structured outputs.\n\nThe biggest surprise:\n\nThe improvement didn’t come from larger, sophisticated prompting.\n\nIt came from coordination, specialization, and being able to trace the workflow end to end.\n\nThe system became far more reliable once agents had narrow responsibilities instead of trying to do everything at once.\n\n \nShared a [walkthrough + code](https://www.youtube.com/watch?v=IDz81PoeMEE) if anyone wants to experiment with this kind of setup.",
+            "selftext_excerpt": "Having worked on agentic systems over the past year, one mistake I keep seeing is people treating AI agents as something completely separate from software engineering. Most products and engineering examples using agents still rely on one la",
+            "external_url": null,
+            "top_comments": [],
+            "comment_context": null
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 12,
+          "reddit_comment_count": 4,
+          "captured_at_ist": "2026-05-25 18:03 IST"
+        },
+        "labels": [
+          "Reddit",
+          "LangChain",
+          "Comments missing"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "AI Agent Reliability Comes From Coordination, Not Prompting",
+            "post_body": "Having worked on agentic systems over the past year, one mistake I keep seeing is people treating AI agents as something completely separate from software engineering.\n\nMost products and engineering examples using agents still rely on one large agent handling planning, retrieval, reasoning, and synthesis together.\n\nIt works, but scaling quickly becomes messy: \n• debugging LLM / Agent tool call gets cumbersome \n• context keeps growing \n• prompt chains turn unpredictable\n\nSo I tried splitting responsibilities across multiple specialized agents instead.\n\nOne plans. \nOthers investigate in parallel. \nSeparate agents synthesize results. \nEverything moves through structured outputs.\n\nThe biggest surprise:\n\nThe improvement didn’t come from larger, sophisticated prompting.\n\nIt came from coordination, specialization, and being able to trace the workflow end to end.\n\nThe system became far more reliable once agents had narrow responsibilities instead of trying to do everything at once.\n\n \nShared a [walkthrough + code](https://www.youtube.com/watch?v=IDz81PoeMEE) if anyone wants to experiment with this kind of setup.",
+            "comments": [],
+            "metadata": {
+              "subreddit": "LangChain",
+              "score": 12,
+              "comment_count": 4,
+              "created_utc": 1779659116.0,
+              "url": "https://www.reddit.com/r/LangChain/comments/1tmp8py/ai_agent_reliability_comes_from_coordination_not/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "AI_Agents",
+        "sort": "hot",
+        "title": "How do you handle trying new models without spending too much?",
+        "score": 3,
+        "comments": 6,
+        "created_utc": 1779705275.0,
+        "url": "https://www.reddit.com/r/AI_Agents/comments/1tn58u1/how_do_you_handle_trying_new_models_without/",
+        "external_url": null,
+        "selftext": "New models pop up constantly—Qwen 3.7, Gemini 3.5 flash, etc. Every time a better one launches, I want to have a try, but I don't want to increase subscriptions. Curious how you all approach this: * Stick with what you already subscribe to? * Use API platforms to test before committing? * Subscribe individually as needed? * Waiting for others' reviews? Keeping up with new models seems to be its own expense/workflow now. What's your strategy for balancing access vs. cost?",
+        "selftext_full": "New models pop up constantly—Qwen 3.7, Gemini 3.5 flash, etc. Every time a better one launches, I want to have a try, but I don't want to increase subscriptions.\n\nCurious how you all approach this:\n\n* Stick with what you already subscribe to?\n* Use API platforms to test before committing?\n* Subscribe individually as needed?\n* Waiting for others' reviews?\n\nKeeping up with new models seems to be its own expense/workflow now. What's your strategy for balancing access vs. cost?",
+        "author": "Ok-Mark8538",
+        "post_id": "1tn58u1",
+        "top_comments": [],
+        "story_id": "rd_1tn58u1",
+        "heading": "How do you handle trying new models without spending too much?",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/AI_Agents/comments/1tn58u1/how_do_you_handle_trying_new_models_without/",
+        "summary": "New models pop up constantly—Qwen 3.7, Gemini 3.5 flash, etc. Every time a better one launches, I want to have a try, but I don't want to increase subscriptions. Curious how you all approach this: * Stick with what you already subscribe to? * Use API platforms to test before committing? * Subscribe individually as needed? * Waiting for others' reviews? Keeping up with new models seems to be its own expense/workflow n",
+        "tweet_and_comments_summary": "New models pop up constantly—Qwen 3.7, Gemini 3.5 flash, etc. Every time a better one launches, I want to have a try, but I don't want to increase subscriptions. Curious how you all approach this: * Stick with what you already subscribe to? * Use API platforms to test before committing? * Subscribe individually as needed? * Waiting for others' reviews? Keeping up with new models seems to be its own expense/workflow n",
+        "discussion_summary": null,
+        "why_it_matters": "**High signal if running local models.** Check hardware fit, latency, and eval quality before adopting.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tn58u1",
+            "subreddit": "AI_Agents",
+            "post_url": "https://www.reddit.com/r/AI_Agents/comments/1tn58u1/how_do_you_handle_trying_new_models_without/",
+            "title": "How do you handle trying new models without spending too much?",
+            "author": "Ok-Mark8538",
+            "created_utc": 1779705275.0,
+            "score": 3,
+            "comment_count": 6,
+            "selftext_full": "New models pop up constantly—Qwen 3.7, Gemini 3.5 flash, etc. Every time a better one launches, I want to have a try, but I don't want to increase subscriptions.\n\nCurious how you all approach this:\n\n* Stick with what you already subscribe to?\n* Use API platforms to test before committing?\n* Subscribe individually as needed?\n* Waiting for others' reviews?\n\nKeeping up with new models seems to be its own expense/workflow now. What's your strategy for balancing access vs. cost?",
+            "selftext_excerpt": "New models pop up constantly—Qwen 3.7, Gemini 3.5 flash, etc. Every time a better one launches, I want to have a try, but I don't want to increase subscriptions. Curious how you all approach this: * Stick with what you already subscribe to?",
+            "external_url": null,
+            "top_comments": [],
+            "comment_context": null
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 3,
+          "reddit_comment_count": 6,
+          "captured_at_ist": "2026-05-25 18:03 IST"
+        },
+        "labels": [
+          "Reddit",
+          "AI_Agents",
+          "Comments missing"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "How do you handle trying new models without spending too much?",
+            "post_body": "New models pop up constantly—Qwen 3.7, Gemini 3.5 flash, etc. Every time a better one launches, I want to have a try, but I don't want to increase subscriptions.\n\nCurious how you all approach this:\n\n* Stick with what you already subscribe to?\n* Use API platforms to test before committing?\n* Subscribe individually as needed?\n* Waiting for others' reviews?\n\nKeeping up with new models seems to be its own expense/workflow now. What's your strategy for balancing access vs. cost?",
+            "comments": [],
+            "metadata": {
+              "subreddit": "AI_Agents",
+              "score": 3,
+              "comment_count": 6,
+              "created_utc": 1779705275.0,
+              "url": "https://www.reddit.com/r/AI_Agents/comments/1tn58u1/how_do_you_handle_trying_new_models_without/"
+            }
+          },
+          "twitter": null
+        }
+      }
+    ],
+    "brief_number": 3
+  },
+  {
     "run_id": "2026-05-25 12:01 IST",
     "brief_day": "2026-05-25",
     "collected_at_ist": "2026-05-25 12:01 IST",
