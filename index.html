@@ -106,23 +106,525 @@
 </head>
 <body>
   <main class="shell">
-    <nav class="topbar"><div class="brand"><span class="brand-mark"></span>Reddit AI Digest</div><div class="navmeta">Today: 2 briefs saved</div></nav>
+    <nav class="topbar"><div class="brand"><span class="brand-mark"></span>Reddit AI Digest</div><div class="navmeta">Today: 3 briefs saved</div></nav>
     <section class="hero">
-      <div class="kicker">Brief 2 · Live Reddit AI</div>
+      <div class="kicker">Brief 3 · Live Reddit AI</div>
       <h1>Compact AI signal, refreshed through the day.</h1>
       <p class="subtitle">A clean, Vercel/Mintlify-inspired digest for AI tools, models, local inference, coding agents, and workflow changes. Historical storage is intentionally day-only: tomorrow starts fresh.</p>
       <div class="stats">
-        <div class="stat"><span>Updated</span><strong>2026-05-26 09:57 IST</strong></div>
+        <div class="stat"><span>Updated</span><strong>2026-05-26 15:58 IST</strong></div>
         <div class="stat"><span>Sources</span><strong>16 ok / 0 failed</strong></div>
-        <div class="stat"><span>New posts</span><strong>29</strong></div>
-        <div class="stat"><span>Runtime</span><strong>10.43s</strong></div>
+        <div class="stat"><span>New posts</span><strong>24</strong></div>
+        <div class="stat"><span>Runtime</span><strong>11.43s</strong></div>
       </div>
     </section>
 
     <section class="layout">
       <div class="main-column">
-        <div class="section-head"><span>Latest</span><h2>Brief 2</h2><p>The latest Telegram-linked brief, with the top ranked posts expanded.</p></div>
+        <div class="section-head"><span>Latest</span><h2>Brief 3</h2><p>The latest Telegram-linked brief, with the top ranked posts expanded.</p></div>
         
+    <article class="card post-card">
+      <div class="post-topline">
+        <div class="rank-badge"><span>🟢</span><strong>01</strong></div>
+        <div class="meta-pill">Reddit</div>
+        <div class="meta-pill">r/LocalLLaMA</div>
+        <div class="meta-pill">3↑</div>
+        <div class="meta-pill">7 comments</div>
+      </div>
+      <div class="story-labels"><span class="story-label">Reddit</span><span class="story-label">LocalLLaMA</span></div>
+      <h2>Are local LLM users testing prompt injection before connecting models to tools?</h2>
+      <p class="discussion story-summary">I wanna know how people here are handling security once local models move beyond chat.....Running a model locally feels safer because the data does not leave your machine or your infra. That is a real advantage.....But once the local model is connected to tools, files, RAG, shell commands, browser automation, APIs, or internal docs, the risk changes. At that point, prompt injection is not just “the model said somethi This is the right question. Local does not mean safe once the model can call tools. For browser agents I treat the browser as an action boundary: separate owned tab per job, least I think this is…</p>
+      
+      <details class="source-expand">
+        <summary><span class="summary-collapsed">Expand full post</span><span class="summary-expanded">Collapse full post</span></summary>
+        <div class="source-expanded-content"><section class="source-section"><div class="source-label">Reddit post · r/LocalLLaMA</div><h4>Are local LLM users testing prompt injection before connecting models to tools?</h4><div class="source-prose"><p>I wanna know how people here are handling security once local models move beyond chat.....Running a model locally feels safer because the data does not leave your machine or your infra. That is a real advantage.....But once the local model is connected to tools, files, RAG, shell commands, browser automation, APIs, or internal docs, the risk changes.</p><p>At that point, prompt injection is not just “the model said something weird.” It can influence what file gets read, what command gets suggested, what data gets retrieved, what tool gets called, or what action the agent takes next.....</p><p>Most local setups I see focus heavily on model quality, quantization, context length, VRAM, tokens per second, and benchmark scores. All valid. But I see less discussion around testing the model’s behavior under malicious instructions before giving it access to real tools....</p><p>The people running local models in agentic setups: Are you testing prompt injection or jailbreak behavior? Do you isolate tool access by default? Do you keep local models read-only until trusted? Do you log tool calls and retrieved context?</p><p>Or is this still mostly “local means safe enough” for now?</p><p>I’m not asking from a doom angle. I’m more interested in what practical safety habits local builders are actually using.</p></div><div class="source-comments"><strong>Captured top comments</strong><ul><li><span class="vote">3↑</span><span>This is the right question. Local does not mean safe once the model can call tools. For browser agents I treat the browser as an action boundary: separate owned tab per job, least power tools, capture URL plus DOM or screenshot receipts before and after meaningful actions, and hard stops for captcha, login challenge, payment, or anything irreversible. I am building FSB around that shape for real Chrome through MCP…</span></li><li><span class="vote">3↑</span><span>I think this is where local AI starts becoming more of a runtime/control problem than just a model-quality problem.Generating a tool call is one thing Actually allowing it to execute is another.A lot of setups still kind of assume “the model suggested it so let’s run it”,but once models can touch files, APIs, shell commands, retrieval, browser automation etc the risk surface changes pretty fast. Feels like there…</span></li><li><span class="vote">1↑</span><span>This is exactly the kind of boundary I was thinking about.....Browser agents feel especially risky because the browser already carries logged-in sessions, cookies, tabs, extensions, and private context. Treating each job as its own action boundary makes a lot more sense than letting the agent wander through a normal browsing session.....The before/after receipt idea is interesting too. It gives you something closer…</span></li><li><span class="vote">1↑</span><span>Yes. Logging, observability, defense in depth with oversight, permissions policies, image hardening, and more. Local does not at all mean safe enough, agentic AI is a massive attack surface.</span></li><li><span class="vote">1↑</span><span>Since a simple execution of a tool agent almost wrecked my local system just to run some tests, I only run them inside containers. It doesn&#x27;t solve all the problems, but if he messes up, it will be within a very limited scope.</span></li></ul></div></section></div>
+      </details>
+    
+      <div class="takeaway"><span>Why it matters</span>**High signal if running local models.** Check hardware fit, latency, and eval quality before adopting.</div>
+      <details class="comments"><summary>Top comments</summary><ul><li><span class="vote">3↑</span><span>This is the right question. Local does not mean safe once the model can call tools. For browser agents I treat the browser as an action boundary: separate owned tab per job, least power tools, capture URL…</span></li><li><span class="vote">3↑</span><span>I think this is where local AI starts becoming more of a runtime/control problem than just a model-quality problem.Generating a tool call is one thing Actually allowing it to execute is another.A lot of…</span></li><li><span class="vote">1↑</span><span>This is exactly the kind of boundary I was thinking about.....Browser agents feel especially risky because the browser already carries logged-in sessions, cookies, tabs, extensions, and private context…</span></li></ul></details>
+      <div class="actions">
+        <a class="button primary" href="https://www.reddit.com/r/LocalLLaMA/comments/1to25y5/are_local_llm_users_testing_prompt_injection/" target="_blank" rel="noreferrer">Open thread</a>
+        
+      </div>
+    </article>
+    
+    <article class="card post-card">
+      <div class="post-topline">
+        <div class="rank-badge"><span>🟠</span><strong>02</strong></div>
+        <div class="meta-pill">Reddit</div>
+        <div class="meta-pill">r/ChatGPT</div>
+        <div class="meta-pill">775↑</div>
+        <div class="meta-pill">179 comments</div>
+      </div>
+      <div class="story-labels"><span class="story-label">Reddit</span></div>
+      <h2>The &#x27;Ferrari Elettrica&#x27; - Today I was disappointed by the new &#x27;Ferrari Luce&#x27;, so I asked ChatGPT for an electric Ferrari that actually looked good</h2>
+      <p class="discussion story-summary">Image 1: Ferrari Elettrica, by ChatGPT Image 2: Ferrari Luce, by Ferrari (yes, it&#x27;s real) They spent so much money paying Jony Ive to make that abomination, and they could have just asked chatGPT and gone from there. Looks way better. The Luce looks like an appliance. Why is it that some auto makers think that electric vehicles have to look like electronic devices?</p>
+      
+      <details class="source-expand">
+        <summary><span class="summary-collapsed">Expand full post</span><span class="summary-expanded">Collapse full post</span></summary>
+        <div class="source-expanded-content"><section class="source-section"><div class="source-label">Reddit post · r/ChatGPT</div><h4>The &#x27;Ferrari Elettrica&#x27; - Today I was disappointed by the new &#x27;Ferrari Luce&#x27;, so I asked ChatGPT for an electric Ferrari that actually looked good</h4><div class="source-prose"><p>Image 1: Ferrari Elettrica, by ChatGPT</p><p>Image 2: Ferrari Luce, by Ferrari (yes, it&#x27;s real)</p></div><div class="source-comments"><strong>Captured top comments</strong><ul><li><span class="vote">235↑</span><span>They spent so much money paying Jony Ive to make that abomination, and they could have just asked chatGPT and gone from there. Looks way better.</span></li><li><span class="vote">232↑</span><span>The Luce looks like an appliance. Why is it that some auto makers think that electric vehicles have to look like electronic devices?</span></li><li><span class="vote">184↑</span><span>God damnit. I hate how much I like the chatGPT version. Even has the nice nod to the Testarossa with the side vents.</span></li><li><span class="vote">64↑</span><span>We’ll chat gpt is just mushing together the most popular designs and elements so it’s like hating a greatest hits album</span></li><li><span class="vote">58↑</span><span>EVs are tall because half the car is battery.</span></li></ul></div></section></div>
+      </details>
+    
+      <div class="takeaway"><span>Why it matters</span>**Medium signal.** Worth monitoring, but don’t act on Reddit hype without checking primary sources.</div>
+      <details class="comments"><summary>Top comments</summary><ul><li><span class="vote">235↑</span><span>They spent so much money paying Jony Ive to make that abomination, and they could have just asked chatGPT and gone from there. Looks way better.</span></li><li><span class="vote">232↑</span><span>The Luce looks like an appliance. Why is it that some auto makers think that electric vehicles have to look like electronic devices?</span></li><li><span class="vote">184↑</span><span>God damnit. I hate how much I like the chatGPT version. Even has the nice nod to the Testarossa with the side vents.</span></li></ul></details>
+      <div class="actions">
+        <a class="button primary" href="https://www.reddit.com/r/ChatGPT/comments/1tnw8yj/the_ferrari_elettrica_today_i_was_disappointed_by/" target="_blank" rel="noreferrer">Open thread</a>
+        <a class="button" href="https://www.reddit.com/gallery/1tnw8yj" target="_blank" rel="noreferrer">External</a>
+      </div>
+    </article>
+    
+    <article class="card post-card">
+      <div class="post-topline">
+        <div class="rank-badge"><span>🟣</span><strong>03</strong></div>
+        <div class="meta-pill">Reddit</div>
+        <div class="meta-pill">r/singularity</div>
+        <div class="meta-pill">295↑</div>
+        <div class="meta-pill">295 comments</div>
+      </div>
+      <div class="story-labels"><span class="story-label">Reddit</span></div>
+      <h2>Users who rage quit my software</h2>
+      <p class="discussion story-summary">I make mods for a game called Rimworld. They are pretty popular (together about 2M subs on Steam). Recently I found that there are users in the official Rimworld discord that simply uninstall all my mods as soon as they hear that I updated them with AI. This has nothing to do with rational arguments. They do know that I am careful with whatever I publish. Instead the argument is by sheer principle and I find it aston It’s only going to get worse. As AI gets better and cheaper it will displace more and more jobs. The Great Depression was less than 25% unemployment Who cares about them, let them make their own mods</p>
+      
+      <details class="source-expand">
+        <summary><span class="summary-collapsed">Expand full post</span><span class="summary-expanded">Collapse full post</span></summary>
+        <div class="source-expanded-content"><section class="source-section"><div class="source-label">Reddit post · r/singularity</div><h4>Users who rage quit my software</h4><div class="source-prose"><p>I make mods for a game called Rimworld. They are pretty popular (together about 2M subs on Steam). Recently I found that there are users in the official Rimworld discord that simply uninstall all my mods as soon as they hear that I updated them with AI.</p><p>This has nothing to do with rational arguments. They do know that I am careful with whatever I publish. Instead the argument is by sheer principle and I find it astonishing that they react so extreme. I called it “religious” and was instantly met with disgust and very strong feelings.</p><p>I’m still shocked. This isn’t a good sign.</p></div><div class="source-comments"><strong>Captured top comments</strong><ul><li><span class="vote">185↑</span><span>It’s only going to get worse. As AI gets better and cheaper it will displace more and more jobs. The Great Depression was less than 25% unemployment</span></li><li><span class="vote">116↑</span><span>Who cares about them, let them make their own mods</span></li><li><span class="vote">105↑</span><span>You say it has nothing to do with &quot;rational arguments&quot; and that it&#x27;s &quot;sheer principle&quot;, but a principle is inherently rooted in a rationale. People boycott companies that use slave labor out of &quot;sheer principle&quot; too, and they have a rational argument to support that principle. I use AI every day to program and am only hoping it gets better and better. But I think there&#x27;s a perfectly rational argument to boycott…</span></li><li><span class="vote">96↑</span><span>Yeah, it’s basically that for me now. I love how using AI enables me, a product designer that is also a senior software developer, to make things I could not have done alone before. But since I mostly make free software, the feedback is usually what keeps me going. If that is removed I am only doing it for myself and that’s just sad. Support me doing free open source software with quality: link</span></li><li><span class="vote">52↑</span><span>Is that why they&#x27;re angry? My only complaint about AI is that it&#x27;s become the ultimate spam tool. Look at Amazon books for example. It&#x27;s a sea of copy-paste ChatGPT. So when I see AI being shoehorned into something, my gut reaction is that it&#x27;s probably a scam. AI has a credibility issue.</span></li></ul></div></section></div>
+      </details>
+    
+      <div class="takeaway"><span>Why it matters</span>**Medium signal.** Worth monitoring, but don’t act on Reddit hype without checking primary sources.</div>
+      <details class="comments"><summary>Top comments</summary><ul><li><span class="vote">185↑</span><span>It’s only going to get worse. As AI gets better and cheaper it will displace more and more jobs. The Great Depression was less than 25% unemployment</span></li><li><span class="vote">116↑</span><span>Who cares about them, let them make their own mods</span></li><li><span class="vote">105↑</span><span>You say it has nothing to do with &quot;rational arguments&quot; and that it&#x27;s &quot;sheer principle&quot;, but a principle is inherently rooted in a rationale. People boycott companies that use slave labor out of &quot;sheer…</span></li></ul></details>
+      <div class="actions">
+        <a class="button primary" href="https://www.reddit.com/r/singularity/comments/1tntdui/users_who_rage_quit_my_software/" target="_blank" rel="noreferrer">Open thread</a>
+        
+      </div>
+    </article>
+    
+    <article class="card post-card">
+      <div class="post-topline">
+        <div class="rank-badge"><span>🟢</span><strong>04</strong></div>
+        <div class="meta-pill">Reddit</div>
+        <div class="meta-pill">r/LocalLLaMA</div>
+        <div class="meta-pill">226↑</div>
+        <div class="meta-pill">78 comments</div>
+      </div>
+      <div class="story-labels"><span class="story-label">Reddit</span><span class="story-label">LocalLLaMA</span></div>
+      <h2>Update on 12x32gb sxm v100 cluster / local AI for legal drafting</h2>
+      <p class="discussion story-summary">Update from the lawyer with the V100 server. A few of you asked what I actually ended up running once the dust settled, so here it is. Still just a lawyer, still driving the whole thing through Claude Code, still not fully sure what I&#x27;m doing — but it works now, which is more than I could say last time. First, the hardware caught up to the plan. The last two V100s are in, so the &quot;final form&quot; I promised is real: twelv I love your updates; the project is unhinged, you are fully-self-aware, and you&#x27;re getting real results from a technically difficult build. Nice work. R.e. the 122B-A10B vs using 3.6 35B for…</p>
+      
+      <details class="source-expand">
+        <summary><span class="summary-collapsed">Expand full post</span><span class="summary-expanded">Collapse full post</span></summary>
+        <div class="source-expanded-content"><section class="source-section"><div class="source-label">Reddit post · r/LocalLLaMA</div><h4>Update on 12x32gb sxm v100 cluster / local AI for legal drafting</h4><div class="source-prose"><p>Update from the lawyer with the V100 server. A few of you asked what I actually ended up running once the dust settled, so here it is. Still just a lawyer, still driving the whole thing through Claude Code, still not fully sure what I&#x27;m doing — but it works now, which is more than I could say last time.</p><p>First, the hardware caught up to the plan. The last two V100s are in, so the &quot;final form&quot; I promised is real: twelve V100-SXM2 32GB on the Threadripper Pro. It&#x27;s Board A on GPUs {4,5,8,9}, Board B on {6,7,10,11}, an NVLink pair on {0,1}, and a mixed pair on {2,3} where one card is a 16GB. Split a model across two different NVLink boards and throughput falls off a cliff (the cross-board hop is PCIe/NUMA, not NVLink), so I keep every model inside one board. Learned that one the expensive way.</p><p>And yeah, I caved and built the second box. EPYC 7302P, 512gb RAM, 4x RTX 3090 + 2x V100-PCIe. The mid-life crisis remains on schedule.</p><p>The bigger change: I gave up on vLLM for the local models. Not because vLLM is bad — because the models I actually want are MoE GGUFs, and vLLM on Volta is a dead end for those (FP8/AWQ/Marlin all want SM75+, the GPTQ kernels are broken on 7.0). I moved the whole thing to llama.cpp (mainline — a recent build finally fixed a Gemma chat-parser bug that had been mangling my long prompts).</p><p>Here&#x27;s the part that&#x27;s the opposite of what my first post implied: on V100, dense models are a trap. Only MoE clears a usable speed. Rough decode numbers — Q8 GGUF, Q4 KV cache, flash-attn on, one 4-card board, on real drafting prompts (several thousand tokens of context, not a 5-token &quot;hello&quot;):</p><p>| Model | Type | tok/s (decode) | 
+|---|---|---| 
+| Gemma-4-26B-A4B | MoE | \~113 | 
+| Qwen3.6-35B-A3B | MoE | \~82 | 
+| Qwen3.5-122B-A10B | MoE | \~50 | 
+| any dense 27-32B | dense | \~20-28 (under my 40 floor, not worth it) | 
+| dense \~128B | dense | \~9 (forget it) |</p><p>So a 122B/10B-active reasoning model runs at \~50 tok/s on four V100s — faster than the dense 32B managed on vLLM in my first post — and it holds that at long context (I&#x27;ve pushed Gemma past 25k tokens without it falling apart, where the dense models choked). That reframed everything: I stopped chasing big dense weights and built the system around MoE.</p><p>What&#x27;s actually running (the stack you asked for): 
+It isn&#x27;t one model answering chat — it&#x27;s an orchestrator that routes a legal task across several local models, each pinned to its own board so they don&#x27;t fight over GPUs. When it runs the heaviest job (a full affidavit or motion, intake-to-document), it lights up 16 GPUs across both boxes:</p><p>\- Workhorse drafting — Qwen3.6-35B-A3B on Board A {4,5,8,9} 
+\- Heavy reasoning + high-stakes drafting — Qwen3.5-122B-A10B on Board B {6,7,10,11} 
+\- A small &quot;does this even have grounds&quot; gate model on the {0,1} pair 
+\- An adversarial reviewer whose entire job is to attack my own draft, on the {2,3} pair 
+\- Gemma-4-26B for financial/extraction + a small Qwen as the router, on the 3090s on the second box via Ollama</p><p>It&#x27;s a sequential pipeline so they don&#x27;t all hammer at once, but all 16 stay resident. Lighter work uses far less — combining and Bates-stamping exhibits is pure CPU (PyMuPDF + Tesseract, no GPU at all); a plain summary mostly just hits Gemma and the router.</p><p>The honest part, since this sub kept me honest last time: 
+\- The local models hallucinate citations and dates. Confidently. I had to build a verifier that checks every cite, date, and Bates number in a draft against the actual source material and blocks anything it can&#x27;t ground, on top of the adversarial reviewer. Local drafting is bimodal — sometimes it correctly refuses to invent, sometimes it fabricates a whole dated chronology and swears in the same breath that it invented nothing. It does not touch a final document without that gate and without me. 
+\- The dumbest bug I found: my own pipeline was \~79% poisoned. The thing that builds the evidence bundle was scooping up its OWN prior outputs as if they were client evidence, so the models were &quot;grounding&quot; on slop they&#x27;d written earlier — at one point it cited an RTX 3060 as a Bates number, which, fair. Fixed the builder to stop eating its own tail and scrubbed it out. If you run any RAG/agent pipeline, go look at what&#x27;s literally in your context window — mine was a hall of mirrors and I had no idea. 
+\- I also made it refuse to quietly fall back to a cloud model when I tell it to run local-only. If it can&#x27;t do a step locally it says so, by name, instead of phoning Anthropic behind my back.</p><p>Still want the exact thing I wanted in the first post — a model that writes like me and handles the boring form-filling and pattern stuff. I&#x27;m closer: the system now captures my edits as correction data, which is the start of a real fine-tune set. Haven&#x27;t pulled the QLoRA trigger yet. So the same questions stand, and I&#x27;d genuinely take advice: 
+\- For QLoRA on this hardware (V100, no bf16, no FA2): do you reach for a 35B-A3B MoE base, or am I smarter to fine-tune a dense \~14B I can actually train and keep the MoE for the heavy serving? 
+\- Anyone serving MoE on Volta found anything faster than llama.cpp — ik\_llama, something else? And is there a better long-context KV story than Q4? 
+\- Am I an idiot keeping 122B-A10B around at 50 tok/s when I could just run the 35B for everything?</p><p>Tell me what I&#x27;m doing wrong.</p></div><div class="source-comments"><strong>Captured top comments</strong><ul><li><span class="vote">46↑</span><span>I love your updates; the project is unhinged, you are fully-self-aware, and you&#x27;re getting real results from a technically difficult build. Nice work.</span></li><li><span class="vote">33↑</span><span>R.e. the 122B-A10B vs using 3.6 35B for everything - you&#x27;re not dumb for continuing to use 122B. I use my LLM box mostly for proofreading documents and find 3.6 35B just ain&#x27;t nearly as &quot;smart&quot; as 122B for the purpose. And my workflow isn&#x27;t sophisticated.</span></li><li><span class="vote">25↑</span><span>This is gonna sound weird, but... Do you want to present your project to a team inside Thomson Reuters? I don&#x27;t think we have to make a big deal about it, and I would rather avoid sales or product involvement, just a bunch of engineers and scientists (not sure how many would be interested, but I know at least a couple that would be—they *are* sub members). If that sounds interesting, happy to pitch it to my…</span></li><li><span class="vote">22↑</span><span>1) I am also Greek, 2) yes, dm me, I’m in line to give a cle on some of this stuff, but could share a whole lot more with your engineers because they can see how a lawyer with just html took his Claude code journey</span></li><li><span class="vote">21↑</span><span>This will never fully replace my written workflow, because there’s a point of diminishing returns as a lawyer. I can’t ever ever ever submit hallucinated or fake facts or law, and I have to review everything. For routine low level form work, which is maybe 40% of the practice, I can usually do that directly from memory, or using the bundled highlighted exhibits that are served to me. One thing I have learned the…</span></li></ul></div></section></div>
+      </details>
+    
+      <div class="takeaway"><span>Why it matters</span>**High signal if running local models.** Check hardware fit, latency, and eval quality before adopting.</div>
+      <details class="comments"><summary>Top comments</summary><ul><li><span class="vote">46↑</span><span>I love your updates; the project is unhinged, you are fully-self-aware, and you&#x27;re getting real results from a technically difficult build. Nice work.</span></li><li><span class="vote">33↑</span><span>R.e. the 122B-A10B vs using 3.6 35B for everything - you&#x27;re not dumb for continuing to use 122B. I use my LLM box mostly for proofreading documents and find 3.6 35B just ain&#x27;t nearly as &quot;smart&quot; as 122B for…</span></li><li><span class="vote">25↑</span><span>This is gonna sound weird, but... Do you want to present your project to a team inside Thomson Reuters? I don&#x27;t think we have to make a big deal about it, and I would rather avoid sales or product…</span></li></ul></details>
+      <div class="actions">
+        <a class="button primary" href="https://www.reddit.com/r/LocalLLaMA/comments/1tnn29i/update_on_12x32gb_sxm_v100_cluster_local_ai_for/" target="_blank" rel="noreferrer">Open thread</a>
+        <a class="button" href="https://i.redd.it/4h07vk82uc3h1.jpeg" target="_blank" rel="noreferrer">External</a>
+      </div>
+    </article>
+    
+    <article class="card post-card">
+      <div class="post-topline">
+        <div class="rank-badge"><span>🔵</span><strong>05</strong></div>
+        <div class="meta-pill">Reddit</div>
+        <div class="meta-pill">r/ClaudeCode</div>
+        <div class="meta-pill">927↑</div>
+        <div class="meta-pill">31 comments</div>
+      </div>
+      <div class="story-labels"><span class="story-label">Reddit</span><span class="story-label">ClaudeCode</span><span class="story-label">Comments missing</span></div>
+      <h2>sounds about right</h2>
+      <p class="discussion story-summary">literally every startup being created right now...</p>
+      
+      <details class="source-expand">
+        <summary><span class="summary-collapsed">Expand full post</span><span class="summary-expanded">Collapse full post</span></summary>
+        <div class="source-expanded-content"><section class="source-section"><div class="source-label">Reddit post · r/ClaudeCode</div><h4>sounds about right</h4><div class="source-prose"><p>literally every startup being created right now...</p></div></section></div>
+      </details>
+    
+      <div class="takeaway"><span>Why it matters</span>**Medium signal.** Worth monitoring, but don’t act on Reddit hype without checking primary sources.</div>
+      <details class="comments"><summary>Top comments</summary><ul><li><span class="vote">n/a</span><span>No top comments captured by collector.</span></li></ul></details>
+      <div class="actions">
+        <a class="button primary" href="https://www.reddit.com/r/ClaudeCode/comments/1tnkvhi/sounds_about_right/" target="_blank" rel="noreferrer">Open thread</a>
+        <a class="button" href="https://i.redd.it/728nskmwec3h1.png" target="_blank" rel="noreferrer">External</a>
+      </div>
+    </article>
+    
+    <article class="card post-card">
+      <div class="post-topline">
+        <div class="rank-badge"><span>🟢</span><strong>06</strong></div>
+        <div class="meta-pill">Reddit</div>
+        <div class="meta-pill">r/ClaudeCode</div>
+        <div class="meta-pill">3↑</div>
+        <div class="meta-pill">2 comments</div>
+      </div>
+      <div class="story-labels"><span class="story-label">Reddit</span><span class="story-label">ClaudeCode</span><span class="story-label">Comments missing</span></div>
+      <h2>Claude Code receipts: what should be captured after a run?</h2>
+      <p class="discussion story-summary">I have been trying to make my coding-agent workflow less vibes-based after a run finishes. The rough idea: when Claude Code says &quot;done,&quot; I want a small receipt that makes the run reviewable later, not just a transcript. Things like: - files touched / commands run - tools used and whether they were read/write/exec/network - approvals or prompts that changed the run - tests/checks attempted and their status - whether a</p>
+      
+      <details class="source-expand">
+        <summary><span class="summary-collapsed">Expand full post</span><span class="summary-expanded">Collapse full post</span></summary>
+        <div class="source-expanded-content"><section class="source-section"><div class="source-label">Reddit post · r/ClaudeCode</div><h4>Claude Code receipts: what should be captured after a run?</h4><div class="source-prose"><p>I have been trying to make my coding-agent workflow less vibes-based after a run finishes.</p><p>The rough idea: when Claude Code says &quot;done,&quot; I want a small receipt that makes the run reviewable later, not just a transcript. Things like:</p><p>- files touched / commands run
+- tools used and whether they were read/write/exec/network
+- approvals or prompts that changed the run
+- tests/checks attempted and their status
+- whether any state was changed outside the repo
+- enough IDs to join back to logs or traces</p><p>I am exploring this in Armorer as a local ops/control-plane layer around agents, but I am mostly trying to sanity-check the shape with people who actually use Claude Code daily.</p><p>For Claude Code users: what evidence do you wish you had after a long run? What would make you trust, resume, or debug a run faster?</p><p>Related design thread if useful: https://github.com/ArmorerLabs/Armorer/discussions/45</p></div></section></div>
+      </details>
+    
+      <div class="takeaway"><span>Why it matters</span>**High signal for coding workflow.** Compare against your Hermes/Codex/Claude usage before changing tools or architecture.</div>
+      <details class="comments"><summary>Top comments</summary><ul><li><span class="vote">n/a</span><span>No top comments captured by collector.</span></li></ul></details>
+      <div class="actions">
+        <a class="button primary" href="https://www.reddit.com/r/ClaudeCode/comments/1tnzo68/claude_code_receipts_what_should_be_captured/" target="_blank" rel="noreferrer">Open thread</a>
+        
+      </div>
+    </article>
+    
+    <article class="card post-card">
+      <div class="post-topline">
+        <div class="rank-badge"><span>🟣</span><strong>07</strong></div>
+        <div class="meta-pill">Reddit</div>
+        <div class="meta-pill">r/AI_Agents</div>
+        <div class="meta-pill">13↑</div>
+        <div class="meta-pill">19 comments</div>
+      </div>
+      <div class="story-labels"><span class="story-label">Reddit</span><span class="story-label">AI_Agents</span><span class="story-label">Comments missing</span></div>
+      <h2>Should we totally give up on Gemini for coding?</h2>
+      <p class="discussion story-summary">Been building with Codex (Gpt 5.5), Sonnet 4.6, recently tried Gemini 3.1 pro. While Codex and Claude are kind of on-par in terms of the quality of the work, I found Gemini 3.1 Pro to be like an inexperienced, junior SWE who turns in half-baked work most of the time. Is it just me? Has anyone managed to harness 3.1 Pro to be as good as Codex/Claude? 3.1 Pro is supposed to be “frontier” at this point, but now I feel l</p>
+      
+      <details class="source-expand">
+        <summary><span class="summary-collapsed">Expand full post</span><span class="summary-expanded">Collapse full post</span></summary>
+        <div class="source-expanded-content"><section class="source-section"><div class="source-label">Reddit post · r/AI_Agents</div><h4>Should we totally give up on Gemini for coding?</h4><div class="source-prose"><p>Been building with Codex (Gpt 5.5), Sonnet 4.6, recently tried Gemini 3.1 pro. While Codex and Claude are kind of on-par in terms of the quality of the work, I found Gemini 3.1 Pro to be like an inexperienced, junior SWE who turns in half-baked work most of the time.</p><p>Is it just me? Has anyone managed to harness 3.1 Pro to be as good as Codex/Claude?</p><p>3.1 Pro is supposed to be “frontier” at this point, but now I feel like Google will never make it into the league of frontier model for coding, sadly</p></div></section></div>
+      </details>
+    
+      <div class="takeaway"><span>Why it matters</span>**High signal for coding workflow.** Compare against your Hermes/Codex/Claude usage before changing tools or architecture.</div>
+      <details class="comments"><summary>Top comments</summary><ul><li><span class="vote">n/a</span><span>No top comments captured by collector.</span></li></ul></details>
+      <div class="actions">
+        <a class="button primary" href="https://www.reddit.com/r/AI_Agents/comments/1tnwbpd/should_we_totally_give_up_on_gemini_for_coding/" target="_blank" rel="noreferrer">Open thread</a>
+        
+      </div>
+    </article>
+    
+    <article class="card post-card">
+      <div class="post-topline">
+        <div class="rank-badge"><span>🟣</span><strong>08</strong></div>
+        <div class="meta-pill">Reddit</div>
+        <div class="meta-pill">r/StableDiffusion</div>
+        <div class="meta-pill">713↑</div>
+        <div class="meta-pill">104 comments</div>
+      </div>
+      <div class="story-labels"><span class="story-label">Reddit</span><span class="story-label">Comments missing</span></div>
+      <h2>Nvidia solved VAE? Fast and High-Resolution Latent Decoding with Pixel Diffusion</h2>
+      <p class="discussion story-summary">link link</p>
+      
+      <details class="source-expand">
+        <summary><span class="summary-collapsed">Expand full post</span><span class="summary-expanded">Collapse full post</span></summary>
+        <div class="source-expanded-content"><section class="source-section"><div class="source-label">Reddit post · r/StableDiffusion</div><h4>Nvidia solved VAE? Fast and High-Resolution Latent Decoding with Pixel Diffusion</h4><div class="source-prose"><p>[https://research.nvidia.com/labs/sil/projects/pid/](https://research.nvidia.com/labs/sil/projects/pid/) 
+[https://huggingface.co/nvidia/PiD](https://huggingface.co/nvidia/PiD)</p></div></section></div>
+      </details>
+    
+      <div class="takeaway"><span>Why it matters</span>**High signal for coding workflow.** Compare against your Hermes/Codex/Claude usage before changing tools or architecture.</div>
+      <details class="comments"><summary>Top comments</summary><ul><li><span class="vote">n/a</span><span>No top comments captured by collector.</span></li></ul></details>
+      <div class="actions">
+        <a class="button primary" href="https://www.reddit.com/r/StableDiffusion/comments/1tn3m6n/nvidia_solved_vae_fast_and_highresolution_latent/" target="_blank" rel="noreferrer">Open thread</a>
+        <a class="button" href="https://v.redd.it/935mc85u193h1" target="_blank" rel="noreferrer">External</a>
+      </div>
+    </article>
+    
+    <article class="card post-card">
+      <div class="post-topline">
+        <div class="rank-badge"><span>🟢</span><strong>09</strong></div>
+        <div class="meta-pill">Reddit</div>
+        <div class="meta-pill">r/LocalLLaMA</div>
+        <div class="meta-pill">137↑</div>
+        <div class="meta-pill">50 comments</div>
+      </div>
+      <div class="story-labels"><span class="story-label">Reddit</span><span class="story-label">LocalLLaMA</span><span class="story-label">Comments missing</span></div>
+      <h2>Old Mac Pro still proving its worth</h2>
+      <p class="discussion story-summary">The “Trash Can” Mac Pro, once the most expensive machine you could buy from Apple, mine was just shy of £10,000 in 2016 — that’s £14k in today’s money. Until recently mine was just running as a kubernetes single node development platform, it’s 64gb of ram and 24 logical cores made it perfect for that. Its most powerful asset, a pair of D700 GPUs, essentially sat idle for years… that is until yesterday when I discover</p>
+      
+      <details class="source-expand">
+        <summary><span class="summary-collapsed">Expand full post</span><span class="summary-expanded">Collapse full post</span></summary>
+        <div class="source-expanded-content"><section class="source-section"><div class="source-label">Reddit post · r/LocalLLaMA</div><h4>Old Mac Pro still proving its worth</h4><div class="source-prose"><p>The “Trash Can” Mac Pro, once the most expensive machine you could buy from Apple, mine was just shy of £10,000 in 2016 — that’s £14k in today’s money.</p><p>Until recently mine was just running as a kubernetes single node development platform, it’s 64gb of ram and 24 logical cores made it perfect for that.</p><p>Its most powerful asset, a pair of D700 GPUs, essentially sat idle for years… that is until yesterday when I discovered that while its old southern islands based GPUs weren’t supported in ROCm, they were now supported under Vulkan — thanks to new drivers and a new Linux kernel.</p><p>That means it can run basically any model that llama cpp can throw at its 12gb of VRAM. Time to do some benchmarks, right?</p><p>Qwen 3.5 9B Q4 MTP — 11 t/s output at 70k context 
+Qwen 2.5 coder q4 — 22 t/s output at 70k context</p><p>Not exactly lightening fast but totally usable, especially for planning tasks where you can just set it and forget it.</p><p>The thing that’s really blown my mind though is that the planning output from qwen 3.5 is significantly, and it’s not even close, better than Claude Sonnet 4.6. It absolutely smashed planning on a complex csharp .net 10 app with nuget packages that sonnet struggled with, qwen just googled the docs.</p><p>Mind blown 🤯</p><p>What other ancient hardware are people running that’s still capable of doing real LLM work?</p></div></section></div>
+      </details>
+    
+      <div class="takeaway"><span>Why it matters</span>**High signal if running local models.** Check hardware fit, latency, and eval quality before adopting.</div>
+      <details class="comments"><summary>Top comments</summary><ul><li><span class="vote">n/a</span><span>No top comments captured by collector.</span></li></ul></details>
+      <div class="actions">
+        <a class="button primary" href="https://www.reddit.com/r/LocalLLaMA/comments/1tn7csy/old_mac_pro_still_proving_its_worth/" target="_blank" rel="noreferrer">Open thread</a>
+        <a class="button" href="https://i.redd.it/jrqcw2o7z93h1.jpeg" target="_blank" rel="noreferrer">External</a>
+      </div>
+    </article>
+    
+    <article class="card post-card">
+      <div class="post-topline">
+        <div class="rank-badge"><span>🟣</span><strong>10</strong></div>
+        <div class="meta-pill">Reddit</div>
+        <div class="meta-pill">r/ClaudeCode</div>
+        <div class="meta-pill">93↑</div>
+        <div class="meta-pill">20 comments</div>
+      </div>
+      <div class="story-labels"><span class="story-label">Reddit</span><span class="story-label">ClaudeCode</span><span class="story-label">Comments missing</span></div>
+      <h2>I gave Claude Code ADHD.. and it thinks 2x better now</h2>
+      <p class="discussion story-summary">Hi everyone, I do research in AI safety for healthcare and life sciences. And while I was using Claude Code to reason on a couple of things, I realised a pattern. Claude or any other AI agent is very linear. Theres a strong reason why - the thinking pattern of almost all LLMs from 2024 follow Chain-of-thoughts where AI is programmed to go deep unilaterally. But researchers or creativity-intensive works do not need to</p>
+      
+      <details class="source-expand">
+        <summary><span class="summary-collapsed">Expand full post</span><span class="summary-expanded">Collapse full post</span></summary>
+        <div class="source-expanded-content"><section class="source-section"><div class="source-label">Reddit post · r/ClaudeCode</div><h4>I gave Claude Code ADHD.. and it thinks 2x better now</h4><div class="source-prose"><p>Hi everyone,</p><p>I do research in AI safety for healthcare and life sciences. And while I was using Claude Code to reason on a couple of things, I realised a pattern. Claude or any other AI agent is very linear.</p><p>Theres a strong reason why - the thinking pattern of almost all LLMs from 2024 follow Chain-of-thoughts where AI is programmed to go deep unilaterally.</p><p>But researchers or creativity-intensive works do not need to go unilateral but do divergent.</p><p>That&#x27;s the whole base of my paper - ADHD - Parallel Divergent Ideation for Coding Agents.</p><p>My thesis is that if we disregard the default chain-of-thoughts and consider a tree-of-thoughts, then we can empanel divergent thinking in our models. thus, giving us the much needed scope of connecting dots from different thinking points.</p><p>Its a lot inspired by how the mind of someone with ADHD works- think in a lot of directions and go deep in a few, and there, we add our our critic layer, that judged and scores all this thinking.</p><p>Limitation : It shoots cost by \~5x and time to output by \~10x but enables instant novel thinking. Good for brainstorming and planning, not for coding.</p><p>Give me your feedback, I am happy to learn how you find it and what&#x27;s the scope to improve.</p><p>Also, its completely opensource so you can just clone it or contribute to it.</p></div></section></div>
+      </details>
+    
+      <div class="takeaway"><span>Why it matters</span>**High signal for coding workflow.** Compare against your Hermes/Codex/Claude usage before changing tools or architecture.</div>
+      <details class="comments"><summary>Top comments</summary><ul><li><span class="vote">n/a</span><span>No top comments captured by collector.</span></li></ul></details>
+      <div class="actions">
+        <a class="button primary" href="https://www.reddit.com/r/ClaudeCode/comments/1tny93g/i_gave_claude_code_adhd_and_it_thinks_2x_better/" target="_blank" rel="noreferrer">Open thread</a>
+        <a class="button" href="https://github.com/uditakhourii/adhd" target="_blank" rel="noreferrer">External</a>
+      </div>
+    </article>
+    
+        
+        <section class="archive-brief" id="brief-1">
+          <div class="section-head"><span>Brief 1</span><h2>2026-05-26 01:30 IST</h2><p>16 ranked posts from 16 sources.</p></div>
+          <div class="archive-grid">
+    <article class="card post-card">
+      <div class="post-topline">
+        <div class="rank-badge"><span>🟡</span><strong>01</strong></div>
+        <div class="meta-pill">Reddit</div>
+        <div class="meta-pill">r/ChatGPT</div>
+        <div class="meta-pill">915↑</div>
+        <div class="meta-pill">694 comments</div>
+      </div>
+      <div class="story-labels"><span class="story-label">Reddit</span></div>
+      <h2>You have to pick one</h2>
+      <p class="discussion story-summary">Pinecone is the only one I could imagine acceptable Not just acceptable, but good. Like... Pine tea is already a thing.</p>
+      
+      <details class="source-expand">
+        <summary><span class="summary-collapsed">Expand full post</span><span class="summary-expanded">Collapse full post</span></summary>
+        <div class="source-expanded-content"><section class="source-section"><div class="source-label">Reddit post · r/ChatGPT</div><h4>You have to pick one</h4><div class="source-comments"><strong>Captured top comments</strong><ul><li><span class="vote">2139↑</span><span>Pinecone is the only one I could imagine acceptable</span></li><li><span class="vote">550↑</span><span>Not just acceptable, but good. Like... Pine tea is already a thing.</span></li><li><span class="vote">409↑</span><span>link</span></li><li><span class="vote">385↑</span><span>Twerking purple drank, all day</span></li><li><span class="vote">382↑</span><span>Pinecone flavored drinks are already a thing, its not that bad.</span></li></ul></div></section></div>
+      </details>
+    
+      <div class="takeaway"><span>Why it matters</span>**Medium signal.** Worth monitoring, but don’t act on Reddit hype without checking primary sources.</div>
+      <details class="comments"><summary>Top comments</summary><ul><li><span class="vote">2139↑</span><span>Pinecone is the only one I could imagine acceptable</span></li><li><span class="vote">550↑</span><span>Not just acceptable, but good. Like... Pine tea is already a thing.</span></li><li><span class="vote">409↑</span><span>link</span></li></ul></details>
+      <div class="actions">
+        <a class="button primary" href="https://www.reddit.com/r/ChatGPT/comments/1tmodqo/you_have_to_pick_one/" target="_blank" rel="noreferrer">Open thread</a>
+        <a class="button" href="https://www.reddit.com/gallery/1tmodqo" target="_blank" rel="noreferrer">External</a>
+      </div>
+    </article>
+    
+    <article class="card post-card">
+      <div class="post-topline">
+        <div class="rank-badge"><span>🟠</span><strong>02</strong></div>
+        <div class="meta-pill">Reddit</div>
+        <div class="meta-pill">r/ChatGPT</div>
+        <div class="meta-pill">1615↑</div>
+        <div class="meta-pill">388 comments</div>
+      </div>
+      <div class="story-labels"><span class="story-label">Reddit</span></div>
+      <h2>Figure AI had a livestream of their robots sorting packages 24/7 for 8 days straight. These aren&#x27;t staged demos anymore.</h2>
+      <p class="discussion story-summary">Looks like it&#x27;s imitating the motion of a guy rolling his chair back from a table and getting up off his chair. so... 24/8?</p>
+      
+      <details class="source-expand">
+        <summary><span class="summary-collapsed">Expand full post</span><span class="summary-expanded">Collapse full post</span></summary>
+        <div class="source-expanded-content"><section class="source-section"><div class="source-label">Reddit post · r/ChatGPT</div><h4>Figure AI had a livestream of their robots sorting packages 24/7 for 8 days straight. These aren&#x27;t staged demos anymore.</h4><div class="source-comments"><strong>Captured top comments</strong><ul><li><span class="vote">1185↑</span><span>Looks like it&#x27;s imitating the motion of a guy rolling his chair back from a table and getting up off his chair.</span></li><li><span class="vote">487↑</span><span>so... 24/8?</span></li><li><span class="vote">363↑</span><span>&quot;Rohit has disconnected. Session length: 12000 minutes&quot;</span></li><li><span class="vote">315↑</span><span>the robot had it when it got sprayed by champaign</span></li><li><span class="vote">295↑</span><span>Even robots have to deal with the 24/8 corporate grind now. Nowhere is safe.</span></li></ul></div></section></div>
+      </details>
+    
+      <div class="takeaway"><span>Why it matters</span>**Medium signal.** Worth monitoring, but don’t act on Reddit hype without checking primary sources.</div>
+      <details class="comments"><summary>Top comments</summary><ul><li><span class="vote">1185↑</span><span>Looks like it&#x27;s imitating the motion of a guy rolling his chair back from a table and getting up off his chair.</span></li><li><span class="vote">487↑</span><span>so... 24/8?</span></li><li><span class="vote">363↑</span><span>&quot;Rohit has disconnected. Session length: 12000 minutes&quot;</span></li></ul></details>
+      <div class="actions">
+        <a class="button primary" href="https://www.reddit.com/r/ChatGPT/comments/1tmzwcr/figure_ai_had_a_livestream_of_their_robots/" target="_blank" rel="noreferrer">Open thread</a>
+        <a class="button" href="https://v.redd.it/ex0w9auf283h1" target="_blank" rel="noreferrer">External</a>
+      </div>
+    </article>
+    
+    <article class="card post-card">
+      <div class="post-topline">
+        <div class="rank-badge"><span>🟣</span><strong>03</strong></div>
+        <div class="meta-pill">Reddit</div>
+        <div class="meta-pill">r/ChatGPT</div>
+        <div class="meta-pill">2249↑</div>
+        <div class="meta-pill">145 comments</div>
+      </div>
+      <div class="story-labels"><span class="story-label">Reddit</span></div>
+      <h2>Sure I guess</h2>
+      <p class="discussion story-summary">link r/technicallythetruth</p>
+      
+      <details class="source-expand">
+        <summary><span class="summary-collapsed">Expand full post</span><span class="summary-expanded">Collapse full post</span></summary>
+        <div class="source-expanded-content"><section class="source-section"><div class="source-label">Reddit post · r/ChatGPT</div><h4>Sure I guess</h4><div class="source-comments"><strong>Captured top comments</strong><ul><li><span class="vote">354↑</span><span>link</span></li><li><span class="vote">303↑</span><span>r/technicallythetruth</span></li><li><span class="vote">171↑</span><span>now make them kiss</span></li><li><span class="vote">169↑</span><span>perfect time to pitch my new fun sub r/ai_art_battles link</span></li><li><span class="vote">69↑</span><span>r/ai_art_battles :D link</span></li></ul></div></section></div>
+      </details>
+    
+      <div class="takeaway"><span>Why it matters</span>**Medium signal.** Worth monitoring, but don’t act on Reddit hype without checking primary sources.</div>
+      <details class="comments"><summary>Top comments</summary><ul><li><span class="vote">354↑</span><span>link</span></li><li><span class="vote">303↑</span><span>r/technicallythetruth</span></li><li><span class="vote">171↑</span><span>now make them kiss</span></li></ul></details>
+      <div class="actions">
+        <a class="button primary" href="https://www.reddit.com/r/ChatGPT/comments/1tn19y6/sure_i_guess/" target="_blank" rel="noreferrer">Open thread</a>
+        <a class="button" href="https://i.redd.it/jcelali9f83h1.jpeg" target="_blank" rel="noreferrer">External</a>
+      </div>
+    </article>
+    
+    <article class="card post-card">
+      <div class="post-topline">
+        <div class="rank-badge"><span>🟢</span><strong>04</strong></div>
+        <div class="meta-pill">Reddit</div>
+        <div class="meta-pill">r/singularity</div>
+        <div class="meta-pill">1782↑</div>
+        <div class="meta-pill">222 comments</div>
+      </div>
+      <div class="story-labels"><span class="story-label">Reddit</span></div>
+      <h2>We&#x27;re one step closer to technological transcendence…now they do animated gaussian splats porn</h2>
+      <p class="discussion story-summary">Singoonlarity I&#x27;m holding on to more than my papers</p>
+      
+      <details class="source-expand">
+        <summary><span class="summary-collapsed">Expand full post</span><span class="summary-expanded">Collapse full post</span></summary>
+        <div class="source-expanded-content"><section class="source-section"><div class="source-label">Reddit post · r/singularity</div><h4>We&#x27;re one step closer to technological transcendence…now they do animated gaussian splats porn</h4><div class="source-comments"><strong>Captured top comments</strong><ul><li><span class="vote">799↑</span><span>Singoonlarity</span></li><li><span class="vote">751↑</span><span>I&#x27;m holding on to more than my papers</span></li><li><span class="vote">705↑</span><span>![gif](giphy|LtxC5K0cNlWYvNpDc4)</span></li><li><span class="vote">325↑</span><span>Ahh, a fellow scholar!</span></li><li><span class="vote">239↑</span><span>The history of technology has been on the back of gooning. Seriously. Someone needs to make a documentary on how goon shit has been a pathfinder for new tech advances since the goddamn printing press</span></li></ul></div></section></div>
+      </details>
+    
+      <div class="takeaway"><span>Why it matters</span>**Medium signal.** Worth monitoring, but don’t act on Reddit hype without checking primary sources.</div>
+      <details class="comments"><summary>Top comments</summary><ul><li><span class="vote">799↑</span><span>Singoonlarity</span></li><li><span class="vote">751↑</span><span>I&#x27;m holding on to more than my papers</span></li><li><span class="vote">705↑</span><span>![gif](giphy|LtxC5K0cNlWYvNpDc4)</span></li></ul></details>
+      <div class="actions">
+        <a class="button primary" href="https://www.reddit.com/r/singularity/comments/1tmtajd/were_one_step_closer_to_technological/" target="_blank" rel="noreferrer">Open thread</a>
+        <a class="button" href="https://v.redd.it/dshydlwgi63h1" target="_blank" rel="noreferrer">External</a>
+      </div>
+    </article>
+    
+    <article class="card post-card">
+      <div class="post-topline">
+        <div class="rank-badge"><span>🟢</span><strong>05</strong></div>
+        <div class="meta-pill">Reddit</div>
+        <div class="meta-pill">r/Ollama</div>
+        <div class="meta-pill">53↑</div>
+        <div class="meta-pill">31 comments</div>
+      </div>
+      <div class="story-labels"><span class="story-label">Reddit</span><span class="story-label">Ollama</span></div>
+      <h2>Harnesses</h2>
+      <p class="discussion story-summary">I&#x27;ve been running a fully local AI agent for 3 months on my own hardware (DGX Spark + Mac Mini + A5000) using Ollama. No cloud APIs, no per-token costs, no data leaving my machine. Runs across Discord, Telegram, and WhatsApp simultaneously. Here is what actually worked and what failed badly. **The problem nobody is talking about** LangChain, CrewAI, AutoGen all assume GPT-5 or Claude is driving. They hand the model 1 tHe PrObLeM nObOdY iS tALkiNg AbOuT For anyone who wants to see the implementation, here is the repo: link</p>
+      
+      <details class="source-expand">
+        <summary><span class="summary-collapsed">Expand full post</span><span class="summary-expanded">Collapse full post</span></summary>
+        <div class="source-expanded-content"><section class="source-section"><div class="source-label">Reddit post · r/Ollama</div><h4>Harnesses</h4><div class="source-prose"><p>I&#x27;ve been running a fully local AI agent for 3 months on my own hardware (DGX Spark + Mac Mini + A5000) using Ollama. No cloud APIs, no per-token costs, no data leaving my machine. Runs across Discord, Telegram, and WhatsApp simultaneously.</p><p>Here is what actually worked and what failed badly.</p><p>**The problem nobody is talking about**</p><p>LangChain, CrewAI, AutoGen all assume GPT-5 or Claude is driving. They hand the model 15+ tools and let it figure out the workflow.</p><p>Local models in the 7-30B range cannot do this. They narrate tool calls instead of executing them. They hallucinate tool names when given too many options. They burn tokens on internal reasoning and return empty responses. They fail JSON parsing with complex schemas.</p><p>The solution is not a better prompt. It is a better architecture.</p><p>**Stop giving local models 39 tools**</p><p>This was the single biggest win.</p><p>I use a fast router model (phi4:14b, \~50ms) that classifies intent into categories, then hands off to a specialist that only sees 3-6 relevant tools.</p><p>User → Router (phi4:14b) → Category
+ → web_search specialist (3 tools)
+ → exec specialist (4 tools)
+ → memory specialist (3 tools)
+ → chat (no tools, just conversation)</p><p>A 30B model choosing between 6 tools is reliable. The same model choosing between 39 tools wanders, picks wrong tools, and burns iterations. The accuracy difference is not subtle.</p><p>Lesson learned the hard way: I tried using phi4-mini as a cheaper router for short messages to save latency. It started producing &quot;As an AI developed by Microsoft&quot; responses and broke mid-conversation routing. Short messages mid-conversation need context, not a cheaper model. Everything routes through phi4:14b now.</p><p>**Stop letting the model decide anything deterministic**</p><p>Most of my categories do not use a ReAct loop at all. They use deterministic pipelines where code controls the workflow.</p><p>web_search: extract_params → search → pick_urls → 
+ fetch_pages (3 concurrent) → synthesize → quality_review → [revision]
+ 
+ research: plan_queries → parallel_search → parallel_fetch → 
+ synthesize → charts → branch(deck|report) → render → [quality_review]</p><p>The model does two things: extracts parameters and synthesizes text. Code handles everything else. Tool ordering, parallel execution, error recovery, quality gates.</p><p>I tried letting the model freely orchestrate exec tools in a ReAct loop. It used 8 steps for a simple ls command. Called exec correctly then tried find, chmod, which before stopping. Local models cannot self-regulate in open-ended tool loops for simple tasks. Do not let them try.</p><p>**Flat vector memory will eventually fail you**</p><p>I started with a flat JSONL fact store. It accumulated 14 near-duplicate facts about the same topic. Layered dedup defenses were individually weak. Facts only surfaced in scheduled briefings, never in actual conversations.</p><p>Switched to FalkorDB. Graph database with native HNSW vector search that speaks Redis wire protocol. 20MB memory footprint, sub-millisecond queries, runs in Docker.</p><p>The schema:</p><p>(:Fact {text, importance, embedding}) -[:ABOUT]-&gt; (:Entity {name, type})
+ (:Fact) -[:SUPERSEDES]-&gt; (:Fact)
+ (:Fact) -[:TAGGED]-&gt; (:Tag)
+ (:Turn) -[:MENTIONS]-&gt; (:Entity)</p><p>What the graph gives you that vectors alone cannot: entity traversal, SUPERSEDES chains so fact evolution is preserved with history, cross-session search through entity connections, and multi-signal scoring that lets you weight importance over recency when it matters.</p><p>On every incoming message, relevant facts are silently injected into the specialist context. The agent knows who you are without asking every time.</p><p>**The mistake that made me blame the model for a week**</p><p>Thinking models like qwen3.6 and nemotron use internal reasoning tokens before producing visible output.</p><p>I had num\_predict set to 1024. The models were spending everything on internal reasoning and returning empty responses. I swapped models three times before realizing the constraint was mine.</p><p>If a model keeps returning empty responses, check your token limits before blaming capability.</p><p>**Code curates, model reasons. Not the other way around.**</p><p>The original heartbeat let the model search memory randomly. Each run surfaced different facts with different formatting. The task board had the model compute urgency and it said everything was urgent.</p><p>Now code handles the what. Which facts changed, which tasks are overdue, what day it is. The model handles the so what. What does it mean, what is connected, what should you know about it.</p><p>Task urgency and calendar labels are computed in TypeScript. I tried three prompt rewrites to get the model to do it reliably. It kept saying things like &quot;264 days remaining, requiring attention soon.&quot; If a model fails at something deterministic after three attempts, move it to code. That is the rule now.</p><p>**The full stack if you are curious**</p><p>|Role|Model|Why|
+|:-|:-|:-|
+|Router|phi4:14b|Fast classification, \~200 tokens per decision|
+|Specialists|qwen3-coder:30b|Reliable tool sequencing|
+|Chat|gemma4:26b (MoE)|3.8B active params, fast, clean conversation|
+|Briefing|qwen3.6:35b|Better reasoning, respects pre-labeled data|
+|Embedding|qwen3-embedding:8b|Vector search|
+|Vision|qwen3-vl:8b|Image analysis|</p><p>Running on DGX Spark (128GB) + Mac Mini + A5000. 48 models available, 39 tools, 11 pipelines, 7 channel adapters. FalkorDB graph currently at 817 nodes, 294 edges. All local.</p><p>**The honest tradeoff**</p><p>You get full control over routing, tool access, memory, scheduling. No vendor lock-in, no per-token costs, complete privacy, the ability to tune every layer independently.</p><p>What it costs is that everything breaks in small, different ways. Each model has its own failure modes. You are building the floor that makes probabilistic noise usable and that floor is a lot of code.</p><p>If you are running Ollama seriously and want an agent that actually knows who you are, remembers your conversations, searches the web, manages tasks, and delivers proactive briefings, the harness is where the real engineering happens.</p><p>The model is just a component.</p><p>Happy to answer questions about any of these patterns.</p></div><div class="source-comments"><strong>Captured top comments</strong><ul><li><span class="vote">12↑</span><span>tHe PrObLeM nObOdY iS tALkiNg AbOuT</span></li><li><span class="vote">3↑</span><span>For anyone who wants to see the implementation, here is the repo: link</span></li><li><span class="vote">2↑</span><span>Yeah. Stupid ai slop posts.</span></li><li><span class="vote">2↑</span><span>This is a lot of work great job setting it up. I feel like this could’ve been handled by just finding one bigger smarter model you would loose on tpsbut it would probably save of all the time debugging and touting all these different llms</span></li><li><span class="vote">2↑</span><span>Not wrong, it was left over from testing. Newer Qwen models also have vision</span></li></ul></div></section></div>
+      </details>
+    
+      <div class="takeaway"><span>Why it matters</span>**High signal if running local models.** Check hardware fit, latency, and eval quality before adopting.</div>
+      <details class="comments"><summary>Top comments</summary><ul><li><span class="vote">12↑</span><span>tHe PrObLeM nObOdY iS tALkiNg AbOuT</span></li><li><span class="vote">3↑</span><span>For anyone who wants to see the implementation, here is the repo: link</span></li><li><span class="vote">2↑</span><span>Yeah. Stupid ai slop posts.</span></li></ul></details>
+      <div class="actions">
+        <a class="button primary" href="https://www.reddit.com/r/ollama/comments/1tn3l7y/harnesses/" target="_blank" rel="noreferrer">Open thread</a>
+        
+      </div>
+    </article>
+    
+    <article class="card post-card">
+      <div class="post-topline">
+        <div class="rank-badge"><span>🟠</span><strong>06</strong></div>
+        <div class="meta-pill">Reddit</div>
+        <div class="meta-pill">r/ChatGPT</div>
+        <div class="meta-pill">1206↑</div>
+        <div class="meta-pill">215 comments</div>
+      </div>
+      <div class="story-labels"><span class="story-label">Reddit</span></div>
+      <h2>Are we nearly there?</h2>
+      <p class="discussion story-summary">Implying tech companies besides Anthropic, Google, and Nvidia have any money left over by 2027 after they all ran through cash on hand for tokens. Lot of cope here. The amount of cleanup will be non zero , and some major rework necessary in some cases. but nobody is going back to hand coding at scale. Mass produced factory pr Put this on prediction markets so we can bet on it.</p>
+      
+      <details class="source-expand">
+        <summary><span class="summary-collapsed">Expand full post</span><span class="summary-expanded">Collapse full post</span></summary>
+        <div class="source-expanded-content"><section class="source-section"><div class="source-label">Reddit post · r/ChatGPT</div><h4>Are we nearly there?</h4><div class="source-prose"><p>Implying tech companies besides Anthropic, Google, and Nvidia have any money left over by 2027 after they all ran through cash on hand for tokens.</p></div><div class="source-comments"><strong>Captured top comments</strong><ul><li><span class="vote">332↑</span><span>Lot of cope here. The amount of cleanup will be non zero , and some major rework necessary in some cases. but nobody is going back to hand coding at scale. Mass produced factory produced clothes replaced hand made clothes for the same reason. A bespoke suit might fit better but you can’t beat the volume and price of mass production. Token cost will come down.</span></li><li><span class="vote">131↑</span><span>Put this on prediction markets so we can bet on it.</span></li><li><span class="vote">72↑</span><span>The problem with guys like this is they pretend like humans write good code. People are *terrible* at writing maintenance bug-free code. For AI to be worse in 2027 would be quite a feat considering it’s already better than the vast majority of people employed to write software today.</span></li><li><span class="vote">67↑</span><span>The problem with AI code is when you start, you can&#x27;t stop. AI generates code that is not easily understood and modified by humans, so to keep delivering you use more AI, that produces more unreadable but working code. And in a very short time you lose control over your product because even senior devs hardly understand wtf is going on, so you keep running to AI for every small thing, for every bug, for every…</span></li><li><span class="vote">50↑</span><span>Delusional</span></li></ul></div></section></div>
+      </details>
+    
+      <div class="takeaway"><span>Why it matters</span>**High signal for coding workflow.** Compare against your Hermes/Codex/Claude usage before changing tools or architecture.</div>
+      <details class="comments"><summary>Top comments</summary><ul><li><span class="vote">332↑</span><span>Lot of cope here. The amount of cleanup will be non zero , and some major rework necessary in some cases. but nobody is going back to hand coding at scale. Mass produced factory produced clothes replaced hand…</span></li><li><span class="vote">131↑</span><span>Put this on prediction markets so we can bet on it.</span></li><li><span class="vote">72↑</span><span>The problem with guys like this is they pretend like humans write good code. People are *terrible* at writing maintenance bug-free code. For AI to be worse in 2027 would be quite a feat considering it’s…</span></li></ul></details>
+      <div class="actions">
+        <a class="button primary" href="https://www.reddit.com/r/ChatGPT/comments/1tn9ebd/are_we_nearly_there/" target="_blank" rel="noreferrer">Open thread</a>
+        <a class="button" href="https://i.redd.it/dt732ap7da3h1.jpeg" target="_blank" rel="noreferrer">External</a>
+      </div>
+    </article>
+    
+    <article class="card post-card">
+      <div class="post-topline">
+        <div class="rank-badge"><span>🟢</span><strong>07</strong></div>
+        <div class="meta-pill">Reddit</div>
+        <div class="meta-pill">r/Ollama</div>
+        <div class="meta-pill">1↑</div>
+        <div class="meta-pill"> comments</div>
+      </div>
+      <div class="story-labels"><span class="story-label">Reddit</span><span class="story-label">Ollama</span></div>
+      <h2>Are there truly &quot;free&quot; cloud-hosted models available via Ollama for development?</h2>
+      <p class="discussion story-summary">Hi everyone, I’m a developer currently using Ollama for local LLM inference, but my hardware is starting to struggle with larger context lengths and more complex tasks. I’ve been reading about &quot;Ollama Cloud&quot; and the existence of cloud-hosted models (like `kimi-k2.5:cloud` or `glm-5:cloud`). I see there is a &quot;Free&quot; tier mentioned on their site, but I’m struggling to understand the reality of using it for actual develo well considering they just massively slashed their usage quota the free tier only works for model small enough to host on your own GPU for free anyway.</p>
+      
+      <details class="source-expand">
+        <summary><span class="summary-collapsed">Expand full post</span><span class="summary-expanded">Collapse full post</span></summary>
+        <div class="source-expanded-content"><section class="source-section"><div class="source-label">Reddit post · r/Ollama</div><h4>Are there truly &quot;free&quot; cloud-hosted models available via Ollama for development?</h4><div class="source-prose"><p>Hi everyone,</p><p>I’m a developer currently using Ollama for local LLM inference, but my hardware is starting to struggle with larger context lengths and more complex tasks.</p><p>I’ve been reading about &quot;Ollama Cloud&quot; and the existence of cloud-hosted models (like `kimi-k2.5:cloud` or `glm-5:cloud`). I see there is a &quot;Free&quot; tier mentioned on their site, but I’m struggling to understand the reality of using it for actual development work:</p><p>1. **How usable is the Free tier?** Is it actually viable for a coding workflow, or are the rate limits so tight that it’s mostly just for testing?
+2. **Performance/Latency:** For those using it, is the latency acceptable for an AI-assisted coding agent (like Claude Code or similar integrations)?
+3. **Privacy:** I understand that local Ollama is private, but does sending prompts to these cloud-hosted models follow the same privacy standards?</p><p>I&#x27;d love to hear your experiences—is it worth moving some of my tasks to the Ollama cloud, or should I just look into other API providers if I need more power than my local machine can handle?</p><p>Thanks in advance for the help!</p></div><div class="source-comments"><strong>Captured top comments</strong><ul><li><span class="vote">1↑</span><span>well considering they just massively slashed their usage quota the free tier only works for model small enough to host on your own GPU for free anyway.</span></li></ul></div></section></div>
+      </details>
+    
+      <div class="takeaway"><span>Why it matters</span>**High signal if running local models.** Check hardware fit, latency, and eval quality before adopting.</div>
+      <details class="comments"><summary>Top comments</summary><ul><li><span class="vote">1↑</span><span>well considering they just massively slashed their usage quota the free tier only works for model small enough to host on your own GPU for free anyway.</span></li></ul></details>
+      <div class="actions">
+        <a class="button primary" href="https://www.reddit.com/r/ollama/comments/1tneert/are_there_truly_free_cloudhosted_models_available/" target="_blank" rel="noreferrer">Open thread</a>
+        
+      </div>
+    </article>
+    
+    <article class="card post-card">
+      <div class="post-topline">
+        <div class="rank-badge"><span>🟣</span><strong>08</strong></div>
+        <div class="meta-pill">Reddit</div>
+        <div class="meta-pill">r/singularity</div>
+        <div class="meta-pill">1361↑</div>
+        <div class="meta-pill">137 comments</div>
+      </div>
+      <div class="story-labels"><span class="story-label">Reddit</span></div>
+      <h2>reconstructing different angles from live footage</h2>
+      <p class="discussion story-summary">damn i just found this out today - 4D Gaussian Splating that converts flat images into three-dimensional spatial data. This would definitely be used for “research” purposes lol Oh shit we finally caught up to CSI Miami level technology</p>
+      
+      <details class="source-expand">
+        <summary><span class="summary-collapsed">Expand full post</span><span class="summary-expanded">Collapse full post</span></summary>
+        <div class="source-expanded-content"><section class="source-section"><div class="source-label">Reddit post · r/singularity</div><h4>reconstructing different angles from live footage</h4><div class="source-prose"><p>damn i just found this out today - 4D Gaussian Splating that converts flat images into three-dimensional spatial data.</p></div><div class="source-comments"><strong>Captured top comments</strong><ul><li><span class="vote">453↑</span><span>This would definitely be used for “research” purposes lol</span></li><li><span class="vote">232↑</span><span>Oh shit we finally caught up to CSI Miami level technology</span></li><li><span class="vote">119↑</span><span>There is only one angle people want to see</span></li><li><span class="vote">110↑</span><span>Except in this technology, the gaps are filled in with what the models believes to be likely. That would be fatal to use as evidence.</span></li><li><span class="vote">84↑</span><span>We’re in a simulation</span></li></ul></div></section></div>
+      </details>
+    
+      <div class="takeaway"><span>Why it matters</span>**Medium signal.** Worth monitoring, but don’t act on Reddit hype without checking primary sources.</div>
+      <details class="comments"><summary>Top comments</summary><ul><li><span class="vote">453↑</span><span>This would definitely be used for “research” purposes lol</span></li><li><span class="vote">232↑</span><span>Oh shit we finally caught up to CSI Miami level technology</span></li><li><span class="vote">119↑</span><span>There is only one angle people want to see</span></li></ul></details>
+      <div class="actions">
+        <a class="button primary" href="https://www.reddit.com/r/singularity/comments/1tmxpbj/reconstructing_different_angles_from_live_footage/" target="_blank" rel="noreferrer">Open thread</a>
+        <a class="button" href="https://v.redd.it/0c4w5hcti73h1" target="_blank" rel="noreferrer">External</a>
+      </div>
+    </article>
+    </div>
+        </section>
+        <section class="archive-brief" id="brief-2">
+          <div class="section-head"><span>Brief 2</span><h2>2026-05-26 09:57 IST</h2><p>16 ranked posts from 16 sources.</p></div>
+          <div class="archive-grid">
     <article class="card post-card">
       <div class="post-topline">
         <div class="rank-badge"><span>🟢</span><strong>01</strong></div>
@@ -361,286 +863,6 @@ Discord: https://discord.com/invite/YwKdQATY2d</p><p>I’m curious: for people h
         <a class="button" href="https://i.redd.it/u001c712rd3h1.gif" target="_blank" rel="noreferrer">External</a>
       </div>
     </article>
-    
-    <article class="card post-card">
-      <div class="post-topline">
-        <div class="rank-badge"><span>🟣</span><strong>09</strong></div>
-        <div class="meta-pill">Reddit</div>
-        <div class="meta-pill">r/ClaudeCode</div>
-        <div class="meta-pill">55↑</div>
-        <div class="meta-pill">71 comments</div>
-      </div>
-      <div class="story-labels"><span class="story-label">Reddit</span><span class="story-label">ClaudeCode</span><span class="story-label">Comments missing</span></div>
-      <h2>Pretty sure I’m using maybe 30% of Claude Code — what’s your daily workflow?</h2>
-      <p class="discussion story-summary">Looking at this sub, it often induces Claude Code FOMO and when I hear about people directing agents from their phone it gets me wondering what I’m missing! **How I use Claude:** I use the VSCode extension for Claude Code, starting with a solid claude.md and going through prompt after prompt, adding one or a few features at a time. Sometimes I’ll have codex do a bit of review in the same repo. No complaints - I def f</p>
-      
-      <details class="source-expand">
-        <summary><span class="summary-collapsed">Expand full post</span><span class="summary-expanded">Collapse full post</span></summary>
-        <div class="source-expanded-content"><section class="source-section"><div class="source-label">Reddit post · r/ClaudeCode</div><h4>Pretty sure I’m using maybe 30% of Claude Code — what’s your daily workflow?</h4><div class="source-prose"><p>Looking at this sub, it often induces Claude Code FOMO and when I hear about people directing agents from their phone it gets me wondering what I’m missing!</p><p>**How I use Claude:** I use the VSCode extension for Claude Code, starting with a solid claude.md and going through prompt after prompt, adding one or a few features at a time. Sometimes I’ll have codex do a bit of review in the same repo. No complaints - I def feel like I get more out of it than the value of my monthly subscription.</p><p>But I get the sense that I could be doing more with it!</p><p>Are you doing more than that? Can you describe how/what?</p></div></section></div>
-      </details>
-    
-      <div class="takeaway"><span>Why it matters</span>**High signal for coding workflow.** Compare against your Hermes/Codex/Claude usage before changing tools or architecture.</div>
-      <details class="comments"><summary>Top comments</summary><ul><li><span class="vote">n/a</span><span>No top comments captured by collector.</span></li></ul></details>
-      <div class="actions">
-        <a class="button primary" href="https://www.reddit.com/r/ClaudeCode/comments/1tn8xmb/pretty_sure_im_using_maybe_30_of_claude_code/" target="_blank" rel="noreferrer">Open thread</a>
-        
-      </div>
-    </article>
-    
-    <article class="card post-card">
-      <div class="post-topline">
-        <div class="rank-badge"><span>🟢</span><strong>10</strong></div>
-        <div class="meta-pill">Reddit</div>
-        <div class="meta-pill">r/LocalLLaMA</div>
-        <div class="meta-pill">7↑</div>
-        <div class="meta-pill">7 comments</div>
-      </div>
-      <div class="story-labels"><span class="story-label">Reddit</span><span class="story-label">LocalLLaMA</span><span class="story-label">Comments missing</span></div>
-      <h2>Need Help - What would you build? Air-gapped NL assistant that is integrated with Splunk</h2>
-      <p class="discussion story-summary">So I have a side project with given scope: * Fully air-gapped / on-prem - no internet, no outbound calls of any kind * Engineers ask questions about Splunk data in natural language * Has to hold the conversation in Korean (index/field names stay English) * Local/small models preferred, needs to fit a modest GPU - was looking at Qwen/Gemma4 but indexing more on what is good enough small model to have decent performanc</p>
-      
-      <details class="source-expand">
-        <summary><span class="summary-collapsed">Expand full post</span><span class="summary-expanded">Collapse full post</span></summary>
-        <div class="source-expanded-content"><section class="source-section"><div class="source-label">Reddit post · r/LocalLLaMA</div><h4>Need Help - What would you build? Air-gapped NL assistant that is integrated with Splunk</h4><div class="source-prose"><p>So I have a side project with given scope:</p><p>* Fully air-gapped / on-prem - no internet, no outbound calls of any kind
-* Engineers ask questions about Splunk data in natural language
-* Has to hold the conversation in Korean (index/field names stay English)
-* Local/small models preferred, needs to fit a modest GPU - was looking at Qwen/Gemma4 but indexing more on what is good enough small model to have decent performance
-* Some memory across the session (not required, but at least within the current session would be nice)
-* Strictly read-only and safe enough to point at prod logs</p><p>I am thinking simple chat interface (like claude, openAI style) where we give Splunk API access for AI to retrieve and reason.</p><p>2 Questions:</p><p>* I was thinking deploying like Openclaw/Hermes agent + small language model to start - because I really like the interaction with them. Is there any better or easier way to achieve similar experience? (vLM, ollama, open WebUI, any suggestions would be nice)
-* In terms of outcome, what do you think we can actually let it do? log analysis? RCA? basic questions?</p><p>Pretty new to this and trying to learn.. any initial guidance or tips would be awesome!</p></div></section></div>
-      </details>
-    
-      <div class="takeaway"><span>Why it matters</span>**High signal if running local models.** Check hardware fit, latency, and eval quality before adopting.</div>
-      <details class="comments"><summary>Top comments</summary><ul><li><span class="vote">n/a</span><span>No top comments captured by collector.</span></li></ul></details>
-      <div class="actions">
-        <a class="button primary" href="https://www.reddit.com/r/LocalLLaMA/comments/1tnpg9h/need_help_what_would_you_build_airgapped_nl/" target="_blank" rel="noreferrer">Open thread</a>
-        
-      </div>
-    </article>
-    
-        
-        <section class="archive-brief" id="brief-1">
-          <div class="section-head"><span>Brief 1</span><h2>2026-05-26 01:30 IST</h2><p>16 ranked posts from 16 sources.</p></div>
-          <div class="archive-grid">
-    <article class="card post-card">
-      <div class="post-topline">
-        <div class="rank-badge"><span>🟡</span><strong>01</strong></div>
-        <div class="meta-pill">Reddit</div>
-        <div class="meta-pill">r/ChatGPT</div>
-        <div class="meta-pill">915↑</div>
-        <div class="meta-pill">694 comments</div>
-      </div>
-      <div class="story-labels"><span class="story-label">Reddit</span></div>
-      <h2>You have to pick one</h2>
-      <p class="discussion story-summary">Pinecone is the only one I could imagine acceptable Not just acceptable, but good. Like... Pine tea is already a thing.</p>
-      
-      <details class="source-expand">
-        <summary><span class="summary-collapsed">Expand full post</span><span class="summary-expanded">Collapse full post</span></summary>
-        <div class="source-expanded-content"><section class="source-section"><div class="source-label">Reddit post · r/ChatGPT</div><h4>You have to pick one</h4><div class="source-comments"><strong>Captured top comments</strong><ul><li><span class="vote">2139↑</span><span>Pinecone is the only one I could imagine acceptable</span></li><li><span class="vote">550↑</span><span>Not just acceptable, but good. Like... Pine tea is already a thing.</span></li><li><span class="vote">409↑</span><span>link</span></li><li><span class="vote">385↑</span><span>Twerking purple drank, all day</span></li><li><span class="vote">382↑</span><span>Pinecone flavored drinks are already a thing, its not that bad.</span></li></ul></div></section></div>
-      </details>
-    
-      <div class="takeaway"><span>Why it matters</span>**Medium signal.** Worth monitoring, but don’t act on Reddit hype without checking primary sources.</div>
-      <details class="comments"><summary>Top comments</summary><ul><li><span class="vote">2139↑</span><span>Pinecone is the only one I could imagine acceptable</span></li><li><span class="vote">550↑</span><span>Not just acceptable, but good. Like... Pine tea is already a thing.</span></li><li><span class="vote">409↑</span><span>link</span></li></ul></details>
-      <div class="actions">
-        <a class="button primary" href="https://www.reddit.com/r/ChatGPT/comments/1tmodqo/you_have_to_pick_one/" target="_blank" rel="noreferrer">Open thread</a>
-        <a class="button" href="https://www.reddit.com/gallery/1tmodqo" target="_blank" rel="noreferrer">External</a>
-      </div>
-    </article>
-    
-    <article class="card post-card">
-      <div class="post-topline">
-        <div class="rank-badge"><span>🟠</span><strong>02</strong></div>
-        <div class="meta-pill">Reddit</div>
-        <div class="meta-pill">r/ChatGPT</div>
-        <div class="meta-pill">1615↑</div>
-        <div class="meta-pill">388 comments</div>
-      </div>
-      <div class="story-labels"><span class="story-label">Reddit</span></div>
-      <h2>Figure AI had a livestream of their robots sorting packages 24/7 for 8 days straight. These aren&#x27;t staged demos anymore.</h2>
-      <p class="discussion story-summary">Looks like it&#x27;s imitating the motion of a guy rolling his chair back from a table and getting up off his chair. so... 24/8?</p>
-      
-      <details class="source-expand">
-        <summary><span class="summary-collapsed">Expand full post</span><span class="summary-expanded">Collapse full post</span></summary>
-        <div class="source-expanded-content"><section class="source-section"><div class="source-label">Reddit post · r/ChatGPT</div><h4>Figure AI had a livestream of their robots sorting packages 24/7 for 8 days straight. These aren&#x27;t staged demos anymore.</h4><div class="source-comments"><strong>Captured top comments</strong><ul><li><span class="vote">1185↑</span><span>Looks like it&#x27;s imitating the motion of a guy rolling his chair back from a table and getting up off his chair.</span></li><li><span class="vote">487↑</span><span>so... 24/8?</span></li><li><span class="vote">363↑</span><span>&quot;Rohit has disconnected. Session length: 12000 minutes&quot;</span></li><li><span class="vote">315↑</span><span>the robot had it when it got sprayed by champaign</span></li><li><span class="vote">295↑</span><span>Even robots have to deal with the 24/8 corporate grind now. Nowhere is safe.</span></li></ul></div></section></div>
-      </details>
-    
-      <div class="takeaway"><span>Why it matters</span>**Medium signal.** Worth monitoring, but don’t act on Reddit hype without checking primary sources.</div>
-      <details class="comments"><summary>Top comments</summary><ul><li><span class="vote">1185↑</span><span>Looks like it&#x27;s imitating the motion of a guy rolling his chair back from a table and getting up off his chair.</span></li><li><span class="vote">487↑</span><span>so... 24/8?</span></li><li><span class="vote">363↑</span><span>&quot;Rohit has disconnected. Session length: 12000 minutes&quot;</span></li></ul></details>
-      <div class="actions">
-        <a class="button primary" href="https://www.reddit.com/r/ChatGPT/comments/1tmzwcr/figure_ai_had_a_livestream_of_their_robots/" target="_blank" rel="noreferrer">Open thread</a>
-        <a class="button" href="https://v.redd.it/ex0w9auf283h1" target="_blank" rel="noreferrer">External</a>
-      </div>
-    </article>
-    
-    <article class="card post-card">
-      <div class="post-topline">
-        <div class="rank-badge"><span>🟣</span><strong>03</strong></div>
-        <div class="meta-pill">Reddit</div>
-        <div class="meta-pill">r/ChatGPT</div>
-        <div class="meta-pill">2249↑</div>
-        <div class="meta-pill">145 comments</div>
-      </div>
-      <div class="story-labels"><span class="story-label">Reddit</span></div>
-      <h2>Sure I guess</h2>
-      <p class="discussion story-summary">link r/technicallythetruth</p>
-      
-      <details class="source-expand">
-        <summary><span class="summary-collapsed">Expand full post</span><span class="summary-expanded">Collapse full post</span></summary>
-        <div class="source-expanded-content"><section class="source-section"><div class="source-label">Reddit post · r/ChatGPT</div><h4>Sure I guess</h4><div class="source-comments"><strong>Captured top comments</strong><ul><li><span class="vote">354↑</span><span>link</span></li><li><span class="vote">303↑</span><span>r/technicallythetruth</span></li><li><span class="vote">171↑</span><span>now make them kiss</span></li><li><span class="vote">169↑</span><span>perfect time to pitch my new fun sub r/ai_art_battles link</span></li><li><span class="vote">69↑</span><span>r/ai_art_battles :D link</span></li></ul></div></section></div>
-      </details>
-    
-      <div class="takeaway"><span>Why it matters</span>**Medium signal.** Worth monitoring, but don’t act on Reddit hype without checking primary sources.</div>
-      <details class="comments"><summary>Top comments</summary><ul><li><span class="vote">354↑</span><span>link</span></li><li><span class="vote">303↑</span><span>r/technicallythetruth</span></li><li><span class="vote">171↑</span><span>now make them kiss</span></li></ul></details>
-      <div class="actions">
-        <a class="button primary" href="https://www.reddit.com/r/ChatGPT/comments/1tn19y6/sure_i_guess/" target="_blank" rel="noreferrer">Open thread</a>
-        <a class="button" href="https://i.redd.it/jcelali9f83h1.jpeg" target="_blank" rel="noreferrer">External</a>
-      </div>
-    </article>
-    
-    <article class="card post-card">
-      <div class="post-topline">
-        <div class="rank-badge"><span>🟢</span><strong>04</strong></div>
-        <div class="meta-pill">Reddit</div>
-        <div class="meta-pill">r/singularity</div>
-        <div class="meta-pill">1782↑</div>
-        <div class="meta-pill">222 comments</div>
-      </div>
-      <div class="story-labels"><span class="story-label">Reddit</span></div>
-      <h2>We&#x27;re one step closer to technological transcendence…now they do animated gaussian splats porn</h2>
-      <p class="discussion story-summary">Singoonlarity I&#x27;m holding on to more than my papers</p>
-      
-      <details class="source-expand">
-        <summary><span class="summary-collapsed">Expand full post</span><span class="summary-expanded">Collapse full post</span></summary>
-        <div class="source-expanded-content"><section class="source-section"><div class="source-label">Reddit post · r/singularity</div><h4>We&#x27;re one step closer to technological transcendence…now they do animated gaussian splats porn</h4><div class="source-comments"><strong>Captured top comments</strong><ul><li><span class="vote">799↑</span><span>Singoonlarity</span></li><li><span class="vote">751↑</span><span>I&#x27;m holding on to more than my papers</span></li><li><span class="vote">705↑</span><span>![gif](giphy|LtxC5K0cNlWYvNpDc4)</span></li><li><span class="vote">325↑</span><span>Ahh, a fellow scholar!</span></li><li><span class="vote">239↑</span><span>The history of technology has been on the back of gooning. Seriously. Someone needs to make a documentary on how goon shit has been a pathfinder for new tech advances since the goddamn printing press</span></li></ul></div></section></div>
-      </details>
-    
-      <div class="takeaway"><span>Why it matters</span>**Medium signal.** Worth monitoring, but don’t act on Reddit hype without checking primary sources.</div>
-      <details class="comments"><summary>Top comments</summary><ul><li><span class="vote">799↑</span><span>Singoonlarity</span></li><li><span class="vote">751↑</span><span>I&#x27;m holding on to more than my papers</span></li><li><span class="vote">705↑</span><span>![gif](giphy|LtxC5K0cNlWYvNpDc4)</span></li></ul></details>
-      <div class="actions">
-        <a class="button primary" href="https://www.reddit.com/r/singularity/comments/1tmtajd/were_one_step_closer_to_technological/" target="_blank" rel="noreferrer">Open thread</a>
-        <a class="button" href="https://v.redd.it/dshydlwgi63h1" target="_blank" rel="noreferrer">External</a>
-      </div>
-    </article>
-    
-    <article class="card post-card">
-      <div class="post-topline">
-        <div class="rank-badge"><span>🟢</span><strong>05</strong></div>
-        <div class="meta-pill">Reddit</div>
-        <div class="meta-pill">r/Ollama</div>
-        <div class="meta-pill">53↑</div>
-        <div class="meta-pill">31 comments</div>
-      </div>
-      <div class="story-labels"><span class="story-label">Reddit</span><span class="story-label">Ollama</span></div>
-      <h2>Harnesses</h2>
-      <p class="discussion story-summary">I&#x27;ve been running a fully local AI agent for 3 months on my own hardware (DGX Spark + Mac Mini + A5000) using Ollama. No cloud APIs, no per-token costs, no data leaving my machine. Runs across Discord, Telegram, and WhatsApp simultaneously. Here is what actually worked and what failed badly. **The problem nobody is talking about** LangChain, CrewAI, AutoGen all assume GPT-5 or Claude is driving. They hand the model 1 tHe PrObLeM nObOdY iS tALkiNg AbOuT For anyone who wants to see the implementation, here is the repo: link</p>
-      
-      <details class="source-expand">
-        <summary><span class="summary-collapsed">Expand full post</span><span class="summary-expanded">Collapse full post</span></summary>
-        <div class="source-expanded-content"><section class="source-section"><div class="source-label">Reddit post · r/Ollama</div><h4>Harnesses</h4><div class="source-prose"><p>I&#x27;ve been running a fully local AI agent for 3 months on my own hardware (DGX Spark + Mac Mini + A5000) using Ollama. No cloud APIs, no per-token costs, no data leaving my machine. Runs across Discord, Telegram, and WhatsApp simultaneously.</p><p>Here is what actually worked and what failed badly.</p><p>**The problem nobody is talking about**</p><p>LangChain, CrewAI, AutoGen all assume GPT-5 or Claude is driving. They hand the model 15+ tools and let it figure out the workflow.</p><p>Local models in the 7-30B range cannot do this. They narrate tool calls instead of executing them. They hallucinate tool names when given too many options. They burn tokens on internal reasoning and return empty responses. They fail JSON parsing with complex schemas.</p><p>The solution is not a better prompt. It is a better architecture.</p><p>**Stop giving local models 39 tools**</p><p>This was the single biggest win.</p><p>I use a fast router model (phi4:14b, \~50ms) that classifies intent into categories, then hands off to a specialist that only sees 3-6 relevant tools.</p><p>User → Router (phi4:14b) → Category
- → web_search specialist (3 tools)
- → exec specialist (4 tools)
- → memory specialist (3 tools)
- → chat (no tools, just conversation)</p><p>A 30B model choosing between 6 tools is reliable. The same model choosing between 39 tools wanders, picks wrong tools, and burns iterations. The accuracy difference is not subtle.</p><p>Lesson learned the hard way: I tried using phi4-mini as a cheaper router for short messages to save latency. It started producing &quot;As an AI developed by Microsoft&quot; responses and broke mid-conversation routing. Short messages mid-conversation need context, not a cheaper model. Everything routes through phi4:14b now.</p><p>**Stop letting the model decide anything deterministic**</p><p>Most of my categories do not use a ReAct loop at all. They use deterministic pipelines where code controls the workflow.</p><p>web_search: extract_params → search → pick_urls → 
- fetch_pages (3 concurrent) → synthesize → quality_review → [revision]
- 
- research: plan_queries → parallel_search → parallel_fetch → 
- synthesize → charts → branch(deck|report) → render → [quality_review]</p><p>The model does two things: extracts parameters and synthesizes text. Code handles everything else. Tool ordering, parallel execution, error recovery, quality gates.</p><p>I tried letting the model freely orchestrate exec tools in a ReAct loop. It used 8 steps for a simple ls command. Called exec correctly then tried find, chmod, which before stopping. Local models cannot self-regulate in open-ended tool loops for simple tasks. Do not let them try.</p><p>**Flat vector memory will eventually fail you**</p><p>I started with a flat JSONL fact store. It accumulated 14 near-duplicate facts about the same topic. Layered dedup defenses were individually weak. Facts only surfaced in scheduled briefings, never in actual conversations.</p><p>Switched to FalkorDB. Graph database with native HNSW vector search that speaks Redis wire protocol. 20MB memory footprint, sub-millisecond queries, runs in Docker.</p><p>The schema:</p><p>(:Fact {text, importance, embedding}) -[:ABOUT]-&gt; (:Entity {name, type})
- (:Fact) -[:SUPERSEDES]-&gt; (:Fact)
- (:Fact) -[:TAGGED]-&gt; (:Tag)
- (:Turn) -[:MENTIONS]-&gt; (:Entity)</p><p>What the graph gives you that vectors alone cannot: entity traversal, SUPERSEDES chains so fact evolution is preserved with history, cross-session search through entity connections, and multi-signal scoring that lets you weight importance over recency when it matters.</p><p>On every incoming message, relevant facts are silently injected into the specialist context. The agent knows who you are without asking every time.</p><p>**The mistake that made me blame the model for a week**</p><p>Thinking models like qwen3.6 and nemotron use internal reasoning tokens before producing visible output.</p><p>I had num\_predict set to 1024. The models were spending everything on internal reasoning and returning empty responses. I swapped models three times before realizing the constraint was mine.</p><p>If a model keeps returning empty responses, check your token limits before blaming capability.</p><p>**Code curates, model reasons. Not the other way around.**</p><p>The original heartbeat let the model search memory randomly. Each run surfaced different facts with different formatting. The task board had the model compute urgency and it said everything was urgent.</p><p>Now code handles the what. Which facts changed, which tasks are overdue, what day it is. The model handles the so what. What does it mean, what is connected, what should you know about it.</p><p>Task urgency and calendar labels are computed in TypeScript. I tried three prompt rewrites to get the model to do it reliably. It kept saying things like &quot;264 days remaining, requiring attention soon.&quot; If a model fails at something deterministic after three attempts, move it to code. That is the rule now.</p><p>**The full stack if you are curious**</p><p>|Role|Model|Why|
-|:-|:-|:-|
-|Router|phi4:14b|Fast classification, \~200 tokens per decision|
-|Specialists|qwen3-coder:30b|Reliable tool sequencing|
-|Chat|gemma4:26b (MoE)|3.8B active params, fast, clean conversation|
-|Briefing|qwen3.6:35b|Better reasoning, respects pre-labeled data|
-|Embedding|qwen3-embedding:8b|Vector search|
-|Vision|qwen3-vl:8b|Image analysis|</p><p>Running on DGX Spark (128GB) + Mac Mini + A5000. 48 models available, 39 tools, 11 pipelines, 7 channel adapters. FalkorDB graph currently at 817 nodes, 294 edges. All local.</p><p>**The honest tradeoff**</p><p>You get full control over routing, tool access, memory, scheduling. No vendor lock-in, no per-token costs, complete privacy, the ability to tune every layer independently.</p><p>What it costs is that everything breaks in small, different ways. Each model has its own failure modes. You are building the floor that makes probabilistic noise usable and that floor is a lot of code.</p><p>If you are running Ollama seriously and want an agent that actually knows who you are, remembers your conversations, searches the web, manages tasks, and delivers proactive briefings, the harness is where the real engineering happens.</p><p>The model is just a component.</p><p>Happy to answer questions about any of these patterns.</p></div><div class="source-comments"><strong>Captured top comments</strong><ul><li><span class="vote">12↑</span><span>tHe PrObLeM nObOdY iS tALkiNg AbOuT</span></li><li><span class="vote">3↑</span><span>For anyone who wants to see the implementation, here is the repo: link</span></li><li><span class="vote">2↑</span><span>Yeah. Stupid ai slop posts.</span></li><li><span class="vote">2↑</span><span>This is a lot of work great job setting it up. I feel like this could’ve been handled by just finding one bigger smarter model you would loose on tpsbut it would probably save of all the time debugging and touting all these different llms</span></li><li><span class="vote">2↑</span><span>Not wrong, it was left over from testing. Newer Qwen models also have vision</span></li></ul></div></section></div>
-      </details>
-    
-      <div class="takeaway"><span>Why it matters</span>**High signal if running local models.** Check hardware fit, latency, and eval quality before adopting.</div>
-      <details class="comments"><summary>Top comments</summary><ul><li><span class="vote">12↑</span><span>tHe PrObLeM nObOdY iS tALkiNg AbOuT</span></li><li><span class="vote">3↑</span><span>For anyone who wants to see the implementation, here is the repo: link</span></li><li><span class="vote">2↑</span><span>Yeah. Stupid ai slop posts.</span></li></ul></details>
-      <div class="actions">
-        <a class="button primary" href="https://www.reddit.com/r/ollama/comments/1tn3l7y/harnesses/" target="_blank" rel="noreferrer">Open thread</a>
-        
-      </div>
-    </article>
-    
-    <article class="card post-card">
-      <div class="post-topline">
-        <div class="rank-badge"><span>🟠</span><strong>06</strong></div>
-        <div class="meta-pill">Reddit</div>
-        <div class="meta-pill">r/ChatGPT</div>
-        <div class="meta-pill">1206↑</div>
-        <div class="meta-pill">215 comments</div>
-      </div>
-      <div class="story-labels"><span class="story-label">Reddit</span></div>
-      <h2>Are we nearly there?</h2>
-      <p class="discussion story-summary">Implying tech companies besides Anthropic, Google, and Nvidia have any money left over by 2027 after they all ran through cash on hand for tokens. Lot of cope here. The amount of cleanup will be non zero , and some major rework necessary in some cases. but nobody is going back to hand coding at scale. Mass produced factory pr Put this on prediction markets so we can bet on it.</p>
-      
-      <details class="source-expand">
-        <summary><span class="summary-collapsed">Expand full post</span><span class="summary-expanded">Collapse full post</span></summary>
-        <div class="source-expanded-content"><section class="source-section"><div class="source-label">Reddit post · r/ChatGPT</div><h4>Are we nearly there?</h4><div class="source-prose"><p>Implying tech companies besides Anthropic, Google, and Nvidia have any money left over by 2027 after they all ran through cash on hand for tokens.</p></div><div class="source-comments"><strong>Captured top comments</strong><ul><li><span class="vote">332↑</span><span>Lot of cope here. The amount of cleanup will be non zero , and some major rework necessary in some cases. but nobody is going back to hand coding at scale. Mass produced factory produced clothes replaced hand made clothes for the same reason. A bespoke suit might fit better but you can’t beat the volume and price of mass production. Token cost will come down.</span></li><li><span class="vote">131↑</span><span>Put this on prediction markets so we can bet on it.</span></li><li><span class="vote">72↑</span><span>The problem with guys like this is they pretend like humans write good code. People are *terrible* at writing maintenance bug-free code. For AI to be worse in 2027 would be quite a feat considering it’s already better than the vast majority of people employed to write software today.</span></li><li><span class="vote">67↑</span><span>The problem with AI code is when you start, you can&#x27;t stop. AI generates code that is not easily understood and modified by humans, so to keep delivering you use more AI, that produces more unreadable but working code. And in a very short time you lose control over your product because even senior devs hardly understand wtf is going on, so you keep running to AI for every small thing, for every bug, for every…</span></li><li><span class="vote">50↑</span><span>Delusional</span></li></ul></div></section></div>
-      </details>
-    
-      <div class="takeaway"><span>Why it matters</span>**High signal for coding workflow.** Compare against your Hermes/Codex/Claude usage before changing tools or architecture.</div>
-      <details class="comments"><summary>Top comments</summary><ul><li><span class="vote">332↑</span><span>Lot of cope here. The amount of cleanup will be non zero , and some major rework necessary in some cases. but nobody is going back to hand coding at scale. Mass produced factory produced clothes replaced hand…</span></li><li><span class="vote">131↑</span><span>Put this on prediction markets so we can bet on it.</span></li><li><span class="vote">72↑</span><span>The problem with guys like this is they pretend like humans write good code. People are *terrible* at writing maintenance bug-free code. For AI to be worse in 2027 would be quite a feat considering it’s…</span></li></ul></details>
-      <div class="actions">
-        <a class="button primary" href="https://www.reddit.com/r/ChatGPT/comments/1tn9ebd/are_we_nearly_there/" target="_blank" rel="noreferrer">Open thread</a>
-        <a class="button" href="https://i.redd.it/dt732ap7da3h1.jpeg" target="_blank" rel="noreferrer">External</a>
-      </div>
-    </article>
-    
-    <article class="card post-card">
-      <div class="post-topline">
-        <div class="rank-badge"><span>🟢</span><strong>07</strong></div>
-        <div class="meta-pill">Reddit</div>
-        <div class="meta-pill">r/Ollama</div>
-        <div class="meta-pill">1↑</div>
-        <div class="meta-pill"> comments</div>
-      </div>
-      <div class="story-labels"><span class="story-label">Reddit</span><span class="story-label">Ollama</span></div>
-      <h2>Are there truly &quot;free&quot; cloud-hosted models available via Ollama for development?</h2>
-      <p class="discussion story-summary">Hi everyone, I’m a developer currently using Ollama for local LLM inference, but my hardware is starting to struggle with larger context lengths and more complex tasks. I’ve been reading about &quot;Ollama Cloud&quot; and the existence of cloud-hosted models (like `kimi-k2.5:cloud` or `glm-5:cloud`). I see there is a &quot;Free&quot; tier mentioned on their site, but I’m struggling to understand the reality of using it for actual develo well considering they just massively slashed their usage quota the free tier only works for model small enough to host on your own GPU for free anyway.</p>
-      
-      <details class="source-expand">
-        <summary><span class="summary-collapsed">Expand full post</span><span class="summary-expanded">Collapse full post</span></summary>
-        <div class="source-expanded-content"><section class="source-section"><div class="source-label">Reddit post · r/Ollama</div><h4>Are there truly &quot;free&quot; cloud-hosted models available via Ollama for development?</h4><div class="source-prose"><p>Hi everyone,</p><p>I’m a developer currently using Ollama for local LLM inference, but my hardware is starting to struggle with larger context lengths and more complex tasks.</p><p>I’ve been reading about &quot;Ollama Cloud&quot; and the existence of cloud-hosted models (like `kimi-k2.5:cloud` or `glm-5:cloud`). I see there is a &quot;Free&quot; tier mentioned on their site, but I’m struggling to understand the reality of using it for actual development work:</p><p>1. **How usable is the Free tier?** Is it actually viable for a coding workflow, or are the rate limits so tight that it’s mostly just for testing?
-2. **Performance/Latency:** For those using it, is the latency acceptable for an AI-assisted coding agent (like Claude Code or similar integrations)?
-3. **Privacy:** I understand that local Ollama is private, but does sending prompts to these cloud-hosted models follow the same privacy standards?</p><p>I&#x27;d love to hear your experiences—is it worth moving some of my tasks to the Ollama cloud, or should I just look into other API providers if I need more power than my local machine can handle?</p><p>Thanks in advance for the help!</p></div><div class="source-comments"><strong>Captured top comments</strong><ul><li><span class="vote">1↑</span><span>well considering they just massively slashed their usage quota the free tier only works for model small enough to host on your own GPU for free anyway.</span></li></ul></div></section></div>
-      </details>
-    
-      <div class="takeaway"><span>Why it matters</span>**High signal if running local models.** Check hardware fit, latency, and eval quality before adopting.</div>
-      <details class="comments"><summary>Top comments</summary><ul><li><span class="vote">1↑</span><span>well considering they just massively slashed their usage quota the free tier only works for model small enough to host on your own GPU for free anyway.</span></li></ul></details>
-      <div class="actions">
-        <a class="button primary" href="https://www.reddit.com/r/ollama/comments/1tneert/are_there_truly_free_cloudhosted_models_available/" target="_blank" rel="noreferrer">Open thread</a>
-        
-      </div>
-    </article>
-    
-    <article class="card post-card">
-      <div class="post-topline">
-        <div class="rank-badge"><span>🟣</span><strong>08</strong></div>
-        <div class="meta-pill">Reddit</div>
-        <div class="meta-pill">r/singularity</div>
-        <div class="meta-pill">1361↑</div>
-        <div class="meta-pill">137 comments</div>
-      </div>
-      <div class="story-labels"><span class="story-label">Reddit</span></div>
-      <h2>reconstructing different angles from live footage</h2>
-      <p class="discussion story-summary">damn i just found this out today - 4D Gaussian Splating that converts flat images into three-dimensional spatial data. This would definitely be used for “research” purposes lol Oh shit we finally caught up to CSI Miami level technology</p>
-      
-      <details class="source-expand">
-        <summary><span class="summary-collapsed">Expand full post</span><span class="summary-expanded">Collapse full post</span></summary>
-        <div class="source-expanded-content"><section class="source-section"><div class="source-label">Reddit post · r/singularity</div><h4>reconstructing different angles from live footage</h4><div class="source-prose"><p>damn i just found this out today - 4D Gaussian Splating that converts flat images into three-dimensional spatial data.</p></div><div class="source-comments"><strong>Captured top comments</strong><ul><li><span class="vote">453↑</span><span>This would definitely be used for “research” purposes lol</span></li><li><span class="vote">232↑</span><span>Oh shit we finally caught up to CSI Miami level technology</span></li><li><span class="vote">119↑</span><span>There is only one angle people want to see</span></li><li><span class="vote">110↑</span><span>Except in this technology, the gaps are filled in with what the models believes to be likely. That would be fatal to use as evidence.</span></li><li><span class="vote">84↑</span><span>We’re in a simulation</span></li></ul></div></section></div>
-      </details>
-    
-      <div class="takeaway"><span>Why it matters</span>**Medium signal.** Worth monitoring, but don’t act on Reddit hype without checking primary sources.</div>
-      <details class="comments"><summary>Top comments</summary><ul><li><span class="vote">453↑</span><span>This would definitely be used for “research” purposes lol</span></li><li><span class="vote">232↑</span><span>Oh shit we finally caught up to CSI Miami level technology</span></li><li><span class="vote">119↑</span><span>There is only one angle people want to see</span></li></ul></details>
-      <div class="actions">
-        <a class="button primary" href="https://www.reddit.com/r/singularity/comments/1tmxpbj/reconstructing_different_angles_from_live_footage/" target="_blank" rel="noreferrer">Open thread</a>
-        <a class="button" href="https://v.redd.it/0c4w5hcti73h1" target="_blank" rel="noreferrer">External</a>
-      </div>
-    </article>
     </div>
         </section>
       </div>
@@ -651,12 +873,17 @@ Discord: https://discord.com/invite/YwKdQATY2d</p><p>I’m curious: for people h
           <p>16 ranked posts · 16 sources · 3907.73s runtime</p>
           <ol><li><a href="https://www.reddit.com/r/ChatGPT/comments/1tmodqo/you_have_to_pick_one/" target="_blank" rel="noreferrer">You have to pick one</a><em>r/ChatGPT</em></li><li><a href="https://www.reddit.com/r/ChatGPT/comments/1tmzwcr/figure_ai_had_a_livestream_of_their_robots/" target="_blank" rel="noreferrer">Figure AI had a livestream of their robots sorting packages 24/7 for 8 days straight. These aren&#x27;t…</a><em>r/ChatGPT</em></li><li><a href="https://www.reddit.com/r/ChatGPT/comments/1tn19y6/sure_i_guess/" target="_blank" rel="noreferrer">Sure I guess</a><em>r/ChatGPT</em></li><li><a href="https://www.reddit.com/r/singularity/comments/1tmtajd/were_one_step_closer_to_technological/" target="_blank" rel="noreferrer">We&#x27;re one step closer to technological transcendence…now they do animated gaussian splats porn</a><em>r/singularity</em></li><li><a href="https://www.reddit.com/r/ollama/comments/1tn3l7y/harnesses/" target="_blank" rel="noreferrer">Harnesses</a><em>r/Ollama</em></li><li><a href="https://www.reddit.com/r/ChatGPT/comments/1tn9ebd/are_we_nearly_there/" target="_blank" rel="noreferrer">Are we nearly there?</a><em>r/ChatGPT</em></li></ol>
         </details>
-        <details class="history-item" open>
+        <details class="history-item" >
           <summary><strong>Brief 2</strong><span>2026-05-26 09:57 IST</span></summary>
           <p>16 ranked posts · 16 sources · 10.43s runtime</p>
           <ol><li><a href="https://www.reddit.com/r/ollama/comments/1tnpj2s/built_a_local_mcp_memory_server_that_uses_ollama/" target="_blank" rel="noreferrer">Built a local MCP memory server that uses Ollama to give AI coding assistants persistent memory —…</a><em>r/Ollama</em></li><li><a href="https://www.reddit.com/r/ChatGPT/comments/1tnmvgt/guys_i_told_him_to_create_a_photo_of_me_based_on/" target="_blank" rel="noreferrer">Guys i told him to create a photo of me based on what we talked about in the past year or a little…</a><em>r/ChatGPT</em></li><li><a href="https://www.reddit.com/r/LocalLLaMA/comments/1tnbz23/is_qwen36_current_king_for_local_agentic_use/" target="_blank" rel="noreferrer">Is Qwen3.6 current king for local agentic use?</a><em>r/LocalLLaMA</em></li><li><a href="https://www.reddit.com/r/ClaudeCode/comments/1tnrav1/a_graperoot_user_saved_over_1000_on_claude_code/" target="_blank" rel="noreferrer">A GrapeRoot user saved over $1,000 on Claude Code in a single month.</a><em>r/ClaudeCode</em></li><li><a href="https://www.reddit.com/r/LocalLLaMA/comments/1tn31d8/next_year_were_getting_05t_model_from_grok/" target="_blank" rel="noreferrer">Next year we&#x27;re getting 0.5T model from Grok</a><em>r/LocalLLaMA</em></li><li><a href="https://www.reddit.com/r/ollama/comments/1tnk9ik/noob_q_is_it_realistic_to_use_cpu_only_8th_gen_i7/" target="_blank" rel="noreferrer">Noob q: Is it realistic to use CPU only (8th gen i7) for a coder LLM?</a><em>r/Ollama</em></li></ol>
+        </details>
+        <details class="history-item" open>
+          <summary><strong>Brief 3</strong><span>2026-05-26 15:58 IST</span></summary>
+          <p>16 ranked posts · 16 sources · 11.43s runtime</p>
+          <ol><li><a href="https://www.reddit.com/r/LocalLLaMA/comments/1to25y5/are_local_llm_users_testing_prompt_injection/" target="_blank" rel="noreferrer">Are local LLM users testing prompt injection before connecting models to tools?</a><em>r/LocalLLaMA</em></li><li><a href="https://www.reddit.com/r/ChatGPT/comments/1tnw8yj/the_ferrari_elettrica_today_i_was_disappointed_by/" target="_blank" rel="noreferrer">The &#x27;Ferrari Elettrica&#x27; - Today I was disappointed by the new &#x27;Ferrari Luce&#x27;, so I asked ChatGPT…</a><em>r/ChatGPT</em></li><li><a href="https://www.reddit.com/r/singularity/comments/1tntdui/users_who_rage_quit_my_software/" target="_blank" rel="noreferrer">Users who rage quit my software</a><em>r/singularity</em></li><li><a href="https://www.reddit.com/r/LocalLLaMA/comments/1tnn29i/update_on_12x32gb_sxm_v100_cluster_local_ai_for/" target="_blank" rel="noreferrer">Update on 12x32gb sxm v100 cluster / local AI for legal drafting</a><em>r/LocalLLaMA</em></li><li><a href="https://www.reddit.com/r/ClaudeCode/comments/1tnkvhi/sounds_about_right/" target="_blank" rel="noreferrer">sounds about right</a><em>r/ClaudeCode</em></li><li><a href="https://www.reddit.com/r/ClaudeCode/comments/1tnzo68/claude_code_receipts_what_should_be_captured/" target="_blank" rel="noreferrer">Claude Code receipts: what should be captured after a run?</a><em>r/ClaudeCode</em></li></ol>
         </details></section>
-        <section class="card panel"><h3>Quick watchlist</h3><ul class="watchlist"><li><span>🟢</span><a href="https://www.reddit.com/r/ollama/comments/1tnpj2s/built_a_local_mcp_memory_server_that_uses_ollama/" target="_blank" rel="noreferrer">Built a local MCP memory server that uses Ollama to give AI coding assistants persistent memory —…</a><em>r/Ollama</em></li><li><span>🟡</span><a href="https://www.reddit.com/r/ChatGPT/comments/1tnmvgt/guys_i_told_him_to_create_a_photo_of_me_based_on/" target="_blank" rel="noreferrer">Guys i told him to create a photo of me based on what we talked about in the past year or a little…</a><em>r/ChatGPT</em></li><li><span>🟢</span><a href="https://www.reddit.com/r/LocalLLaMA/comments/1tnbz23/is_qwen36_current_king_for_local_agentic_use/" target="_blank" rel="noreferrer">Is Qwen3.6 current king for local agentic use?</a><em>r/LocalLLaMA</em></li><li><span>🟢</span><a href="https://www.reddit.com/r/ClaudeCode/comments/1tnrav1/a_graperoot_user_saved_over_1000_on_claude_code/" target="_blank" rel="noreferrer">A GrapeRoot user saved over $1,000 on Claude Code in a single month.</a><em>r/ClaudeCode</em></li><li><span>🟢</span><a href="https://www.reddit.com/r/LocalLLaMA/comments/1tn31d8/next_year_were_getting_05t_model_from_grok/" target="_blank" rel="noreferrer">Next year we&#x27;re getting 0.5T model from Grok</a><em>r/LocalLLaMA</em></li><li><span>🟢</span><a href="https://www.reddit.com/r/ollama/comments/1tnk9ik/noob_q_is_it_realistic_to_use_cpu_only_8th_gen_i7/" target="_blank" rel="noreferrer">Noob q: Is it realistic to use CPU only (8th gen i7) for a coder LLM?</a><em>r/Ollama</em></li><li><span>🟣</span><a href="https://www.reddit.com/r/ArtificialInteligence/comments/1tn2jva/after_talking_with_a_chinese_friend_about_ai_i/" target="_blank" rel="noreferrer">After talking with a Chinese friend about AI, I realized people are using it at very different paces</a><em>r/ArtificialInteligence</em></li></ul></section>
+        <section class="card panel"><h3>Quick watchlist</h3><ul class="watchlist"><li><span>🟢</span><a href="https://www.reddit.com/r/LocalLLaMA/comments/1to25y5/are_local_llm_users_testing_prompt_injection/" target="_blank" rel="noreferrer">Are local LLM users testing prompt injection before connecting models to tools?</a><em>r/LocalLLaMA</em></li><li><span>🟡</span><a href="https://www.reddit.com/r/ChatGPT/comments/1tnw8yj/the_ferrari_elettrica_today_i_was_disappointed_by/" target="_blank" rel="noreferrer">The &#x27;Ferrari Elettrica&#x27; - Today I was disappointed by the new &#x27;Ferrari Luce&#x27;, so I asked ChatGPT…</a><em>r/ChatGPT</em></li><li><span>🟠</span><a href="https://www.reddit.com/r/singularity/comments/1tntdui/users_who_rage_quit_my_software/" target="_blank" rel="noreferrer">Users who rage quit my software</a><em>r/singularity</em></li><li><span>🟢</span><a href="https://www.reddit.com/r/LocalLLaMA/comments/1tnn29i/update_on_12x32gb_sxm_v100_cluster_local_ai_for/" target="_blank" rel="noreferrer">Update on 12x32gb sxm v100 cluster / local AI for legal drafting</a><em>r/LocalLLaMA</em></li><li><span>🔵</span><a href="https://www.reddit.com/r/ClaudeCode/comments/1tnkvhi/sounds_about_right/" target="_blank" rel="noreferrer">sounds about right</a><em>r/ClaudeCode</em></li><li><span>🟢</span><a href="https://www.reddit.com/r/ClaudeCode/comments/1tnzo68/claude_code_receipts_what_should_be_captured/" target="_blank" rel="noreferrer">Claude Code receipts: what should be captured after a run?</a><em>r/ClaudeCode</em></li><li><span>🟣</span><a href="https://www.reddit.com/r/AI_Agents/comments/1tnwbpd/should_we_totally_give_up_on_gemini_for_coding/" target="_blank" rel="noreferrer">Should we totally give up on Gemini for coding?</a><em>r/AI_Agents</em></li></ul></section>
         <section class="card panel"><h3>Sources reached</h3><ul class="sources"><li>r/AI_Agents</li><li>r/ArtificialInteligence</li><li>r/AutoGPT</li><li>r/ChatGPT</li><li>r/ClaudeAI</li><li>r/ClaudeCode</li><li>r/LangChain</li><li>r/LocalLLM</li><li>r/LocalLLaMA</li><li>r/MachineLearning</li><li>r/Ollama</li><li>r/OpenAI</li><li>r/OpenWebUI</li><li>r/StableDiffusion</li><li>r/artificial</li><li>r/singularity</li></ul></section>
       </aside>
     </section>
