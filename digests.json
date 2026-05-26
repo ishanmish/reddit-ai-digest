@@ -1,5 +1,1960 @@
 [
   {
+    "run_id": "2026-05-26 09:57 IST",
+    "brief_day": "2026-05-26",
+    "collected_at_ist": "2026-05-26 09:57 IST",
+    "runtime_sec": 10.43,
+    "auth_mode": "anonymous_with_fallbacks",
+    "source_count_ok": 16,
+    "sources_ok": [
+      "AI_Agents",
+      "ArtificialInteligence",
+      "AutoGPT",
+      "ChatGPT",
+      "ClaudeAI",
+      "ClaudeCode",
+      "LangChain",
+      "LocalLLM",
+      "LocalLLaMA",
+      "MachineLearning",
+      "Ollama",
+      "OpenAI",
+      "OpenWebUI",
+      "StableDiffusion",
+      "artificial",
+      "singularity"
+    ],
+    "sources_failed_count": 0,
+    "posts": [
+      {
+        "subreddit": "Ollama",
+        "sort": "new",
+        "title": "Built a local MCP memory server that uses Ollama to give AI coding assistants persistent memory — no cloud, no API keys, Tool and Model Agnostic",
+        "score": 0,
+        "comments": 7,
+        "created_utc": 1779751930.0,
+        "url": "https://www.reddit.com/r/ollama/comments/1tnpj2s/built_a_local_mcp_memory_server_that_uses_ollama/",
+        "external_url": "https://www.reddit.com/gallery/1tnpj2s",
+        "selftext": "Been using Ollama for a while and wanted to solve the context loss problem in AI coding assistants. Built ArcBrain — a local MCP server that runs alongside your tools and gives them persistent memory across sessions. **The Ollama part:** ArcBrain uses llama3.2:3b locally (via Ollama) for relevance scoring and end-of-session summarization. Everything stays on your machine — no data leaves, no OpenAI/Anthropic API calls for the memory layer itself. **What it does:** Scores incoming context for relevance, stores structured memory objects (with confidence scores + timestamps), ages memories over time so recent stuff surfaces first, and builds a knowledge graph of your project decisions. **MCP in",
+        "selftext_full": "Been using Ollama for a while and wanted to solve the context loss problem in AI coding assistants. Built ArcBrain — a local MCP server that runs alongside your tools and gives them persistent memory across sessions.\n\n**The Ollama part:** ArcBrain uses llama3.2:3b locally (via Ollama) for relevance scoring and end-of-session summarization. Everything stays on your machine — no data leaves, no OpenAI/Anthropic API calls for the memory layer itself.\n\n**What it does:** Scores incoming context for relevance, stores structured memory objects (with confidence scores + timestamps), ages memories over time so recent stuff surfaces first, and builds a knowledge graph of your project decisions.\n\n**MCP integration:** Works with Claude Desktop, VS Code Copilot, Cursor — they all read/write to the same shared memory.\n\nFree trial at [**arcbrain.dev**](http://arcbrain.dev) — installer for Windows, runs locally.\n\nHappy to talk about the Ollama integration or the MCP architecture if anyone's curious.",
+        "author": "wil131313",
+        "post_id": "1tnpj2s",
+        "top_comments": [
+          {
+            "score": 4,
+            "author": "ellicottvilleny",
+            "body": "closed source? Yet another closed source \"memory system\" for LLMS?",
+            "permalink": "https://www.reddit.com/r/ollama/comments/1tnpj2s/built_a_local_mcp_memory_server_that_uses_ollama/onvmcjk/"
+          },
+          {
+            "score": 2,
+            "author": "Johnny_The_Biker",
+            "body": "They are crazy or evil.",
+            "permalink": "https://www.reddit.com/r/ollama/comments/1tnpj2s/built_a_local_mcp_memory_server_that_uses_ollama/onvp9o4/"
+          }
+        ],
+        "story_id": "rd_1tnpj2s",
+        "heading": "Built a local MCP memory server that uses Ollama to give AI coding assistants persistent memory — no cloud, no API keys, Tool and Model Agnostic",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/ollama/comments/1tnpj2s/built_a_local_mcp_memory_server_that_uses_ollama/",
+        "summary": "Been using Ollama for a while and wanted to solve the context loss problem in AI coding assistants. Built ArcBrain — a local MCP server that runs alongside your tools and gives them persistent memory across sessions. **The Ollama part:** ArcBrain uses llama3.2:3b locally (via Ollama) for relevance scoring and end-of-session summarization. Everything stays on your machine — no data leaves, no OpenAI/Anthropic API call closed source? Yet another closed source \"memory system\" for LLMS? They are crazy or evil.",
+        "tweet_and_comments_summary": "Been using Ollama for a while and wanted to solve the context loss problem in AI coding assistants. Built ArcBrain — a local MCP server that runs alongside your tools and gives them persistent memory across sessions. **The Ollama part:** ArcBrain uses llama3.2:3b locally (via Ollama) for relevance scoring and end-of-session summarization. Everything stays on your machine — no data leaves, no OpenAI/Anthropic API call closed source? Yet another closed source \"memory system\" for LLMS? They are crazy or evil.",
+        "discussion_summary": "closed source? Yet another closed source \"memory system\" for LLMS? They are crazy or evil.",
+        "why_it_matters": "**High signal if running local models.** Check hardware fit, latency, and eval quality before adopting.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tnpj2s",
+            "subreddit": "Ollama",
+            "post_url": "https://www.reddit.com/r/ollama/comments/1tnpj2s/built_a_local_mcp_memory_server_that_uses_ollama/",
+            "title": "Built a local MCP memory server that uses Ollama to give AI coding assistants persistent memory — no cloud, no API keys, Tool and Model Agnostic",
+            "author": "wil131313",
+            "created_utc": 1779751930.0,
+            "score": 0,
+            "comment_count": 7,
+            "selftext_full": "Been using Ollama for a while and wanted to solve the context loss problem in AI coding assistants. Built ArcBrain — a local MCP server that runs alongside your tools and gives them persistent memory across sessions.\n\n**The Ollama part:** ArcBrain uses llama3.2:3b locally (via Ollama) for relevance scoring and end-of-session summarization. Everything stays on your machine — no data leaves, no OpenAI/Anthropic API calls for the memory layer itself.\n\n**What it does:** Scores incoming context for relevance, stores structured memory objects (with confidence scores + timestamps), ages memories over time so recent stuff surfaces first, and builds a knowledge graph of your project decisions.\n\n**MCP integration:** Works with Claude Desktop, VS Code Copilot, Cursor — they all read/write to the same shared memory.\n\nFree trial at [**arcbrain.dev**](http://arcbrain.dev) — installer for Windows, runs locally.\n\nHappy to talk about the Ollama integration or the MCP architecture if anyone's curious.",
+            "selftext_excerpt": "Been using Ollama for a while and wanted to solve the context loss problem in AI coding assistants. Built ArcBrain — a local MCP server that runs alongside your tools and gives them persistent memory across sessions. **The Ollama part:** Ar",
+            "external_url": "https://www.reddit.com/gallery/1tnpj2s",
+            "top_comments": [
+              {
+                "score": 4,
+                "author": "ellicottvilleny",
+                "body": "closed source? Yet another closed source \"memory system\" for LLMS?",
+                "permalink": "https://www.reddit.com/r/ollama/comments/1tnpj2s/built_a_local_mcp_memory_server_that_uses_ollama/onvmcjk/"
+              },
+              {
+                "score": 2,
+                "author": "Johnny_The_Biker",
+                "body": "They are crazy or evil.",
+                "permalink": "https://www.reddit.com/r/ollama/comments/1tnpj2s/built_a_local_mcp_memory_server_that_uses_ollama/onvp9o4/"
+              }
+            ],
+            "comment_context": "closed source? Yet another closed source \"memory system\" for LLMS? They are crazy or evil."
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 0,
+          "reddit_comment_count": 7,
+          "captured_at_ist": "2026-05-26 09:57 IST"
+        },
+        "labels": [
+          "Reddit",
+          "Ollama"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "Built a local MCP memory server that uses Ollama to give AI coding assistants persistent memory — no cloud, no API keys, Tool and Model Agnostic",
+            "post_body": "Been using Ollama for a while and wanted to solve the context loss problem in AI coding assistants. Built ArcBrain — a local MCP server that runs alongside your tools and gives them persistent memory across sessions.\n\n**The Ollama part:** ArcBrain uses llama3.2:3b locally (via Ollama) for relevance scoring and end-of-session summarization. Everything stays on your machine — no data leaves, no OpenAI/Anthropic API calls for the memory layer itself.\n\n**What it does:** Scores incoming context for relevance, stores structured memory objects (with confidence scores + timestamps), ages memories over time so recent stuff surfaces first, and builds a knowledge graph of your project decisions.\n\n**MCP integration:** Works with Claude Desktop, VS Code Copilot, Cursor — they all read/write to the same shared memory.\n\nFree trial at [**arcbrain.dev**](http://arcbrain.dev) — installer for Windows, runs locally.\n\nHappy to talk about the Ollama integration or the MCP architecture if anyone's curious.",
+            "comments": [
+              {
+                "score": 4,
+                "author": "ellicottvilleny",
+                "body": "closed source? Yet another closed source \"memory system\" for LLMS?",
+                "permalink": "https://www.reddit.com/r/ollama/comments/1tnpj2s/built_a_local_mcp_memory_server_that_uses_ollama/onvmcjk/"
+              },
+              {
+                "score": 2,
+                "author": "Johnny_The_Biker",
+                "body": "They are crazy or evil.",
+                "permalink": "https://www.reddit.com/r/ollama/comments/1tnpj2s/built_a_local_mcp_memory_server_that_uses_ollama/onvp9o4/"
+              }
+            ],
+            "metadata": {
+              "subreddit": "Ollama",
+              "score": 0,
+              "comment_count": 7,
+              "created_utc": 1779751930.0,
+              "url": "https://www.reddit.com/r/ollama/comments/1tnpj2s/built_a_local_mcp_memory_server_that_uses_ollama/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "ChatGPT",
+        "sort": "hot",
+        "title": "Guys i told him to create a photo of me based on what we talked about in the past year or a little over.",
+        "score": 463,
+        "comments": 353,
+        "created_utc": 1779745380.0,
+        "url": "https://www.reddit.com/r/ChatGPT/comments/1tnmvgt/guys_i_told_him_to_create_a_photo_of_me_based_on/",
+        "external_url": "https://www.reddit.com/gallery/1tnmvgt",
+        "selftext": "This really......kinda took me by surprise.",
+        "selftext_full": "This really......kinda took me by surprise.",
+        "author": "InspectionCritical87",
+        "post_id": "1tnmvgt",
+        "top_comments": [
+          {
+            "score": 288,
+            "author": "GoreonmyGears",
+            "body": "Get ahold of yourself OP.",
+            "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tnmvgt/guys_i_told_him_to_create_a_photo_of_me_based_on/onv2yrl/"
+          },
+          {
+            "score": 172,
+            "author": "InspectionCritical87",
+            "body": "scary accurate",
+            "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tnmvgt/guys_i_told_him_to_create_a_photo_of_me_based_on/onv32d7/"
+          },
+          {
+            "score": 146,
+            "author": "Voyager0017",
+            "body": "Is it accurate?",
+            "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tnmvgt/guys_i_told_him_to_create_a_photo_of_me_based_on/onv1sf9/"
+          },
+          {
+            "score": 75,
+            "author": "jjjustinleblanc",
+            "body": "did you spend the entire last year telling it you've been shitting all over every discernable surface in your home?",
+            "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tnmvgt/guys_i_told_him_to_create_a_photo_of_me_based_on/onv50wn/"
+          },
+          {
+            "score": 57,
+            "author": "Omnary",
+            "body": "https://preview.redd.it/z6dtgr1s0d3h1.jpeg?width=1402&format=pjpg&auto=webp&s=1295829e82618485e5cc0ff73e47de9c44350ce2",
+            "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tnmvgt/guys_i_told_him_to_create_a_photo_of_me_based_on/onv9elp/"
+          },
+          {
+            "score": 41,
+            "author": "hasta_la_pasta",
+            "body": "Why’d you pee your pants?",
+            "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tnmvgt/guys_i_told_him_to_create_a_photo_of_me_based_on/onvnh4n/"
+          },
+          {
+            "score": 22,
+            "author": "papamurf812",
+            "body": "Mine is pretty damn accurate. https://preview.redd.it/gbdds00x1d3h1.png?width=1122&format=png&auto=webp&s=6cad9d1d4e355cc8218a06ae200235af5b371aff",
+            "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tnmvgt/guys_i_told_him_to_create_a_photo_of_me_based_on/onvai5y/"
+          },
+          {
+            "score": 1,
+            "author": "AutoModerator",
+            "body": "Hey /u/InspectionCritical87, If your post is a screenshot of a ChatGPT conversation, please reply to this message with the [conversation link](https://help.openai.com/en/articles/7925741-chatgpt-shared-links-faq) or prompt. If your post is a DALL-E 3 image post, please reply with the prompt used to make this image. Consider joining our [public discord server](https://discord.gg/r-chatgpt-1050422060352024636)! We have free bots with GPT-4 (with vision), image generators, and more! 🤖 Note: For any ChatGPT-related concerns, email support@openai.com - this subreddit is not part of OpenAI and is not a support channel. *I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/ChatGPT) if you have any questions or concerns.*",
+            "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tnmvgt/guys_i_told_him_to_create_a_photo_of_me_based_on/onv15kz/"
+          }
+        ],
+        "story_id": "rd_1tnmvgt",
+        "heading": "Guys i told him to create a photo of me based on what we talked about in the past year or a little over.",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/ChatGPT/comments/1tnmvgt/guys_i_told_him_to_create_a_photo_of_me_based_on/",
+        "summary": "This really......kinda took me by surprise. Get ahold of yourself OP. scary accurate",
+        "tweet_and_comments_summary": "This really......kinda took me by surprise. Get ahold of yourself OP. scary accurate",
+        "discussion_summary": "Get ahold of yourself OP. scary accurate",
+        "why_it_matters": "**Medium signal.** Worth monitoring, but don’t act on Reddit hype without checking primary sources.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tnmvgt",
+            "subreddit": "ChatGPT",
+            "post_url": "https://www.reddit.com/r/ChatGPT/comments/1tnmvgt/guys_i_told_him_to_create_a_photo_of_me_based_on/",
+            "title": "Guys i told him to create a photo of me based on what we talked about in the past year or a little over.",
+            "author": "InspectionCritical87",
+            "created_utc": 1779745380.0,
+            "score": 463,
+            "comment_count": 353,
+            "selftext_full": "This really......kinda took me by surprise.",
+            "selftext_excerpt": "This really......kinda took me by surprise.",
+            "external_url": "https://www.reddit.com/gallery/1tnmvgt",
+            "top_comments": [
+              {
+                "score": 288,
+                "author": "GoreonmyGears",
+                "body": "Get ahold of yourself OP.",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tnmvgt/guys_i_told_him_to_create_a_photo_of_me_based_on/onv2yrl/"
+              },
+              {
+                "score": 172,
+                "author": "InspectionCritical87",
+                "body": "scary accurate",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tnmvgt/guys_i_told_him_to_create_a_photo_of_me_based_on/onv32d7/"
+              },
+              {
+                "score": 146,
+                "author": "Voyager0017",
+                "body": "Is it accurate?",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tnmvgt/guys_i_told_him_to_create_a_photo_of_me_based_on/onv1sf9/"
+              },
+              {
+                "score": 75,
+                "author": "jjjustinleblanc",
+                "body": "did you spend the entire last year telling it you've been shitting all over every discernable surface in your home?",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tnmvgt/guys_i_told_him_to_create_a_photo_of_me_based_on/onv50wn/"
+              },
+              {
+                "score": 57,
+                "author": "Omnary",
+                "body": "https://preview.redd.it/z6dtgr1s0d3h1.jpeg?width=1402&format=pjpg&auto=webp&s=1295829e82618485e5cc0ff73e47de9c44350ce2",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tnmvgt/guys_i_told_him_to_create_a_photo_of_me_based_on/onv9elp/"
+              },
+              {
+                "score": 41,
+                "author": "hasta_la_pasta",
+                "body": "Why’d you pee your pants?",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tnmvgt/guys_i_told_him_to_create_a_photo_of_me_based_on/onvnh4n/"
+              },
+              {
+                "score": 22,
+                "author": "papamurf812",
+                "body": "Mine is pretty damn accurate. https://preview.redd.it/gbdds00x1d3h1.png?width=1122&format=png&auto=webp&s=6cad9d1d4e355cc8218a06ae200235af5b371aff",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tnmvgt/guys_i_told_him_to_create_a_photo_of_me_based_on/onvai5y/"
+              },
+              {
+                "score": 1,
+                "author": "AutoModerator",
+                "body": "Hey /u/InspectionCritical87, If your post is a screenshot of a ChatGPT conversation, please reply to this message with the [conversation link](https://help.openai.com/en/articles/7925741-chatgpt-shared-links-faq) or prompt. If your post is a DALL-E 3 image post, please reply with the prompt used to make this image. Consider joining our [public discord server](https://discord.gg/r-chatgpt-1050422060352024636)! We have free bots with GPT-4 (with vision), image generators, and more! 🤖 Note: For any ChatGPT-related concerns, email support@openai.com - this subreddit is not part of OpenAI and is not a support channel. *I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/ChatGPT) if you have any questions or concerns.*",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tnmvgt/guys_i_told_him_to_create_a_photo_of_me_based_on/onv15kz/"
+              }
+            ],
+            "comment_context": "Get ahold of yourself OP. scary accurate"
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 463,
+          "reddit_comment_count": 353,
+          "captured_at_ist": "2026-05-26 09:57 IST"
+        },
+        "labels": [
+          "Reddit"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "Guys i told him to create a photo of me based on what we talked about in the past year or a little over.",
+            "post_body": "This really......kinda took me by surprise.",
+            "comments": [
+              {
+                "score": 288,
+                "author": "GoreonmyGears",
+                "body": "Get ahold of yourself OP.",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tnmvgt/guys_i_told_him_to_create_a_photo_of_me_based_on/onv2yrl/"
+              },
+              {
+                "score": 172,
+                "author": "InspectionCritical87",
+                "body": "scary accurate",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tnmvgt/guys_i_told_him_to_create_a_photo_of_me_based_on/onv32d7/"
+              },
+              {
+                "score": 146,
+                "author": "Voyager0017",
+                "body": "Is it accurate?",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tnmvgt/guys_i_told_him_to_create_a_photo_of_me_based_on/onv1sf9/"
+              },
+              {
+                "score": 75,
+                "author": "jjjustinleblanc",
+                "body": "did you spend the entire last year telling it you've been shitting all over every discernable surface in your home?",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tnmvgt/guys_i_told_him_to_create_a_photo_of_me_based_on/onv50wn/"
+              },
+              {
+                "score": 57,
+                "author": "Omnary",
+                "body": "https://preview.redd.it/z6dtgr1s0d3h1.jpeg?width=1402&format=pjpg&auto=webp&s=1295829e82618485e5cc0ff73e47de9c44350ce2",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tnmvgt/guys_i_told_him_to_create_a_photo_of_me_based_on/onv9elp/"
+              },
+              {
+                "score": 41,
+                "author": "hasta_la_pasta",
+                "body": "Why’d you pee your pants?",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tnmvgt/guys_i_told_him_to_create_a_photo_of_me_based_on/onvnh4n/"
+              },
+              {
+                "score": 22,
+                "author": "papamurf812",
+                "body": "Mine is pretty damn accurate. https://preview.redd.it/gbdds00x1d3h1.png?width=1122&format=png&auto=webp&s=6cad9d1d4e355cc8218a06ae200235af5b371aff",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tnmvgt/guys_i_told_him_to_create_a_photo_of_me_based_on/onvai5y/"
+              },
+              {
+                "score": 1,
+                "author": "AutoModerator",
+                "body": "Hey /u/InspectionCritical87, If your post is a screenshot of a ChatGPT conversation, please reply to this message with the [conversation link](https://help.openai.com/en/articles/7925741-chatgpt-shared-links-faq) or prompt. If your post is a DALL-E 3 image post, please reply with the prompt used to make this image. Consider joining our [public discord server](https://discord.gg/r-chatgpt-1050422060352024636)! We have free bots with GPT-4 (with vision), image generators, and more! 🤖 Note: For any ChatGPT-related concerns, email support@openai.com - this subreddit is not part of OpenAI and is not a support channel. *I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/ChatGPT) if you have any questions or concerns.*",
+                "permalink": "https://www.reddit.com/r/ChatGPT/comments/1tnmvgt/guys_i_told_him_to_create_a_photo_of_me_based_on/onv15kz/"
+              }
+            ],
+            "metadata": {
+              "subreddit": "ChatGPT",
+              "score": 463,
+              "comment_count": 353,
+              "created_utc": 1779745380.0,
+              "url": "https://www.reddit.com/r/ChatGPT/comments/1tnmvgt/guys_i_told_him_to_create_a_photo_of_me_based_on/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "LocalLLaMA",
+        "sort": "hot",
+        "title": "Is Qwen3.6 current king for local agentic use?",
+        "score": 135,
+        "comments": 122,
+        "created_utc": 1779721773.0,
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tnbz23/is_qwen36_current_king_for_local_agentic_use/",
+        "external_url": null,
+        "selftext": "I've been testing other models but it seems like nothing even come close to Qwen3.6 35B A3B for agentic use. The worse I'd get is a loop sometimes, while Gemma4 produced broken tool calls occasionally and I couldn't even get GLM 4.7 Flash REAP past 2 or 3 messages before it starts looping. All IQ4_NL quants from Unsloth. I'm wondering if there are better models around the same size (preferably MoE) that I haven't tried yet. I'm using it for Hermes Agent and Pi and it's not perfect, but it's crazy good for a local model",
+        "selftext_full": "I've been testing other models but it seems like nothing even come close to Qwen3.6 35B A3B for agentic use. The worse I'd get is a loop sometimes, while Gemma4 produced broken tool calls occasionally and I couldn't even get GLM 4.7 Flash REAP past 2 or 3 messages before it starts looping. All IQ4_NL quants from Unsloth.\n\nI'm wondering if there are better models around the same size (preferably MoE) that I haven't tried yet. I'm using it for Hermes Agent and Pi and it's not perfect, but it's crazy good for a local model",
+        "author": "HornyGooner4402",
+        "post_id": "1tnbz23",
+        "top_comments": [
+          {
+            "score": 160,
+            "author": "LeMochileiro",
+            "body": "Yes",
+            "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tnbz23/is_qwen36_current_king_for_local_agentic_use/onssj2g/"
+          },
+          {
+            "score": 45,
+            "author": "twack3r",
+            "body": "Of course not but for small models, Qwen3.6 27B and 35BA3 are the right choice at the moment. Local coding and agentic king is GLM5.1 but most users find that too large to run locally.",
+            "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tnbz23/is_qwen36_current_king_for_local_agentic_use/onsu3n0/"
+          },
+          {
+            "score": 29,
+            "author": "the_derby",
+            "body": "\\> but most users find that too large to run locally. yeah, I'm a little short of memory. =)",
+            "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tnbz23/is_qwen36_current_king_for_local_agentic_use/ont6a1k/"
+          },
+          {
+            "score": 29,
+            "author": "ComfyUser48",
+            "body": "Yes. I believe it's not even THAT far from DeepSeek v4 Flash. EDIT: Sorry, I was talking about 27b",
+            "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tnbz23/is_qwen36_current_king_for_local_agentic_use/onsuh5r/"
+          },
+          {
+            "score": 26,
+            "author": "HVACcontrolsGuru",
+            "body": "Qwen is better at coding while I find Gemma better for general user facing. I use both and fine tune both as well! Big hidden issue is the chat templates cause issues. I redid both the Qwen and Gemma ones for better agentic coding and tool calling fixes. Depending on how you use them there are some weird app side things to take into account with the default chat templates.",
+            "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tnbz23/is_qwen36_current_king_for_local_agentic_use/onsuike/"
+          },
+          {
+            "score": 23,
+            "author": "exaknight21",
+            "body": "I personally have tried 27B Q4 KXL from Unsloth and 35B-A3B, the MOE is faster and winner imho. I wish my Mi50 had faster prompt processing, 27B takes hella long but pulls through eventually. I am running on obsolete hardware though so could be that. In any event, I <3 the Qwen team and that’s all that matters.",
+            "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tnbz23/is_qwen36_current_king_for_local_agentic_use/ont48wm/"
+          },
+          {
+            "score": 21,
+            "author": "Current_Ferret_4981",
+            "body": "Locally, most do not have 512GB+ of ram. Agentic implies some speed. Having to put model weights in storage is inherently too slow for agentic. GLM5.1 in two-bit still requires 256GB of ram and the 2 bit version isn't going to be as good as 27B in most cases, especially after accounting for the massive speed hit. GLM5.1 therefore is not agentic king.",
+            "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tnbz23/is_qwen36_current_king_for_local_agentic_use/ontv9v8/"
+          },
+          {
+            "score": 16,
+            "author": "ForsookComparison",
+            "body": "A man of few words.. but they're good ones.",
+            "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tnbz23/is_qwen36_current_king_for_local_agentic_use/onv6kfb/"
+          }
+        ],
+        "story_id": "rd_1tnbz23",
+        "heading": "Is Qwen3.6 current king for local agentic use?",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tnbz23/is_qwen36_current_king_for_local_agentic_use/",
+        "summary": "I've been testing other models but it seems like nothing even come close to Qwen3.6 35B A3B for agentic use. The worse I'd get is a loop sometimes, while Gemma4 produced broken tool calls occasionally and I couldn't even get GLM 4.7 Flash REAP past 2 or 3 messages before it starts looping. All IQ4_NL quants from Unsloth. I'm wondering if there are better models around the same size (preferably MoE) that I haven't tri Yes Of course not but for small models, Qwen3.6 27B and 35BA3 are the right choice at the moment. Local coding and agentic king is GLM5.1 but most users find that too large to run loca",
+        "tweet_and_comments_summary": "I've been testing other models but it seems like nothing even come close to Qwen3.6 35B A3B for agentic use. The worse I'd get is a loop sometimes, while Gemma4 produced broken tool calls occasionally and I couldn't even get GLM 4.7 Flash REAP past 2 or 3 messages before it starts looping. All IQ4_NL quants from Unsloth. I'm wondering if there are better models around the same size (preferably MoE) that I haven't tri Yes Of course not but for small models, Qwen3.6 27B and 35BA3 are the right choice at the moment. Local coding and agentic king is GLM5.1 but most users find that too large to run loca",
+        "discussion_summary": "Yes Of course not but for small models, Qwen3.6 27B and 35BA3 are the right choice at the moment. Local coding and agentic king is GLM5.1 but most users find that too large to run loca",
+        "why_it_matters": "**High signal if running local models.** Check hardware fit, latency, and eval quality before adopting.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tnbz23",
+            "subreddit": "LocalLLaMA",
+            "post_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tnbz23/is_qwen36_current_king_for_local_agentic_use/",
+            "title": "Is Qwen3.6 current king for local agentic use?",
+            "author": "HornyGooner4402",
+            "created_utc": 1779721773.0,
+            "score": 135,
+            "comment_count": 122,
+            "selftext_full": "I've been testing other models but it seems like nothing even come close to Qwen3.6 35B A3B for agentic use. The worse I'd get is a loop sometimes, while Gemma4 produced broken tool calls occasionally and I couldn't even get GLM 4.7 Flash REAP past 2 or 3 messages before it starts looping. All IQ4_NL quants from Unsloth.\n\nI'm wondering if there are better models around the same size (preferably MoE) that I haven't tried yet. I'm using it for Hermes Agent and Pi and it's not perfect, but it's crazy good for a local model",
+            "selftext_excerpt": "I've been testing other models but it seems like nothing even come close to Qwen3.6 35B A3B for agentic use. The worse I'd get is a loop sometimes, while Gemma4 produced broken tool calls occasionally and I couldn't even get GLM 4.7 Flash R",
+            "external_url": null,
+            "top_comments": [
+              {
+                "score": 160,
+                "author": "LeMochileiro",
+                "body": "Yes",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tnbz23/is_qwen36_current_king_for_local_agentic_use/onssj2g/"
+              },
+              {
+                "score": 45,
+                "author": "twack3r",
+                "body": "Of course not but for small models, Qwen3.6 27B and 35BA3 are the right choice at the moment. Local coding and agentic king is GLM5.1 but most users find that too large to run locally.",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tnbz23/is_qwen36_current_king_for_local_agentic_use/onsu3n0/"
+              },
+              {
+                "score": 29,
+                "author": "the_derby",
+                "body": "\\> but most users find that too large to run locally. yeah, I'm a little short of memory. =)",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tnbz23/is_qwen36_current_king_for_local_agentic_use/ont6a1k/"
+              },
+              {
+                "score": 29,
+                "author": "ComfyUser48",
+                "body": "Yes. I believe it's not even THAT far from DeepSeek v4 Flash. EDIT: Sorry, I was talking about 27b",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tnbz23/is_qwen36_current_king_for_local_agentic_use/onsuh5r/"
+              },
+              {
+                "score": 26,
+                "author": "HVACcontrolsGuru",
+                "body": "Qwen is better at coding while I find Gemma better for general user facing. I use both and fine tune both as well! Big hidden issue is the chat templates cause issues. I redid both the Qwen and Gemma ones for better agentic coding and tool calling fixes. Depending on how you use them there are some weird app side things to take into account with the default chat templates.",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tnbz23/is_qwen36_current_king_for_local_agentic_use/onsuike/"
+              },
+              {
+                "score": 23,
+                "author": "exaknight21",
+                "body": "I personally have tried 27B Q4 KXL from Unsloth and 35B-A3B, the MOE is faster and winner imho. I wish my Mi50 had faster prompt processing, 27B takes hella long but pulls through eventually. I am running on obsolete hardware though so could be that. In any event, I <3 the Qwen team and that’s all that matters.",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tnbz23/is_qwen36_current_king_for_local_agentic_use/ont48wm/"
+              },
+              {
+                "score": 21,
+                "author": "Current_Ferret_4981",
+                "body": "Locally, most do not have 512GB+ of ram. Agentic implies some speed. Having to put model weights in storage is inherently too slow for agentic. GLM5.1 in two-bit still requires 256GB of ram and the 2 bit version isn't going to be as good as 27B in most cases, especially after accounting for the massive speed hit. GLM5.1 therefore is not agentic king.",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tnbz23/is_qwen36_current_king_for_local_agentic_use/ontv9v8/"
+              },
+              {
+                "score": 16,
+                "author": "ForsookComparison",
+                "body": "A man of few words.. but they're good ones.",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tnbz23/is_qwen36_current_king_for_local_agentic_use/onv6kfb/"
+              }
+            ],
+            "comment_context": "Yes Of course not but for small models, Qwen3.6 27B and 35BA3 are the right choice at the moment. Local coding and agentic king is GLM5.1 but most users find that too large to run loca"
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 135,
+          "reddit_comment_count": 122,
+          "captured_at_ist": "2026-05-26 09:57 IST"
+        },
+        "labels": [
+          "Reddit",
+          "LocalLLaMA"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "Is Qwen3.6 current king for local agentic use?",
+            "post_body": "I've been testing other models but it seems like nothing even come close to Qwen3.6 35B A3B for agentic use. The worse I'd get is a loop sometimes, while Gemma4 produced broken tool calls occasionally and I couldn't even get GLM 4.7 Flash REAP past 2 or 3 messages before it starts looping. All IQ4_NL quants from Unsloth.\n\nI'm wondering if there are better models around the same size (preferably MoE) that I haven't tried yet. I'm using it for Hermes Agent and Pi and it's not perfect, but it's crazy good for a local model",
+            "comments": [
+              {
+                "score": 160,
+                "author": "LeMochileiro",
+                "body": "Yes",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tnbz23/is_qwen36_current_king_for_local_agentic_use/onssj2g/"
+              },
+              {
+                "score": 45,
+                "author": "twack3r",
+                "body": "Of course not but for small models, Qwen3.6 27B and 35BA3 are the right choice at the moment. Local coding and agentic king is GLM5.1 but most users find that too large to run locally.",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tnbz23/is_qwen36_current_king_for_local_agentic_use/onsu3n0/"
+              },
+              {
+                "score": 29,
+                "author": "the_derby",
+                "body": "\\> but most users find that too large to run locally. yeah, I'm a little short of memory. =)",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tnbz23/is_qwen36_current_king_for_local_agentic_use/ont6a1k/"
+              },
+              {
+                "score": 29,
+                "author": "ComfyUser48",
+                "body": "Yes. I believe it's not even THAT far from DeepSeek v4 Flash. EDIT: Sorry, I was talking about 27b",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tnbz23/is_qwen36_current_king_for_local_agentic_use/onsuh5r/"
+              },
+              {
+                "score": 26,
+                "author": "HVACcontrolsGuru",
+                "body": "Qwen is better at coding while I find Gemma better for general user facing. I use both and fine tune both as well! Big hidden issue is the chat templates cause issues. I redid both the Qwen and Gemma ones for better agentic coding and tool calling fixes. Depending on how you use them there are some weird app side things to take into account with the default chat templates.",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tnbz23/is_qwen36_current_king_for_local_agentic_use/onsuike/"
+              },
+              {
+                "score": 23,
+                "author": "exaknight21",
+                "body": "I personally have tried 27B Q4 KXL from Unsloth and 35B-A3B, the MOE is faster and winner imho. I wish my Mi50 had faster prompt processing, 27B takes hella long but pulls through eventually. I am running on obsolete hardware though so could be that. In any event, I <3 the Qwen team and that’s all that matters.",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tnbz23/is_qwen36_current_king_for_local_agentic_use/ont48wm/"
+              },
+              {
+                "score": 21,
+                "author": "Current_Ferret_4981",
+                "body": "Locally, most do not have 512GB+ of ram. Agentic implies some speed. Having to put model weights in storage is inherently too slow for agentic. GLM5.1 in two-bit still requires 256GB of ram and the 2 bit version isn't going to be as good as 27B in most cases, especially after accounting for the massive speed hit. GLM5.1 therefore is not agentic king.",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tnbz23/is_qwen36_current_king_for_local_agentic_use/ontv9v8/"
+              },
+              {
+                "score": 16,
+                "author": "ForsookComparison",
+                "body": "A man of few words.. but they're good ones.",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tnbz23/is_qwen36_current_king_for_local_agentic_use/onv6kfb/"
+              }
+            ],
+            "metadata": {
+              "subreddit": "LocalLLaMA",
+              "score": 135,
+              "comment_count": 122,
+              "created_utc": 1779721773.0,
+              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tnbz23/is_qwen36_current_king_for_local_agentic_use/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "ClaudeCode",
+        "sort": "new",
+        "title": "A GrapeRoot user saved over $1,000 on Claude Code in a single month.",
+        "score": 0,
+        "comments": 5,
+        "created_utc": 1779756517.0,
+        "url": "https://www.reddit.com/r/ClaudeCode/comments/1tnrav1/a_graperoot_user_saved_over_1000_on_claude_code/",
+        "external_url": "https://i.redd.it/3z4snejvpd3h1.jpeg",
+        "selftext": "That genuinely surprised me. Today we launched a leaderboard that shows users how many tokens and dollars they’ve saved using GrapeRoot. While testing it, I noticed one user who has been using GrapeRoot since April had accumulated an estimated $1,000+ in savings in just one month. For context, GrapeRoot is a free, open-source local MCP server for Claude Code, Codex, Cursor, Gemini, and other coding agents. The idea is simple: AI coding agents spend a huge amount of tokens repeatedly searching, reading, and resending context they’ve already seen. GrapeRoot helps them stop doing that. How it works Builds a graph of your codebase (files, functions, dependencies) Tracks what the AI has already r",
+        "selftext_full": "That genuinely surprised me. \nToday we launched a leaderboard that shows users how many tokens and dollars they’ve saved using GrapeRoot. While testing it, I noticed one user who has been using GrapeRoot since April had accumulated an estimated $1,000+ in savings in just one month.\n\nFor context, GrapeRoot is a free, open-source local MCP server for Claude Code, Codex, Cursor, Gemini, and other coding agents.\n\nThe idea is simple: AI coding agents spend a huge amount of tokens repeatedly searching, reading, and resending context they’ve already seen. GrapeRoot helps them stop doing that.\n\nHow it works \nBuilds a graph of your codebase (files, functions, dependencies) \nTracks what the AI has already read and edited during the session \nSends relevant context and deltas instead of repeatedly sending everything \nHelps agents navigate large repositories more efficiently \nThis isn’t replacing LLMs. It’s just helping them use context more intelligently.\n\nOther details \n3,000+ installs \n650 daily active users \n100% local \nNo account required \nNo API key required \nNo code leaves your machine \nFree and open source\n\nWe’ve also seen quality improvements because agents spend less time digging through irrelevant files and more time working with the right context.\n\nBenchmarks: https://graperoot.dev/benchmarks \nInstall: https://graperoot.dev/#install \nDiscord: https://discord.com/invite/YwKdQATY2d\n\nI’m curious: for people heavily using Claude Code, Cursor, Codex, or Gemini CLI, how much are you spending per month, and what percentage of that do you think is wasted on unnecessary context retrieval?",
+        "author": "intellinker",
+        "post_id": "1tnrav1",
+        "top_comments": [
+          {
+            "score": 1,
+            "author": "lysdexiad",
+            "body": "How is your implementation better than Rust Token Killer? https://preview.redd.it/n5zwc4eosd3h1.png?width=1556&format=png&auto=webp&s=9fb5bd6960395f6cc339da275d1a519cf04d76cb",
+            "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tnrav1/a_graperoot_user_saved_over_1000_on_claude_code/onw023o/"
+          },
+          {
+            "score": 1,
+            "author": "BeverlyGodoy",
+            "body": "How is it better?",
+            "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tnrav1/a_graperoot_user_saved_over_1000_on_claude_code/onw9ebh/"
+          },
+          {
+            "score": 1,
+            "author": "Lanky_Supermarket_70",
+            "body": "Can I ask how you got so many users and when you started.",
+            "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tnrav1/a_graperoot_user_saved_over_1000_on_claude_code/onw1yqi/"
+          },
+          {
+            "score": 1,
+            "author": "Conscious_Chapter_93",
+            "body": "This is the kind of metric that makes agent tooling feel real. Token reduction is not just cost; it changes whether people are willing to let agents run longer workflows. The thing I’d want next to the savings leaderboard is per-run attribution: - what context was avoided - what files or summaries were reused - what the agent still had to inspect fresh - whether the final run passed checks Otherwise it is easy to optimize for “fewer tokens” while accidentally hiding why a later run failed. Savings plus run evidence is a much stronger story than savings alone.",
+            "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tnrav1/a_graperoot_user_saved_over_1000_on_claude_code/onwietg/"
+          }
+        ],
+        "story_id": "rd_1tnrav1",
+        "heading": "A GrapeRoot user saved over $1,000 on Claude Code in a single month.",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/ClaudeCode/comments/1tnrav1/a_graperoot_user_saved_over_1000_on_claude_code/",
+        "summary": "That genuinely surprised me. Today we launched a leaderboard that shows users how many tokens and dollars they’ve saved using GrapeRoot. While testing it, I noticed one user who has been using GrapeRoot since April had accumulated an estimated $1,000+ in savings in just one month. For context, GrapeRoot is a free, open-source local MCP server for Claude Code, Codex, Cursor, Gemini, and other coding agents. The idea i How is your implementation better than Rust Token Killer? https://preview.redd.it/n5zwc4eosd3h1.png?width=1556&format=png&auto=webp&s=9fb5bd6960395f6cc339da275d1a519cf04d76cb How is it better?",
+        "tweet_and_comments_summary": "That genuinely surprised me. Today we launched a leaderboard that shows users how many tokens and dollars they’ve saved using GrapeRoot. While testing it, I noticed one user who has been using GrapeRoot since April had accumulated an estimated $1,000+ in savings in just one month. For context, GrapeRoot is a free, open-source local MCP server for Claude Code, Codex, Cursor, Gemini, and other coding agents. The idea i How is your implementation better than Rust Token Killer? https://preview.redd.it/n5zwc4eosd3h1.png?width=1556&format=png&auto=webp&s=9fb5bd6960395f6cc339da275d1a519cf04d76cb How is it better?",
+        "discussion_summary": "How is your implementation better than Rust Token Killer? https://preview.redd.it/n5zwc4eosd3h1.png?width=1556&format=png&auto=webp&s=9fb5bd6960395f6cc339da275d1a519cf04d76cb How is it better?",
+        "why_it_matters": "**High signal if running local models.** Check hardware fit, latency, and eval quality before adopting.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tnrav1",
+            "subreddit": "ClaudeCode",
+            "post_url": "https://www.reddit.com/r/ClaudeCode/comments/1tnrav1/a_graperoot_user_saved_over_1000_on_claude_code/",
+            "title": "A GrapeRoot user saved over $1,000 on Claude Code in a single month.",
+            "author": "intellinker",
+            "created_utc": 1779756517.0,
+            "score": 0,
+            "comment_count": 5,
+            "selftext_full": "That genuinely surprised me. \nToday we launched a leaderboard that shows users how many tokens and dollars they’ve saved using GrapeRoot. While testing it, I noticed one user who has been using GrapeRoot since April had accumulated an estimated $1,000+ in savings in just one month.\n\nFor context, GrapeRoot is a free, open-source local MCP server for Claude Code, Codex, Cursor, Gemini, and other coding agents.\n\nThe idea is simple: AI coding agents spend a huge amount of tokens repeatedly searching, reading, and resending context they’ve already seen. GrapeRoot helps them stop doing that.\n\nHow it works \nBuilds a graph of your codebase (files, functions, dependencies) \nTracks what the AI has already read and edited during the session \nSends relevant context and deltas instead of repeatedly sending everything \nHelps agents navigate large repositories more efficiently \nThis isn’t replacing LLMs. It’s just helping them use context more intelligently.\n\nOther details \n3,000+ installs \n650 daily active users \n100% local \nNo account required \nNo API key required \nNo code leaves your machine \nFree and open source\n\nWe’ve also seen quality improvements because agents spend less time digging through irrelevant files and more time working with the right context.\n\nBenchmarks: https://graperoot.dev/benchmarks \nInstall: https://graperoot.dev/#install \nDiscord: https://discord.com/invite/YwKdQATY2d\n\nI’m curious: for people heavily using Claude Code, Cursor, Codex, or Gemini CLI, how much are you spending per month, and what percentage of that do you think is wasted on unnecessary context retrieval?",
+            "selftext_excerpt": "That genuinely surprised me. Today we launched a leaderboard that shows users how many tokens and dollars they’ve saved using GrapeRoot. While testing it, I noticed one user who has been using GrapeRoot since April had accumulated an estima",
+            "external_url": "https://i.redd.it/3z4snejvpd3h1.jpeg",
+            "top_comments": [
+              {
+                "score": 1,
+                "author": "lysdexiad",
+                "body": "How is your implementation better than Rust Token Killer? https://preview.redd.it/n5zwc4eosd3h1.png?width=1556&format=png&auto=webp&s=9fb5bd6960395f6cc339da275d1a519cf04d76cb",
+                "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tnrav1/a_graperoot_user_saved_over_1000_on_claude_code/onw023o/"
+              },
+              {
+                "score": 1,
+                "author": "BeverlyGodoy",
+                "body": "How is it better?",
+                "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tnrav1/a_graperoot_user_saved_over_1000_on_claude_code/onw9ebh/"
+              },
+              {
+                "score": 1,
+                "author": "Lanky_Supermarket_70",
+                "body": "Can I ask how you got so many users and when you started.",
+                "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tnrav1/a_graperoot_user_saved_over_1000_on_claude_code/onw1yqi/"
+              },
+              {
+                "score": 1,
+                "author": "Conscious_Chapter_93",
+                "body": "This is the kind of metric that makes agent tooling feel real. Token reduction is not just cost; it changes whether people are willing to let agents run longer workflows. The thing I’d want next to the savings leaderboard is per-run attribution: - what context was avoided - what files or summaries were reused - what the agent still had to inspect fresh - whether the final run passed checks Otherwise it is easy to optimize for “fewer tokens” while accidentally hiding why a later run failed. Savings plus run evidence is a much stronger story than savings alone.",
+                "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tnrav1/a_graperoot_user_saved_over_1000_on_claude_code/onwietg/"
+              }
+            ],
+            "comment_context": "How is your implementation better than Rust Token Killer? https://preview.redd.it/n5zwc4eosd3h1.png?width=1556&format=png&auto=webp&s=9fb5bd6960395f6cc339da275d1a519cf04d76cb How is it better?"
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 0,
+          "reddit_comment_count": 5,
+          "captured_at_ist": "2026-05-26 09:57 IST"
+        },
+        "labels": [
+          "Reddit",
+          "ClaudeCode"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "A GrapeRoot user saved over $1,000 on Claude Code in a single month.",
+            "post_body": "That genuinely surprised me. \nToday we launched a leaderboard that shows users how many tokens and dollars they’ve saved using GrapeRoot. While testing it, I noticed one user who has been using GrapeRoot since April had accumulated an estimated $1,000+ in savings in just one month.\n\nFor context, GrapeRoot is a free, open-source local MCP server for Claude Code, Codex, Cursor, Gemini, and other coding agents.\n\nThe idea is simple: AI coding agents spend a huge amount of tokens repeatedly searching, reading, and resending context they’ve already seen. GrapeRoot helps them stop doing that.\n\nHow it works \nBuilds a graph of your codebase (files, functions, dependencies) \nTracks what the AI has already read and edited during the session \nSends relevant context and deltas instead of repeatedly sending everything \nHelps agents navigate large repositories more efficiently \nThis isn’t replacing LLMs. It’s just helping them use context more intelligently.\n\nOther details \n3,000+ installs \n650 daily active users \n100% local \nNo account required \nNo API key required \nNo code leaves your machine \nFree and open source\n\nWe’ve also seen quality improvements because agents spend less time digging through irrelevant files and more time working with the right context.\n\nBenchmarks: https://graperoot.dev/benchmarks \nInstall: https://graperoot.dev/#install \nDiscord: https://discord.com/invite/YwKdQATY2d\n\nI’m curious: for people heavily using Claude Code, Cursor, Codex, or Gemini CLI, how much are you spending per month, and what percentage of that do you think is wasted on unnecessary context retrieval?",
+            "comments": [
+              {
+                "score": 1,
+                "author": "lysdexiad",
+                "body": "How is your implementation better than Rust Token Killer? https://preview.redd.it/n5zwc4eosd3h1.png?width=1556&format=png&auto=webp&s=9fb5bd6960395f6cc339da275d1a519cf04d76cb",
+                "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tnrav1/a_graperoot_user_saved_over_1000_on_claude_code/onw023o/"
+              },
+              {
+                "score": 1,
+                "author": "BeverlyGodoy",
+                "body": "How is it better?",
+                "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tnrav1/a_graperoot_user_saved_over_1000_on_claude_code/onw9ebh/"
+              },
+              {
+                "score": 1,
+                "author": "Lanky_Supermarket_70",
+                "body": "Can I ask how you got so many users and when you started.",
+                "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tnrav1/a_graperoot_user_saved_over_1000_on_claude_code/onw1yqi/"
+              },
+              {
+                "score": 1,
+                "author": "Conscious_Chapter_93",
+                "body": "This is the kind of metric that makes agent tooling feel real. Token reduction is not just cost; it changes whether people are willing to let agents run longer workflows. The thing I’d want next to the savings leaderboard is per-run attribution: - what context was avoided - what files or summaries were reused - what the agent still had to inspect fresh - whether the final run passed checks Otherwise it is easy to optimize for “fewer tokens” while accidentally hiding why a later run failed. Savings plus run evidence is a much stronger story than savings alone.",
+                "permalink": "https://www.reddit.com/r/ClaudeCode/comments/1tnrav1/a_graperoot_user_saved_over_1000_on_claude_code/onwietg/"
+              }
+            ],
+            "metadata": {
+              "subreddit": "ClaudeCode",
+              "score": 0,
+              "comment_count": 5,
+              "created_utc": 1779756517.0,
+              "url": "https://www.reddit.com/r/ClaudeCode/comments/1tnrav1/a_graperoot_user_saved_over_1000_on_claude_code/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "LocalLLaMA",
+        "sort": "hot",
+        "title": "Next year we're getting 0.5T model from Grok",
+        "score": 244,
+        "comments": 183,
+        "created_utc": 1779698115.0,
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tn31d8/next_year_were_getting_05t_model_from_grok/",
+        "external_url": "https://i.redd.it/y7ytazc1v83h1.png",
+        "selftext": "Tweet : [https://xcancel.com/elonmusk/status/2058796067592736866#m](https://xcancel.com/elonmusk/status/2058796067592736866#m) Right now it joined \"Grok-3 Opensource Release\" club.",
+        "selftext_full": "Tweet : [https://xcancel.com/elonmusk/status/2058796067592736866#m](https://xcancel.com/elonmusk/status/2058796067592736866#m)\n\nRight now it joined \"Grok-3 Opensource Release\" club.",
+        "author": "pmttyji",
+        "post_id": "1tn31d8",
+        "top_comments": [
+          {
+            "score": 427,
+            "author": "Familiar_Text_6913",
+            "body": "elontime.io Should be 2-3 years for open-weights (not source)",
+            "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tn31d8/next_year_were_getting_05t_model_from_grok/onr3k7p/"
+          },
+          {
+            "score": 302,
+            "author": "VoiceApprehensive893",
+            "body": "right when it becomes so useless that youd rather use a popular 30b model",
+            "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tn31d8/next_year_were_getting_05t_model_from_grok/onr35ob/"
+          },
+          {
+            "score": 121,
+            "author": "TheLexoPlexx",
+            "body": "We're also going to get self-driving-vehicles by the End of ~~2019~~ ~~2022~~ ~~2025~~ 2026. https://en.wikipedia.org/wiki/List_of_predictions_for_autonomous_Tesla_vehicles_by_Elon_Musk Yeah, sure, an LLM might still be a smaller step than the above, but how does anyone still believe what this guy says? Especially given that 99% of this sub can't self-host a 0.5T-Model anyways.",
+            "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tn31d8/next_year_were_getting_05t_model_from_grok/onr3rdr/"
+          },
+          {
+            "score": 98,
+            "author": "DeedleDumbDee",
+            "body": "Just like how full autonomous self driving was 2 years away in 2015, 1 million autonomous Cybertaxis by 2020 in 2019, 2020 underground hyper loop connecting all major California cities in 2015, and crewed Mars missions by 2024 in 2018.",
+            "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tn31d8/next_year_were_getting_05t_model_from_grok/onrvulv/"
+          },
+          {
+            "score": 90,
+            "author": "Polite_Jello_377",
+            "body": "Just after the first mission to mars?",
+            "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tn31d8/next_year_were_getting_05t_model_from_grok/onrbdqm/"
+          },
+          {
+            "score": 86,
+            "author": "SucculentSpine",
+            "body": "Honestly, some 30b models right now are better already.",
+            "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tn31d8/next_year_were_getting_05t_model_from_grok/onrjzcy/"
+          },
+          {
+            "score": 80,
+            "author": "aladin_lt",
+            "body": "One consistent thing with him is that he overpromises and underdelivers.",
+            "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tn31d8/next_year_were_getting_05t_model_from_grok/onridxx/"
+          },
+          {
+            "score": 41,
+            "author": "0xbyt3",
+            "body": "\\> and never~~under~~delivers. ftfy",
+            "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tn31d8/next_year_were_getting_05t_model_from_grok/onrkak2/"
+          }
+        ],
+        "story_id": "rd_1tn31d8",
+        "heading": "Next year we're getting 0.5T model from Grok",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tn31d8/next_year_were_getting_05t_model_from_grok/",
+        "summary": "Tweet : [https://xcancel.com/elonmusk/status/2058796067592736866#m](https://xcancel.com/elonmusk/status/2058796067592736866#m) Right now it joined \"Grok-3 Opensource Release\" club. elontime.io Should be 2-3 years for open-weights (not source) right when it becomes so useless that youd rather use a popular 30b model",
+        "tweet_and_comments_summary": "Tweet : [https://xcancel.com/elonmusk/status/2058796067592736866#m](https://xcancel.com/elonmusk/status/2058796067592736866#m) Right now it joined \"Grok-3 Opensource Release\" club. elontime.io Should be 2-3 years for open-weights (not source) right when it becomes so useless that youd rather use a popular 30b model",
+        "discussion_summary": "elontime.io Should be 2-3 years for open-weights (not source) right when it becomes so useless that youd rather use a popular 30b model",
+        "why_it_matters": "**High signal if running local models.** Check hardware fit, latency, and eval quality before adopting.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tn31d8",
+            "subreddit": "LocalLLaMA",
+            "post_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tn31d8/next_year_were_getting_05t_model_from_grok/",
+            "title": "Next year we're getting 0.5T model from Grok",
+            "author": "pmttyji",
+            "created_utc": 1779698115.0,
+            "score": 244,
+            "comment_count": 183,
+            "selftext_full": "Tweet : [https://xcancel.com/elonmusk/status/2058796067592736866#m](https://xcancel.com/elonmusk/status/2058796067592736866#m)\n\nRight now it joined \"Grok-3 Opensource Release\" club.",
+            "selftext_excerpt": "Tweet : [https://xcancel.com/elonmusk/status/2058796067592736866#m](https://xcancel.com/elonmusk/status/2058796067592736866#m) Right now it joined \"Grok-3 Opensource Release\" club.",
+            "external_url": "https://i.redd.it/y7ytazc1v83h1.png",
+            "top_comments": [
+              {
+                "score": 427,
+                "author": "Familiar_Text_6913",
+                "body": "elontime.io Should be 2-3 years for open-weights (not source)",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tn31d8/next_year_were_getting_05t_model_from_grok/onr3k7p/"
+              },
+              {
+                "score": 302,
+                "author": "VoiceApprehensive893",
+                "body": "right when it becomes so useless that youd rather use a popular 30b model",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tn31d8/next_year_were_getting_05t_model_from_grok/onr35ob/"
+              },
+              {
+                "score": 121,
+                "author": "TheLexoPlexx",
+                "body": "We're also going to get self-driving-vehicles by the End of ~~2019~~ ~~2022~~ ~~2025~~ 2026. https://en.wikipedia.org/wiki/List_of_predictions_for_autonomous_Tesla_vehicles_by_Elon_Musk Yeah, sure, an LLM might still be a smaller step than the above, but how does anyone still believe what this guy says? Especially given that 99% of this sub can't self-host a 0.5T-Model anyways.",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tn31d8/next_year_were_getting_05t_model_from_grok/onr3rdr/"
+              },
+              {
+                "score": 98,
+                "author": "DeedleDumbDee",
+                "body": "Just like how full autonomous self driving was 2 years away in 2015, 1 million autonomous Cybertaxis by 2020 in 2019, 2020 underground hyper loop connecting all major California cities in 2015, and crewed Mars missions by 2024 in 2018.",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tn31d8/next_year_were_getting_05t_model_from_grok/onrvulv/"
+              },
+              {
+                "score": 90,
+                "author": "Polite_Jello_377",
+                "body": "Just after the first mission to mars?",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tn31d8/next_year_were_getting_05t_model_from_grok/onrbdqm/"
+              },
+              {
+                "score": 86,
+                "author": "SucculentSpine",
+                "body": "Honestly, some 30b models right now are better already.",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tn31d8/next_year_were_getting_05t_model_from_grok/onrjzcy/"
+              },
+              {
+                "score": 80,
+                "author": "aladin_lt",
+                "body": "One consistent thing with him is that he overpromises and underdelivers.",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tn31d8/next_year_were_getting_05t_model_from_grok/onridxx/"
+              },
+              {
+                "score": 41,
+                "author": "0xbyt3",
+                "body": "\\> and never~~under~~delivers. ftfy",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tn31d8/next_year_were_getting_05t_model_from_grok/onrkak2/"
+              }
+            ],
+            "comment_context": "elontime.io Should be 2-3 years for open-weights (not source) right when it becomes so useless that youd rather use a popular 30b model"
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 244,
+          "reddit_comment_count": 183,
+          "captured_at_ist": "2026-05-26 09:57 IST"
+        },
+        "labels": [
+          "Reddit",
+          "LocalLLaMA"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "Next year we're getting 0.5T model from Grok",
+            "post_body": "Tweet : [https://xcancel.com/elonmusk/status/2058796067592736866#m](https://xcancel.com/elonmusk/status/2058796067592736866#m)\n\nRight now it joined \"Grok-3 Opensource Release\" club.",
+            "comments": [
+              {
+                "score": 427,
+                "author": "Familiar_Text_6913",
+                "body": "elontime.io Should be 2-3 years for open-weights (not source)",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tn31d8/next_year_were_getting_05t_model_from_grok/onr3k7p/"
+              },
+              {
+                "score": 302,
+                "author": "VoiceApprehensive893",
+                "body": "right when it becomes so useless that youd rather use a popular 30b model",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tn31d8/next_year_were_getting_05t_model_from_grok/onr35ob/"
+              },
+              {
+                "score": 121,
+                "author": "TheLexoPlexx",
+                "body": "We're also going to get self-driving-vehicles by the End of ~~2019~~ ~~2022~~ ~~2025~~ 2026. https://en.wikipedia.org/wiki/List_of_predictions_for_autonomous_Tesla_vehicles_by_Elon_Musk Yeah, sure, an LLM might still be a smaller step than the above, but how does anyone still believe what this guy says? Especially given that 99% of this sub can't self-host a 0.5T-Model anyways.",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tn31d8/next_year_were_getting_05t_model_from_grok/onr3rdr/"
+              },
+              {
+                "score": 98,
+                "author": "DeedleDumbDee",
+                "body": "Just like how full autonomous self driving was 2 years away in 2015, 1 million autonomous Cybertaxis by 2020 in 2019, 2020 underground hyper loop connecting all major California cities in 2015, and crewed Mars missions by 2024 in 2018.",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tn31d8/next_year_were_getting_05t_model_from_grok/onrvulv/"
+              },
+              {
+                "score": 90,
+                "author": "Polite_Jello_377",
+                "body": "Just after the first mission to mars?",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tn31d8/next_year_were_getting_05t_model_from_grok/onrbdqm/"
+              },
+              {
+                "score": 86,
+                "author": "SucculentSpine",
+                "body": "Honestly, some 30b models right now are better already.",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tn31d8/next_year_were_getting_05t_model_from_grok/onrjzcy/"
+              },
+              {
+                "score": 80,
+                "author": "aladin_lt",
+                "body": "One consistent thing with him is that he overpromises and underdelivers.",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tn31d8/next_year_were_getting_05t_model_from_grok/onridxx/"
+              },
+              {
+                "score": 41,
+                "author": "0xbyt3",
+                "body": "\\> and never~~under~~delivers. ftfy",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1tn31d8/next_year_were_getting_05t_model_from_grok/onrkak2/"
+              }
+            ],
+            "metadata": {
+              "subreddit": "LocalLLaMA",
+              "score": 244,
+              "comment_count": 183,
+              "created_utc": 1779698115.0,
+              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tn31d8/next_year_were_getting_05t_model_from_grok/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "Ollama",
+        "sort": "hot",
+        "title": "Noob q: Is it realistic to use CPU only (8th gen i7) for a coder LLM?",
+        "score": 3,
+        "comments": 13,
+        "created_utc": 1779739491.0,
+        "url": "https://www.reddit.com/r/ollama/comments/1tnk9ik/noob_q_is_it_realistic_to_use_cpu_only_8th_gen_i7/",
+        "external_url": null,
+        "selftext": "I tried Claude Code (with the cheapest paid subscription) for a couple of small coding tasks and found it useful. That was my first experience with using an LLM. I've just downloaded ollama and tried running models locally with Claude Code. It was very slow. (Results pasted in below.) Should I use something other than Claude Code, or is it unrealistic to run a local LLM on my hardware? (Intel Core i7-8700T, 16GB RAM, no GPU) `$ ollama launch claude --model qwen2.5-coder` `pulling manifest` `pulling 60e05f210007: 100% ... 4.7 GB` `pulling ...` `verifying sha256 digest` `writing manifest` `success` `❯ Please tell me what model you are using.` `● {\"name\": \"config\", \"arguments\": {\"key\": \"model\",",
+        "selftext_full": "I tried Claude Code (with the cheapest paid subscription) for a couple of small coding tasks and found it useful. That was my first experience with using an LLM.\n\nI've just downloaded ollama and tried running models locally with Claude Code. It was very slow. (Results pasted in below.) Should I use something other than Claude Code, or is it unrealistic to run a local LLM on my hardware? (Intel Core i7-8700T, 16GB RAM, no GPU)\n\n`$ ollama launch claude --model qwen2.5-coder`\n\n`pulling manifest` \n`pulling 60e05f210007: 100% ... 4.7 GB` \n`pulling ...` \n`verifying sha256 digest` \n`writing manifest` \n`success`\n\n`❯ Please tell me what model you are using.` \n \n`● {\"name\": \"config\", \"arguments\": {\"key\": \"model\", \"value\": \"Claude 4.6\"}}` \n \n`✻ Baked for 6m 23s`\n\n`$ ollama launch claude --model qwen2.5-coder:3b` \n \n`pulling manifest`  \n`pulling 4a188102020e: 100% ... 1.9 GB` \n`pulling ...`               \n`verifying sha256 digest`  \n`writing manifest`  \n`success`\n\n`❯ Please tell me what model you are using.` \n \n`● {\"name\": \"get-model\", \"arguments\": {}}` \n \n`✻ Sautéed for 3m 3s` \n",
+        "author": "RidingWilde",
+        "post_id": "1tnk9ik",
+        "top_comments": [
+          {
+            "score": 6,
+            "author": "mgithens1",
+            "body": "The fastest CPUs can produce 10 tokens per second. With an almost ten year old CPU you could probably get 1-2 tokens per second on a really small model. So “Hello” will take about a minute to respond. Generating code will take hours for very simple code.",
+            "permalink": "https://www.reddit.com/r/ollama/comments/1tnk9ik/noob_q_is_it_realistic_to_use_cpu_only_8th_gen_i7/onuizkk/"
+          },
+          {
+            "score": 4,
+            "author": "Endurance_Beast",
+            "body": "If time does not matter, and you got plenty and plenty and plenty of it.",
+            "permalink": "https://www.reddit.com/r/ollama/comments/1tnk9ik/noob_q_is_it_realistic_to_use_cpu_only_8th_gen_i7/onuolhc/"
+          },
+          {
+            "score": 2,
+            "author": "HumbleTech905",
+            "body": "No",
+            "permalink": "https://www.reddit.com/r/ollama/comments/1tnk9ik/noob_q_is_it_realistic_to_use_cpu_only_8th_gen_i7/onus0y6/"
+          },
+          {
+            "score": 1,
+            "author": "YearnMar10",
+            "body": "Memory bandwidth is the most direct determinant of token generation. Divide your model size by memory bandwidth and you know the theoretical upper bound of tokens per second. Consumer CPU ram has a memory bandwidth of around 30-100 GB/s. Take qwen 3.6 27b at 8-bit quantization as an example with around 27b parameters, that gives you around 1-4 tokens per second. That’s around one word per second. This is a very simplistic approximation and ignores many other relevant factors, but it illustrates why a gpu with several hundred GB/s to 1000s of GB/s are so much faster and more appropriate. Edit: the other thing is prompt processing which is utterly slow without a gpu.",
+            "permalink": "https://www.reddit.com/r/ollama/comments/1tnk9ik/noob_q_is_it_realistic_to_use_cpu_only_8th_gen_i7/onuk7l0/"
+          },
+          {
+            "score": 1,
+            "author": "MRSLgthr",
+            "body": "Yes and no at the same time. Yes - basically its just processing speed, the output itself should be on the same \"level\". No - it will be slooooooow as fuck. Honestly, unless youre realy, realy, realy stuck, you could just code faster. But heres the thing. If you can run it for low cost, and you do not mind the slow progress then go for it. I run llms on a rpi5 with 16gb of RAM as a general tool (web searches, some processing with custom made scripts, putting results in a database) and it *just* works. Then when I am free I go through this data manually, and do my thing using free models through openrouter/opencode/google/etc.",
+            "permalink": "https://www.reddit.com/r/ollama/comments/1tnk9ik/noob_q_is_it_realistic_to_use_cpu_only_8th_gen_i7/onuuogd/"
+          },
+          {
+            "score": 1,
+            "author": "Puzzleheaded_Base302",
+            "body": "the prompt-processing is way too slow to be practical. even if you can tolerate token generation at 1 tps. even a small 9B model will take 20 min to start responde to you. (harness inject 20K prompt)",
+            "permalink": "https://www.reddit.com/r/ollama/comments/1tnk9ik/noob_q_is_it_realistic_to_use_cpu_only_8th_gen_i7/onuvttp/"
+          },
+          {
+            "score": 1,
+            "author": "FlyByPC",
+            "body": "That 16GB RAM is probably hurting you almost as much as no (AI-capable) GPU. Check to see what your RAM usage is; if you're dipping into \"virtual memory,\" your speed will hit a brick wall. ... *Memory is like an orgasm; it's best if you don't have to fake it.* --Seymour Cray",
+            "permalink": "https://www.reddit.com/r/ollama/comments/1tnk9ik/noob_q_is_it_realistic_to_use_cpu_only_8th_gen_i7/onuw9rf/"
+          },
+          {
+            "score": 1,
+            "author": "Hofi2010",
+            "body": "No",
+            "permalink": "https://www.reddit.com/r/ollama/comments/1tnk9ik/noob_q_is_it_realistic_to_use_cpu_only_8th_gen_i7/onuwih1/"
+          }
+        ],
+        "story_id": "rd_1tnk9ik",
+        "heading": "Noob q: Is it realistic to use CPU only (8th gen i7) for a coder LLM?",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/ollama/comments/1tnk9ik/noob_q_is_it_realistic_to_use_cpu_only_8th_gen_i7/",
+        "summary": "I tried Claude Code (with the cheapest paid subscription) for a couple of small coding tasks and found it useful. That was my first experience with using an LLM. I've just downloaded ollama and tried running models locally with Claude Code. It was very slow. (Results pasted in below.) Should I use something other than Claude Code, or is it unrealistic to run a local LLM on my hardware? (Intel Core i7-8700T, 16GB RAM, The fastest CPUs can produce 10 tokens per second. With an almost ten year old CPU you could probably get 1-2 tokens per second on a really small model. So “Hello” will take about If time does not matter, and you got plenty and plenty and plenty of it.",
+        "tweet_and_comments_summary": "I tried Claude Code (with the cheapest paid subscription) for a couple of small coding tasks and found it useful. That was my first experience with using an LLM. I've just downloaded ollama and tried running models locally with Claude Code. It was very slow. (Results pasted in below.) Should I use something other than Claude Code, or is it unrealistic to run a local LLM on my hardware? (Intel Core i7-8700T, 16GB RAM, The fastest CPUs can produce 10 tokens per second. With an almost ten year old CPU you could probably get 1-2 tokens per second on a really small model. So “Hello” will take about If time does not matter, and you got plenty and plenty and plenty of it.",
+        "discussion_summary": "The fastest CPUs can produce 10 tokens per second. With an almost ten year old CPU you could probably get 1-2 tokens per second on a really small model. So “Hello” will take about If time does not matter, and you got plenty and plenty and plenty of it.",
+        "why_it_matters": "**High signal if running local models.** Check hardware fit, latency, and eval quality before adopting.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tnk9ik",
+            "subreddit": "Ollama",
+            "post_url": "https://www.reddit.com/r/ollama/comments/1tnk9ik/noob_q_is_it_realistic_to_use_cpu_only_8th_gen_i7/",
+            "title": "Noob q: Is it realistic to use CPU only (8th gen i7) for a coder LLM?",
+            "author": "RidingWilde",
+            "created_utc": 1779739491.0,
+            "score": 3,
+            "comment_count": 13,
+            "selftext_full": "I tried Claude Code (with the cheapest paid subscription) for a couple of small coding tasks and found it useful. That was my first experience with using an LLM.\n\nI've just downloaded ollama and tried running models locally with Claude Code. It was very slow. (Results pasted in below.) Should I use something other than Claude Code, or is it unrealistic to run a local LLM on my hardware? (Intel Core i7-8700T, 16GB RAM, no GPU)\n\n`$ ollama launch claude --model qwen2.5-coder`\n\n`pulling manifest` \n`pulling 60e05f210007: 100% ... 4.7 GB` \n`pulling ...` \n`verifying sha256 digest` \n`writing manifest` \n`success`\n\n`❯ Please tell me what model you are using.` \n \n`● {\"name\": \"config\", \"arguments\": {\"key\": \"model\", \"value\": \"Claude 4.6\"}}` \n \n`✻ Baked for 6m 23s`\n\n`$ ollama launch claude --model qwen2.5-coder:3b` \n \n`pulling manifest`  \n`pulling 4a188102020e: 100% ... 1.9 GB` \n`pulling ...`               \n`verifying sha256 digest`  \n`writing manifest`  \n`success`\n\n`❯ Please tell me what model you are using.` \n \n`● {\"name\": \"get-model\", \"arguments\": {}}` \n \n`✻ Sautéed for 3m 3s` \n",
+            "selftext_excerpt": "I tried Claude Code (with the cheapest paid subscription) for a couple of small coding tasks and found it useful. That was my first experience with using an LLM. I've just downloaded ollama and tried running models locally with Claude Code.",
+            "external_url": null,
+            "top_comments": [
+              {
+                "score": 6,
+                "author": "mgithens1",
+                "body": "The fastest CPUs can produce 10 tokens per second. With an almost ten year old CPU you could probably get 1-2 tokens per second on a really small model. So “Hello” will take about a minute to respond. Generating code will take hours for very simple code.",
+                "permalink": "https://www.reddit.com/r/ollama/comments/1tnk9ik/noob_q_is_it_realistic_to_use_cpu_only_8th_gen_i7/onuizkk/"
+              },
+              {
+                "score": 4,
+                "author": "Endurance_Beast",
+                "body": "If time does not matter, and you got plenty and plenty and plenty of it.",
+                "permalink": "https://www.reddit.com/r/ollama/comments/1tnk9ik/noob_q_is_it_realistic_to_use_cpu_only_8th_gen_i7/onuolhc/"
+              },
+              {
+                "score": 2,
+                "author": "HumbleTech905",
+                "body": "No",
+                "permalink": "https://www.reddit.com/r/ollama/comments/1tnk9ik/noob_q_is_it_realistic_to_use_cpu_only_8th_gen_i7/onus0y6/"
+              },
+              {
+                "score": 1,
+                "author": "YearnMar10",
+                "body": "Memory bandwidth is the most direct determinant of token generation. Divide your model size by memory bandwidth and you know the theoretical upper bound of tokens per second. Consumer CPU ram has a memory bandwidth of around 30-100 GB/s. Take qwen 3.6 27b at 8-bit quantization as an example with around 27b parameters, that gives you around 1-4 tokens per second. That’s around one word per second. This is a very simplistic approximation and ignores many other relevant factors, but it illustrates why a gpu with several hundred GB/s to 1000s of GB/s are so much faster and more appropriate. Edit: the other thing is prompt processing which is utterly slow without a gpu.",
+                "permalink": "https://www.reddit.com/r/ollama/comments/1tnk9ik/noob_q_is_it_realistic_to_use_cpu_only_8th_gen_i7/onuk7l0/"
+              },
+              {
+                "score": 1,
+                "author": "MRSLgthr",
+                "body": "Yes and no at the same time. Yes - basically its just processing speed, the output itself should be on the same \"level\". No - it will be slooooooow as fuck. Honestly, unless youre realy, realy, realy stuck, you could just code faster. But heres the thing. If you can run it for low cost, and you do not mind the slow progress then go for it. I run llms on a rpi5 with 16gb of RAM as a general tool (web searches, some processing with custom made scripts, putting results in a database) and it *just* works. Then when I am free I go through this data manually, and do my thing using free models through openrouter/opencode/google/etc.",
+                "permalink": "https://www.reddit.com/r/ollama/comments/1tnk9ik/noob_q_is_it_realistic_to_use_cpu_only_8th_gen_i7/onuuogd/"
+              },
+              {
+                "score": 1,
+                "author": "Puzzleheaded_Base302",
+                "body": "the prompt-processing is way too slow to be practical. even if you can tolerate token generation at 1 tps. even a small 9B model will take 20 min to start responde to you. (harness inject 20K prompt)",
+                "permalink": "https://www.reddit.com/r/ollama/comments/1tnk9ik/noob_q_is_it_realistic_to_use_cpu_only_8th_gen_i7/onuvttp/"
+              },
+              {
+                "score": 1,
+                "author": "FlyByPC",
+                "body": "That 16GB RAM is probably hurting you almost as much as no (AI-capable) GPU. Check to see what your RAM usage is; if you're dipping into \"virtual memory,\" your speed will hit a brick wall. ... *Memory is like an orgasm; it's best if you don't have to fake it.* --Seymour Cray",
+                "permalink": "https://www.reddit.com/r/ollama/comments/1tnk9ik/noob_q_is_it_realistic_to_use_cpu_only_8th_gen_i7/onuw9rf/"
+              },
+              {
+                "score": 1,
+                "author": "Hofi2010",
+                "body": "No",
+                "permalink": "https://www.reddit.com/r/ollama/comments/1tnk9ik/noob_q_is_it_realistic_to_use_cpu_only_8th_gen_i7/onuwih1/"
+              }
+            ],
+            "comment_context": "The fastest CPUs can produce 10 tokens per second. With an almost ten year old CPU you could probably get 1-2 tokens per second on a really small model. So “Hello” will take about If time does not matter, and you got plenty and plenty and plenty of it."
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 3,
+          "reddit_comment_count": 13,
+          "captured_at_ist": "2026-05-26 09:57 IST"
+        },
+        "labels": [
+          "Reddit",
+          "Ollama"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "Noob q: Is it realistic to use CPU only (8th gen i7) for a coder LLM?",
+            "post_body": "I tried Claude Code (with the cheapest paid subscription) for a couple of small coding tasks and found it useful. That was my first experience with using an LLM.\n\nI've just downloaded ollama and tried running models locally with Claude Code. It was very slow. (Results pasted in below.) Should I use something other than Claude Code, or is it unrealistic to run a local LLM on my hardware? (Intel Core i7-8700T, 16GB RAM, no GPU)\n\n`$ ollama launch claude --model qwen2.5-coder`\n\n`pulling manifest` \n`pulling 60e05f210007: 100% ... 4.7 GB` \n`pulling ...` \n`verifying sha256 digest` \n`writing manifest` \n`success`\n\n`❯ Please tell me what model you are using.` \n \n`● {\"name\": \"config\", \"arguments\": {\"key\": \"model\", \"value\": \"Claude 4.6\"}}` \n \n`✻ Baked for 6m 23s`\n\n`$ ollama launch claude --model qwen2.5-coder:3b` \n \n`pulling manifest`  \n`pulling 4a188102020e: 100% ... 1.9 GB` \n`pulling ...`               \n`verifying sha256 digest`  \n`writing manifest`  \n`success`\n\n`❯ Please tell me what model you are using.` \n \n`● {\"name\": \"get-model\", \"arguments\": {}}` \n \n`✻ Sautéed for 3m 3s` \n",
+            "comments": [
+              {
+                "score": 6,
+                "author": "mgithens1",
+                "body": "The fastest CPUs can produce 10 tokens per second. With an almost ten year old CPU you could probably get 1-2 tokens per second on a really small model. So “Hello” will take about a minute to respond. Generating code will take hours for very simple code.",
+                "permalink": "https://www.reddit.com/r/ollama/comments/1tnk9ik/noob_q_is_it_realistic_to_use_cpu_only_8th_gen_i7/onuizkk/"
+              },
+              {
+                "score": 4,
+                "author": "Endurance_Beast",
+                "body": "If time does not matter, and you got plenty and plenty and plenty of it.",
+                "permalink": "https://www.reddit.com/r/ollama/comments/1tnk9ik/noob_q_is_it_realistic_to_use_cpu_only_8th_gen_i7/onuolhc/"
+              },
+              {
+                "score": 2,
+                "author": "HumbleTech905",
+                "body": "No",
+                "permalink": "https://www.reddit.com/r/ollama/comments/1tnk9ik/noob_q_is_it_realistic_to_use_cpu_only_8th_gen_i7/onus0y6/"
+              },
+              {
+                "score": 1,
+                "author": "YearnMar10",
+                "body": "Memory bandwidth is the most direct determinant of token generation. Divide your model size by memory bandwidth and you know the theoretical upper bound of tokens per second. Consumer CPU ram has a memory bandwidth of around 30-100 GB/s. Take qwen 3.6 27b at 8-bit quantization as an example with around 27b parameters, that gives you around 1-4 tokens per second. That’s around one word per second. This is a very simplistic approximation and ignores many other relevant factors, but it illustrates why a gpu with several hundred GB/s to 1000s of GB/s are so much faster and more appropriate. Edit: the other thing is prompt processing which is utterly slow without a gpu.",
+                "permalink": "https://www.reddit.com/r/ollama/comments/1tnk9ik/noob_q_is_it_realistic_to_use_cpu_only_8th_gen_i7/onuk7l0/"
+              },
+              {
+                "score": 1,
+                "author": "MRSLgthr",
+                "body": "Yes and no at the same time. Yes - basically its just processing speed, the output itself should be on the same \"level\". No - it will be slooooooow as fuck. Honestly, unless youre realy, realy, realy stuck, you could just code faster. But heres the thing. If you can run it for low cost, and you do not mind the slow progress then go for it. I run llms on a rpi5 with 16gb of RAM as a general tool (web searches, some processing with custom made scripts, putting results in a database) and it *just* works. Then when I am free I go through this data manually, and do my thing using free models through openrouter/opencode/google/etc.",
+                "permalink": "https://www.reddit.com/r/ollama/comments/1tnk9ik/noob_q_is_it_realistic_to_use_cpu_only_8th_gen_i7/onuuogd/"
+              },
+              {
+                "score": 1,
+                "author": "Puzzleheaded_Base302",
+                "body": "the prompt-processing is way too slow to be practical. even if you can tolerate token generation at 1 tps. even a small 9B model will take 20 min to start responde to you. (harness inject 20K prompt)",
+                "permalink": "https://www.reddit.com/r/ollama/comments/1tnk9ik/noob_q_is_it_realistic_to_use_cpu_only_8th_gen_i7/onuvttp/"
+              },
+              {
+                "score": 1,
+                "author": "FlyByPC",
+                "body": "That 16GB RAM is probably hurting you almost as much as no (AI-capable) GPU. Check to see what your RAM usage is; if you're dipping into \"virtual memory,\" your speed will hit a brick wall. ... *Memory is like an orgasm; it's best if you don't have to fake it.* --Seymour Cray",
+                "permalink": "https://www.reddit.com/r/ollama/comments/1tnk9ik/noob_q_is_it_realistic_to_use_cpu_only_8th_gen_i7/onuw9rf/"
+              },
+              {
+                "score": 1,
+                "author": "Hofi2010",
+                "body": "No",
+                "permalink": "https://www.reddit.com/r/ollama/comments/1tnk9ik/noob_q_is_it_realistic_to_use_cpu_only_8th_gen_i7/onuwih1/"
+              }
+            ],
+            "metadata": {
+              "subreddit": "Ollama",
+              "score": 3,
+              "comment_count": 13,
+              "created_utc": 1779739491.0,
+              "url": "https://www.reddit.com/r/ollama/comments/1tnk9ik/noob_q_is_it_realistic_to_use_cpu_only_8th_gen_i7/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "ArtificialInteligence",
+        "sort": "hot",
+        "title": "After talking with a Chinese friend about AI, I realized people are using it at very different paces",
+        "score": 146,
+        "comments": 144,
+        "created_utc": 1779696531.0,
+        "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1tn2jva/after_talking_with_a_chinese_friend_about_ai_i/",
+        "external_url": null,
+        "selftext": "Last week, a Chinese friend came to see me, and while we were chatting, we ended up talking about how people feel about AI. What surprised me a bit was that he said a lot of companies in China are not only encouraging employees to use AI, but are also actively giving out tokens to encourage people to try different automations and experiments. Some teams even run monthly token leaderboards, rewarding the people who “burn” the most tokens with more tokens or even cash. People seem very willing to take part, and it really feels like this has become part of the workflow. They use Cursor and IDEA for coding, and also various life assistant tools to slowly automate small, repetitive things. Tools",
+        "selftext_full": "Last week, a Chinese friend came to see me, and while we were chatting, we ended up talking about how people feel about AI. What surprised me a bit was that he said a lot of companies in China are not only encouraging employees to use AI, but are also actively giving out tokens to encourage people to try different automations and experiments. Some teams even run monthly token leaderboards, rewarding the people who “burn” the most tokens with more tokens or even cash. People seem very willing to take part, and it really feels like this has become part of the workflow. They use Cursor and IDEA for coding, and also various life assistant tools to slowly automate small, repetitive things. Tools like Airtap are still not officially launched in our market yet. What stood out even more to me is that the automation is not just for work anymore. A lot of everyday stuff is already being handled too, like: \n\n* helping parents arrange or schedule medication\n* finding a good restaurant and making a reservation\n* weekly grocery shopping\n* keeping a Duolingo streak going\n* job hunting and submitting applications\n\n Honestly, some of these were things I had never really thought about before, but they’re already using them very naturally. Then last week I also saw the [report about Google’s CEO getting booed while talking about AI at a graduation ceremony.](https://www.independent.co.uk/news/world/americas/ai-college-graduation-eric-schmidt-google-b2981383.html?utm_source=reddit&utm_medium=social&utm_campaign=artificialinteligence) Seeing those two things side by side made it very clear to me that people’s pace of adoption and their comfort level with AI really are different depending on where they are. But hearing those examples made me even more interested in what it would look like for AI to really become part of everyday life. If AI really does become this common, which daily tasks would you actually be willing to let it handle?",
+        "author": "Ok-Insurance-6313",
+        "post_id": "1tn2jva",
+        "top_comments": [],
+        "story_id": "rd_1tn2jva",
+        "heading": "After talking with a Chinese friend about AI, I realized people are using it at very different paces",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/ArtificialInteligence/comments/1tn2jva/after_talking_with_a_chinese_friend_about_ai_i/",
+        "summary": "Last week, a Chinese friend came to see me, and while we were chatting, we ended up talking about how people feel about AI. What surprised me a bit was that he said a lot of companies in China are not only encouraging employees to use AI, but are also actively giving out tokens to encourage people to try different automations and experiments. Some teams even run monthly token leaderboards, rewarding the people who “b",
+        "tweet_and_comments_summary": "Last week, a Chinese friend came to see me, and while we were chatting, we ended up talking about how people feel about AI. What surprised me a bit was that he said a lot of companies in China are not only encouraging employees to use AI, but are also actively giving out tokens to encourage people to try different automations and experiments. Some teams even run monthly token leaderboards, rewarding the people who “b",
+        "discussion_summary": null,
+        "why_it_matters": "**Medium-to-high signal.** Track as provider/business-model pressure, but verify claims before acting.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tn2jva",
+            "subreddit": "ArtificialInteligence",
+            "post_url": "https://www.reddit.com/r/ArtificialInteligence/comments/1tn2jva/after_talking_with_a_chinese_friend_about_ai_i/",
+            "title": "After talking with a Chinese friend about AI, I realized people are using it at very different paces",
+            "author": "Ok-Insurance-6313",
+            "created_utc": 1779696531.0,
+            "score": 146,
+            "comment_count": 144,
+            "selftext_full": "Last week, a Chinese friend came to see me, and while we were chatting, we ended up talking about how people feel about AI. What surprised me a bit was that he said a lot of companies in China are not only encouraging employees to use AI, but are also actively giving out tokens to encourage people to try different automations and experiments. Some teams even run monthly token leaderboards, rewarding the people who “burn” the most tokens with more tokens or even cash. People seem very willing to take part, and it really feels like this has become part of the workflow. They use Cursor and IDEA for coding, and also various life assistant tools to slowly automate small, repetitive things. Tools like Airtap are still not officially launched in our market yet. What stood out even more to me is that the automation is not just for work anymore. A lot of everyday stuff is already being handled too, like: \n\n* helping parents arrange or schedule medication\n* finding a good restaurant and making a reservation\n* weekly grocery shopping\n* keeping a Duolingo streak going\n* job hunting and submitting applications\n\n Honestly, some of these were things I had never really thought about before, but they’re already using them very naturally. Then last week I also saw the [report about Google’s CEO getting booed while talking about AI at a graduation ceremony.](https://www.independent.co.uk/news/world/americas/ai-college-graduation-eric-schmidt-google-b2981383.html?utm_source=reddit&utm_medium=social&utm_campaign=artificialinteligence) Seeing those two things side by side made it very clear to me that people’s pace of adoption and their comfort level with AI really are different depending on where they are. But hearing those examples made me even more interested in what it would look like for AI to really become part of everyday life. If AI really does become this common, which daily tasks would you actually be willing to let it handle?",
+            "selftext_excerpt": "Last week, a Chinese friend came to see me, and while we were chatting, we ended up talking about how people feel about AI. What surprised me a bit was that he said a lot of companies in China are not only encouraging employees to use AI, b",
+            "external_url": null,
+            "top_comments": [],
+            "comment_context": null
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 146,
+          "reddit_comment_count": 144,
+          "captured_at_ist": "2026-05-26 09:57 IST"
+        },
+        "labels": [
+          "Reddit",
+          "Comments missing"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "After talking with a Chinese friend about AI, I realized people are using it at very different paces",
+            "post_body": "Last week, a Chinese friend came to see me, and while we were chatting, we ended up talking about how people feel about AI. What surprised me a bit was that he said a lot of companies in China are not only encouraging employees to use AI, but are also actively giving out tokens to encourage people to try different automations and experiments. Some teams even run monthly token leaderboards, rewarding the people who “burn” the most tokens with more tokens or even cash. People seem very willing to take part, and it really feels like this has become part of the workflow. They use Cursor and IDEA for coding, and also various life assistant tools to slowly automate small, repetitive things. Tools like Airtap are still not officially launched in our market yet. What stood out even more to me is that the automation is not just for work anymore. A lot of everyday stuff is already being handled too, like: \n\n* helping parents arrange or schedule medication\n* finding a good restaurant and making a reservation\n* weekly grocery shopping\n* keeping a Duolingo streak going\n* job hunting and submitting applications\n\n Honestly, some of these were things I had never really thought about before, but they’re already using them very naturally. Then last week I also saw the [report about Google’s CEO getting booed while talking about AI at a graduation ceremony.](https://www.independent.co.uk/news/world/americas/ai-college-graduation-eric-schmidt-google-b2981383.html?utm_source=reddit&utm_medium=social&utm_campaign=artificialinteligence) Seeing those two things side by side made it very clear to me that people’s pace of adoption and their comfort level with AI really are different depending on where they are. But hearing those examples made me even more interested in what it would look like for AI to really become part of everyday life. If AI really does become this common, which daily tasks would you actually be willing to let it handle?",
+            "comments": [],
+            "metadata": {
+              "subreddit": "ArtificialInteligence",
+              "score": 146,
+              "comment_count": 144,
+              "created_utc": 1779696531.0,
+              "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1tn2jva/after_talking_with_a_chinese_friend_about_ai_i/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "ClaudeCode",
+        "sort": "new",
+        "title": "I built a local Markdown workflow UI for ClaudeCode / AI coding agent task tracking",
+        "score": 4,
+        "comments": 16,
+        "created_utc": 1779756938.0,
+        "url": "https://www.reddit.com/r/ClaudeCode/comments/1tnrgiu/i_built_a_local_markdown_workflow_ui_for/",
+        "external_url": "https://i.redd.it/u001c712rd3h1.gif",
+        "selftext": "I still believe the .md file is one of the highest efficient format when communicate with LLM, while its drawback is real. Alongside the recent .md to html trends, I built a local Markdown workflow web UI for ClaudeCode / AI coding agent handoff / task tracking. And just released v0.1.0, a local-first Markdown workflow tool. My use case is managing AI coding workflows in plain Markdown: issue execution plans, checklists, progress tracking, requirements, Mermaid diagrams, and human review notes. It turns .md files into interactive browser pages with checkboxes, progress bars, Mermaid diagrams, editable text blocks, buttons, and write-back updates. GitHub: [https://github.com/khtwo/md-activato",
+        "selftext_full": "I still believe the .md file is one of the highest efficient format when communicate with LLM, while its drawback is real. \n\nAlongside the recent .md to html trends, I built a local Markdown workflow web UI for ClaudeCode / AI coding agent handoff / task tracking. And just released v0.1.0, a local-first Markdown workflow tool.\n\nMy use case is managing AI coding workflows in plain Markdown: issue execution plans, checklists, progress tracking, requirements, Mermaid diagrams, and human review notes.\n\nIt turns .md files into interactive browser pages with checkboxes, progress bars, Mermaid diagrams, editable text blocks, buttons, and write-back updates.\n\nGitHub:\n\n[https://github.com/khtwo/md-activator](https://github.com/khtwo/md-activator)\n\nI’m looking for feedback from ClaudeCode / AI workflow users: would this kind of Markdown-based workflow UI help when managing AI coding workflow?\n\n",
+        "author": "khtwo",
+        "post_id": "1tnrgiu",
+        "top_comments": [],
+        "story_id": "rd_1tnrgiu",
+        "heading": "I built a local Markdown workflow UI for ClaudeCode / AI coding agent task tracking",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/ClaudeCode/comments/1tnrgiu/i_built_a_local_markdown_workflow_ui_for/",
+        "summary": "I still believe the .md file is one of the highest efficient format when communicate with LLM, while its drawback is real. Alongside the recent .md to html trends, I built a local Markdown workflow web UI for ClaudeCode / AI coding agent handoff / task tracking. And just released v0.1.0, a local-first Markdown workflow tool. My use case is managing AI coding workflows in plain Markdown: issue execution plans, checkli",
+        "tweet_and_comments_summary": "I still believe the .md file is one of the highest efficient format when communicate with LLM, while its drawback is real. Alongside the recent .md to html trends, I built a local Markdown workflow web UI for ClaudeCode / AI coding agent handoff / task tracking. And just released v0.1.0, a local-first Markdown workflow tool. My use case is managing AI coding workflows in plain Markdown: issue execution plans, checkli",
+        "discussion_summary": null,
+        "why_it_matters": "**High signal if running local models.** Check hardware fit, latency, and eval quality before adopting.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tnrgiu",
+            "subreddit": "ClaudeCode",
+            "post_url": "https://www.reddit.com/r/ClaudeCode/comments/1tnrgiu/i_built_a_local_markdown_workflow_ui_for/",
+            "title": "I built a local Markdown workflow UI for ClaudeCode / AI coding agent task tracking",
+            "author": "khtwo",
+            "created_utc": 1779756938.0,
+            "score": 4,
+            "comment_count": 16,
+            "selftext_full": "I still believe the .md file is one of the highest efficient format when communicate with LLM, while its drawback is real. \n\nAlongside the recent .md to html trends, I built a local Markdown workflow web UI for ClaudeCode / AI coding agent handoff / task tracking. And just released v0.1.0, a local-first Markdown workflow tool.\n\nMy use case is managing AI coding workflows in plain Markdown: issue execution plans, checklists, progress tracking, requirements, Mermaid diagrams, and human review notes.\n\nIt turns .md files into interactive browser pages with checkboxes, progress bars, Mermaid diagrams, editable text blocks, buttons, and write-back updates.\n\nGitHub:\n\n[https://github.com/khtwo/md-activator](https://github.com/khtwo/md-activator)\n\nI’m looking for feedback from ClaudeCode / AI workflow users: would this kind of Markdown-based workflow UI help when managing AI coding workflow?\n\n",
+            "selftext_excerpt": "I still believe the .md file is one of the highest efficient format when communicate with LLM, while its drawback is real. Alongside the recent .md to html trends, I built a local Markdown workflow web UI for ClaudeCode / AI coding agent ha",
+            "external_url": "https://i.redd.it/u001c712rd3h1.gif",
+            "top_comments": [],
+            "comment_context": null
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 4,
+          "reddit_comment_count": 16,
+          "captured_at_ist": "2026-05-26 09:57 IST"
+        },
+        "labels": [
+          "Reddit",
+          "ClaudeCode",
+          "Comments missing"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "I built a local Markdown workflow UI for ClaudeCode / AI coding agent task tracking",
+            "post_body": "I still believe the .md file is one of the highest efficient format when communicate with LLM, while its drawback is real. \n\nAlongside the recent .md to html trends, I built a local Markdown workflow web UI for ClaudeCode / AI coding agent handoff / task tracking. And just released v0.1.0, a local-first Markdown workflow tool.\n\nMy use case is managing AI coding workflows in plain Markdown: issue execution plans, checklists, progress tracking, requirements, Mermaid diagrams, and human review notes.\n\nIt turns .md files into interactive browser pages with checkboxes, progress bars, Mermaid diagrams, editable text blocks, buttons, and write-back updates.\n\nGitHub:\n\n[https://github.com/khtwo/md-activator](https://github.com/khtwo/md-activator)\n\nI’m looking for feedback from ClaudeCode / AI workflow users: would this kind of Markdown-based workflow UI help when managing AI coding workflow?\n\n",
+            "comments": [],
+            "metadata": {
+              "subreddit": "ClaudeCode",
+              "score": 4,
+              "comment_count": 16,
+              "created_utc": 1779756938.0,
+              "url": "https://www.reddit.com/r/ClaudeCode/comments/1tnrgiu/i_built_a_local_markdown_workflow_ui_for/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "ClaudeCode",
+        "sort": "hot",
+        "title": "Pretty sure I’m using maybe 30% of Claude Code — what’s your daily workflow?",
+        "score": 55,
+        "comments": 71,
+        "created_utc": 1779715083.0,
+        "url": "https://www.reddit.com/r/ClaudeCode/comments/1tn8xmb/pretty_sure_im_using_maybe_30_of_claude_code/",
+        "external_url": null,
+        "selftext": "Looking at this sub, it often induces Claude Code FOMO and when I hear about people directing agents from their phone it gets me wondering what I’m missing! **How I use Claude:** I use the VSCode extension for Claude Code, starting with a solid claude.md and going through prompt after prompt, adding one or a few features at a time. Sometimes I’ll have codex do a bit of review in the same repo. No complaints - I def feel like I get more out of it than the value of my monthly subscription. But I get the sense that I could be doing more with it! Are you doing more than that? Can you describe how/what?",
+        "selftext_full": "Looking at this sub, it often induces Claude Code FOMO and when I hear about people directing agents from their phone it gets me wondering what I’m missing!\n\n**How I use Claude:** I use the VSCode extension for Claude Code, starting with a solid claude.md and going through prompt after prompt, adding one or a few features at a time. Sometimes I’ll have codex do a bit of review in the same repo. No complaints - I def feel like I get more out of it than the value of my monthly subscription.\n\nBut I get the sense that I could be doing more with it!\n\nAre you doing more than that? Can you describe how/what?",
+        "author": "miguelgoldie",
+        "post_id": "1tn8xmb",
+        "top_comments": [],
+        "story_id": "rd_1tn8xmb",
+        "heading": "Pretty sure I’m using maybe 30% of Claude Code — what’s your daily workflow?",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/ClaudeCode/comments/1tn8xmb/pretty_sure_im_using_maybe_30_of_claude_code/",
+        "summary": "Looking at this sub, it often induces Claude Code FOMO and when I hear about people directing agents from their phone it gets me wondering what I’m missing! **How I use Claude:** I use the VSCode extension for Claude Code, starting with a solid claude.md and going through prompt after prompt, adding one or a few features at a time. Sometimes I’ll have codex do a bit of review in the same repo. No complaints - I def f",
+        "tweet_and_comments_summary": "Looking at this sub, it often induces Claude Code FOMO and when I hear about people directing agents from their phone it gets me wondering what I’m missing! **How I use Claude:** I use the VSCode extension for Claude Code, starting with a solid claude.md and going through prompt after prompt, adding one or a few features at a time. Sometimes I’ll have codex do a bit of review in the same repo. No complaints - I def f",
+        "discussion_summary": null,
+        "why_it_matters": "**High signal for coding workflow.** Compare against your Hermes/Codex/Claude usage before changing tools or architecture.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tn8xmb",
+            "subreddit": "ClaudeCode",
+            "post_url": "https://www.reddit.com/r/ClaudeCode/comments/1tn8xmb/pretty_sure_im_using_maybe_30_of_claude_code/",
+            "title": "Pretty sure I’m using maybe 30% of Claude Code — what’s your daily workflow?",
+            "author": "miguelgoldie",
+            "created_utc": 1779715083.0,
+            "score": 55,
+            "comment_count": 71,
+            "selftext_full": "Looking at this sub, it often induces Claude Code FOMO and when I hear about people directing agents from their phone it gets me wondering what I’m missing!\n\n**How I use Claude:** I use the VSCode extension for Claude Code, starting with a solid claude.md and going through prompt after prompt, adding one or a few features at a time. Sometimes I’ll have codex do a bit of review in the same repo. No complaints - I def feel like I get more out of it than the value of my monthly subscription.\n\nBut I get the sense that I could be doing more with it!\n\nAre you doing more than that? Can you describe how/what?",
+            "selftext_excerpt": "Looking at this sub, it often induces Claude Code FOMO and when I hear about people directing agents from their phone it gets me wondering what I’m missing! **How I use Claude:** I use the VSCode extension for Claude Code, starting with a s",
+            "external_url": null,
+            "top_comments": [],
+            "comment_context": null
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 55,
+          "reddit_comment_count": 71,
+          "captured_at_ist": "2026-05-26 09:57 IST"
+        },
+        "labels": [
+          "Reddit",
+          "ClaudeCode",
+          "Comments missing"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "Pretty sure I’m using maybe 30% of Claude Code — what’s your daily workflow?",
+            "post_body": "Looking at this sub, it often induces Claude Code FOMO and when I hear about people directing agents from their phone it gets me wondering what I’m missing!\n\n**How I use Claude:** I use the VSCode extension for Claude Code, starting with a solid claude.md and going through prompt after prompt, adding one or a few features at a time. Sometimes I’ll have codex do a bit of review in the same repo. No complaints - I def feel like I get more out of it than the value of my monthly subscription.\n\nBut I get the sense that I could be doing more with it!\n\nAre you doing more than that? Can you describe how/what?",
+            "comments": [],
+            "metadata": {
+              "subreddit": "ClaudeCode",
+              "score": 55,
+              "comment_count": 71,
+              "created_utc": 1779715083.0,
+              "url": "https://www.reddit.com/r/ClaudeCode/comments/1tn8xmb/pretty_sure_im_using_maybe_30_of_claude_code/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "LocalLLaMA",
+        "sort": "new",
+        "title": "Need Help - What would you build? Air-gapped NL assistant that is integrated with Splunk",
+        "score": 7,
+        "comments": 7,
+        "created_utc": 1779751729.0,
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tnpg9h/need_help_what_would_you_build_airgapped_nl/",
+        "external_url": null,
+        "selftext": "So I have a side project with given scope: * Fully air-gapped / on-prem - no internet, no outbound calls of any kind * Engineers ask questions about Splunk data in natural language * Has to hold the conversation in Korean (index/field names stay English) * Local/small models preferred, needs to fit a modest GPU - was looking at Qwen/Gemma4 but indexing more on what is good enough small model to have decent performance * Some memory across the session (not required, but at least within the current session would be nice) * Strictly read-only and safe enough to point at prod logs I am thinking simple chat interface (like claude, openAI style) where we give Splunk API access for AI to retrieve a",
+        "selftext_full": "So I have a side project with given scope:\n\n* Fully air-gapped / on-prem - no internet, no outbound calls of any kind\n* Engineers ask questions about Splunk data in natural language\n* Has to hold the conversation in Korean (index/field names stay English)\n* Local/small models preferred, needs to fit a modest GPU - was looking at Qwen/Gemma4 but indexing more on what is good enough small model to have decent performance\n* Some memory across the session (not required, but at least within the current session would be nice)\n* Strictly read-only and safe enough to point at prod logs\n\nI am thinking simple chat interface (like claude, openAI style) where we give Splunk API access for AI to retrieve and reason.\n\n2 Questions:\n\n* I was thinking deploying like Openclaw/Hermes agent + small language model to start - because I really like the interaction with them. Is there any better or easier way to achieve similar experience? (vLM, ollama, open WebUI, any suggestions would be nice)\n* In terms of outcome, what do you think we can actually let it do? log analysis? RCA? basic questions?\n\nPretty new to this and trying to learn.. any initial guidance or tips would be awesome!",
+        "author": "BunchaQuestion",
+        "post_id": "1tnpg9h",
+        "top_comments": [],
+        "story_id": "rd_1tnpg9h",
+        "heading": "Need Help - What would you build? Air-gapped NL assistant that is integrated with Splunk",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tnpg9h/need_help_what_would_you_build_airgapped_nl/",
+        "summary": "So I have a side project with given scope: * Fully air-gapped / on-prem - no internet, no outbound calls of any kind * Engineers ask questions about Splunk data in natural language * Has to hold the conversation in Korean (index/field names stay English) * Local/small models preferred, needs to fit a modest GPU - was looking at Qwen/Gemma4 but indexing more on what is good enough small model to have decent performanc",
+        "tweet_and_comments_summary": "So I have a side project with given scope: * Fully air-gapped / on-prem - no internet, no outbound calls of any kind * Engineers ask questions about Splunk data in natural language * Has to hold the conversation in Korean (index/field names stay English) * Local/small models preferred, needs to fit a modest GPU - was looking at Qwen/Gemma4 but indexing more on what is good enough small model to have decent performanc",
+        "discussion_summary": null,
+        "why_it_matters": "**High signal if running local models.** Check hardware fit, latency, and eval quality before adopting.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tnpg9h",
+            "subreddit": "LocalLLaMA",
+            "post_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tnpg9h/need_help_what_would_you_build_airgapped_nl/",
+            "title": "Need Help - What would you build? Air-gapped NL assistant that is integrated with Splunk",
+            "author": "BunchaQuestion",
+            "created_utc": 1779751729.0,
+            "score": 7,
+            "comment_count": 7,
+            "selftext_full": "So I have a side project with given scope:\n\n* Fully air-gapped / on-prem - no internet, no outbound calls of any kind\n* Engineers ask questions about Splunk data in natural language\n* Has to hold the conversation in Korean (index/field names stay English)\n* Local/small models preferred, needs to fit a modest GPU - was looking at Qwen/Gemma4 but indexing more on what is good enough small model to have decent performance\n* Some memory across the session (not required, but at least within the current session would be nice)\n* Strictly read-only and safe enough to point at prod logs\n\nI am thinking simple chat interface (like claude, openAI style) where we give Splunk API access for AI to retrieve and reason.\n\n2 Questions:\n\n* I was thinking deploying like Openclaw/Hermes agent + small language model to start - because I really like the interaction with them. Is there any better or easier way to achieve similar experience? (vLM, ollama, open WebUI, any suggestions would be nice)\n* In terms of outcome, what do you think we can actually let it do? log analysis? RCA? basic questions?\n\nPretty new to this and trying to learn.. any initial guidance or tips would be awesome!",
+            "selftext_excerpt": "So I have a side project with given scope: * Fully air-gapped / on-prem - no internet, no outbound calls of any kind * Engineers ask questions about Splunk data in natural language * Has to hold the conversation in Korean (index/field names",
+            "external_url": null,
+            "top_comments": [],
+            "comment_context": null
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 7,
+          "reddit_comment_count": 7,
+          "captured_at_ist": "2026-05-26 09:57 IST"
+        },
+        "labels": [
+          "Reddit",
+          "LocalLLaMA",
+          "Comments missing"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "Need Help - What would you build? Air-gapped NL assistant that is integrated with Splunk",
+            "post_body": "So I have a side project with given scope:\n\n* Fully air-gapped / on-prem - no internet, no outbound calls of any kind\n* Engineers ask questions about Splunk data in natural language\n* Has to hold the conversation in Korean (index/field names stay English)\n* Local/small models preferred, needs to fit a modest GPU - was looking at Qwen/Gemma4 but indexing more on what is good enough small model to have decent performance\n* Some memory across the session (not required, but at least within the current session would be nice)\n* Strictly read-only and safe enough to point at prod logs\n\nI am thinking simple chat interface (like claude, openAI style) where we give Splunk API access for AI to retrieve and reason.\n\n2 Questions:\n\n* I was thinking deploying like Openclaw/Hermes agent + small language model to start - because I really like the interaction with them. Is there any better or easier way to achieve similar experience? (vLM, ollama, open WebUI, any suggestions would be nice)\n* In terms of outcome, what do you think we can actually let it do? log analysis? RCA? basic questions?\n\nPretty new to this and trying to learn.. any initial guidance or tips would be awesome!",
+            "comments": [],
+            "metadata": {
+              "subreddit": "LocalLLaMA",
+              "score": 7,
+              "comment_count": 7,
+              "created_utc": 1779751729.0,
+              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tnpg9h/need_help_what_would_you_build_airgapped_nl/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "LocalLLaMA",
+        "sort": "new",
+        "title": "Added direct model downloads right from the UI in Anubis OSS - if anyone would help test that would be great",
+        "score": 0,
+        "comments": 0,
+        "created_utc": 1779761265.0,
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tnt3i6/added_direct_model_downloads_right_from_the_ui_in/",
+        "external_url": null,
+        "selftext": "I developed and maintain Anubis OSS, an Apple Silicon Mac app for benchmarking local LLMs. Mostly built around Ollama (also handles LM Studio, MLX, and Apple Intelligence if you've got those). Just published a Homebrew Cask tap and want to make sure it works cleanly before calling it stable. If you've got a Mac and a minute, either of these will install the signed + notarized v3.6 build: Homebrew (new): brew install --cask uncsoft/anubis/anubis-oss Direct download: Releases page. Grab Anubis-OSS-3.6.zip, unzip, drag to /Applications. What I'm hoping to hear back: \\* Did it install without Gatekeeper drama? \\* Does it auto-detect your running Ollama on first launch? \\* \\*\\*Does the new \"Brows",
+        "selftext_full": " I developed and maintain Anubis OSS, an Apple Silicon Mac app for benchmarking local LLMs. Mostly built around Ollama (also handles LM Studio, MLX, and Apple Intelligence if you've got those). Just published a Homebrew Cask tap and want to make sure it works cleanly before calling it stable. \n\nIf you've got a Mac and a minute, either of these will install the signed + notarized v3.6 build:\n\nHomebrew (new):\n\nbrew install --cask uncsoft/anubis/anubis-oss\n\nDirect download:\n\n Releases page. Grab Anubis-OSS-3.6.zip, unzip, drag to /Applications.\n\n What I'm hoping to hear back:\n\n\\* Did it install without Gatekeeper drama?\n\n\\* Does it auto-detect your running Ollama on first launch?\n\n\\* \\*\\*Does the new \"Browse Models\" toolbar button actually pull up the ollama.com library? (you should be able to pull any model right from the dashboard without leaving the app)\\*\\*\n\n\"Works on my M-whatever\" is plenty of signal. If anything breaks, what chip + what step.\n\nRepo: https://github.com/uncSoft/anubis-oss\n\nFree, GPL-3.0, no telemetry, no account required.\n\nLeaderboards: https://devpadapp.com/leaderboard.html\n\nI am working with LLM developers do they can gauge and tweak performance of their models, the \\[dataset is opensource\\](https://devpadapp.com/explorer.html) over 400 runs submitted so far. Also have an \\[analysis\\](https://uncsoft.github.io/anubis-oss/analysis.html) site I'm working on.",
+        "author": "peppaz",
+        "post_id": "1tnt3i6",
+        "top_comments": [],
+        "story_id": "rd_1tnt3i6",
+        "heading": "Added direct model downloads right from the UI in Anubis OSS - if anyone would help test that would be great",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tnt3i6/added_direct_model_downloads_right_from_the_ui_in/",
+        "summary": "I developed and maintain Anubis OSS, an Apple Silicon Mac app for benchmarking local LLMs. Mostly built around Ollama (also handles LM Studio, MLX, and Apple Intelligence if you've got those). Just published a Homebrew Cask tap and want to make sure it works cleanly before calling it stable. If you've got a Mac and a minute, either of these will install the signed + notarized v3.6 build: Homebrew (new): brew install",
+        "tweet_and_comments_summary": "I developed and maintain Anubis OSS, an Apple Silicon Mac app for benchmarking local LLMs. Mostly built around Ollama (also handles LM Studio, MLX, and Apple Intelligence if you've got those). Just published a Homebrew Cask tap and want to make sure it works cleanly before calling it stable. If you've got a Mac and a minute, either of these will install the signed + notarized v3.6 build: Homebrew (new): brew install",
+        "discussion_summary": null,
+        "why_it_matters": "**High signal if running local models.** Check hardware fit, latency, and eval quality before adopting.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tnt3i6",
+            "subreddit": "LocalLLaMA",
+            "post_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tnt3i6/added_direct_model_downloads_right_from_the_ui_in/",
+            "title": "Added direct model downloads right from the UI in Anubis OSS - if anyone would help test that would be great",
+            "author": "peppaz",
+            "created_utc": 1779761265.0,
+            "score": 0,
+            "comment_count": 0,
+            "selftext_full": " I developed and maintain Anubis OSS, an Apple Silicon Mac app for benchmarking local LLMs. Mostly built around Ollama (also handles LM Studio, MLX, and Apple Intelligence if you've got those). Just published a Homebrew Cask tap and want to make sure it works cleanly before calling it stable. \n\nIf you've got a Mac and a minute, either of these will install the signed + notarized v3.6 build:\n\nHomebrew (new):\n\nbrew install --cask uncsoft/anubis/anubis-oss\n\nDirect download:\n\n Releases page. Grab Anubis-OSS-3.6.zip, unzip, drag to /Applications.\n\n What I'm hoping to hear back:\n\n\\* Did it install without Gatekeeper drama?\n\n\\* Does it auto-detect your running Ollama on first launch?\n\n\\* \\*\\*Does the new \"Browse Models\" toolbar button actually pull up the ollama.com library? (you should be able to pull any model right from the dashboard without leaving the app)\\*\\*\n\n\"Works on my M-whatever\" is plenty of signal. If anything breaks, what chip + what step.\n\nRepo: https://github.com/uncSoft/anubis-oss\n\nFree, GPL-3.0, no telemetry, no account required.\n\nLeaderboards: https://devpadapp.com/leaderboard.html\n\nI am working with LLM developers do they can gauge and tweak performance of their models, the \\[dataset is opensource\\](https://devpadapp.com/explorer.html) over 400 runs submitted so far. Also have an \\[analysis\\](https://uncsoft.github.io/anubis-oss/analysis.html) site I'm working on.",
+            "selftext_excerpt": "I developed and maintain Anubis OSS, an Apple Silicon Mac app for benchmarking local LLMs. Mostly built around Ollama (also handles LM Studio, MLX, and Apple Intelligence if you've got those). Just published a Homebrew Cask tap and want to",
+            "external_url": null,
+            "top_comments": [],
+            "comment_context": null
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 0,
+          "reddit_comment_count": 0,
+          "captured_at_ist": "2026-05-26 09:57 IST"
+        },
+        "labels": [
+          "Reddit",
+          "LocalLLaMA",
+          "Comments missing"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "Added direct model downloads right from the UI in Anubis OSS - if anyone would help test that would be great",
+            "post_body": " I developed and maintain Anubis OSS, an Apple Silicon Mac app for benchmarking local LLMs. Mostly built around Ollama (also handles LM Studio, MLX, and Apple Intelligence if you've got those). Just published a Homebrew Cask tap and want to make sure it works cleanly before calling it stable. \n\nIf you've got a Mac and a minute, either of these will install the signed + notarized v3.6 build:\n\nHomebrew (new):\n\nbrew install --cask uncsoft/anubis/anubis-oss\n\nDirect download:\n\n Releases page. Grab Anubis-OSS-3.6.zip, unzip, drag to /Applications.\n\n What I'm hoping to hear back:\n\n\\* Did it install without Gatekeeper drama?\n\n\\* Does it auto-detect your running Ollama on first launch?\n\n\\* \\*\\*Does the new \"Browse Models\" toolbar button actually pull up the ollama.com library? (you should be able to pull any model right from the dashboard without leaving the app)\\*\\*\n\n\"Works on my M-whatever\" is plenty of signal. If anything breaks, what chip + what step.\n\nRepo: https://github.com/uncSoft/anubis-oss\n\nFree, GPL-3.0, no telemetry, no account required.\n\nLeaderboards: https://devpadapp.com/leaderboard.html\n\nI am working with LLM developers do they can gauge and tweak performance of their models, the \\[dataset is opensource\\](https://devpadapp.com/explorer.html) over 400 runs submitted so far. Also have an \\[analysis\\](https://uncsoft.github.io/anubis-oss/analysis.html) site I'm working on.",
+            "comments": [],
+            "metadata": {
+              "subreddit": "LocalLLaMA",
+              "score": 0,
+              "comment_count": 0,
+              "created_utc": 1779761265.0,
+              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tnt3i6/added_direct_model_downloads_right_from_the_ui_in/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "OpenWebUI",
+        "sort": "hot",
+        "title": "Is it useful to add safety hooks in any ai agent and limiting token utilisation for secure code quality and Appstore policy compliance",
+        "score": 0,
+        "comments": 0,
+        "created_utc": 1779541309.0,
+        "url": "https://www.reddit.com/r/OpenWebUI/comments/1tlfwh5/is_it_useful_to_add_safety_hooks_in_any_ai_agent/",
+        "external_url": "https://v.redd.it/gt2muc7yxv2h1",
+        "selftext": "I was facing problems with adding safety hooks for iOS and Android app submission as they were getting rejected. So, I built an app compliance auditor. https://github.com/atharvnaik1/ipaship-audit But later on I thought ohh!! Why not create a cli tool, claude skill (ipaship-audit) and a mcp connector which can make every person's llm with safety hooks not just for apps but for every code its written. You can access it at \\\\\\\\\\\\\\~ npm i @async-atharv/ipaship I have also added kimi and gemini keys with default options. This audit for secure code, appstore policy compliance, bug fixes and give back REMEDIATION PLAN to your llm agent itself and your llm agent can work on it rapidly on that promp",
+        "selftext_full": "I was facing problems with adding safety hooks for iOS and Android app submission as they were getting rejected. So, I built an app compliance auditor. https://github.com/atharvnaik1/ipaship-audit \n\nBut later on I thought ohh!! Why not create a cli tool, claude skill (ipaship-audit) and a mcp connector which can make every person's llm with safety hooks not just for apps but for every code its written. \n\nYou can access it at \\\\\\\\\\\\\\~ npm i @async-atharv/ipaship\n\nI have also added kimi and gemini keys with default options. \n\nThis audit for secure code, appstore policy compliance, bug fixes and give back REMEDIATION PLAN to your llm agent itself and your llm agent can work on it rapidly on that prompt itself. So no more leaving your IDE or claude code all things handled within the environment you loved 😍 !!",
+        "author": "Topic_Affectionate",
+        "post_id": "1tlfwh5",
+        "top_comments": [],
+        "story_id": "rd_1tlfwh5",
+        "heading": "Is it useful to add safety hooks in any ai agent and limiting token utilisation for secure code quality and Appstore policy compliance",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/OpenWebUI/comments/1tlfwh5/is_it_useful_to_add_safety_hooks_in_any_ai_agent/",
+        "summary": "I was facing problems with adding safety hooks for iOS and Android app submission as they were getting rejected. So, I built an app compliance auditor. https://github.com/atharvnaik1/ipaship-audit But later on I thought ohh!! Why not create a cli tool, claude skill (ipaship-audit) and a mcp connector which can make every person's llm with safety hooks not just for apps but for every code its written. You can access i",
+        "tweet_and_comments_summary": "I was facing problems with adding safety hooks for iOS and Android app submission as they were getting rejected. So, I built an app compliance auditor. https://github.com/atharvnaik1/ipaship-audit But later on I thought ohh!! Why not create a cli tool, claude skill (ipaship-audit) and a mcp connector which can make every person's llm with safety hooks not just for apps but for every code its written. You can access i",
+        "discussion_summary": null,
+        "why_it_matters": "**High signal for coding workflow.** Compare against your Hermes/Codex/Claude usage before changing tools or architecture.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tlfwh5",
+            "subreddit": "OpenWebUI",
+            "post_url": "https://www.reddit.com/r/OpenWebUI/comments/1tlfwh5/is_it_useful_to_add_safety_hooks_in_any_ai_agent/",
+            "title": "Is it useful to add safety hooks in any ai agent and limiting token utilisation for secure code quality and Appstore policy compliance",
+            "author": "Topic_Affectionate",
+            "created_utc": 1779541309.0,
+            "score": 0,
+            "comment_count": 0,
+            "selftext_full": "I was facing problems with adding safety hooks for iOS and Android app submission as they were getting rejected. So, I built an app compliance auditor. https://github.com/atharvnaik1/ipaship-audit \n\nBut later on I thought ohh!! Why not create a cli tool, claude skill (ipaship-audit) and a mcp connector which can make every person's llm with safety hooks not just for apps but for every code its written. \n\nYou can access it at \\\\\\\\\\\\\\~ npm i @async-atharv/ipaship\n\nI have also added kimi and gemini keys with default options. \n\nThis audit for secure code, appstore policy compliance, bug fixes and give back REMEDIATION PLAN to your llm agent itself and your llm agent can work on it rapidly on that prompt itself. So no more leaving your IDE or claude code all things handled within the environment you loved 😍 !!",
+            "selftext_excerpt": "I was facing problems with adding safety hooks for iOS and Android app submission as they were getting rejected. So, I built an app compliance auditor. https://github.com/atharvnaik1/ipaship-audit But later on I thought ohh!! Why not create",
+            "external_url": "https://v.redd.it/gt2muc7yxv2h1",
+            "top_comments": [],
+            "comment_context": null
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 0,
+          "reddit_comment_count": 0,
+          "captured_at_ist": "2026-05-26 09:57 IST"
+        },
+        "labels": [
+          "Reddit",
+          "OpenWebUI",
+          "Comments missing"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "Is it useful to add safety hooks in any ai agent and limiting token utilisation for secure code quality and Appstore policy compliance",
+            "post_body": "I was facing problems with adding safety hooks for iOS and Android app submission as they were getting rejected. So, I built an app compliance auditor. https://github.com/atharvnaik1/ipaship-audit \n\nBut later on I thought ohh!! Why not create a cli tool, claude skill (ipaship-audit) and a mcp connector which can make every person's llm with safety hooks not just for apps but for every code its written. \n\nYou can access it at \\\\\\\\\\\\\\~ npm i @async-atharv/ipaship\n\nI have also added kimi and gemini keys with default options. \n\nThis audit for secure code, appstore policy compliance, bug fixes and give back REMEDIATION PLAN to your llm agent itself and your llm agent can work on it rapidly on that prompt itself. So no more leaving your IDE or claude code all things handled within the environment you loved 😍 !!",
+            "comments": [],
+            "metadata": {
+              "subreddit": "OpenWebUI",
+              "score": 0,
+              "comment_count": 0,
+              "created_utc": 1779541309.0,
+              "url": "https://www.reddit.com/r/OpenWebUI/comments/1tlfwh5/is_it_useful_to_add_safety_hooks_in_any_ai_agent/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "AI_Agents",
+        "sort": "hot",
+        "title": "Everybody seems to talk about coding AI agents. But what are some other genius AI agents you have come across?",
+        "score": 77,
+        "comments": 50,
+        "created_utc": 1779694737.0,
+        "url": "https://www.reddit.com/r/AI_Agents/comments/1tn1zxz/everybody_seems_to_talk_about_coding_ai_agents/",
+        "external_url": null,
+        "selftext": "Feels like every AI conversation right now eventually turns into \"AI coding agents\" autonomous dev tools, or replacing software engineers. Which is cool, but it also feels like the entire internet is converging on the exact same use case. Meanwhile, I’m convinced there are probably insanely clever AI agents being built quietly in industries most people aren’t even paying attention to yet. I’m especially interested in agents that don’t just generate text or code, but actually remove annoying real-world friction, automate weird workflows, uncover hidden opportunities, or solve problems that normally require a ton of human coordination and context. The kind of stuff where you hear it and instan",
+        "selftext_full": "Feels like every AI conversation right now eventually turns into \"AI coding agents\" autonomous dev tools, or replacing software engineers. Which is cool, but it also feels like the entire internet is converging on the exact same use case. Meanwhile, I’m convinced there are probably insanely clever AI agents being built quietly in industries most people aren’t even paying attention to yet.\n\nI’m especially interested in agents that don’t just generate text or code, but actually remove annoying real-world friction, automate weird workflows, uncover hidden opportunities, or solve problems that normally require a ton of human coordination and context. The kind of stuff where you hear it and instantly think, \"Why didn’t this exist earlier?\"\n\nSo curious, everybody seems to talk about coding AI agents, but what are some other genius AI agents you have come across?",
+        "author": "impetuouschestnut",
+        "post_id": "1tn1zxz",
+        "top_comments": [],
+        "story_id": "rd_1tn1zxz",
+        "heading": "Everybody seems to talk about coding AI agents. But what are some other genius AI agents you have come across?",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/AI_Agents/comments/1tn1zxz/everybody_seems_to_talk_about_coding_ai_agents/",
+        "summary": "Feels like every AI conversation right now eventually turns into \"AI coding agents\" autonomous dev tools, or replacing software engineers. Which is cool, but it also feels like the entire internet is converging on the exact same use case. Meanwhile, I’m convinced there are probably insanely clever AI agents being built quietly in industries most people aren’t even paying attention to yet. I’m especially interested in",
+        "tweet_and_comments_summary": "Feels like every AI conversation right now eventually turns into \"AI coding agents\" autonomous dev tools, or replacing software engineers. Which is cool, but it also feels like the entire internet is converging on the exact same use case. Meanwhile, I’m convinced there are probably insanely clever AI agents being built quietly in industries most people aren’t even paying attention to yet. I’m especially interested in",
+        "discussion_summary": null,
+        "why_it_matters": "**High signal for coding workflow.** Compare against your Hermes/Codex/Claude usage before changing tools or architecture.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tn1zxz",
+            "subreddit": "AI_Agents",
+            "post_url": "https://www.reddit.com/r/AI_Agents/comments/1tn1zxz/everybody_seems_to_talk_about_coding_ai_agents/",
+            "title": "Everybody seems to talk about coding AI agents. But what are some other genius AI agents you have come across?",
+            "author": "impetuouschestnut",
+            "created_utc": 1779694737.0,
+            "score": 77,
+            "comment_count": 50,
+            "selftext_full": "Feels like every AI conversation right now eventually turns into \"AI coding agents\" autonomous dev tools, or replacing software engineers. Which is cool, but it also feels like the entire internet is converging on the exact same use case. Meanwhile, I’m convinced there are probably insanely clever AI agents being built quietly in industries most people aren’t even paying attention to yet.\n\nI’m especially interested in agents that don’t just generate text or code, but actually remove annoying real-world friction, automate weird workflows, uncover hidden opportunities, or solve problems that normally require a ton of human coordination and context. The kind of stuff where you hear it and instantly think, \"Why didn’t this exist earlier?\"\n\nSo curious, everybody seems to talk about coding AI agents, but what are some other genius AI agents you have come across?",
+            "selftext_excerpt": "Feels like every AI conversation right now eventually turns into \"AI coding agents\" autonomous dev tools, or replacing software engineers. Which is cool, but it also feels like the entire internet is converging on the exact same use case. M",
+            "external_url": null,
+            "top_comments": [],
+            "comment_context": null
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 77,
+          "reddit_comment_count": 50,
+          "captured_at_ist": "2026-05-26 09:57 IST"
+        },
+        "labels": [
+          "Reddit",
+          "AI_Agents",
+          "Comments missing"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "Everybody seems to talk about coding AI agents. But what are some other genius AI agents you have come across?",
+            "post_body": "Feels like every AI conversation right now eventually turns into \"AI coding agents\" autonomous dev tools, or replacing software engineers. Which is cool, but it also feels like the entire internet is converging on the exact same use case. Meanwhile, I’m convinced there are probably insanely clever AI agents being built quietly in industries most people aren’t even paying attention to yet.\n\nI’m especially interested in agents that don’t just generate text or code, but actually remove annoying real-world friction, automate weird workflows, uncover hidden opportunities, or solve problems that normally require a ton of human coordination and context. The kind of stuff where you hear it and instantly think, \"Why didn’t this exist earlier?\"\n\nSo curious, everybody seems to talk about coding AI agents, but what are some other genius AI agents you have come across?",
+            "comments": [],
+            "metadata": {
+              "subreddit": "AI_Agents",
+              "score": 77,
+              "comment_count": 50,
+              "created_utc": 1779694737.0,
+              "url": "https://www.reddit.com/r/AI_Agents/comments/1tn1zxz/everybody_seems_to_talk_about_coding_ai_agents/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "AI_Agents",
+        "sort": "hot",
+        "title": "What is everyone using AI for? Realistically",
+        "score": 2,
+        "comments": 19,
+        "created_utc": 1779758802.0,
+        "url": "https://www.reddit.com/r/AI_Agents/comments/1tns659/what_is_everyone_using_ai_for_realistically/",
+        "external_url": null,
+        "selftext": "So I have to admit, I have fallen victim to the cool looking dashboard videos but I’m struggling to find a use for me. I love AI and use it daily for general questions and some deeper research (Google Gemini free tier). I have a few optiplex 3040s with 8gb of ram and I’ve currently have them set up with ubuntu and docker. I’ve started diving into the openclaw / n8n automation stuff. I back tracked my openclaw setup because it just seemed like my optiplex 3040s couldn’t handle it. I tried a couple local AI models mostly ollama stuff like llama and qwen but it just seemed to slow but I also think I’m using it wrong. I feel like I’m not supposed to “talk” to it like I would Gemini but instead u",
+        "selftext_full": "So I have to admit, I have fallen victim to the cool looking dashboard videos but I’m struggling to find a use for me. I love AI and use it daily for general questions and some deeper research (Google Gemini free tier). I have a few optiplex 3040s with 8gb of ram and I’ve currently have them set up with ubuntu and docker. I’ve started diving into the openclaw / n8n automation stuff. I back tracked my openclaw setup because it just seemed like my optiplex 3040s couldn’t handle it. I tried a couple local AI models mostly ollama stuff like llama and qwen but it just seemed to slow but I also think I’m using it wrong. I feel like I’m not supposed to “talk” to it like I would Gemini but instead use it for thinking for me for data stuff but realistically I don’t need to do that for work or anything. I’ve been playing with n8n node automations. Which is cool to automate some stuff but realistically what are y’all using AI Agents and/or local hosted AI for?",
+        "author": "Tyler9828",
+        "post_id": "1tns659",
+        "top_comments": [],
+        "story_id": "rd_1tns659",
+        "heading": "What is everyone using AI for? Realistically",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/AI_Agents/comments/1tns659/what_is_everyone_using_ai_for_realistically/",
+        "summary": "So I have to admit, I have fallen victim to the cool looking dashboard videos but I’m struggling to find a use for me. I love AI and use it daily for general questions and some deeper research (Google Gemini free tier). I have a few optiplex 3040s with 8gb of ram and I’ve currently have them set up with ubuntu and docker. I’ve started diving into the openclaw / n8n automation stuff. I back tracked my openclaw setup b",
+        "tweet_and_comments_summary": "So I have to admit, I have fallen victim to the cool looking dashboard videos but I’m struggling to find a use for me. I love AI and use it daily for general questions and some deeper research (Google Gemini free tier). I have a few optiplex 3040s with 8gb of ram and I’ve currently have them set up with ubuntu and docker. I’ve started diving into the openclaw / n8n automation stuff. I back tracked my openclaw setup b",
+        "discussion_summary": null,
+        "why_it_matters": "**Medium signal.** Worth monitoring, but don’t act on Reddit hype without checking primary sources.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tns659",
+            "subreddit": "AI_Agents",
+            "post_url": "https://www.reddit.com/r/AI_Agents/comments/1tns659/what_is_everyone_using_ai_for_realistically/",
+            "title": "What is everyone using AI for? Realistically",
+            "author": "Tyler9828",
+            "created_utc": 1779758802.0,
+            "score": 2,
+            "comment_count": 19,
+            "selftext_full": "So I have to admit, I have fallen victim to the cool looking dashboard videos but I’m struggling to find a use for me. I love AI and use it daily for general questions and some deeper research (Google Gemini free tier). I have a few optiplex 3040s with 8gb of ram and I’ve currently have them set up with ubuntu and docker. I’ve started diving into the openclaw / n8n automation stuff. I back tracked my openclaw setup because it just seemed like my optiplex 3040s couldn’t handle it. I tried a couple local AI models mostly ollama stuff like llama and qwen but it just seemed to slow but I also think I’m using it wrong. I feel like I’m not supposed to “talk” to it like I would Gemini but instead use it for thinking for me for data stuff but realistically I don’t need to do that for work or anything. I’ve been playing with n8n node automations. Which is cool to automate some stuff but realistically what are y’all using AI Agents and/or local hosted AI for?",
+            "selftext_excerpt": "So I have to admit, I have fallen victim to the cool looking dashboard videos but I’m struggling to find a use for me. I love AI and use it daily for general questions and some deeper research (Google Gemini free tier). I have a few optiple",
+            "external_url": null,
+            "top_comments": [],
+            "comment_context": null
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 2,
+          "reddit_comment_count": 19,
+          "captured_at_ist": "2026-05-26 09:57 IST"
+        },
+        "labels": [
+          "Reddit",
+          "AI_Agents",
+          "Comments missing"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "What is everyone using AI for? Realistically",
+            "post_body": "So I have to admit, I have fallen victim to the cool looking dashboard videos but I’m struggling to find a use for me. I love AI and use it daily for general questions and some deeper research (Google Gemini free tier). I have a few optiplex 3040s with 8gb of ram and I’ve currently have them set up with ubuntu and docker. I’ve started diving into the openclaw / n8n automation stuff. I back tracked my openclaw setup because it just seemed like my optiplex 3040s couldn’t handle it. I tried a couple local AI models mostly ollama stuff like llama and qwen but it just seemed to slow but I also think I’m using it wrong. I feel like I’m not supposed to “talk” to it like I would Gemini but instead use it for thinking for me for data stuff but realistically I don’t need to do that for work or anything. I’ve been playing with n8n node automations. Which is cool to automate some stuff but realistically what are y’all using AI Agents and/or local hosted AI for?",
+            "comments": [],
+            "metadata": {
+              "subreddit": "AI_Agents",
+              "score": 2,
+              "comment_count": 19,
+              "created_utc": 1779758802.0,
+              "url": "https://www.reddit.com/r/AI_Agents/comments/1tns659/what_is_everyone_using_ai_for_realistically/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "AI_Agents",
+        "sort": "top",
+        "title": "New to agents, mcp , etc how do I get to a point where i can lay back and let my agents do the work",
+        "score": 7,
+        "comments": 13,
+        "created_utc": 1779684678.0,
+        "url": "https://www.reddit.com/r/AI_Agents/comments/1tmyrid/new_to_agents_mcp_etc_how_do_i_get_to_a_point/",
+        "external_url": null,
+        "selftext": "Currently working on some projects. I have some agents and chrome scrap tasks id like it to do. Does Aider need permission for certain commands or is there a safety guardrail? Is Aider the best, I think I am done with Antigravity with Gemini models for coding it is trash.",
+        "selftext_full": "Currently working on some projects. I have some agents and chrome scrap tasks id like it to do. Does Aider need permission for certain commands or is there a safety guardrail? Is Aider the best, I think I am done with Antigravity with Gemini models for coding it is trash.",
+        "author": "Lazyrecipe5264",
+        "post_id": "1tmyrid",
+        "top_comments": [],
+        "story_id": "rd_1tmyrid",
+        "heading": "New to agents, mcp , etc how do I get to a point where i can lay back and let my agents do the work",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/AI_Agents/comments/1tmyrid/new_to_agents_mcp_etc_how_do_i_get_to_a_point/",
+        "summary": "Currently working on some projects. I have some agents and chrome scrap tasks id like it to do. Does Aider need permission for certain commands or is there a safety guardrail? Is Aider the best, I think I am done with Antigravity with Gemini models for coding it is trash.",
+        "tweet_and_comments_summary": "Currently working on some projects. I have some agents and chrome scrap tasks id like it to do. Does Aider need permission for certain commands or is there a safety guardrail? Is Aider the best, I think I am done with Antigravity with Gemini models for coding it is trash.",
+        "discussion_summary": null,
+        "why_it_matters": "**High signal for coding workflow.** Compare against your Hermes/Codex/Claude usage before changing tools or architecture.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tmyrid",
+            "subreddit": "AI_Agents",
+            "post_url": "https://www.reddit.com/r/AI_Agents/comments/1tmyrid/new_to_agents_mcp_etc_how_do_i_get_to_a_point/",
+            "title": "New to agents, mcp , etc how do I get to a point where i can lay back and let my agents do the work",
+            "author": "Lazyrecipe5264",
+            "created_utc": 1779684678.0,
+            "score": 7,
+            "comment_count": 13,
+            "selftext_full": "Currently working on some projects. I have some agents and chrome scrap tasks id like it to do. Does Aider need permission for certain commands or is there a safety guardrail? Is Aider the best, I think I am done with Antigravity with Gemini models for coding it is trash.",
+            "selftext_excerpt": "Currently working on some projects. I have some agents and chrome scrap tasks id like it to do. Does Aider need permission for certain commands or is there a safety guardrail? Is Aider the best, I think I am done with Antigravity with Gemin",
+            "external_url": null,
+            "top_comments": [],
+            "comment_context": null
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 7,
+          "reddit_comment_count": 13,
+          "captured_at_ist": "2026-05-26 09:57 IST"
+        },
+        "labels": [
+          "Reddit",
+          "AI_Agents",
+          "Comments missing"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "New to agents, mcp , etc how do I get to a point where i can lay back and let my agents do the work",
+            "post_body": "Currently working on some projects. I have some agents and chrome scrap tasks id like it to do. Does Aider need permission for certain commands or is there a safety guardrail? Is Aider the best, I think I am done with Antigravity with Gemini models for coding it is trash.",
+            "comments": [],
+            "metadata": {
+              "subreddit": "AI_Agents",
+              "score": 7,
+              "comment_count": 13,
+              "created_utc": 1779684678.0,
+              "url": "https://www.reddit.com/r/AI_Agents/comments/1tmyrid/new_to_agents_mcp_etc_how_do_i_get_to_a_point/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "ChatGPT",
+        "sort": "hot",
+        "title": "“Take product shots of an object that doesn't exist within our dimension and have it look like it's put up on eBay. So make it like a realistic eBay interface with the object on there and it's being sold.”",
+        "score": 824,
+        "comments": 106,
+        "created_utc": 1779705304.0,
+        "url": "https://www.reddit.com/r/ChatGPT/comments/1tn595v/take_product_shots_of_an_object_that_doesnt_exist/",
+        "external_url": "https://i.redd.it/ypjb2u6lh93h1.jpeg",
+        "selftext": "",
+        "selftext_full": "",
+        "author": "RJPrimordial",
+        "post_id": "1tn595v",
+        "top_comments": [],
+        "story_id": "rd_1tn595v",
+        "heading": "“Take product shots of an object that doesn't exist within our dimension and have it look like it's put up on eBay. So make it like a realistic eBay interface with the object on there and it's being sold.”",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/ChatGPT/comments/1tn595v/take_product_shots_of_an_object_that_doesnt_exist/",
+        "summary": "Discussion is mostly in the title/comments; open the source for details.",
+        "tweet_and_comments_summary": "Discussion is mostly in the title/comments; open the source for details.",
+        "discussion_summary": null,
+        "why_it_matters": "**Medium signal.** Worth monitoring, but don’t act on Reddit hype without checking primary sources.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tn595v",
+            "subreddit": "ChatGPT",
+            "post_url": "https://www.reddit.com/r/ChatGPT/comments/1tn595v/take_product_shots_of_an_object_that_doesnt_exist/",
+            "title": "“Take product shots of an object that doesn't exist within our dimension and have it look like it's put up on eBay. So make it like a realistic eBay interface with the object on there and it's being sold.”",
+            "author": "RJPrimordial",
+            "created_utc": 1779705304.0,
+            "score": 824,
+            "comment_count": 106,
+            "selftext_full": null,
+            "selftext_excerpt": null,
+            "external_url": "https://i.redd.it/ypjb2u6lh93h1.jpeg",
+            "top_comments": [],
+            "comment_context": null
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 824,
+          "reddit_comment_count": 106,
+          "captured_at_ist": "2026-05-26 09:57 IST"
+        },
+        "labels": [
+          "Reddit",
+          "Comments missing"
+        ],
+        "expand": {
+          "available": false,
+          "label_collapsed": null,
+          "label_expanded": null,
+          "default_open": false,
+          "reason_unavailable": "No full source text or comments captured"
+        },
+        "full_source_content": {
+          "available": false,
+          "reddit": {
+            "post_title": "“Take product shots of an object that doesn't exist within our dimension and have it look like it's put up on eBay. So make it like a realistic eBay interface with the object on there and it's being sold.”",
+            "post_body": null,
+            "comments": [],
+            "metadata": {
+              "subreddit": "ChatGPT",
+              "score": 824,
+              "comment_count": 106,
+              "created_utc": 1779705304.0,
+              "url": "https://www.reddit.com/r/ChatGPT/comments/1tn595v/take_product_shots_of_an_object_that_doesnt_exist/"
+            }
+          },
+          "twitter": null
+        }
+      }
+    ],
+    "brief_number": 2
+  },
+  {
     "run_id": "2026-05-26 01:30 IST",
     "brief_day": "2026-05-26",
     "collected_at_ist": "2026-05-26 01:30 IST",
