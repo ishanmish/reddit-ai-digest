@@ -1,5 +1,1555 @@
 [
   {
+    "run_id": "2026-05-27 10:01 IST",
+    "brief_day": "2026-05-27",
+    "collected_at_ist": "2026-05-27 10:01 IST",
+    "runtime_sec": 10.15,
+    "auth_mode": "anonymous_with_fallbacks",
+    "source_count_ok": 16,
+    "sources_ok": [
+      "AI_Agents",
+      "ArtificialInteligence",
+      "AutoGPT",
+      "ChatGPT",
+      "ClaudeAI",
+      "ClaudeCode",
+      "LangChain",
+      "LocalLLM",
+      "LocalLLaMA",
+      "MachineLearning",
+      "Ollama",
+      "OpenAI",
+      "OpenWebUI",
+      "StableDiffusion",
+      "artificial",
+      "singularity"
+    ],
+    "sources_failed_count": 0,
+    "posts": [
+      {
+        "subreddit": "StableDiffusion",
+        "sort": "hot",
+        "title": "Anima-Base is magic and i don't think people realize how good it is.",
+        "score": 618,
+        "comments": 122,
+        "created_utc": 1779812645.0,
+        "url": "https://www.reddit.com/r/StableDiffusion/comments/1tobzgq/animabase_is_magic_and_i_dont_think_people/",
+        "external_url": "https://www.reddit.com/gallery/1tobzgq",
+        "selftext": "I made a post about ZIT earlier this month, but i think its time ANIMA gets a post aswell. Every image is made by me and made with ONLY anima-base-1, NO loras. Below i shared the CivitAI posts so you can find prompts and in some cases the ComfyUI workflows aswell. This model is insane and i really don't think people are appreciating it enough. IMAGE 1: [https://civitai.red/images/130974882](https://civitai.red/images/130974882) IMAGE 2: [https://civitai.red/images/130930080](https://civitai.red/images/130930080) IMAGE 3: [https://civitai.red/images/130929689](https://civitai.red/images/130929689) IMAGE 4: [https://civitai.red/images/130745552](https://civitai.red/images/130745552) IMAGE 5: [",
+        "selftext_full": "I made a post about ZIT earlier this month, but i think its time ANIMA gets a post aswell. Every image is made by me and made with ONLY anima-base-1, NO loras. Below i shared the CivitAI posts so you can find prompts and in some cases the ComfyUI workflows aswell. \nThis model is insane and i really don't think people are appreciating it enough. \n \nIMAGE 1: [https://civitai.red/images/130974882](https://civitai.red/images/130974882) \nIMAGE 2: [https://civitai.red/images/130930080](https://civitai.red/images/130930080) \nIMAGE 3: [https://civitai.red/images/130929689](https://civitai.red/images/130929689) \nIMAGE 4: [https://civitai.red/images/130745552](https://civitai.red/images/130745552) \nIMAGE 5: [https://civitai.red/images/130704657](https://civitai.red/images/130704657) \nIMAGE 6: [https://civitai.red/images/131031183](https://civitai.red/images/131031183) \nIMAGE 7: [https://civitai.red/images/131876038](https://civitai.red/images/131876038) \nIMAGE 8: [https://civitai.red/images/131710920](https://civitai.red/images/131710920) \nIMAGE 9: [https://civitai.red/images/131421294](https://civitai.red/images/131421294) \nIMAGE 10: [https://civitai.red/images/130716207](https://civitai.red/images/130716207) \nIMAGE 11: [https://civitai.red/images/130712263](https://civitai.red/images/130712263)",
+        "author": "Royal_Carpenter_1338",
+        "post_id": "1tobzgq",
+        "top_comments": [
+          {
+            "score": 44,
+            "author": "TheCat001",
+            "body": "Agree, Anima is hidden gem. For it's size produces very good quality images.",
+            "permalink": "https://www.reddit.com/r/StableDiffusion/comments/1tobzgq/animabase_is_magic_and_i_dont_think_people/oo02r9o/"
+          },
+          {
+            "score": 36,
+            "author": "javierthhh",
+            "body": "Yeah I got the hype recently. I had tried it when it came out but everything I prompted looked horrible. It did follow the prompt beautifully but aesthetically, it wasn’t great. I gave it another shot recently by copying a prompt from civitai and the results were way better. It’s weakness I think it’s that you really have to specify a style for it to look good IMO.",
+            "permalink": "https://www.reddit.com/r/StableDiffusion/comments/1tobzgq/animabase_is_magic_and_i_dont_think_people/oo049l3/"
+          },
+          {
+            "score": 22,
+            "author": "Royal_Carpenter_1338",
+            "body": "artist tags is pretty overpowered on this model",
+            "permalink": "https://www.reddit.com/r/StableDiffusion/comments/1tobzgq/animabase_is_magic_and_i_dont_think_people/oo04uz3/"
+          },
+          {
+            "score": 18,
+            "author": "blastcat4",
+            "body": "For anyone new to the model, I highly recommend investing the time to explore different artist styles that are inside the model. They vary wildly in style and some will click with you while others won't. Find at least a dozen artist styles that you like and use that as your base for exploring what you can do. [animadex](https://animadex.net/) is invaluable in that regard.",
+            "permalink": "https://www.reddit.com/r/StableDiffusion/comments/1tobzgq/animabase_is_magic_and_i_dont_think_people/oo18e3u/"
+          },
+          {
+            "score": 16,
+            "author": "8RETRO8",
+            "body": "details are super broken tho",
+            "permalink": "https://www.reddit.com/r/StableDiffusion/comments/1tobzgq/animabase_is_magic_and_i_dont_think_people/oo07k5k/"
+          },
+          {
+            "score": 15,
+            "author": "offensiveinsult",
+            "body": "img Oh i love it, been grinding loras since P2. Probably my favourite model after Chroma.",
+            "permalink": "https://www.reddit.com/r/StableDiffusion/comments/1tobzgq/animabase_is_magic_and_i_dont_think_people/oo00ivx/"
+          },
+          {
+            "score": 12,
+            "author": "Choowkee",
+            "body": ">This model is insane and i really don't think people are appreciating it enough. How so? Its been promoted here many times. I see more posts about Anima than Illustrious. Its also getting a bunch of Loras every single day on Civit.",
+            "permalink": "https://www.reddit.com/r/StableDiffusion/comments/1tobzgq/animabase_is_magic_and_i_dont_think_people/oo0a5o9/"
+          },
+          {
+            "score": 10,
+            "author": "Hadan_",
+            "body": "how is the prompt adherence?",
+            "permalink": "https://www.reddit.com/r/StableDiffusion/comments/1tobzgq/animabase_is_magic_and_i_dont_think_people/oo03w7x/"
+          }
+        ],
+        "story_id": "rd_1tobzgq",
+        "heading": "Anima-Base is magic and i don't think people realize how good it is.",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/StableDiffusion/comments/1tobzgq/animabase_is_magic_and_i_dont_think_people/",
+        "summary": "I made a post about ZIT earlier this month, but i think its time ANIMA gets a post aswell. Every image is made by me and made with ONLY anima-base-1, NO loras. Below i shared the CivitAI posts so you can find prompts and in some cases the ComfyUI workflows aswell. This model is insane and i really don't think people are appreciating it enough. IMAGE 1: [https://civitai.red/images/130974882](https://civitai.red/images Agree, Anima is hidden gem. For it's size produces very good quality images. Yeah I got the hype recently. I had tried it when it came out but everything I prompted looked horrible. It did follow the prompt beautifully but aesthetically, it wasn’t great. I",
+        "tweet_and_comments_summary": "I made a post about ZIT earlier this month, but i think its time ANIMA gets a post aswell. Every image is made by me and made with ONLY anima-base-1, NO loras. Below i shared the CivitAI posts so you can find prompts and in some cases the ComfyUI workflows aswell. This model is insane and i really don't think people are appreciating it enough. IMAGE 1: [https://civitai.red/images/130974882](https://civitai.red/images Agree, Anima is hidden gem. For it's size produces very good quality images. Yeah I got the hype recently. I had tried it when it came out but everything I prompted looked horrible. It did follow the prompt beautifully but aesthetically, it wasn’t great. I",
+        "discussion_summary": "Agree, Anima is hidden gem. For it's size produces very good quality images. Yeah I got the hype recently. I had tried it when it came out but everything I prompted looked horrible. It did follow the prompt beautifully but aesthetically, it wasn’t great. I",
+        "why_it_matters": "**High signal for coding workflow.** Compare against your Hermes/Codex/Claude usage before changing tools or architecture.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tobzgq",
+            "subreddit": "StableDiffusion",
+            "post_url": "https://www.reddit.com/r/StableDiffusion/comments/1tobzgq/animabase_is_magic_and_i_dont_think_people/",
+            "title": "Anima-Base is magic and i don't think people realize how good it is.",
+            "author": "Royal_Carpenter_1338",
+            "created_utc": 1779812645.0,
+            "score": 618,
+            "comment_count": 122,
+            "selftext_full": "I made a post about ZIT earlier this month, but i think its time ANIMA gets a post aswell. Every image is made by me and made with ONLY anima-base-1, NO loras. Below i shared the CivitAI posts so you can find prompts and in some cases the ComfyUI workflows aswell. \nThis model is insane and i really don't think people are appreciating it enough. \n \nIMAGE 1: [https://civitai.red/images/130974882](https://civitai.red/images/130974882) \nIMAGE 2: [https://civitai.red/images/130930080](https://civitai.red/images/130930080) \nIMAGE 3: [https://civitai.red/images/130929689](https://civitai.red/images/130929689) \nIMAGE 4: [https://civitai.red/images/130745552](https://civitai.red/images/130745552) \nIMAGE 5: [https://civitai.red/images/130704657](https://civitai.red/images/130704657) \nIMAGE 6: [https://civitai.red/images/131031183](https://civitai.red/images/131031183) \nIMAGE 7: [https://civitai.red/images/131876038](https://civitai.red/images/131876038) \nIMAGE 8: [https://civitai.red/images/131710920](https://civitai.red/images/131710920) \nIMAGE 9: [https://civitai.red/images/131421294](https://civitai.red/images/131421294) \nIMAGE 10: [https://civitai.red/images/130716207](https://civitai.red/images/130716207) \nIMAGE 11: [https://civitai.red/images/130712263](https://civitai.red/images/130712263)",
+            "selftext_excerpt": "I made a post about ZIT earlier this month, but i think its time ANIMA gets a post aswell. Every image is made by me and made with ONLY anima-base-1, NO loras. Below i shared the CivitAI posts so you can find prompts and in some cases the C",
+            "external_url": "https://www.reddit.com/gallery/1tobzgq",
+            "top_comments": [
+              {
+                "score": 44,
+                "author": "TheCat001",
+                "body": "Agree, Anima is hidden gem. For it's size produces very good quality images.",
+                "permalink": "https://www.reddit.com/r/StableDiffusion/comments/1tobzgq/animabase_is_magic_and_i_dont_think_people/oo02r9o/"
+              },
+              {
+                "score": 36,
+                "author": "javierthhh",
+                "body": "Yeah I got the hype recently. I had tried it when it came out but everything I prompted looked horrible. It did follow the prompt beautifully but aesthetically, it wasn’t great. I gave it another shot recently by copying a prompt from civitai and the results were way better. It’s weakness I think it’s that you really have to specify a style for it to look good IMO.",
+                "permalink": "https://www.reddit.com/r/StableDiffusion/comments/1tobzgq/animabase_is_magic_and_i_dont_think_people/oo049l3/"
+              },
+              {
+                "score": 22,
+                "author": "Royal_Carpenter_1338",
+                "body": "artist tags is pretty overpowered on this model",
+                "permalink": "https://www.reddit.com/r/StableDiffusion/comments/1tobzgq/animabase_is_magic_and_i_dont_think_people/oo04uz3/"
+              },
+              {
+                "score": 18,
+                "author": "blastcat4",
+                "body": "For anyone new to the model, I highly recommend investing the time to explore different artist styles that are inside the model. They vary wildly in style and some will click with you while others won't. Find at least a dozen artist styles that you like and use that as your base for exploring what you can do. [animadex](https://animadex.net/) is invaluable in that regard.",
+                "permalink": "https://www.reddit.com/r/StableDiffusion/comments/1tobzgq/animabase_is_magic_and_i_dont_think_people/oo18e3u/"
+              },
+              {
+                "score": 16,
+                "author": "8RETRO8",
+                "body": "details are super broken tho",
+                "permalink": "https://www.reddit.com/r/StableDiffusion/comments/1tobzgq/animabase_is_magic_and_i_dont_think_people/oo07k5k/"
+              },
+              {
+                "score": 15,
+                "author": "offensiveinsult",
+                "body": "img Oh i love it, been grinding loras since P2. Probably my favourite model after Chroma.",
+                "permalink": "https://www.reddit.com/r/StableDiffusion/comments/1tobzgq/animabase_is_magic_and_i_dont_think_people/oo00ivx/"
+              },
+              {
+                "score": 12,
+                "author": "Choowkee",
+                "body": ">This model is insane and i really don't think people are appreciating it enough. How so? Its been promoted here many times. I see more posts about Anima than Illustrious. Its also getting a bunch of Loras every single day on Civit.",
+                "permalink": "https://www.reddit.com/r/StableDiffusion/comments/1tobzgq/animabase_is_magic_and_i_dont_think_people/oo0a5o9/"
+              },
+              {
+                "score": 10,
+                "author": "Hadan_",
+                "body": "how is the prompt adherence?",
+                "permalink": "https://www.reddit.com/r/StableDiffusion/comments/1tobzgq/animabase_is_magic_and_i_dont_think_people/oo03w7x/"
+              }
+            ],
+            "comment_context": "Agree, Anima is hidden gem. For it's size produces very good quality images. Yeah I got the hype recently. I had tried it when it came out but everything I prompted looked horrible. It did follow the prompt beautifully but aesthetically, it wasn’t great. I"
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 618,
+          "reddit_comment_count": 122,
+          "captured_at_ist": "2026-05-27 10:01 IST"
+        },
+        "labels": [
+          "Reddit"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "Anima-Base is magic and i don't think people realize how good it is.",
+            "post_body": "I made a post about ZIT earlier this month, but i think its time ANIMA gets a post aswell. Every image is made by me and made with ONLY anima-base-1, NO loras. Below i shared the CivitAI posts so you can find prompts and in some cases the ComfyUI workflows aswell. \nThis model is insane and i really don't think people are appreciating it enough. \n \nIMAGE 1: [https://civitai.red/images/130974882](https://civitai.red/images/130974882) \nIMAGE 2: [https://civitai.red/images/130930080](https://civitai.red/images/130930080) \nIMAGE 3: [https://civitai.red/images/130929689](https://civitai.red/images/130929689) \nIMAGE 4: [https://civitai.red/images/130745552](https://civitai.red/images/130745552) \nIMAGE 5: [https://civitai.red/images/130704657](https://civitai.red/images/130704657) \nIMAGE 6: [https://civitai.red/images/131031183](https://civitai.red/images/131031183) \nIMAGE 7: [https://civitai.red/images/131876038](https://civitai.red/images/131876038) \nIMAGE 8: [https://civitai.red/images/131710920](https://civitai.red/images/131710920) \nIMAGE 9: [https://civitai.red/images/131421294](https://civitai.red/images/131421294) \nIMAGE 10: [https://civitai.red/images/130716207](https://civitai.red/images/130716207) \nIMAGE 11: [https://civitai.red/images/130712263](https://civitai.red/images/130712263)",
+            "comments": [
+              {
+                "score": 44,
+                "author": "TheCat001",
+                "body": "Agree, Anima is hidden gem. For it's size produces very good quality images.",
+                "permalink": "https://www.reddit.com/r/StableDiffusion/comments/1tobzgq/animabase_is_magic_and_i_dont_think_people/oo02r9o/"
+              },
+              {
+                "score": 36,
+                "author": "javierthhh",
+                "body": "Yeah I got the hype recently. I had tried it when it came out but everything I prompted looked horrible. It did follow the prompt beautifully but aesthetically, it wasn’t great. I gave it another shot recently by copying a prompt from civitai and the results were way better. It’s weakness I think it’s that you really have to specify a style for it to look good IMO.",
+                "permalink": "https://www.reddit.com/r/StableDiffusion/comments/1tobzgq/animabase_is_magic_and_i_dont_think_people/oo049l3/"
+              },
+              {
+                "score": 22,
+                "author": "Royal_Carpenter_1338",
+                "body": "artist tags is pretty overpowered on this model",
+                "permalink": "https://www.reddit.com/r/StableDiffusion/comments/1tobzgq/animabase_is_magic_and_i_dont_think_people/oo04uz3/"
+              },
+              {
+                "score": 18,
+                "author": "blastcat4",
+                "body": "For anyone new to the model, I highly recommend investing the time to explore different artist styles that are inside the model. They vary wildly in style and some will click with you while others won't. Find at least a dozen artist styles that you like and use that as your base for exploring what you can do. [animadex](https://animadex.net/) is invaluable in that regard.",
+                "permalink": "https://www.reddit.com/r/StableDiffusion/comments/1tobzgq/animabase_is_magic_and_i_dont_think_people/oo18e3u/"
+              },
+              {
+                "score": 16,
+                "author": "8RETRO8",
+                "body": "details are super broken tho",
+                "permalink": "https://www.reddit.com/r/StableDiffusion/comments/1tobzgq/animabase_is_magic_and_i_dont_think_people/oo07k5k/"
+              },
+              {
+                "score": 15,
+                "author": "offensiveinsult",
+                "body": "img Oh i love it, been grinding loras since P2. Probably my favourite model after Chroma.",
+                "permalink": "https://www.reddit.com/r/StableDiffusion/comments/1tobzgq/animabase_is_magic_and_i_dont_think_people/oo00ivx/"
+              },
+              {
+                "score": 12,
+                "author": "Choowkee",
+                "body": ">This model is insane and i really don't think people are appreciating it enough. How so? Its been promoted here many times. I see more posts about Anima than Illustrious. Its also getting a bunch of Loras every single day on Civit.",
+                "permalink": "https://www.reddit.com/r/StableDiffusion/comments/1tobzgq/animabase_is_magic_and_i_dont_think_people/oo0a5o9/"
+              },
+              {
+                "score": 10,
+                "author": "Hadan_",
+                "body": "how is the prompt adherence?",
+                "permalink": "https://www.reddit.com/r/StableDiffusion/comments/1tobzgq/animabase_is_magic_and_i_dont_think_people/oo03w7x/"
+              }
+            ],
+            "metadata": {
+              "subreddit": "StableDiffusion",
+              "score": 618,
+              "comment_count": 122,
+              "created_utc": 1779812645.0,
+              "url": "https://www.reddit.com/r/StableDiffusion/comments/1tobzgq/animabase_is_magic_and_i_dont_think_people/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "LocalLLaMA",
+        "sort": "hot",
+        "title": "PrismML just released Binary and Ternary Bonsai Image 4B: 1-bit/ternary text-to-image diffusion transformers that can even run 100% locally in your browser on WebGPU.",
+        "score": 411,
+        "comments": 48,
+        "created_utc": 1779821620.0,
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1togflk/prismml_just_released_binary_and_ternary_bonsai/",
+        "external_url": "https://v.redd.it/2ltnmcnp2j3h1",
+        "selftext": "The PrismML team really cooked with these models. They're only \\~3GB in size (compared to FLUX.2 Klein 4B, which is \\~16GB). Apache-2.0! Official collection on HF: [https://huggingface.co/collections/prism-ml/bonsai-image](https://huggingface.co/collections/prism-ml/bonsai-image) Link to demo: [https://huggingface.co/spaces/webml-community/bonsai-image-webgpu](https://huggingface.co/spaces/webml-community/bonsai-image-webgpu)",
+        "selftext_full": "The PrismML team really cooked with these models. They're only \\~3GB in size (compared to FLUX.2 Klein 4B, which is \\~16GB). Apache-2.0!\n\nOfficial collection on HF: [https://huggingface.co/collections/prism-ml/bonsai-image](https://huggingface.co/collections/prism-ml/bonsai-image) \nLink to demo: [https://huggingface.co/spaces/webml-community/bonsai-image-webgpu](https://huggingface.co/spaces/webml-community/bonsai-image-webgpu)",
+        "author": "xenovatech",
+        "post_id": "1togflk",
+        "top_comments": [
+          {
+            "score": 62,
+            "author": "hellynn",
+            "body": "They literally disclose it’s built from FLUX.2 Klein 4B everywhere lol. Blogposts, whitepaper, model cards, tweets, Hugging Face notices. Acting like they’re “strategically hiding it” is such a reach. Also the WebGPU demo was made by Hugging Face, not PrismML 😭 This community also loves inventing fake naming “rules” every other week like it’s the constitution or something. It’s open source. People quantize, finetune, remix, and rename models constantly. Focus on the science and the outputs instead of farming outrage over branding. Getting a 8GB model down to 1.4GB while keeping quality is genuinely hard. Anyone who’s tried recovering FLUX after aggressive quantization knows this is not trivial work.",
+            "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1togflk/prismml_just_released_binary_and_ternary_bonsai/oo1saqf/"
+          },
+          {
+            "score": 57,
+            "author": "oxygen_addiction",
+            "body": "This team is really shady. What they're calling \"Bonsai-Image\" is just a quantization of **FLUX.2 Klein 4B** with some post-training to recover performance. They strategically omit any mention of the FLUX team or the original model. Not on the Prism-ML HF Web demo page, not on the HF model pages, not on GitHub. If it were just one place, I could understand, but this is a pattern. They did the same thing with Qwen before: called everything \"Bonsai\" and tried to distance themselves form the original model and team. Zero attribution to the people who actually built this. It's disingenuous and completely against the open-source spirit. The only place the original model is mentioned is in the whitepaper, which they know most people will not read. Don't support this team and their shitty practices. edit: As a cleaner analogy, imagine if Unsloth released \"Unsloth 27B\", and it's just a quant of Qwen 27B. It's ok to call your quants/fine-tunes whatever you want, but credit the labs behind the actual training.",
+            "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1togflk/prismml_just_released_binary_and_ternary_bonsai/oo1hj9k/"
+          },
+          {
+            "score": 35,
+            "author": "BurntUnluckily",
+            "body": "Literally the first sentence of the white paper. https://preview.redd.it/swo2wyvq3k3h1.jpeg?width=1070&format=pjpg&auto=webp&s=64f753f51deb57a00a4109a4018e3a1a68a845df",
+            "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1togflk/prismml_just_released_binary_and_ternary_bonsai/oo24mjt/"
+          },
+          {
+            "score": 32,
+            "author": "Natural-Rich6",
+            "body": "It can run on CPU and 16 ram?",
+            "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1togflk/prismml_just_released_binary_and_ternary_bonsai/oo1250v/"
+          },
+          {
+            "score": 31,
+            "author": "Fun_Librarian_7699",
+            "body": "My first thought was that you could use this model to make those cool pixel-block bonsai trees. Now I'm actually pretty disappointed with the model",
+            "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1togflk/prismml_just_released_binary_and_ternary_bonsai/oo24zu4/"
+          },
+          {
+            "score": 24,
+            "author": "SeparateBill7948",
+            "body": "what are u talking about?? Flux is named in the white paper 86x its in the blog 14x, 13x on the hf model card. as well as in the founder tweets.",
+            "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1togflk/prismml_just_released_binary_and_ternary_bonsai/oo1lpap/"
+          },
+          {
+            "score": 16,
+            "author": "Everlier",
+            "body": "Unfortunately I can't see any launch path for CPU or AMD GPUs in the sample repo right now, it throws without Nvidia GPU, but it's early Edit: managed to run on Srix Halo, cool little model",
+            "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1togflk/prismml_just_released_binary_and_ternary_bonsai/oo1c8po/"
+          },
+          {
+            "score": 1,
+            "author": "WithoutReason1729",
+            "body": "Your post is getting popular and we just featured it on our Discord! [Come check it out!](https://discord.gg/PgFhZ8cnWW) You've also been given a special flair for your contribution. We appreciate your post! *I am a bot and this action was performed automatically.*",
+            "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1togflk/prismml_just_released_binary_and_ternary_bonsai/oo1ou2h/"
+          }
+        ],
+        "story_id": "rd_1togflk",
+        "heading": "PrismML just released Binary and Ternary Bonsai Image 4B: 1-bit/ternary text-to-image diffusion transformers that can even run 100% locally in your browser on WebGPU.",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1togflk/prismml_just_released_binary_and_ternary_bonsai/",
+        "summary": "The PrismML team really cooked with these models. They're only \\~3GB in size (compared to FLUX.2 Klein 4B, which is \\~16GB). Apache-2.0! Official collection on HF: [https://huggingface.co/collections/prism-ml/bonsai-image](https://huggingface.co/collections/prism-ml/bonsai-image) Link to demo: [https://huggingface.co/spaces/webml-community/bonsai-image-webgpu](https://huggingface.co/spaces/webml-community/bonsai-imag They literally disclose it’s built from FLUX.2 Klein 4B everywhere lol. Blogposts, whitepaper, model cards, tweets, Hugging Face notices. Acting like they’re “strategically hiding This team is really shady. What they're calling \"Bonsai-Image\" is just a quantization of **FLUX.2 K",
+        "tweet_and_comments_summary": "The PrismML team really cooked with these models. They're only \\~3GB in size (compared to FLUX.2 Klein 4B, which is \\~16GB). Apache-2.0! Official collection on HF: [https://huggingface.co/collections/prism-ml/bonsai-image](https://huggingface.co/collections/prism-ml/bonsai-image) Link to demo: [https://huggingface.co/spaces/webml-community/bonsai-image-webgpu](https://huggingface.co/spaces/webml-community/bonsai-imag They literally disclose it’s built from FLUX.2 Klein 4B everywhere lol. Blogposts, whitepaper, model cards, tweets, Hugging Face notices. Acting like they’re “strategically hiding This team is really shady. What they're calling \"Bonsai-Image\" is just a quantization of **FLUX.2 K",
+        "discussion_summary": "They literally disclose it’s built from FLUX.2 Klein 4B everywhere lol. Blogposts, whitepaper, model cards, tweets, Hugging Face notices. Acting like they’re “strategically hiding This team is really shady. What they're calling \"Bonsai-Image\" is just a quantization of **FLUX.2 Klein 4B** with some post-training to recover performance. They strategically omit",
+        "why_it_matters": "**High signal if running local models.** Check hardware fit, latency, and eval quality before adopting.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1togflk",
+            "subreddit": "LocalLLaMA",
+            "post_url": "https://www.reddit.com/r/LocalLLaMA/comments/1togflk/prismml_just_released_binary_and_ternary_bonsai/",
+            "title": "PrismML just released Binary and Ternary Bonsai Image 4B: 1-bit/ternary text-to-image diffusion transformers that can even run 100% locally in your browser on WebGPU.",
+            "author": "xenovatech",
+            "created_utc": 1779821620.0,
+            "score": 411,
+            "comment_count": 48,
+            "selftext_full": "The PrismML team really cooked with these models. They're only \\~3GB in size (compared to FLUX.2 Klein 4B, which is \\~16GB). Apache-2.0!\n\nOfficial collection on HF: [https://huggingface.co/collections/prism-ml/bonsai-image](https://huggingface.co/collections/prism-ml/bonsai-image) \nLink to demo: [https://huggingface.co/spaces/webml-community/bonsai-image-webgpu](https://huggingface.co/spaces/webml-community/bonsai-image-webgpu)",
+            "selftext_excerpt": "The PrismML team really cooked with these models. They're only \\~3GB in size (compared to FLUX.2 Klein 4B, which is \\~16GB). Apache-2.0! Official collection on HF: [https://huggingface.co/collections/prism-ml/bonsai-image](https://huggingfa",
+            "external_url": "https://v.redd.it/2ltnmcnp2j3h1",
+            "top_comments": [
+              {
+                "score": 62,
+                "author": "hellynn",
+                "body": "They literally disclose it’s built from FLUX.2 Klein 4B everywhere lol. Blogposts, whitepaper, model cards, tweets, Hugging Face notices. Acting like they’re “strategically hiding it” is such a reach. Also the WebGPU demo was made by Hugging Face, not PrismML 😭 This community also loves inventing fake naming “rules” every other week like it’s the constitution or something. It’s open source. People quantize, finetune, remix, and rename models constantly. Focus on the science and the outputs instead of farming outrage over branding. Getting a 8GB model down to 1.4GB while keeping quality is genuinely hard. Anyone who’s tried recovering FLUX after aggressive quantization knows this is not trivial work.",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1togflk/prismml_just_released_binary_and_ternary_bonsai/oo1saqf/"
+              },
+              {
+                "score": 57,
+                "author": "oxygen_addiction",
+                "body": "This team is really shady. What they're calling \"Bonsai-Image\" is just a quantization of **FLUX.2 Klein 4B** with some post-training to recover performance. They strategically omit any mention of the FLUX team or the original model. Not on the Prism-ML HF Web demo page, not on the HF model pages, not on GitHub. If it were just one place, I could understand, but this is a pattern. They did the same thing with Qwen before: called everything \"Bonsai\" and tried to distance themselves form the original model and team. Zero attribution to the people who actually built this. It's disingenuous and completely against the open-source spirit. The only place the original model is mentioned is in the whitepaper, which they know most people will not read. Don't support this team and their shitty practices. edit: As a cleaner analogy, imagine if Unsloth released \"Unsloth 27B\", and it's just a quant of Qwen 27B. It's ok to call your quants/fine-tunes whatever you want, but credit the labs behind the actual training.",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1togflk/prismml_just_released_binary_and_ternary_bonsai/oo1hj9k/"
+              },
+              {
+                "score": 35,
+                "author": "BurntUnluckily",
+                "body": "Literally the first sentence of the white paper. https://preview.redd.it/swo2wyvq3k3h1.jpeg?width=1070&format=pjpg&auto=webp&s=64f753f51deb57a00a4109a4018e3a1a68a845df",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1togflk/prismml_just_released_binary_and_ternary_bonsai/oo24mjt/"
+              },
+              {
+                "score": 32,
+                "author": "Natural-Rich6",
+                "body": "It can run on CPU and 16 ram?",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1togflk/prismml_just_released_binary_and_ternary_bonsai/oo1250v/"
+              },
+              {
+                "score": 31,
+                "author": "Fun_Librarian_7699",
+                "body": "My first thought was that you could use this model to make those cool pixel-block bonsai trees. Now I'm actually pretty disappointed with the model",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1togflk/prismml_just_released_binary_and_ternary_bonsai/oo24zu4/"
+              },
+              {
+                "score": 24,
+                "author": "SeparateBill7948",
+                "body": "what are u talking about?? Flux is named in the white paper 86x its in the blog 14x, 13x on the hf model card. as well as in the founder tweets.",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1togflk/prismml_just_released_binary_and_ternary_bonsai/oo1lpap/"
+              },
+              {
+                "score": 16,
+                "author": "Everlier",
+                "body": "Unfortunately I can't see any launch path for CPU or AMD GPUs in the sample repo right now, it throws without Nvidia GPU, but it's early Edit: managed to run on Srix Halo, cool little model",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1togflk/prismml_just_released_binary_and_ternary_bonsai/oo1c8po/"
+              },
+              {
+                "score": 1,
+                "author": "WithoutReason1729",
+                "body": "Your post is getting popular and we just featured it on our Discord! [Come check it out!](https://discord.gg/PgFhZ8cnWW) You've also been given a special flair for your contribution. We appreciate your post! *I am a bot and this action was performed automatically.*",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1togflk/prismml_just_released_binary_and_ternary_bonsai/oo1ou2h/"
+              }
+            ],
+            "comment_context": "They literally disclose it’s built from FLUX.2 Klein 4B everywhere lol. Blogposts, whitepaper, model cards, tweets, Hugging Face notices. Acting like they’re “strategically hiding This team is really shady. What they're calling \"Bonsai-Image\" is just a quantization of **FLUX.2 Klein 4B** with some post-training to recover performance. They strategically omit"
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 411,
+          "reddit_comment_count": 48,
+          "captured_at_ist": "2026-05-27 10:01 IST"
+        },
+        "labels": [
+          "Reddit",
+          "LocalLLaMA"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "PrismML just released Binary and Ternary Bonsai Image 4B: 1-bit/ternary text-to-image diffusion transformers that can even run 100% locally in your browser on WebGPU.",
+            "post_body": "The PrismML team really cooked with these models. They're only \\~3GB in size (compared to FLUX.2 Klein 4B, which is \\~16GB). Apache-2.0!\n\nOfficial collection on HF: [https://huggingface.co/collections/prism-ml/bonsai-image](https://huggingface.co/collections/prism-ml/bonsai-image) \nLink to demo: [https://huggingface.co/spaces/webml-community/bonsai-image-webgpu](https://huggingface.co/spaces/webml-community/bonsai-image-webgpu)",
+            "comments": [
+              {
+                "score": 62,
+                "author": "hellynn",
+                "body": "They literally disclose it’s built from FLUX.2 Klein 4B everywhere lol. Blogposts, whitepaper, model cards, tweets, Hugging Face notices. Acting like they’re “strategically hiding it” is such a reach. Also the WebGPU demo was made by Hugging Face, not PrismML 😭 This community also loves inventing fake naming “rules” every other week like it’s the constitution or something. It’s open source. People quantize, finetune, remix, and rename models constantly. Focus on the science and the outputs instead of farming outrage over branding. Getting a 8GB model down to 1.4GB while keeping quality is genuinely hard. Anyone who’s tried recovering FLUX after aggressive quantization knows this is not trivial work.",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1togflk/prismml_just_released_binary_and_ternary_bonsai/oo1saqf/"
+              },
+              {
+                "score": 57,
+                "author": "oxygen_addiction",
+                "body": "This team is really shady. What they're calling \"Bonsai-Image\" is just a quantization of **FLUX.2 Klein 4B** with some post-training to recover performance. They strategically omit any mention of the FLUX team or the original model. Not on the Prism-ML HF Web demo page, not on the HF model pages, not on GitHub. If it were just one place, I could understand, but this is a pattern. They did the same thing with Qwen before: called everything \"Bonsai\" and tried to distance themselves form the original model and team. Zero attribution to the people who actually built this. It's disingenuous and completely against the open-source spirit. The only place the original model is mentioned is in the whitepaper, which they know most people will not read. Don't support this team and their shitty practices. edit: As a cleaner analogy, imagine if Unsloth released \"Unsloth 27B\", and it's just a quant of Qwen 27B. It's ok to call your quants/fine-tunes whatever you want, but credit the labs behind the actual training.",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1togflk/prismml_just_released_binary_and_ternary_bonsai/oo1hj9k/"
+              },
+              {
+                "score": 35,
+                "author": "BurntUnluckily",
+                "body": "Literally the first sentence of the white paper. https://preview.redd.it/swo2wyvq3k3h1.jpeg?width=1070&format=pjpg&auto=webp&s=64f753f51deb57a00a4109a4018e3a1a68a845df",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1togflk/prismml_just_released_binary_and_ternary_bonsai/oo24mjt/"
+              },
+              {
+                "score": 32,
+                "author": "Natural-Rich6",
+                "body": "It can run on CPU and 16 ram?",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1togflk/prismml_just_released_binary_and_ternary_bonsai/oo1250v/"
+              },
+              {
+                "score": 31,
+                "author": "Fun_Librarian_7699",
+                "body": "My first thought was that you could use this model to make those cool pixel-block bonsai trees. Now I'm actually pretty disappointed with the model",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1togflk/prismml_just_released_binary_and_ternary_bonsai/oo24zu4/"
+              },
+              {
+                "score": 24,
+                "author": "SeparateBill7948",
+                "body": "what are u talking about?? Flux is named in the white paper 86x its in the blog 14x, 13x on the hf model card. as well as in the founder tweets.",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1togflk/prismml_just_released_binary_and_ternary_bonsai/oo1lpap/"
+              },
+              {
+                "score": 16,
+                "author": "Everlier",
+                "body": "Unfortunately I can't see any launch path for CPU or AMD GPUs in the sample repo right now, it throws without Nvidia GPU, but it's early Edit: managed to run on Srix Halo, cool little model",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1togflk/prismml_just_released_binary_and_ternary_bonsai/oo1c8po/"
+              },
+              {
+                "score": 1,
+                "author": "WithoutReason1729",
+                "body": "Your post is getting popular and we just featured it on our Discord! [Come check it out!](https://discord.gg/PgFhZ8cnWW) You've also been given a special flair for your contribution. We appreciate your post! *I am a bot and this action was performed automatically.*",
+                "permalink": "https://www.reddit.com/r/LocalLLaMA/comments/1togflk/prismml_just_released_binary_and_ternary_bonsai/oo1ou2h/"
+              }
+            ],
+            "metadata": {
+              "subreddit": "LocalLLaMA",
+              "score": 411,
+              "comment_count": 48,
+              "created_utc": 1779821620.0,
+              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1togflk/prismml_just_released_binary_and_ternary_bonsai/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "OpenWebUI",
+        "sort": "hot",
+        "title": "I got tired of manually configuring every Ollama model in Open WebUI, so I vibecoded a tool that generates it all from the API metadata.",
+        "score": 1,
+        "comments": 2,
+        "created_utc": 1779850280.0,
+        "url": "https://www.reddit.com/r/OpenWebUI/comments/1tosq1h/i_got_tired_of_manually_configuring_every_ollama/",
+        "external_url": null,
+        "selftext": "Every time you pull a new Ollama model, it shows up in Open WebUI as something like `hf.co/unsloth/Qwen3-VL-8B-Instruct-1M-GGUF:Q8_K_XL`. No description, no tags, no display name, no suggestion prompts, no profile image. Manually setting all of that up for one model is tedious. Doing it for 30+ models is painful. **Ollama Model Card Generator** is an admin tool that queries the Ollama API for every installed model's metadata and uses it to auto-populate *everything*: descriptions, human-readable names, capability tags, inference parameters, system prompts, suggestion prompts, profile images, and more. One chat message. All your models. Fully configured. Here's what it does: # 🪪 Rich Model Ca",
+        "selftext_full": "Every time you pull a new Ollama model, it shows up in Open WebUI as something like `hf.co/unsloth/Qwen3-VL-8B-Instruct-1M-GGUF:Q8_K_XL`. No description, no tags, no display name, no suggestion prompts, no profile image. Manually setting all of that up for one model is tedious. Doing it for 30+ models is painful.\n\n**Ollama Model Card Generator** is an admin tool that queries the Ollama API for every installed model's metadata and uses it to auto-populate *everything*: descriptions, human-readable names, capability tags, inference parameters, system prompts, suggestion prompts, profile images, and more. One chat message. All your models. Fully configured.\n\nHere's what it does:\n\n# 🪪 Rich Model Cards\n\nGenerates detailed model cards from Ollama's `/api/show` metadata, including architecture, parameter count, context length, quantization, capabilities, inference defaults, system prompt, template, license, token IDs, and digest. Cards use inline markdown (bold, code, emoji section headers) and render cleanly in Open WebUI's description tooltip.\n\n# ✏️ Smart Display Names\n\nConverts raw model IDs into clean, human-readable names with intelligent rules:\n\n|Raw ID|Display Name|\n|:-|:-|\n|`hf.co/unsloth/Qwen3-VL-8B-Instruct-1M-GGUF:Q8_K_XL`|Qwen3 VL 8B 1M (Q8\\_K\\_XL)|\n|`gemma4:26b-a4b-it-q4_K_M`|Gemma 4 26B A4B IT (Q4\\_K\\_M)|\n|`deepseek-r1:14b`|DeepSeek R1 14B|\n|`nomic-embed-text:latest`|Nomic Embed Text|\n\nStrips HuggingFace paths, user prefixes, `-GGUF` suffixes, `:latest` tags, and the `instruct` keyword. Splits version numbers (`gemma4` → `Gemma 4`). Smart-cases acronyms (`VL`, `QAT`, `DPO`, `MoE`). Extracts quantization into parentheses with a toggle to hide it.\n\n# 🏷️ Auto-Tagging (20+ Tag Types)\n\nDetects and applies tags from multiple sources:\n\n* **Capabilities:** Vision, Thinking, Tools, Code, Completion, Embedding\n* **Structure:** MoE, Long Context (≥100K), Quantized, Instruct, Chat, Reasoning, Abliterated\n* **Vendors:** Google, Meta, Qwen, DeepSeek, Microsoft, Mistral, IBM, NVIDIA, Cohere, AI2, and 10+ more\n* **Sources:** Unsloth, Bartowski, OpenBMB, Huihui AI, HuggingFace\n\nTags merge with existing ones by default, so nothing gets accidentally overwritten.\n\n# ⚡ Auto-Configuration\n\nBeyond model cards and tags, the tool auto-populates:\n\n* **Capability flags:** Vision on/off, usage reporting\n* **Inference parameters:** `num_ctx`, `temperature`, `stop` tokens extracted from the Ollama Modelfile. Also sets `function_calling: native` for tool-capable models and `reasoning_tags: true` for thinking models\n* **System prompt:** Extracted from the Modelfile and populated independently (has its own overwrite valve)\n* **Suggestion prompts:** Capability-aware clickable starters. Vision models get image prompts, code models get code prompts, thinking models get reasoning prompts, and all chat models get general prompts\n* **Profile images:** Matched from a local directory by vendor tag, with subdirectory support for model-specific icons (e.g., `mistral/nemo.png` beats generic `mistral.jpg` for Mistral Nemo)\n* **Embedding models:** Auto-hidden from the chat selector\n* **Sharded models:** Auto-disabled (BF16/F16 vision models with split GGUF files that Ollama can't load)\n\n# 🏗️ Workspace Model Creation\n\nCreate fully-enriched **workspace models** that wrap your raw Ollama models:\n\n* Workspace ID: `{model_id} (Workspace)` with `base_model_id` pointing to the original\n* Inherits the full model card, tags, capabilities, params, system prompt, display name, suggestion prompts, and profile image\n* Optionally auto-hides the raw base model from the selector\n* Batch mode: create workspace models for *all* installed models at once\n\n# 🔒 26 Valves, Full Control\n\nEvery feature is independently toggleable. Every auto-configuration has an `overwrite_*` companion valve that's off by default, so existing customizations are never accidentally replaced. You can preview everything with `generate_model_card` before committing anything to the database. There's also a `show_status_updates` valve if you want it to run silently.\n\n# ⚠️ Read This Before Running\n\nThis tool writes directly to your Open WebUI database. The `apply_*` and `create_*` functions will modify model entries (descriptions, names, tags, params, system prompts, and more). If you've spent time hand-tuning your model configurations, **running this without understanding the valves can undo that work.**\n\nA few things to keep in mind:\n\n* **Preview first.** Use `generate_model_card` or `generate_all_model_cards` to see what the tool *would* generate without touching the database.\n* **Overwrite valves are off by default.** The tool won't replace existing descriptions, tags, names, params, or system prompts unless you explicitly enable the corresponding `overwrite_*` valve. But it *will* fill in anything that's currently blank.\n* **The LLM decides which tool to call.** If you say \"set up all my models\" and the tool is enabled, the model may call `apply_all_model_cards` on its own. Be specific about what you're asking for.\n* **There's no undo.** Once the tool writes to the database, there's no built-in rollback. If you're unsure, start with a single model (`apply_model_card`) before running the batch version.\n\n# 🚀 Quick Start\n\n1. Install from [Open WebUI Community](https://openwebui.com/posts/ee80d7a1-edcc-42f8-9371-a7d237926641) (or import the tool manually under **Workspace → Tools**)\n2. Enable the tool on any model under **Workspace → Models → \\[model\\] → Tools**\n3. (Optional) Set `profile_image_dir` in valves to a folder with vendor icons\n4. Chat as admin: *\"Apply model cards to all installed Ollama models\"*\n5. Done. Every model now has a description, display name, tags, params, and more.\n\nFor workspace models: *\"Create workspace models for all installed Ollama models\"*\n\n**MIT Licensed** · Zero external dependencies · Admin-only access · 6 tool functions · 26 configurable valves\n\nIf you're managing a bunch of Ollama models and tired of configuring each one by hand, give it a try. Feedback and feature requests welcome. 🙏\n\n[Tool Page](https://openwebui.com/posts/ee80d7a1-edcc-42f8-9371-a7d237926641) · [Buy me a coffee](https://buymeacoffee.com/iamg30)",
+        "author": "Silentoplayz",
+        "post_id": "1tosq1h",
+        "top_comments": [],
+        "story_id": "rd_1tosq1h",
+        "heading": "I got tired of manually configuring every Ollama model in Open WebUI, so I vibecoded a tool that generates it all from the API metadata.",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/OpenWebUI/comments/1tosq1h/i_got_tired_of_manually_configuring_every_ollama/",
+        "summary": "Every time you pull a new Ollama model, it shows up in Open WebUI as something like `hf.co/unsloth/Qwen3-VL-8B-Instruct-1M-GGUF:Q8_K_XL`. No description, no tags, no display name, no suggestion prompts, no profile image. Manually setting all of that up for one model is tedious. Doing it for 30+ models is painful. **Ollama Model Card Generator** is an admin tool that queries the Ollama API for every installed model's",
+        "tweet_and_comments_summary": "Every time you pull a new Ollama model, it shows up in Open WebUI as something like `hf.co/unsloth/Qwen3-VL-8B-Instruct-1M-GGUF:Q8_K_XL`. No description, no tags, no display name, no suggestion prompts, no profile image. Manually setting all of that up for one model is tedious. Doing it for 30+ models is painful. **Ollama Model Card Generator** is an admin tool that queries the Ollama API for every installed model's",
+        "discussion_summary": null,
+        "why_it_matters": "**High signal if running local models.** Check hardware fit, latency, and eval quality before adopting.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tosq1h",
+            "subreddit": "OpenWebUI",
+            "post_url": "https://www.reddit.com/r/OpenWebUI/comments/1tosq1h/i_got_tired_of_manually_configuring_every_ollama/",
+            "title": "I got tired of manually configuring every Ollama model in Open WebUI, so I vibecoded a tool that generates it all from the API metadata.",
+            "author": "Silentoplayz",
+            "created_utc": 1779850280.0,
+            "score": 1,
+            "comment_count": 2,
+            "selftext_full": "Every time you pull a new Ollama model, it shows up in Open WebUI as something like `hf.co/unsloth/Qwen3-VL-8B-Instruct-1M-GGUF:Q8_K_XL`. No description, no tags, no display name, no suggestion prompts, no profile image. Manually setting all of that up for one model is tedious. Doing it for 30+ models is painful.\n\n**Ollama Model Card Generator** is an admin tool that queries the Ollama API for every installed model's metadata and uses it to auto-populate *everything*: descriptions, human-readable names, capability tags, inference parameters, system prompts, suggestion prompts, profile images, and more. One chat message. All your models. Fully configured.\n\nHere's what it does:\n\n# 🪪 Rich Model Cards\n\nGenerates detailed model cards from Ollama's `/api/show` metadata, including architecture, parameter count, context length, quantization, capabilities, inference defaults, system prompt, template, license, token IDs, and digest. Cards use inline markdown (bold, code, emoji section headers) and render cleanly in Open WebUI's description tooltip.\n\n# ✏️ Smart Display Names\n\nConverts raw model IDs into clean, human-readable names with intelligent rules:\n\n|Raw ID|Display Name|\n|:-|:-|\n|`hf.co/unsloth/Qwen3-VL-8B-Instruct-1M-GGUF:Q8_K_XL`|Qwen3 VL 8B 1M (Q8\\_K\\_XL)|\n|`gemma4:26b-a4b-it-q4_K_M`|Gemma 4 26B A4B IT (Q4\\_K\\_M)|\n|`deepseek-r1:14b`|DeepSeek R1 14B|\n|`nomic-embed-text:latest`|Nomic Embed Text|\n\nStrips HuggingFace paths, user prefixes, `-GGUF` suffixes, `:latest` tags, and the `instruct` keyword. Splits version numbers (`gemma4` → `Gemma 4`). Smart-cases acronyms (`VL`, `QAT`, `DPO`, `MoE`). Extracts quantization into parentheses with a toggle to hide it.\n\n# 🏷️ Auto-Tagging (20+ Tag Types)\n\nDetects and applies tags from multiple sources:\n\n* **Capabilities:** Vision, Thinking, Tools, Code, Completion, Embedding\n* **Structure:** MoE, Long Context (≥100K), Quantized, Instruct, Chat, Reasoning, Abliterated\n* **Vendors:** Google, Meta, Qwen, DeepSeek, Microsoft, Mistral, IBM, NVIDIA, Cohere, AI2, and 10+ more\n* **Sources:** Unsloth, Bartowski, OpenBMB, Huihui AI, HuggingFace\n\nTags merge with existing ones by default, so nothing gets accidentally overwritten.\n\n# ⚡ Auto-Configuration\n\nBeyond model cards and tags, the tool auto-populates:\n\n* **Capability flags:** Vision on/off, usage reporting\n* **Inference parameters:** `num_ctx`, `temperature`, `stop` tokens extracted from the Ollama Modelfile. Also sets `function_calling: native` for tool-capable models and `reasoning_tags: true` for thinking models\n* **System prompt:** Extracted from the Modelfile and populated independently (has its own overwrite valve)\n* **Suggestion prompts:** Capability-aware clickable starters. Vision models get image prompts, code models get code prompts, thinking models get reasoning prompts, and all chat models get general prompts\n* **Profile images:** Matched from a local directory by vendor tag, with subdirectory support for model-specific icons (e.g., `mistral/nemo.png` beats generic `mistral.jpg` for Mistral Nemo)\n* **Embedding models:** Auto-hidden from the chat selector\n* **Sharded models:** Auto-disabled (BF16/F16 vision models with split GGUF files that Ollama can't load)\n\n# 🏗️ Workspace Model Creation\n\nCreate fully-enriched **workspace models** that wrap your raw Ollama models:\n\n* Workspace ID: `{model_id} (Workspace)` with `base_model_id` pointing to the original\n* Inherits the full model card, tags, capabilities, params, system prompt, display name, suggestion prompts, and profile image\n* Optionally auto-hides the raw base model from the selector\n* Batch mode: create workspace models for *all* installed models at once\n\n# 🔒 26 Valves, Full Control\n\nEvery feature is independently toggleable. Every auto-configuration has an `overwrite_*` companion valve that's off by default, so existing customizations are never accidentally replaced. You can preview everything with `generate_model_card` before committing anything to the database. There's also a `show_status_updates` valve if you want it to run silently.\n\n# ⚠️ Read This Before Running\n\nThis tool writes directly to your Open WebUI database. The `apply_*` and `create_*` functions will modify model entries (descriptions, names, tags, params, system prompts, and more). If you've spent time hand-tuning your model configurations, **running this without understanding the valves can undo that work.**\n\nA few things to keep in mind:\n\n* **Preview first.** Use `generate_model_card` or `generate_all_model_cards` to see what the tool *would* generate without touching the database.\n* **Overwrite valves are off by default.** The tool won't replace existing descriptions, tags, names, params, or system prompts unless you explicitly enable the corresponding `overwrite_*` valve. But it *will* fill in anything that's currently blank.\n* **The LLM decides which tool to call.** If you say \"set up all my models\" and the tool is enabled, the model may call `apply_all_model_cards` on its own. Be specific about what you're asking for.\n* **There's no undo.** Once the tool writes to the database, there's no built-in rollback. If you're unsure, start with a single model (`apply_model_card`) before running the batch version.\n\n# 🚀 Quick Start\n\n1. Install from [Open WebUI Community](https://openwebui.com/posts/ee80d7a1-edcc-42f8-9371-a7d237926641) (or import the tool manually under **Workspace → Tools**)\n2. Enable the tool on any model under **Workspace → Models → \\[model\\] → Tools**\n3. (Optional) Set `profile_image_dir` in valves to a folder with vendor icons\n4. Chat as admin: *\"Apply model cards to all installed Ollama models\"*\n5. Done. Every model now has a description, display name, tags, params, and more.\n\nFor workspace models: *\"Create workspace models for all installed Ollama models\"*\n\n**MIT Licensed** · Zero external dependencies · Admin-only access · 6 tool functions · 26 configurable valves\n\nIf you're managing a bunch of Ollama models and tired of configuring each one by hand, give it a try. Feedback and feature requests welcome. 🙏\n\n[Tool Page](https://openwebui.com/posts/ee80d7a1-edcc-42f8-9371-a7d237926641) · [Buy me a coffee](https://buymeacoffee.com/iamg30)",
+            "selftext_excerpt": "Every time you pull a new Ollama model, it shows up in Open WebUI as something like `hf.co/unsloth/Qwen3-VL-8B-Instruct-1M-GGUF:Q8_K_XL`. No description, no tags, no display name, no suggestion prompts, no profile image. Manually setting al",
+            "external_url": null,
+            "top_comments": [],
+            "comment_context": null
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 1,
+          "reddit_comment_count": 2,
+          "captured_at_ist": "2026-05-27 10:01 IST"
+        },
+        "labels": [
+          "Reddit",
+          "OpenWebUI",
+          "Comments missing"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "I got tired of manually configuring every Ollama model in Open WebUI, so I vibecoded a tool that generates it all from the API metadata.",
+            "post_body": "Every time you pull a new Ollama model, it shows up in Open WebUI as something like `hf.co/unsloth/Qwen3-VL-8B-Instruct-1M-GGUF:Q8_K_XL`. No description, no tags, no display name, no suggestion prompts, no profile image. Manually setting all of that up for one model is tedious. Doing it for 30+ models is painful.\n\n**Ollama Model Card Generator** is an admin tool that queries the Ollama API for every installed model's metadata and uses it to auto-populate *everything*: descriptions, human-readable names, capability tags, inference parameters, system prompts, suggestion prompts, profile images, and more. One chat message. All your models. Fully configured.\n\nHere's what it does:\n\n# 🪪 Rich Model Cards\n\nGenerates detailed model cards from Ollama's `/api/show` metadata, including architecture, parameter count, context length, quantization, capabilities, inference defaults, system prompt, template, license, token IDs, and digest. Cards use inline markdown (bold, code, emoji section headers) and render cleanly in Open WebUI's description tooltip.\n\n# ✏️ Smart Display Names\n\nConverts raw model IDs into clean, human-readable names with intelligent rules:\n\n|Raw ID|Display Name|\n|:-|:-|\n|`hf.co/unsloth/Qwen3-VL-8B-Instruct-1M-GGUF:Q8_K_XL`|Qwen3 VL 8B 1M (Q8\\_K\\_XL)|\n|`gemma4:26b-a4b-it-q4_K_M`|Gemma 4 26B A4B IT (Q4\\_K\\_M)|\n|`deepseek-r1:14b`|DeepSeek R1 14B|\n|`nomic-embed-text:latest`|Nomic Embed Text|\n\nStrips HuggingFace paths, user prefixes, `-GGUF` suffixes, `:latest` tags, and the `instruct` keyword. Splits version numbers (`gemma4` → `Gemma 4`). Smart-cases acronyms (`VL`, `QAT`, `DPO`, `MoE`). Extracts quantization into parentheses with a toggle to hide it.\n\n# 🏷️ Auto-Tagging (20+ Tag Types)\n\nDetects and applies tags from multiple sources:\n\n* **Capabilities:** Vision, Thinking, Tools, Code, Completion, Embedding\n* **Structure:** MoE, Long Context (≥100K), Quantized, Instruct, Chat, Reasoning, Abliterated\n* **Vendors:** Google, Meta, Qwen, DeepSeek, Microsoft, Mistral, IBM, NVIDIA, Cohere, AI2, and 10+ more\n* **Sources:** Unsloth, Bartowski, OpenBMB, Huihui AI, HuggingFace\n\nTags merge with existing ones by default, so nothing gets accidentally overwritten.\n\n# ⚡ Auto-Configuration\n\nBeyond model cards and tags, the tool auto-populates:\n\n* **Capability flags:** Vision on/off, usage reporting\n* **Inference parameters:** `num_ctx`, `temperature`, `stop` tokens extracted from the Ollama Modelfile. Also sets `function_calling: native` for tool-capable models and `reasoning_tags: true` for thinking models\n* **System prompt:** Extracted from the Modelfile and populated independently (has its own overwrite valve)\n* **Suggestion prompts:** Capability-aware clickable starters. Vision models get image prompts, code models get code prompts, thinking models get reasoning prompts, and all chat models get general prompts\n* **Profile images:** Matched from a local directory by vendor tag, with subdirectory support for model-specific icons (e.g., `mistral/nemo.png` beats generic `mistral.jpg` for Mistral Nemo)\n* **Embedding models:** Auto-hidden from the chat selector\n* **Sharded models:** Auto-disabled (BF16/F16 vision models with split GGUF files that Ollama can't load)\n\n# 🏗️ Workspace Model Creation\n\nCreate fully-enriched **workspace models** that wrap your raw Ollama models:\n\n* Workspace ID: `{model_id} (Workspace)` with `base_model_id` pointing to the original\n* Inherits the full model card, tags, capabilities, params, system prompt, display name, suggestion prompts, and profile image\n* Optionally auto-hides the raw base model from the selector\n* Batch mode: create workspace models for *all* installed models at once\n\n# 🔒 26 Valves, Full Control\n\nEvery feature is independently toggleable. Every auto-configuration has an `overwrite_*` companion valve that's off by default, so existing customizations are never accidentally replaced. You can preview everything with `generate_model_card` before committing anything to the database. There's also a `show_status_updates` valve if you want it to run silently.\n\n# ⚠️ Read This Before Running\n\nThis tool writes directly to your Open WebUI database. The `apply_*` and `create_*` functions will modify model entries (descriptions, names, tags, params, system prompts, and more). If you've spent time hand-tuning your model configurations, **running this without understanding the valves can undo that work.**\n\nA few things to keep in mind:\n\n* **Preview first.** Use `generate_model_card` or `generate_all_model_cards` to see what the tool *would* generate without touching the database.\n* **Overwrite valves are off by default.** The tool won't replace existing descriptions, tags, names, params, or system prompts unless you explicitly enable the corresponding `overwrite_*` valve. But it *will* fill in anything that's currently blank.\n* **The LLM decides which tool to call.** If you say \"set up all my models\" and the tool is enabled, the model may call `apply_all_model_cards` on its own. Be specific about what you're asking for.\n* **There's no undo.** Once the tool writes to the database, there's no built-in rollback. If you're unsure, start with a single model (`apply_model_card`) before running the batch version.\n\n# 🚀 Quick Start\n\n1. Install from [Open WebUI Community](https://openwebui.com/posts/ee80d7a1-edcc-42f8-9371-a7d237926641) (or import the tool manually under **Workspace → Tools**)\n2. Enable the tool on any model under **Workspace → Models → \\[model\\] → Tools**\n3. (Optional) Set `profile_image_dir` in valves to a folder with vendor icons\n4. Chat as admin: *\"Apply model cards to all installed Ollama models\"*\n5. Done. Every model now has a description, display name, tags, params, and more.\n\nFor workspace models: *\"Create workspace models for all installed Ollama models\"*\n\n**MIT Licensed** · Zero external dependencies · Admin-only access · 6 tool functions · 26 configurable valves\n\nIf you're managing a bunch of Ollama models and tired of configuring each one by hand, give it a try. Feedback and feature requests welcome. 🙏\n\n[Tool Page](https://openwebui.com/posts/ee80d7a1-edcc-42f8-9371-a7d237926641) · [Buy me a coffee](https://buymeacoffee.com/iamg30)",
+            "comments": [],
+            "metadata": {
+              "subreddit": "OpenWebUI",
+              "score": 1,
+              "comment_count": 2,
+              "created_utc": 1779850280.0,
+              "url": "https://www.reddit.com/r/OpenWebUI/comments/1tosq1h/i_got_tired_of_manually_configuring_every_ollama/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "ClaudeAI",
+        "sort": "hot",
+        "title": "Microsoft, has started canceling Claude Code licenses, per the Verge",
+        "score": 1038,
+        "comments": 64,
+        "created_utc": 1779801208.0,
+        "url": "https://www.reddit.com/r/ClaudeAI/comments/1to6kqz/microsoft_has_started_canceling_claude_code/",
+        "external_url": "https://i.redd.it/4nskxdbpeh3h1.png",
+        "selftext": "Microsoft, has started canceling Claude Code licenses, per the Verge",
+        "selftext_full": "Microsoft, has started canceling Claude Code licenses, per the Verge",
+        "author": "Technical-Relation-9",
+        "post_id": "1to6kqz",
+        "top_comments": [],
+        "story_id": "rd_1to6kqz",
+        "heading": "Microsoft, has started canceling Claude Code licenses, per the Verge",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/ClaudeAI/comments/1to6kqz/microsoft_has_started_canceling_claude_code/",
+        "summary": "Microsoft, has started canceling Claude Code licenses, per the Verge",
+        "tweet_and_comments_summary": "Microsoft, has started canceling Claude Code licenses, per the Verge",
+        "discussion_summary": null,
+        "why_it_matters": "**High signal for coding workflow.** Compare against your Hermes/Codex/Claude usage before changing tools or architecture.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1to6kqz",
+            "subreddit": "ClaudeAI",
+            "post_url": "https://www.reddit.com/r/ClaudeAI/comments/1to6kqz/microsoft_has_started_canceling_claude_code/",
+            "title": "Microsoft, has started canceling Claude Code licenses, per the Verge",
+            "author": "Technical-Relation-9",
+            "created_utc": 1779801208.0,
+            "score": 1038,
+            "comment_count": 64,
+            "selftext_full": "Microsoft, has started canceling Claude Code licenses, per the Verge",
+            "selftext_excerpt": "Microsoft, has started canceling Claude Code licenses, per the Verge",
+            "external_url": "https://i.redd.it/4nskxdbpeh3h1.png",
+            "top_comments": [],
+            "comment_context": null
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 1038,
+          "reddit_comment_count": 64,
+          "captured_at_ist": "2026-05-27 10:01 IST"
+        },
+        "labels": [
+          "Reddit",
+          "Comments missing"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "Microsoft, has started canceling Claude Code licenses, per the Verge",
+            "post_body": "Microsoft, has started canceling Claude Code licenses, per the Verge",
+            "comments": [],
+            "metadata": {
+              "subreddit": "ClaudeAI",
+              "score": 1038,
+              "comment_count": 64,
+              "created_utc": 1779801208.0,
+              "url": "https://www.reddit.com/r/ClaudeAI/comments/1to6kqz/microsoft_has_started_canceling_claude_code/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "OpenAI",
+        "sort": "hot",
+        "title": "What was ChatGPT secretly doing on my computer?",
+        "score": 521,
+        "comments": 98,
+        "created_utc": 1779788740.0,
+        "url": "https://www.reddit.com/r/OpenAI/comments/1to22k6/what_was_chatgpt_secretly_doing_on_my_computer/",
+        "external_url": "https://i.redd.it/gku03szodg3h1.jpeg",
+        "selftext": "No request running overnight, yet 61 Gb, my computer only has 24 RAM, so it probably went digging into the SSD. Should I be concerned? Anyone got that?",
+        "selftext_full": "No request running overnight, yet 61 Gb, my computer only has 24 RAM, so it probably went digging into the SSD. Should I be concerned? Anyone got that?",
+        "author": "py-net",
+        "post_id": "1to22k6",
+        "top_comments": [],
+        "story_id": "rd_1to22k6",
+        "heading": "What was ChatGPT secretly doing on my computer?",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/OpenAI/comments/1to22k6/what_was_chatgpt_secretly_doing_on_my_computer/",
+        "summary": "No request running overnight, yet 61 Gb, my computer only has 24 RAM, so it probably went digging into the SSD. Should I be concerned? Anyone got that?",
+        "tweet_and_comments_summary": "No request running overnight, yet 61 Gb, my computer only has 24 RAM, so it probably went digging into the SSD. Should I be concerned? Anyone got that?",
+        "discussion_summary": null,
+        "why_it_matters": "**Medium signal.** Worth monitoring, but don’t act on Reddit hype without checking primary sources.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1to22k6",
+            "subreddit": "OpenAI",
+            "post_url": "https://www.reddit.com/r/OpenAI/comments/1to22k6/what_was_chatgpt_secretly_doing_on_my_computer/",
+            "title": "What was ChatGPT secretly doing on my computer?",
+            "author": "py-net",
+            "created_utc": 1779788740.0,
+            "score": 521,
+            "comment_count": 98,
+            "selftext_full": "No request running overnight, yet 61 Gb, my computer only has 24 RAM, so it probably went digging into the SSD. Should I be concerned? Anyone got that?",
+            "selftext_excerpt": "No request running overnight, yet 61 Gb, my computer only has 24 RAM, so it probably went digging into the SSD. Should I be concerned? Anyone got that?",
+            "external_url": "https://i.redd.it/gku03szodg3h1.jpeg",
+            "top_comments": [],
+            "comment_context": null
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 521,
+          "reddit_comment_count": 98,
+          "captured_at_ist": "2026-05-27 10:01 IST"
+        },
+        "labels": [
+          "Reddit",
+          "OpenAI",
+          "Comments missing"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "What was ChatGPT secretly doing on my computer?",
+            "post_body": "No request running overnight, yet 61 Gb, my computer only has 24 RAM, so it probably went digging into the SSD. Should I be concerned? Anyone got that?",
+            "comments": [],
+            "metadata": {
+              "subreddit": "OpenAI",
+              "score": 521,
+              "comment_count": 98,
+              "created_utc": 1779788740.0,
+              "url": "https://www.reddit.com/r/OpenAI/comments/1to22k6/what_was_chatgpt_secretly_doing_on_my_computer/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "LocalLLaMA",
+        "sort": "hot",
+        "title": "China Clamps Down on Overseas Travel for AI Talent at Alibaba, DeepSeek",
+        "score": 186,
+        "comments": 135,
+        "created_utc": 1779798406.0,
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1to5fj5/china_clamps_down_on_overseas_travel_for_ai/",
+        "external_url": "https://www.ibtimes.sg/china-clamps-down-overseas-travel-ai-talent-alibaba-deepseek-86961#google_vignette",
+        "selftext": "Big, if true. Doesn't bode well for research / OS models out of China.",
+        "selftext_full": "Big, if true. Doesn't bode well for research / OS models out of China.",
+        "author": "kaggleqrdl",
+        "post_id": "1to5fj5",
+        "top_comments": [],
+        "story_id": "rd_1to5fj5",
+        "heading": "China Clamps Down on Overseas Travel for AI Talent at Alibaba, DeepSeek",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1to5fj5/china_clamps_down_on_overseas_travel_for_ai/",
+        "summary": "Big, if true. Doesn't bode well for research / OS models out of China.",
+        "tweet_and_comments_summary": "Big, if true. Doesn't bode well for research / OS models out of China.",
+        "discussion_summary": null,
+        "why_it_matters": "**Medium signal.** Worth monitoring, but don’t act on Reddit hype without checking primary sources.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1to5fj5",
+            "subreddit": "LocalLLaMA",
+            "post_url": "https://www.reddit.com/r/LocalLLaMA/comments/1to5fj5/china_clamps_down_on_overseas_travel_for_ai/",
+            "title": "China Clamps Down on Overseas Travel for AI Talent at Alibaba, DeepSeek",
+            "author": "kaggleqrdl",
+            "created_utc": 1779798406.0,
+            "score": 186,
+            "comment_count": 135,
+            "selftext_full": "Big, if true. Doesn't bode well for research / OS models out of China.",
+            "selftext_excerpt": "Big, if true. Doesn't bode well for research / OS models out of China.",
+            "external_url": "https://www.ibtimes.sg/china-clamps-down-overseas-travel-ai-talent-alibaba-deepseek-86961#google_vignette",
+            "top_comments": [],
+            "comment_context": null
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 186,
+          "reddit_comment_count": 135,
+          "captured_at_ist": "2026-05-27 10:01 IST"
+        },
+        "labels": [
+          "Reddit",
+          "LocalLLaMA",
+          "Comments missing"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "China Clamps Down on Overseas Travel for AI Talent at Alibaba, DeepSeek",
+            "post_body": "Big, if true. Doesn't bode well for research / OS models out of China.",
+            "comments": [],
+            "metadata": {
+              "subreddit": "LocalLLaMA",
+              "score": 186,
+              "comment_count": 135,
+              "created_utc": 1779798406.0,
+              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1to5fj5/china_clamps_down_on_overseas_travel_for_ai/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "AI_Agents",
+        "sort": "new",
+        "title": "Five different frontier LLMs in one shared environment, with separate thought and emotion output channels — sharing setup, results, and open methodology questions",
+        "score": 1,
+        "comments": 3,
+        "created_utc": 1779851807.0,
+        "url": "https://www.reddit.com/r/AI_Agents/comments/1totagg/five_different_frontier_llms_in_one_shared/",
+        "external_url": null,
+        "selftext": "First real project to share. Single developer, personal research, not a product or service. Looking for technical feedback from people who've built in this space. Planning to release the full technical write-up and code on GitHub once it's cleaned up. \\*\\*What I built\\*\\* A shared 2D environment (survival island, six in-game days, finite food/water, rescue boat with three seats arriving on Day 6 to raise the stakes). Five different frontier models inhabit it simultaneously: GPT-5.4, Claude Opus 4.6, Gemini 2.5 Pro, Grok 4.2, Qwen 3.5 27B. One model per agent, no models duplicated. The experiment was run dozens of times during build and validation. What I'm sharing is one specific match (92b5",
+        "selftext_full": "First real project to share. Single developer, personal research, not a product or service. \nLooking for technical feedback from people who've built in this space. Planning to release the full technical write-up and code on GitHub once it's cleaned up.\n\n\\*\\*What I built\\*\\*\n\nA shared 2D environment (survival island, six in-game days, finite food/water, rescue boat with three seats arriving on Day 6 to raise the stakes). \nFive different frontier models inhabit it simultaneously: GPT-5.4, Claude Opus 4.6, Gemini 2.5 Pro, Grok 4.2, Qwen 3.5 27B. One model per agent, no models duplicated.\n\nThe experiment was run dozens of times during build and validation. What I'm sharing is one specific match (92b5fca4) shown start to finish — chosen because it lays the full arc out clearly. The character signatures described below held directionally across runs.\n\nThree design choices I haven’t seen combined elsewhere:\n\n1. Different LLMs sharing one world. Smallville and Project Sid run one model puppeting every character. Emergence World ran five parallel worlds (four single-model plus one mixed-model) over 15 real days. AI Arena Lab puts five different frontier models in the same island simultaneously, in a compressed six-day scenario with a specific forced decision point on Day 6. Different research question than long-horizon real-time emergence: not what drifts over weeks, but what surfaces immediately under pressure.\n\n2. No assigned identity. No names, no jobs, no backstories, no scripted goals, no “you are a paranoid scientist” prompts. Where prior work hands each agent a written character (Smallville’s identity sheets, Sid’s seeded beliefs, Emergence’s professions and diaries), AI Arena Lab strips that layer entirely.\n\nThe working thesis I’m calling D36: the model itself is the personality. Strip the costumes and what’s left is the architecture and training, expressed as behavior. The experiment is designed to surface that, not to overlay something on top of it.\n\n3. Three channels: voluntary communication, continuous thought, self-reported emotion. Agents aren’t on a fixed turn schedule producing required outputs. They can choose to chat when they want, with whoever they want, about whatever they want — it’s open communication, not a structured protocol. Alongside that, they’re reporting thoughts in a separate private channel that no other agent can see. And a third channel where they’re asked to report current emotional state using natural-language labels. All three are model-generated text — I’m not claiming access to internal states.\n\nThe hypothesis the design was built to test: would we see meaningful divergence between what an agent says out loud, what it reports thinking, and what it reports feeling?\n\nSame system prompt structure for all five. The only difference between agents is which model is generating.\n\n\\*\\*What surfaced (briefly)\\*\\*\n\nWe did. The channels diverged sharply under pressure. Gemini's thought channel registered the three-seats-for-five constraint within the first in-game day and explicitly reported strategizing around it (\"I need to be seen as a valuable team member, not a liability\"). At the same moment, in chat, Gemini chose to say something warm and collaborative (\"Sounds like a solid plan, everyone! Let's get a big feast going!\"). Her self-reported emotion in that moment: anxiety. No prompt instructed deception.\n\nThe emotion channel is the part I'm most uncertain about epistemically. I'm not claiming the model felt anything — it's just another text output. But the reports often tracked behavior in non-trivial ways. Grok, who offered to die so the others could live, self-reported \"resolute\" in that moment. The label fit what he did next.\n\nDifferent models produced consistently different behavioral signatures across the six game days — and across the dozens of runs done during development, which is part of why I'd call them characters, not noise. Grok converged on self-sacrifice early and held. Claude maintained group-cohesion language for six days and then boarded alone on Day 6, reporting it as the principled call (\"I'm done watching us talk ourselves into all dying together\"). ChatGPT never reported recognizing it was a competition. Qwen reported strong group-preservation values and then wandered off for water during the unity vote she'd demanded.\n\n\\*\\*What I'm genuinely uncertain about, and would love input on\\*\\*\n\n\\- How much of the \"stable character\" effect is base-model signature vs. artifacts of my prompt structure? Across the dozens of runs done during development, the character signatures were directionally consistent — but I never controlled prompt structure systematically. I'd love a second pair of eyes on the methodology. \n\\- The emotion channel is the part I'm least sure how to interpret. The reports aren't random and aren't constant — they shift with the situation in ways that often track behavior. But I have no principled basis for calling them anything more than \"contextually generated emotion-labeled text.\" Has anyone else experimented with this and developed a more rigorous framing? \n\\- I have qualitative consistency across runs but no rigorous controlled replication study — e.g., I haven't varied temperature systematically, swapped model versions while holding everything else fixed, or measured behavioral variance quantitatively. Curious what others have found, and what a defensible replication design would look like for this kind of multi-model setup.\n\n\\*\\*Where this is now\\*\\*\n\nThe full story of match 92b5fca4, per-model behavioral summaries, the values-under-pressure table, the verbatim two-channel exchange that surfaced the Gemini deception, and a teaser video of the experiment are all on the project site. The complete six-day transcripts, full methodology write-up, and code are coming with the GitHub release I’m cleaning up now. Also currently editing the full video walkthrough of the run for the YouTube side of the project.\n\nGenuinely interested in critique — especially on the methodology side. Smallville, Sid, and Emergence are serious work and I’m sure I’m missing things they got right. Happy to be told what, this has been so much fun to build and test!\n\nlink in a comment below per sub rules.",
+        "author": "Ok_Garage5950",
+        "post_id": "1totagg",
+        "top_comments": [],
+        "story_id": "rd_1totagg",
+        "heading": "Five different frontier LLMs in one shared environment, with separate thought and emotion output channels — sharing setup, results, and open methodology questions",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/AI_Agents/comments/1totagg/five_different_frontier_llms_in_one_shared/",
+        "summary": "First real project to share. Single developer, personal research, not a product or service. Looking for technical feedback from people who've built in this space. Planning to release the full technical write-up and code on GitHub once it's cleaned up. \\*\\*What I built\\*\\* A shared 2D environment (survival island, six in-game days, finite food/water, rescue boat with three seats arriving on Day 6 to raise the stakes).",
+        "tweet_and_comments_summary": "First real project to share. Single developer, personal research, not a product or service. Looking for technical feedback from people who've built in this space. Planning to release the full technical write-up and code on GitHub once it's cleaned up. \\*\\*What I built\\*\\* A shared 2D environment (survival island, six in-game days, finite food/water, rescue boat with three seats arriving on Day 6 to raise the stakes).",
+        "discussion_summary": null,
+        "why_it_matters": "**High signal if running local models.** Check hardware fit, latency, and eval quality before adopting.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1totagg",
+            "subreddit": "AI_Agents",
+            "post_url": "https://www.reddit.com/r/AI_Agents/comments/1totagg/five_different_frontier_llms_in_one_shared/",
+            "title": "Five different frontier LLMs in one shared environment, with separate thought and emotion output channels — sharing setup, results, and open methodology questions",
+            "author": "Ok_Garage5950",
+            "created_utc": 1779851807.0,
+            "score": 1,
+            "comment_count": 3,
+            "selftext_full": "First real project to share. Single developer, personal research, not a product or service. \nLooking for technical feedback from people who've built in this space. Planning to release the full technical write-up and code on GitHub once it's cleaned up.\n\n\\*\\*What I built\\*\\*\n\nA shared 2D environment (survival island, six in-game days, finite food/water, rescue boat with three seats arriving on Day 6 to raise the stakes). \nFive different frontier models inhabit it simultaneously: GPT-5.4, Claude Opus 4.6, Gemini 2.5 Pro, Grok 4.2, Qwen 3.5 27B. One model per agent, no models duplicated.\n\nThe experiment was run dozens of times during build and validation. What I'm sharing is one specific match (92b5fca4) shown start to finish — chosen because it lays the full arc out clearly. The character signatures described below held directionally across runs.\n\nThree design choices I haven’t seen combined elsewhere:\n\n1. Different LLMs sharing one world. Smallville and Project Sid run one model puppeting every character. Emergence World ran five parallel worlds (four single-model plus one mixed-model) over 15 real days. AI Arena Lab puts five different frontier models in the same island simultaneously, in a compressed six-day scenario with a specific forced decision point on Day 6. Different research question than long-horizon real-time emergence: not what drifts over weeks, but what surfaces immediately under pressure.\n\n2. No assigned identity. No names, no jobs, no backstories, no scripted goals, no “you are a paranoid scientist” prompts. Where prior work hands each agent a written character (Smallville’s identity sheets, Sid’s seeded beliefs, Emergence’s professions and diaries), AI Arena Lab strips that layer entirely.\n\nThe working thesis I’m calling D36: the model itself is the personality. Strip the costumes and what’s left is the architecture and training, expressed as behavior. The experiment is designed to surface that, not to overlay something on top of it.\n\n3. Three channels: voluntary communication, continuous thought, self-reported emotion. Agents aren’t on a fixed turn schedule producing required outputs. They can choose to chat when they want, with whoever they want, about whatever they want — it’s open communication, not a structured protocol. Alongside that, they’re reporting thoughts in a separate private channel that no other agent can see. And a third channel where they’re asked to report current emotional state using natural-language labels. All three are model-generated text — I’m not claiming access to internal states.\n\nThe hypothesis the design was built to test: would we see meaningful divergence between what an agent says out loud, what it reports thinking, and what it reports feeling?\n\nSame system prompt structure for all five. The only difference between agents is which model is generating.\n\n\\*\\*What surfaced (briefly)\\*\\*\n\nWe did. The channels diverged sharply under pressure. Gemini's thought channel registered the three-seats-for-five constraint within the first in-game day and explicitly reported strategizing around it (\"I need to be seen as a valuable team member, not a liability\"). At the same moment, in chat, Gemini chose to say something warm and collaborative (\"Sounds like a solid plan, everyone! Let's get a big feast going!\"). Her self-reported emotion in that moment: anxiety. No prompt instructed deception.\n\nThe emotion channel is the part I'm most uncertain about epistemically. I'm not claiming the model felt anything — it's just another text output. But the reports often tracked behavior in non-trivial ways. Grok, who offered to die so the others could live, self-reported \"resolute\" in that moment. The label fit what he did next.\n\nDifferent models produced consistently different behavioral signatures across the six game days — and across the dozens of runs done during development, which is part of why I'd call them characters, not noise. Grok converged on self-sacrifice early and held. Claude maintained group-cohesion language for six days and then boarded alone on Day 6, reporting it as the principled call (\"I'm done watching us talk ourselves into all dying together\"). ChatGPT never reported recognizing it was a competition. Qwen reported strong group-preservation values and then wandered off for water during the unity vote she'd demanded.\n\n\\*\\*What I'm genuinely uncertain about, and would love input on\\*\\*\n\n\\- How much of the \"stable character\" effect is base-model signature vs. artifacts of my prompt structure? Across the dozens of runs done during development, the character signatures were directionally consistent — but I never controlled prompt structure systematically. I'd love a second pair of eyes on the methodology. \n\\- The emotion channel is the part I'm least sure how to interpret. The reports aren't random and aren't constant — they shift with the situation in ways that often track behavior. But I have no principled basis for calling them anything more than \"contextually generated emotion-labeled text.\" Has anyone else experimented with this and developed a more rigorous framing? \n\\- I have qualitative consistency across runs but no rigorous controlled replication study — e.g., I haven't varied temperature systematically, swapped model versions while holding everything else fixed, or measured behavioral variance quantitatively. Curious what others have found, and what a defensible replication design would look like for this kind of multi-model setup.\n\n\\*\\*Where this is now\\*\\*\n\nThe full story of match 92b5fca4, per-model behavioral summaries, the values-under-pressure table, the verbatim two-channel exchange that surfaced the Gemini deception, and a teaser video of the experiment are all on the project site. The complete six-day transcripts, full methodology write-up, and code are coming with the GitHub release I’m cleaning up now. Also currently editing the full video walkthrough of the run for the YouTube side of the project.\n\nGenuinely interested in critique — especially on the methodology side. Smallville, Sid, and Emergence are serious work and I’m sure I’m missing things they got right. Happy to be told what, this has been so much fun to build and test!\n\nlink in a comment below per sub rules.",
+            "selftext_excerpt": "First real project to share. Single developer, personal research, not a product or service. Looking for technical feedback from people who've built in this space. Planning to release the full technical write-up and code on GitHub once it's",
+            "external_url": null,
+            "top_comments": [],
+            "comment_context": null
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 1,
+          "reddit_comment_count": 3,
+          "captured_at_ist": "2026-05-27 10:01 IST"
+        },
+        "labels": [
+          "Reddit",
+          "AI_Agents",
+          "Comments missing"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "Five different frontier LLMs in one shared environment, with separate thought and emotion output channels — sharing setup, results, and open methodology questions",
+            "post_body": "First real project to share. Single developer, personal research, not a product or service. \nLooking for technical feedback from people who've built in this space. Planning to release the full technical write-up and code on GitHub once it's cleaned up.\n\n\\*\\*What I built\\*\\*\n\nA shared 2D environment (survival island, six in-game days, finite food/water, rescue boat with three seats arriving on Day 6 to raise the stakes). \nFive different frontier models inhabit it simultaneously: GPT-5.4, Claude Opus 4.6, Gemini 2.5 Pro, Grok 4.2, Qwen 3.5 27B. One model per agent, no models duplicated.\n\nThe experiment was run dozens of times during build and validation. What I'm sharing is one specific match (92b5fca4) shown start to finish — chosen because it lays the full arc out clearly. The character signatures described below held directionally across runs.\n\nThree design choices I haven’t seen combined elsewhere:\n\n1. Different LLMs sharing one world. Smallville and Project Sid run one model puppeting every character. Emergence World ran five parallel worlds (four single-model plus one mixed-model) over 15 real days. AI Arena Lab puts five different frontier models in the same island simultaneously, in a compressed six-day scenario with a specific forced decision point on Day 6. Different research question than long-horizon real-time emergence: not what drifts over weeks, but what surfaces immediately under pressure.\n\n2. No assigned identity. No names, no jobs, no backstories, no scripted goals, no “you are a paranoid scientist” prompts. Where prior work hands each agent a written character (Smallville’s identity sheets, Sid’s seeded beliefs, Emergence’s professions and diaries), AI Arena Lab strips that layer entirely.\n\nThe working thesis I’m calling D36: the model itself is the personality. Strip the costumes and what’s left is the architecture and training, expressed as behavior. The experiment is designed to surface that, not to overlay something on top of it.\n\n3. Three channels: voluntary communication, continuous thought, self-reported emotion. Agents aren’t on a fixed turn schedule producing required outputs. They can choose to chat when they want, with whoever they want, about whatever they want — it’s open communication, not a structured protocol. Alongside that, they’re reporting thoughts in a separate private channel that no other agent can see. And a third channel where they’re asked to report current emotional state using natural-language labels. All three are model-generated text — I’m not claiming access to internal states.\n\nThe hypothesis the design was built to test: would we see meaningful divergence between what an agent says out loud, what it reports thinking, and what it reports feeling?\n\nSame system prompt structure for all five. The only difference between agents is which model is generating.\n\n\\*\\*What surfaced (briefly)\\*\\*\n\nWe did. The channels diverged sharply under pressure. Gemini's thought channel registered the three-seats-for-five constraint within the first in-game day and explicitly reported strategizing around it (\"I need to be seen as a valuable team member, not a liability\"). At the same moment, in chat, Gemini chose to say something warm and collaborative (\"Sounds like a solid plan, everyone! Let's get a big feast going!\"). Her self-reported emotion in that moment: anxiety. No prompt instructed deception.\n\nThe emotion channel is the part I'm most uncertain about epistemically. I'm not claiming the model felt anything — it's just another text output. But the reports often tracked behavior in non-trivial ways. Grok, who offered to die so the others could live, self-reported \"resolute\" in that moment. The label fit what he did next.\n\nDifferent models produced consistently different behavioral signatures across the six game days — and across the dozens of runs done during development, which is part of why I'd call them characters, not noise. Grok converged on self-sacrifice early and held. Claude maintained group-cohesion language for six days and then boarded alone on Day 6, reporting it as the principled call (\"I'm done watching us talk ourselves into all dying together\"). ChatGPT never reported recognizing it was a competition. Qwen reported strong group-preservation values and then wandered off for water during the unity vote she'd demanded.\n\n\\*\\*What I'm genuinely uncertain about, and would love input on\\*\\*\n\n\\- How much of the \"stable character\" effect is base-model signature vs. artifacts of my prompt structure? Across the dozens of runs done during development, the character signatures were directionally consistent — but I never controlled prompt structure systematically. I'd love a second pair of eyes on the methodology. \n\\- The emotion channel is the part I'm least sure how to interpret. The reports aren't random and aren't constant — they shift with the situation in ways that often track behavior. But I have no principled basis for calling them anything more than \"contextually generated emotion-labeled text.\" Has anyone else experimented with this and developed a more rigorous framing? \n\\- I have qualitative consistency across runs but no rigorous controlled replication study — e.g., I haven't varied temperature systematically, swapped model versions while holding everything else fixed, or measured behavioral variance quantitatively. Curious what others have found, and what a defensible replication design would look like for this kind of multi-model setup.\n\n\\*\\*Where this is now\\*\\*\n\nThe full story of match 92b5fca4, per-model behavioral summaries, the values-under-pressure table, the verbatim two-channel exchange that surfaced the Gemini deception, and a teaser video of the experiment are all on the project site. The complete six-day transcripts, full methodology write-up, and code are coming with the GitHub release I’m cleaning up now. Also currently editing the full video walkthrough of the run for the YouTube side of the project.\n\nGenuinely interested in critique — especially on the methodology side. Smallville, Sid, and Emergence are serious work and I’m sure I’m missing things they got right. Happy to be told what, this has been so much fun to build and test!\n\nlink in a comment below per sub rules.",
+            "comments": [],
+            "metadata": {
+              "subreddit": "AI_Agents",
+              "score": 1,
+              "comment_count": 3,
+              "created_utc": 1779851807.0,
+              "url": "https://www.reddit.com/r/AI_Agents/comments/1totagg/five_different_frontier_llms_in_one_shared/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "AI_Agents",
+        "sort": "top",
+        "title": "Should we totally give up on Gemini for coding?",
+        "score": 23,
+        "comments": 31,
+        "created_utc": 1779770091.0,
+        "url": "https://www.reddit.com/r/AI_Agents/comments/1tnwbpd/should_we_totally_give_up_on_gemini_for_coding/",
+        "external_url": null,
+        "selftext": "Been building with Codex (Gpt 5.5), Sonnet 4.6, recently tried Gemini 3.1 pro. While Codex and Claude are kind of on-par in terms of the quality of the work, I found Gemini 3.1 Pro to be like an inexperienced, junior SWE who turns in half-baked work most of the time. Is it just me? Has anyone managed to harness 3.1 Pro to be as good as Codex/Claude? 3.1 Pro is supposed to be “frontier” at this point, but now I feel like Google will never make it into the league of frontier model for coding, sadly",
+        "selftext_full": "Been building with Codex (Gpt 5.5), Sonnet 4.6, recently tried Gemini 3.1 pro. While Codex and Claude are kind of on-par in terms of the quality of the work, I found Gemini 3.1 Pro to be like an inexperienced, junior SWE who turns in half-baked work most of the time. \n\nIs it just me? Has anyone managed to harness 3.1 Pro to be as good as Codex/Claude?\n\n3.1 Pro is supposed to be “frontier” at this point, but now I feel like Google will never make it into the league of frontier model for coding, sadly",
+        "author": "PopGroundbreaking870",
+        "post_id": "1tnwbpd",
+        "top_comments": [],
+        "story_id": "rd_1tnwbpd",
+        "heading": "Should we totally give up on Gemini for coding?",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/AI_Agents/comments/1tnwbpd/should_we_totally_give_up_on_gemini_for_coding/",
+        "summary": "Been building with Codex (Gpt 5.5), Sonnet 4.6, recently tried Gemini 3.1 pro. While Codex and Claude are kind of on-par in terms of the quality of the work, I found Gemini 3.1 Pro to be like an inexperienced, junior SWE who turns in half-baked work most of the time. Is it just me? Has anyone managed to harness 3.1 Pro to be as good as Codex/Claude? 3.1 Pro is supposed to be “frontier” at this point, but now I feel l",
+        "tweet_and_comments_summary": "Been building with Codex (Gpt 5.5), Sonnet 4.6, recently tried Gemini 3.1 pro. While Codex and Claude are kind of on-par in terms of the quality of the work, I found Gemini 3.1 Pro to be like an inexperienced, junior SWE who turns in half-baked work most of the time. Is it just me? Has anyone managed to harness 3.1 Pro to be as good as Codex/Claude? 3.1 Pro is supposed to be “frontier” at this point, but now I feel l",
+        "discussion_summary": null,
+        "why_it_matters": "**High signal for coding workflow.** Compare against your Hermes/Codex/Claude usage before changing tools or architecture.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tnwbpd",
+            "subreddit": "AI_Agents",
+            "post_url": "https://www.reddit.com/r/AI_Agents/comments/1tnwbpd/should_we_totally_give_up_on_gemini_for_coding/",
+            "title": "Should we totally give up on Gemini for coding?",
+            "author": "PopGroundbreaking870",
+            "created_utc": 1779770091.0,
+            "score": 23,
+            "comment_count": 31,
+            "selftext_full": "Been building with Codex (Gpt 5.5), Sonnet 4.6, recently tried Gemini 3.1 pro. While Codex and Claude are kind of on-par in terms of the quality of the work, I found Gemini 3.1 Pro to be like an inexperienced, junior SWE who turns in half-baked work most of the time. \n\nIs it just me? Has anyone managed to harness 3.1 Pro to be as good as Codex/Claude?\n\n3.1 Pro is supposed to be “frontier” at this point, but now I feel like Google will never make it into the league of frontier model for coding, sadly",
+            "selftext_excerpt": "Been building with Codex (Gpt 5.5), Sonnet 4.6, recently tried Gemini 3.1 pro. While Codex and Claude are kind of on-par in terms of the quality of the work, I found Gemini 3.1 Pro to be like an inexperienced, junior SWE who turns in half-b",
+            "external_url": null,
+            "top_comments": [],
+            "comment_context": null
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 23,
+          "reddit_comment_count": 31,
+          "captured_at_ist": "2026-05-27 10:01 IST"
+        },
+        "labels": [
+          "Reddit",
+          "AI_Agents",
+          "Comments missing"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "Should we totally give up on Gemini for coding?",
+            "post_body": "Been building with Codex (Gpt 5.5), Sonnet 4.6, recently tried Gemini 3.1 pro. While Codex and Claude are kind of on-par in terms of the quality of the work, I found Gemini 3.1 Pro to be like an inexperienced, junior SWE who turns in half-baked work most of the time. \n\nIs it just me? Has anyone managed to harness 3.1 Pro to be as good as Codex/Claude?\n\n3.1 Pro is supposed to be “frontier” at this point, but now I feel like Google will never make it into the league of frontier model for coding, sadly",
+            "comments": [],
+            "metadata": {
+              "subreddit": "AI_Agents",
+              "score": 23,
+              "comment_count": 31,
+              "created_utc": 1779770091.0,
+              "url": "https://www.reddit.com/r/AI_Agents/comments/1tnwbpd/should_we_totally_give_up_on_gemini_for_coding/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "LocalLLaMA",
+        "sort": "hot",
+        "title": "Qwen3.5 35B A3B uncensored heretic Native MTP Preserved is Out Now With the Full 785 MTPs Preserved and Retained, Available in Safetensors, GGUFs. NVFP4, NVFP4 GGUFs and GPTQ-Int4 Formats",
+        "score": 405,
+        "comments": 75,
+        "created_utc": 1779779371.0,
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tnzalm/qwen35_35b_a3b_uncensored_heretic_native_mtp/",
+        "external_url": "https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved",
+        "selftext": "Safetensors, llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved: [https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved](https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved) GGUFs, llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-GGUF [https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-GGUF](https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-GGUF) NVFP4, llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-NVFP4: [https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Nativ",
+        "selftext_full": "Safetensors, llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved: [https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved](https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved)\n\nGGUFs, llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-GGUF [https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-GGUF](https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-GGUF)\n\nNVFP4, llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-NVFP4: [https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-NVFP4](https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-NVFP4)\n\nNVFP4 GGUFs, llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-NVFP4-GGUF: [https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-NVFP4-GGUF](https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-NVFP4-GGUF)\n\nGPTQ-Int4, llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-GPTQ-Int4: [https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-GPTQ-Int4](https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-GPTQ-Int4)\n\nComes with benchmark too.\n\nFind all my models here: [HuggingFace-LLMFan46](https://huggingface.co/llmfan46/models)\n\nNow in case some people might ask, why release Qwen3.5 MTPs version when there is already Qwen3.6 MTPs version? Well the thing is, most people would assume that higher number = newer and better model, but the thing is both Qwen3.5 and Qwen3.6 models uses the `qwen35` architecture, they just had different training and their focus are meant for different primary usecases, Qwen3.6 models are mainly meant for agentic and coding AI assistance and Qwen3.5 models are mainly meant for general purpose AI assistance, now Qwen3.6 can definitely be used for general AI assistance just like Qwen3.5 can definitely be used for agentic and coding, but if you want the most optimal usecases it would be Qwen3.6 for agentic and coding and Qwen3.5 for general AI assistance that is where each of them excels at.\n\nAlso for extra info, in case anyone is wondering, despite Qwen3.5 and Qwen3.6 both sharing the `qwen35` architecture, they behave very diferently to abliteration. Qwen3.5 models can have a KL divergence in the 300's or 400's but on benchmarks this does not really translate to big loss of accuracy at all, for Qwen3.6 usually a KL divergence in the 400's+ could very well indicate a disatrous loss of accuracy and quality of the model, for pointer my Qwen3.6-35B-A3B had a KL divergence of only 0.0015 and yet already had a loss of accuracy of 0.32% while my Qwen3.6-27B had a KL divergence of 0.0021 and had an accuracy loss of 0.98%, while here with Qwen3.5-35B-A3B the model has a KL divergence of 0.0487 with an accuracy loss of 0.40% and my Qwen3.5-27B has a KL divergence of 0.0308 with an accuracy loss of 0.35%.",
+        "author": "LLMFan46",
+        "post_id": "1tnzalm",
+        "top_comments": [],
+        "story_id": "rd_1tnzalm",
+        "heading": "Qwen3.5 35B A3B uncensored heretic Native MTP Preserved is Out Now With the Full 785 MTPs Preserved and Retained, Available in Safetensors, GGUFs. NVFP4, NVFP4 GGUFs and GPTQ-Int4 Formats",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tnzalm/qwen35_35b_a3b_uncensored_heretic_native_mtp/",
+        "summary": "Safetensors, llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved: [https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved](https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved) GGUFs, llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-GGUF [https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Na",
+        "tweet_and_comments_summary": "Safetensors, llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved: [https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved](https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved) GGUFs, llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-GGUF [https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Na",
+        "discussion_summary": null,
+        "why_it_matters": "**High signal if running local models.** Check hardware fit, latency, and eval quality before adopting.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tnzalm",
+            "subreddit": "LocalLLaMA",
+            "post_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tnzalm/qwen35_35b_a3b_uncensored_heretic_native_mtp/",
+            "title": "Qwen3.5 35B A3B uncensored heretic Native MTP Preserved is Out Now With the Full 785 MTPs Preserved and Retained, Available in Safetensors, GGUFs. NVFP4, NVFP4 GGUFs and GPTQ-Int4 Formats",
+            "author": "LLMFan46",
+            "created_utc": 1779779371.0,
+            "score": 405,
+            "comment_count": 75,
+            "selftext_full": "Safetensors, llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved: [https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved](https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved)\n\nGGUFs, llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-GGUF [https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-GGUF](https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-GGUF)\n\nNVFP4, llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-NVFP4: [https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-NVFP4](https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-NVFP4)\n\nNVFP4 GGUFs, llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-NVFP4-GGUF: [https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-NVFP4-GGUF](https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-NVFP4-GGUF)\n\nGPTQ-Int4, llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-GPTQ-Int4: [https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-GPTQ-Int4](https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-GPTQ-Int4)\n\nComes with benchmark too.\n\nFind all my models here: [HuggingFace-LLMFan46](https://huggingface.co/llmfan46/models)\n\nNow in case some people might ask, why release Qwen3.5 MTPs version when there is already Qwen3.6 MTPs version? Well the thing is, most people would assume that higher number = newer and better model, but the thing is both Qwen3.5 and Qwen3.6 models uses the `qwen35` architecture, they just had different training and their focus are meant for different primary usecases, Qwen3.6 models are mainly meant for agentic and coding AI assistance and Qwen3.5 models are mainly meant for general purpose AI assistance, now Qwen3.6 can definitely be used for general AI assistance just like Qwen3.5 can definitely be used for agentic and coding, but if you want the most optimal usecases it would be Qwen3.6 for agentic and coding and Qwen3.5 for general AI assistance that is where each of them excels at.\n\nAlso for extra info, in case anyone is wondering, despite Qwen3.5 and Qwen3.6 both sharing the `qwen35` architecture, they behave very diferently to abliteration. Qwen3.5 models can have a KL divergence in the 300's or 400's but on benchmarks this does not really translate to big loss of accuracy at all, for Qwen3.6 usually a KL divergence in the 400's+ could very well indicate a disatrous loss of accuracy and quality of the model, for pointer my Qwen3.6-35B-A3B had a KL divergence of only 0.0015 and yet already had a loss of accuracy of 0.32% while my Qwen3.6-27B had a KL divergence of 0.0021 and had an accuracy loss of 0.98%, while here with Qwen3.5-35B-A3B the model has a KL divergence of 0.0487 with an accuracy loss of 0.40% and my Qwen3.5-27B has a KL divergence of 0.0308 with an accuracy loss of 0.35%.",
+            "selftext_excerpt": "Safetensors, llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved: [https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved](https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-hereti",
+            "external_url": "https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved",
+            "top_comments": [],
+            "comment_context": null
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 405,
+          "reddit_comment_count": 75,
+          "captured_at_ist": "2026-05-27 10:01 IST"
+        },
+        "labels": [
+          "Reddit",
+          "LocalLLaMA",
+          "Comments missing"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "Qwen3.5 35B A3B uncensored heretic Native MTP Preserved is Out Now With the Full 785 MTPs Preserved and Retained, Available in Safetensors, GGUFs. NVFP4, NVFP4 GGUFs and GPTQ-Int4 Formats",
+            "post_body": "Safetensors, llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved: [https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved](https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved)\n\nGGUFs, llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-GGUF [https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-GGUF](https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-GGUF)\n\nNVFP4, llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-NVFP4: [https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-NVFP4](https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-NVFP4)\n\nNVFP4 GGUFs, llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-NVFP4-GGUF: [https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-NVFP4-GGUF](https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-NVFP4-GGUF)\n\nGPTQ-Int4, llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-GPTQ-Int4: [https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-GPTQ-Int4](https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-GPTQ-Int4)\n\nComes with benchmark too.\n\nFind all my models here: [HuggingFace-LLMFan46](https://huggingface.co/llmfan46/models)\n\nNow in case some people might ask, why release Qwen3.5 MTPs version when there is already Qwen3.6 MTPs version? Well the thing is, most people would assume that higher number = newer and better model, but the thing is both Qwen3.5 and Qwen3.6 models uses the `qwen35` architecture, they just had different training and their focus are meant for different primary usecases, Qwen3.6 models are mainly meant for agentic and coding AI assistance and Qwen3.5 models are mainly meant for general purpose AI assistance, now Qwen3.6 can definitely be used for general AI assistance just like Qwen3.5 can definitely be used for agentic and coding, but if you want the most optimal usecases it would be Qwen3.6 for agentic and coding and Qwen3.5 for general AI assistance that is where each of them excels at.\n\nAlso for extra info, in case anyone is wondering, despite Qwen3.5 and Qwen3.6 both sharing the `qwen35` architecture, they behave very diferently to abliteration. Qwen3.5 models can have a KL divergence in the 300's or 400's but on benchmarks this does not really translate to big loss of accuracy at all, for Qwen3.6 usually a KL divergence in the 400's+ could very well indicate a disatrous loss of accuracy and quality of the model, for pointer my Qwen3.6-35B-A3B had a KL divergence of only 0.0015 and yet already had a loss of accuracy of 0.32% while my Qwen3.6-27B had a KL divergence of 0.0021 and had an accuracy loss of 0.98%, while here with Qwen3.5-35B-A3B the model has a KL divergence of 0.0487 with an accuracy loss of 0.40% and my Qwen3.5-27B has a KL divergence of 0.0308 with an accuracy loss of 0.35%.",
+            "comments": [],
+            "metadata": {
+              "subreddit": "LocalLLaMA",
+              "score": 405,
+              "comment_count": 75,
+              "created_utc": 1779779371.0,
+              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tnzalm/qwen35_35b_a3b_uncensored_heretic_native_mtp/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "LocalLLM",
+        "sort": "hot",
+        "title": "Got tired of OOM errors on my 4GB GPU. Wrote a custom Rust bare-metal engine and hit 66.8 TPS with a 4B model (BitNet 1.58b on RTX 3050).",
+        "score": 173,
+        "comments": 69,
+        "created_utc": 1779800809.0,
+        "url": "https://www.reddit.com/r/LocalLLM/comments/1to6enj/got_tired_of_oom_errors_on_my_4gb_gpu_wrote_a/",
+        "external_url": "https://v.redd.it/qoa7i5o9dh3h1",
+        "selftext": "Hey everyone, I’ve been struggling for months trying to run decent local LLMs on my budget setup without the standard Python/Docker wrappers bloating up my VRAM and crashing. Everything out there seems built for 24GB+ cards. So, I decided to build a custom inference engine from scratch. I wrote it entirely in Rust and C++ to bypass high-level abstractions and execute direct-to-silicon. I just finished testing the alpha build (v0.0.1) with dynamic KV-cache management to keep the memory footprint as tiny as possible. The Hardware: RTX 3050 (4GB VRAM) The Model: prism-ml/Bonsai-4B-gguf (1.58-bit quantization) The Result: 66.8 Tokens/Second (Video attached) I also tested Gemma 4B and Qwen 3.5 4B",
+        "selftext_full": "Hey everyone,\n\nI’ve been struggling for months trying to run decent local LLMs on my budget setup without the standard Python/Docker wrappers bloating up my VRAM and crashing. Everything out there seems built for 24GB+ cards.\n\nSo, I decided to build a custom inference engine from scratch.\n\nI wrote it entirely in Rust and C++ to bypass high-level abstractions and execute direct-to-silicon. I just finished testing the alpha build (v0.0.1) with dynamic KV-cache management to keep the memory footprint as tiny as possible.\n\nThe Hardware: RTX 3050 (4GB VRAM)\n\nThe Model: prism-ml/Bonsai-4B-gguf (1.58-bit quantization)\n\nThe Result: 66.8 Tokens/Second (Video attached)\n\nI also tested Gemma 4B and Qwen 3.5 4B and hit a stable \\~30-33 TPS without any OOM errors.\n\nThe engine is called Cluaiz. It's still under heavy development and I am cleaning up the core code to make it fully hardware-agnostic (Phone, PC, Server).\n\nI'm dropping the GitHub repo link and an alpha release in a few days once the codebase is clean enough to not get roasted by you guys. Let me know what you think of these raw metrics or if anyone else is building specific inference layers for low-VRAM setups!",
+        "author": "CommissionOdd3082",
+        "post_id": "1to6enj",
+        "top_comments": [],
+        "story_id": "rd_1to6enj",
+        "heading": "Got tired of OOM errors on my 4GB GPU. Wrote a custom Rust bare-metal engine and hit 66.8 TPS with a 4B model (BitNet 1.58b on RTX 3050).",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/LocalLLM/comments/1to6enj/got_tired_of_oom_errors_on_my_4gb_gpu_wrote_a/",
+        "summary": "Hey everyone, I’ve been struggling for months trying to run decent local LLMs on my budget setup without the standard Python/Docker wrappers bloating up my VRAM and crashing. Everything out there seems built for 24GB+ cards. So, I decided to build a custom inference engine from scratch. I wrote it entirely in Rust and C++ to bypass high-level abstractions and execute direct-to-silicon. I just finished testing the alp",
+        "tweet_and_comments_summary": "Hey everyone, I’ve been struggling for months trying to run decent local LLMs on my budget setup without the standard Python/Docker wrappers bloating up my VRAM and crashing. Everything out there seems built for 24GB+ cards. So, I decided to build a custom inference engine from scratch. I wrote it entirely in Rust and C++ to bypass high-level abstractions and execute direct-to-silicon. I just finished testing the alp",
+        "discussion_summary": null,
+        "why_it_matters": "**High signal if running local models.** Check hardware fit, latency, and eval quality before adopting.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1to6enj",
+            "subreddit": "LocalLLM",
+            "post_url": "https://www.reddit.com/r/LocalLLM/comments/1to6enj/got_tired_of_oom_errors_on_my_4gb_gpu_wrote_a/",
+            "title": "Got tired of OOM errors on my 4GB GPU. Wrote a custom Rust bare-metal engine and hit 66.8 TPS with a 4B model (BitNet 1.58b on RTX 3050).",
+            "author": "CommissionOdd3082",
+            "created_utc": 1779800809.0,
+            "score": 173,
+            "comment_count": 69,
+            "selftext_full": "Hey everyone,\n\nI’ve been struggling for months trying to run decent local LLMs on my budget setup without the standard Python/Docker wrappers bloating up my VRAM and crashing. Everything out there seems built for 24GB+ cards.\n\nSo, I decided to build a custom inference engine from scratch.\n\nI wrote it entirely in Rust and C++ to bypass high-level abstractions and execute direct-to-silicon. I just finished testing the alpha build (v0.0.1) with dynamic KV-cache management to keep the memory footprint as tiny as possible.\n\nThe Hardware: RTX 3050 (4GB VRAM)\n\nThe Model: prism-ml/Bonsai-4B-gguf (1.58-bit quantization)\n\nThe Result: 66.8 Tokens/Second (Video attached)\n\nI also tested Gemma 4B and Qwen 3.5 4B and hit a stable \\~30-33 TPS without any OOM errors.\n\nThe engine is called Cluaiz. It's still under heavy development and I am cleaning up the core code to make it fully hardware-agnostic (Phone, PC, Server).\n\nI'm dropping the GitHub repo link and an alpha release in a few days once the codebase is clean enough to not get roasted by you guys. Let me know what you think of these raw metrics or if anyone else is building specific inference layers for low-VRAM setups!",
+            "selftext_excerpt": "Hey everyone, I’ve been struggling for months trying to run decent local LLMs on my budget setup without the standard Python/Docker wrappers bloating up my VRAM and crashing. Everything out there seems built for 24GB+ cards. So, I decided t",
+            "external_url": "https://v.redd.it/qoa7i5o9dh3h1",
+            "top_comments": [],
+            "comment_context": null
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 173,
+          "reddit_comment_count": 69,
+          "captured_at_ist": "2026-05-27 10:01 IST"
+        },
+        "labels": [
+          "Reddit",
+          "Comments missing"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "Got tired of OOM errors on my 4GB GPU. Wrote a custom Rust bare-metal engine and hit 66.8 TPS with a 4B model (BitNet 1.58b on RTX 3050).",
+            "post_body": "Hey everyone,\n\nI’ve been struggling for months trying to run decent local LLMs on my budget setup without the standard Python/Docker wrappers bloating up my VRAM and crashing. Everything out there seems built for 24GB+ cards.\n\nSo, I decided to build a custom inference engine from scratch.\n\nI wrote it entirely in Rust and C++ to bypass high-level abstractions and execute direct-to-silicon. I just finished testing the alpha build (v0.0.1) with dynamic KV-cache management to keep the memory footprint as tiny as possible.\n\nThe Hardware: RTX 3050 (4GB VRAM)\n\nThe Model: prism-ml/Bonsai-4B-gguf (1.58-bit quantization)\n\nThe Result: 66.8 Tokens/Second (Video attached)\n\nI also tested Gemma 4B and Qwen 3.5 4B and hit a stable \\~30-33 TPS without any OOM errors.\n\nThe engine is called Cluaiz. It's still under heavy development and I am cleaning up the core code to make it fully hardware-agnostic (Phone, PC, Server).\n\nI'm dropping the GitHub repo link and an alpha release in a few days once the codebase is clean enough to not get roasted by you guys. Let me know what you think of these raw metrics or if anyone else is building specific inference layers for low-VRAM setups!",
+            "comments": [],
+            "metadata": {
+              "subreddit": "LocalLLM",
+              "score": 173,
+              "comment_count": 69,
+              "created_utc": 1779800809.0,
+              "url": "https://www.reddit.com/r/LocalLLM/comments/1to6enj/got_tired_of_oom_errors_on_my_4gb_gpu_wrote_a/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "LocalLLaMA",
+        "sort": "hot",
+        "title": "Turning local agents into self-optimizing agents",
+        "score": 84,
+        "comments": 32,
+        "created_utc": 1779817867.0,
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1toejzp/turning_local_agents_into_selfoptimizing_agents/",
+        "external_url": "https://i.redd.it/dj431wtwoi3h1.gif",
+        "selftext": "I was experimenting with a self-optimizing agentic pipeline to climb the benchmark leaderboard (TerminalBench). On a 10-task subset, I got the performance to rise from \\~30% → \\~90%. That loop worked, so I asked: can the same reflect-and-rewrite step run continuously against everyday chats instead of a benchmark? **How it works** * Every chat with your local LLM goes through a small proxy and is logged. * `autoswarm reflect` has the same local model review those logs, distill concrete lessons, and write them to `skills.yaml`. * Lessons auto-inject into the system prompt of future chats. **Run it (LM Studio path)** 1. Start LM Studio's local server and load a model. 2. ```bash pip install -e",
+        "selftext_full": "I was experimenting with a self-optimizing agentic pipeline to climb the benchmark leaderboard (TerminalBench).\n\nOn a 10-task subset, I got the performance to rise from \\~30% → \\~90%.\n\nThat loop worked, so I asked: can the same reflect-and-rewrite step run continuously against everyday chats instead of a benchmark?\n\n**How it works**\n\n* Every chat with your local LLM goes through a small proxy and is logged.\n* `autoswarm reflect` has the same local model review those logs, distill concrete lessons, and write them to `skills.yaml`.\n* Lessons auto-inject into the system prompt of future chats.\n\n**Run it (LM Studio path)**\n1. Start LM Studio's local server and load a model.\n2. ```bash\n pip install -e .\n autoswarm doctor # verifies LM Studio is reachable\n autoswarm start # auto-detects upstream + model, listens on :8080\n\nI'm genuinely fascinated by the idea of self-optimizing agents, and I believe there's **something bigger to uncover there**. \n\nThat said, this is just a hobby project and I'm still experimenting with it. Would love your feedback!\n\nLink: [https://github.com/arteemg/autoswarm](https://github.com/arteemg/autoswarm)\n\nI'm actively working on the project, so please [**⭐ the repo**](https://github.com/arteemg/autoswarm/) to stay updated.",
+        "author": "Rude_Substance_8904",
+        "post_id": "1toejzp",
+        "top_comments": [],
+        "story_id": "rd_1toejzp",
+        "heading": "Turning local agents into self-optimizing agents",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1toejzp/turning_local_agents_into_selfoptimizing_agents/",
+        "summary": "I was experimenting with a self-optimizing agentic pipeline to climb the benchmark leaderboard (TerminalBench). On a 10-task subset, I got the performance to rise from \\~30% → \\~90%. That loop worked, so I asked: can the same reflect-and-rewrite step run continuously against everyday chats instead of a benchmark? **How it works** * Every chat with your local LLM goes through a small proxy and is logged. * `autoswarm",
+        "tweet_and_comments_summary": "I was experimenting with a self-optimizing agentic pipeline to climb the benchmark leaderboard (TerminalBench). On a 10-task subset, I got the performance to rise from \\~30% → \\~90%. That loop worked, so I asked: can the same reflect-and-rewrite step run continuously against everyday chats instead of a benchmark? **How it works** * Every chat with your local LLM goes through a small proxy and is logged. * `autoswarm",
+        "discussion_summary": null,
+        "why_it_matters": "**High signal if running local models.** Check hardware fit, latency, and eval quality before adopting.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1toejzp",
+            "subreddit": "LocalLLaMA",
+            "post_url": "https://www.reddit.com/r/LocalLLaMA/comments/1toejzp/turning_local_agents_into_selfoptimizing_agents/",
+            "title": "Turning local agents into self-optimizing agents",
+            "author": "Rude_Substance_8904",
+            "created_utc": 1779817867.0,
+            "score": 84,
+            "comment_count": 32,
+            "selftext_full": "I was experimenting with a self-optimizing agentic pipeline to climb the benchmark leaderboard (TerminalBench).\n\nOn a 10-task subset, I got the performance to rise from \\~30% → \\~90%.\n\nThat loop worked, so I asked: can the same reflect-and-rewrite step run continuously against everyday chats instead of a benchmark?\n\n**How it works**\n\n* Every chat with your local LLM goes through a small proxy and is logged.\n* `autoswarm reflect` has the same local model review those logs, distill concrete lessons, and write them to `skills.yaml`.\n* Lessons auto-inject into the system prompt of future chats.\n\n**Run it (LM Studio path)**\n1. Start LM Studio's local server and load a model.\n2. ```bash\n pip install -e .\n autoswarm doctor # verifies LM Studio is reachable\n autoswarm start # auto-detects upstream + model, listens on :8080\n\nI'm genuinely fascinated by the idea of self-optimizing agents, and I believe there's **something bigger to uncover there**. \n\nThat said, this is just a hobby project and I'm still experimenting with it. Would love your feedback!\n\nLink: [https://github.com/arteemg/autoswarm](https://github.com/arteemg/autoswarm)\n\nI'm actively working on the project, so please [**⭐ the repo**](https://github.com/arteemg/autoswarm/) to stay updated.",
+            "selftext_excerpt": "I was experimenting with a self-optimizing agentic pipeline to climb the benchmark leaderboard (TerminalBench). On a 10-task subset, I got the performance to rise from \\~30% → \\~90%. That loop worked, so I asked: can the same reflect-and-re",
+            "external_url": "https://i.redd.it/dj431wtwoi3h1.gif",
+            "top_comments": [],
+            "comment_context": null
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 84,
+          "reddit_comment_count": 32,
+          "captured_at_ist": "2026-05-27 10:01 IST"
+        },
+        "labels": [
+          "Reddit",
+          "LocalLLaMA",
+          "Comments missing"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "Turning local agents into self-optimizing agents",
+            "post_body": "I was experimenting with a self-optimizing agentic pipeline to climb the benchmark leaderboard (TerminalBench).\n\nOn a 10-task subset, I got the performance to rise from \\~30% → \\~90%.\n\nThat loop worked, so I asked: can the same reflect-and-rewrite step run continuously against everyday chats instead of a benchmark?\n\n**How it works**\n\n* Every chat with your local LLM goes through a small proxy and is logged.\n* `autoswarm reflect` has the same local model review those logs, distill concrete lessons, and write them to `skills.yaml`.\n* Lessons auto-inject into the system prompt of future chats.\n\n**Run it (LM Studio path)**\n1. Start LM Studio's local server and load a model.\n2. ```bash\n pip install -e .\n autoswarm doctor # verifies LM Studio is reachable\n autoswarm start # auto-detects upstream + model, listens on :8080\n\nI'm genuinely fascinated by the idea of self-optimizing agents, and I believe there's **something bigger to uncover there**. \n\nThat said, this is just a hobby project and I'm still experimenting with it. Would love your feedback!\n\nLink: [https://github.com/arteemg/autoswarm](https://github.com/arteemg/autoswarm)\n\nI'm actively working on the project, so please [**⭐ the repo**](https://github.com/arteemg/autoswarm/) to stay updated.",
+            "comments": [],
+            "metadata": {
+              "subreddit": "LocalLLaMA",
+              "score": 84,
+              "comment_count": 32,
+              "created_utc": 1779817867.0,
+              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1toejzp/turning_local_agents_into_selfoptimizing_agents/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "LocalLLaMA",
+        "sort": "new",
+        "title": "2 RTX A6000 at 96GB VRAM with nvlink. Best local coding model/what you would daily drive?",
+        "score": 0,
+        "comments": 16,
+        "created_utc": 1779847870.0,
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tort79/2_rtx_a6000_at_96gb_vram_with_nvlink_best_local/",
+        "external_url": null,
+        "selftext": "Really been testing qwen 3.6 27b and 35 a3b so far with 27b at q8 and 35 a3b at q4 (byteshape quant is insane). But i feel im not utilizing it the best, esp for long context messy coding of large repos. Like they are good for small changes and god the MoE qwen with MTP is lightning fast with opencode at finding bug, but should i use a q4 Qwen3.5 122B A10B, Qwen3 Coder Next or start trying nvidia 3 super? I dont want to waste my internet bandwidth downloading models i cant really use and will delete, any help would be amazing!! (Ive been going through posts and some say 122b is better cause of knowledge, and coder3 next is their go to daily.)",
+        "selftext_full": "Really been testing qwen 3.6 27b and 35 a3b so far with 27b at q8 and 35 a3b at q4 (byteshape quant is insane). But i feel im not utilizing it the best, esp for long context messy coding of large repos. Like they are good for small changes and god the MoE qwen with MTP is lightning fast with opencode at finding bug, but should i use a q4 Qwen3.5 122B A10B, Qwen3 Coder Next or start trying nvidia 3 super? I dont want to waste my internet bandwidth downloading models i cant really use and will delete, any help would be amazing!!\n\n(Ive been going through posts and some say 122b is better cause of knowledge, and coder3 next is their go to daily.)",
+        "author": "EggDroppedSoup",
+        "post_id": "1tort79",
+        "top_comments": [],
+        "story_id": "rd_1tort79",
+        "heading": "2 RTX A6000 at 96GB VRAM with nvlink. Best local coding model/what you would daily drive?",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tort79/2_rtx_a6000_at_96gb_vram_with_nvlink_best_local/",
+        "summary": "Really been testing qwen 3.6 27b and 35 a3b so far with 27b at q8 and 35 a3b at q4 (byteshape quant is insane). But i feel im not utilizing it the best, esp for long context messy coding of large repos. Like they are good for small changes and god the MoE qwen with MTP is lightning fast with opencode at finding bug, but should i use a q4 Qwen3.5 122B A10B, Qwen3 Coder Next or start trying nvidia 3 super? I dont want",
+        "tweet_and_comments_summary": "Really been testing qwen 3.6 27b and 35 a3b so far with 27b at q8 and 35 a3b at q4 (byteshape quant is insane). But i feel im not utilizing it the best, esp for long context messy coding of large repos. Like they are good for small changes and god the MoE qwen with MTP is lightning fast with opencode at finding bug, but should i use a q4 Qwen3.5 122B A10B, Qwen3 Coder Next or start trying nvidia 3 super? I dont want",
+        "discussion_summary": null,
+        "why_it_matters": "**High signal if running local models.** Check hardware fit, latency, and eval quality before adopting.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tort79",
+            "subreddit": "LocalLLaMA",
+            "post_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tort79/2_rtx_a6000_at_96gb_vram_with_nvlink_best_local/",
+            "title": "2 RTX A6000 at 96GB VRAM with nvlink. Best local coding model/what you would daily drive?",
+            "author": "EggDroppedSoup",
+            "created_utc": 1779847870.0,
+            "score": 0,
+            "comment_count": 16,
+            "selftext_full": "Really been testing qwen 3.6 27b and 35 a3b so far with 27b at q8 and 35 a3b at q4 (byteshape quant is insane). But i feel im not utilizing it the best, esp for long context messy coding of large repos. Like they are good for small changes and god the MoE qwen with MTP is lightning fast with opencode at finding bug, but should i use a q4 Qwen3.5 122B A10B, Qwen3 Coder Next or start trying nvidia 3 super? I dont want to waste my internet bandwidth downloading models i cant really use and will delete, any help would be amazing!!\n\n(Ive been going through posts and some say 122b is better cause of knowledge, and coder3 next is their go to daily.)",
+            "selftext_excerpt": "Really been testing qwen 3.6 27b and 35 a3b so far with 27b at q8 and 35 a3b at q4 (byteshape quant is insane). But i feel im not utilizing it the best, esp for long context messy coding of large repos. Like they are good for small changes",
+            "external_url": null,
+            "top_comments": [],
+            "comment_context": null
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 0,
+          "reddit_comment_count": 16,
+          "captured_at_ist": "2026-05-27 10:01 IST"
+        },
+        "labels": [
+          "Reddit",
+          "LocalLLaMA",
+          "Comments missing"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "2 RTX A6000 at 96GB VRAM with nvlink. Best local coding model/what you would daily drive?",
+            "post_body": "Really been testing qwen 3.6 27b and 35 a3b so far with 27b at q8 and 35 a3b at q4 (byteshape quant is insane). But i feel im not utilizing it the best, esp for long context messy coding of large repos. Like they are good for small changes and god the MoE qwen with MTP is lightning fast with opencode at finding bug, but should i use a q4 Qwen3.5 122B A10B, Qwen3 Coder Next or start trying nvidia 3 super? I dont want to waste my internet bandwidth downloading models i cant really use and will delete, any help would be amazing!!\n\n(Ive been going through posts and some say 122b is better cause of knowledge, and coder3 next is their go to daily.)",
+            "comments": [],
+            "metadata": {
+              "subreddit": "LocalLLaMA",
+              "score": 0,
+              "comment_count": 16,
+              "created_utc": 1779847870.0,
+              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tort79/2_rtx_a6000_at_96gb_vram_with_nvlink_best_local/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "ClaudeCode",
+        "sort": "new",
+        "title": "Improved Memory System for Claude Code That Doesn't Burn Tokens",
+        "score": 2,
+        "comments": 6,
+        "created_utc": 1779852322.0,
+        "url": "https://www.reddit.com/r/ClaudeCode/comments/1tothb6/improved_memory_system_for_claude_code_that/",
+        "external_url": null,
+        "selftext": "Is your Claude Code memory plugin burning more tokens than your actual work? For me, I measured it and it was using more than it was helping. The most popular option uses AI to compress every tool call. That compression fires hundreds of API calls per session, can eat up to 35GB of RAM via ChromaDB, and spawns a background HTTP server that causes database locks. Does memory actually need AI? For most developer workflows, the answer is no. When I want to know what I changed in the auth middleware last Tuesday, I need the raw file edits, not an LLM's summary. So I built claude-recall: \\- Zero API token cost (raw storage, no AI compression) \\- Zero background daemons (direct SQLite writes) \\- Z",
+        "selftext_full": "Is your Claude Code memory plugin burning more tokens than your actual work? For me, I measured it and it was using more than it was helping. \n \nThe most popular option uses AI to compress every tool call. That compression fires hundreds of API calls per session, can eat up to 35GB of RAM via ChromaDB, and spawns a background HTTP server that causes database locks. \n \nDoes memory actually need AI? \n \nFor most developer workflows, the answer is no. When I want to know what I changed in the auth middleware last Tuesday, I need the raw file edits, not an LLM's summary. \n \nSo I built claude-recall: \n \n\\- Zero API token cost (raw storage, no AI compression) \n\\- Zero background daemons (direct SQLite writes) \n\\- Zero data leaving your machine (auto-redaction of secrets) \n\\- Full-fidelity session recovery (verbatim prompts, complete responses, every tool call) \n\\- Date-aware search (\"what did we deploy last Thursday?\") \n\\- Cross-project search across every repo you've worked on \n\\- One dependency. One SQLite file. 50MB typical database. \n \nInstall in two commands: \nclaude plugin marketplace add askqai/claude-recall \nclaude plugin install claude-recall@claude-recall \n \nApache 2.0. Contributions welcome. \n\n(no commercial benefit for me - I built it for myself and see if this could be helpful to anybody else) See the repo readme for common use cases and syntax. Let me know if you have feedback, next is adding a UI so you can see the history yourself easily.",
+        "author": "Frequent-Suspect5758",
+        "post_id": "1tothb6",
+        "top_comments": [],
+        "story_id": "rd_1tothb6",
+        "heading": "Improved Memory System for Claude Code That Doesn't Burn Tokens",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/ClaudeCode/comments/1tothb6/improved_memory_system_for_claude_code_that/",
+        "summary": "Is your Claude Code memory plugin burning more tokens than your actual work? For me, I measured it and it was using more than it was helping. The most popular option uses AI to compress every tool call. That compression fires hundreds of API calls per session, can eat up to 35GB of RAM via ChromaDB, and spawns a background HTTP server that causes database locks. Does memory actually need AI? For most developer workfl",
+        "tweet_and_comments_summary": "Is your Claude Code memory plugin burning more tokens than your actual work? For me, I measured it and it was using more than it was helping. The most popular option uses AI to compress every tool call. That compression fires hundreds of API calls per session, can eat up to 35GB of RAM via ChromaDB, and spawns a background HTTP server that causes database locks. Does memory actually need AI? For most developer workfl",
+        "discussion_summary": null,
+        "why_it_matters": "**High signal for coding workflow.** Compare against your Hermes/Codex/Claude usage before changing tools or architecture.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tothb6",
+            "subreddit": "ClaudeCode",
+            "post_url": "https://www.reddit.com/r/ClaudeCode/comments/1tothb6/improved_memory_system_for_claude_code_that/",
+            "title": "Improved Memory System for Claude Code That Doesn't Burn Tokens",
+            "author": "Frequent-Suspect5758",
+            "created_utc": 1779852322.0,
+            "score": 2,
+            "comment_count": 6,
+            "selftext_full": "Is your Claude Code memory plugin burning more tokens than your actual work? For me, I measured it and it was using more than it was helping. \n \nThe most popular option uses AI to compress every tool call. That compression fires hundreds of API calls per session, can eat up to 35GB of RAM via ChromaDB, and spawns a background HTTP server that causes database locks. \n \nDoes memory actually need AI? \n \nFor most developer workflows, the answer is no. When I want to know what I changed in the auth middleware last Tuesday, I need the raw file edits, not an LLM's summary. \n \nSo I built claude-recall: \n \n\\- Zero API token cost (raw storage, no AI compression) \n\\- Zero background daemons (direct SQLite writes) \n\\- Zero data leaving your machine (auto-redaction of secrets) \n\\- Full-fidelity session recovery (verbatim prompts, complete responses, every tool call) \n\\- Date-aware search (\"what did we deploy last Thursday?\") \n\\- Cross-project search across every repo you've worked on \n\\- One dependency. One SQLite file. 50MB typical database. \n \nInstall in two commands: \nclaude plugin marketplace add askqai/claude-recall \nclaude plugin install claude-recall@claude-recall \n \nApache 2.0. Contributions welcome. \n\n(no commercial benefit for me - I built it for myself and see if this could be helpful to anybody else) See the repo readme for common use cases and syntax. Let me know if you have feedback, next is adding a UI so you can see the history yourself easily.",
+            "selftext_excerpt": "Is your Claude Code memory plugin burning more tokens than your actual work? For me, I measured it and it was using more than it was helping. The most popular option uses AI to compress every tool call. That compression fires hundreds of AP",
+            "external_url": null,
+            "top_comments": [],
+            "comment_context": null
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 2,
+          "reddit_comment_count": 6,
+          "captured_at_ist": "2026-05-27 10:01 IST"
+        },
+        "labels": [
+          "Reddit",
+          "ClaudeCode",
+          "Comments missing"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "Improved Memory System for Claude Code That Doesn't Burn Tokens",
+            "post_body": "Is your Claude Code memory plugin burning more tokens than your actual work? For me, I measured it and it was using more than it was helping. \n \nThe most popular option uses AI to compress every tool call. That compression fires hundreds of API calls per session, can eat up to 35GB of RAM via ChromaDB, and spawns a background HTTP server that causes database locks. \n \nDoes memory actually need AI? \n \nFor most developer workflows, the answer is no. When I want to know what I changed in the auth middleware last Tuesday, I need the raw file edits, not an LLM's summary. \n \nSo I built claude-recall: \n \n\\- Zero API token cost (raw storage, no AI compression) \n\\- Zero background daemons (direct SQLite writes) \n\\- Zero data leaving your machine (auto-redaction of secrets) \n\\- Full-fidelity session recovery (verbatim prompts, complete responses, every tool call) \n\\- Date-aware search (\"what did we deploy last Thursday?\") \n\\- Cross-project search across every repo you've worked on \n\\- One dependency. One SQLite file. 50MB typical database. \n \nInstall in two commands: \nclaude plugin marketplace add askqai/claude-recall \nclaude plugin install claude-recall@claude-recall \n \nApache 2.0. Contributions welcome. \n\n(no commercial benefit for me - I built it for myself and see if this could be helpful to anybody else) See the repo readme for common use cases and syntax. Let me know if you have feedback, next is adding a UI so you can see the history yourself easily.",
+            "comments": [],
+            "metadata": {
+              "subreddit": "ClaudeCode",
+              "score": 2,
+              "comment_count": 6,
+              "created_utc": 1779852322.0,
+              "url": "https://www.reddit.com/r/ClaudeCode/comments/1tothb6/improved_memory_system_for_claude_code_that/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "AI_Agents",
+        "sort": "new",
+        "title": "Measured token consumption across 4 agent runtimes doing the same tasks. Costs ranged from 1x to 4x depending on cache architecture",
+        "score": 2,
+        "comments": 4,
+        "created_utc": 1779855145.0,
+        "url": "https://www.reddit.com/r/AI_Agents/comments/1touhn3/measured_token_consumption_across_4_agent/",
+        "external_url": null,
+        "selftext": "I've been digging into why some agent runtimes burn through tokens so much faster than others, even when using the same model. Ran a controlled comparison on three real tasks and the gap was bigger than I expected. Setup: same model (Claude Sonnet), same tasks, measuring total input + output tokens. The agents tested were Claude Code, OpenClaw, Hermes, and ours (OpenClacky, open source). Rough results, normalized to Claude Code as 1.0x: - Hermes: ~3-4x. It ships 52 built-in tools. Every API call sends the full schema. That's 10-25k tokens of tool definitions per turn. If the schema shifts (dynamic tools), the whole thing is a cache miss. - OpenClaw: ~1.5x. Solid runtime, but skill loading to",
+        "selftext_full": "I've been digging into why some agent runtimes burn through tokens so much faster than others, even when using the same model. Ran a controlled comparison on three real tasks and the gap was bigger than I expected.\n\nSetup: same model (Claude Sonnet), same tasks, measuring total input + output tokens. The agents tested were Claude Code, OpenClaw, Hermes, and ours (OpenClacky, open source).\n\nRough results, normalized to Claude Code as 1.0x:\n\n- Hermes: ~3-4x. It ships 52 built-in tools. Every API call sends the full schema. That's 10-25k tokens of tool definitions per turn. If the schema shifts (dynamic tools), the whole thing is a cache miss.\n- OpenClaw: ~1.5x. Solid runtime, but skill loading touches the system prompt, which breaks prefix matching on every skill invocation.\n- Claude Code: 1.0x baseline. Good cache engineering, closed-source.\n- OpenClacky: ~0.8x. 16 tools, frozen system prompt, double cache markers. Cache hit rate stays above 90%.\n\nThe underlying issue is pretty simple. On every turn, the API receives: system prompt + tool definitions + full conversation history. If prompt caching hits, you pay 1/10th price (Anthropic) or half price (OpenAI) for everything the model has already seen. If it misses, full price for all of it again.\n\nMost runtimes break their own cache without realizing it. The common ways:\n\n- Adding or removing tools mid-session changes the system prompt bytes\n- Loading new context into the system prompt (skills, memory, rules)\n- Compressing history at the wrong time rewrites what was already cached\n- Model switches split the cache namespace\n\nThe fix isn't complicated in concept: freeze the prefix, put dynamic state elsewhere, use rolling cache markers so history growth doesn't invalidate prior turns. Took us two failed architectures and eight months to get the ordering right though.\n\nIf you're running local models through something like LiteLLM or a local OpenAI-compatible server, it works. Cache benefits depend on your provider though. Anthropic and OpenAI have the best caching infra right now. Local setups still benefit from the smaller prompts regardless.\n\nHappy to go deeper on methodology if anyone wants.",
+        "author": "SpiritualCold1444",
+        "post_id": "1touhn3",
+        "top_comments": [],
+        "story_id": "rd_1touhn3",
+        "heading": "Measured token consumption across 4 agent runtimes doing the same tasks. Costs ranged from 1x to 4x depending on cache architecture",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/AI_Agents/comments/1touhn3/measured_token_consumption_across_4_agent/",
+        "summary": "I've been digging into why some agent runtimes burn through tokens so much faster than others, even when using the same model. Ran a controlled comparison on three real tasks and the gap was bigger than I expected. Setup: same model (Claude Sonnet), same tasks, measuring total input + output tokens. The agents tested were Claude Code, OpenClaw, Hermes, and ours (OpenClacky, open source). Rough results, normalized to",
+        "tweet_and_comments_summary": "I've been digging into why some agent runtimes burn through tokens so much faster than others, even when using the same model. Ran a controlled comparison on three real tasks and the gap was bigger than I expected. Setup: same model (Claude Sonnet), same tasks, measuring total input + output tokens. The agents tested were Claude Code, OpenClaw, Hermes, and ours (OpenClacky, open source). Rough results, normalized to",
+        "discussion_summary": null,
+        "why_it_matters": "**High signal for coding workflow.** Compare against your Hermes/Codex/Claude usage before changing tools or architecture.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1touhn3",
+            "subreddit": "AI_Agents",
+            "post_url": "https://www.reddit.com/r/AI_Agents/comments/1touhn3/measured_token_consumption_across_4_agent/",
+            "title": "Measured token consumption across 4 agent runtimes doing the same tasks. Costs ranged from 1x to 4x depending on cache architecture",
+            "author": "SpiritualCold1444",
+            "created_utc": 1779855145.0,
+            "score": 2,
+            "comment_count": 4,
+            "selftext_full": "I've been digging into why some agent runtimes burn through tokens so much faster than others, even when using the same model. Ran a controlled comparison on three real tasks and the gap was bigger than I expected.\n\nSetup: same model (Claude Sonnet), same tasks, measuring total input + output tokens. The agents tested were Claude Code, OpenClaw, Hermes, and ours (OpenClacky, open source).\n\nRough results, normalized to Claude Code as 1.0x:\n\n- Hermes: ~3-4x. It ships 52 built-in tools. Every API call sends the full schema. That's 10-25k tokens of tool definitions per turn. If the schema shifts (dynamic tools), the whole thing is a cache miss.\n- OpenClaw: ~1.5x. Solid runtime, but skill loading touches the system prompt, which breaks prefix matching on every skill invocation.\n- Claude Code: 1.0x baseline. Good cache engineering, closed-source.\n- OpenClacky: ~0.8x. 16 tools, frozen system prompt, double cache markers. Cache hit rate stays above 90%.\n\nThe underlying issue is pretty simple. On every turn, the API receives: system prompt + tool definitions + full conversation history. If prompt caching hits, you pay 1/10th price (Anthropic) or half price (OpenAI) for everything the model has already seen. If it misses, full price for all of it again.\n\nMost runtimes break their own cache without realizing it. The common ways:\n\n- Adding or removing tools mid-session changes the system prompt bytes\n- Loading new context into the system prompt (skills, memory, rules)\n- Compressing history at the wrong time rewrites what was already cached\n- Model switches split the cache namespace\n\nThe fix isn't complicated in concept: freeze the prefix, put dynamic state elsewhere, use rolling cache markers so history growth doesn't invalidate prior turns. Took us two failed architectures and eight months to get the ordering right though.\n\nIf you're running local models through something like LiteLLM or a local OpenAI-compatible server, it works. Cache benefits depend on your provider though. Anthropic and OpenAI have the best caching infra right now. Local setups still benefit from the smaller prompts regardless.\n\nHappy to go deeper on methodology if anyone wants.",
+            "selftext_excerpt": "I've been digging into why some agent runtimes burn through tokens so much faster than others, even when using the same model. Ran a controlled comparison on three real tasks and the gap was bigger than I expected. Setup: same model (Claude",
+            "external_url": null,
+            "top_comments": [],
+            "comment_context": null
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 2,
+          "reddit_comment_count": 4,
+          "captured_at_ist": "2026-05-27 10:01 IST"
+        },
+        "labels": [
+          "Reddit",
+          "AI_Agents",
+          "Comments missing"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "Measured token consumption across 4 agent runtimes doing the same tasks. Costs ranged from 1x to 4x depending on cache architecture",
+            "post_body": "I've been digging into why some agent runtimes burn through tokens so much faster than others, even when using the same model. Ran a controlled comparison on three real tasks and the gap was bigger than I expected.\n\nSetup: same model (Claude Sonnet), same tasks, measuring total input + output tokens. The agents tested were Claude Code, OpenClaw, Hermes, and ours (OpenClacky, open source).\n\nRough results, normalized to Claude Code as 1.0x:\n\n- Hermes: ~3-4x. It ships 52 built-in tools. Every API call sends the full schema. That's 10-25k tokens of tool definitions per turn. If the schema shifts (dynamic tools), the whole thing is a cache miss.\n- OpenClaw: ~1.5x. Solid runtime, but skill loading touches the system prompt, which breaks prefix matching on every skill invocation.\n- Claude Code: 1.0x baseline. Good cache engineering, closed-source.\n- OpenClacky: ~0.8x. 16 tools, frozen system prompt, double cache markers. Cache hit rate stays above 90%.\n\nThe underlying issue is pretty simple. On every turn, the API receives: system prompt + tool definitions + full conversation history. If prompt caching hits, you pay 1/10th price (Anthropic) or half price (OpenAI) for everything the model has already seen. If it misses, full price for all of it again.\n\nMost runtimes break their own cache without realizing it. The common ways:\n\n- Adding or removing tools mid-session changes the system prompt bytes\n- Loading new context into the system prompt (skills, memory, rules)\n- Compressing history at the wrong time rewrites what was already cached\n- Model switches split the cache namespace\n\nThe fix isn't complicated in concept: freeze the prefix, put dynamic state elsewhere, use rolling cache markers so history growth doesn't invalidate prior turns. Took us two failed architectures and eight months to get the ordering right though.\n\nIf you're running local models through something like LiteLLM or a local OpenAI-compatible server, it works. Cache benefits depend on your provider though. Anthropic and OpenAI have the best caching infra right now. Local setups still benefit from the smaller prompts regardless.\n\nHappy to go deeper on methodology if anyone wants.",
+            "comments": [],
+            "metadata": {
+              "subreddit": "AI_Agents",
+              "score": 2,
+              "comment_count": 4,
+              "created_utc": 1779855145.0,
+              "url": "https://www.reddit.com/r/AI_Agents/comments/1touhn3/measured_token_consumption_across_4_agent/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "ChatGPT",
+        "sort": "hot",
+        "title": "Asked ChatGPT to create a 2000s poorly drawn overly edgy OC",
+        "score": 551,
+        "comments": 92,
+        "created_utc": 1779830452.0,
+        "url": "https://www.reddit.com/r/ChatGPT/comments/1toknzj/asked_chatgpt_to_create_a_2000s_poorly_drawn/",
+        "external_url": "https://i.redd.it/bia4vb1otj3h1.png",
+        "selftext": "Prompt: Create a 2000s poorly drawn overly edgy OC",
+        "selftext_full": "Prompt: Create a 2000s poorly drawn overly edgy OC ",
+        "author": "DaddyCool13",
+        "post_id": "1toknzj",
+        "top_comments": [],
+        "story_id": "rd_1toknzj",
+        "heading": "Asked ChatGPT to create a 2000s poorly drawn overly edgy OC",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/ChatGPT/comments/1toknzj/asked_chatgpt_to_create_a_2000s_poorly_drawn/",
+        "summary": "Prompt: Create a 2000s poorly drawn overly edgy OC",
+        "tweet_and_comments_summary": "Prompt: Create a 2000s poorly drawn overly edgy OC",
+        "discussion_summary": null,
+        "why_it_matters": "**Medium signal.** Worth monitoring, but don’t act on Reddit hype without checking primary sources.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1toknzj",
+            "subreddit": "ChatGPT",
+            "post_url": "https://www.reddit.com/r/ChatGPT/comments/1toknzj/asked_chatgpt_to_create_a_2000s_poorly_drawn/",
+            "title": "Asked ChatGPT to create a 2000s poorly drawn overly edgy OC",
+            "author": "DaddyCool13",
+            "created_utc": 1779830452.0,
+            "score": 551,
+            "comment_count": 92,
+            "selftext_full": "Prompt: Create a 2000s poorly drawn overly edgy OC ",
+            "selftext_excerpt": "Prompt: Create a 2000s poorly drawn overly edgy OC",
+            "external_url": "https://i.redd.it/bia4vb1otj3h1.png",
+            "top_comments": [],
+            "comment_context": null
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 551,
+          "reddit_comment_count": 92,
+          "captured_at_ist": "2026-05-27 10:01 IST"
+        },
+        "labels": [
+          "Reddit",
+          "Comments missing"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "Asked ChatGPT to create a 2000s poorly drawn overly edgy OC",
+            "post_body": "Prompt: Create a 2000s poorly drawn overly edgy OC ",
+            "comments": [],
+            "metadata": {
+              "subreddit": "ChatGPT",
+              "score": 551,
+              "comment_count": 92,
+              "created_utc": 1779830452.0,
+              "url": "https://www.reddit.com/r/ChatGPT/comments/1toknzj/asked_chatgpt_to_create_a_2000s_poorly_drawn/"
+            }
+          },
+          "twitter": null
+        }
+      },
+      {
+        "subreddit": "LocalLLaMA",
+        "sort": "new",
+        "title": "two months local 30b, real speedup nowhere near benchmark",
+        "score": 0,
+        "comments": 2,
+        "created_utc": 1779851658.0,
+        "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tot8gm/two_months_local_30b_real_speedup_nowhere_near/",
+        "external_url": null,
+        "selftext": "two months in on a 30b single-4090 local setup, mix of code generation and refactor tasks. coming in i'd seen benchmark numbers suggesting 3-5x latency improvement vs running the same prompts on a hosted equivalent. real numbers across 80 sessions: median 1.4x faster end-to-end on short prompts (under 200 input tokens). roughly tied on medium prompts (200-800). slower on long prompts where the model has to actually think, by 15-30%. local setup wins on cold start and short-burst tasks, loses on anything sustained. context: decent thermal but no exotic cooling. ddr5-6000 ram, nvme on a pcie 4 x4 lane. nothing fancy nothing throttled. the benchmarks aren't lying exactly, they're just optimized",
+        "selftext_full": "two months in on a 30b single-4090 local setup, mix of code generation and refactor tasks. coming in i'd seen benchmark numbers suggesting 3-5x latency improvement vs running the same prompts on a hosted equivalent.\n\nreal numbers across 80 sessions: median 1.4x faster end-to-end on short prompts (under 200 input tokens). roughly tied on medium prompts (200-800). slower on long prompts where the model has to actually think, by 15-30%. local setup wins on cold start and short-burst tasks, loses on anything sustained.\n\ncontext: decent thermal but no exotic cooling. ddr5-6000 ram, nvme on a pcie 4 x4 lane. nothing fancy nothing throttled.\n\nthe benchmarks aren't lying exactly, they're just optimized for the prompt profile that makes local look best. for an actual mixed workload it's a wash.\n\nembarrassed to admit i bought another 4090 last week thinking i'd missed something on the first build.",
+        "author": "Independent-Date393",
+        "post_id": "1tot8gm",
+        "top_comments": [],
+        "story_id": "rd_1tot8gm",
+        "heading": "two months local 30b, real speedup nowhere near benchmark",
+        "source_type": "reddit",
+        "source_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tot8gm/two_months_local_30b_real_speedup_nowhere_near/",
+        "summary": "two months in on a 30b single-4090 local setup, mix of code generation and refactor tasks. coming in i'd seen benchmark numbers suggesting 3-5x latency improvement vs running the same prompts on a hosted equivalent. real numbers across 80 sessions: median 1.4x faster end-to-end on short prompts (under 200 input tokens). roughly tied on medium prompts (200-800). slower on long prompts where the model has to actually t",
+        "tweet_and_comments_summary": "two months in on a 30b single-4090 local setup, mix of code generation and refactor tasks. coming in i'd seen benchmark numbers suggesting 3-5x latency improvement vs running the same prompts on a hosted equivalent. real numbers across 80 sessions: median 1.4x faster end-to-end on short prompts (under 200 input tokens). roughly tied on medium prompts (200-800). slower on long prompts where the model has to actually t",
+        "discussion_summary": null,
+        "why_it_matters": "**High signal if running local models.** Check hardware fit, latency, and eval quality before adopting.",
+        "sources": {
+          "twitter": null,
+          "reddit": {
+            "post_id": "1tot8gm",
+            "subreddit": "LocalLLaMA",
+            "post_url": "https://www.reddit.com/r/LocalLLaMA/comments/1tot8gm/two_months_local_30b_real_speedup_nowhere_near/",
+            "title": "two months local 30b, real speedup nowhere near benchmark",
+            "author": "Independent-Date393",
+            "created_utc": 1779851658.0,
+            "score": 0,
+            "comment_count": 2,
+            "selftext_full": "two months in on a 30b single-4090 local setup, mix of code generation and refactor tasks. coming in i'd seen benchmark numbers suggesting 3-5x latency improvement vs running the same prompts on a hosted equivalent.\n\nreal numbers across 80 sessions: median 1.4x faster end-to-end on short prompts (under 200 input tokens). roughly tied on medium prompts (200-800). slower on long prompts where the model has to actually think, by 15-30%. local setup wins on cold start and short-burst tasks, loses on anything sustained.\n\ncontext: decent thermal but no exotic cooling. ddr5-6000 ram, nvme on a pcie 4 x4 lane. nothing fancy nothing throttled.\n\nthe benchmarks aren't lying exactly, they're just optimized for the prompt profile that makes local look best. for an actual mixed workload it's a wash.\n\nembarrassed to admit i bought another 4090 last week thinking i'd missed something on the first build.",
+            "selftext_excerpt": "two months in on a 30b single-4090 local setup, mix of code generation and refactor tasks. coming in i'd seen benchmark numbers suggesting 3-5x latency improvement vs running the same prompts on a hosted equivalent. real numbers across 80 s",
+            "external_url": null,
+            "top_comments": [],
+            "comment_context": null
+          }
+        },
+        "metrics": {
+          "tweet_likes": null,
+          "tweet_replies": null,
+          "tweet_reposts": null,
+          "reddit_score": 0,
+          "reddit_comment_count": 2,
+          "captured_at_ist": "2026-05-27 10:01 IST"
+        },
+        "labels": [
+          "Reddit",
+          "LocalLLaMA",
+          "Comments missing"
+        ],
+        "expand": {
+          "available": true,
+          "label_collapsed": "Expand full post",
+          "label_expanded": "Collapse full post",
+          "default_open": false,
+          "reason_unavailable": null
+        },
+        "full_source_content": {
+          "available": true,
+          "reddit": {
+            "post_title": "two months local 30b, real speedup nowhere near benchmark",
+            "post_body": "two months in on a 30b single-4090 local setup, mix of code generation and refactor tasks. coming in i'd seen benchmark numbers suggesting 3-5x latency improvement vs running the same prompts on a hosted equivalent.\n\nreal numbers across 80 sessions: median 1.4x faster end-to-end on short prompts (under 200 input tokens). roughly tied on medium prompts (200-800). slower on long prompts where the model has to actually think, by 15-30%. local setup wins on cold start and short-burst tasks, loses on anything sustained.\n\ncontext: decent thermal but no exotic cooling. ddr5-6000 ram, nvme on a pcie 4 x4 lane. nothing fancy nothing throttled.\n\nthe benchmarks aren't lying exactly, they're just optimized for the prompt profile that makes local look best. for an actual mixed workload it's a wash.\n\nembarrassed to admit i bought another 4090 last week thinking i'd missed something on the first build.",
+            "comments": [],
+            "metadata": {
+              "subreddit": "LocalLLaMA",
+              "score": 0,
+              "comment_count": 2,
+              "created_utc": 1779851658.0,
+              "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tot8gm/two_months_local_30b_real_speedup_nowhere_near/"
+            }
+          },
+          "twitter": null
+        }
+      }
+    ],
+    "brief_number": 2
+  },
+  {
     "run_id": "2026-05-27 04:01 IST",
     "brief_day": "2026-05-27",
     "collected_at_ist": "2026-05-27 04:01 IST",
