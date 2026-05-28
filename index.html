@@ -106,23 +106,27 @@
 </head>
 <body>
   <main class="shell">
-    <nav class="topbar"><div class="brand"><span class="brand-mark"></span>Reddit AI Digest</div><div class="navmeta">Today: 1 briefs saved</div></nav>
+    <nav class="topbar"><div class="brand"><span class="brand-mark"></span>Reddit AI Digest</div><div class="navmeta">Today: 2 briefs saved</div></nav>
     <section class="hero">
-      <div class="kicker">Brief 1 · Live Reddit AI</div>
+      <div class="kicker">Brief 2 · Live Reddit AI</div>
       <h1>Compact AI signal, refreshed through the day.</h1>
       <p class="subtitle">A clean, Vercel/Mintlify-inspired digest for AI tools, models, local inference, coding agents, and workflow changes. Historical storage is intentionally day-only: tomorrow starts fresh.</p>
       <div class="stats">
-        <div class="stat"><span>Updated</span><strong>2026-05-28 04:42 IST</strong></div>
-        <div class="stat"><span>Sources</span><strong>16 ok / 0 failed</strong></div>
-        <div class="stat"><span>New posts</span><strong>40</strong></div>
-        <div class="stat"><span>Runtime</span><strong>10.81s</strong></div>
+        <div class="stat"><span>Updated</span><strong>2026-05-28 12:24 IST</strong></div>
+        <div class="stat"><span>Sources</span><strong>0 ok / 16 failed</strong></div>
+        <div class="stat"><span>New posts</span><strong>0</strong></div>
+        <div class="stat"><span>Runtime</span><strong>4.95s</strong></div>
       </div>
     </section>
 
     <section class="layout">
       <div class="main-column">
-        <div class="section-head"><span>Latest</span><h2>Brief 1</h2><p>The latest Telegram-linked brief, with the top ranked posts expanded.</p></div>
+        <div class="section-head"><span>Latest</span><h2>Brief 2</h2><p>The latest Telegram-linked brief, with the top ranked posts expanded.</p></div>
+        <article class="card empty"><h2>Collector failed / zero usable posts</h2><p>This is a Reddit collection/access problem, not a quiet news day.</p><ul><li><code>r/ClaudeCode</code> — hot: www.reddit.com: HTTPError: HTTP Error 403: Blocked</li><li><code>r/ChatGPT</code> — hot: www.reddit.com: HTTPError: HTTP Error 403: Blocked</li><li><code>r/MachineLearning</code> — hot: www.reddit.com: HTTPError: HTTP Error 403: Blocked</li><li><code>r/LocalLLaMA</code> — hot: www.reddit.com: HTTPError: HTTP Error 403: Blocked</li><li><code>r/artificial</code> — hot: www.reddit.com: HTTPError: HTTP Error 403: Blocked</li><li><code>r/OpenAI</code> — hot: www.reddit.com: HTTPError: HTTP Error 403: Blocked</li><li><code>r/singularity</code> — hot: www.reddit.com: HTTPError: HTTP Error 403: Blocked</li><li><code>r/ClaudeAI</code> — hot: www.reddit.com: HTTPError: HTTP Error 403: Blocked</li><li><code>r/LangChain</code> — hot: www.reddit.com: HTTPError: HTTP Error 403: Blocked</li><li><code>r/AI_Agents</code> — hot: www.reddit.com: HTTPError: HTTP Error 403: Blocked</li></ul></article>
         
+        <section class="archive-brief" id="brief-1">
+          <div class="section-head"><span>Brief 1</span><h2>2026-05-28 04:42 IST</h2><p>16 ranked posts from 16 sources.</p></div>
+          <div class="archive-grid">
     <article class="card post-card">
       <div class="post-topline">
         <div class="rank-badge"><span>🔵</span><strong>01</strong></div>
@@ -328,68 +332,23 @@ We’re currently speaking to LLMs like toxic micromanagers, and it&#x27;s activ
         
       </div>
     </article>
-    
-    <article class="card post-card">
-      <div class="post-topline">
-        <div class="rank-badge"><span>🟢</span><strong>09</strong></div>
-        <div class="meta-pill">Reddit</div>
-        <div class="meta-pill">r/AI_Agents</div>
-        <div class="meta-pill">1↑</div>
-        <div class="meta-pill">3 comments</div>
-      </div>
-      <div class="story-labels"><span class="story-label">Reddit</span><span class="story-label">AI_Agents</span></div>
-      <h2>i built a local cli for reducing token waste</h2>
-      <p class="discussion story-summary">i built , a local node.js cli for finding context waste in claude code, codex, and cursor workflows. it runs locally, needs no api keys, no login, and nothing leaves your machine. ai coding agents can waste a lot of context on generated files, lockfiles, repeated reads, huge command output, stale sessions, command loops, and oversized claude.md / agents.md files. you can try it with: npx getprismo doctor the main pie github: link Thank you for your submission, for any questions regarding AI, please check out our wiki at link (this is currently in test and we are actively a</p>
-      
-      <details class="source-expand">
-        <summary><span class="summary-collapsed">Expand full post</span><span class="summary-expanded">Collapse full post</span></summary>
-        <div class="source-expanded-content"><section class="source-section"><div class="source-label">Reddit post · r/AI_Agents</div><h4>i built a local cli for reducing token waste</h4><div class="source-prose"><p>i built , a local node.js cli for finding context waste in claude code, codex, and cursor workflows. it runs locally, needs no api keys, no login, and nothing leaves your machine.</p><p>ai coding agents can waste a lot of context on generated files, lockfiles, repeated reads, huge command output, stale sessions, command loops, and oversized claude.md / agents.md files.</p><p>you can try it with:</p><p>npx getprismo doctor</p><p>the main pieces are:</p><p>doctor scans your repo, flags missing .claudeignore / .cursorignore, exposed build/log artifacts, oversized instruction files, and generates compact .prismo context packs.</p><p>watch --agents monitors context pressure, repeated file reads, artifact leaks, tool-output floods, command loops, and multi-agent overlap.</p><p>shield -- npm test runs noisy commands without dumping full stdout/stderr into the agent context. the full output stays local and can be searched later.</p><p>receipt, timeline, and replay show what happened after a session: repeated reads, output floods, artifact leaks, likely influence, recurring patterns, and recovery prompts.</p><p>instructions audit checks claude.md / agents.md rules for useful guardrails, observable violations, partial compliance, duplicates, trim candidates, and influence-unknown rules. instructions ablate --dry-run creates a safe ablation plan without editing files.</p><p>firewall creates task-scoped allow/block context boundaries, and mcp exposes prismodev as local tools for compatible agents.</p><p>would love feedback on false positives, missing waste patterns, or whether this kind of local ai coding observability is useful.</p></div><div class="source-comments"><strong>Captured top comments</strong><ul><li><span class="vote">2↑</span><span>github: link</span></li><li><span class="vote">1↑</span><span>Thank you for your submission, for any questions regarding AI, please check out our wiki at link (this is currently in test and we are actively adding to the wiki) *I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/AI_Agents) if you have any questions or concerns.*</span></li><li><span class="vote">1↑</span><span>ngl the instruction audit piece sounds actually useful. half my claude.md is probably rules i forgot existed lol</span></li></ul></div></section></div>
-      </details>
-    
-      <div class="takeaway"><span>Why it matters</span>**High signal if running local models.** Check hardware fit, latency, and eval quality before adopting.</div>
-      <details class="comments"><summary>Top comments</summary><ul><li><span class="vote">2↑</span><span>github: link</span></li><li><span class="vote">1↑</span><span>Thank you for your submission, for any questions regarding AI, please check out our wiki at link (this is currently in test and we are actively adding to the wiki) *I am a bot, and this action was performed…</span></li><li><span class="vote">1↑</span><span>ngl the instruction audit piece sounds actually useful. half my claude.md is probably rules i forgot existed lol</span></li></ul></details>
-      <div class="actions">
-        <a class="button primary" href="https://www.reddit.com/r/AI_Agents/comments/1tpk589/i_built_a_local_cli_for_reducing_token_waste/" target="_blank" rel="noreferrer">Open thread</a>
-        
-      </div>
-    </article>
-    
-    <article class="card post-card">
-      <div class="post-topline">
-        <div class="rank-badge"><span>🟣</span><strong>10</strong></div>
-        <div class="meta-pill">Reddit</div>
-        <div class="meta-pill">r/ClaudeCode</div>
-        <div class="meta-pill">760↑</div>
-        <div class="meta-pill">75 comments</div>
-      </div>
-      <div class="story-labels"><span class="story-label">Reddit</span><span class="story-label">ClaudeCode</span></div>
-      <h2>Thanks to Claude Code I (a coding amateur) was able to build Questboard, a family RPG style chore-board for our tablet wall display. Complete chores to defeat the monster before midnight…</h2>
-      <p class="discussion story-summary">link Quality, wholesome, non commercial use case for real people. You love to see it. When’s the DLC drop where Timmy can pay $9.99 to get an upgraded broom that does 2.5x sweep speed and reduces mom aggro by 10%?</p>
-      
-      <details class="source-expand">
-        <summary><span class="summary-collapsed">Expand full post</span><span class="summary-expanded">Collapse full post</span></summary>
-        <div class="source-expanded-content"><section class="source-section"><div class="source-label">Reddit post · r/ClaudeCode</div><h4>Thanks to Claude Code I (a coding amateur) was able to build Questboard, a family RPG style chore-board for our tablet wall display. Complete chores to defeat the monster before midnight to earn gold, or it fights back. Spend gold in the re</h4><div class="source-prose"><p>[https://github.com/thillygooth/questboard](https://github.com/thillygooth/questboard)</p></div><div class="source-comments"><strong>Captured top comments</strong><ul><li><span class="vote">114↑</span><span>Quality, wholesome, non commercial use case for real people. You love to see it.</span></li><li><span class="vote">34↑</span><span>When’s the DLC drop where Timmy can pay $9.99 to get an upgraded broom that does 2.5x sweep speed and reduces mom aggro by 10%?</span></li><li><span class="vote">33↑</span><span>Its basically just an old tablet running Home Assistant through a raspberry pi. Mounted to a wall in my kitchen. Edit: looks like this</span></li><li><span class="vote">26↑</span><span>Tell me more about your tablet wall</span></li><li><span class="vote">12↑</span><span>nah stays free</span></li></ul></div></section></div>
-      </details>
-    
-      <div class="takeaway"><span>Why it matters</span>**High signal for coding workflow.** Compare against your Hermes/Codex/Claude usage before changing tools or architecture.</div>
-      <details class="comments"><summary>Top comments</summary><ul><li><span class="vote">114↑</span><span>Quality, wholesome, non commercial use case for real people. You love to see it.</span></li><li><span class="vote">34↑</span><span>When’s the DLC drop where Timmy can pay $9.99 to get an upgraded broom that does 2.5x sweep speed and reduces mom aggro by 10%?</span></li><li><span class="vote">33↑</span><span>Its basically just an old tablet running Home Assistant through a raspberry pi. Mounted to a wall in my kitchen. Edit: looks like this</span></li></ul></details>
-      <div class="actions">
-        <a class="button primary" href="https://www.reddit.com/r/ClaudeCode/comments/1tolrav/thanks_to_claude_code_i_a_coding_amateur_was_able/" target="_blank" rel="noreferrer">Open thread</a>
-        <a class="button" href="https://www.reddit.com/gallery/1tolrav" target="_blank" rel="noreferrer">External</a>
-      </div>
-    </article>
-    
-        
+    </div>
+        </section>
       </div>
       <aside class="side">
         <section class="card panel"><h3>Today’s briefs</h3>
-        <details class="history-item" open>
+        <details class="history-item" >
           <summary><strong>Brief 1</strong><span>2026-05-28 04:42 IST</span></summary>
           <p>16 ranked posts · 16 sources · 10.81s runtime</p>
           <ol><li><a href="https://www.reddit.com/r/OpenAI/comments/1to71ad/jony_ive_designed_a_new_ferrari_or_at_least_tried/" target="_blank" rel="noreferrer">Jony Ive designed a new Ferrari. Or at least tried to. Give me one reason why Ferrari is paying…</a><em>r/OpenAI</em></li><li><a href="https://www.reddit.com/r/ChatGPT/comments/1tovgbq/chatgpts_accidental_selfie/" target="_blank" rel="noreferrer">ChatGPT&#x27;s accidental selfie</a><em>r/ChatGPT</em></li><li><a href="https://www.reddit.com/r/ArtificialInteligence/comments/1tovqgo/the_pope_just_dropped_a_massive_150page_manifesto/" target="_blank" rel="noreferrer">The Pope just dropped a massive 150-page manifesto on AI, and he&#x27;s not holding back</a><em>r/ArtificialInteligence</em></li><li><a href="https://www.reddit.com/r/LocalLLaMA/comments/1tot20j/stop_traumatizing_ai_into_loops_and_turn/" target="_blank" rel="noreferrer">Stop traumatizing AI into loops and turn hallucinations into an honest &quot;I don&#x27;t know!&quot; by being…</a><em>r/LocalLLaMA</em></li><li><a href="https://www.reddit.com/r/ClaudeAI/comments/1tostyj/i_think_its_time_vibe_coders/" target="_blank" rel="noreferrer">I think it’s time Vibe Coders 😅</a><em>r/ClaudeAI</em></li><li><a href="https://www.reddit.com/r/ChatGPT/comments/1tophpt/i_tried_to_generate_malo_the_scp_but_i/" target="_blank" rel="noreferrer">I tried to generate malO the scp, but I accidentally wrote mao...</a><em>r/ChatGPT</em></li></ol>
+        </details>
+        <details class="history-item" open>
+          <summary><strong>Brief 2</strong><span>2026-05-28 12:24 IST</span></summary>
+          <p>0 ranked posts ·  sources · 4.95s runtime</p>
+          <ol><li>No posts captured.</li></ol>
         </details></section>
-        <section class="card panel"><h3>Quick watchlist</h3><ul class="watchlist"><li><span>🔵</span><a href="https://www.reddit.com/r/OpenAI/comments/1to71ad/jony_ive_designed_a_new_ferrari_or_at_least_tried/" target="_blank" rel="noreferrer">Jony Ive designed a new Ferrari. Or at least tried to. Give me one reason why Ferrari is paying…</a><em>r/OpenAI</em></li><li><span>🟡</span><a href="https://www.reddit.com/r/ChatGPT/comments/1tovgbq/chatgpts_accidental_selfie/" target="_blank" rel="noreferrer">ChatGPT&#x27;s accidental selfie</a><em>r/ChatGPT</em></li><li><span>🟢</span><a href="https://www.reddit.com/r/ArtificialInteligence/comments/1tovqgo/the_pope_just_dropped_a_massive_150page_manifesto/" target="_blank" rel="noreferrer">The Pope just dropped a massive 150-page manifesto on AI, and he&#x27;s not holding back</a><em>r/ArtificialInteligence</em></li><li><span>🟣</span><a href="https://www.reddit.com/r/LocalLLaMA/comments/1tot20j/stop_traumatizing_ai_into_loops_and_turn/" target="_blank" rel="noreferrer">Stop traumatizing AI into loops and turn hallucinations into an honest &quot;I don&#x27;t know!&quot; by being…</a><em>r/LocalLLaMA</em></li><li><span>🔵</span><a href="https://www.reddit.com/r/ClaudeAI/comments/1tostyj/i_think_its_time_vibe_coders/" target="_blank" rel="noreferrer">I think it’s time Vibe Coders 😅</a><em>r/ClaudeAI</em></li><li><span>🔴</span><a href="https://www.reddit.com/r/ChatGPT/comments/1tophpt/i_tried_to_generate_malo_the_scp_but_i/" target="_blank" rel="noreferrer">I tried to generate malO the scp, but I accidentally wrote mao...</a><em>r/ChatGPT</em></li><li><span>🟡</span><a href="https://www.reddit.com/r/singularity/comments/1tot8qm/only_3_years/" target="_blank" rel="noreferrer">Only 3 years</a><em>r/singularity</em></li></ul></section>
-        <section class="card panel"><h3>Sources reached</h3><ul class="sources"><li>r/AI_Agents</li><li>r/ArtificialInteligence</li><li>r/AutoGPT</li><li>r/ChatGPT</li><li>r/ClaudeAI</li><li>r/ClaudeCode</li><li>r/LangChain</li><li>r/LocalLLM</li><li>r/LocalLLaMA</li><li>r/MachineLearning</li><li>r/Ollama</li><li>r/OpenAI</li><li>r/OpenWebUI</li><li>r/StableDiffusion</li><li>r/artificial</li><li>r/singularity</li></ul></section>
+        <section class="card panel"><h3>Quick watchlist</h3><ul class="watchlist"><li>No watchlist items captured.</li></ul></section>
+        <section class="card panel"><h3>Sources reached</h3><ul class="sources"><li>No sources reached</li></ul></section>
       </aside>
     </section>
     <footer>Generated by Hermes · Auth mode: anonymous_with_fallbacks</footer>
