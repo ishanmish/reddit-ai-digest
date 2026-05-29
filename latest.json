@@ -1,10 +1,26 @@
 {
-  "collected_at_ist": "2026-05-29 01:42 IST",
-  "runtime_sec": 5.21,
+  "collected_at_ist": "2026-05-29 07:53 IST",
+  "runtime_sec": 540.09,
   "auth_mode": "anonymous_with_fallbacks",
   "source_count_ok": 0,
   "sources_ok": [],
   "sources_failed": {
+    "MachineLearning": [
+      "hot: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
+      "hot: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
+      "top: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
+      "top: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
+      "new: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
+      "new: old.reddit.com: HTTPError: HTTP Error 403: Blocked"
+    ],
+    "artificial": [
+      "hot: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
+      "hot: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
+      "top: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
+      "top: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
+      "new: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
+      "new: old.reddit.com: HTTPError: HTTP Error 403: Blocked"
+    ],
     "ClaudeCode": [
       "hot: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
       "hot: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
@@ -13,7 +29,7 @@
       "new: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
       "new: old.reddit.com: HTTPError: HTTP Error 403: Blocked"
     ],
-    "singularity": [
+    "ClaudeAI": [
       "hot: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
       "hot: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
       "top: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
@@ -22,6 +38,14 @@
       "new: old.reddit.com: HTTPError: HTTP Error 403: Blocked"
     ],
     "ChatGPT": [
+      "hot: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
+      "hot: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
+      "top: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
+      "top: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
+      "new: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
+      "new: old.reddit.com: HTTPError: HTTP Error 403: Blocked"
+    ],
+    "singularity": [
       "hot: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
       "hot: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
       "top: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
@@ -42,63 +66,7 @@
       "hot: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
       "top: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
       "top: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: old.reddit.com: HTTPError: HTTP Error 403: Blocked"
-    ],
-    "artificial": [
-      "hot: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "hot: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: old.reddit.com: HTTPError: HTTP Error 403: Blocked"
-    ],
-    "MachineLearning": [
-      "hot: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "hot: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: old.reddit.com: HTTPError: HTTP Error 403: Blocked"
-    ],
-    "ClaudeAI": [
-      "hot: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "hot: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: old.reddit.com: HTTPError: HTTP Error 403: Blocked"
-    ],
-    "Ollama": [
-      "hot: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "hot: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: old.reddit.com: HTTPError: HTTP Error 403: Blocked"
-    ],
-    "OpenWebUI": [
-      "hot: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "hot: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: old.reddit.com: HTTPError: HTTP Error 403: Blocked"
-    ],
-    "LangChain": [
-      "hot: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "hot: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: old.reddit.com: HTTPError: HTTP Error 403: Blocked"
-    ],
-    "AI_Agents": [
-      "hot: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "hot: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
+      "new: www.reddit.com: TimeoutError: The read operation timed out",
       "new: old.reddit.com: HTTPError: HTTP Error 403: Blocked"
     ],
     "StableDiffusion": [
@@ -109,29 +77,61 @@
       "new: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
       "new: old.reddit.com: HTTPError: HTTP Error 403: Blocked"
     ],
-    "LocalLLM": [
-      "hot: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "hot: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: old.reddit.com: HTTPError: HTTP Error 403: Blocked"
-    ],
     "ArtificialInteligence": [
-      "hot: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
+      "hot: www.reddit.com: TimeoutError: The read operation timed out",
       "hot: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
       "top: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
       "top: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
       "new: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: old.reddit.com: HTTPError: HTTP Error 403: Blocked"
+      "new: old.reddit.com: TimeoutError: The read operation timed out"
+    ],
+    "LangChain": [
+      "hot: www.reddit.com: TimeoutError: The read operation timed out",
+      "hot: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
+      "top: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
+      "top: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
+      "new: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
+      "new: old.reddit.com: TimeoutError: The read operation timed out"
+    ],
+    "LocalLLM": [
+      "hot: www.reddit.com: TimeoutError: The read operation timed out",
+      "hot: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
+      "top: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
+      "top: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
+      "new: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
+      "new: old.reddit.com: TimeoutError: The read operation timed out"
     ],
     "AutoGPT": [
-      "hot: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
+      "hot: www.reddit.com: TimeoutError: The read operation timed out",
       "hot: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
       "top: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
       "top: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
       "new: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: old.reddit.com: HTTPError: HTTP Error 403: Blocked"
+      "new: old.reddit.com: TimeoutError: The read operation timed out"
+    ],
+    "Ollama": [
+      "hot: www.reddit.com: TimeoutError: The read operation timed out",
+      "hot: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
+      "top: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
+      "top: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
+      "new: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
+      "new: old.reddit.com: TimeoutError: The read operation timed out"
+    ],
+    "AI_Agents": [
+      "hot: www.reddit.com: TimeoutError: The read operation timed out",
+      "hot: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
+      "top: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
+      "top: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
+      "new: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
+      "new: old.reddit.com: TimeoutError: The read operation timed out"
+    ],
+    "OpenWebUI": [
+      "hot: www.reddit.com: TimeoutError: The read operation timed out",
+      "hot: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
+      "top: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
+      "top: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
+      "new: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
+      "new: old.reddit.com: TimeoutError: The read operation timed out"
     ]
   },
   "posts": [],
