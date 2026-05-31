@@ -1,33 +1,9 @@
 [
   {
-    "run_id": "2026-05-31 18:01 IST",
-    "brief_day": "2026-05-31",
-    "collected_at_ist": "2026-05-31 18:01 IST",
-    "runtime_sec": 4.7,
-    "auth_mode": "anonymous_with_fallbacks",
-    "source_count_ok": 0,
-    "sources_ok": [],
-    "sources_failed_count": 16,
-    "posts": [],
-    "brief_number": 3
-  },
-  {
-    "run_id": "2026-05-31 12:01 IST",
-    "brief_day": "2026-05-31",
-    "collected_at_ist": "2026-05-31 12:01 IST",
-    "runtime_sec": 5.42,
-    "auth_mode": "anonymous_with_fallbacks",
-    "source_count_ok": 0,
-    "sources_ok": [],
-    "sources_failed_count": 16,
-    "posts": [],
-    "brief_number": 2
-  },
-  {
-    "run_id": "2026-05-31 05:19 IST",
-    "brief_day": "2026-05-31",
-    "collected_at_ist": "2026-05-31 05:19 IST",
-    "runtime_sec": 2093.07,
+    "run_id": "2026-06-01 00:02 IST",
+    "brief_day": "2026-06-01",
+    "collected_at_ist": "2026-06-01 00:02 IST",
+    "runtime_sec": 12.07,
     "auth_mode": "anonymous_with_fallbacks",
     "source_count_ok": 0,
     "sources_ok": [],
