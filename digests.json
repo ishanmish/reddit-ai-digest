@@ -1,5 +1,17 @@
 [
   {
+    "run_id": "2026-06-03 12:01 IST",
+    "brief_day": "2026-06-03",
+    "collected_at_ist": "2026-06-03 12:01 IST",
+    "runtime_sec": 4.53,
+    "auth_mode": "anonymous_with_fallbacks",
+    "source_count_ok": 0,
+    "sources_ok": [],
+    "sources_failed_count": 16,
+    "posts": [],
+    "brief_number": 2
+  },
+  {
     "run_id": "2026-06-03 06:01 IST",
     "brief_day": "2026-06-03",
     "collected_at_ist": "2026-06-03 06:01 IST",
