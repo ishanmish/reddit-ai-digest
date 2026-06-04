@@ -1,137 +1,137 @@
 {
-  "collected_at_ist": "2026-06-04 00:02 IST",
-  "runtime_sec": 4.34,
+  "collected_at_ist": "2026-06-04 06:15 IST",
+  "runtime_sec": 0.12,
   "auth_mode": "anonymous_with_fallbacks",
   "source_count_ok": 0,
   "sources_ok": [],
   "sources_failed": {
     "ClaudeAI": [
-      "hot: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "hot: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: old.reddit.com: HTTPError: HTTP Error 403: Blocked"
+      "hot: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "hot: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "top: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "top: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "new: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "new: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
     ],
     "singularity": [
-      "hot: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "hot: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: old.reddit.com: HTTPError: HTTP Error 403: Blocked"
-    ],
-    "OpenAI": [
-      "hot: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "hot: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: old.reddit.com: HTTPError: HTTP Error 403: Blocked"
-    ],
-    "MachineLearning": [
-      "hot: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "hot: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: old.reddit.com: HTTPError: HTTP Error 403: Blocked"
-    ],
-    "artificial": [
-      "hot: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "hot: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: old.reddit.com: HTTPError: HTTP Error 403: Blocked"
-    ],
-    "ClaudeCode": [
-      "hot: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "hot: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: old.reddit.com: HTTPError: HTTP Error 403: Blocked"
+      "hot: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "hot: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "top: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "top: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "new: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "new: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
     ],
     "LocalLLaMA": [
-      "hot: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "hot: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: old.reddit.com: HTTPError: HTTP Error 403: Blocked"
+      "hot: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "hot: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "top: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "top: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "new: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "new: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    ],
+    "MachineLearning": [
+      "hot: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "hot: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "top: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "top: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "new: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "new: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    ],
+    "ClaudeCode": [
+      "hot: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "hot: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "top: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "top: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "new: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "new: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    ],
+    "artificial": [
+      "hot: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "hot: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "top: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "top: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "new: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "new: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    ],
+    "OpenAI": [
+      "hot: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "hot: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "top: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "top: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "new: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "new: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
     ],
     "ChatGPT": [
-      "hot: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "hot: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: old.reddit.com: HTTPError: HTTP Error 403: Blocked"
+      "hot: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "hot: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "top: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "top: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "new: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "new: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
     ],
     "ArtificialInteligence": [
-      "hot: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "hot: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: old.reddit.com: HTTPError: HTTP Error 403: Blocked"
+      "hot: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "hot: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "top: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "top: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "new: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "new: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
     ],
     "AI_Agents": [
-      "hot: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "hot: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: old.reddit.com: HTTPError: HTTP Error 403: Blocked"
-    ],
-    "LangChain": [
-      "hot: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "hot: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: old.reddit.com: HTTPError: HTTP Error 403: Blocked"
+      "hot: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "hot: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "top: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "top: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "new: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "new: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
     ],
     "AutoGPT": [
-      "hot: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "hot: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: old.reddit.com: HTTPError: HTTP Error 403: Blocked"
+      "hot: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "hot: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "top: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "top: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "new: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "new: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
     ],
-    "StableDiffusion": [
-      "hot: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "hot: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: old.reddit.com: HTTPError: HTTP Error 403: Blocked"
-    ],
-    "Ollama": [
-      "hot: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "hot: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: old.reddit.com: HTTPError: HTTP Error 403: Blocked"
+    "LangChain": [
+      "hot: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "hot: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "top: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "top: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "new: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "new: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
     ],
     "OpenWebUI": [
-      "hot: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "hot: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: old.reddit.com: HTTPError: HTTP Error 403: Blocked"
+      "hot: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "hot: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "top: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "top: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "new: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "new: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
     ],
     "LocalLLM": [
-      "hot: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "hot: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "top: old.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: www.reddit.com: HTTPError: HTTP Error 403: Blocked",
-      "new: old.reddit.com: HTTPError: HTTP Error 403: Blocked"
+      "hot: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "hot: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "top: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "top: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "new: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "new: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    ],
+    "Ollama": [
+      "hot: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "hot: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "top: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "top: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "new: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "new: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    ],
+    "StableDiffusion": [
+      "hot: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "hot: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "top: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "top: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "new: www.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "new: old.reddit.com: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
     ]
   },
   "posts": [],
